@@ -1,0 +1,60 @@
+header {
+    background-color: white;
+    color: #0FBFBF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    font-family: Arial;
+}
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: right;
+    background-color: #0FBFBF;
+}
+
+nav a {
+    padding: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+aside {
+    background-color: #f2f2f2;
+    width: 270px;
+    padding: 30px;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+#home,
+#about,
+#projects,
+#contact {
+    padding-left: 360px;
+    font-family: Arial;
+    color: #0FBFBF;
+}
+
+h1 {
+    color: #666666;
+}
+
+p {
+    color: #999999;
+}
+
+footer {
+    width: 100%;
+    background-color: #333333;
+    font-family: Arial;
+    color: #0FBFBF;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    position: static;
+}
