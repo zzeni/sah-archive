@@ -1,0 +1,51 @@
+header {
+    background-color: #7F7D73;
+    color: azure;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    font-family: open sans;
+}
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: right;
+    background-color: #FFED8F;
+}
+
+nav section {
+    float: inherit;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+aside {
+    background-color: #CCC9B9;
+    width: 270px;
+    padding: 30px;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+#about, #projects, #contact {
+  padding-left: 360px;
+}
+
+#info {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+footer {
+  width: 100%;
+  background-color: #7F7D73;
+  text-align: center;
+  display: block;
+  padding: 15px;
+  position: static;
+}
