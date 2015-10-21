@@ -1,0 +1,45 @@
+header{
+    background-color:chocolate;
+    color:white; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px; 
+    font-family:serif;
+}
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%; 
+    text-align: right;
+    background-color:darkgrey;
+}
+
+nav a {
+    padding: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+aside {
+    background-color:darkgrey;
+    width: 270px;
+    padding: 30px;
+    height: 100%;
+    display: block;
+    position: absolute;
+} 
+
+#about, #projects, #contact {
+    padding-left:360px; 
+}
+
+footer {
+    width: 100%;
+    background-color:darkgrey;
+    color: white;
+    text-align: center;
+    display: block; 
+    padding: 15px;
+    position: static;
+}
