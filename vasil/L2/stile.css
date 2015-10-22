@@ -1,0 +1,53 @@
+header {
+  background-color:  ;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-family: Helvetica;
+}
+
+nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: right;
+  background-color: gray;
+  
+}
+
+nav a {
+  padding: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+aside {
+  background-color: lightgray;
+  color: black;
+  width: 150px;
+  padding: 30px;
+  height: 100%;
+  display: block;
+  position: absolute;
+
+}
+aside a {
+    color: black;
+}
+
+#about, #projects, #contact {
+  padding-left: 300px;
+  color:black;
+}
+#about a {color: black;
+}
+footer {
+  width: 100%;
+  background-color: dimgray;
+  text-align: center;
+  display: block;
+  padding: 15px;
+  position: static;
+}
