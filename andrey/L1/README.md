@@ -14,6 +14,7 @@ body {
     background-color: black;
     color: white;
 }
+
 Забележете как се променя изцяло визията на страницата ви.
 
 Разгледайте моят пример в liveweave тук:
