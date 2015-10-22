@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Table</title>
-      <link rel="stylesheet" href="style.css">
+      <title>L4</title>
+      <style>
+          .col {
+              list-style: none;
+              border: 1px black solid;
+              display: table-cell;
+              width: 50%;
+              padding: 30px;
+          }
+          .box {
+              display: table;
+              width: 50%;
+          }
+          .row {
+              display: table-row;
+          }
+                
+      </style>
+      
   </head>
     <body>
-        <table>
-            <th>Table</th>
-            <tr>
-                <td>Name</td>
-                <td>Age</td>
-            </tr>
-            <tr>
-                <td>Steven</td>
-                <td>24</td>
-            </tr>
-        </table>
+        <section id="about">
+            <h1>About me</h1>
+            <div class="box">
+                <div class="row">
+            <ul class="col">
+                <li>Name</li>
+                <li>email</li>
+            </ul>
+            <ul class="col">
+                <li>Steven</li>
+                <li>steven.popov@abv.bg</li>
+            </ul>
+            </div>
+            </div class="row">
+            </div class="box">
+            <div class="col">
+                <p>Something</p>
+        </div >
+        </section>
     </body>
 </html>
