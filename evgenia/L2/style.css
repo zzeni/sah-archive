@@ -1,0 +1,47 @@
+header {
+    background-color: #C9B0E0;
+    color: white;
+    min-height: 110px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-family: serif
+}
+nav {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;
+    background-color: bisque
+}
+nav section{
+    float:right
+}
+nav a{
+    padding: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+aside{
+    background-color: #C9B0E0;
+    width: 270px;
+    padding: 30px;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+#about, #projects, #contact, #home{
+    padding-left: 360px;
+}
+footer{
+    width: 100%;
+    background-color: bisque;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    position: static
+}
+img{
+    width: 200px;
+    height: 200px;
+}
