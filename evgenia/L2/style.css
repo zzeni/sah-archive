@@ -1,0 +1,38 @@
+body {
+    background-color:dimgrey;
+}
+header{
+    text-align: center;
+    padding: 100px 0;
+    text-decoration:none;
+    color:lightblue;
+}
+
+
+nav {
+    background-color:darkturquoise;
+}
+nav {
+    display:block;
+    background-color:black;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0;
+    
+}
+nav a{
+    text-decoration:none;
+    color:lightblue;
+}
+aside a {
+text-decoration:none;
+    padding-top: 100px 0;
+    color:darkmagenta;
+}
+    
+
+footer{
+ text-align:center;  
+    color:gold;
+    padding: 60px 0;
+}
