@@ -1,2 +1,2 @@
-# swift-academy-homeworks
+# Swift Academy Homeworks
 Kalina's homeworks 
