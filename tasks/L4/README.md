@@ -60,7 +60,7 @@ https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L4/example.jp
 за да направите една картинка кръгла
 
 1. тя трябва да е квадратна
-2. използвайте css property-то: border-radius: 100%;
+2. използвайте css property-то: { border-radius: 100%; }
 
 За да направите email-a ви да е линк използвайте следния формат:
 
