@@ -74,4 +74,4 @@ https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L4/example.jp
 #### Голямя подсказка:
 
 Прочетете тази статия, намирам я за много добре формулирана и информативна:
-[http://colintoh.com/blog/display-table-anti-hero](http://colintoh.com/blog/display-table-anti-hero)
+[The Anti-hero of CSS Layout - "display:table"](http://colintoh.com/blog/display-table-anti-hero)
