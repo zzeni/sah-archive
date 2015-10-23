@@ -4,7 +4,7 @@
 
 #### Подготовка
 
-Всички от Група 1, да си ъпдейтнат swift-academy-homeworks проекта. Ще се появи папка group1, където да си преместят папките с тяхните проекти.
+Всички от _Група 1_, да си ъпдейтнат swift-academy-homeworks проекта. Ще се появи папка group1, където да си преместят папките с тяхните проекти.
 
 т.е.
 
@@ -21,7 +21,7 @@
           |- ...
       |- someoneelse
 
-Искам всеки да премести само неговата си папка от главната директория в group1 или group2 (съответната група в която е той)
+Искам всеки да премести само _неговата си_ папка от главната директория в group1 или group2 (съответната група в която е той)
 
 И да се получи ето това:
 
@@ -39,15 +39,15 @@
 
 #### Същинска част
 
-Създайте в папката L4, от вчера 2 html файла: about_with_table.html и about_with_css.html
+Създайте в папката L4 (от вчера) _два_ html файла: about_with_table.html и about_with_css.html
 
 И в двата трябва да има следното съдържание:
 
 - about секция
 - ваша снимка
 - две подравнени колони:
--- в едната Name, email, github, linkedin
--- в другата - съответните ваши данни
+ - в едната Name, email, github, linkedin
+ - в другата - съответните ваши данни
 - Като искам в единия файл да използвате table елемента
 - в другия да използвате само css (display-table)
 
@@ -58,8 +58,13 @@ https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L4/example.jp
 #### Подсказка:
 
 за да направите една картинка кръгла
+
 1. тя трябва да е квадратна
-2. използвайте css property-то: border-radius: 100%;
+2. използвайте css property-то: { border-radius: 100%; }
+
+За да направите email-a ви да е линк използвайте следния формат:
+
+    <a href="mailto:emanolova@gmail.com">emanolova@gmail.com</a>
 
 Хоризонтално подравняване на текст и съдържание: **text-align**
 
@@ -69,4 +74,4 @@ https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L4/example.jp
 #### Голямя подсказка:
 
 Прочетете тази статия, намирам я за много добре формулирана и информативна:
-(http://colintoh.com/blog/display-table-anti-hero)[http://colintoh.com/blog/display-table-anti-hero]
+[The Anti-hero of CSS Layout - "display:table"](http://colintoh.com/blog/display-table-anti-hero)
