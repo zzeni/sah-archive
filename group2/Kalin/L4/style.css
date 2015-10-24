@@ -1,0 +1,16 @@
+.col{
+    border: 1px black solid;
+    width: 30%;
+    display: table-cell;
+}
+.box{
+    dysplay: table;
+    width: 60%;
+}
+.row{
+    display: table-row;
+}
+#about{
+    display: table;
+    width: 100%;
+}
