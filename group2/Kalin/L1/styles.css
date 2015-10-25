@@ -1,0 +1,10 @@
+body{
+    
+    margin: 0 auto;
+    max-width: 66%;
+    background-color: black;
+    color: gold;
+}
+hr{
+    color: firebrick;
+}
