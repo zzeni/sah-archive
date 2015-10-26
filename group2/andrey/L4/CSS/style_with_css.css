@@ -1,0 +1,29 @@
+div#body {
+    display: table;
+}
+div#main {
+    display: table-row;
+}
+img {
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+}
+div#image {
+    background-color: antiquewhite;
+    display: table-cell;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+div#text {
+    display: table-cell;
+    padding: 10px;
+    background-color: azure;
+    font-family: "Times new roman", times, serif;
+    font-size: 15pt;
+    vertical-align: middle;
+}
+p {
+    text-align: left;
+}
