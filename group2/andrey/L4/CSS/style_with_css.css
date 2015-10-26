@@ -1,4 +1,4 @@
-div#body {
+div#all_content {
     display: table;
 }
 div#main {
@@ -16,14 +16,21 @@ div#image {
     text-align: center;
     vertical-align: middle;
 }
-div#text {
+div#text1 {
     display: table-cell;
     padding: 10px;
     background-color: azure;
     font-family: "Times new roman", times, serif;
     font-size: 15pt;
     vertical-align: middle;
+    text-align: right;
 }
-p {
+div#text2 {
+    display: table-cell;
+    padding: 10px;
+    background-color: azure;
+    font-family: "Times new roman", times, serif;
+    font-size: 15pt;
+    vertical-align: middle;
     text-align: left;
 }
