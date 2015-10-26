@@ -14,7 +14,7 @@ img {
     border-radius: 100%;
 }
 
-#pic {
+.table-pic {
     background-color: bisque;
     width: 150px;
     height: 150px;
