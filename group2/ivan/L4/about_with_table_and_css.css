@@ -1,0 +1,76 @@
+/*Table solution*/
+
+table {
+    background-color: cadetblue;
+    width: 450px;
+    height: 150px;;
+    font-family: sans-serif;
+    border-collapse: collapse;
+}
+
+img {
+    width: auto;
+    height: 150px;
+    border-radius: 100%;
+}
+
+#pic {
+    background-color: bisque;
+    width: 150px;
+    height: 150px;
+}
+
+td.col1 {
+    text-align: right;
+    font-style: oblique;
+    padding-right: 16px;
+}
+
+td.col2 {
+    text-align: left;
+}
+    /*CSS solution*/
+
+#about1 {
+    background-color: #ffffff;
+    display: table-row;
+}
+
+#img1, #table1 {
+    display: table-cell;
+    height: 150px;
+}
+
+#img1 {
+    background-color: bisque;
+    text-align: center;
+    width: 150px;
+}
+
+#table1 {
+    background-color: cadetblue;
+    width: 300px;
+    vertical-align: middle;
+}
+
+#table1 div {
+    display: table-cell;
+    font-family: sans-serif;
+}
+
+#col1 {
+    text-align: right;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-style: oblique;
+}
+
+#col2 {
+    text-align: left;
+}
+
+
+    
+
+
+
