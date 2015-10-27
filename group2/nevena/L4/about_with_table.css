@@ -1,0 +1,21 @@
+.nasted-table-holder{
+	background-color: #FCDDC1;
+}
+table table tr td:first-child{
+	text-align: right;
+	font-weight: bold;
+}
+table table tr td{
+	height: 25px;
+}
+table tr td img{
+	border-radius: 100%;
+	width: 150px;
+	height: 150px;
+}
+table tr td{
+	background-color: #E5AD8A
+}
+td.nasted-table-holder td{
+	background: none;
+}
