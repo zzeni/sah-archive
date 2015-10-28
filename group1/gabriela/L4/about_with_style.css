@@ -1,0 +1,31 @@
+img {
+    border-top-style: 60%;
+    padding-left: 45px;
+    padding-right: 55px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#right {
+    list-style-type: none;
+    text-align: right;
+    font-size: 9em;
+    font-family:monospace;
+}
+
+#left {
+    list-style-type: none;
+    text-align: left;
+    font-size: 9em;
+    font-family: sans-serif;
+}
+
+table {
+    background-color: deeppink;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+#photo {
+    background-color: deeppink;
+}

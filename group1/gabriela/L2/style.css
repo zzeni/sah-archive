@@ -1,16 +1,10 @@
+     
 header {
-    background-color: skyblue;
-    color: lightgoldenrodyellow;
-        min-height:200px
-        padding-top:200px
-    padding-left: 
-}
-header {
-  background-color: #181860;
-  color: #F0D8D8;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  background-color: #FF1493;
+  color: #FF1493
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
   font-family: Helvetica;
 }
 
@@ -18,8 +12,8 @@ nav {
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
-  text-align: left;
-  background-color: #A8A8C0;
+  text-align: right;
+  background-color: ivory;
 }
 
 nav a {
@@ -30,7 +24,7 @@ nav a {
 
 aside {
   background-color: lightgrey;
-  width: 270px;
+  width: 170px;
   padding: 30px;
   height: 100%;
   display: block;
@@ -55,22 +49,22 @@ body {
  }
 
  h1 {
- background-color: cornsilk;
- margin-top: 25px;
- margin-right: 35px;
- margin-bottom: 55px;
- margin-left: 85px;
- /* equivalent to: margin: 25px 35px 55px 85px; */
+ background-color: #FF1493;
+ margin-top: 5px;
+ margin-right: 5px;
+ margin-bottom: 5px;
+ margin-left: 5px;
+ /* equivalent to: margin: 5px 5px 5px 5px; */
  }
 
 h1 {
- padding-top: 44px
- padding-right: 65px;
- padding-bottom: 85px;
- padding-left: 100px;
+ padding-top: 4px
+ padding-right: 5px;
+ padding-bottom: 5px;
+ padding-left: 10px;
 }
  h1 {
- padding: 44px 65px 85px 100px;
+ padding: 4px 5px 5px 10px;
 }
 
 h1 {
@@ -82,9 +76,9 @@ h1 {
  border-color: khaki;
 }
 h1 {
- border: 20px khaki solid;
+ border: 20px gray solid;
 }
 
-p { color: brown; }
-p.groupped { color: skyblue; }
-p#unique { color: lightcoral; }
+p { color:#FF69B4; }
+p.groupped { color: #FF69B4; }
+p#unique { color: #F5F5F5; }
