@@ -1,0 +1,32 @@
+img {
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    padding-top: 4px;
+    margin-bottom: 2px;
+}
+
+.right {
+    list-style-type: none;
+    text-align: right;
+    font-size: 2em;
+    font-family: sans-serif;
+    padding-left: 50px;
+}
+
+.left {
+    list-style-type: none;
+    text-align: left;
+    font-size: 2em;
+    font-family: sans-serif;
+    padding-left: 35px;
+    padding-right: 20px;
+}
+
+table {
+    background-color: rgba(127, 255, 212, 0.08);
+}
+
+#photo {
+    background-color: rgba(0, 255, 255, 0.13);
+}

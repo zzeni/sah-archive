@@ -1,0 +1,17 @@
+body {
+    font-size: 20px;
+}
+
+img {
+    border-radius: 100%;
+}
+
+#info {
+    text-align: right;
+    vertical-align: middle;
+}
+
+
+#information{
+    background-color: #A8A8C0;
+}
