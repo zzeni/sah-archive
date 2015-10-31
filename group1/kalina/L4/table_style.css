@@ -1,0 +1,13 @@
+img {
+    width: 250px;  
+    height: 250px;
+    border-radius: 100%;
+    border-left-color: aqua;
+}
+#table-div {
+    text-align: left;
+    display: table-cell;
+}
+#img-div {
+    
+}
