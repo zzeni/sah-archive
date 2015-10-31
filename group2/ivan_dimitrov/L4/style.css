@@ -1,0 +1,92 @@
+img {
+    vertical-align: top;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: lightblue;
+    text-align: center;
+}
+
+table {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    background-color: darkcyan;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 29px;
+    padding-top: 29px;
+}
+
+.about-info td {
+    text-align: left;
+    padding: 5px;
+    vertical-align: top;
+    margin-left: 30;
+    background-color: darkcyan;
+}
+
+.about-info th {
+    text-align: right;
+    padding: 5px;
+    vertical-align: top;
+    margin-left: 30;
+    background-color: darkcyan;
+}
+
+th {
+    font-weight: bold;
+}
+
+.container {
+    display: table;
+}
+
+.photo {
+    display: table-cell;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.main {
+    float: left;
+    background-color: darkcyan;
+    display: inline-table;
+    width: auto;
+    height: auto;
+}
+
+.row {
+    display: table-row;
+}
+
+.main2,
+.about-info {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 29px;
+    padding-top: 29px;
+    display: inline-table;
+    float: right;
+    background-color: darkcyan;
+}
+
+.col1 {
+    list-style-type: none;
+    display: table-cell;
+    padding: 5px;
+    vertical-align: middle;
+    text-align: right;
+    font-weight: bold;
+}
+
+.col2 {
+    list-style-type: none;
+    display: table-cell;
+    padding: 5px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.cell {}
