@@ -1,0 +1,20 @@
+.box {
+    display: table;
+}
+.row {
+    display: table-row;
+}
+.col {
+    display: table-cell;
+    vertical-align: top;
+    text-align: left;
+    font-size: 13px;
+}
+img{
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}
+#about{
+    padding-left: 100px;
+}

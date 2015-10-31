@@ -1,0 +1,72 @@
+body {
+    background-color: beige;
+}
+header {
+    background-color: rgba(18, 155, 0, 0.87);
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    font-family: Helvetica;
+    max-width: 1305px;
+}
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: right;
+    background-color: #77e87c;
+    color: black;
+}
+
+nav a {
+    padding: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+aside {
+    background-color: rgba(18, 155, 0, 0.87);
+    width: 270px;
+    padding: 30px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    color: black;
+    font-size: 22px;
+
+}
+
+aside a {
+    color: black;
+}
+
+section article p {
+    font-size: 18px;
+}
+
+#about, #projects, #contact {
+    padding-left: 360px;
+}
+
+.main .content {
+    padding-right: 330px;
+    overflow: hidden;
+}
+
+.content {
+    float: left;
+    width: 100%;
+    background-color: beige;
+}
+
+footer {
+    width: 100%;
+    background-color: #77e87c;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    position: static;
+}
