@@ -4,26 +4,26 @@ body {
     background-color: azure;
     font-family: 'Open Sans', sans-serif;
 }
-header {
-    background-color:cornflowerblue;
-    color:whitesmoke;
-    min-height: 110px;
-    padding-top: 30px;
-    padding-left: 30px;
+#banner {
     padding-bottom: 30px;
+    min-height: 110px;
+    width: 100%;
+    border-radius: 0%
 }
+
 nav {
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 100%;
+    padding-right: 100px;
+    margin-right: 10px;
+    width: 93%;
     text-align: right;
-    background-color:darkgray; 
-    position:static;
+    background-color:lightgray; 
     font-family: 'Lobster', cursive;
 }
 
 aside {
-    background-color:cadetblue;
+    background-color:#7DBADA;
     width: 200px;
     padding: 30px;
     height: 100%;
@@ -64,7 +64,7 @@ img  {
 
 footer {
     width: 100%;
-    background-color:darkgray;
+    background-color:lightgray;
     text-align: center;
     display: block;
     padding: 15px;
