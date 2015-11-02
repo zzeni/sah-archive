@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	background: #E86F67;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	background: #fff;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+
+h2 {
+	text-align: center;
+}
+
+.center {
+	max-width: 468px;
+	margin: 0 auto;
+}
+
+.image {
+	background: #024134;
+	padding: 0;
+}
+
+.image img {
+	width: 180px;
+	border-radius: 100%;
+}
+
+table tr td:first-child {
+	text-align: right;
+	
+}
+
+table tr td {
+	background: #E56C8B;
+	padding: 0 10px;
+}
+
+table, tr, td {
+	border-collapse: collapse;
+}
+
+.box {
+	display: table;
+}
+
+.table-row {
+	display: table-row;
+}
+
+.image.table-cell {
+	background: #024134;
+	padding: 0;
+}
+
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+	background: #E56C8B;
+}
+
+.about .table-cell {
+	line-height: 46px;
+	padding: 0 10px;
+}
+
+.about ul li:first-child {
+	text-align: right;
+}
