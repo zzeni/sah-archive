@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Kristina Dimitrova</title>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/x-icon" href="portfolio.png" />
+        <script src="script.js"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <h1>Portfolio of Kristina Dimitrova</h1>
+        </header>
+        
+        <aside>
+            <p>Contents:</p>
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+            </ul>
+        </aside>
+        
+        <div id="menu-wrap" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+            <nav class="menu">
+                <ul class="navigation-list">
+                    <li><a href="/">Home</a></li>
+                    <li>
+                        <a href="#about">About <span class="arrow">&#9660;</span></a>
+
+                        <ul class="sub-menu">
+                            <li><a href="#about">Me</a></li>
+                            <li><a href="#">My skills</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Projects<span class="arrow">&#9660;</span></a>
+                        <ul class="sub-menu">
+                            <li><a href="../Portfolio/index.html#project1">Project 1</a></li>
+                            <li><a href="#project2">Project 2</a></li>
+                            <li><a href="#project3">Project 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="current-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+            <section id="contact">
+                <div class="container">
+                <div class="body">
+                    <h2><i class="fa fa-share"></i> Get in touch!</h2>
+                    <form method="post" action="contact/contact.php">
+                        <label>Name</label>
+                        <input name="name" placeholder="Type Here">
+                        
+                        <label>Email</label>
+                        <input name="email" type="email" placeholder="Type Here">
+                        
+                        <label>Message</label>
+                        <textarea name="message" placeholder="Type Here"></textarea>
+
+                        <input id="submit" name="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Copyright &copy; Swift Academy 2015</p>
+        </footer>
+    </body>
+</html>
