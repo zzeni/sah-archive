@@ -27,3 +27,6 @@ legend {
     font-style: italic;
     font-weight: bold;
 }
+span {
+    color: red;
+}

@@ -13,13 +13,13 @@
             Contact me</legend>
 
 
-        <form method="get">
+        <form method="post">
 
             <div class="table">
                 <div class="row">
                     <div class="cell">
                         <i class="fa fa-user"></i>
-                        <label>Your name:</label>
+                        <label>Your name:<span>*</span></label>
                     </div>
                     <div class="cell">
                         <input type="text" name="sender-name" placeholder="Type your name" required>
@@ -31,7 +31,7 @@
                 <div class="row">
                     <div class="cell">
                         <i class="fa fa-envelope-o"></i>
-                        <label>E-mail:</label>
+                        <label>E-mail:<span>*</span></label>
                     </div>
                     <div class="cell">
                         <input type="email" name="email" placeholder="Type your e-mail" required>
@@ -44,7 +44,7 @@
                         <label>Your phone number:</label>
                     </div>
                     <div class="cell">
-                        <input type="text" name="number" placeholder="Type your number" required>
+                        <input type="text" name="number" placeholder="Type your number">
                     </div>
 
                 </div>
@@ -65,11 +65,11 @@
 
                 <div class="row">
                     <div class="cell">
-                        <label>Your message:</label>
+                        <label>Your message:<span>*</span></label>
                     </div>
                     <div class="cell">
 
-                        <textarea name="content" rows="10" cols="30" placeholder="Type your message"></textarea>
+                        <textarea name="content" rows="10" cols="30" placeholder="Type your message" required></textarea>
 
                     </div>
                 </div>
