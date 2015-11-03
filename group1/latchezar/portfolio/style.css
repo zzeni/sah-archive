@@ -135,10 +135,16 @@ legend {
 }
 
 #arrow {
-    max-height: 30px;
-    margin-left: 48%;
+    max-height: 25px;
+    margin-left: auto;
+    opacity: 0.3;
+    transition: 0.5s;
 }
 
+#arrow:hover {
+    opacity: 1;
+    transition 0.5s;   
+}
 footer {
     width: 100%;
     background-color: #77e87c;
