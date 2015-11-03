@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="page-wrap">
+
+        <div id="contact-area">
+
+            <form method="post" action="contactengine.php">
+                <label for="Name">Име</label>
+                <input type="text" name="Name" id="Name" />
+
+                <label for="City">Град</label>
+                <select name="City" name="City" id="City">
+                    <option value="Sofia">София</option>
+                    <option value="Plovdiv">Пловдив</option>
+                    <option value="Varna">Варна</option>
+                    <option value="Burgas">Бургас</option>
+                </select>
+
+                <label for="Email">Електронна поща</label>
+                <input type="text" name="Email" id="Email" />
+
+                <label for="Message">Съобщение</label>
+                <br />
+                <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+                <input type="submit" name="submit" value="Submit" class="submit-button" />
+            </form>
+
+            <div style="clear: both;"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
