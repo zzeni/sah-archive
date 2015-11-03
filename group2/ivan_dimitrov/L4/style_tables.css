@@ -1,0 +1,24 @@
+table tr td:first-child{
+    padding: 5px;
+ 	text-align: right; 
+ 	font-weight: bold; 
+} 
+td{
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13pt;
+    font-family: "Times new roman", serif;
+}
+th {
+    text-align: center;
+    padding: 5px;
+}
+table {
+    background-color:cyan;
+}
+img{
+    border-radius: 100%;
+    width: 150px; 
+ 	height: 150px; 
+}
