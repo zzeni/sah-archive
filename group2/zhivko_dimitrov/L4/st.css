@@ -1,0 +1,26 @@
+01{
+    text-color:green;
+}
+ui {
+    list-style:none:
+    display:table-cell;
+}
+.aqua{
+    color:aqua;
+}
+.about{
+    /*display:inline;*/
+}
+}
+table{
+    padding-left: 200px;
+}
+table tr td {
+    border: 5px green solid;
+    
+}
+ table tr:first-child{
+     background-color: aqua;
+}
+.cool{
+}
