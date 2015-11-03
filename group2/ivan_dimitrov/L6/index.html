@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homework 6</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Example for web form</h1>
+    <h2>How about making it looks like we are going to rent a car =]</h2>
+    <br>
+    <section id="info-input">
+        <h4>Register here!</h4>
+        <form action="./" method="get">
+            <div class="form-group">
+                <label for="user-name">Your name:</label>
+                <input type="text" class="form-control" name="user-name" placeholder="Your Name Here" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" name="email" required placeholder="user@example.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Enter a password:</label>
+                <input type="password" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="prof_pic">Upload a profile picture:</label>
+                <input type="file" class="form-control" name="file">
+            </div>
+            <div class="form-group">
+                <label for="content">Anything to add:</label>
+            </div>
+            <p>
+                <textarea name="content" class="form-control" rows="5" placeholder="enter your message here"></textarea>
+            </p>
+            <p>
+                <input class="btn btn-default" type="reset" value="Reset">
+                <input class="btn btn-default" type="submit" value="Submit">
+            </p>
+            </div>
+        </form>
+    </section>
+
+    <hr>
+
+    <section id="select-inputs">
+        <h4>Choose a car</h4>
+        <form action="./" method="get" class="form-inline">
+            <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox1" value="new"> New Car
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox2" value="use"> Used Car
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox3" value="pre-reg"> Pre-registration
+            </label>
+        </form>
+        <form action="./" method="get" class="form-horizontal">
+            <div class="form-group">
+                <label for="make">Select make:</label>
+                <select name="make" class="form-control" required>
+                    <option value="">--</option>
+                    <option value="option2">Alfa-Romeo</option>
+                    <option value="option3">Audi</option>
+                    <option value="option4">BMW</option>
+                    <option value="option5">Ferrari</option>
+                    <option value="option6">Ford</option>
+                    <option value="option7">Honda</option>
+                    <option value="option8">Mercedes</option>
+                    <option value="option9">Opel</option>
+                    <option value="option10">VW</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="country-select">Select a country:</label>
+                <select name="country-select" class="form-control" required>
+                    <option value="">--</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="FR">France</option>
+                    <option value="ES">Spain</option>
+                    <option value="GR">Germany</option>
+                    <option value="GB">UK</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fuel-type">Select type:</label>
+                <select name="fuel-type" class="form-control" required>
+                    <option value="">--</option>
+                    <option value="petrol">Petrol</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="hybrid">Hybrid</option>
+                </select>
+            </div>
+            <p>
+                <label for="color">Pick a colour:</label>
+                <input type="color" name="color">
+            </p>
+            <p>
+                <label for="features">Features:</label>
+            </p>
+            <p>
+                <input name="extras" type="checkbox" value="clima"> Climatronic
+            </p>
+            <p>
+                <input name="extras" type="checkbox" value="sens"> Parking Sensors
+            </p>
+            <p>
+                <input name="extras" type="checkbox" value="sports"> Sports
+            </p>
+            <p>
+                <label for="date">When do you want to rent the car?</label>
+                <input name="date" type="date">
+            </p>
+            <p>
+                <label for="satisfaction">How do you find our service?</label>
+            </p>
+            <p>
+                <input type="radio" name="satisfaction" value="high"> Great
+                <input type="radio" name="satisfaction" value="low"> Bad
+            </p>
+
+            <p>
+                <input type="submit" name="submit" value="submit">
+            </p>
+
+        </form>
+    </section>
+</body>
+
+</html>
