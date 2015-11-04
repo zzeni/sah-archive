@@ -8,8 +8,9 @@ body {
 
 .col-middle, .col-right {
     background-color: #f2e6b5;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
-
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
