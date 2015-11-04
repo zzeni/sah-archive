@@ -1,0 +1,39 @@
+body {
+    background-color: #ffefdc;
+}
+
+h1 {
+    border-style: solid;
+    border-color: black;
+    max-width: 35%;
+    text-align: center;
+    margin-left: 32.5%;
+}
+
+h2 {
+    border-style: solid;
+    border-color: black;
+    max-width: 20%;
+    text-align: center;
+    margin-left: 40%;
+}
+fieldset {
+    max-width: 35%;
+}
+
+#buton {
+    float: right;
+}
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 0px 20px 0px 20px;
+}
+
+img {
+    border-radius: 100%;
+}

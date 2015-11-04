@@ -1,0 +1,53 @@
+header {
+    background-color: #BA9E89;
+    color: #F7F7DD;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-family: monospace;
+}
+body {
+    font-family: courier;
+    width: 100%;
+}
+nav {
+    background-color: papayawhip;
+    color: #F7F7DD;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;    
+}
+nav a {
+    padding: 5px;
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+img {
+    border: 0;
+    border-radius: 10%;
+}
+aside {
+    background-color: #E3D9A8;
+    color: #F7F7DD;    
+    width: 240px;
+    padding-left: 10px;
+    height: 50%;
+    display: block;
+    position: absolute;
+}
+#about, #projects, #contacts {
+    padding-left: 360px;   
+}
+footer {
+    width: 100%;
+    background-color: bisque;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    position: absolute;
+}
+h3 ul #li {
+    list-style-type: none;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio - Andrey Popov</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+        </head>
+
+<body>
+    <header>
+        <h1>Portfolio of Andrey Popov</h1>
+    </header>
+    <nav>
+        <a href="">About</a>||
+        <a href="">Projects</a>||
+        <a href="">Education</a>||
+        <a href="">Contact</a>
+    </nav>
+    <aside>
+        <p>My Projects:</p>
+        <ul>
+            <li><a href="">FTTB Project</a></li>
+            <li><a href="">Mobile usage tracking system</a></li>
+        </ul>
+        <p>My Positions:</p>
+        <ul>
+            <li><a href="">Interoute</a></li>
+            <li><a href="">Vivacom</a></li>
+        </ul>
+
+    </aside>
+
+    <section id="about">
+        <h2>About me</h2>
+
+        <img src="popov.jpg" alt="Andrey Popov">
+        <ul>
+            <li>Andrey Popov</li>
+            <li>Mobile: +359 888 161977</li>
+            <li>E-mail: a_popov89@abv.bg</li>
+            <li>GitHub profile:
+                <a href="https://github.com/Andrey-89">
+                Andrey-89</a>
+            </li>
+        </ul>
+
+    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <article>
+            <h3>1. FTTB Project</h3>
+            <p>Joint project of the departments "Network operations and architecture" and "Customer Service" with the main goal of increasing the success rate in providing FiberNet and IPTV services.</p>
+        </article>
+        <article>
+            <h3>2. Mobile usage tracking system</h3>
+            <p>Coming soon.</p>
+        </article>
+    </section>
+
+    <section id="contact">
+        <fieldset>
+        <legend>
+            Contact me</legend>
+
+
+        <form method="post">
+
+            <div class="table">
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-user"></i>
+                        <label>Your name:<span>*</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" name="sender-name" placeholder="Type your name" required>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-envelope-o"></i>
+                        <label>E-mail:<span>*</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="email" name="email" placeholder="Type your e-mail" required>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-phone"></i>
+                        <label>Your phone number:</label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" name="number" placeholder="Type your number">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-venus-mars"></i>
+                        <label>Gender:</label>
+                    </div>
+                    <div class="cell">
+                        <select name="sex">
+                            <option value="male" selected>Male</option>
+                            <option value="female">Female</option>
+
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="cell">
+                        <label>Your message:<span>*</span></label>
+                    </div>
+                    <div class="cell">
+
+                        <textarea name="content" rows="10" cols="30" placeholder="Type your message" required></textarea>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <label>Preferred way of contact</label>
+                    </div>
+                    <div class="cell">
+                        <input type="radio" name="contact_way" value="high"><i class="fa fa-phone"></i>By phone
+                        <p>
+                            <input type="radio" name="contact_way" value="low"><i class="fa fa-envelope-o"></i>By e-mail
+                        </p>
+                        <input type="radio" name="contact_way" value="moderate" checked> Both
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell" id="reset">
+                        <input class="buttons" type="reset" value="reset">
+                    </div>
+                    <div class="cell">
+                        <input class="buttons" type="submit" name="submit" value="submit">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </fieldset>
+    </section>
+
+    <footer>Copyright &copy; Swift Academy 2015</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+     
+header {
+  background-color: #FF1493;
+  color: #FF1493
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  font-family: Helvetica;
+}
+
+nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: right;
+  background-color: ivory;
+}
+
+nav a {
+  padding: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+aside {
+  background-color: lightgrey;
+  width: 170px;
+  padding: 30px;
+  height: 100%;
+  display: block;
+  position: absolute;
+
+}
+
+#about, #projects, #contact {
+  padding-left: 360px;
+}
+
+footer {
+  width: 100%;
+  background-color: burlywood;
+  text-align: center;
+  display: block;
+  padding: 15px;
+  position: static;
+}
+body {
+ background-color: peachpuff;
+ }
+
+ h1 {
+ background-color: #FF1493;
+ margin-top: 5px;
+ margin-right: 5px;
+ margin-bottom: 5px;
+ margin-left: 5px;
+ /* equivalent to: margin: 5px 5px 5px 5px; */
+ }
+
+h1 {
+ padding-top: 4px
+ padding-right: 5px;
+ padding-bottom: 5px;
+ padding-left: 10px;
+}
+ h1 {
+ padding: 4px 5px 5px 10px;
+}
+
+h1 {
+ border-top-width: 20px
+ border-right-width: 20px;
+ border-bottom-width: 20px;
+ border-left-width: 20px;
+ border-style: solid;
+ border-color: khaki;
+}
+h1 {
+ border: 20px gray solid;
+}
+
+p { color:#FF69B4; }
+p.groupped { color: #FF69B4; }
+p#unique { color: #F5F5F5; }
