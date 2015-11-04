@@ -1,0 +1,23 @@
+body {
+    background-color: lightyellow;
+    font-family: courier;
+}
+#p01 {
+    color: red;
+}
+#p02 {
+    text-align: center;
+}
+#p03 {
+    color: blue;
+    text-decoration-line: underline;
+}
+#p04 {
+    font-size: 55%;
+}
+#p05 {
+    font-size: 75%;
+}
+img {
+    text-align: left;
+}

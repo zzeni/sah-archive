@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	background: #E86F67;
+	text-align: center;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	background: #fff;
+	overflow: hidden;
+}
+
+.square-image {
+	padding: 10px;
+	border: 1px solid blue;
+	display: inline;
+	height: 100px;
+}
+
+.images img:first-child {
+	border-top: 5px solid blue;
+	border-left: 5px solid blue;
+}
+
+.images img:last-child {
+	border-top: 5px solid blue;
+	border-right: 5px solid blue;
+}
+
+.rounded-image {
+	width: 200px;
+	border-radius: 100%;	
+}
+
+.css-tables {
+	width: 600px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.table {
+	display: table;
+}
+
+.table-cell {
+	display: table-cell;
+	background: #35B55E;
+	width: 300px;
+}
