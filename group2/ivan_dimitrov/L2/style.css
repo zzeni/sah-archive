@@ -1,0 +1,97 @@
+body{
+    background-color: #728eaa;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: serif;
+}
+
+header { 
+    background-color: #D3E2B6; 
+    color: black; 
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    padding-left: 30px;
+    font-family: Helvetica;
+} 
+ 
+nav { 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    width: 100%; 
+    text-align: right; 
+    background-color: #C3DBB4;
+    position: static;
+} 
+ 
+nav a { 
+    padding: 5px; 
+    text-transform: uppercase; 
+    text-decoration: none;
+    background-color: transparent;
+} 
+ 
+aside { 
+    background-color: #AACCB1; 
+    width: 270px; 
+    padding: 30px; 
+    height: 220%;
+    display: block; 
+    position: absolute; 
+}
+
+aside a { 
+    padding: 5px; 
+    text-transform:capitalize; 
+    text-decoration: none;
+    background-color: transparent;
+} 
+
+about{
+    align-content: top;
+    align-content: center;
+}
+
+section{
+    background-color: white;
+    padding: 0px;
+    
+}
+#about, #projects, #contact { 
+    padding-left: 360px; 
+} 
+a:link {
+    color:darkblue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color:indianred;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color:white;
+    font-weight: bold;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.table{
+    display: table
+}
+
+.table-cell{
+    display:table-cell
+}
+footer { 
+    width: 100%; 
+    background-color: #68B3AF; 
+    text-align: center; 
+    display: block; 
+    padding: 15px; 
+    position:static; 
+}

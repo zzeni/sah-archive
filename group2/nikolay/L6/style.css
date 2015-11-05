@@ -1,0 +1,72 @@
+body {
+	margin: 0;
+	background: #E86F67;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	background: #fff;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.center {
+	width: 400px;
+	margin: 0 auto;
+}
+
+p {
+	margin: 0;
+}
+
+form {
+	border: 1px solid black;
+}
+
+.square {
+	width: 50%;
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+input, textarea {
+	margin: 0;
+	padding: 5px;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+.square input {
+	width: 100%;
+}
+
+.country {
+	width: 100%;
+	padding: 4px 0;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+textarea {
+	width: 100%;
+}
+
+.submit {
+	width: 100%;
+	background: #dd3333;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.submit:hover {
+	background: gray;
+}
