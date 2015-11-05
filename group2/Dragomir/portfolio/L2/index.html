@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio - Dragomir Mildov</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
     <link rel="stylesheet" href="Styles/style_mainPage.css">
@@ -13,7 +11,7 @@
     <link rel="stylesheet" href="Styles/style_aboutMe.css">
     <link rel="stylesheet" href="Styles/style_contacts.css">
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-
+    <script src="scripts.js"></script>
 </head>
 <body>
 
@@ -25,9 +23,9 @@
         <h1><i>Portfolio of Dragomir Mildov</i></h1>
     </header>
     <nav>
-        <a class="navItems" href="#" id="about">About</a>
-        <a class="navItems" href="#" id="home">Projects</a>
-        <a class="navItems" href="#" id="contact">Contact</a>
+        <a href="#" id="about">About</a>
+        <a href="#" id="home">Projects</a>
+        <a href="#" id="contact">Contact</a>
     </nav>
 
     <!-- ABOUT ME -->
@@ -119,47 +117,7 @@
             <li class="myContacts">Phone:  0889358720</li>
             <li class="myContacts">E-mail:  drashoo@abv.bg</li>
             <li class="myContacts">Skype:  Dra6o_89</li>
-            <li class="myContacts textCentre"><a href="#" id="contactMe">Contact with me</a></li>
         </ul>
-
-        <div class="contactForm">
-            <form method="post">
-                <div class="row">
-                    <div class="col-md-1 glyphicon glyphicon-user icon"></div>
-                    <div class="col-md-5 padding_5">
-                        <input class="form-control col-md-10" type="text" id="name" placeholder="company name">
-                    </div>
-
-
-                    <div class="col-md-1 glyphicon glyphicon-phone icon"></div>
-                    <div class="col-md-5 padding_5">
-                        <input class="form-control col-md-10" type="text" id="phone" placeholder="your phone">
-                    </div>
-
-
-                    <div class="col-md-1 glyphicon glyphicon-envelope icon"></div>
-                    <div class="col-md-5 padding_5">
-                        <input class="form-control col-md-10" type="email" id="mail" placeholder="your e-mail">
-                    </div>
-
-
-                    <div class="col-md-1 glyphicon glyphicon-map-marker icon"></div>
-                    <div class="col-md-5 padding_5">
-                        <input class="col-md-5 form-control " type="text" id="address" placeholder="address">
-                    </div>
-
-
-
-                    <div class="col-md-1 glyphicon glyphicon-pencil icon"></div>
-                    <div class="col-md-9 padding_5">
-                        <textarea class="form-control" type="text" placeholder="some message to me"></textarea>
-                    </div>
-                    <div class="col-md-2 btnDiv">
-                        <input class="btn btn-default" type="button" value="send">
-                    </div>
-                </div>
-            </form>
-        </div>
     </div>
 
 
@@ -175,58 +133,30 @@
         var aboutLink = $('#about');
         var homeLink = $('#home');
         var contactLink = $('#contact');
-        var contactMe = $('#contactMe');
-        var sendYourInfo = $('.btn');
 
         var aboutMe = $('.aboutMe');
         var home = $('.projects');
         var contacts = $('.contact');
-        var contactForm = $('.contactForm');
-
-
-        var inputName = $('#name');
-        var inputPhone = $('#phone');
-
 
         homeLink.on('click', clickProjects);
         aboutLink.on('click', clickAboutMe);
         contactLink.on('click', clickContacts);
-        contactMe.on('click',showContactForm);
-        sendYourInfo.on('click', hideContactForm);
 
 
         function clickProjects(){
-            home.fadeIn(1000);
             home.css('display', 'block');
             aboutMe.css('display','none');
             contacts.css('display', 'none');
         }
         function clickAboutMe(){
-            aboutMe.fadeIn(1000);
             home.css('display', 'none');
             contacts.css('display', 'none');
             aboutMe.css('display','block');
         }
         function clickContacts(){
-            contacts.fadeIn(1000);
             contacts.css('display', 'block');
             home.css('display', 'none');
             aboutMe.css('display','none');
-        }
-        function showContactForm(){
-            contactForm.slideDown(1000);
-            contactForm.css('display', 'block');
-        }
-        function hideContactForm(){
-
-            if(inputName.val() == ''){
-                alert('input name !');
-            }else if(inputPhone.val() == ''){
-                alert('input phone !');
-            }else{
-                contactForm.slideUp(1000);
-            }
-
         }
     });
 
