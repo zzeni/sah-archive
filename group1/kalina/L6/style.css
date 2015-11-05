@@ -1,0 +1,33 @@
+body {
+    font-family: Verdana;
+}
+
+#red {
+    color: red;
+}
+
+textarea {
+    vertical-align: text-top;
+    width: 100%;
+}
+
+#submit {
+    min-width: 100px;
+    min-height: 50px;
+    background-color: darkgrey;
+}
+
+#box1, #box2  {
+    width: 100%;
+    display: table-cell;
+    max-height: 16px;
+}
+
+#full {
+    display: inline;
+    max-height: 8px;
+}
+
+#box3 {
+    width: inherit;
+}

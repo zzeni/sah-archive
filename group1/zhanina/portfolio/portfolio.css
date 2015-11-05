@@ -1,0 +1,73 @@
+ @import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+    background-color: azure;
+    font-family: 'Open Sans', sans-serif;
+}
+#banner {
+    padding-bottom: 30px;
+    min-height: 110px;
+    width: 100%;
+    border-radius: 0%
+}
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    margin-right: 10px;
+    width: 93%;
+    text-align: right;
+    background-color:lightgray; 
+    font-family: 'Lobster', cursive;
+}
+
+aside {
+    background-color:#7DBADA;
+    width: 200px;
+    padding: 30px;
+    height: 100%;
+    position: absolute;
+    font-family: 'Lobster', cursive;
+}
+
+img  {
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    float: left;
+    border-radius: 100%;
+}
+.box {
+    display: table;
+    width: 200px;
+}
+.row {
+    display: table-row;
+}
+.col {
+    display: table-cell;
+    padding: 0 10px;
+    vertical-align: top;
+    width: 50%;
+    text-align: left;
+}
+#about, #projects, #contact {
+    padding-left: 360px;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+}
+.table {
+    display: table;
+    width: 200px;
+}
+
+footer {
+    width: 100%;
+    background-color:lightgray;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    position: static;
+    font-family: 'Lobster', cursive;
+}
