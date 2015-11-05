@@ -1,0 +1,48 @@
+body {
+    font-size: 15px;
+}
+
+img {
+    border-color:lightgrey;
+    background-color: lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 5px;
+    padding-right: 2px;
+    margin-top: 15px;
+    max-width: inherit;
+    margin-right: 15px;
+}
+
+#info {
+    text-align: right;
+    vertical-align: baseline;
+    font-weight: bold;
+}
+
+#information {
+    background-color: lightgrey;
+  }
+
+#info, #links {
+    display: table-cell;
+    vertical-align: middle;
+    width: 110%;
+}
+
+.about {
+    display: table;
+}
+
+.cell{
+    display: table-cell;
+    vertical-align:text-bottom;
+    background-color: lightgrey;
+}

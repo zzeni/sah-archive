@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Itim;
+    src: url(https://fonts.googleapis.com/css?family=Itim);
+}
+
+body {
+    background-color: beige;
+    font-family: Itim, sans-serif;
+}
+header {
+    background-color: rgba(18, 155, 0, 0.87);
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 100%;
+    text-align: center;
+    max-width: 40%;
+    margin-left: 30%;
+}
+
+nav {
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: right;
+    background-color: #77e87c;
+    color: black;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    padding: 0px 10px 0px 10px;
+    list-style: none;
+}
+
+aside {
+    margin-top: 5px;
+    background-color: rgba(18, 155, 0, 0.87);
+    width: 270px;
+    padding: 30px;
+    height: 130%;
+    display: block;
+    position: absolute;
+    color: black;
+    font-size: 22px;
+}
+
+aside a {
+    color: black;
+}
+
+h2 {
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+section article p {
+    font-size: 18px;
+}
+
+#about, #article, #projects, #contact {
+    padding-left: 360px;
+}
+
+.main .content {
+    padding-right: 330px;
+    overflow: hidden;
+}
+
+.content {
+    float: left;
+    width: 100%;
+    background-color: beige;
+}
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: top;
+    font-size: 25px;
+    padding-left: 30px;
+}
+
+.table-row {
+    display: table-row;
+    vertical-align: top;
+    font-size: 25px;
+}
+
+.fb {
+    border-radius: 0%;
+    max-height: 80px;
+}
+
+#snimka {
+    border-radius: 100%;
+}
+
+.yh {
+    max-height: 30px;
+}
+
+#contact {
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+fieldset {
+    border-radius: 3%;
+    border-color: rgba(18, 155, 0, 0.87);
+}
+
+legend {
+    font-size: 25px;
+}
+
+.button {
+    display: inline;
+    margin: 0px 30px 0px 30px;
+}
+
+.selector {
+    position: fixed;
+    bottom: 0;
+    left: 48%;
+}
+
+#arrow {
+    max-height: 30px;
+    margin-left: 48%;
+}
+
+footer {
+    width: 100%;
+    background-color: #77e87c;
+    text-align: left;
+    display: block;
+    padding: 15px;
+    position: static;
+    z-index: 9999;
+}

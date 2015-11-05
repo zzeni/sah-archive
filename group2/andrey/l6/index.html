@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Web Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            Contact me</legend>
+
+
+        <form method="post">
+
+            <div class="table">
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-user"></i>
+                        <label>Your name:<span>*</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" name="sender-name" placeholder="Type your name" required>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-envelope-o"></i>
+                        <label>E-mail:<span>*</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="email" name="email" placeholder="Type your e-mail" required>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-phone"></i>
+                        <label>Your phone number:</label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" name="number" placeholder="Type your number">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-venus-mars"></i>
+                        <label>Gender:</label>
+                    </div>
+                    <div class="cell">
+                        <select name="sex">
+                            <option value="male" selected>Male</option>
+                            <option value="female">Female</option>
+
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="cell">
+                        <label>Your message:<span>*</span></label>
+                    </div>
+                    <div class="cell">
+
+                        <textarea name="content" rows="10" cols="30" placeholder="Type your message" required></textarea>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <label>Preferred way of contact</label>
+                    </div>
+                    <div class="cell">
+                        <input type="radio" name="contact_way" value="high"><i class="fa fa-phone"></i>By phone
+                        <p>
+                            <input type="radio" name="contact_way" value="low"><i class="fa fa-envelope-o"></i>By e-mail
+                        </p>
+                        <input type="radio" name="contact_way" value="moderate" checked> Both
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell" id="reset">
+                        <input class="buttons" type="reset" value="reset">
+                    </div>
+                    <div class="cell">
+                        <input class="buttons" type="submit" name="submit" value="submit">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </fieldset>
+</body>
+
+</html>
