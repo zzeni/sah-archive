@@ -1,13 +1,24 @@
 section {
-    font-size: 1.5em;
-}
+    font-size: 1em;
+    background-color: azure;
+    }
 
-ul {
-    list-style-type: none;
-    
+img {
+    border-radius: 100%;
+    z-index: 1;
 }
 
 .right {
     text-align: right;
+}
+
+
+@media screen and (min-width: 480px) {
+    section {
+        font-size: 2em;
+        background-color: transparent;
+    }
     
+    .row {
+        background-color: azure;
 }
