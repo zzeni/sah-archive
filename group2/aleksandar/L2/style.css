@@ -1,0 +1,105 @@
+nav {
+    background-color: dimgrey;
+    color: white;
+    float: right;
+    width:100%;
+    text-align: right;
+    height: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px auto;
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+}
+
+aside h4 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0 0 10px;
+}
+
+section h3 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+header {
+    height:50px;
+    
+}
+
+#aside {
+    height: calc(100% - (50px + 30px));
+    width:150px;
+    float:left;
+    background-color: beige;
+}
+
+#aside li, a {
+    margin: 5px 0 5px 10px;
+    font-family: 'Open Sans', serif;
+    color:black;
+}
+
+html, body {
+    height:100%;
+    width:100%;
+    margin: 0px 0px;
+}
+
+#about, #proj, #cont {
+    float:left;
+    width: calc(100% - 150px);
+    border-bottom-style: double;
+    border-bottom-width: medium;
+    border-bottom-color: dimgrey;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#about li {
+    margin: 15px 0 15px 15px;
+}
+
+#about ul {
+    float: left;
+}
+
+#face {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border-style: double;
+    border-color: dimgrey;
+    border-radius: 5px;
+    float: left;
+}
+
+hr {
+    border-style: double;
+}
+footer {
+    position: fixed;
+    bottom:0px;
+    right: 0px;
+    height:20px;
+}
