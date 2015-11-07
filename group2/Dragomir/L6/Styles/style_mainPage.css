@@ -11,10 +11,11 @@ body{
 
 }
 h1{
+    display: block;
     color: black;
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 nav{
     background-color: #989898;
