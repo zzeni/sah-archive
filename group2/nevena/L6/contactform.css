@@ -1,0 +1,15 @@
+body{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.btn-submit{
+	background-color: #FCDDC1;
+	color: #AF714A;
+}
+.btn-submit:hover{
+	color:#FCDDC1;
+	background-color: #AF714A;
+}
+.input-group-addon{
+	background-color: #FCDDC1;
+}
