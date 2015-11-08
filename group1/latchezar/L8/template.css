@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+    font-size: 100%;
+    width: 100%;
+}
+
+}
+a, h1, h2, h3, h4, h5, h6,
+input, textarea, iframe, p, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1.1em;
+}
+
+a { 
+    background-color: transparent;
+}
+
+img {
+    border: 0;
+}
+
+
+header {
+    
+}
+    
+}
+main {
+    display: flex;
+}
+    
+@media screen and (max-width: 768px) {
+    footer {
+        position: static;
+    }
+    
+    body {
+        font-size: 80%;
+        
+}
