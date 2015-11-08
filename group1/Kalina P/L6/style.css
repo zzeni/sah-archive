@@ -1,0 +1,13 @@
+header {
+    background-color: #BEDEE2;
+    color: black;
+    min-height: 80px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-family:monospace;
+}
+form {
+    font-family: monospace;
+    padding-top: 30px;
+}

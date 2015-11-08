@@ -1,0 +1,46 @@
+img {
+    width: 150px;  
+    height: 150px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 5px;
+    z-index: 55;
+    background-color: bisque;
+    backface-visibility: visible;
+    
+}
+
+#main {
+    display: inline;
+    height: 150px;
+}
+
+#main-table {
+    display: inline;
+}
+
+table {
+    padding-left: 20px;
+    align-items: baseline;
+    margin-left: 10px;
+    border-spacing: 0px;
+    margin: 0px;
+}
+
+table th {
+    text-align: right;
+}
+
+table td {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#table-idiot {
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-left: 15px;
+    font-family: "courier monospace";
+    font-size: 16px;
+    line-height: 2em;
+}

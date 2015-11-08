@@ -1,0 +1,19 @@
+#content image {
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: inline;
+}
+
+#list1 ul li {
+    display: inline;
+    list-style-type: none;
+    background-color: azure;
+}
+
+#list2 ul li {
+    dislpay: inline;
+    list-style-type: none;
+    background-color: azure;
+}
