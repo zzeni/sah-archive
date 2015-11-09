@@ -7,100 +7,101 @@
 </head>
 
 <body>
-    <div class="m">
 
-        <form name="register" method="post">
+    <div class="container">
+        <form name="register" method="get">
             <fieldset>
-                <legend>Registration form:</legend>
-                <div class="a">
-                    <div class="l">Last Name</div><div class="r">
-                        <input type="text" name="name">
+                <legend>Registration form</legend>
+                <div class="table">
+                    <div class="row">
+                        <div class="cell-left">Last Name</div>
+                        <div class="cell-right">
+                            <input type="text" name="lname">
+                        </div>
+
+
+                        <div class="cell-left">First Name</div>
+                        <div class="cell-right">
+                            <input type="text" name="fname">
+                        </div>
                     </div>
-                </div>
-                <div class="a">
-                    <div class="l">First Name</div>
-                    <div class="r">
-                        <input type="text" name="name">
+                    <div class="row">
+                        <div class="cell-left">Adress</div>
+                        <div class="cell-right">
+                            <textarea rows="2" cols="30"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="a">
-                    <div class="l">Adress</div>
-                    <div class="r">
-                        <textarea rows="10" cols="10"></textarea>
+                    <div class="row">
+                        <div class="cell-left">City</div>
+                        <div class="cell-right">
+                            <input type="text" name="city">
+                        </div>
                     </div>
-                </div>
-                <div class="a">
-                    <div class="l">City</div>
-                    <div class="r">
-                        <input type="text" name="city">
+                    <div class="row">
+                        <div class="cell-left">ZIP/Postal code</div>
+                        <div class="cell-right">
+                            <input type="number" name="code">
+                        </div>
+
+                        <div class="cell-left">Country</div>
+                        <div class="cell-right">
+                            <select>
+                                <option selected>Bulgaria</option>
+                                <option>Germany</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="l">State</div>
-                    <div class="r">
-                        <input type="number" name="number">
+                    <div class="row">
+                        <div class="cell-left">Phone</div>
+                        <div class="cell-right">
+                            <input type="tel" name="phone">
+                        </div>
+
+                        <div class="cell-left">E-mail</div>
+                        <div class="cell-right">
+                            <input type="email" name="email">
+                        </div>
                     </div>
-                </div>
-                <div class="a">
-                    <div class="l">ZIP/Postal code</div>
-                    <div class="r">
-                        <input type="number">
+                    <div class="row">
+                        <div class="cell-left">Birth date</div>
+                        <div class="cell-right">
+                            <input type="date" name="birth-date">
+                        </div>
+
+                        <div class="cell-left">Gender</div>
+                        <div class="cell-right">
+
+                            <input type="radio" name="sex" value="Male">Male
+                            <input type="radio" name="sex" value="Female">Female
+                        </div>
                     </div>
-                </div>
-                <div class="a">
-                    <div class="l">Country</div>
-                    <div class="r">
-                        <select>
-                            <option selected>Bulgaria</option>
-                            <option>Germany</option>
-                        </select>
+                    <div class="row">
+                        <div class="cell-left">Starting date</div>
+                        <div class="cell-right">
+                            <input type="radio" name="starting-date" value="Spring 2015">Spring 2015
+                            <input type="radio" name="starting-date" value="Summer 2015">Summer 2015
+                        </div>
                     </div>
-                </div>
-                <div class="a">
-                    <div class="l">Phone</div>
-                    <div class="r">
-                        <input type="tel" name="phone">
+                    <div class="row">
+                        <div class="cell-left">Comments/Questions</div>
+                        <div class="cell-right">
+                            <textarea rows="2" cols="30"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="a">
-                    <div class="l">E-mail</div>
-                    <input type="email" name="email">
-                </div>
-                <div class="a">
-                    <div class="l">Birth date</div>
-                    <div class="r">
-                        <input type="date" name="date">
+                    <div class="row">
+                        <div class="cell-left">
+                            <input type="submit" value="submit" name="submit">
+                        </div>
+                        <div class="cell-right">
+                            <input type="reset" name="reset" value="Clean this form">
+                        </div>
                     </div>
-                </div>
-                <div class="a">
-                    <div class="l">Gender</div>
-                    <div class="r">
-                        <select>
-                            <option selected>Male</option>
-                            <option>Female</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="a">
-                    <div class="l">Starting date</div>
-                    <div class="r">
-                        <input type="radio" name="date" value="Spring 2015">Spring 2015
-                        <input type="radio" name="date" value="Summer 2015">Summer 2015
-                    </div>
-                </div>
-                <div class="a">
-                    <div class="l">Comments/Questions</div>
-                    <div class="r">
-                        <textarea rows="10" cols="10"></textarea>
-                    </div>
-                </div>
-                <div class="a">
-                    <div class="r">
-                        <input type="submit" value="submit">
-                        <input type="reset" value="Clean this form"> </div>
                 </div>
 
             </fieldset>
         </form>
     </div>
+
 </body>
 
 </html>
