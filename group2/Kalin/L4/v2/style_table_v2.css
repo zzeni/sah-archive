@@ -1,0 +1,36 @@
+body{
+    margin: 0 auto;
+    font-family: monospace;
+    font-size: 16px;
+}
+table, tr, td{
+    border: 1px black solid;
+    border-collapse: collapse;
+    border-style: none;
+}
+table{
+    background-color: #F1F8FF;
+    width: 630px;
+    
+}
+#image-pleace{
+    background-color: #B6D6E5;
+    width: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+table tr td:first-child{
+    text-align: right;
+    font-weight: bold;
+    padding:0px 10px 0px 10px;
+}
+table tr td:last-child{
+    text-align: left;
+    padding-left: 10px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    vertical-align: text-top;
+}
