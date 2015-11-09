@@ -1,0 +1,14 @@
+body{
+    margin-left: 5%;
+}
+
+.table{
+    vertical-align: middle;
+    background-color: #D9EDF7;
+    max-width: 40%;
+}
+
+.photo img {
+    height: 140px;
+    width: 140px;
+}

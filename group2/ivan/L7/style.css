@@ -1,0 +1,32 @@
+@media screen and (max-width: 480px) {
+    body {
+        background-color: seashell;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+img {
+    margin: 1.7em;
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        margin: .3em;
+    }
+}
+
+.col-lg-4 .row {
+    padding: .7em;
+}
+
+@media screen and (max-width: 480px) {
+    .col-lg-4 .row {
+        padding: .1em;
+        text-align: center;
+    }
+}
