@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Forms Page">
+	<meta name="keywords" content="HTML5 and forms">
+	<meta name="author" content="Hristina Valchanova">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet"  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	
+	<title>My Forms Page</title>
+</head>
+
+<body>
+	<main>
+		<div class="container">
+		<h1>Въпросник</h1>
+			<p>Моля, попълнете необходимата информация!</p>
+			<form action="#" method="POST">
+				<fieldset>
+					<legend>Лична информация</legend>
+					Име:<br>
+					<input type="text" name="firstname" required autofocus>
+					<br>
+					Фамилия:<br>
+					<input type="text" name="lastname" required>
+					<br><br>
+					Пол:<br>
+					<input type="radio" name="sex" value="male" >Мъж
+					<br>
+					<input type="radio" name="sex" value="female">Жена
+					<br><br>
+					Говорими езици<br>
+					<input type="checkbox" name="EN" value="english">Английски<br>
+					<input type="checkbox" name="FR" value="french">Френски<br>
+					<input type="checkbox" name="DE" value="deutch">Немски<br>
+					<input type="checkbox" name="GR" value="greek">Гръцки<br>
+					<input type="checkbox" name="TR" value="turkish">Турски<br>
+					<input type="checkbox" name="IT" value="italian">Италиански<br><br>
+					Държава
+					<select name="country">
+						<option value="BG">България</option>
+						<option value="EN">Великобритания</option>
+						<option value="FR">Франция</option>
+						<option value="GR">Гърция</option>
+						<option value="TR">Турция</option>
+						<option value="SW">Швейцария</option>
+					</select>
+					<br><br>
+					
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email</label>
+						<input type="email" class="form-control col-sm-4" id="exampleInputEmail1" placeholder="Email">
+					</div>
+
+					<br><br>
+					<input type="submit" class="btn btn-primary" value="Submit">
+				</fieldset>
+			</form>
+		</div>
+	</main>
+</body>
+</html>
