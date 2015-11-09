@@ -1,0 +1,120 @@
+header {
+    background-color: bisque;
+    color: brown;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    font-size: 15pt
+}
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    background-color: beige;
+    border-bottom: solid;
+    border-width: thin;
+    border-color: black;
+    font-size: 18pt;
+}
+nav a {
+    padding: 8px;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 18pt;
+    font-family: "Times New Roman", serif;
+}
+aside {
+    background-color: beige;
+    width: 200px;
+    padding: 15px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border-right: solid;
+    border-width: thin;
+    border-color: black;
+    font-size: 15pt;
+    font-family: "Times New Roman", serif;
+}
+aside a {
+    text-decoration: none;
+}
+aside p {
+    margin-top: 0px;
+    text-align: left;
+}
+li {
+    padding-bottom: 15px;
+    list-style-type: none
+}
+#about,
+#projects,
+#contact {
+    padding-left: 245px;
+}
+#contact {
+    padding-top: 50px;
+}
+#about h2 {
+    margin-top: 10px;
+}
+footer {
+    width: 100%;
+    background-color: bisque;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    border-top: solid;
+    border-width: thin;
+    border-color: black;
+    color: brown;
+}
+img {
+    width: 180px;
+    height: 230px;
+    float: left;
+    margin-right: 5px;
+}
+#about ul {
+    font-size: 20pt;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    display: inline;
+}
+.table {
+    display: table;
+}
+.row {
+    display: table-row;
+}
+.cell {
+    display: table-cell;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+label {
+    font-size: 14pt;
+}
+.buttons {
+    font-size: 14pt;
+}
+#reset {
+    text-align: right;
+}
+i {
+    margin: 5px;
+}
+legend {
+    font-size: 20pt;
+    font-style: italic;
+    font-weight: bold;
+}
+span {
+    color: red;
+}
