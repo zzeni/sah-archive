@@ -1,0 +1,7 @@
+.container-fluid, .jumbotron { 
+   background-color: #f6e7d0 !important;
+}
+ 
+#send {
+    text-align: center !important;
+}

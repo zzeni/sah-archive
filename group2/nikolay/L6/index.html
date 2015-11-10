@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>L6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <h1>Form</h1>
+        
+
+        <div class="center">
+            <form action="" method="get">
+                <p class="square"><input type="text" name="firstname" value="First name" required></p>
+                <p class="square"><input type="text" name="lastname" value="Last name" required></p>   
+                <p class="square"><input type="email" name="email" value="your@mail.com" required></p>
+                <p class="square">
+                    <label for="select-country"></label>
+                    <select class="country" name="select-country" required>
+                        <option value="">Select Country</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="FR">France</option>
+                        <option value="ES">Spain</option>
+                        <option value="GR">Greece</option>
+                        <option value="GB">UK</option>
+                    </select>
+                </p>
+
+                <p class="clear"><textarea name="message" id="" cols="30" rows="10">Your message</textarea></p>
+                <p><input class="submit" type="submit" value="Submit"></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

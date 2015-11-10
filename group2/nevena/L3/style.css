@@ -1,0 +1,17 @@
+body{
+	background-color: green;
+}
+h1{
+	background-color: yellow;
+	color: white;
+	margin-top: 30px;
+	margin-right: 50px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+	padding: 20px 10px;
+}
+h2{
+	background-color: red;
+	margin: 40px 30px 20px 10px;
+	padding: 0 20px;
+}

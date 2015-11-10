@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="l6.css">
+  </head>
+   <body>
+        <form action="./" method="post">
+          <p>
+                <label for="sender-name">Your name:</label>
+                <input type="text" name="sender-name">
+          </p>
+          <p>
+            <input type="hidden" value="1" name="my-hidden-field">
+          </p>
+          <p>
+             <label for="password">Enter a password:</label>
+             <input type="password">
+          </p>
+          <p>
+                <label for="email">email:</label>
+                <input type="email" name="email">
+          </p>
+          <p>
+                <label for="content">Your message:</label>
+          </p>
+          <p>
+                <textarea name="content" rows="5">Enter your message here</textarea>
+          </p>
+          <p>
+                <input type="reset" value="reset">
+                <button type="submit" name="submit">SUBMIT</button>
+          </p>
+        </form>
+  </body>
+</html>
