@@ -1,129 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <title>Portfolio - Gabriela Stoilkova</title>
-        <link rel= "stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Portfolio of Gabriela Stoilkova</h1>
-        </header>
-        <nav>
-            <a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
-            <a href="http://coffee.bg"><i class="fa fa-coffee"></i></a>
-            <a href="">about</a> /
-            <a href="#projects">projects</a> /
-            <a href="">contact</a> /
-     </nav>
-<aside>
-    <p>Coments:</p>
-    <ul>
-        <li>
-            <a href="">Atticle 1</a>
-        </li>
-        <li>
-            <a href="">Proj 2</a>
-        </li>
-    </ul>
-    </aside>
-        <section id="about">
-            <h1>About me</h1>
-            <img src="DSCI2179136.jpg"/>
-            <!--  <img>-->
-        <!--  <ul></ul>-->
-            <form action="/api/send-feedback.php">
-    <p>
-        <label for="sender-name">First name:</label>
-        <input type="text" name="firstname" value="Gabriela">
-    </p>
-     <p>
-        <label for="sender-name">Last name:</label>
-        <input type="text" name="lastname" value="Stoilkova">
-    </p>
-      <p>
-        <label for="email">Email:</label>
-        <input type="text" name="email" value="gabriela.stoilkova@gmail.com" size="26">
-    </p>
-      <p>
-         <label for="content">Message:</label>
-      </p>
-    <textarea name="content" rows="6">
-         This is my first web page.
-    </textarea>
-     <p>
-        Select a coutry: <select name="Select a coutry">
-            <option value="Bulgaria">Bulgaria</option>
-            <option value="France">France</option>
-            <option value="Germany">Germany</option>
-            <option value="Italy">Italy</option>
-        </select>
-    </p>
-      <p>
-         <label for="languages">Spoken languages:</label>
-            <br>
-                <input type="radio" name="languages" value="English">English
-            <br>
-                <input type="radio" name"languages" value="Bulgarian">Bulgarian
-            <br>
-                <input type="radio" name"languages" value="French">French
-            <br>
-       </p>
-     <p>
-         Do you like my page?
-         <input type="checkbox" name="page" value="Yes">Yes
-         <input type="checkbox" name="page" value="No">No
-         <input type="checkbox" name="page" value="Maybe">Maybe
-    </p>
-        <p>
-            <label for="password">Enter password:</label>
-            <input type="password" value="0980114">
-    </p>
-      <p>
-            <label for="select file">Select file:</label>
-            <input type="file">
-    </p>
-        <p>
-            <label for="color">Pick a color:</label>
-            <input type="color">
-        </p>
-    <p>
-            <label for="birthday">When is your birthday?</label>
-            <input type="date" value="29.12.1990">
-    </p>
-    <p>
-        <input type="submit" name="submit" value="submit">
-        <input type="reset" name="reset" value="reset">
-    </p>
-</form>
-        </section>
-        <section id="projects">
-             <h1>My projects</h1>
-            <article>
-                <h3> Project 1 Financial market </h3>
-                <p id="uniqueue">A financial market is a market in which people trade financial securities, commodities, and other fungible items of value at low transaction costs and at prices that reflect supply and demand.
-                </p>
-            </article>
-            <article>
-                <h3> Project 2 Financial instrument </h3>
-                <p class="groupped"> Financial instruments are tradable assets of any kind. They can be cash, evidence of an ownership interest in an entity, or a contractual right to receive or deliver cash or another financial instrument.
-                </p>
-            </article>
-            <article>
-                <h3> Project 3 Corporate finance </h3>
-                <p class="groupped">Corporate finance is the area of finance dealing with the sources of funding and the capital structure of corporations and the actions that managers take to increase the value of the firm to the shareholders, as well as the tools and analysis used to allocate financial resources. The primary goal of corporate finance is to maximize or increase shareholder value.
-                </p>
-            </article>
-        </section>
-        <section id="contact">
-            <h1> Contact me </h1>
-        </section>
-        <footer>Copyright &copy; Swift Academy 2015
-        </footer>
-    </body>
-</html>
-                
-                
-        
 
-   
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Portfolio - Gabriela Stoilkova</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <h1>Portfolio of Gabriela Stoilkova</h1>
+    </header>
+    <nav>
+        <a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+        <a href="http://coffee.bg"><i class="fa fa-coffee"></i></a>
+        <a href="">about</a> /
+        <a href="#projects">projects</a> /
+        <a href="../L6/index.html">contact</a> /
+    </nav>
+    <div class="main">
+        <aside>
+            <p>Coments:</p>
+            <ul>
+                <li>
+                    <a href="">Atticle 1</a>
+                </li>
+                <li>
+                    <a href="">Proj 2</a>
+                </li>
+            </ul>
+        </aside>
+        <div class="container">
+            <section id="about">
+                <div class="about">
+                    <div class="cell">
+                        <div id="photo"></div>
+                        <img src="DSCI2179136.jpg" alt="image" style="width:105px;height:105px;">
+                    </div>
+                    <div class="cell" id="information">
+                        <div id="info">
+                            <ul>
+                                <li>Name</li>
+                                <li>Age</li>
+                                <li>Email</li>
+                                <li>Address</li>
+                                <li>Phone number</li>
+                            </ul>
+                        </div>
+
+                        <div id="links">
+                            <ul>
+                                <li>Gabriela Stoilkova</li>
+                                <li>24</li>
+                                <li><a href="gabriela.stoilkova@gmail.com">gabriela.stoilkova@gmail.com</a></li>
+
+                                <li>Street Verila number two</li>
+                                <li>+359 265 369</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section id="projects">
+                <h1>My projects</h1>
+                <article>
+                    <h3> Project 1 Financial market </h3>
+                    <p id="uniqueue">A financial market is a market in which people trade financial securities, commodities, and other fungible items of value at low transaction costs and at prices that reflect supply and demand.
+                    </p>
+                </article>
+                <article>
+                    <h3> Project 2 Financial instrument </h3>
+                    <p class="groupped"> Financial instruments are tradable assets of any kind. They can be cash, evidence of an ownership interest in an entity, or a contractual right to receive or deliver cash or another financial instrument.
+                    </p>
+                </article>
+                <article>
+                    <h3> Project 3 Corporate finance </h3>
+                    <p class="groupped">Corporate finance is the area of finance dealing with the sources of funding and the capital structure of corporations and the actions that managers take to increase the value of the firm to the shareholders, as well as the tools and analysis used to allocate financial resources. The primary goal of corporate finance is to maximize or increase shareholder value.
+                    </p>
+                </article>
+            </section>
+            <section id="contact">
+                <h1> Contact me </h1>
+            </section>
+        </div>
+    </div>
+    <footer>Copyright &copy; Swift Academy 2015
+    </footer>
+</body>
+
+</html>

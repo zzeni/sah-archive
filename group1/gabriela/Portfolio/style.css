@@ -1,90 +1,132 @@
-     
-header {
-  background-color: #FF1493;
-  color: #FF1493
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  font-family: 'Lobster', cursive;
-}
-
-nav {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
-  text-align: right;
-  background-color: darkgray;
-}
-
-nav a {
-  padding: 5px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-aside {
-  background-color: lightgray;
-  width: 170px;
-  padding: 30px;
-  height: 100%;
-  display: block;
-  position: absolute;
-
-}
-
-#about, #projects, #contact {
-  padding-left: 360px;
-}
-
-footer {
-  width: 100%;
-  background-color: lightgoldenrodyellow;
-  text-align: center;
-  display: block;
-  padding: 5px;
-  position: static;
-}
-body {
- background-color: white;
- }
-
- h1 {
- background-color: #FF1493;
- margin-top: 5px;
- margin-right: 5px;
- margin-bottom: 5px;
- margin-left: 5px;
- /* equivalent to: margin: 5px 5px 5px 5px; */
- }
-
-h1 {
- padding-top: 4px
- padding-right: 5px;
- padding-bottom: 5px;
- padding-left: 10px;
-}
- h1 {
- padding: 4px 5px 5px 10px;
-}
-
-h1 {
- border-top-width: 30px
- border-right-width: 30px;
- border-bottom-width: 30px;
- border-left-width: 30px;
- border-style: pink solid;
-font-family: 'Lobster', cursive;
- 
-}
-h1 {
- border:10px lightgray solid;
-}
-
-h3 {
-    font-family: 'Pacifico', cursive;
-}
-
-p { color:#FF69B4; }
-p.groupped { color: #FF69B4; }
-p#unique { color: skyblue; }
-p { font-family: 'Montserrat', sans-serif; }
+     header {
+         background-color: #FF1493;
+         color: #FF1493 padding-top: 15px;
+         padding-bottom: 15px;
+         padding-left: 15px;
+         font-family: 'Lobster', cursive;
+     }
+     nav {
+         padding-top: 20px;
+         padding-bottom: 20px;
+         width: 100%;
+         text-align: right;
+         background-color: darkgray;
+     }
+     nav a {
+         padding: 5px;
+         text-transform: uppercase;
+         text-decoration: none;
+     }
+     .main {
+         width: 100%;
+     }
+     .container {
+         width: 80%;
+     }
+     aside {
+         background-color: lightgray;
+         width: 20%;
+         padding: 30px;
+         height: 100%;
+         display: block;
+         position: absolute;
+     }
+     .about {
+         margin-top: 30px;
+     }
+     img {
+         border-color: lightgrey;
+         background-color: lightgrey;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         margin-bottom: 10px;
+         margin-bottom: 10px;
+         padding-left: 10px;
+     }
+     ul {
+         list-style-type: none;
+         padding-left: 5px;
+         padding-right: 2px;
+         margin-top: 15px;
+         max-width: inherit;
+         margin-right: 15px;
+     }
+     #info {
+         text-align: right;
+         vertical-align: baseline;
+         font-weight: bold;
+     }
+     #information {
+         background-color: lightgrey;
+     }
+     #info,
+     #links {
+         display: table-cell;
+         vertical-align: middle;
+         width: 110%;
+     }
+     .about {
+         display: table;
+     }
+     .cell {
+         display: table-cell;
+         vertical-align: text-bottom;
+         background-color: lightgrey;
+     }
+     #about,
+     #projects,
+     #contact {
+         padding-left: 360px;
+     }
+     footer {
+         width: 100%;
+         background-color: lightgoldenrodyellow;
+         text-align: center;
+         display: block;
+         padding: 5px;
+         position: static;
+     }
+     body {
+         background-color: white;
+     }
+     h1 {
+         background-color: #FF1493;
+         margin-top: 5px;
+         margin-right: 5px;
+         margin-bottom: 5px;
+         margin-left: 5px;
+         /* equivalent to: margin: 5px 5px 5px 5px; */
+     }
+     h1 {
+         padding-top: 4px padding-right: 5px;
+         padding-bottom: 5px;
+         padding-left: 10px;
+     }
+     h1 {
+         padding: 4px 5px 5px 10px;
+     }
+     h1 {
+         border-top-width: 30px border-right-width: 30px;
+         border-bottom-width: 30px;
+         border-left-width: 30px;
+         border-style: pink solid;
+         font-family: 'Lobster', cursive;
+     }
+     h1 {
+         border: 10px lightgray solid;
+     }
+     h3 {
+         font-family: 'Pacifico', cursive;
+     }
+     p {
+         color: #FF69B4;
+     }
+     p.groupped {
+         color: #FF69B4;
+     }
+     p#unique {
+         color: skyblue;
+     }
+     p {
+         font-family: 'Montserrat', sans-serif;
+     }
