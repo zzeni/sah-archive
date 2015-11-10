@@ -45,6 +45,9 @@ aside a {
   color: #BDE4D1;
 }
 
+a:visited {
+    color: whitesmoke;
+}
 #about, #projects, #contact {
   padding-left: 360px;
 }
