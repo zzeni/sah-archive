@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Web form</h1>
+    <form action="send-feedback" class="form-horizontal">
+        <div class="form-group">
+            <lable for="name" class="col-sm-1 control-label">Name:</lable>
+            <div class="col-sm-3">
+                <input type="text" name="name" placeholder="Your name" class="form-control">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-1 control-label">Email</label>
+            <div class="col-sm-3">
+                <input type="email" class="form-control" id="inputEmail3" placeholder=" Your email">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="country-select" class="col-sm-2 control-label">Select your country </label>
+            <select class="col-sm-1 control-label" name="country-select">
+                <option value="BG">Bulgaria</option>
+                <option value="ENG">England</option>
+            </select>
+        </div>
+
+
+        <div class="form-group" id="lang">
+            <label for="languages" class="col-sm-2 control-label">Spoken languages</lable>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="ENG">English
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="BG">Bulgarian
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="DE">German
+                    </label>
+                </div>
+        </div>
+        <div class="col-sm-4 control-label">
+            <label for="info">Do you think there is something wrong in our website?</label>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> Yes
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> No
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> It's suuper cool!
+                </label>
+            </div>
+        </div>
+        <div class="col-sm-9 control-label">
+            <label for="message" id="comment">Comment:</label>
+            <textarea class="form-control" row="3" cols="6" name="message" placeholder="Leave your comment"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</body>
+
+</html>
