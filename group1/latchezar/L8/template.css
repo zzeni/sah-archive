@@ -16,7 +16,6 @@ body {
     width: 100%;
 }
 
-}
 a, h1, h2, h3, h4, h5, h6,
 input, textarea, iframe, p, ul, li {
     margin: 0;
@@ -52,12 +51,10 @@ img {
     border: 0;
 }
 
-
 header {
     
 }
     
-}
 main {
     display: flex;
 }
@@ -69,5 +66,6 @@ main {
     
     body {
         font-size: 80%;
+    }
         
 }
