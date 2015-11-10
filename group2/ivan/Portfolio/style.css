@@ -1,0 +1,145 @@
+body { 
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: #ffffff;
+    color: #4c4c4c;
+    margin: 0 auto;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+header span {
+    color: #508319;
+}
+
+nav {
+    background-color: #508319;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 16px 8px;
+}
+
+nav a { 
+    text-decoration: none;
+    color: white;
+}
+
+#social {
+    top: 30%;
+    right: 0.1%;
+    position: fixed;
+    z-index: 1;
+}
+
+#social img {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+#social img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+#social li {
+    list-style-type: none;
+}
+
+main {
+    display: table-row;
+}
+
+aside, #sections {
+    display: table-cell;
+}
+
+aside {
+    background-color: #e1e0e0;
+    width: 20%;
+    height: 100%;
+    padding: 2%;
+    margin-right: 0;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+aside h3 {
+    padding-left: 18%;
+}
+
+aside ul li {
+    list-style-type: none;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+aside a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+aside a:visited {
+    color: #000000;
+    text-decoration: underline;
+}
+
+aside a:hover, active {
+    background-color: #ffffff;
+    text-decoration: none;
+}
+#sections {
+    background-color: #ffffff; 
+    padding: 2%;
+    text-align: justify;
+    max-width: 60%;
+    height: 100%;
+}
+
+#sections h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+}
+
+#about #articles {
+     display: inline-flex;
+     padding: 2%;
+}
+
+#about #img {
+    padding: 6% 1% 1% 8%;
+}
+
+#about img {
+    max-width: 250px;
+    max-height: 300px;   
+}
+
+#projects {
+    background-color: #e1e0e0;
+    padding: 2%;
+}
+
+#contacts {
+    padding: 2%
+}
+
+#contacts li {
+    list-style-type: none;
+    text-align: justify;
+}
+
+#contacts li a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    clear: both;
+    background-color: #313030;
+    padding: 10px;
+    margin: 0 auto;
+}

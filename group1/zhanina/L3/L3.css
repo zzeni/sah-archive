@@ -1,0 +1,9 @@
+body {
+    background-color: #FF2B00;
+}
+h1 {
+    background-color: #00FF8B;
+    padding: 40px 40px 40px 40px;
+    margin: 20px 30px 20px 30px;
+    border: 30px #F6FF47 solid;
+}

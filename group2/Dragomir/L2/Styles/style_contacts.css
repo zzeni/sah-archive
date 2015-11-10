@@ -1,0 +1,55 @@
+.contact{
+    border: 1px solid #989898;
+    box-shadow: 2px 2px 4px #888888;
+    display: none;
+    background-color: white;
+}
+.myContacts{
+    font-size: 25px;
+    padding: 15px 40px;
+    background-color: silver;
+    margin-bottom: 10px;
+}
+ul li:last-child{
+    padding: 0px;
+}
+.textCentre{
+    text-align: center;
+
+}
+.textCentre:hover{
+    background-color: #989898;
+}
+
+#contactMe{
+    color: #6d0606;
+    display: block;
+    padding: 13px;
+
+}
+
+
+
+
+
+.contactForm {
+    display: none;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: silver;
+}
+.icon{
+    height: 32px;
+    text-align: center;
+    padding-top: 14px;
+    padding-left: 44px;
+}
+.padding_5{
+    padding: 5px;
+}
+.btnDiv{
+    padding-top: 15px;
+}
+.btn{
+    padding: 11px 52px;
+}

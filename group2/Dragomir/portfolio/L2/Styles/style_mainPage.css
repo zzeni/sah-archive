@@ -1,0 +1,35 @@
+body{
+    font-family: sans-serif;
+    background-image: url('bg-tile.png');
+    font-family: "Balthazar", "Droid Serif", serif;
+}
+.wrapper{
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+h1{
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+nav{
+    background-color: #989898;
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+}
+nav a {
+    display: inline-block;
+    padding: 9px 43px 9px 43px;
+    margin: 0px 0px 0px 10px;
+    text-decoration: none;
+    background-color: silver;
+    color: white;
+}
+nav a:hover{
+    background-color: #6d0606;
+}

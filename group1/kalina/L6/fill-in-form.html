@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+   <title>My first fill-in form</title> 
+   <meta charset="UTF-8"> 
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h3>Fill-in form</h3>
+   <p>
+       Dear customer thank you for your interest in our products. We would like to know more about your interests. As well, allow us to send you additional information for new products and promotions we will do in future
+   </p>
+   <p id="red">Please fill-in the form below and press the SUMBIT button</p>
+   <form action="/api/send-feedback.php">
+       <p>
+           <label for="sender-name">Your names</label>
+           <input id="box1" type="text" name="sender-name">
+       </p>
+       <p id="full">
+           <label for="email">Your email</label>
+           <input id="box2" type="text" name="email">
+       </p>
+       <p>
+           <label for="phone-number">Phone number</label>
+           <select>
+               <option>Bulgaria</option>
+               <option>Greece</option>
+               <option>Turkey</option>
+               <option>Macedonia</option>
+               <option>Serbia</option>
+           </select>
+           <input id="box3" type="number" name="phone-number">
+       </p>
+       <p>
+           <label for="content">Leave us a message</label>
+           <textarea name="content" rows="8"></textarea>
+       </p>
+       <p>
+           <input id="submit" type="submit" name="submit" value="SUBMIT">
+       </p>
+    </form>
+    
+</body>
+</html>

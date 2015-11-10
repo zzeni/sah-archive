@@ -1,0 +1,13 @@
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.img-container,
+.info-container {
+    padding: 10px;
+}
+
+.about-container {
+    margin: 30px 0;
+}
