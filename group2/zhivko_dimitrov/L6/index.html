@@ -17,12 +17,14 @@
         <h2><div class="red"><b>Warning!</b></div> Very offensive content! Do not take seriously!
         </h2>
         <form action="send_feedback.php" method="post">
+        
         <p>
             <label for ="name">
                 Name: 
             </label>
         <input type="text" placeholder="Enter Your name here" class="textbox" name= "name">
         </p>
+        
         <p>
             <label for ="Age:">
                 Age: 
@@ -30,24 +32,24 @@
         <input type="text" placeholder="Your Age" class="textbox" name "age">
         </p>
         <p>
-            <label for ="e-mail">
-                e-mail: 
+            <label for ="email">
+                E-mail: 
             </label>
-        <input type="e-mail" placeholder="Enter Your e-mail" class="textbox" name="e-mail">
+        <input type="email" placeholder="Enter Your e-mail" class="textbox" name="e-mail">
         </p>
         <p>
-            <label for ="Phone:">
-                Age: 
+            <label for ="phone:">
+                Phone: 
             </label>
-        <input type="Phone" placeholder="Enter Your phone here" class="textbox" name = "phone">
+        <input type="phone" placeholder="Enter Your phone here" class="textbox" name ="phone">
         </p>
 
         <p>
             <label for="select">
                 Sex?
             </label>
-            <input type="radio" name="select1" value="high" checked>Yes, please!
-            <input type="radio" name="select2" value="low">No, Thanks!
+            <input type="radio" name="select" value="yes" checked>Yes, please!
+            <input type="radio" name="select" value="no">No, Thanks!
         
         </p>
         <label for ="how many">
@@ -63,27 +65,16 @@
         <p>
             Intensity: <input type="range" name="intensity" min="0" max="10">
         </p>
-    <!--<p>
-        <label for ="text">
-            What do You like most?: 
-    
-    </label>
-        <input type="text" placeholder="Your text" class="textbox" name="message">
-
-        </p>
-    
-    -->
+   
         <p>
             <label for"message">
                 Make a comment:
             </label><br>
-    
-        <textarea rows="6" cols="60" name="comment"> Type Your message here</textarea>
-    <!--input type= "selectbox"-->
-        
+            <textarea rows="6" cols="60" name="comment"> Type Your message here</textarea>    
         </p>
-    
+            
         <p>Upload Your photo <input type="file" name="upload"></p><br>
+        
         <p>
             <button type="submit">
                 submit 
