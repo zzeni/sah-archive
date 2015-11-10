@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="about_table.css">
+</head>
+<body>
+	<h3>About me: The table solution</h3>
+	<section>
+		<table>
+			<tr>
+                <td><img src="https://scontent-ams2-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-0/p206x206/12107814_10201136967063107_4455499312356451729_n.jpg?oh=2251e78d8404eee0ac0612ffda0413af&oe=5687B1F1" alt="Nevena"></td>
+				<td class="nasted-table-holder">
+					<table>
+						<tr>
+							<td>Name</td>
+							<td>Maria Ivanova</td>
+						</tr>
+						<tr>
+							<td>Mail</td>
+							<td><a href="mailto:meivanova1990@gmail.com">meivanova1990@gmail.com</a></td>
+						</tr>
+						<tr>
+							<td>GitHub</td>
+							<td><a href="https://github.com/meivanova1990">link</a></td>
+						</tr>
+						<tr>
+							<td>Facebook</td>
+							<td><a href="https://www.facebook.com/maria.ivanova.13.07.2013">link</a></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<p>or visit my portfolio page <a href="">here</a></p>
+	</section>
+</body>
+</html>
