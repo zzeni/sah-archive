@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: _____;
+    background-image: url(______);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+h1, h2, h3, h4, h5, h6 {
+  padding: 10px 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1.1em;
+}
+
+h6 {
+  font-size: 1em;
+}
+______:hover {
+  background-color: #333;
+  transition: background-color 1s;
+}
+pre {
+  overflow: auto;
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+nav {
+    padding-top: ____;
+    padding-bottom: _____;
+    padding-right: _____;
+    margin-right: ______;
+    width: 100%;
+    text-align: _____;
+    background-color:_______; 
+    font-family: _______;
+}
+
+aside {
+    background-color:_____;
+    width: _____;
+    padding: _____;
+    height: 100%;
+    position: absolute;
+    font-family: ____;
+    float: left;
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+img  {
+ _____   
+}
+.box {
+    display: table;
+}
+.row {
+    display: table-row;
+}
+.col {
+    display: table-cell;
+    padding: 0 10px;
+    vertical-align: top;
+    width: 50%;
+    text-align: left;
+}
+#_____ {
+    flex: 4;
+    -webkit-flex: 4;  
+}
+footer {
+    width: 100%;
+    background-color:____;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    position: static;
+    font-family: ____;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 80%;
+  }
