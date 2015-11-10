@@ -1,0 +1,59 @@
+body {
+  background-color: #E2F9DF;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+header {
+  background-color: #BDE4D1;
+  color: #674D5E;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  text-shadow: 2px 2px 8px #E2F9DF;
+}
+
+header h1 {
+  letter-spacing: 2px;
+}
+
+nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: right;
+  background-color: #91ADAF;
+}
+
+nav a {
+  padding: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+aside {
+  background-color: #674D5E;
+  color: #E2F9DF;
+  width: 220px;
+  padding: 30px;
+  height: 100%;
+  display: block;
+  position: absolute;
+
+}
+
+aside a {
+  color: #BDE4D1;
+}
+
+#about, #projects, #contact {
+  padding-left: 360px;
+}
+
+footer {
+  width: 100%;
+  background-color: #74677A;
+  text-align: center;
+  display: block;
+  padding: 15px;
+  position: static;
+}
