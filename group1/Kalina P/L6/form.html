@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Contact Us Here:</h1>
+        </header>
+        <form action="/api/send-feedback.php">
+             <p>
+                <label for="sender-name">Name/Surname:</label>
+                <input type="text" name="sender-name">
+             </p>
+             <p>
+                <label for="email">E-mail:</label>
+                <input type="text" name="email">
+             </p>
+             <p>
+                <label for="content">Message:</label>
+             </p>
+             <p>
+                <textarea name="content" rows="13"></textarea>
+             </p>
+             <p>
+                <input type="submit" name="submit" value="submit">
+             </p>
+            </form>
+    </body>
+</html>

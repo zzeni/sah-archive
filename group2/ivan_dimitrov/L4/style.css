@@ -1,0 +1,48 @@
+.photo img {
+    vertical-align: top;
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+}
+
+.photo {
+    background-color: lightblue;
+    text-align: center;
+}
+
+.info {
+    background-color: aliceblue;
+}
+
+.col {
+    display: table-cell;
+}
+
+.col,
+td {
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.container {
+    display: table;
+}
+
+.row {
+    display: table-row;
+}
+
+.info .container,
+.info table {
+    font-family: monospace;
+    list-style: none;
+    line-height: 1.5;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+.info .col:first-child,
+.info th {
+    text-align: right;
+    font-weight: bold;
+}
