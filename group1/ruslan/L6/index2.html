@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <title>Contact form</title>
+</head>
+
+<body>
+    <form class="cd-form floating-labels">
+        <fieldset>
+            <legend>Контактна форма</legend>
+
+            <div class="icon">
+                <label class="cd-label" for="cd-name">Вашето име</label>
+                <input class="user" type="text" name="cd-name" id="cd-name" required>
+            </div>
+
+            <div>
+                <label class="cd-label" for="cd-city">Град</label>
+                <p class="cd-select icon">
+                    <select class="city">
+                        <option value="0">Избери град</option>
+                        <option value="1">София</option>
+                        <option value="2">Пловдив</option>
+                        <option value="3">Варна</option>
+                        <option value="4">Бургас</option>
+                    </select>
+                </p>
+            </div>
+
+            <div class="icon">
+                <label class="cd-label" for="cd-email">Електронна поща</label>
+                <input class="email error" type="email" name="cd-email" id="cd-email" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+
+            <div class="icon">
+                <label class="cd-label" for="cd-textarea">Вашето запитване</label>
+                <textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Изпрати запитването">
+            </div>
+            
+            <div>
+                <ul class="cd-form-list">
+                    <li>
+                        <input type="checkbox" id="cd-checkbox-1">
+                        <label for="cd-checkbox-1">Съгласен съм с общите условия*</label>
+                    </li>
+                </ul>
+            </div>
+            
+        </fieldset>
+    </form>
+</body>
+
+</html>

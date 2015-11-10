@@ -1,0 +1,15 @@
+body {
+    font-size: 1.6em;
+}
+
+.col-md-2 {
+    background-color: #CCC9B9;
+}
+
+.col-middle, .col-right {
+    background-color: #f2e6b5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
