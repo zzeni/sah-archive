@@ -1,0 +1,96 @@
+
+html, body, main, aside, p, h1, h2, h3, article, section, ul, li, a, footer, nav, header {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 16px;
+}
+header {
+	background-color: gray;
+	color: white;
+
+}
+header h1 {
+	padding: 10px;
+}
+h2 {
+	padding-bottom: 10px;
+	color: white;
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+main aside p, a {
+	color: white;
+	font-weight: bold;
+}
+nav a{
+	color: #fff;
+	text-transform: uppercase;
+}
+nav {
+	width: 80%;
+	background-color: pink;
+	overflow: hidden;
+}
+nav ul{
+	float:right;
+}
+nav ul li {
+	display: inline-block;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+a:hover {
+	color: gray;
+}
+main {
+	padding: 20px 0;
+	box-sizing: border-box;
+}
+
+aside {
+	width: 30%;
+	margin-right: 2%;
+	background-color: #33CCCC;
+	display: inline-block;
+	vertical-align: top;
+}
+.sections-container {
+	width: 67%;
+	display: inline-block;
+}
+article {
+	text-align: justify;
+}
+footer {
+	background-color: gray;
+	text-align: center;
+	color: white;
+	min-height: 15%;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
