@@ -18,6 +18,6 @@ http://zenifytheweb.com/courses/lessons/lesson5/example/index.html
 Т.е., за да направя една bootstrap страница, трябва да използвам само html елементи, на които да им слагате bootstrap класове. Самите класове, можете да видите на тяхния уебсайт:
 http://getbootstrap.com/css/#grid-example-basic
 
-Срокът за това домашно е утре (четвъртък 5.10) вечер.
+Срокът за това домашно е утре (четвъртък 5.11) вечер.
 
 

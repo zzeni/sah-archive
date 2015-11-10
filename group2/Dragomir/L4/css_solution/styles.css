@@ -1,0 +1,40 @@
+h1{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.wrapper{
+    margin: 0 auto;
+    display: table;
+    width: 30%;
+}
+.my-img{
+    width: 26%;
+    float: left;
+    margin-right: 20px;
+}
+.cell_1{
+    font-weight: bold;
+    display: inline-block;
+    height: 100%;
+    text-align: right;
+
+
+}
+.cell_2{
+    display: inline-block;
+    height: 100%;
+    margin-left: 20px;
+
+}
+img{
+    width: 100%;
+
+}
+li{
+    padding-bottom: 37px;
+}
+footer{
+    text-align: center;
+    font-size: 12px;
+}
