@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header {
+    background-color:bisque;
+    color:brown;
+    text-align:left;
+    padding:1px;	 
+}
+nav {
+    line-height:30px;
+    background-color:white
+    height:200px;
+    width:200px;
+    float:right;
+    padding:5px;	      
+}
+nav {
+    line-height:30px;
+    background-color:black
+    height:200px;
+    width:200px;
+    float:left;
+    padding:5px;
+}
+section{
+        line height:30px;
+        background-color:white;
+        height:200px;
+        width:300px;
+        float:right;
+        padding:10px;
+
+}
+footer {
+    background-color:bisque;
+    color:brown;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>My portfolio</h1>
+</header>
+
+<nav>
+<img src="https://scontent-frt3-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11054267_1592897744320110_8103885708961476856_n.jpg?oh=8d3bac3df6a1061ae86207e10eec355c&oe=56B1358B" alt="Mountain View" style="width:200px;height:250px;">
+</nav>
+
+<section>
+<p>Some info about me</p>
+<ul class="b">
+  <li>Name:Peter Tsenov</li>
+  <li>Age:20</li>
+  <li>e-mail:<a href="mailto:peter.v.tsenov@gmail.com">peter.v.tsenov@gmail.com</a></li>
+</ul>
+</section>
+
+<footer>
+<p><b>Thats about me :)</b>
+</footer>
+
+</body>
+</html>
