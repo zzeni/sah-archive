@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>For me</title>
+    <link rel="stylesheet" href="home6.css">
+  </head>
+  <body>
+    <h1>Web forms examples</h1>
+        <section id="text-input">
+            <h1>Text inputs</h1>
+                <form method="post">
+                <p>
+                    <label for="sender-name">Your name:</label>
+                    <input type="text" name="sender-name" value="Maria">
+                </p>
+                <p>
+                    <label for="email">email:</label>
+                    <input type="email" name="email" value="meivanova1990@gmail.com" readonly>
+                </p>
+                <p>
+                    <label for="content">Your message:</label>
+                </p>
+                <p>
+                    <textarea name="content" rows="5">Enter your message here</textarea>
+                </p>
+                <p>
+                    <input type="reset" value="reset">
+                    <input type="submit" name="submit" value="submit">
+                </p>
+        </section>
+        <section id="select-inputs">
+            <h1>Selects</h1>
+                <form action="./" method="get">
+                    <p>
+                        <label for="country-select">Select a country:</label>
+                        <select name="country-select" required>
+                            <option value="">--</option>
+                            <option value="BG" selected>Bulgaria</option>
+                            <option value="ES">Spain</option>
+                            <option value="GR">Germany</option>
+                            <option value="GB">UK</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="languages">Spoken languages:</label>
+                    </p>
+                    <p>
+                        <input name="languages" type="checkbox" value="BG" checked> Bulgarian
+                    </p>
+                    <p>
+                        <input name="languages" type="checkbox" value="ES"> Spanish
+                    </p>
+                    <p>
+                        <input name="languages" type="checkbox" value="GR"> German
+                    </p>
+                    <p>
+                        <input name="languages" type="checkbox" value="GB"> English
+                    </p>  
+                    <p>
+                        <label for="satisfaction">Do you like my page?</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="satisfaction" value="high"> Yes
+                        <input type="checkbox" name="satisfaction" value="low"> No
+                        <input type="checkbox" name="satisfaction" value="moderate" checked> Maybe
+                    </p>
+                    <p>
+                        <input type="submit" name="submit" value="submit">
+                    </p>
+                </form>
+        </section>
+        <section id="special-inputs">
+            <h1>Special inputs</h1>
+                <form method="post">
+                    <p>
+                        <label for="password">Enter a password:</label>
+                        <input type="password">
+                    </p>
+                        <input type="file" name="file">
+                    <p>
+                        <input type="submit" name="submit" value="submit">
+                    </p>
+                </form>
+        </section>
+        <section id="html5-inputs">
+            <h1>HTML5 input types</h1>
+                <form method="post">
+                    <p>
+                        <label for="color">Pick a colour:</label>
+                        <input type="color" name="color" value="#CC0099">
+                    </p>
+                    <p>
+                        <label for="b-day">When is your birthday?</label>
+                        <input name="b-day" type="date">
+                    </p>
+                    <p>
+                        <input type="submit" name="submit" value="submit">
+                    </p>
+                </form>
+        </section>
+  </body>
+</html>
