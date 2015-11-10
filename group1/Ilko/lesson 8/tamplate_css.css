@@ -1,0 +1,65 @@
+html {
+    background-color: ;
+    background-image: ;
+}
+
+body {
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: red;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+
+a {
+    color: blue;
+}
+
+
+img {
+    background: transparent;
+    border: 10px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 1.5em auto;
+    max-width: 100%;
+}
+
+ol, ul {
+	list-style: none;
+    
+header {
+    
+    
+}
+
+aside {
+    
+    
+}
+
+nav {
+    
+    
+}
+
+section {
+    
+    
+}
+
+footer {
+    
+    
+}    

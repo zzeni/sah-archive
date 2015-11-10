@@ -1,0 +1,2 @@
+﻿w3schools.com - web safe font
+font-family: "Times new roman" - слагаме каквички когато името на фонта е от няколко думи

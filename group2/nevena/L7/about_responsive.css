@@ -1,0 +1,11 @@
+.table-responsive, td{
+	background-color: #FCDDC1;
+}
+table table tr td:first-child{
+	text-align: right;
+}
+table tr td img{
+	border-radius: 100%;
+	width: 150px;
+	height: 150px;
+}
