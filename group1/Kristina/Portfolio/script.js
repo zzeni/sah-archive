@@ -11,7 +11,7 @@ $(document).ready(function() {
         if (scrollPosition >= navTopOffset) {
             $("#menu-wrap").addClass("fixed");
         }   else {
-              $("#menu-wrap").removeClass("fixed");  
+              $("#menu-wrap").removeClass("fixed");
         }
     });
  

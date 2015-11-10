@@ -1,0 +1,28 @@
+.table {
+    display: table;
+    background-color:;
+}
+
+.tr {
+    display: table-row
+    background-color: rgba(127, 255, 212, 0.08);
+    margin-left 5px;
+    padding-top: 3px;
+}
+
+.td {
+    display: table-cell;
+    background-color: indianred;
+    margin-left 5px;
+    padding-top: 3px;
+}
+
+.td.second, .td.second .td{
+    background-color: aqua;
+    
+}
+
+.img { 
+     border-radius: 100%;
+}
+
