@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset class="container">
+            <h1>Pleace fill the form to contact me.</h1>
+
+            <fieldset class="content-1">
+                <select name="sex">
+                    <option value="male">Mr.</option>
+                    <option value="female">Mrs.</option>
+                </select>
+                <br>
+                <br>
+                <lable for="name">First name:</lable>
+                <input type="text" name="FirstName" required><span>*</span>
+                <br>
+                <br>
+                <lable for="LastName">Last name:</lable>
+                <input type="text" name="LastName" required><span>*</span>
+                <br>
+                <br>
+                <lable for="email">email:</lable>
+                <input type="email" name="email" required><span class="red">*</span>
+            </fieldset>
+            <fieldset class="content-2">
+                <h3>What are you think about my projects?</h3>
+                <br>
+                <textarea name="message" rows="10" cols="45" placeholder="Type your mesage here.">
+                </textarea>
+                <br>
+                <h3>Do you like the site?</h3>
+                <br>
+                <input type="radio" name="yes" value="yes">Yes
+                <br>
+                <input type="radio" name="no" value="no">No
+                <br>
+                <input type="radio" name="mybe" value="mybe" checked>I don't know
+                <br>
+                <br>
+                <input type="submit">
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+
+</html>
