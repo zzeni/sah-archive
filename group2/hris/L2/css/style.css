@@ -5,7 +5,7 @@ html, body, main, aside, p, h1, h2, h3, article, section, ul, li, a, footer, nav
 }
 
 body {
-	margin: 16px;
+	margin: 3%;
 }
 header {
 	background-color: gray;
@@ -74,6 +74,18 @@ footer {
 	color: white;
 	min-height: 15%;
 	font-weight: bold;
+}
+@media (max-width: 700px){
+	body {
+		margin: 1%;
+	}
+	.sections-container, aside {
+		width:100%;
+	}
+	h1 {
+		font-size: 19px;
+	}
+
 }
 
 

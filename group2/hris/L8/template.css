@@ -8,16 +8,12 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, table, tr, th, td {
 	background: transparent;
 }
 body {
-    font-size: 
-    text-align: 
-    color:
-}
+    font-size: 1em;
+	}
 .container {
     width: 
     margin: 0 auto;
-    text-align: left;
-    position: relative;
-}
+    }
 .clearfloat {
     clear:both;
     height:0;
