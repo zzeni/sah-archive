@@ -1,59 +1,31 @@
-html,
-body {
-    padding: 0;
-    border: 1px solid black;
+form {
+    width: 800px;
 }
 
-fieldset {
-    border: 1px solid black;
-    padding: 10px;
-    width: 500px;
-    margin-top: 10px;
+.table {
+    display: table;
 }
 
-fieldset legend {
-    border: 1px solid purple;
-    color: white;
-    font-family: Verdana;
-    font-weight: normal;
-    font-size: 15px;
-    padding: 5px;
-    border-radius: 3px;
+.row {
+    display: table-row;
 }
 
-
-/*main DIV*/
-
-.m {
-    width: 500px;
-    padding: 20px;
-    height: auto;
-}
-
-
-/*left DIV*/
-
-.l {
-    width: 200px;
-    padding: 0px;
-    margin: 0px;
-    float: left;
+.cell-left {
+    display: table-cell;
     text-align: left;
-}
-
-
-/*right DIV*/
-
-.r {
-    width: 300px;
-    margin: 0px;
-    padding: 0px;
-    float: right;
-    text-align: left;
-}
-
-.a {
-    clear: both;
-    width: 600px;
     padding: 10px;
+    margin: 5px;
+}
+
+.cell-right {
+    display: table-cell;
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+}
+
+legend {
+    text-align: center;
+    margin: 10px;
+    font-size: 25px;
 }
