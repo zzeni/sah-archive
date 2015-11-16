@@ -20,7 +20,7 @@
             var myImmortalityIndex = 99.99;
             var myAge = Math.round(myBirthYear * myImmortalityIndex); //193981
             var mySecretCode = myName.charAt(0) + myAge + myName.charAt(6); // C193981N
-            var result = mySecretCode.split('').reverse().join('');
+            var result = mySecretCode.join('').reverse().split('');
             document.getElementById("norris").value = result;
 
         </script>
