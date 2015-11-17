@@ -1,7 +1,7 @@
 section {
     font-size: 1em;
     background-color: azure;
-    }
+}
 
 img {
     border-radius: 100%;
@@ -21,4 +21,5 @@ img {
     
     .row {
         background-color: azure;
+    }
 }

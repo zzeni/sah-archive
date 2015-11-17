@@ -5,22 +5,9 @@ header {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
-  font-family: Helvetica;
+  font-family: 'Lobster', cursive;
 }
 
-nav {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
-  text-align: right;
-  background-color: darkgray;
-}
-
-nav a {
-  padding: 5px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
 
 aside {
   background-color: lightgray;
@@ -54,6 +41,7 @@ body {
  margin-right: 5px;
  margin-bottom: 5px;
  margin-left: 5px;
+ border-collapse: 40px;
  /* equivalent to: margin: 5px 5px 5px 5px; */
  }
 
@@ -73,12 +61,18 @@ h1 {
  border-bottom-width: 30px;
  border-left-width: 30px;
  border-style: pink solid;
+font-family: 'Lobster', cursive;
  
 }
 h1 {
  border:10px lightgray solid;
 }
 
+h3 {
+    font-family: 'Pacifico', cursive;
+}
+
 p { color:#FF69B4; }
 p.groupped { color: #FF69B4; }
 p#unique { color: skyblue; }
+p { font-family: 'Montserrat', sans-serif; }
