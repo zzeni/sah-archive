@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lesson 6 homework</title>
+    <meta charset="UTF 8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>lesson six homework</h1>
+    <h2>Contact form</h2>
+    <hr>
+    <div class="table"></div>
+    <form action="/api/send-feedback.php" method="post">
+        <p>
+            <label for="sender-name">First name:</label>
+            <input type="text" name="firstname" placeholder="type here">
+        </p>
+        <p>
+            <label for="sender-name">Last name:</label>
+            <input type="text" name="lastname" placeholder="type here">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="type here" size="26">
+        </p>
+        <p>
+            <label for="content">Message:</label>
+        </p>
+        <textarea name="content" rows="6">
+            This is my first web page.
+        </textarea>
+        <hr>
+        <p>
+            Select a coutry:
+            <select name="Select a coutry">
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Italy">Italy</option>
+            </select>
+        </p>
+        <p>
+            <label for="languages">Spoken languages:</label>
+            <br>
+            <input type="radio" name="languages" value="English">English
+            <br>
+            <input type="radio" name "languages" value="Bulgarian">Bulgarian
+            <br>
+            <input type="radio" name "languages" value="French">French
+            <br>
+        </p>
+        <p>
+            Do you like my page?
+            <input type="checkbox" name="page" value="Yes">Yes
+            <input type="checkbox" name="page" value="No">No
+            <input type="checkbox" name="page" value="Maybe">Maybe
+        </p>
+        <hr>
+        <p>
+            <label for="password">Enter password:</label>
+            <input type="password" value="0980114">
+        </p>
+        <p>
+            <label for="select file">Select file:</label>
+            <input type="file">
+        </p>
+        <p>
+            <label for="color">Pick a color:</label>
+            <input type="color">
+        </p>
+        <p>
+            <label for="birthday">When is your birthday?</label>
+            <input type="date" value="29.12.1990">
+        </p>
+        <p>
+            <input type="submit" name="submit" value="submit">
+            <input type="reset" name="reset" value="reset">
+        </p>
+    </form>
+</body>
+
+</html>

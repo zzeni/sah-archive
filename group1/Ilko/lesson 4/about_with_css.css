@@ -1,10 +1,11 @@
 .table {
     display: table;
-    background-color:;
+    background-color: blue;
+    vertical-align: middle;
 }
 
 .tr {
-    display: table-row
+    display: table-row;
     background-color: rgba(127, 255, 212, 0.08);
     margin-left 5px;
     padding-top: 3px;

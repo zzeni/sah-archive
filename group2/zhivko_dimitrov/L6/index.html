@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Optional theme -->
+<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"-->
+        <!-- Latest compiled and minified CSS -->
+<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="mystyle.css">   
+        <title> Form Application
+        </title>
+
+    </head>
+    <body>
+        <h1>Application Form</h1>
+        <h2><div class="red"><b>Warning!</b></div> Very offensive content! Do not take seriously!
+        </h2>
+        <form action="send_feedback.php" method="post">
+        
+        <p>
+            <label for ="name">
+                Name: 
+            </label>
+        <input type="text" placeholder="Enter Your name here" class="textbox" name= "name">
+        </p>
+        
+        <p>
+            <label for ="Age:">
+                Age: 
+            </label>
+        <input type="text" placeholder="Your Age" class="textbox" name="age">
+        </p>
+        <p>
+            <label for ="email">
+                E-mail: 
+            </label>
+        <input type="email" placeholder="Enter Your e-mail" class="textbox" name="e-mail">
+        </p>
+        <p>
+            <label for ="phone:">
+                Phone: 
+            </label>
+        <input type="phone" placeholder="Enter Your phone here" class="textbox" name ="phone">
+        </p>
+
+        <p>
+            <label for="select">
+                Sex?
+            </label>
+            <input type="radio" name="select" value="yes" checked>Yes, please!
+            <input type="radio" name="select" value="no">No, Thanks!
+        
+        </p>
+        <label for ="how many">
+            How many times? 
+        </label>
+        <select name="how many" required>
+            <option value=""></option>
+            <option value="1">one time</option>
+            <option value="2">two times</option>
+            <option value="3">three times</option>
+            <option value="4">You are addicted!</option>
+        </select>
+        <p>
+            Intensity: <input type="range" name="intensity" min="0" max="10">
+        </p>
+   
+        <p>
+            <label for="message">
+                Make a comment:
+            </label><br>
+            <textarea rows="6" cols="60" name="comment"> Type Your message here</textarea>    
+        </p>
+            
+        <p>Upload Your photo <input type="file" name="upload"></p><br>
+        
+        <p>
+            <button type="submit">
+                submit 
+            </button>
+        </p>
+        <input type="button" onclick="alert('Yeaaah!')" value="Click Me!"><br><br>
+    </form>  
+
+        <a href="https://www.facebook.com/zhivko.dimitrov.92" >
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+        </a>
+        <a href="https://www.linkedin.com/profile/view?id=AAMAABLjhFgB647qtIDqq5GXYNrR6pDwQDxzSK4&trk=hp-identity-name">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+            </span>
+        </a>
+        <a href="https://github.com/cozhiv/"><span class="fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span></a>
+</body>
+</html>
