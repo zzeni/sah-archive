@@ -44,3 +44,15 @@ table td {
     font-size: 16px;
     line-height: 2em;
 }
+
+.table {
+    display: table;
+}
+
+.tr {
+    display: table-row;
+}
+
+.td, .th {
+    display: table-cell;
+}

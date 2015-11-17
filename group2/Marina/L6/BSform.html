@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="BSform.css">
+    <title>Registartion form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Registration form<img src="emo.jpg" alt="image.htm"></h1>
+        <form class="form-horizontal" method="post">
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control" id="lname">
+            </div>
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control" id="fname">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea class="form-control" id="address" rows="10" cols="15" placeholder="Enter your address, please."></textarea>
+            </div>
+
+            <div class="form-group">
+                <lable for="city">City</lable>
+
+                <input type="text" class="form-control" id="city">
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+
+                <input type="text" class="form-control" id="state">
+            </div>
+
+            <div class="form-group">
+                <label for="postcode"> ZIP/Postal code</label>
+                <input type="number" class="form-control" id="code">
+
+            </div>
+            <div class="form-group">
+                <label for="country"> Country</label>
+
+                <select name="cities" class="form-control" id="cities">
+                    <option>Bulgaria</option>
+                    <option>Germany</option>
+                        <option>UK</option>
+                        <option>France</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label for="phone"> Phone</label>
+
+                <input type="tel" class="form-control" id="phone">
+
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+
+                <input type="email" class="form-control" id="mail" placeholder="Enter your email">
+
+
+            </div>
+            <div class="form-group">
+                <label for="bdate">Birth date</label>
+
+                <input type="date" class="form-control" id="bdate">
+
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+
+                <select class="form-control" id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comments/Question</label>
+
+                <textarea class="form-control" id="comments" rows="10" cols="15" placeholder="Please leave your comments, but....only if you are going to send something nice and funny :)"></textarea>
+            </div>
+            <div class="form-group">
+
+                <input type="button" value="submit" class="btn btn-success">
+                <input type="button" value="Clear this form" class="btn btn-danger">
+            </div>
+    </form>
+    </div>
+
+
+</body>
+
+</html>
