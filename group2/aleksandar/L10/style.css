@@ -1,0 +1,13 @@
+.form-horizontal {
+	padding: 0px;
+	margin: 20px 0px 0px 0px;
+}
+
+.form-group {
+	margin-left: 30px;
+}
+
+label {
+	display: block;
+	margin-left: 10px;
+}
