@@ -1,9 +1,8 @@
 table {
-    width: 600px;
-    height: 200px;
     font-family: "Libre Baskerville", serif;
     border-collapse: collapse;
     background-color: beige;
+	float:left;
 }
 
 img {
@@ -11,6 +10,8 @@ img {
     height: 200px;
     border-radius: 100%;
 }
+
+/*
 
 .table-img {
     width: 200px;
@@ -31,4 +32,4 @@ a,
 .col2 {
     text-decoration: none;
     color: dimgrey;
-}
+}*/
