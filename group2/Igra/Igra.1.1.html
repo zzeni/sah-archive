@@ -9,7 +9,7 @@
 
 <body>
     <h1>Web form</h1>
-    <form action="http://zenifytheweb.com/api/game/start" class="form-horizontal">
+    <form action="http://zenifytheweb.com/api/game/start" class="form-horizontal" method="post">
         <div class="form-group">
             <label for="name" class="col-sm-1 control-label">Name:</label>
             <div class="col-sm-3">
@@ -19,14 +19,14 @@
 
 
         <div class="form-group">
-            <label for="inputEmail3" class="col-sm-1 control-label">Email</label>
+            <label for="email" class="col-sm-1 control-label">Email:</label>
             <div class="col-sm-3">
-                <input type="email" class="form-control" id="inputEmail3" placeholder=" steven.popov@abv.bg">
+                <input type="email" class="form-control" id="inputEmail3" name="email" placeholder=" steven.popov@abv.bg">
             </div>
         </div>
         <div class="col-sm-4 control-label">
             <label for="message" id="comment">Comment:</label>
-            <textarea class="form-control" rows="3" cols="6" name="message" placeholder="Game"></textarea>
+            <textarea class="form-control" rows="3" cols="6" name="message" placeholder="game"></textarea>
         </div>
         <div id="button">
         <button type="submit" class="btn btn-primary">Submit</button>
