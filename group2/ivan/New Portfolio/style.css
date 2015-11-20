@@ -1,0 +1,87 @@
+* {
+box-sizing: border-box;
+}
+html { 
+    height: 100%; 
+}
+
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strong, sub, sup, tt, var,
+b, u, i, input, textarea,
+dl, dt, dd, ol, ul, li,
+article, aside, footer, header, nav, section,
+time, mark, {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+/* Reset End */
+
+body {
+    margin-top: 3.57em;
+    background: #eadf74;
+}
+
+.header-image {
+    width: 100%;
+    background: url(/pics/cover.jpg) no-repeat left bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.headline {
+    padding: 16.43em 0;
+    text-align: center;
+}
+
+.headline h1 {
+    font-size: 9.3em;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.headline h2 {
+    font-size: 5.5em;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.feature-divider {
+    margin: 4.3em 0;
+    border: 0;
+    height: 0.07em;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.send {
+    text-align: center;
+}
+
+.footer {
+    padding: 2.14em auto;
+    font-size: 1.43em;
+    vertical-align: text-top;
+}
+@media screen and (max-width: 42.86em) {
+    .footer { 
+        text-align: center;
+    }
+    .footer span {
+        display: block;
+        width: 100%;
+    }
+}
