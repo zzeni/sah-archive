@@ -26,6 +26,13 @@ nav a {
     font-size: 1.5em;
 }
 
+
+
+.img { 
+     border-radius: 100%;
+}
+
+
 main {
     display: flex;
     display: -webkit-flex;
