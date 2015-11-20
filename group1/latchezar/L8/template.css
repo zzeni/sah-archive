@@ -8,6 +8,8 @@ html {
 
 body {
     position: absolute;
+    top: 0;
+    bottom: 0;
     margin: 0;
     padding: 0;
     border: 0;
@@ -52,12 +54,54 @@ img {
 }
 
 header {
-    
+    background-color: #606060; 
+    padding: 15px 0px 15px 0px;
+}
+
+header h1 {
+    padding: 10px 10px 10px 30px;
 }
     
 main {
+    height: 100%;
     display: flex;
+    display: -webkit-flex;
 }
+
+aside {
+    flex: 1;
+    -webkit-flex: 1;
+    background-color: #464646;
+}
+
+.container-seciton {
+    flex: 4;
+    -webkit-flex: 4;
+    background-color: #ffffff;
+}
+
+nav {
+    background-color: #464646;
+    width: 100%;
+    display: inline-block;
+    padding: 7px 0px 7px 0px;
+}
+
+ul {
+    float: right;
+}
+
+li {
+    display: inline;
+    padding: 0px 5px 0px 5px;
+}
+
+footer {
+    background-color: #939292;
+    width: 100%;
+    height: 35px;
+}
+
     
 @media screen and (max-width: 768px) {
     footer {
