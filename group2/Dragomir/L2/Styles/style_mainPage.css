@@ -22,7 +22,7 @@ nav{
     text-align: right;
     text-transform: uppercase;
 }
-nav a {
+.navItems{
     display: inline-block;
     padding: 9px 43px 9px 43px;
     margin: 0px 0px 0px 10px;
@@ -30,6 +30,12 @@ nav a {
     background-color: silver;
     color: white;
 }
-nav a:hover{
+.navItems:hover{
     background-color: #6d0606;
+    color: white;
+    text-decoration: none;
+}
+.navItems:visited{
+    text-decoration: none;
+    color: white;
 }

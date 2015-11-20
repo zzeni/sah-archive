@@ -1,0 +1,37 @@
+.aboutMe{
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #989898;
+    box-shadow: 2px 2px 4px #888888;
+}
+.rightSection{
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 15px;
+}
+.name{
+    text-decoration: none;
+    font-style: italic;
+}
+.myImg{
+    border: 2px solid #888888;
+    width: 200px;
+    display: inline-block;
+    float: left;
+}
+.myInfoBlock{
+    padding: 10px;
+    border: 2px solid #e6e6e6;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px #888888;
+}
+.titleInfoBlock{
+    padding: 25px 0px 10px 0px;
+    display: block;
+
+}
+.myInfoList{
+
+}
