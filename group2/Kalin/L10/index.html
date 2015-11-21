@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Send to .. </h1>
+        <form action="http://zenifytheweb.com/api/game/start" method="post">
+            <br>
+            <lable for="name">Your name:</lable>
+            <br>
+            <input type="text" name="name">
+            <br>
+            <lable for="email">email:</lable>
+            <br>
+            <input type="email" name="email">
+            <br>
+            <lable for="email">Message:</lable>
+            <textarea name="message" rows="8" cols="35" placeholder="Tipe your message here.."></textarea>
+            <br>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
