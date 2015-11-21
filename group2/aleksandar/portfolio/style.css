@@ -1,12 +1,27 @@
+html, body {
+    height:100%;
+    font-family: 'Open Sans', serif;
+    width:100%;
+    color:black;
+    margin: 0px 0px;
+}
+body {
+	background-image: url(images.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 nav {
     background-color: dimgrey;
-    color: white;
+    color: beige;
     float: right;
     width:100%;
     text-align: right;
     height: 30px;
     padding-top: 3px;
     padding-bottom: 3px;
+	background: none;
 }
 
 a {
@@ -16,6 +31,7 @@ a {
 
 nav li {
     display: inline;
+	
 }
 
 nav a {
@@ -37,6 +53,7 @@ h1 {
 aside h4 {
     font-family: 'Open Sans', sans-serif;
     margin: 10px 0 0 10px;
+	background-color: beige;
 }
 
 section h3 {
@@ -45,32 +62,26 @@ section h3 {
 }
 
 header {
-    height:50px;
-    
+	height: 50px;
 }
 
-#aside {
-    height: calc(100% - (50px + 30px));
-    width:150px;
-    float:left;
-    background-color: beige;
+div {
+	background-color: beige;
 }
 
 #aside li, a {
-    margin: 5px 0 5px 10px;
-    font-family: 'Open Sans', serif;
-    color:black;
+    text-decoration: none
+
 }
 
-html, body {
-    height:100%;
-    width:100%;
-    margin: 0px 0px;
+#aside {
+/*    height: calc(100% - (50px + 30px + 20px));*/
+	background-color: beige;
 }
+
+
 
 #about, #proj, #cont {
-    float:left;
-    width: calc(100% - 150px);
     border-bottom-style: double;
     border-bottom-width: medium;
     border-bottom-color: dimgrey;
@@ -81,9 +92,6 @@ html, body {
     margin: 15px 0 15px 15px;
 }
 
-#about ul {
-    float: left;
-}
 
 #face {
     margin-left: 25px;
@@ -91,9 +99,20 @@ html, body {
     border-style: double;
     border-color: dimgrey;
     border-radius: 5px;
-    float: left;
+	
 }
 
+.cont1 {
+	display: -webkit-flex;
+	display: flex;
+}
+.left-side {
+	width: 200px;
+}
+.right-side {
+	-webkit-flex: 1;
+	flex: 1;
+}
 hr {
     border-style: double;
 }
@@ -102,4 +121,21 @@ footer {
     bottom:0px;
     right: 0px;
     height:20px;
+}
+
+.cont2 {
+    
+    display: flex;
+	align-items: center;
+}
+
+
+.flex-item1 {
+	
+    flex: 3;
+}
+
+.flex-item2 {
+	
+    flex: 5;
 }

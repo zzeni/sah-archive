@@ -1,0 +1,32 @@
+Един малко ресеян девелопър седнал да пише уеб форма. Но така и не успял да се сети как е синтаксисът на различните полета и в крайна сметка объркал всичко.
+
+Опитай се да коригираш грешките му и изпрати формата към http://zenifytheweb.com/api/game/continue
+
+  <form action="get">
+    <h3>Моля, попълвай само на латиница!</h3>
+    <p>
+      <label for="answer_1">Коя година е основана българската държава?</label>
+      <br>
+      <input type="checkbox" id="number" placeholder="???" name="answer_1" readonly>
+    </p>
+
+    <p>
+      <label for="answer_2">Кой е най-високият връх в Стара планина?</label>
+      <br>
+      <input type="email" placeholder="????" name="answer_2" required>
+    </p>
+
+    <p>
+      <label for="answer_3">Кое диво животно е изкуствено "внесено" през 20ти век в България?</label>
+      <br>
+      <input type="radio" name="answer_1" val="broun"> кяфява мечка
+      <br>
+      <input type="radio" name="answer_2" val="black"> черна мечка
+      <br>
+      <input type="radio" name="answer_3" val="lynx"> рис
+    </p>
+
+    <p>
+      <input type="button" value="Изпрати">
+    </p>
+  </form>

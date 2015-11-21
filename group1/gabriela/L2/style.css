@@ -2,9 +2,9 @@
 header {
   background-color: #FF1493;
   color: #FF1493
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
   font-family: Helvetica;
 }
 
@@ -13,7 +13,7 @@ nav {
   padding-bottom: 20px;
   width: 100%;
   text-align: right;
-  background-color: ivory;
+  background-color: darkgray;
 }
 
 nav a {
@@ -23,7 +23,7 @@ nav a {
 }
 
 aside {
-  background-color: lightgrey;
+  background-color: lightgray;
   width: 170px;
   padding: 30px;
   height: 100%;
@@ -38,14 +38,14 @@ aside {
 
 footer {
   width: 100%;
-  background-color: burlywood;
+  background-color: lightgoldenrodyellow;
   text-align: center;
   display: block;
-  padding: 15px;
+  padding: 5px;
   position: static;
 }
 body {
- background-color: peachpuff;
+ background-color: white;
  }
 
  h1 {
@@ -68,17 +68,17 @@ h1 {
 }
 
 h1 {
- border-top-width: 20px
- border-right-width: 20px;
- border-bottom-width: 20px;
- border-left-width: 20px;
- border-style: solid;
- border-color: khaki;
+ border-top-width: 30px
+ border-right-width: 30px;
+ border-bottom-width: 30px;
+ border-left-width: 30px;
+ border-style: pink solid;
+ 
 }
 h1 {
- border: 20px gray solid;
+ border:10px lightgray solid;
 }
 
 p { color:#FF69B4; }
 p.groupped { color: #FF69B4; }
-p#unique { color: #F5F5F5; }
+p#unique { color: skyblue; }
