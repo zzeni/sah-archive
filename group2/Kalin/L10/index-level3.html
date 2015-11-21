@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+</head>
+    
+<body>
+    <div class="container">
+        <h1>Send to </h1>
+        <form action="http://zenifytheweb.com/api/game/continue" method="post">
+            <input type="hidden" name="key" value="1448132312">
+            <br>
+            <lable for="name">Your name:</lable>
+            <br>
+            <input type="text" name="name">
+            <br>
+            <lable for="email">email:</lable>
+            <br>
+            <input type="email" name="email">
+            <br>
+            <br>
+            <lable for="text">Occupation:</lable>
+            <br>
+            <input type="text" name="occupation">
+            <br>
+            <br>
+            <lable for="eyes_color">What color are your eyes?</lable>
+            <br>
+            <input type="color" name="eyes_color">
+            <br>
+            <br>
+            <!--<lable name="message">Message:</lable>
+            <br>
+            <textarea name="message" rows="8" cols="35" placeholder="Tipe your message here.."></textarea>
+            <br>-->
+            <lable name="photo">Upload youre photo.</lable>
+            <br>
+            <br>
+            <input type="file" name="photo">
+            <br>
+            <input type="submit" value="Submit">
+            <br>
+        </form>
+    </div>
+</body>
+    
+</html>

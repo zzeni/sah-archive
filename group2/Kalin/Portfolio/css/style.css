@@ -1,108 +1,44 @@
 @import url(https://fonts.googleapis.com/css?family=Architects+Daughter);
-header {
-    background-color: #3B342C;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-}
-header h1{
-    color:  #FFEEC9;
-    font-family: 'Architects Daughter', cursive;
-    font-weight: 400;
-    font-size: 300%;
-}
-body{
+body {
     margin: 0 auto;
-    background-color: #FFEEC9;
-    height: 800px;
+}
+
+header,
+main,
+footer,
+nav,
+aside,
+.container,
+.container-section, .row-1{
+    border: 3px black solid;
+    border-color: red;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
     width: 100%;
-    overflow: scroll;
+    height: 600px;
 }
-nav{
-    background-color: #89844A;
-    text-align: right;
-    width: 100%;    
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+aside {
+    flex: 1;
+    width: 100px;
+    height: 100%;
 }
-nav a:hover{
-    background-color: #D7C587;
+
+.container-section {
+    flex: 2;
+    width: 100px;
+    height: 100%;
 }
-nav a{   
-    padding: 10px;   
-    color: #FFEEC9;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-aside{
-    background-color: #D7C587;
-    width: 270px;
-    height: 111%;
-    padding: 30px;
-    display: block;
-    position: absolute;     
-}
-aside ul, ul li a{
-    padding: 10px;
-    text-decoration: none;
-    color: #3B342C;
-    list-style-type: none;
-    font-size: 20px;
-    width: 290px;   
-}
-aside ul li{
-    margin-left: 200px
-    width: 200px;
-    padding: 10px 10px 10px;
-}
-aside ul li:hover{
-    background-color: #3B342C;    
-}
-aside ul li a:hover{
-    font-weight: bolder;
-    font-size: 24px;
-    color: #FFEEC9;
-}
-#about{
-    display: inline-block;
-    padding-left: 350px;
-}
-#about img{
+
+.box-image {
+    border: 1px green solid;
     width: 200px;
     height: 200px;
-    float:left;
-    margin-top: 20px;
 }
-#about #contentAbout img{
-    width: 20px;
-    height: 20px;
-    margin-top: 0px;
-}
-#contentAbout {
-    float: right;
-    font-size: 20px;
-    margin-left: 20px;
-    width: 600px;
-}
-#projects, #contact{
-    padding-right: 20px;
-    padding-left: 350px;   
-}
-#about ul{
-    list-style-type: none;   
-}
-#about ul a{
-    text-decoration: none;
-    
-}
-#about ul a:hover {
-    color: #3B342C;   
-}
-footer{
-    background-color: #3B342C;
-    color: #FFEEC9;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: center;
-    clear: both;
-}
+
+
+/*style about */
+/* ********* */
