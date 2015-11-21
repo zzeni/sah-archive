@@ -6,6 +6,8 @@ img {
 
 
 p {
-    padding-top: 20px;
-    
+    padding-top: 17px;
+    font-size: 17px;
+    font-style: oblique;
+    border-bottom-style:groove; 
 }
