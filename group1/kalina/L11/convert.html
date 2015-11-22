@@ -1,28 +1,31 @@
 <!doctype html>
 <html>
+
 <head>
-	<title>Convert string into array</title>
+    <title>Convert string into array</title>
 </head>
 
 <body>
-	
-<p>If you press the button, first and last letter of the text will switch</p>
-<p id="demo">Text</p>
-<button type="button" onclick="mySwitch(txt)">Press it!</button>
-			
 
-<script>
-	
-function mySwitch(txt) {
-	var spl = txt.split("");
-	spl[0] = txt.charAt(txt.length-1);
-	spl[txt.length-1] = txt.charAt(0);
-	return spl.join("")
-}	
-	
-document.getElementById("demo").innerHTML = mySwitch(txt);
+    <p>If you press the button, first and last letter of the text will switch</p>
+    <input type="text" id="demo-input" value="Text">
+    <button type="button" onclick="triggerMySwitch()">Press it!</button>
+    <p id="demo"></p>
 
-</script>
+    <script>
+        function mySwitch(txt) {
+            var spl = txt.split("");
+            spl[0] = txt.charAt(txt.length - 1);
+            spl[txt.length - 1] = txt.charAt(0);
+            return spl.join("")
+        }
 
-	</body>
+        function triggerMySwitch() {
+            var text = document.getElementById("demo-input").value;
+            document.getElementById("demo").innerHTML = mySwitch(text);
+        }
+    </script>
+
+</body>
+
 </html>
