@@ -6,14 +6,17 @@
   <meta name="author" content="Evgenia Manolova">
   <title>Lesson 12 examples</title>
 
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
   <style>
     * {
       box-sizing: border-box;
     }
 
     body {
-      font-size: 12px;
-      font-family: fantasy;
+      font-size: 14px;
+      font-family: Lato, sans-serif;
+      line-height: 22px;
       margin: 30px;
     }
 
@@ -58,9 +61,9 @@
       font-size: 1.2em;
     }
 
-    .person-container p {
+    .person-container .info-container {
       padding: 20px;
-      height: 80px;
+      height: 160px;
       overflow-y: scroll;
     }
   </style>
@@ -101,23 +104,27 @@
         var result = "";
         var age = this.calcAge();
 
+        result = "<p><b>Name: </b>" + this.name + "</b><br>";
+        result += "<b>Birth date: </b>" + this.birthdate.toDateString() + "</b></p>";
+
+        result += "<p>";
+
         if (age < 0) {
-          result = this.name + " is not born yet..";
+          result += this.name + " is not born yet..";
         } else if (age > 100) {
-          result = this.name + " is immortal!";
+          result += this.name + " is immortal!";
         } else {
-          result = this.name + " is " + age + " years old.";
+          result += this.name + " is <b>" + age + "</b> years old.";
         }
 
         if (this.hasBirthDayToday) {
           result += "<br>" + this.name + " has a birthday today!! :)";
         }
 
+        result += "</p>";
+
         return result;
       }
-
-      console.log(this.calcAge());
-    }
 
     /*
       Here we use some event handling for the dynamic part of our page.
@@ -140,7 +147,8 @@
         var nameContainer = document.createElement('h4');
         nameContainer.innerHTML = person.name;
 
-        var infoContainer = document.createElement('p');
+        var infoContainer = document.createElement('div');
+        infoContainer.className = 'info-container';
         infoContainer.innerHTML = person.toString();
 
         var personContainer = document.createElement('div');
