@@ -5,4 +5,4 @@ var firstChar = short[0];
 var lastChar = short[short.length - 1];
 var between = short.slice(1, 2);
 var result = lastChar.concat(between).concat(firstChar);
-alert(result);
+window.alert(result);
