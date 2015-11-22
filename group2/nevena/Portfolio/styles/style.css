@@ -1,0 +1,91 @@
+/*CSS Reset*/
+html, body{
+	margin: 0;
+	padding: 0;
+}
+/*end CSS Reset*/
+
+/*Fonts*/
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Slabo 27px', serif;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+/*End fonts*/
+
+.tb{
+  display: table;
+  table-layout: fixed;
+}
+.table-cell{
+  display: table-cell;
+}
+header {
+  background-color: #AF714A;
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  font-family: Helvetica;
+}
+nav{
+    background-color: #E5AD8A;
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+nav .glyphicon{
+  margin-right: 5px;
+}
+nav a {
+  padding: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	color: #AF714A;
+}
+aside {
+  background-color: #FCDDC1;
+  width: 240px;
+  padding: 30px;
+  height: 100%;
+  display: block;
+}
+ul li{
+	list-style-type: square;
+}
+#about, #projects, #contact {
+  padding-left: 20px;
+}
+
+footer {
+  width: 100%;
+  background-color: #E5AD8A;
+  text-align: center;
+  display: block;
+  padding: 15px 0;
+  position: static;
+}
+/*Contact Form*/
+form{
+  padding-bottom: 20px;
+}
+.btn-submit{
+  background-color: #FCDDC1;
+  color: #AF714A;
+}
+.btn-submit:hover{
+  color:#FCDDC1;
+  background-color: #AF714A;
+}
+.input-group-addon{
+  background-color: #FCDDC1;
+}
