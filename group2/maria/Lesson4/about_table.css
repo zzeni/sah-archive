@@ -1,5 +1,5 @@
 .nasted-table-holder{
-	background-color: #FCDDC1;
+	background-color: lightgreen;
 }
 table table tr td:first-child{
 	text-align: right;
@@ -14,7 +14,7 @@ table tr td img{
 	height: 150px;
 }
 table tr td{
-	background-color: #E5AD8A
+	background-color: limegreen;
 }
 td.nasted-table-holder td{
 	background: none;

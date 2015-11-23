@@ -51,7 +51,7 @@ header {
 
 #aside {
     height: calc(100% - (50px + 30px));
-    width:150px;
+    width:15%;
     float:left;
     background-color: beige;
 }
@@ -70,7 +70,7 @@ html, body {
 
 #about, #proj, #cont {
     float:left;
-    width: calc(100% - 150px);
+    width: 85%;
     border-bottom-style: double;
     border-bottom-width: medium;
     border-bottom-color: dimgrey;

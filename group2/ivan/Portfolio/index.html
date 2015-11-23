@@ -1,21 +1,37 @@
-<!Doctype html>
-<html>
-  <head>
-    <title>Portfolio - Ivan Onchev</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Name of the page</title>
+    <!--<meta name="description" content="">-->
+    <!--<link rel="shortcut icon" href="/favicon.ico">-->
+    <meta name="Ivan Onchev" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!--Font Awasome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-  </head>
+</head>
+
   <body>
     <header id="home">
       <h1>Portfolio of <span>Ivan Onchev</span></h1>
-    </header>
-    <nav>
+        <nav>
       <a href="#home">Home</a> |
       <a href="#about">About</a> |
       <a href="#projects">Projects</a> |
       <a href="#contacts">Contacts</a>
     </nav>
+    </header>
+    
     <div id="social">
       <ul>
         <li><a href="https://github.com/gaFace" target="_blank"><img src="github.png"></a>               </li>
@@ -26,12 +42,10 @@
     <main>
       <aside>
         <h3>Projects</h3>
-        <ul>
-          <li><a href="">Skeleton HTML5</a></li>
-          <li><a href="">CSS Layout</a></li>
-          <li><a href="">The Colors</a></li>
-          <li><a href="">The Fonts</a></li>
-        </ul>
+          <a href="">Skeleton HTML5</a>
+          <a href="">CSS Layout</a>
+          <a href="">The Colors</a>
+          <a href="">The Fonts</a>
       </aside>
       <div id="sections">
         <section id="about">
@@ -93,19 +107,39 @@
         <hr>
         <br>
         <section id="contacts">
-          <h3>Contacts</h3>
-          <article>
-            <ul>
-              <li>Ivan Onchev</li>
-              <li>Telephone: 0886703615</li>
-              <li><a href="mailto:onchevivan@gmail.com"><em>Mail me here!</em></a></li>
-            </ul>
-          </article>
-        </section>
-        <br>
-        <hr>
-        <br>
-      </div>
+          <div class="container-fluid">
+        <div class="jumbotron">
+            <h2>CONTACT</h2>
+            <form action="#" method="post">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                        <br>
+                        <div class="row">
+                            <div id="send" class="col-md-12 form-group">
+                                <button type="submit" class="btn btn-default"><i class="fa fa-paper-plane fa-2x"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <p>Contact me and I will respond as soon as I can.</p>
+                        <p><span><i class="fa fa-map-marker fa-lg"></i></span> Sofia, BG</p>
+                        <p><span><i class="fa fa-mobile fa-lg"></i></span> +359 555-8888-55</p>
+                        <p><span><i class="fa fa-envelope fa-lg"></i></span> onchevivan@gmail.com</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+            
     </main>
     <footer>
       Copyright &copy; Ivan Onchev
