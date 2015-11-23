@@ -1,12 +1,12 @@
 function calcAge(input) {
-    var inputMod = input.split('-').join(',');
+    var inputMod = new Date(input);
     var birthDate = new Date(inputMod);
     var currentDate = new Date();
     var yourAge = currentDate.getFullYear() - birthDate.getFullYear();
-    var mounth = currentDate.getMonth() - birthDate.getMonth();
+    var month = currentDate.getMonth() - birthDate.getMonth();
     var day = currentDate.getDate() - birthDate.getDate();
 
-    if ((mounth == 0 && day == 0) && (yourAge >= 0)) {
+    if ((month == 0 && day == 0) && (yourAge >= 0)) {
         return "Happy Birthday!";
     } else if (yourAge > 100) {
         return "You are immortal";
@@ -16,6 +16,9 @@ function calcAge(input) {
         }
         return "You will be on " + (yourAge * (-1));
     } else {
+        if ((month <= 0 && day <= 0) && (yourAge >= 0)) {
+            return "Your age is " + (yourAge - 1);
+        }
         return "Your age is " + yourAge;
     }
 }
