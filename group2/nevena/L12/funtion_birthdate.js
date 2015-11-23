@@ -14,24 +14,27 @@ function calcAge(birthdate){
         var mdBd = monthBd + " " + dateBd;
 
         var age = yearNow - yearBd;
-        console.log(age);
 
-          if(mdBd === mdNow){
-            console.log("Happy birthday!");
-          }
-          else if(monthBd < monthNow){
+        if(mdBd === mdNow){
+          console.log("Happy birthday!");
+        }
+        else if(monthBd < monthNow){
+          console.log("1 year more!");
+        }
+        else if(monthBd == monthNow){
+          if (dateBd < dateNow) {
             console.log("1 year more!");
           }
-          else if(monthBd == monthNow){
-            if (dateBd < dateNow) {
-              console.log("1 year more!");
+            else{
+              age = age - 1;
+              console.log("You have time to your birthday!");
             }
-              else{
-                console.log("You have time to your birthday!");
-              }
-          }
-          else{
-            console.log("You have time to your birthday!");
-          }
+        }
+        else{
+          age = age - 1;
+          console.log("You have time to your birthday!");
+        }
+        console.log(age);
+        return age;
 }
-calcAge("1988-12-30");
+calcAge("12-30-1988");
