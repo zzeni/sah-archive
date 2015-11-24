@@ -92,23 +92,17 @@
             this.hasBirthDayToday = true;
         } else if (yourAge > 100) {
             result = yourAge;
-            this.hasBirthDayToday = false;
         } else if (yourAge <= 0) {
             if (yourAge == 0) {
                 result = yourAge;
-                this.hasBirthDayToday = false;
             }
                 result = yourAge * (-1);
-                this.hasBirthDayToday = false;
         } else {
             if ((month <= 0 && day <= 0) && (yourAge >= 0)) {
                 result = (yourAge - 1);
-                this.hasBirthDayToday = false;
             }
             else{
                 result = yourAge;
-                this.hasBirthDayToday = false;
-    
             }
         }
         
