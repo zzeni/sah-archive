@@ -1,0 +1,32 @@
+.table {
+    display: table;
+}
+.row {
+    display: table-row;
+}
+.cell {
+    display: table-cell;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+label {
+    font-size: 14pt;
+}
+.buttons {
+    font-size: 14pt;
+}
+#reset {
+    text-align: right;
+}
+i {
+    margin: 5px;
+}
+legend {
+    font-size: 20pt;
+    font-style: italic;
+    font-weight: bold;
+}
+span {
+    color: red;
+}

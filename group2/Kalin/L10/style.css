@@ -1,0 +1,24 @@
+body {
+    margin: 0 auto;
+}
+
+.container {
+    background-color: aliceblue;
+    width: 50%;
+    height: 600px;
+    border: 1px black solid;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+lable,
+input,
+textarea {
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+textarea {}
