@@ -6,7 +6,9 @@
 body {
     background-color: beige;
     font-family: Itim, sans-serif;
+    margin: 0px 0px 0px 0px;
 }
+
 header {
     background-color: rgba(18, 155, 0, 0.87);
     color: black;
@@ -40,20 +42,17 @@ ul {
 }
 
 aside {
-    margin-top: 5px;
+    flex: 1;
+    -webkit-flex: 1;
     background-color: rgba(18, 155, 0, 0.87);
-    width: 270px;
-    padding: 30px;
-    height: 130%;
-    display: block;
-    position: absolute;
     color: black;
     font-size: 22px;
 }
 
-aside a {
-    color: black;
+aside h2 {
+    color: beige;
 }
+    
 
 h2 {
     font-size: 35px;
@@ -64,13 +63,15 @@ section article p {
     font-size: 18px;
 }
 
-#about, #article, #projects, #contact {
-    padding-left: 360px;
+main {
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    -webkit-display: flex;
 }
 
-.main .content {
-    padding-right: 330px;
-    overflow: hidden;
+.section-container {
+    flex: 4;
+    -webkit-flex: 4;
 }
 
 .content {
@@ -81,6 +82,10 @@ section article p {
 
 .table {
     display: table;
+}
+
+section {
+    margin-left: 15px;
 }
 
 .table-cell {
@@ -143,14 +148,15 @@ legend {
 
 #arrow:hover {
     opacity: 1;
-    transition 0.5s;   
+    transition: 0.5s;
 }
+
 footer {
     width: 100%;
     background-color: #77e87c;
     text-align: left;
     display: block;
-    padding: 15px;
+    padding: 15px 0 15px 0;
     position: static;
     z-index: 9999;
 }

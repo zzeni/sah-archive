@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>L10</title>
+	<meta name="author" content="Nikolay Kolev" />
+	<meta name="description" content="From homework" />
+	<meta name="Copyright" content="Nikolay Kolev" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="my.js"></script>
+	<!-- Twitter -->
+	<meta name="twitter:card" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:url" content="">
+	<!-- Facebook -->
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+</head>
+
+<body>
+
+<header>
+	<h1>Homework 10</h1>	
+</header>
+
+<div class="wrapper">
+	<section id="playing-the-game">
+	    <form action="http://zenifytheweb.com/api/game/continue" method="post">
+	      <p>
+	        Type your key, please:
+	        <input type="text" name="key" value="">
+	      </p>
+	      <p>
+	        Let the JS to generate this:
+	        <input id="javascript-rocks" type="text" name="javascript-rocks" readonly>
+	      </p>
+	      <p>
+	        <input type="submit" value="Go!">
+	      </p>
+	    </form>
+
+	    <script>
+	      var myVar = "let's keep it simple".length;
+	      var myOtherVar = 213 % 36 - 5 * 3;
+	      if (myVar == myOtherVar) {
+	        myVar += 1;
+	      } else {
+	        myVar = myOtherVar;
+	      }
+
+	      var myDate = new Date;
+	      myVar *= myDate.getFullYear() - Number(7);
+
+	      /*
+	        The following code will update the value of the `javascript-rocks' field
+	        with the result from the calculation above. It uses the JS object `document'
+	        to access arbitrary elements in our html code by their id tag.
+	        HINT: It doesn't contain the error, look for it in the calculations! ;)
+	      */
+	      document.getElementById("javascript-rocks").value = myVar;
+	    </script>
+
+  	</section>
+</div>
+
+</body>
+</html>
