@@ -6,7 +6,7 @@ function calcAge(dateString) {
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
-    if (age == 0 && today.getFullYear() == birthDate.getFullYear() && today.getMonth() == birthDate.getMonth() && today.getDate() == birthDate.getDate()) {
+    if (today.getMonth() == birthDate.getMonth() && today.getDate() == birthDate.getDate()) {
         age += " Happy Birthday";
     }
     if (today.getFullYear() < birthDate.getFullYear() || today.getMonth() < birthDate.getMonth() || today.getDate() < birthDate.getDate()) {

@@ -86,7 +86,7 @@
     if (m < 0 || (m === 0 && today.getDate() < birthdate.getDate())) {
         result--;
     }
-    if (result == 0 && today.getFullYear() == birthdate.getFullYear() && today.getMonth() == birthdate.getMonth() && today.getDate() == birthdate.getDate()) {
+    if (today.getMonth() == birthdate.getMonth() && today.getDate() == birthdate.getDate()) {
         
         this.hasBirthDayToday = true;
     }
