@@ -5,18 +5,22 @@ function tellAge(birth) {
    var curr_year = today.getFullYear();
 
    var pieces = birth.split('-');
-   var birth_date = pieces[0];
-   var birth_month = pieces[1];
-   var birth_year = pieces[2];
+   var birth_date = Number(pieces[0]);
+   var birth_month = Number(pieces[1]);
+   var birth_year = Number(pieces[2]);
+   var result;    
 
 
-   if (curr_month == birth_month && curr_date == birth_date) return console.log("Happy Birthday!");
-   if (curr_year < birth_year) return console.log("You are not born yet!");
-   if (birth_year < 1900) return console.log("Chuck Norris, is that you?!?");
-   if (curr_month == birth_month && curr_date >= birth_date) return parseInt(curr_year-birth_year);
-   if (curr_month == birth_month && curr_date < birth_date) return parseInt(curr_year-birth_year-1);
-   if (curr_month > birth_month) return parseInt(curr_year-birth_year);
-   if (curr_month < birth_month) return parseInt(curr_year-birth_year-1);
+   if (curr_month == birth_month && curr_date == birth_date) result = "Happy Birthday!";
+   else if (curr_year < birth_year || (curr_year == birth_year && curr_month < birth_month) || 
+                                        (curr_year == birth_year && curr_month == birth_month && curr_date < birth_date)) result = "You are not born yet!";
+   else if (birth_year < 1900) result = "Chuck Norris, is that you?!?";
+   else if (curr_month == birth_month && curr_date > birth_date) result = curr_year - birth_year;
+   else if (curr_month == birth_month && curr_date < birth_date) result = curr_year - birth_year - 1;
+   else if (curr_month > birth_month) result = curr_year - birth_year;
+   else if (curr_month < birth_month) result = curr_year - birth_year - 1;
+    
+    console.log(result);
  
    
 }
