@@ -1,4 +1,4 @@
-function swapLetters(text) {
+function swapLetters() {
     
     var short = "";
     short.charAt(0);
