@@ -7,9 +7,9 @@ function getAge(birth) {
     var now_year = today.getFullYear();
 
     var pieces = birth.split('-');
-    var birth_date = pieces[2];
-    var birth_month = pieces[1];
-    var birth_year = pieces[0];
+    var birth_date = Number(pieces[2]);
+    var birth_month = Number(pieces[1]);
+    var birth_year = Number(pieces[0]);
 
     if (now_month === birth_month && now_date > birth_date && birth_year > 1910) {
         return alert("You are " + (now_year - birth_year) + " years old.");
