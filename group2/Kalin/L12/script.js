@@ -1,3 +1,4 @@
+"use strict";
 function calcAge(input) {
     var inputMod = new Date(input);
     var birthDate = new Date(inputMod);
