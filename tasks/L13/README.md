@@ -1,15 +1,15 @@
-## Урок 11
+## Урок 13
 
 ### Задание за домашна работа
 
 Здравейте, 
 
-Има безплатен курс на Code schools за Javascript, преминаването му ще бъде домашно 11:
+Задачата ви е да направите бонус задачата от домашно 12 (https://github.com/zzeni/swift-academy-homeworks/blob/master/tasks/L12/bonus_task.md), като използвате вашата собствена функция, която смята възрастта на човек.
 
-http://javascript-roadtrip.codeschool.com/  
-http://javascript-roadtrip-part2.codeschool.com/
+Също така, разгледайте примера с draggable, който правихме в час:
+https://gist.github.com/zzeni/540bb1dad0b697399210
 
-Направете и двете части (като от втората минете първо ниво, т.е. до там докъдето е безплатно ;))
+Ако ви остане време, направете примерна имплементация на таб навигация или scrollspy навигация, като се използва някой от разгледаните методи (pure JS, jQuery, jQueryUI, jQuery plugins, Bootstrap.js)
 
 Поздрави!
 Жени
