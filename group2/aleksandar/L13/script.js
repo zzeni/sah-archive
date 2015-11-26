@@ -4,14 +4,14 @@ function createPerson(e) {
 	e.preventDefault();
 //	name = document.getElementById('name').value;
 //	birth_date = document.getElementById('inp').value;
-//	
 	
-	var p1 = new Person(document.getElementById('name').value, document.getElementById('inp').value);
+	
+	var P1 = new Person(document.getElementById('name').value, document.getElementById('inp').value);
 //	this.name = document.getElementById('name').value;
 //	this.birth_date = document.getElementById('inp').value;
 	
 	
-	console.log(p1);
+	console.log(P1);
 }
 
 
