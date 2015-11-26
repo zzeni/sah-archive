@@ -6,17 +6,14 @@ function tellAge(dateofbirth) {
     var date = today.getDate() - birthDate.getDate();
     if (month < 0 || (month === 0 && today.getDate() < birthDate.getDate())) {
         age--;
-  }
-    else if (age < 0) {
+    } else if (age < 0) {
         return "Are you from the future?";
     }
     if (age > 99) {
         return "You are ancient!";
-    }
-    else if (month == 0 && date == 0) {
+    } else if (month == 0 && date == 0) {
         return "Happy Birthday!";
-    }
-    else {
+    } else {
         return age;
     }
 }
