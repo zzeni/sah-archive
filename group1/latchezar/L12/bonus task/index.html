@@ -80,24 +80,15 @@
             this.birthdate = new Date(birthdate);
             this.hasBirthDayToday = false;
 
-            this.calcAge = function calcAge(birthdate) {
+            this.calcAge = function calcAge() {
                 var result = 0;
                 var today = new Date();
-                var dob = new Date(birthdate);
+                var dob = new Date(this.birthdate);
                 var age = today.getFullYear() - dob.getFullYear();
                 var month = today.getMonth() - dob.getMonth();
                 var date = today.getDate() - dob.getDate();
                 if (month < 0 || (month === 0 && today.getDate() < dob.getDate())) {
                     age--;
-                } else if (age < 0) {
-                    result = "Are you from the future?";
-                }
-                if (age > 99) {
-                    result = "You are ancient!";
-                } else if (month == 0 && date == 0) {
-                    result = "Happy Birthday!";
-                } else {
-                    result = age;
                 }
 
                 /*
@@ -112,7 +103,7 @@
 
                   Good luck! :)
                 */
-                return result;
+                return age;
             }
 
             /*
@@ -129,9 +120,9 @@
                 result += "<p>";
 
                 if (age < 0) {
-                    result += this.name + " is not born yet..";
+                    result += this.name + " are you from the future?";
                 } else if (age > 100) {
-                    result += this.name + " is immortal!";
+                    result += this.name + " you are ancient!";
                 } else {
                     result += this.name + " is <b>" + age + "</b> years old.";
                 }
@@ -176,8 +167,7 @@
                 personContainer.appendChild(nameContainer)
                 personContainer.appendChild(infoContainer);
 
-                /*document.getElementById("people").appendChild(personContainer);
-                people.push(person);*/
+                document.getElementById("people").appendChild(personContainer);
             });
         }, false);
     </script>
