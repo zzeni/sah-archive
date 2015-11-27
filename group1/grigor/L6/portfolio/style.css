@@ -1,19 +1,24 @@
-
 header{
-    background-color:chocolate;
-    color:white; 
-    padding-top: 30px;
+    background-color:gold;
+    color: blue; 
+    padding-top: 5px;
     padding-bottom: 30px;
     padding-left: 30px; 
-    font-family:serif;
-    width: 100%;
+    width: 98%;
+    height: 50px
+}
+
+p, li, h1, h3, h4, a, label, input  {
+    font-family: 'Comfortaa', cursive,;
 }
 
 nav {
+    border-radius: 50%;
+    margin-top: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    text-align: right;
-    background-color:darkgrey;
+    text-align: center;
+    background-color:lightblue;
     width: 100%;
 }
 
@@ -24,12 +29,13 @@ nav a {
 }
 
 aside {
-    background-color:lightgray;
     width: 220px;
+    height: auto;
+    display: flex;
     padding: 30px;
-    height: 100%;
     display: block;
     position: absolute;
+    vertical-align: middle;
     text-align: center;
     
 } 
@@ -43,8 +49,10 @@ aside img {
     width: 212px;
     height: 212px;
     vertical-align: middle;
+}
 
-    
+section {
+    padding-left: 300px;
 }
 
 #about, #projects, #contact {
@@ -59,10 +67,10 @@ h1 { font-family: ‘Metrophobic’, Arial, serif; font-weight: 400; }
 
 footer {
     width: 100%;
-    background-color:darkgrey;
+    display: block;
+    background-color:lightblue;
     color: white;
     text-align: center;
-    display: block; 
     padding: 15px;
     position: static;
 }
@@ -82,7 +90,7 @@ li {
     height: 200px;
     border-radius: 20%;
     float: left;
-    padding-right:   20px;
+    padding-right: 20px;
 
 }
 #about li {
@@ -107,25 +115,15 @@ h2 {
     color: red;
 }
 
-textarea {
-    width: 500px;
-    height: 250px;
-    max-width: 800px;
-    line-height: 10px;
-}
-
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-    border-color: 5px solid red;
-    
-}
-
 .submit input {
     width: 100px;
     height: 50px;
     background-color: red;
     color: white;
     border-radius: 10%;
+    font-size: 17px;
+    margin-bottom: 15px;
+    margin-left: 215px;
 }
 
 .reset input {
@@ -135,4 +133,32 @@ input:focus, textarea:focus {
     color: white;
     border-radius: 10%;
 }
+            /* form setings start from here */
+.name input {
+    width: 400px;
+    height: 30px;
+    margin: 10px 10px 10px 10px;
+}
 
+form p {
+    margin: 0px;
+}
+
+.telephone input {
+    width: 400px;
+    height: 30px;
+    margin: 10px 10px 10px 10px;
+}
+
+.email input {
+    width: 400px;
+    height: 30px;
+    margin: 10px 10px 20px 10px;
+}
+
+textarea {
+    margin: 10px 10px 10px 10px;
+     width: 500px;
+    height: 250px;
+    max-width: 800px;
+}

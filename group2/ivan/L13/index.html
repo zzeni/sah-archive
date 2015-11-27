@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        window.console.log('start parsing the js..');
+
+        function Person(name, birthdate) {
+            this.name = name;
+            this.birthdate = new Date(birthdate);
+            this.tellAge = function() {
+                var today = new Date();
+                var age = today.getFullYear() - this.birthdate.getFullYear();
+                var m = today.getMonth() - this.birthdate.getMonth();
+                if (m < 0 || (m == 0 && today.getDate() < this.birthdate.getDate())) {
+                    age--;
+                }
+                if (m == 0 && (today.getDate() == this.birthdate.getDate())) {
+                    console.log(" Happy Birthday!!!");
+                }
+                if (age <= 0 || (m == 0 && today.getDate() < this.birthdate.getDate())) {
+                    age;  
+                    console.log("If you are not Terminator, try an other Date!");
+                }
+                if (age > 100) {
+                    age;
+                    console.log(" Hello Yoda!");
+                }
+                return age;
+            };
+        }
+    </script>
+</body>
+
+</html>

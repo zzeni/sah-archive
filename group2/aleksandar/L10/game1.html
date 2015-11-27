@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">-->
+
+	<!-- Latest compiled and minified JavaScript -->
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>-->
+
+	<link rel="stylesheet" href="style.css">
+	<!--		<script type="text/javascript" src="../L10/test.js"></script>-->
+
+	<title>Game</title>
+
+
+</head>
+
+<body>
+	<form action="http://zenifytheweb.com/api/game/start" class="form-horizontal" method="post">
+		<div class="row form-group">
+			<div class="col-sm-1 col-sm-offset-1">
+			<label for="name" class="control-label">Name:</label>
+			</div>
+			<div class="col-sm-3">
+				<input type="text" name="name" placeholder="Your name" class="form-control">
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-sm-1 col-sm-offset-1">
+				<label for="email" class="control-label">E-mail:</label>
+			</div>
+			<div class="col-sm-3">
+				<input type="email" name="email" placeholder="Your e-mail" required class="form-control">
+			</div>
+		</div>
+		<div class="row form-group">
+		<div class="col-sm-4 col-sm-offset-1">
+			<label for="message">Comment:</label>
+			<textarea class="form-control" rows="3" cols="4" name="message" placeholder="Leave your comment"></textarea>
+		</div>
+			</div>
+		<div class="col-sm-1 col-sm-offset-4">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</form>
+</body>
+
+</html>
