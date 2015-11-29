@@ -23,4 +23,3 @@ function Person(firstName, lastName) {
         return "Здрасти, " + otherPerson.fName + "!";
     }
 }
-

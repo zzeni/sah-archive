@@ -4,29 +4,23 @@ function Person(firstName, lastName) {
     this.isPolite = true;
 
     this.bePolite = function (polite) {
-        var polite = polite;
-        if (polite == false) {
-            return this.isPolite = false;
-        } else {
-            return this.isPolite = true;
-        }
+        this.isPolite = polite;
     }
 
     this.introduce = function (otherPerson) {
-        var result = this.greet(otherPerson);
-        if (this.isPolite == false) {
-            return result + "Аз съм " + this.fName + "!";
-        } else if (this.isPolite == true) {
+        if (this.isPolite) {
             return "Здравейте! Казвам се " + this.fName + " " + this.lName + "!";
+        } else {
+            return this.greet(otherPerson) + " Аз съм " + this.fName + "!";
         }
     }
 
     this.greet = function (otherPerson) {
-        var otherPerson = otherPerson;
+        var hello = this.isPolite ? "Здравейте" : "Здрасти";
         if (otherPerson != undefined) {
-            return "Здрасти, " + otherPerson.fName + "!";
+            return hello + ", " + otherPerson.fName + "!";
         } else {
-            return "Здрасти!";
+            return hello + "!";
         }
     }
 }
