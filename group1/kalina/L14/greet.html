@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Greeting</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <button onclick="callGreeting()">Press the button</button>
+    <p>What is your name?</p>
+    <input id="yourName">
+    <p id="greet"></p>
+</body>
+
+<script>
+    function greeting(name) { //1
+        return "Hello " + name;
+    }
+
+    function callGreeting() { //3
+        var name = document.getElementById("yourName").value;
+        var gr = greeting(name);
+        document.getElementById("greet").innerHTML = gr;
+    }
+
+    function Person(fname, lname, intro, isPolite, bePolite, greet) { //2  
+        this.firstName = fname;
+        this.lastName = lname;
+        this.introduce = intro; //5
+        this.politeness = isPolite;
+        this.bePolite = false;
+        this.greet = greet;
+    }
+
+    function personGreeting(person, beFormal) { //3
+        if (beFormal == true) { //4
+            return "Hello " + person.firstName + " " + person.lastName;
+        } else {
+            return "Hello " + person.firstName;
+        }
+    }
+    var ivan = new Person("Ivan", "Ivanov");
+    var boiko = new Person("Boiko", "Borisov");
+    var lili = new Person("lili", "Lilieva");
+
+    console.log(personGreeting(ivan)); //3
+    console.log(personGreeting(boiko)); //3
+
+    function introduce() { //5
+        if (bePolite == false) {
+            console.log("Hello, I am " + ivan.firstName);
+        } else {
+            console.log("Hello, my name is " + ivan.firstName + " " + ivan.lastName + "!");
+        }
+    }
+
+    function politeness() { //6
+        isPolite = true;
+    }
+
+    function bePolite() { //7
+        if (bePolite == false) {
+            isPolite == false;
+        } else {
+            isPolite == true;
+        }
+
+        function greet() { //9
+            if (bePolite == false) {
+                console.log("Hi, I am " + boiko.firstName + "!");
+                console.log("Nice to meet you. I am " + lili.firstName | +"!")
+            } else {
+                console.log("Hello, my name is " + boiko.firstName + " " + boiko.lastName + "!");
+                console.log("It is a pleasure to meet you. My name is " + lili.firstName + " " + lili.lastName + "!");
+            }
+        }
+    }
+</script>
+
+
+
+
+</html>
