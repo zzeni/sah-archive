@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Web Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            Web form</legend>
+
+
+        <form action="http://zenifytheweb.com/api/game/continue" method="post">
+
+            <div class="table">
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-user"></i>
+                        <label>Name:<span>*</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" name="name" value="Chuck Norris">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-envelope-o"></i>
+                        <label>E-mail:<span>*</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="email" name="email" value="chuck@kicks.ass">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-briefcase"></i>
+                        <label>Occupation</label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" name="occupation" value="ultimate hero">
+                    </div>
+
+                </div>
+                 <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-eye"></i>
+                        <label>Eyes color</label>
+                    </div>
+                    <div class="cell">
+                        <input type="color" name="eyes_color" value="#0000FF">
+                    </div>
+                </div>
+ <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-camera"></i>
+                        <label>Photo:</label>
+                    </div>
+                    <div class="cell">
+                        <input type="file" name="photo">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell" id="reset">
+                        <input class="buttons" type="reset" value="reset">
+                    </div>
+                    <div class="cell">
+                        <input class="buttons" type="submit" name="submit" value="submit">
+                    </div>
+                </div>
+            </div>
+            <p><input type="hidden" name="key" value="1447675211"></p>
+        </form>
+
+    </fieldset>
+</body>
+
+</html>

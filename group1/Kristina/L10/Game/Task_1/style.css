@@ -1,0 +1,43 @@
+.container {
+	margin-top: 20px;
+	margin-right: 5%;
+	float: right;
+	width: 65%;
+}
+.body {
+    margin-bottom: 50px;
+}
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+input, textarea {
+	width:439px;
+	height:27px;
+	background:#efefef;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:1em;
+	color:#3a3a3a;
+	-moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+#submit {
+	display: block;
+    width:127px;
+    height:38px;
+    border:1px solid #dedede;
+    margin-top:10px;
+    cursor:pointer;
+}
+
+	#submit:hover {
+	    opacity:.8;
+	}
+
+textarea {
+	height:213px;
+}
