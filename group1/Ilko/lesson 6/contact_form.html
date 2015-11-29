@@ -10,13 +10,11 @@
 <body>
     <h1>
 
-           Contact Form 
+            Contact Form 
 
         </h1>
-    <form action="data.html" method="get">
-
+    <form>
         <fieldset>
-            <legend>Form</legend>
             <div>
                 <label name="inputEmail">Email</label>
                 <div>
@@ -24,23 +22,17 @@
                 </div>
             </div>
             <div>
-                <label name="inputPassword">Name</label>
-            </div>
-            <div>
-                <input type="text" placeholder="Yout Name Here" name="name">
-            </div>
-            <div>
-                <label name="checkbox">Checkbox</label>
-            </div>
-            <div>
-                <input type="checkbox" name="check"value="1"> Checkbox
-                <input type="checkbox" name="check"value="2"> Checkbox
+                <label for="inputName">Name</label>
+                <div>
+                    <input type="text" name="sender-name" placeholder="Ilko Dimov">
+                </div>
+
             </div>
             <textarea rows="3"></textarea>
             <div>
                 <button type="submi">Submit</button>
             </div>
-        </fieldset>
+            <textarea rows="3" placeholder="write some message"></textarea>
     </form>
 </body>
 

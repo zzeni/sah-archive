@@ -5,7 +5,7 @@
 
 Тази бонус задача може да я направи всеки, който си е решил [домашно 12](https://github.com/zzeni/swift-academy-homeworks/edit/master/tasks/L12)
 
-За целта, ще ползвате вашето решение на L12 и този `html` файл: [birthday_template.html](https://github.com/zzeni/swift-academy-homeworks/edit/master/tasks/L12/birthdate_template.html)
+За целта, ще ползвате вашето решение на L12 и този `html` файл: [L12_birthday_template.html](https://gist.github.com/zzeni/cae75b31d1ed36269db8)
 
 В `template` файла има готов скелет на `html` страница и `JS` имплементация на динамично генериране на съдържание.  
 Единственото, което трябва да направите е да "вържете" вашето решение (т.е. функцията, която смята на колко години е човек) с `Person` класа в темплейта.
@@ -24,8 +24,12 @@
 --
 ##### JFYI:
 
-- [Тук](https://github.com/zzeni/swift-academy-homeworks/edit/master/tasks/L12/screenshot.jpg) можете да видите скрийншот на това как изглежда страницата, когато работи.
+- [Тук](https://github.com/zzeni/swift-academy-homeworks/blob/master/tasks/L12/screenshot.jpg) можете да видите скрийншот на това как изглежда страницата, когато работи.
 - Ако имате въпроси, моля питайте първо Гугъл, после другарче и накрая - мен ;)
 - Ако прекарате повече от 30мин без да намерите решение на конкретен казус - пишете ми, но не гарантирам, че ще отговоря веднага.
 
 --
+
+##### Решение:
+
+https://gist.github.com/zzeni/d10fd6a9ba0a2092d5ea

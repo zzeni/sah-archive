@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Latest compiled and minified CSS -->
+	<meta charset="utf-8">
+</head>
+
+<body>
+
+	<script>
+		var methods = ['charAt', 'reverse', /*'round'*/ , 'join', 'split', 'charAt'];
+		var myName = "Chuck Norris";
+		var myBirthYear = 1940;
+		var myImmortalityIndex = 99.99;
+		var myAge = Math.round(myBirthYear * myImmortalityIndex);
+		var mySecretCode = myName.charAt(0) + myAge + myName.charAt(6);
+		var result = mySecretCode.split('').reverse().join('');
+		console.log(result);
+	</script>
+	
+	<form method="get" action="http://zenifytheweb.com/api/game/complete">
+		<label for="result">Enter result here:</label>
+		<input type="text" name="result">
+		<label for="key">Enter your key here:</label>
+		<input type="text" name="key">
+		<input type="submit" name="Submit">
+
+	</form>
+</body>
+
+</html>
