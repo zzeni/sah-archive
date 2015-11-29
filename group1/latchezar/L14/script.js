@@ -38,39 +38,42 @@ function Person(firstName, lastName, isPolite) {
   /*Tasks 8 + 10 start*/
 
   this.introduce = function (otherPerson) {
-    if (otherPerson != undefined) {
-      return this.greet(otherPerson) + " Аз съм " + firstName + "!";
-    } else if (this.isPolite == false) {
-      return "Здрасти! Аз съм " + firstName + "!";
+      if (otherPerson != undefined && this.isPolite === false) {
+        return this.greet(otherPerson) + " Аз съм " + firstName + "!";
+      } else if (otherPerson != undefined && this.isPolite === true) {
+        return this.greet(otherPerson) + " Аз съм " + firstName + " " + lastName + "!";
+      }
+        if (this.isPolite == false) {
+          return "Здрасти! Аз съм " + firstName + "!";
+        } else {
+          return "Здравейте! Казвам се " + firstName + " " + lastName + "!";
+        }
+      }
+
+      /*Tasks 8 + 10 end*/
+
+    }
+    /*Task 2 ends!*/
+
+  /*
+  Task 3 starts!
+
+  function personGreeting(Person) {
+    return "Hello, " + Person.firstName + " " + Person.lastName +"!";
+  }
+
+  Task 3 ends!
+  */
+
+  /*Task 4 starts!*/
+  function personGreeting(Person, beFormal) {
+
+    if (beFormal === false) {
+      return "Hello, " + Person.firstName + "!";
     } else {
-      return "Здравейте! Казвам се " + firstName + " " + lastName + "!";
+      return "Hello, " + Person.firstName + " " + Person.lastName + "!";
     }
   }
 
-  /*Tasks 8 + 10 end*/
-
-}
-/*Task 2 ends!*/
-
-/*
-Task 3 starts!
-
-function personGreeting(Person) {
-  return "Hello, " + Person.firstName + " " + Person.lastName +"!";
-}
-
-Task 3 ends!
-*/
-
-/*Task 4 starts!*/
-function personGreeting(Person, beFormal) {
-
-  if (beFormal === false) {
-    return "Hello, " + Person.firstName + "!";
-  } else {
-    return "Hello, " + Person.firstName + " " + Person.lastName + "!";
-  }
-}
-
-var person = new Person("Бойко", "Борисов");
-/*Task 4 ends!*/
+  var person = new Person("Бойко", "Борисов");
+  /*Task 4 ends!*/
