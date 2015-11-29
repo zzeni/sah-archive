@@ -88,7 +88,7 @@
     Пример:
 
     ```javascript
-    var person = new Person("Бойко", "Борисов");
+    var boiko = new Person("Бойко", "Борисов");
     var lili = new Person("Лили", "Иванова");
     
     boiko.introduce(); // "Казвам се Бойко Борисов!"
@@ -105,7 +105,7 @@
     Пример:
 
     ```javascript
-    var person = new Person("Бойко", "Борисов");
+    var boiko = new Person("Бойко", "Борисов");
     var lili = new Person("Лили”, “Иванова");
     
     boiko.introduce(); // "Здравейте! Казвам се Бойко Борисов!"
