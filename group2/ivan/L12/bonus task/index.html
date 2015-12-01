@@ -68,6 +68,32 @@
         }
     </style>
 
+    
+</head>
+
+<body>
+    <form id="addPerson">
+
+        <fieldset>
+            <legend>Add person</legend>
+            <p>
+                <label>Name:</label>
+                <input type="text" placeholder="name" id="nameInput" value="Jeni" maxlength="16" required>
+            </p>
+            <p>
+                <label>Birth date:</label>
+                <input type="date" placeholder="birthdate" id="birthdateInput" value="2015-11-22" required>
+            </p>
+            <p>
+                <label></label>
+                <input type="submit" value="add">
+            </p>
+        </fieldset>
+    </form>
+
+    <section id="people">
+        <h3>People:</h3>
+    </section>
     <script>
         "use strict";
 
@@ -172,31 +198,6 @@
             });
         }, false);
     </script>
-</head>
-
-<body>
-    <form id="addPerson">
-
-        <fieldset>
-            <legend>Add person</legend>
-            <p>
-                <label>Name:</label>
-                <input type="text" placeholder="name" id="nameInput" value="Jeni" maxlength="16" required>
-            </p>
-            <p>
-                <label>Birth date:</label>
-                <input type="date" placeholder="birthdate" id="birthdateInput" value="2015-11-22" required>
-            </p>
-            <p>
-                <label></label>
-                <input type="submit" value="add">
-            </p>
-        </fieldset>
-    </form>
-
-    <section id="people">
-        <h3>People:</h3>
-    </section>
 </body>
 
 </html>
