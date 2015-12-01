@@ -1,12 +1,12 @@
 "use strict"
-
+//task 1
 var personGreeting;
 
 function greeting(name) {
     return "Hello, " + name + "!";
 }
 greeting("Jeni");
-
+//task 2
 function Person(fname, lname) {
     this.firstName = fname;
     this.lastName = lname;
@@ -22,17 +22,25 @@ function Person(fname, lname) {
     }
 
     this.greet = function (otherPerson) {
-            var boiko = new Person("Бойко", "Борисов");
-            var lili = new Person("Лили", "Иванова");
-            boiko.introduce();
-            lili.bePolite(false);
-            //lili ne greet-va boiko !
-            lili.greet(boiko);
-            lili.introduce();
-        }
-        //personGreeting is not working
-    this.personGreeting = function () {
-        return "Hello, " + this.fullName;
+        var boiko = new Person("Бойко", "Борисов");
+        var lili = new Person("Лили", "Иванова");
+        boiko.introduce();
+        lili.bePolite(false);
+        //lili ne greet-va boiko !
+        lili.greet(boiko);
+        lili.introduce();
+
     }
-    personGreeting(new Person("Бойко", "Борисов"));
 }
+// task 3
+function personGreeting(person, beFormal) {
+    var name = person.firstName + " " + person.lastName;
+    if (beFormal == true) {
+        return "Hello, " + name;
+    } else {
+        return "hi, " + person.firstName;
+    }
+}
+
+
+personGreeting(new Person("Boiko", "Borisov"));
