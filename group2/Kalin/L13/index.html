@@ -55,26 +55,9 @@
                 result = yourAge;
             }
         }
-        
-        /*
-          Add your birthdate solution here
-
-          you need to acommodate it to the Person class:
-            1. replace the birthday parameter by using the birthday property (this.birthday)
-            2. when the person has a birthday - assign true to the hasBirthDayToday property
-
-          Assign the results of your calculations to the result variable.
-          It will be returned as the result of the function.
-
-          Good luck! :)
-        */
         return result;
       }
 
-      /*
-        We redefine the toString() method, so it returns something useful
-        You don't need to change this function, but you can if you want.
-      */
       this.toString = function () {
         var result = "";
         var age = this.calcAge();
@@ -102,12 +85,6 @@
       }
     }
 
-    /*
-      Here we use some event handling for the dynamic part of our page.
-      You better not change anythig here, just try ro get the idea of how
-      it's done ;)
-      The next lesson we'll talk in detail about the JS Events.
-    */
     document.addEventListener('DOMContentLoaded', function () {
       console.log('ready');
     
@@ -118,22 +95,14 @@
         var name = document.getElementById('name').value;
         var bDate = document.getElementById('yourAge').value;
         var person = new Person(name, bDate);
-         var nameContainer = document.createElement('h4');
+        var nameContainer = document.createElement('h4');
         nameContainer.innerHTML = person.name;
+        people.push(nameContainer);
+    
 
-        var infoContainer = document.createElement('div');
-        infoContainer.className = 'info-container';
-        infoContainer.innerHTML = person.toString();
-
-        var personContainer = document.createElement('div');
-        personContainer.className = "person-container";
-        personContainer.appendChild(nameContainer)
-        personContainer.appendChild(infoContainer);
-
-        document.getElementById("people").appendChild(showAge);
-        people.push(person);
+       
       });
-    }, false)
+    }
        
 
        
