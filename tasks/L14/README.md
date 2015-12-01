@@ -106,7 +106,7 @@
 
     ```javascript
     var boiko = new Person("Бойко", "Борисов");
-    var lili = new Person("Лили”, “Иванова");
+    var lili = new Person("Лили", "Иванова");
     
     boiko.introduce(); // "Здравейте! Казвам се Бойко Борисов!"
     
