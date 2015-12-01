@@ -1,3 +1,5 @@
+'use strict'
+
 function greeting(name) {
     return "Hello, " + name + "!";
 }
@@ -26,7 +28,7 @@ function Person(fname, lname, isPolite) {
     this.introduce = function (otherPerson) {
         result = this.greet(otherPerson);
         if (this.isPolite === true) {
-            result += " Kазвам се " + this.firstName + " " + this.lastName + ".";
+            result += " Казвам се " + this.firstName + " " + this.lastName + ".";
         } else {
             result += " Аз съм " + this.firstName + ".";
         }
