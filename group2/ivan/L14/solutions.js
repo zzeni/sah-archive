@@ -26,7 +26,7 @@ function Person(fname, lname, isPolite) {
         return result;
     }
     this.introduce = function (otherPerson) {
-        result = this.greet(otherPerson);
+        var result = this.greet(otherPerson);
         if (this.isPolite === true) {
             result += " Казвам се " + this.firstName + " " + this.lastName + ".";
         } else {
@@ -44,7 +44,7 @@ function Person(fname, lname, isPolite) {
 }
 
 function personGreeting(Person, beFormal) {
-    result = "";
+   var result = "";
     if (beFormal === true) {
         result += "Hello, " + Person.firstName + " " + Person.lastName + "!";
     } else {
