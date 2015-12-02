@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Greeting</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <button onclick="callGreeting()">Press the button</button>
+    <p>What is your name?</p>
+    <input id="yourName">
+    <p id="greet"></p>
+</body>
+
+<script>
+    function greeting(name) { //1
+        return "Hello " + name;
+    }
+
+    function callGreeting() { //3
+        var name = document.getElementById("yourName").value;
+        var gr = greeting(name);
+        document.getElementById("greet").innerHTML = gr;
+    }
+
+    function Person(fname, lname, isPolite) { //2  
+        this.firstName = fname;
+        this.lastName = lname;
+        this.isPolite = true;
+        this.bePolite = function (polite) {
+            this.isPolite = (polite === undefined) ? true : polite;
+
+        }
+        this.greet = function (otherPerson) {
+            //9
+            if (isPolite == false) {
+                return "Hi, " + otherPerson.firstName + "!";
+            } else {
+                return "It is a pleasure to meet you, " + otherPerson.firstName + " " + otherPerson.lastName + "!";
+            }
+        }
+        this.introduce = function (otherPerson) {
+            if (otherPerson != undefined) {
+                return this.greet(otherPerson) + " I am " + this.firstName;
+            } else if (this.isPolite == false) {
+                return "Hello, I am " + this.firstName;
+            } else {
+                return "Hello, my name is " + this.firstName + " " + this.lastName + "!";
+            }
+        }
+    }
+
+    function personGreeting(person, beFormal) { //3
+        if (beFormal == true) { //4
+            return "Hello " + person.firstName + " " + person.lastName;
+        } else {
+            return "Hello " + person.firstName;
+        }
+    }
+    var ivan = new Person("Ivan", "Ivanov");
+    var boiko = new Person("Boiko", "Borisov");
+    var lili = new Person("lili", "Lilieva");
+</script>
+
+
+
+
+</html>
