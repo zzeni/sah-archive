@@ -1,3 +1,5 @@
+'use strict'
+
 function greeting(name) {
     return "Hello, " + name + "!";
 }
@@ -24,9 +26,9 @@ function Person(fname, lname, isPolite) {
         return result;
     }
     this.introduce = function (otherPerson) {
-        result = this.greet(otherPerson);
+        var result = this.greet(otherPerson);
         if (this.isPolite === true) {
-            result += " Kазвам се " + this.firstName + " " + this.lastName + ".";
+            result += " Казвам се " + this.firstName + " " + this.lastName + ".";
         } else {
             result += " Аз съм " + this.firstName + ".";
         }
@@ -42,7 +44,7 @@ function Person(fname, lname, isPolite) {
 }
 
 function personGreeting(Person, beFormal) {
-    result = "";
+   var result = "";
     if (beFormal === true) {
         result += "Hello, " + Person.firstName + " " + Person.lastName + "!";
     } else {
