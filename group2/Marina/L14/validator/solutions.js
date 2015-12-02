@@ -50,3 +50,4 @@ function personGreeting(Person, beFormal) {
     }
     return result;
 }
+// 7 и нещо кода за introduce не се получава, а във валидатора всичко излиза сиво :( 
