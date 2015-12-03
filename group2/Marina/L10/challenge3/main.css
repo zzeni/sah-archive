@@ -1,0 +1,23 @@
+fieldset {
+    margin: 30px;
+    display: block;
+    background-color: #a4a79b;
+    width: 350px;
+    border-radius: 8px;
+}
+
+legend {
+    background-color: #6f95de;
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 25px;
+}
+
+#submit {
+    border-radius: 8px;
+    background-color: white;
+}
+
+#eye_color {
+    background-color: #0000ff;
+}
