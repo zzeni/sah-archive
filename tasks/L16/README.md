@@ -6,15 +6,16 @@
 
 ##### Група 1
 
-Да се направи JavaScript валидация на формата за контакти от домашно 6 (полета name, email, message)  
+Да се направи `JavaScript` валидация на формата за контакти от домашно 6 (полета `name`, `email`, `message`)
+
 Използвайте примера от лекцията, който можете да намерите тук: http://zenifytheweb.com/courses/lessons/lesson16/example/index.html
 
 ##### Група 2
 
 Да се направи регистрационна форма, която да има следните полета:  
-name, email, password, password confirmation, picture url
+`name`, `email`, `password`, `password confirmation`, `picture url`
 
 Направете Javascript валидация за всички полета, като използвате регулярни изрази.
 
-Поздрави!
+Поздрави!  
 Жени
