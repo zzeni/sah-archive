@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .error{
+            border: 2px solid red;
+        }
+    </style>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>Homework 16</h1>
+
+
+<form>
+    <p>
+        <label for="name">Your name</label>
+        <input type="text" name="name" placeholder="your name" id="name">
+    </p>
+
+    <p>
+        <label for="email">Email</label>
+        <input type="text" name="email" placeholder="your email" id="email">
+    </p>
+
+    <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="your password, min 5 symbols" id="password">
+    </p>
+
+    <p>
+        <label for="password2">Password</label>
+        <input type="password" name="password2" placeholder="your password again" id="password2">
+    </p>
+
+    <p>
+        <label for="url">Picture</label>
+        <input type="text" name="picture" placeholder="url" id="url">
+    </p>
+    <p>
+        <input type="reset" value="reset">
+    </p>
+</form>
+<button id="button">Submit</button>
+
+<script>
+
+    $('#button').click(function(){
+        var name = $('#name');    //  само да ми кажеш тук защо се получават такива стойности ?????
+        var emile = $('#emile');  //  само да ми кажеш тук защо се получават такива стойности ?????
+        var pass1 = $('#password');
+        var pass2 = $('#password2');
+        var url = $('#url');
+        console.log(name + ' <--btn');
+        console.log(emile + ' <--btn');
+        console.log(pass1 + ' <--btn');
+        console.log(pass2 + ' <--btn');
+
+        var bName = checkName(name);
+        var bEmail = checkEmail(emile);
+        var bPass = checkPass(pass1);
+        var bPass2 = bPass ? checkPass2(pass1 , pass2) : false;
+        var bURL = checkURL(url);
+
+
+        if(bName && bEmail && bPass && bPass2 && bURL){
+            console.log('all correct!');
+        }else{
+            console.log('invalid fields');
+        }
+
+    });
+
+
+    $('#email').blur(function (e) {
+        var value = $(e.target).val();
+        if (!checkEmail(value)) {
+            $('#email').addClass('error');
+        } else {
+            $('#email').removeClass('error');
+        }
+    });
+    $('#name').blur(function (e) {
+        var value = $(e.target).val();
+        if (!checkName(value)) {
+            $('#name').addClass('error');
+        } else {
+            $('#name').removeClass('error');
+        }
+    });
+    $('#password').blur(function(e){
+        var  value = $(e.target).val();
+        if(!checkPass(value)){
+            $('#password').addClass('error');
+        }else{
+            $('#password').removeClass('error');
+        }
+    });
+    $('#password2').keyup(function(e){
+        var pass2 = $(e.target).val();
+        var pass1 = $('#password').val();
+
+        console.log(pass1);
+        var flag = checkPass2(pass1,pass2);
+
+        if(!flag){
+            $('#password2').addClass('error');
+        }else{
+            $('#password2').removeClass('error');
+        }
+
+    });
+
+
+   /* $('input[name=name]').keyup(function (e) {
+        var value = $(e.target).val();
+
+        if (value.length > 0) {
+            var lastChar = value[value.length-1];
+
+            if (!lastChar.match(/[a-zA-Z]/)) {
+                $(this).val(value.substr(0, value.length - 1));
+            }
+        }
+    });
+*/    //this code delete while you are writing if you make mistake;
+
+
+    function checkName(name){
+        console.log(name);
+
+        name = typeof name == "string" ? name : '';
+
+        var result = name.match('^[A-Za-z]+$');
+        if(!result){
+            console.log('no name');
+            return false;
+        }
+        if(!result[0]){
+            alert('Invalid name');
+            return false;
+        }
+        return true;
+    }
+    function checkEmail(email){
+        console.log(email);
+        email = typeof email == "string" ? email : '';
+
+        var result = email.match('\\w+@[a-zA-Z]+\\.[a-zA-Z]+');
+        if(!result){
+            console.log('no emile');
+            return false;
+        }
+
+        if(!result[0]){
+            return false
+        }
+        return true;
+    }
+    function checkPass(pass){
+        console.log(pass);
+
+        pass = typeof pass == "string" ? pass : '';
+
+        var result = pass.match('^[\\w\\!\\#\\$\\%\\^\\&\\*\\(\\)]{5,100}$');
+        if(!result){
+            console.log('no pass');
+            return false;
+        }
+        if(!result[0]){
+            alert('Invalid char or too small password');
+            return false;
+        }
+        return true;
+    }
+    function checkPass2(pass1,pass2){
+
+        if(pass1 != pass2){
+            return false
+        }
+        return true;
+
+    }
+    function checkURL(url){
+        url = typeof url == "string" ? url : '';
+
+        var result = url.match('^\\w+\\:\\/\\/\\w+\\.[com|org|net|mil|edu|COM|ORG|NET|MIL|EDU]+$');
+
+        if(!result){
+            console.log('no url');
+            return false;
+        }
+
+        if(!result[0]){
+            return false
+        }
+        return true;
+    }
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
