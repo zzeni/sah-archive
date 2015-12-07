@@ -22,22 +22,18 @@
         <label for="name">Your name</label>
         <input type="text" name="name" placeholder="your name" id="name">
     </p>
-
     <p>
         <label for="email">Email</label>
         <input type="text" name="email" placeholder="your email" id="email">
     </p>
-
     <p>
         <label for="password">Password</label>
         <input type="password" name="password" placeholder="your password, min 5 symbols" id="password">
     </p>
-
     <p>
         <label for="password2">Password</label>
         <input type="password" name="password2" placeholder="your password again" id="password2">
     </p>
-
     <p>
         <label for="url">Picture</label>
         <input type="text" name="picture" placeholder="url" id="url">
@@ -49,33 +45,30 @@
 <button id="button">Submit</button>
 
 <script>
-
     $('#button').click(function(){
-        var name = $('#name');    //  само да ми кажеш тук защо се получават такива стойности ?????
-        var emile = $('#emile');  //  само да ми кажеш тук защо се получават такива стойности ?????
-        var pass1 = $('#password');
-        var pass2 = $('#password2');
-        var url = $('#url');
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var pass1 = $('#password').val();
+        var pass2 = $('#password2').val();
+        var url = $('#url').val();
+
         console.log(name + ' <--btn');
-        console.log(emile + ' <--btn');
+        console.log(email + ' <--btn');
         console.log(pass1 + ' <--btn');
         console.log(pass2 + ' <--btn');
 
         var bName = checkName(name);
-        var bEmail = checkEmail(emile);
+        var bEmail = checkEmail(email);
         var bPass = checkPass(pass1);
         var bPass2 = bPass ? checkPass2(pass1 , pass2) : false;
         var bURL = checkURL(url);
-
 
         if(bName && bEmail && bPass && bPass2 && bURL){
             console.log('all correct!');
         }else{
             console.log('invalid fields');
         }
-
     });
-
 
     $('#email').blur(function (e) {
         var value = $(e.target).val();
@@ -106,6 +99,7 @@
         var pass1 = $('#password').val();
 
         console.log(pass1);
+
         var flag = checkPass2(pass1,pass2);
 
         if(!flag){
@@ -115,7 +109,6 @@
         }
 
     });
-
 
    /* $('input[name=name]').keyup(function (e) {
         var value = $(e.target).val();
@@ -129,7 +122,6 @@
         }
     });
 */    //this code delete while you are writing if you make mistake;
-
 
     function checkName(name){
         console.log(name);
@@ -153,7 +145,7 @@
 
         var result = email.match('\\w+@[a-zA-Z]+\\.[a-zA-Z]+');
         if(!result){
-            console.log('no emile');
+            console.log('no email');
             return false;
         }
 
@@ -189,8 +181,8 @@
     function checkURL(url){
         url = typeof url == "string" ? url : '';
 
-        var result = url.match('^\\w+\\:\\/\\/\\w+\\.[com|org|net|mil|edu|COM|ORG|NET|MIL|EDU]+$');
-
+        //var result = url.match('^\\w+\\:\\/\\/\\w+\\.[com|org|net|mil|edu|COM|ORG|NET|MIL|EDU]+$');
+        var result = url.match('[a-zA-Z]');
         if(!result){
             console.log('no url');
             return false;
