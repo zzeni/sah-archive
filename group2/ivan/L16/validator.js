@@ -37,7 +37,7 @@ function fieldValidate(form, fieldName) {
 	var fieldValue = fieldInput.val();
 	var error;
 	if (fieldValue === "") {
-		error = new Error(fieldName + " is mendatory!");
+		error = new Error(fieldName + " is mandatory!");
 		error.name = "FieldValidationError";
 		error.target = fieldInput;
 		throw error;
