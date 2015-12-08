@@ -8,16 +8,20 @@ label {
 	margin-left: 10px;
 }
 
+/*
 #info,
 #info2,
 #lang {
 	float: left;
 	margin: 0px;
 }
+*/
 
+/*
 #comment {
 	float: none;
 }
+*/
 button {
 	margin: 20px;
 }

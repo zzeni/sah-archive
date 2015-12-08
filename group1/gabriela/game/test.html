@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Step_four</title>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+
+        <section id="playing-the-game">
+            <for method="get">
+
+                <p>
+                    Result
+                    <input id="day" type="text" name="result" onKeyPress="edValueKeyPress()" onKeyUp="edValueKeyPress()">
+                </p>
+                <p>
+                    <input type="submit" value="Go!">
+                </p>
+                </form>
+
+                <script>
+                    var today = new Date();
+                    var dd = today.getDate();
+                    var mm = today.getMonth() + 1; //January is 0!
+
+
+                    if (mm < 10) {
+                        mm = '0' + mm
+                    }
+                    var today = dd + '/' + mm;
+
+                    function edValueKeyPress() {
+                        var day = document.getElementById("day").value;
+
+                        if (day == today) {
+                            alert('Happy birthday')
+                        } else {
+                            console.log('skapanqk')
+                        }
+
+                    }
+
+                </script>
+
+        </section>
+
+    </div>
+    <footer>
+    </footer>
+</body>
+
+</html>

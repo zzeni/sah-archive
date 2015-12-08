@@ -7,14 +7,40 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 
+
+    <style>
+
+        .flex{
+            display: flex;
+        }
+
+
+        .margin{
+            margin: 10px;
+        }
+
+        @media screen and (max-width: 480px) {
+            .flex{
+                display: block;
+            }
+        }
+
+    </style>
+
+
+
 </head>
 <body>
 <h2>About me</h2>
-<div class="content-fluid">
-    <div class="col-lg-1 col-md-3 col-sm-3 col-xs-12">
+<div class="content-fluid flex">
+
+    <div class="col-lg-3"></div>
+
+
+    <div class="col-lg-1 col-md-3 col-sm-3 col-xs-12 margin">
         <img src="IMG_1439.JPG"  class=" w3-card-4" width="100%">
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 w3-card-4 ">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12  w3-card-4 margin">
         <div class="row">
             <div class="col-xs-12 blue">
                 <div class="col-lg-3 col-md-3 black black">Name:</div>

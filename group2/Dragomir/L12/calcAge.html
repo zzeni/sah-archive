@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        .wrapper{
+            margin: 5px;
+        }
+
+        .result{
+
+            font-size: 30px;
+            margin: 10px;
+            text-align: center;
+        }
+        #first{
+            width: 300px;
+        }
+    </style>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+
+<div id="first">
+
+    <form>
+        <div class="wrapper">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year" value="2015">
+        </div>
+        <div class="wrapper">
+            <label for="month">Month</label>
+            <input type="number" name="month" id="month">
+        </div>
+        <div class="wrapper">
+            <label for="day">Day</label>
+            <input type="number" name="day" id="day">
+        </div>
+    </form>
+    <button id="button">calc my age</button>
+
+</div>
+
+
+
+<script>
+
+    $( document ).ready(function() {
+
+
+        $('#button').on('click', calcAge);
+
+
+        function calcAge() {
+
+
+            var inputYear = $('#year').val();
+            var inputMonth = $('#month').val();
+            var inputDay = $('#day').val();
+
+            if(!inputYear || !inputMonth || !inputDay){
+                return alert('insert fields');
+            }
+
+
+            var dateFormat = inputYear + '-' + inputMonth + '-' + inputDay;
+
+            console.log(dateFormat);
+
+            var d = new Date(dateFormat);
+            var day = d.getDate();
+            var month = d.getMonth() + 1;
+            var year = d.getFullYear();
+
+            var d1 = new Date();
+            var day1 = d1.getDate();
+            var month1 = d1.getMonth() + 1;
+            var year1 = d1.getFullYear();
+
+
+            var result = 'you are ';
+
+            var currentYears = 0;
+            if(year == year1 && month > month1){
+                result += 'You are not born'
+            }
+
+            if(year == year1 && month == month1 && day > day1){
+                result += 'You are not born'
+            }
+
+
+            if(year == year1 && month < month1){
+                currentYears = year1 - year;
+            }else if(year == year1 && month > month1){
+                result += 1;
+            }else if (month < month1) {
+                console.log(year1 - year - 1);
+                currentYears = year1 - year - 1;
+            }else if (day1 < day) {
+                console.log(year1 - year - 1);
+                currentYears = year1 - year - 1;
+            }else {
+                console.log(year1 - year);
+                currentYears = year1 - year;
+            }
+
+            if(currentYears < 0 || !currentYears){
+                alert('Invalid input');
+                return;
+            }
+
+            result += currentYears;
+            result += ' years old';
+
+
+            var div = document.createElement("div");
+            var first = document.getElementById('first');
+
+            div.innerHTML = result;
+            div.classList.add("result");
+            first.appendChild(div);
+
+        }
+    })
+
+</script>
+
+
+
+</body>
+</html>
