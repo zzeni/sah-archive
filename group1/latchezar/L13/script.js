@@ -1,4 +1,4 @@
-
+"use strict";
 function tellAge(dateofbirth) {
     var today = new Date();
     var birthDate = new Date(dateofbirth);
@@ -30,3 +30,33 @@ var person2 = new Person("Ico", "1900-01-01", "150")
 
 console.log(person1);
 console.log(person2);
+
+document.getElementById("addpers").addEventListener("submit", function (e) {
+  e.preventDefault();
+  console.log("form submited");
+  
+  var name = document.getElementById("name").value;
+  var dob = tellAge(document.getElementById("dateb").value);
+  var height = document.getElementById("height").value
+  
+  var nameContainer = document.createElement("p");
+  nameContainer.className = "res";
+  nameContainer.innerHTML = person.name;
+  
+  var ageContainer = documentnt.createElement("p");
+  ageContainer.className = "res";
+  ageContainer.innerHTML = person.dob;
+  
+  var heightContainer = document.createElement("p");
+  heightContainer.className = "res";
+  heightContainer.innerHTML = person.height;
+  
+  var personContainer = documnt.createElement("div");
+  personContainer.className = "person-container";
+  personContainer.appendChild(nameContainer);
+  personContainer.appendChild(ageContainer);
+  personContainer.appendChild(heightContainer);
+  
+  document.getElementById("people").appendChild(personContainer); 
+  
+})

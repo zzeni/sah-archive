@@ -12,37 +12,30 @@
     * {
       box-sizing: border-box;
     }
-
     body {
       font-size: 14px;
       font-family: Lato, sans-serif;
       line-height: 22px;
       margin: 30px;
     }
-
     form {
       width: 350px;
       margin-bottom: 30px;
     }
-
     fieldset {
       padding: 5px 20px;
     }
-
     fieldset p {
       margin: 10px;
     }
-
     label {
       display: inline-block;
       width: 100px;
     }
-
     h3 {
       text-decoration: underline;
       font-size: 1.4em;
     }
-
     .person-container {
       background-color: antiquewhite;
       display: inline-block;
@@ -50,7 +43,6 @@
       width: 250px;
       margin: 20px;
     }
-
     .person-container h4 {
       color: white;
       background-color: #c30;
@@ -60,7 +52,6 @@
       text-transform: uppercase;
       font-size: 1.2em;
     }
-
     .person-container .info-container {
       padding: 20px;
       height: 160px;
@@ -70,14 +61,11 @@
 
   <script>
     "use strict";
-
     window.console.log('start parsing the js..');
-
     function Person(name, birthdate) {
       this.name = name;
       this.birthdate = new Date(birthdate);
       this.hasBirthDayToday = false;
-
       this.calcAge = function () {
         var result = 0;
         var inputMod = new Date(this.birthdate);
@@ -108,19 +96,15 @@
         
         /*
           Add your birthdate solution here
-
           you need to acommodate it to the Person class:
             1. replace the birthday parameter by using the birthday property (this.birthday)
             2. when the person has a birthday - assign true to the hasBirthDayToday property
-
           Assign the results of your calculations to the result variable.
           It will be returned as the result of the function.
-
           Good luck! :)
         */
         return result;
       }
-
       /*
         We redefine the toString() method, so it returns something useful
         You don't need to change this function, but you can if you want.
@@ -128,12 +112,9 @@
       this.toString = function () {
         var result = "";
         var age = this.calcAge();
-
         result = "<p><b>Name: </b>" + this.name + "</b><br>";
         result += "<b>Birth date: </b>" + this.birthdate.toDateString() + "</b></p>";
-
         result += "<p>";
-
         if (age < 0) {
           result += this.name + " is not born yet..";
         } else if (age > 100) {
@@ -141,17 +122,13 @@
         } else {
           result += this.name + " is <b>" + age + "</b> years old.";
         }
-
         if (this.hasBirthDayToday) {
           result += "<br>" + this.name + " has a birthday today!! :)";
         }
-
         result += "</p>";
-
         return result;
       }
     }
-
     /*
       Here we use some event handling for the dynamic part of our page.
       You better not change anythig here, just try ro get the idea of how
@@ -160,28 +137,21 @@
     */
     document.addEventListener('DOMContentLoaded', function () {
       console.log('ready');
-
       document.getElementById("addPerson").addEventListener('submit', function (e) {
         e.preventDefault();
         console.log('form submitted..');
-
         var name = document.getElementById("nameInput").value;
         var birthdate = document.getElementById("birthdateInput").value;
-
         var person = new Person(name, birthdate);
-
         var nameContainer = document.createElement('h4');
         nameContainer.innerHTML = person.name;
-
         var infoContainer = document.createElement('div');
         infoContainer.className = 'info-container';
         infoContainer.innerHTML = person.toString();
-
         var personContainer = document.createElement('div');
         personContainer.className = "person-container";
         personContainer.appendChild(nameContainer)
         personContainer.appendChild(infoContainer);
-
         document.getElementById("people").appendChild(personContainer);
         people.push(person);
       });

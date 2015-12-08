@@ -1,5 +1,20 @@
+fieldset {
+    background-color: rgba(128, 0, 128, 0.41);
+    border-radius: 8px;
+}
+
+legend {
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+}
+
 form {
-    width: 800px;
+    margin-left: 150px;
+    width: 700px;
 }
 
 .table {
@@ -22,10 +37,4 @@ form {
     text-align: left;
     padding: 10px;
     margin: 5px;
-}
-
-legend {
-    text-align: center;
-    margin: 10px;
-    font-size: 25px;
 }
