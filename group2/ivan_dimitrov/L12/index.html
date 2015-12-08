@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Evgenia Manolova">
+  <title>Lesson 13 examples</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-size: 14px;
+      font-family: Lato, sans-serif;
+      line-height: 22px;
+      margin: 30px;
+    }
+
+    form {
+      width: 350px;
+      margin-bottom: 30px;
+    }
+
+    fieldset {
+      padding: 5px 20px;
+    }
+
+    fieldset p {
+      margin: 10px;
+    }
+
+    label {
+      display: inline-block;
+      width: 100px;
+    }
+
+    h3 {
+      text-decoration: underline;
+      font-size: 1.4em;
+    }
+
+    .person-container {
+      background-color: antiquewhite;
+      display: inline-block;
+      border: 1px #c00 solid;
+      width: 250px;
+      margin: 20px;
+    }
+
+    .person-container h4 {
+      color: white;
+      background-color: #c30;
+      text-align: center;
+      padding: 10px 20px;
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 1.2em;
+    }
+
+    .person-container .info-container {
+      padding: 20px;
+      height: 160px;
+      overflow-y: scroll;
+    }
+  </style>
+
+  <script>
+    "use strict";
+
+    window.console.log('start parsing the js..');
+
+    function Person(name, birthdate) {
+      this.name = name;
+      this.bdate = birthdate;
+      this.hasBirthDayToday = false;
+
+      this.calcAge = function () {
+        var age = 0;
+
+        var birthdate = new Date(this.bdate);
+        var today = new Date();
+
+        age = today.getFullYear() - birthdate.getFullYear();
+        var monthDelta = birthdate.getMonth() - today.getMonth();
+        var dateDelta = birthdate.getDate() - today.getDate();
+
+        if ((monthDelta > 0) || (monthDelta == 0 && dateDelta > 0)) {
+          age = age - 1;
+        }
+
+        if (monthDelta == 0 && dateDelta == 0) {
+          this.hasBirthDayToday = true; // console.log("Happy birthday!");
+        }
+
+        return age;
+      }
+
+      this.age = this.calcAge();
+
+      this.toString = function () {
+        var result = "";
+        var age = this.age;
+        var birthdate = new Date(this.bdate);
+
+        result = "<p><b>Name: </b>" + this.name + "</b><br>";
+        result += "<b>Birth date: </b>" + birthdate.toDateString() + "</b></p>";
+
+        result += "<p>";
+
+        if (age < 0) {
+          result += this.name + " is not born yet..";
+        } else if (age > 100) {
+          result += this.name + " is immortal!";
+        } else {
+          result += this.name + " is <b>" + age + "</b> years old.";
+        }
+
+        if (this.hasBirthDayToday) {
+          result += "<br>" + this.name + " has a birthday today!! :)";
+        }
+
+        result += "</p>";
+
+        return result;
+      }
+    }
+
+    /*
+      Here we use some event handling for the dynamic part of our page.
+      You better not change anythig here, just try ro get the idea of how
+      it's done ;)
+      The next lesson we'll talk in detail about the JS Events.
+    */
+    document.addEventListener('DOMContentLoaded', function () {
+      console.log('ready');
+
+      var myForm = document.getElementById("addPerson");
+
+      myForm.addEventListener('submit', function (e) {
+        // Всичко което следва като код, ще се изпълни когато направим submit на формата
+        e.preventDefault();
+        console.log('form submitted..');
+
+        var name = document.getElementById("nameInput").value;
+        var birthdate = document.getElementById("birthdateInput").value;
+
+        // създаваме си person обект (инстанция на Person)
+        var person = new Person(name, birthdate);
+
+        // създаваме HTML елементите, в които ще сложим информацията на човека
+        var nameContainer = document.createElement('h4');
+        nameContainer.innerHTML = person.name;
+
+        var infoContainer = document.createElement('div');
+        infoContainer.className = 'info-container';
+        infoContainer.innerHTML = person.toString();
+
+        // Това е основния контейнер, който съдържа данните на човека, и който искаме
+        // да можем да трием
+        var personContainer = document.createElement('div');
+        personContainer.className = "person-container";
+        personContainer.appendChild(nameContainer);
+        personContainer.appendChild(infoContainer);
+
+        // Закачаме новосъздадения елемент към "people" секцията
+        document.getElementById("people").appendChild(personContainer);
+      });
+
+    }, false);
+  </script>
+</head>
+
+<body>
+  <form id="addPerson">
+
+    <fieldset>
+      <legend>Add person</legend>
+      <p>
+        <label>Name:</label>
+        <input type="text" placeholder="name" id="nameInput" value="Jeni" maxlength="16" required>
+      </p>
+      <p>
+        <label>Birth date:</label>
+        <input type="date" placeholder="birthdate" id="birthdateInput" value="2015-11-22" required>
+      </p>
+      <p>
+        <label></label>
+        <input type="submit" value="add">
+      </p>
+    </fieldset>
+  </form>
+
+  <section id="people">
+    <h3>People:</h3>
+  </section>
+</body>
+
+</html>

@@ -1,56 +1,48 @@
-/*1*/
+"use strict";
 
 function greeting(name) {
-    console.log("Hello " + name);
+    return "Hello, " + name + "!";
 }
 
-/*2*/
-function Person(fname, lname) {
+
+function Person(fname, lname, isPolite) {
     this.firstName = fname;
     this.lastName = lname;
     this.isPolite = true;
+    this.bePolite = function (isPolite) {
+        this.isPolite = isPolite;
+    }
     this.introduce = function (otherPerson) {
-        if (otherPerson != undefined) {
-            return this.greet(otherPerson) + "I am " + this.firstName + "!";
-        } else if (this.isPolite == false) {
-            return "Hey! I'm " + this.firstName + "!";
+        if (this.isPolite) {
+            return this.greet(otherPerson) + " My name is " + this.firstName + " " + this.lastName + ".";
         } else {
-            return "Hello! My name is " + this.firstName + " " + this.lastName + "!";
+            return this.greet(otherPerson) + " I am " + this.firstName + ".";
         }
     }
 
-    if (this.isPolite == true) {
-        return "Hello, my name is " + this.firstName + " " + this.lastName;
-    } else {
-        return "Hi I'm " + this.firstName;
-    }
-
-}
-this.bePolite = function (isPolite) {
-    this.isPolite = isPolite;
-}
-this.greet = function (otherPerson) {
-        if (this.isPolite === false) {
-            return "Hey, " + otherPerson.firstName + "!";
+    this.greet = function (otherPerson) {
+        if (otherPerson === undefined) {
+            if (this.isPolite === false) {
+                return "Hi!";
+            } else {
+                return "Hello!";
+            }
         } else {
-            return "Hello, " + otherPerson.firstName + " " + otherPerson.lastName + "!";
+            if (this.isPolite === false) {
+                return "Hi, " + otherPerson.firstName + "!";
+            } else {
+                return "Hello, " + otherPerson.firstName + " " + otherPerson.lastName + "!";
+            }
         }
-
-
     }
-    /*3*/
-function personGreeting(person) {
-    var fullName = person.firstName + " " + person.lastName;
-    return "Hello, " + fullName;
 }
 
 /*4*/
 function personGreeting(person, beFormal) {
     var fullName = person.firstName + " " + person.lastName;
     if (beFormal == true) {
-        return "Hello, " + fullName;
-    }
-    if (beFormal == false) {
-        return "Hi, " + person.firstName;
+        return "Hello, " + fullName + "!";
+    } else {
+        return "Hi, " + person.firstName + "!";
     }
 }
