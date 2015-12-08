@@ -1,138 +1,110 @@
-
-
 <!DOCTYPE html>
+
 
 
 <html lang="en">
 
 <head>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-    <title>TellAge</title>
+	<title>TellAge</title>
 
-    <meta charset="UTF-8">
-    <meta name="description" content="Templeate">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta name="author" content="Kalin Anastasov">
+	<meta charset="UTF-8">
+	<meta name="description" content="Templeate">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Kalin Anastasov">
 
-    <!-- Latest compiled and minified CSS
+	<!-- Latest compiled and minified CSS
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="#">
+	<link rel="stylesheet" href="#">
 
-   <script>
-    "use strict";
+	<script type="text/javascript">
+		window.console.log('start parsing the js..');
 
-    window.console.log('start parsing the js..');
+		function Person(name, birthdate) {
+			var inputMod = new Date(input);
+			var birthDate = new Date(inputMod);
+			var currentDate = new Date();
+			var yourAge = currentDate.getFullYear() - birthDate.getFullYear();
+			var month = currentDate.getMonth() - birthDate.getMonth();
+			var day = currentDate.getDate() - birthDate.getDate();
 
-    function Person(name, birthdate) {
-      this.name = name;
-      this.yourDate = new Date(birthdate);
-      this.hasBirthDayToday = false;
+			if ((month === 0 && day === 0) && (yourAge >= 0)) {
+				return "Happy Birthday!";
+			} else if (yourAge > 100) {
+				return "You are immortal";
+			} else if (yourAge <= 0) {
+				if (yourAge === 0) {
+					return "You are a baby!";
+				}
+				return "You will be on " + (yourAge * (-1));
+			} else {
+				if ((month <= 0 && day <= 0) && (yourAge >= 0)) {
+					return "Your age is " + (yourAge - 1);
+				}
+				return "Your age is " + yourAge;
+			}
+		}
+		this.toString = function () {
+			var result = "";
+			var age = this.calcAge();
+			result = "<p><b>Name: </b>" + this.name + "</b><br>";
+			result += "<b>Birth date: </b>" + this.birthdate.toDateString() + "</b></p>";
+			result += "<p>";
+			if (age < 0) {
+				result += this.name + " is not born yet..";
+			} else if (age > 100) {
+				result += this.name + " is immortal!";
+			} else {
+				result += this.name + " is <b>" + age + "</b> years old.";
+			}
+			if (this.hasBirthDayToday) {
+				result += "<br>" + this.name + " has a birthday today!! :)";
+			}
+			result += "</p>";
+			return result;
 
-      this.calcAge = function () {
-        var result = 0;
-        var birthDate = new Date(yourDate);
-        var currentDate = new Date();
-        var yourAge = currentDate.getFullYear() - birthDate.getFullYear();
-        var month = currentDate.getMonth() - birthDate.getMonth();
-        var day = currentDate.getDate() - birthDate.getDate();
-        
-        if ((month == 0 && day == 0) && (yourAge >= 0)) {
-            result = yourAge;
-            this.hasBirthDayToday = true;
-        } else if (yourAge > 100) {
-            result = yourAge;
-        } else if (yourAge <= 0) {
-            if (yourAge == 0) {
-                result = yourAge;
-            }
-                result = yourAge * (-1);
-        } else {
-            if ((month <= 0 && day <= 0) && (yourAge >= 0)) {
-                result = (yourAge - 1);
-            }
-            else{
-                result = yourAge;
-            }
-        }
-        return result;
-      }
+		}
+		document.addEventListener('DOMContentLoaded', function () {
+			console.log('ready');
 
-      this.toString = function () {
-        var result = "";
-        var age = this.calcAge();
-
-        result = "<p><b>Name: </b>" + this.name + "</b><br>";
-        result += "<b>Birth date: </b>" + this.birthdate.toDateString() + "</b></p>";
-
-        result += "<p>";
-
-        if (age < 0) {
-          result += this.name + " is not born yet..";
-        } else if (age > 100) {
-          result += this.name + " is immortal!";
-        } else {
-          result += this.name + " is <b>" + age + "</b> years old.";
-        }
-
-        if (this.hasBirthDayToday) {
-          result += "<br>" + this.name + " has a birthday today!! :)";
-        }
-
-        result += "</p>";
-
-        return result;
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      console.log('ready');
-    
-      document.getElementById("showAge").addEventListener('submit', function (e) {
-        e.preventDefault();
-        console.log('Submitted..');
-        
-        var name = document.getElementById('name').value;
-        var bDate = document.getElementById('yourAge').value;
-        var person = new Person(name, bDate);
-        var nameContainer = document.createElement('h4');
-        nameContainer.innerHTML = person.name;
-        people.push(nameContainer);
-    
-
-       
-      });
-    }
-       
-
-       
-
-  </script>
+			document.getElementById("showAge").addEventListener('submit', function (e) {
+				e.preventDefault();
+				console.log('Submitted..');
+				var name = document.getElementById('name').value;
+				var bDate = document.getElementById('yourAge').value;
+				var person = new Person(name, bDate);
+				var nameContainer = document.createElement('h4');
+				nameContainer.innerHTML = person.name;
+				people.push(nameContainer);
+			});
+		});
+	</script>
 
 
 </head>
 
 <body>
-    <main>
-        <fieldset>
-            <legend>Fill the form</legend>
-            <form id="showAge">
-                <p>
-                    <lable for="name">Your Name:</lable>
-                    <input type="text" placeholder="J. Smith" name="name">
-                </p>
-                <p>
-                    <lable for="yourAge">Your Age:</lable>
-                    <input type="text" placeholder="YYYY-MM-DD" name="yourAge">
-                </p>
-            </form>
-            <input type="submit" value="Show my age">
-            <p id="answear"></p>
-        </fieldset>
-        <section id="people">
-            <h3>People:</h3>
-        </section>
-    </main>
+	<main>
+		<fieldset>
+			<legend>Fill the form</legend>
+			<form id="showAge">
+				<p>
+					<lable for="name">Your Name:</lable>
+					<input type="text" placeholder="J. Smith" name="name">
+				</p>
+				<p>
+					<lable for="yourAge">Your Age:</lable>
+					<input type="text" placeholder="YYYY-MM-DD" name="yourAge">
+				</p>
+			</form>
+			<input type="submit" value="Show my age">
+			<p id="answear"></p>
+		</fieldset>
+		<section id="people">
+			<h3>People:</h3>
+		</section>
+	</main>
 </body>
 
 </html>
