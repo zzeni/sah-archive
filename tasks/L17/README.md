@@ -45,7 +45,7 @@ Example response on failure:
 ##### Endpoint: `/register`
 
 method: POST  
-Params: `username`, `password`, `password_confirmation`, `email`, `avatar_url`
+Params: `username`, `password`, `password_confirmation`, `email`, `avatar_url`  
 Returns: json
 
 Example request data:  
