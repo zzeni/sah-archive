@@ -1,46 +1,53 @@
-"use strict"
-//task 1
-var personGreeting;
-
+//task 1 
 function greeting(name) {
     return "Hello, " + name + "!";
 }
-greeting("Jeni");
-//task 2
-function Person(fname, lname) {
+
+//task 2 , 5, 6, 7, 8, 9, 10 
+function Person(fname, lname, isPolite) {
     this.firstName = fname;
     this.lastName = lname;
-    this.isPolite = true;
     this.fullName = fname + " " + lname;
-    this.introduce = function () {
-        return "Здравейте, kазвам се " + this.fullName;
-    }
-    this.bePolite = function (isPolite) {
-        if (isPolite == false) {
-            return "Аз съм " + this.firstName;
+    this.isPolite = true;
+    this.greet = function (otherPerson) {
+        if (this.isPolite === false) {
+            return "Здрасти, " + otherPerson.firstName + "!";
+        } else {
+            return "Здравейте, " + otherPerson.fullName + "!";
         }
     }
-
-    this.greet = function (otherPerson) {
-        var boiko = new Person("Бойко", "Борисов");
-        var lili = new Person("Лили", "Иванова");
-        boiko.introduce();
-        lili.bePolite(false);
-        //lili ne greet-va boiko !
-        lili.greet(boiko);
-        lili.introduce();
-
+    var otherPerson = otherPerson;
+    this.introduce = function (otherPerson) {
+        var result = "";
+        if (otherPerson != undefined && this.isPolite === false) {
+            result += this.greet(otherPerson) + "Аз съм " + this.firstName + ".";
+        }
+        return "Kазвам се " + this.firstName;
     }
+    this.bePolite = function (isPolite) {
+        result = "";
+        if (isPolite === false) {
+            return "Аз съм " + this.firstName;
+        } else if (otherPerson != undefined && this.isPolite === true) {
+            result += this.greet(otherPerson) + "Казвам се " + this.fullName + ".";
+        } else if (this.isPolite === false) {
+            result += "Здрасти, аз съм " + this.firstName + ".";
+        } else {
+            result += "Здравейте, казвам се " + this.fullName + ".";
+        }
+        return result;
+    }
+
 }
-// task 3
-function personGreeting(person, beFormal) {
-    var name = person.firstName + " " + person.lastName;
-    if (beFormal == true) {
-        return "Hello, " + name;
+
+//task 3, 4
+function personGreeting(Person, beFormal) {
+    var result = "";
+    if (beFormal === false) {
+        return "Hello, " + Person.fullName + "!";
     } else {
-        return "hi, " + person.firstName;
+        return "Hi, " + Person.firstName + "!";
     }
+    return result;
 }
-
-
-personGreeting(new Person("Boiko", "Borisov"));
+// 7 и нещо кода за introduce не се получава, а във валидатора всичко излиза сиво :( 
