@@ -18,9 +18,9 @@
 
 Ето я и спецификацията на API-то:
 
-##### API url: `http://zenifytheweb.com/api/examples`
+#### API url: `http://zenifytheweb.com/api/examples`
 
-###### Endpoint: `/check_username`
+##### Endpoint: `/check_username`
 
 method: Post  
 Params: username (String)  
@@ -29,10 +29,11 @@ Returns: json
 Example request data:  
 `{ username: username }`
 
-Example response on success:  
+Example response on success when the username is availavle:  
 200 OK  
 `{ available: true, msg: "This username is available :)" }`
 
+Example response on success when the username is NOT availavle:  
 200 OK  
 `{ available: false, msg: "This username is NOT available :(" }`
 
