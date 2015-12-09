@@ -23,7 +23,7 @@
 
 ##### Endpoint: `/check_username`
 
-method: Post  
+method: GET  
 Params: username (String)  
 Returns: json
 
@@ -44,7 +44,7 @@ Example response on failure:
 
 ##### Endpoint: `/register`
 
-method: Post  
+method: POST  
 Params: `username`, `password`, `password_confirmation`, `email`, `avatar_url`
 Returns: json
 
