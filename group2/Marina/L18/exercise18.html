@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AJAX Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <style>
+        .error {
+            border-color: red;
+        }
+        .success {
+            border-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="register">
+        <h3>Registration form</h3>
+
+        <form method="post" name="registrationForm" action="http://zenifytheweb.com/api/examples/register">
+            <p>
+                <label for="username">username:
+                    <input type="text" name="username" id="username" placeholder="username">
+                </label>
+            </p>
+            <p>
+                <label for="emailInput">email:
+                    <input type="email" id="emailInput" name="email" placeholder="user@example.com">
+                </label>
+            </p>
+            <p>
+                <label for="password">password:
+                    <input type="text" name="password" placeholder="">
+                </label>
+            </p>
+            <p>
+                <label for="password_confirmation">password confirmation:
+                    <input type="text" name="password_confirmation" placeholder="">
+                </label>
+            </p>
+            <p>
+                <label for="avatar_url">avatar url:
+                    <input type="text" name="avatar_url" placeholder="avatar_url">
+                </label>
+            </p>
+            <p>
+                <input type="reset" value="reset">
+                <input type="submit" name="submit" value="submit">
+            </p>
+        </form>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
