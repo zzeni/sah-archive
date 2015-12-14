@@ -1,0 +1,71 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+	<title>Form Example-Ivan Onchev</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<h2>Registration Form</h2>
+
+			<form action="http://zenifytheweb.com/api/examples/register" method="post" novalidate>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-12 form-group">
+								<label for="name">Name
+									<input class="form-control" id="name" name="username" placeholder="Name" type="text">
+								</label>
+							</div>
+							<div class="col-md-12 form-group">
+								<label>Email
+									<input class="form-control" id="email" name="email" placeholder="Email" type="email">
+								</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 form-group">
+								<label>Password
+									<input class="form-control" id="password" name="password" placeholder="Password" type="password">
+								</label>
+							</div>
+							<div class="col-md-12 form-group">
+								<label>Confirm password
+									<input class="form-control" id="confirmPass" name="password_confirmation" placeholder="Confirm Password" type="password">
+								</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 form-group">
+								<label>Avatar
+									<input class="form-control" id="picture" name="avatar_url" placeholder="Picture URL" type="text">
+								</label>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div id="send" class="col-md-12 form-group">
+								<button type="submit" id="submit" class="btn btn-default"><i class="fa fa-paper-plane fa-2x"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<p class="text-danger" id="placeError"></p>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="script.js"></script>
+	<script src="validator.js"></script>
+</body>
+
+</html>
