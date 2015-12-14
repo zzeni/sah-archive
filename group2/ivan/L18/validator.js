@@ -1,5 +1,4 @@
 'use strict';
-
 $('form').submit(function (event) {
 
 
