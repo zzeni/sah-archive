@@ -1,9 +1,6 @@
 'use strict';
 $('form').submit(function (event) {
-
-
 	var form = event.target;
-
 	try {
 		formValidate(form);
 		checkName();
@@ -20,7 +17,6 @@ $('form').submit(function (event) {
 		} else {
 			throw error;
 		}
-
 	}
 });
 
@@ -37,10 +33,7 @@ function fieldValidate(form, fieldName) {
 	var fieldInput = $(form).find("input[name=" + fieldName + "]");
 	var fieldValue = fieldInput.val();
 	if (fieldValue === "") {
-		error = new Error(fieldName + " is mandatory!");
-		error.name = "FieldValidationError";
-		error.target = fieldInput;
-		throw error;
+		throw new FieldValidationError(fieldName + " is mandatory!", fieldInput);
 	} else {
 		fieldInput.removeClass('error');
 		$("#placeError").html("");
@@ -52,10 +45,7 @@ function checkName() {
 	var name = $("#name").val();
 	checkWithReg = /^[A-Za-z\s?]+$/;
 	if (!name.match(checkWithReg)) {
-		error = new Error("Please enter a correct Name!");
-		error.name = "FieldValidationError";
-		error.target = fieldInput;
-		throw error;
+		throw new FieldValidationError("Please enter a correct Name!", fieldInput);
 	} else {
 		fieldInput.removeClass('error');
 		$("#placeError").html("");
@@ -67,10 +57,7 @@ function checkEmail() {
 	var email = $("#email").val();
 	checkWithReg = /^[A-Za-z][\w\.\-\_\d]+@[a-z]+[\.][a-z]+$/;
 	if (!email.match(checkWithReg)) {
-		error = new Error("Please enter a correct Email!");
-		error.name = "FieldValidationError";
-		error.target = fieldInput;
-		throw error;
+		throw new FieldValidationError("Please enter a correct Email!", fieldInput);
 	} else {
 		fieldInput.removeClass('error');
 		$("#placeError").html("");
@@ -82,10 +69,7 @@ function checkPass() {
 	var password = $("#password").val();
 	checkWithReg = /^(?=.*?[0-9])(?=.*?[a-zA-Z]).{3,}$/;
 	if (!password.match(checkWithReg)) {
-		error = new Error("Please enter a correct Password!");
-		error.name = "FieldValidationError";
-		error.target = fieldInput;
-		throw error;
+		throw new FieldValidationError("Please enter a correct Password!", fieldInput);
 	} else {
 		fieldInput.removeClass('error');
 		$("#placeError").html("");
@@ -96,10 +80,7 @@ function passConfirm() {
 	var fieldInput = $("#confirmPass");
 	var password = $("#password").val();
 	if (fieldInput.val() !== password) {
-		error = new Error("Wrong Password Confirmation!");
-		error.name = "FieldValidationError";
-		error.target = fieldInput;
-		throw error;
+		throw new FieldValidationError("Wrong Password Confirmation!", fieldInput);
 	} else {
 		fieldInput.removeClass('error');
 		$("#placeError").html("");
@@ -111,10 +92,7 @@ function checkUrl() {
 	var picture = $("#picture").val();
 	checkWithReg = /.*/;
 	if (!picture.match(checkWithReg)) {
-		error = new Error("Please enter a correct Url!");
-		error.name = "FieldValidationError";
-		error.target = fieldInput;
-		throw error;
+		throw new FieldValidationError("Please enter a correct Url!", fieldInput);
 	} else {
 		fieldInput.removeClass('error');
 		$("#placeError").html("");
