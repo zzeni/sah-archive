@@ -1,0 +1,21 @@
+h1 {
+    font-family: monospace;
+    font-style: italic;
+}
+
+form {
+    width: 404px;
+    height: auto;
+    background-color: lightgray;
+    text-decoration-color: white;
+}
+
+.reset {
+    background-color: red; 
+    color: white;
+}
+
+.submit {
+    background-color: green;
+    color: white;
+}
