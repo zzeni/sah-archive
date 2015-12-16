@@ -32,11 +32,11 @@ Example request data:
 
 Example response on success when the username is availavle:  
 200 OK  
-`{ available: true, msg: "This username is available :)" }`
+`"available"`
 
 Example response on success when the username is NOT availavle:  
 200 OK  
-`{ available: false, msg: "This username is NOT available :(" }`
+`"taken"`
 
 Example response on failure:  
 510 OK  

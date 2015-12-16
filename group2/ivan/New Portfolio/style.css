@@ -33,7 +33,7 @@ body {
 
 .header-image {
     width: 100%;
-    background: url(/pics/cover.jpg) no-repeat left bottom;
+    background: url(pics/cover.jpg) no-repeat left bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
