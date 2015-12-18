@@ -13,20 +13,14 @@ $(document.registrationForm.username).blur(function () {
         if (response == 'taken') {
             alert("User exists");
             document.registrationForm.username.focus();
-        } else if (response == 'available'){
+        } else if (response == 'available') {
             alert("User is available");
-        } 
-        else {
+        } else {
 
-           throw new Error("Error");
+            throw new Error("Error");
         }
-
     });
-
 });
-
-
-
 function validate() {
     var emailID = document.myForm.email.value;
     var atpos = emailID.indexOf("@");
