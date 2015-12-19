@@ -1,20 +1,15 @@
 (function () {
+	"use strict";
+
 	$('#accordion1 a').click(function (e) {
 		e.preventDefault();
 		$("#products").empty();
 		var products = $(this).attr("data-filter");
-		var resultSet = [];
 		for (var i in itemsRoom) {
 			var item = itemsRoom[i];
 			if (products === "all" || item.group === products || item.kind === products) {
-				resultSet.push(item);
+				item.toHtml();
 			}
-		}
-		
-		/// sort the result set
-		
-		for (var i in resultSet) {
-			resultSet[i].toHtml();
 		}
 	});
 	//$('#productsFilter').change(function(e) {
