@@ -1,0 +1,142 @@
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/background-news2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .bootie {
+    background-color: rgba(255, 255, 255, 0.55);
+    border-radius: 9px;
+    max-width: 1224px;
+    right: 0;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .naav {
+    background-color: rgba(70, 70, 70, 0.75);
+    border-radius: 9px;
+    padding: 4px 0 15px 0;
+  }
+  
+  .navigation {
+    display: block;
+    margin-top: 10px;
+    align-self: center;
+  }
+  
+  .navigation a {
+    display: inline;
+    padding: 14px 47px 16px 47px;
+    text-decoration: none;
+    margin: 0 0 0 0;
+    color: white;
+  }
+  
+  .leftradius {
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
+    margin-left: 0;
+  }
+  
+  .rightradius {
+    margin-right: 0px;
+    border-bottom-right-radius: 9px;
+    border-top-right-radius: 9px;
+  }
+  
+  .navigation a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.78);
+    color: black;
+    border-radius: 9px;
+    transition: 0.5s;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  .sections {
+    flex: 4;
+  }
+  
+  aside {
+    flex: 1;
+    border-left: 1px solid #3e3e3e;
+  }
+  
+  .mainimg {
+    width: 792px;
+    height: 500px;
+    margin: auto;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid rgb(42, 42, 42);
+    background-color: rgba(70, 70, 70, 0.75);
+    border-radius: 9px;
+    margin: 7px 12px 7px 12px;
+  }
+  
+  .sidenews,
+  .novini,
+  aside {
+    text-align: center;
+  }
+  
+  .cont:hover {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.78);
+    transition: 0.5s;
+  }
+  
+  .sideimg {
+    width: 180px;
+    height: 118px;
+    margin: auto;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid rgb(42, 42, 42);
+    background-color: rgba(70, 70, 70, 0.75);
+    border-radius: 9px;
+    margin: 7px 12px 7px 12px;
+    opacity: 0.75;
+  }
+  
+  .sideimg:hover {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  .sidecont {
+    margin: 0 0 0 0;
+  }
+  
+  .aside2 {
+    margin-top: 10px;
+  }
+  
+  .side2 {
+    padding: 5px 0 5px 0;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: rgba(70, 70, 70, 0.75);
+    border: 1.5px solid rgb(42, 42, 42);
+    color: white;
+  }
+  
+  .side2:hover {
+    background-color: rgba(255, 255, 255, 0.78);
+    color: black;
+    transition: 0.5s;
+  }
