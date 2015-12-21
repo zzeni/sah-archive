@@ -1,20 +1,17 @@
+//$(document).ready(function(){
+// $("body").empty();
+
+//});
 (function () {
 
 	$('.leftNavbar a').click(function (e) {
 		e.preventDefault();
-
 		$('.leftNavbar a').removeClass('active');
 		$(this).addClass('active');
-
 		var target = $(this).attr('data-target');
-
 		$('body > div').hide();
 		$('#' + target).show();
 	});
-})();
-
-(function () {
-	"use strict";
 
 	$('#accordion1 a').click(function (e) {
 		e.preventDefault();
@@ -25,15 +22,14 @@
 	$('#productsFilter').change(function (e) {
 		list($('#accordion1 a.current').attr("data-filter"), $(this).val());
 	});
-	$(".panel-body a img").click(function (e) {
-		e.preventDefault();
-		console.log("ehooo");
-		//var url = $(this).attr("src");
-		//for (var i in itemsRoom) {
-			//var item = itemsRoom[i];
-			//if (url === item.picture)
-			//	item.toModal();
-		//}
+	$("#products").on("click", "img", function () {
+		var url = $(this).attr("src");
+		$("#products").empty();
+		for (var i in itemsRoom) {
+			var item = itemsRoom[i];
+			if (url == item.picture)
+				item.toModal();
+		}
 	});
 })();
 
@@ -58,7 +54,7 @@ function Item(pic, name, price, group, kind) {
 		$("#products").append('<div class="col-sm-4 col-lg-4 col-md-4"><div class="panel"><div class="panel-heading panel-primary">' + this.name + '</div><div class="panel-body"><a href="#"><img src="' + this.picture + '" class="img-responsive center-block" alt="Image"></a></div><div class="panel-footer panel-primary"><span class="price">' + this.price + '$</span></div></div></div>');
 	};
 	this.toModal = function () {
-		$("#products").show('<div class="modal fade" id="myModal" role="dialog"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header modal-primery"><h4 class="modal-title">' + this.name + '</h4></div><div class="modal-body"><img src="' + this.picture + '" class="img-responsive center-block" alt="Image"></div><div class="modal-footer modal-primery"><span class="price">' + this.price + '$</span></div></div></div></div>');
+		$("#products").append('ehooooooo');
 	}
 }
 
