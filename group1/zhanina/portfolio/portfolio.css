@@ -170,6 +170,13 @@
             width: 50%;
         }
         
+/*
+        form {
+     overflow-x: scroll;
+     width: 100%;
+ }
+*/
+        
         .box {
             display: table;
             border: 1px #7DBADA solid;
@@ -193,9 +200,14 @@
             padding-bottom: 30px;
         }
         
+        pre {
+            overflow-x: scroll;
+        }
+        
         .table {
             display: table;
-            width: 200px;
+            width: 100%;
+            overflow-x: scroll;
         }
         
         input {

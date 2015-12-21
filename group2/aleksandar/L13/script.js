@@ -6,12 +6,12 @@ function createPerson(e) {
 	//	birth_date = document.getElementById('inp').value;
 
 
-	var P1 = new Person(document.getElementById('name').value, document.getElementById('inp').value);
+	var p1 = new Person(document.getElementById('name').value, document.getElementById('inp').value);
 	//	this.name = document.getElementById('name').value;
 	//	this.birth_date = document.getElementById('inp').value;
 
 
-	console.log(P1);
+	console.log(p1);
 }
 
 
@@ -32,7 +32,7 @@ function tellAge(person) {
 		yrs += " Happy Birthday!";
 
 	} else {
-		if (yrs <= 0 && month <= 0 && today.getDate() < bDate.getDate()) {
+		if (yrs < 0 || ( yrs == 0 && month < 0) || (yrs == 0 && month == 0 && today.getDate() < bDate.getDate())) {
 			yrs = "Incorrect data input.";
 		} else {
 			if (month < 0 || month == 0 && today.getDate() < bDate.getDate()) {

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="regForm.css">
+    <title>Registration Form with Validation</title>
+</head>
+
+<body>
+    <h1 id="header" onmouseover="this.style.color='red'" onclick="this.innerHTML= 'Welcome'" onmouseout="this.style.color='black'">Homework 16 <img id="smile" src="smile.jpg" alt="smile.jpg"></h1>
+    <hr>
+    <h2>Registration Form with Validation</h2>
+
+    <div class="table">
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-4">
+                <p id="warning">Don't waste too much time with filling in the form <img src="images.jpg" alt="images.jpg"></p>
+                <img id="clock" src="clock.jpg" alt="clock.jpg">
+                <br>
+                <hr>
+
+                <p id="demo"></p>
+            </div>
+            <div class="col-md-5">
+                <form method="POST" action="#" onsubmit="return checkForm(this);">
+
+
+                    <label for="fname" onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">Fisrt Name</label>
+                    <input title="Enter your username" type="text" required pattern="\w+" name="name" id="fname" onchange="myFunction()" onfocus="focusFunction(this)">
+                    <br>
+
+                    <label for="email" onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">Email</label>
+                    <input title="Please enter your email address" type="email" required pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|" (?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])* ")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" name="text1" id="email" onfocus="focusFunction(this)">
+                    <br>
+
+                    <label for="password" onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">Password</label>
+                    <input title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" id="password" name="password" onfocus="focusFunction(this)">
+                    <br>
+
+                    <label for="passwordConfirmation" onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">Password Confirmation</label>
+                    <input title="Please enter the same Password as above" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="password" id="passwordConfirmation" onfocus="focusFunction(this)">
+                    <br>
+                    <label for="photo" onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">Photo</label>
+                    <input title="Paste the URL address of the photo" type="url" required pattern="/^(ftp|http|https):\/\/[^ " ]+$/ " name="url " name="photo " id="photo " onfocus="focusFunction(this) ">
+                    <br>
+                    <br>
+                  
+
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="col-md-1 ">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="regForm.js "></script>
+</body>
+
+</html>
