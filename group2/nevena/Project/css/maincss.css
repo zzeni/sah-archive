@@ -1,0 +1,58 @@
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}
+
+.box{
+	margin-bottom: 30px;
+}
+
+.box-inner{
+	border: 1px solid;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.box-inner img{
+	width: 155px;
+	height: 240px;
+	margin: 0 auto;
+}
+
+.box-inner h4{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*book*/
+
+.cover, .info{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.info{
+	text-align: center;
+}
+.review{
+	text-align: justify;
+}
+.review::first-letter{
+	font-size: 40px;
+	line-height: 40px;
+	color: grey;
+	font-style: italic;
+}
+@media (min-width: 992px){
+	.book-page{
+		background-image: url("/img/open_book.png");
+		background-repeat: no-repeat;
+		background-position: right 55px;
+		background-size: 50% 50%;
+	}
+}
