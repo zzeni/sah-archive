@@ -12,29 +12,25 @@
         var birth = new Date(birthDate);
         var age = today.getFullYear() - birth.getFullYear();
         var grivos = today.getMonth() - birth.getMonth();
-            
-            if (grivos < 0 || grivos == 0 && today.getDate() < birth.getDate()) 
+            if (grivos < 0 || grivos == 0 && today.getDate() < birth.getDate() )
                 {
-                age--;
+                    age--;
                 }
-            
-            if (grivos == 0 && today.getDate() == birth.getDate()) 
+            if (grivos == 0 && today.getDate() == birth.getDate() )
                 {
-               age += " Честит рожден ден, от JS!";
+                    age += " Честит рожден ден!";
                 }
-            
-            if (age < 0 || grivos == 0 && today.getDate() < birth.getDate()) 
+            if (age < 0 || grivos == 0 && today.getDate() < birth.getDate() )
                 {
-               age = " Chick Norris, please stop playing with JS :P";
+                    age =" Chuck Norris please stop playing with JS" ;
                 }
-            
-            if (age > 100) 
+            if (age > 100 )
                 {
-               age += " U are - Lili Ivanova, right?";
+                    age += " U are a Lily Ivanova, right?"
                 }
             return age;
-        }
-        alert(tellAge(birthDate));     
+        };
+        alert(tellAge(birthDate));
     </script>
     </body>
 </html>
