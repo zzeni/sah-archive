@@ -16,7 +16,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<!-- Custom CSS -->
 	<link href="style.css" rel="stylesheet">
 
@@ -35,10 +35,11 @@
 				</button>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li><a href="#">The shop</a></li>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Contact</a></li>
+				<ul class="nav navbar-nav leftNavbar">
+					<li><a href="#" data-target="home">Home</a></li>
+					<li><a href="#" data-target="shop">Shop</a></li>
+					<li><a href="#" data-target="about">About</a></li>
+					<li><a href="#" data-target="contact">Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -48,8 +49,13 @@
 		</div>
 	</nav>
 	<!--/Header navigation-->
+	<!--Home-->
+	<div class="container-fluid active" id="home">
+		Home
+	</div>
+	<!--/Home-->
 	<!--Shop content-->
-	<div class="container-fluid shop">
+	<div class="container-fluid" id="shop">
 		<div class="row">
 			<!--Accordion-->
 			<div class="col-sm-2">
@@ -93,11 +99,10 @@
 				<div class="container-fluid">
 					<label for="productsFilter">Filter:</label>
 					<select id="productsFilter">
-						<option value="value">- -</option>
-						<option value="value">From A to Z</option>
-						<option value="value">From Z to A</option>
-						<option value="value">From lowest to highest price</option>
-						<option value="value">From hiest to lowest price</option>
+						<option value="name_asc">From A to Z</option>
+						<option value="name_desc">From Z to A</option>
+						<option value="price_asc">From lowest to highest price</option>
+						<option value="price_desc">From hiest to lowest price</option>
 					</select>
 					<div id="products" class="row">
 					</div>
@@ -107,9 +112,18 @@
 		</div>
 	</div>
 	<!--/Shop content-->
-	<script src="script/item.js"></script>
-	<script src="script/itemsRoom.js"></script>
+	<!--About-->
+	<div class="container-fluid" id="about">
+		<h1>About</h1>
+	</div>
+	<!--/About-->
+	<!--Contact-->
+	<div class="container-fluid" id="contact">
+		<h1>Contact</h1>
+	</div>
+	<!--/Contact-->
 	<script src="script/script.js"></script>
+	<script src="script/itemsRoom.js"></script>
 </body>
 
 </html>

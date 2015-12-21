@@ -1,14 +1,17 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
-	margin-top: 10em;
+	margin-top: 8em;
 }
+
 .navbar-inverse {
 	min-height: 6.1em;
 	padding: 1em 0;
 	border-radius: 0;
 }
+
 .navbar-brand {
 	position: absolute;
 	width: 100%;
@@ -16,28 +19,32 @@ body {
 	text-align: center;
 	margin: auto;
 }
+
 ul,
 ol {
 	list-style: none;
 }
+
+#shop,
+#about,
+#contact {
+	display: none;
+}
+
 #accordion1 li.panel {
-	margin-bottom: 0px;
+	margin-bottom: 0em;
 }
-.shop {
-	margin: 1em;
-}
-.items-container {
-	border: 0.1em solid #ccc;
-	border-radius: 0.2em;
-}
+
 #products img {
 	width: 14.3em;
 	height: 14.3em;
 }
+
 #products .panel-footer {
 	background-color: transparent;
 	border-radius: 0em;
 }
+
 #items .price {
 	background-color: black;
 	color: white;
