@@ -2,29 +2,27 @@
 <html lang="en">
 
 <head>
-
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="autor" content="Ivan Onchev">
 	<meta name="description" content="E shop">
 
-	<title>e shop - Ivan Onchev</title>
+	<title>Online shop - Ivan Onchev</title>
 
-	<!-- Latest compiled and minified CSS -->
+	<!-- Bootstrap CSS -------------->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+	<!-- jQuery-------------->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
+	<!-- Bootstrap JavaScript -------->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<!-- Custom CSS -->
 	<link href="style.css" rel="stylesheet">
-
 </head>
 
 <body>
-	<!--Header navigation-->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<!--Header navigation-------------------------------------------------------------------------------->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="header_nav">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#">MustGlass</a>
@@ -36,8 +34,8 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav leftNavbar">
-			
-					<li><a href="#" data-target="shop">Shop</a></li>
+
+					<li><a href="#" data-target="shop" class="active">Shop</a></li>
 					<li><a href="#" data-target="about">About</a></li>
 					<li><a href="#" data-target="contact">Contact</a></li>
 				</ul>
@@ -48,20 +46,16 @@
 			</div>
 		</div>
 	</nav>
-	<!--/Header navigation-->
-	<!--Home-->
-	<div class="container-fluid active" id="home">
-		Home
-	</div>
-	<!--/Home-->
-	<!--Shop content-->
+	<!--/Header navigation------------------------------------------------------------------------------->
+
+	<!--Shop content------------------------------------------------------------------------------------->
 	<div class="container-fluid" id="shop">
 		<div class="row">
-			<!--Accordion-->
+			<!--Accordion-------------------------------------------------------------------------------->
 			<div class="col-sm-2">
 				<ul class="nav nav-stacked" id="accordion1">
 
-					<li><a href="#" data-filter="all">All</a></li>
+					<li><a href="#" data-filter="all" id="allProducts">All</a></li>
 
 					<li class="panel"> <a data-toggle="collapse" data-parent="#accordion1" href="#firstLink" data-filter="beer">Beer</a>
 						<ul id="firstLink" class="collapse">
@@ -93,8 +87,8 @@
 					<li><a href="#" data-filter="water">Water</a></li>
 				</ul>
 			</div>
-			<!--/Accordion-->
-			<!--Products container-->
+			<!--/Accordion------------------------------------------------------------------------------------------>
+			<!--Products container----------------------------------------------------------------------------------->
 			<div class="col-sm-10 items-container">
 				<div class="container-fluid">
 					<label for="productsFilter">Filter:</label>
@@ -108,20 +102,20 @@
 					</div>
 				</div>
 			</div>
-			<!--/Products container-->
+			<!--/Products container-------------------------------------------------------------------------------->
 		</div>
 	</div>
-	<!--/Shop content-->
+	<!--/Shop content----------------------------------------------------------------------------------------------->
 	<!--About-->
 	<div class="container-fluid" id="about">
 		<h1>About</h1>
 	</div>
-	<!--/About-->
-	<!--Contact-->
+	<!--/About------------------------------------------------------------------------------------------------------>
+	<!--Contact----------------------------------------------------------------------------------------------------->
 	<div class="container-fluid" id="contact">
 		<h1>Contact</h1>
 	</div>
-	<!--/Contact-->
+	<!--/Contact------------------------------------------------------------------------------------------------------->
 	<script src="script/script.js"></script>
 	<script src="script/itemsRoom.js"></script>
 </body>

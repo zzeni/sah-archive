@@ -3,12 +3,15 @@
 }
 
 body {
-	margin-top: 8em;
+	margin-top: 9em;
 }
-
+ul,
+ol {
+	list-style: none;
+}
+/*Navbar start<><><><><><><><><><><><><><><><><>*/
 .navbar-inverse {
-	min-height: 6.1em;
-	padding: 1em 0;
+	padding: 1.5em 0;
 	border-radius: 0;
 }
 
@@ -19,18 +22,13 @@ body {
 	text-align: center;
 	margin: auto;
 }
+/*Navbar end<><><><><><><><><><><><><><><><><>*/
 
-ul,
-ol {
-	list-style: none;
-}
-
-#shop,
 #about,
 #contact {
 	display: none;
 }
-
+/*#Shop content start<><><><><><><><><><><><><><><><><>*/
 #accordion1 li.panel {
 	margin-bottom: 0em;
 }
@@ -49,11 +47,14 @@ ol {
 	background-color: black;
 	color: white;
 }
+
 #products img.image-alone {
 	width: 26.3em;
 	height: 26.3em;
 }
+
 #products .panel-body.body-alone {
 	width: 20em;
 	height: 20em;
 }
+/*#Shop content end<><><><><><><><><><><><><><><><><>*/
