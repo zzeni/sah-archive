@@ -44,17 +44,18 @@ function list(group, sort) {
 	};
 }
 
-function Item(pic, name, price, group, kind) {
+function Item(pic, name, price, group, kind, desc) {
 	this.picture = pic;
 	this.name = name;
 	this.price = price;
 	this.group = group;
 	this.kind = kind;
+	this.description = desc;
 	this.toHtml = function () {
-		$("#products").append('<div class="col-sm-4 col-lg-4 col-md-4"><div class="panel"><div class="panel-heading panel-primary">' + this.name + '</div><div class="panel-body"><a href="#"><img src="' + this.picture + '" class="img-responsive center-block" alt="Image"></a></div><div class="panel-footer panel-primary"><span class="price">' + this.price + '$</span></div></div></div>');
+		$("#products").append('<div class="col-sm-4 col-lg-4 col-md-4"><div class="panel"><div class="panel-heading panel-primary">' + this.name + '</div><div class="panel-body"><a href="#"><img src="' + this.picture + '" class="img-responsive center-block inList" alt="Image"></a></div><div class="panel-footer panel-primary"><span class="price">' + this.price + '$</span></div></div></div>');
 	};
 	this.toModal = function () {
-		$("#products").append('ehooooooo');
+		$("#products").append('<div class="row"><div class="col-sm-6 col-lg-6 col-md-6"><div class="panel"><div class="panel-body"><img src="' + this.picture + '" class="img-responsive center-block image-alone" alt="Image"></div></div></div><div class="col-sm-6 col-lg-6 col-md-6"><div class="panel"><div class="panel-heading panel-primary"><h3>' + this.name + '</h3></div><div class="panel-body body-alone"><p>' + this.group + ' glass /<span> type: ' + this.kind + '</span></p><p class="lead">Description:</p><p>' + this.description + '</p></div><div class="panel-footer panel-primary"><span class="price">' + this.price + '$</span></div></div></div></div>');
 	}
 }
 

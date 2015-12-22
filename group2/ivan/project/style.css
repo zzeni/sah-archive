@@ -35,7 +35,7 @@ ol {
 	margin-bottom: 0em;
 }
 
-#products img {
+#products img.inList {
 	width: 14.3em;
 	height: 14.3em;
 }
@@ -48,4 +48,12 @@ ol {
 #items .price {
 	background-color: black;
 	color: white;
+}
+#products img.image-alone {
+	width: 26.3em;
+	height: 26.3em;
+}
+#products .panel-body.body-alone {
+	width: 20em;
+	height: 20em;
 }
