@@ -4,6 +4,8 @@
 
 body {
 	margin-top: 9em;
+	font-family: 'Josefin Slab', serif;
+	font-size: 2em;
 }
 ul,
 ol {
@@ -13,14 +15,39 @@ ol {
 .navbar-inverse {
 	padding: 1.5em 0;
 	border-radius: 0;
+	background-color: #4d8ee7;
+	border-color: #4d8ee7; 
 }
 
-.navbar-brand {
+.navbar-inverse .navbar-brand {
 	position: absolute;
 	width: 100%;
 	left: 0;
 	text-align: center;
 	margin: auto;
+	color: #0f2442;
+	font-size: 1.4em;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+	color: #ffffff;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #0f2442;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #ffffff;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #ffffff;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #0f2442;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #CCC;
 }
 /*Navbar end<><><><><><><><><><><><><><><><><>*/
 
@@ -58,3 +85,9 @@ ol {
 	height: 20em;
 }
 /*#Shop content end<><><><><><><><><><><><><><><><><>*/
+/*#Contact content start<><><><><><><><><><><><><><><><><>*/
+
+.send {
+	text-align: center;
+}
+/*#Contact content end<><><><><><><><><><><><><><><><><>*/
