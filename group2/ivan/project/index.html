@@ -7,11 +7,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="autor" content="Ivan Onchev">
 	<meta name="description" content="E shop">
-
-	<title>Online shop - Ivan Onchev</title>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>Must Glass</title>
 
 	<!-- Bootstrap CSS -------------->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+	<!--Font Awsome------------->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- jQuery-------------->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Bootstrap JavaScript -------->
@@ -113,11 +132,45 @@
 	<!--/About------------------------------------------------------------------------------------------------------>
 	<!--Contact----------------------------------------------------------------------------------------------------->
 	<div class="container-fluid" id="contact">
-		<h1>Contact</h1>
+		<div class="jumbotron">
+			
+			<form action="#" method="post" novalidate>
+				<h2>CONTACT</h2>
+				<div class="row">
+					<div class="col-md-7">
+						<div class="row">
+							<div class="col-md-6 form-group" id="nameGroup">
+								<input class="form-control" id="name" name="Name" placeholder="Name" type="text">
+								<span id="nameSpan" class="help-block"></span>
+							</div>
+							<div class="col-md-6 form-group" id="emailGroup">
+								<input class="form-control" id="email" name="Email" placeholder="Email" type="email">
+								<span id="emailSpan" class="help-block"></span>
+							</div>
+						</div>
+						<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+						<br>
+						<div class="row">
+							<div class="col-md-12 form-group send">
+								<button type="submit" class="btn btn-default"><i class="fa fa-paper-plane fa-2x"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<p>Contact me and I will respond as soon as I can.</p>
+						<p><span><i class="fa fa-map-marker fa-lg"></i></span> Sofia, BG</p>
+						<p><span><i class="fa fa-mobile fa-lg"></i></span> +359 555-8888-55</p>
+						<p><span><i class="fa fa-envelope fa-lg"></i></span> onchevivan@gmail.com</p>
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
 	<!--/Contact------------------------------------------------------------------------------------------------------->
 	<script src="script/script.js"></script>
 	<script src="script/itemsRoom.js"></script>
+	<script src="script/form-validator.js"></script>
+	<script src="script/click.js"></script>
 </body>
 
 </html>
