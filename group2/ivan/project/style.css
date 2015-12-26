@@ -3,6 +3,7 @@
 }
 
 body {
+	background-color: #ffffff;
 	margin-top: 9em;
 	font-family: 'Josefin Slab', serif;
 	font-size: 2em;
@@ -11,12 +12,15 @@ ul,
 ol {
 	list-style: none;
 }
+
+
 /*Navbar start<><><><><><><><><><><><><><><><><>*/
+
 .navbar-inverse {
 	padding: 1.5em 0;
 	border-radius: 0;
-	background-color: #4d8ee7;
-	border-color: #4d8ee7; 
+	background-color: #eade6d;
+	border-color: #944444;
 }
 
 .navbar-inverse .navbar-brand {
@@ -25,39 +29,55 @@ ol {
 	left: 0;
 	text-align: center;
 	margin: auto;
-	color: #0f2442;
+	color: #944444;
 	font-size: 1.4em;
 }
+
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
 	color: #ffffff;
 }
+
 .navbar-inverse .navbar-nav > li > a {
-	color: #0f2442;
+	color: #944444;
 }
+
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-    color: #ffffff;
+	color: #ffffff;
 }
+
 .navbar-inverse .navbar-toggle {
-    border-color: #ffffff;
+	border-color: #ffffff;
 }
+
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-    background-color: #0f2442;
+	background-color: #944444;
 }
+
 .navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #CCC;
+	background-color: #ffffff;
 }
+
+
 /*Navbar end<><><><><><><><><><><><><><><><><>*/
 
+#shop,
 #about,
 #contact {
 	display: none;
 }
+
+
 /*#Shop content start<><><><><><><><><><><><><><><><><>*/
+
 #accordion1 li.panel {
 	margin-bottom: 0em;
+}
+
+#accordion1 a {
+	color: #944444;
 }
 
 #products img.inList {
@@ -84,10 +104,33 @@ ol {
 	width: 20em;
 	height: 20em;
 }
+
+
 /*#Shop content end<><><><><><><><><><><><><><><><><>*/
+
+
 /*#Contact content start<><><><><><><><><><><><><><><><><>*/
+
+.contact-form {
+	border: .09em solid #944444;
+	background-color: #ffffff;
+}
 
 .send {
 	text-align: center;
 }
+
+
 /*#Contact content end<><><><><><><><><><><><><><><><><>*/
+
+footer {
+	margin-top: 1.5em;
+	background-color: black;
+}
+
+footer p {
+	margin: 0;
+	padding: 1.2em;
+	color: white;
+	font-size: .8em;
+}
