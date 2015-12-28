@@ -3,8 +3,11 @@ jQuery(document).ready(function ($) {
 		'height': 600,
 		'width': 1300,
 		'responsive': true,
-		'nexttext': '<i class="fa fa-angle-right fa-2x"></i>', 
+		'nexttext': '<i class="fa fa-angle-right fa-2x"></i>',
 		'prevtext': '<i class="fa fa-angle-left fa-2x"></i>',
-		'showmarkers': false
+		'showmarkers': false,
+		'randomstart': true,
+		'animduration': 650, 
+		'animspeed': 3000
 	});
 });

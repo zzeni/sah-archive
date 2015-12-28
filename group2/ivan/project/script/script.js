@@ -94,19 +94,24 @@ function list(group, sort) {
 // accordion and filter helper function end
 //=================================================================================//
 // Item start
-function Item(pic, name, price, group, kind, desc) {
+function Item(pic, name, price, group, kind, desc, id) {
 	this.picture = pic;
 	this.name = name;
 	this.price = price;
 	this.group = group;
 	this.kind = kind;
 	this.description = desc;
+	this.id = id;
 	this.toHtml = function () {
-		$("#products").append('<div class="col-sm-4 col-lg-4 col-md-4"><div class="panel"><div class="panel-heading panel-danger"><h3>' + this.name + '<h3></div><div class="panel-body"><a href="#"><img src="' + this.picture + '" class="img-responsive center-block inList" alt="Image"></a></div><div class="panel-footer panel-danger"><span class="price">' + this.price + '$</span></div></div></div>');
+		$("#products").append('<div class="col-sm-4 col-lg-4 col-md-4"><div class="panel"><div class="panel-heading panel-danger"><h3>' + this.name + '<h3></div><div class="panel-body"><a href="#"><img src="' + this.picture + '" class="img-responsive center-block inList" alt="Image"></a></div><div class="panel-footer panel-danger"><span class="price">' + this.price + '$</span><a href="#" class="cart pull-right" data-cart="' + this.id + '"><i class="fa fa-shopping-cart"></i></a></div></div></div>');
 	};
 	this.alone = function () {
-		$("#products").append('<div class="row"><div class="col-sm-6 col-lg-6 col-md-6"><div class="panel"><div class="panel-body"><img src="' + this.picture + '" class="img-responsive center-block image-alone" alt="Image"></div></div></div><div class="col-sm-6 col-lg-6 col-md-6"><div class="panel"><div class="panel-heading panel-danger"><h3>' + this.name + '</h3></div><div class="panel-body body-alone"><p>' + this.group + ' glass /<span> type: ' + this.kind + '</span></p><p class="lead">Description:</p><p>' + this.description + '</p></div><div class="panel-footer panel-danger"><span class="price">' + this.price + '$</span></div></div></div></div>');
-	}
+		$("#products").append('<div class="row"><div class="col-sm-6 col-lg-6 col-md-6"><div class="panel"><div class="panel-body"><img src="' + this.picture + '" class="img-responsive center-block image-alone" alt="Image"></div></div></div><div class="col-sm-6 col-lg-6 col-md-6"><div class="panel"><div class="panel-heading panel-danger"><h3>' + this.name + '</h3></div><div class="panel-body body-alone"><p>' + this.group + ' glass /<span> type: ' + this.kind + '</span></p><p class="lead">Description:</p><p>' + this.description + '</p></div><div class="panel-footer panel-danger"><span class="price">' + this.price + '$</span><a href="#" class="cart pull-right" data-cart="' + this.id + '"><i class="fa fa-shopping-cart"></i></a></div></div></div></div>');
+	};
+	this.toCart = function () {
+		$(".modal").append('<div class="col-sm-4 col-lg-4 col-md-4"><div class="panel"><div class="panel-heading panel-danger"><h3>' + this.name + '<h3></div><div class="panel-body"><a href="#"><img src="' + this.picture + '" class="img-responsive center-block inList" alt="Image"></a></div><div class="panel-footer panel-danger"><span class="price">' + this.price + '$</span><a href="#" class="cart" data-cart="' + this.id + '"><i class="fa fa-shopping-cart"></i></a></div></div></div>');
+		$(".modal").dialog('open');
+	};
 }
 //Item end
 //=======================================================================================//

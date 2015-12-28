@@ -8,6 +8,7 @@ body {
 	font-family: 'Josefin Slab', serif;
 	font-size: 2em;
 }
+
 ul,
 ol {
 	list-style: none;
@@ -19,7 +20,9 @@ ol {
 .navbar-inverse {
 	padding: 1.5em 0;
 	border-radius: 0;
-	background-color: #eade6d;
+	background: url(pictures/background2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	border-color: #944444;
 }
 
@@ -63,6 +66,37 @@ ol {
 
 /*Navbar end<><><><><><><><><><><><><><><><><>*/
 
+.home {
+	overflow: hidden;
+	margin: .7em;
+}
+
+.home-image {
+	max-width: 15em;
+	max-height: 15em;
+}
+
+@media screen and (max-width: 35em) {
+	.home-image {
+		max-width: 5em;
+		max-height: 5em;
+	}
+	.home-heading {
+		font-size: 1em;
+	}
+	.home .lead {
+		font-size: .7em;
+	}
+}
+
+.home-image.pull-left {
+	margin-right: 2.85em;
+}
+
+.home-image.pull-right {
+	margin-left: 2.85em;
+}
+
 #shop,
 #about,
 #contact {
@@ -80,6 +114,18 @@ ol {
 	color: #944444;
 }
 
+.label-filter {
+	font-size: .8em;
+}
+
+.filter {
+	border-radius: 5%;
+	font-size: .8em;
+}
+a.cart, a#openCart {
+	color:black;
+}
+
 #products img.inList {
 	width: 14.3em;
 	height: 14.3em;
@@ -88,11 +134,6 @@ ol {
 #products .panel-footer {
 	background-color: transparent;
 	border-radius: 0em;
-}
-
-#items .price {
-	background-color: black;
-	color: white;
 }
 
 #products img.image-alone {
@@ -105,8 +146,59 @@ ol {
 	height: 20em;
 }
 
+@media screen and (max-width: 35em) {
+	#products img.inList {
+		height: 10.3em;
+	}
+	#products img.image-alone {
+		width: 14.3em;
+		height: 10.3em;
+	}
+}
+
 
 /*#Shop content end<><><><><><><><><><><><><><><><><>*/
+
+
+/*#About content start<><><><><><><><><><><><><><><><><>*/
+
+.header-image {
+	display: block;
+	width: 100%;
+	text-align: center;
+	background: url('pictures/water-glasses.jpg') no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.headline {
+	padding: 6.2em 0;
+}
+
+.headline h1 {
+	font-size: 3em;
+	background: #fff;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.headline h2 {
+	background: #fff;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 35em) {
+	.headline h1 {
+		font-size: 1.5em;
+	}
+	.headline h2 {
+		font-size: .9em;
+	}
+}
+
+
+/*#About content end<><><><><><><><><><><><><><><><><>*/
 
 
 /*#Contact content start<><><><><><><><><><><><><><><><><>*/

@@ -28,7 +28,14 @@ ul.bjqs-controls.v-centered li a {
 	margin: 1em;
 	padding: .1em;
 	color: black;
-	background-color: whitesmoke
+	background-color: whitesmoke;
+}
+@media screen and (max-width: 35em) {
+	ul.bjqs-controls.v-centered li a {
+	padding: 0;
+    background-color: transparent;
+	color: #944444;
+}
 }
 
 ul.bjqs-controls.v-centered li.bjqs-next a {
