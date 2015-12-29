@@ -1,6 +1,6 @@
 var cart = [];
 (function () {
-	
+
 	$("#products").on("click", ".cart", function () {
 		var num = $(this).attr("data-cart");
 		for (var i in itemsRoom) {
@@ -9,12 +9,10 @@ var cart = [];
 				cart.push(item);
 		}
 	});
-	
-	
-	})();
-$("#openCart").click(function () {
+	$("#openCart").click(function () {
 		for (var i in cart) {
 			var item = cart[i];
 			item.toCart();
 		}
 	});
+})();

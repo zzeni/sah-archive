@@ -23,7 +23,8 @@ ol {
 	background: url(pictures/background2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	border-color: #944444;
+	border-color: transparent;
+	box-shadow: -.1em 0 .1em .1em gray;
 }
 
 .navbar-inverse .navbar-brand {
