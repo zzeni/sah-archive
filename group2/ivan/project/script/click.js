@@ -1,0 +1,1 @@
+$('#accordion1 a:first').click();
