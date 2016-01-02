@@ -69,12 +69,16 @@
         
         aside {
             background-color: #b8ceda;
-            padding: 40px;
+            padding-top: 40px;
             display: flex;
             flex-direction: column;
             flex: 1;
             -ms-flex: 1;
             font-family: 'Lobster', cursive;
+        }
+        
+        .as-list {
+            list-style-type: none;
         }
         
         .another {
@@ -169,13 +173,7 @@
             vertical-align: middle;
             width: 50%;
         }
-        
-/*
-        form {
-     overflow-x: scroll;
-     width: 100%;
- }
-*/
+
         
         .box {
             display: table;
