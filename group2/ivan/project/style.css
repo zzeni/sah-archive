@@ -67,6 +67,9 @@ ol {
 
 /*Navbar end<><><><><><><><><><><><><><><><><>*/
 
+
+/*Home page start<><><><><><><><><><><><><><><><><>*/
+
 .home {
 	overflow: hidden;
 	margin: .7em;
@@ -77,19 +80,6 @@ ol {
 	max-height: 15em;
 }
 
-@media screen and (max-width: 35em) {
-	.home-image {
-		max-width: 5em;
-		max-height: 5em;
-	}
-	.home-heading {
-		font-size: 1em;
-	}
-	.home .lead {
-		font-size: .7em;
-	}
-}
-
 .home-image.pull-left {
 	margin-right: 2.85em;
 }
@@ -97,6 +87,9 @@ ol {
 .home-image.pull-right {
 	margin-left: 2.85em;
 }
+
+
+/*Home page end<><><><><><><><><><><><><><><><><>*/
 
 #shop,
 #about,
@@ -123,8 +116,10 @@ ol {
 	border-radius: 5%;
 	font-size: .8em;
 }
-a.cart, a#openCart {
-	color:black;
+
+a.cart,
+a#openCart {
+	color: black;
 }
 
 #products img.inList {
@@ -142,19 +137,18 @@ a.cart, a#openCart {
 	height: 26.3em;
 }
 
+#cartModal img.cartImg {
+	width: 2.3em;
+	height: 1.5em;
+}
+
 #products .panel-body.body-alone {
 	width: 20em;
 	height: 20em;
 }
 
-@media screen and (max-width: 35em) {
-	#products img.inList {
-		height: 10.3em;
-	}
-	#products img.image-alone {
-		width: 14.3em;
-		height: 10.3em;
-	}
+.modal-body {
+	font-size: 0.9em;
 }
 
 
@@ -189,15 +183,6 @@ a.cart, a#openCart {
 	background: rgba(255, 255, 255, 0.5);
 }
 
-@media screen and (max-width: 35em) {
-	.headline h1 {
-		font-size: 1.5em;
-	}
-	.headline h2 {
-		font-size: .9em;
-	}
-}
-
 
 /*#About content end<><><><><><><><><><><><><><><><><>*/
 
@@ -226,4 +211,30 @@ footer p {
 	padding: 1.2em;
 	color: white;
 	font-size: .8em;
+}
+
+@media screen and (max-width: 35em) {
+	.home-image {
+		max-width: 5em;
+		max-height: 5em;
+	}
+	.home-heading {
+		font-size: 1em;
+	}
+	.home .lead {
+		font-size: .7em;
+	}
+	#products img.inList {
+		height: 10.3em;
+	}
+	#products img.image-alone {
+		width: 14.3em;
+		height: 10.3em;
+	}
+	.headline h1 {
+		font-size: 1.5em;
+	}
+	.headline h2 {
+		font-size: .9em;
+	}
 }
