@@ -64,6 +64,12 @@ ol {
 	background-color: #ffffff;
 }
 
+#shop,
+#about,
+#contact {
+	display: none;
+}
+
 
 /*Navbar end<><><><><><><><><><><><><><><><><>*/
 
@@ -91,12 +97,6 @@ ol {
 
 /*Home page end<><><><><><><><><><><><><><><><><>*/
 
-#shop,
-#about,
-#contact {
-	display: none;
-}
-
 
 /*#Shop content start<><><><><><><><><><><><><><><><><>*/
 
@@ -117,9 +117,12 @@ ol {
 	font-size: .8em;
 }
 
-a.cart,
+a.cart {
+	color: gray;
+}
+
 a#openCart {
-	color: black;
+	color: #944444;
 }
 
 #products img.inList {
@@ -201,6 +204,28 @@ a#openCart {
 
 /*#Contact content end<><><><><><><><><><><><><><><><><>*/
 
+
+/*Back to Top start<><><><><><><><><><><><><><><><><>*/
+
+.back-to-top {
+	position: fixed;
+	bottom: 2em;
+	right: 0px;
+	text-decoration: none;
+	color: #000000;
+	background-color: rgba(235, 235, 235, 0.80);
+	font-size: .8em;
+	padding: 1em;
+	display: none;
+}
+
+.back-to-top:hover {
+	background-color: rgba(135, 135, 135, 0.50);
+}
+
+
+/*Back to Top end<><><><><><><><><><><><><><><><><>*/
+
 footer {
 	margin-top: 1.5em;
 	background-color: black;
@@ -224,6 +249,27 @@ footer p {
 	.home .lead {
 		font-size: .7em;
 	}
+	#accordion1 {
+		margin-top: -2.8em;
+	}
+	#accordion1 li {
+		line-height: .8em;
+	}
+	#accordion1 a {
+		font-size: .8em;
+	}
+	.label-filter {
+		display: none;
+	}
+	.filter {
+		font-size: .6em;
+	}
+	#products .panel-heading h3 {
+		font-size: 1em;
+	}
+	#products .panel-footer {
+		font-size: .8em;
+	}
 	#products img.inList {
 		height: 10.3em;
 	}
@@ -236,5 +282,8 @@ footer p {
 	}
 	.headline h2 {
 		font-size: .9em;
+	}
+	.back-to-top {
+		padding: .5em;
 	}
 }
