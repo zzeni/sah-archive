@@ -1,5 +1,11 @@
 (function () {
 	//===============================================================================//
+	// Reload the page when you click the logo start
+	$(".navbar-brand").click(function () {
+		location.reload(true);
+	});
+	// Reload the page when you click the logo end
+	//===============================================================================//
 	//shrinking navbar start
 	$(function () {
 		$('#header_nav').data('size', 'big');
