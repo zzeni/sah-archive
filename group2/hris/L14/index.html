@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset= "UTF-8">
+	<title>L14-homework</title>
+
+</head>
+
+<body>
+	<script>
+	
+	<!--Task 1-->
+	
+	function greeting(name){
+		return "Hello, " + name;
+	}
+	
+	<!--Task 2-->
+	function Person (firstName, lastName){
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
+	<!--Task 3-->
+	function personGreeting (person){
+		return "Hello, " + person.firstName +" "+ person.lastName + "!";
+	}
+
+	<!--Task 4-->
+	function personGreeting (person, beFormal){
+		if (beFormal === true){
+			return "Hello, " + person.firstName +" "+ person.lastName + "!";
+		}else{
+			return "Hello, " + person.firstName + "!";
+		}
+	}
+	
+	<!--Task 5-->
+	function Person (firstName, lastName){
+		this.firstName = firstName;
+		this.lastName = lastName;
+		
+		this.introduce = function(){
+			return "Здравейте, казвам се " + this.firstName +" "+ this.lastName + "!";
+		}
+	}
+	
+	<!--Task 6-->
+	function Person (firstName, lastName){
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.isPolite = true;
+		
+		this.introduce = function(){
+			return "Здравейте, казвам се " + this.firstName +" "+ this.lastName + "!";
+		}
+	}
+	
+	<!--Task 7-->
+	function Person (firstName, lastName){
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.isPolite = true;
+		
+		this.introduce = function(){
+			return "Здравейте, казвам се " + this.firstName +" "+ this.lastName + "!";
+		}
+		this.bePolite = function(isPolite){
+			this.isPolite = isPolite;
+		}
+	}
+	
+	<!--Task 8-->
+	function Person (firstName, lastName){
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.isPolite = true;
+		
+		this.introduce = function(){
+			if (this.isPolite === true){
+				return "Казвам се " + this.firstName +" "+ this.lastName + "!";
+			}else{
+				return "Аз съм " + this.firstName + "!";
+			}
+		}
+		this.bePolite = function(isPolite){
+			this.isPolite = isPolite;
+		}
+	}
+	
+	<!--Task 9-->
+	function Person (firstName, lastName){
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.isPolite = true;
+		
+		this.introduce = function(){
+			if (this.isPolite === true){
+				return "Казвам се " + this.firstName +" "+ this.lastName + "!";
+			}else{
+				return "Аз съм " + this.firstName + "!";
+			}
+		}
+		this.bePolite = function(isPolite){
+			this.isPolite = isPolite;
+		}
+		this.greet = function(otherPerson){
+			return "Здрасти, " + otherPerson.firstName + "!";
+		}
+	}
+	
+	<!--Task 10-->
+	function Person (firstName, lastName){
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.isPolite = true;
+				
+		this.introduce = function(otherPerson){
+			if (this.isPolite === true){
+				return this.greet(otherPerson) +"Казвам се " + this.firstName +" "+ this.lastName + "!";
+			}else{
+				return this.greet(otherPerson) + "Аз съм " + this.firstName + "!";
+			}
+		}
+		this.bePolite = function(isPolite){
+			this.isPolite = isPolite;
+		}
+		this.greet = function(otherPerson){
+			if (otherPerson != undefined) {
+				return "Здрасти, " + otherPerson.firstName + "!";
+			}else{
+				return "Здрасти!";
+			}
+		}
+	}
+	var boiko = new Person("boiko", "borisov");
+	var lili = new Person("Lili", "ivanova");
+	
+	
+	
+
+	
+
+
+		
+	</script>
+
+</body>
+</html>

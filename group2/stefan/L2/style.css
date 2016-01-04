@@ -68,6 +68,7 @@ footer {
 #pic {
     float: left;
     border-style: solid;
+    box-shadow: 10px 10px 10px;
 }
 
 #About ul {

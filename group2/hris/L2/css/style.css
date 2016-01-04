@@ -29,7 +29,7 @@ main aside p, a {
 	color: white;
 	font-weight: bold;
 }
-nav a{
+/* nav a{
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -45,7 +45,7 @@ nav ul li {
 	display: inline-block;
 	padding-right: 20px;
 	padding-bottom: 10px;
-}
+} */
 a:hover {
 	color: gray;
 }

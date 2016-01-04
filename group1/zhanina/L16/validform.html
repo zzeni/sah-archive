@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Valid</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <form novalidate="true">
+        <p>
+            <label for="sender-name">Your name:</label>
+            <input type="text" name="name">
+        </p>
+        <p>
+            <input type="hidden" value="1" name="my-hidden-field">
+        </p>
+
+        <p>
+            <label for="email">email:</label>
+            <input type="email" name="email">
+        </p>
+        <p>
+            <label for="message">Your message:</label>
+        </p>
+        <p>
+            <textarea name="message" rows="5"></textarea>
+        </p>
+        <p>
+            <input type="reset" value="reset">
+            <input type="submit" name="submit" value="submit">
+
+        </p>
+    </form>
+    <script src="validform.js"></script>
+</body>
+
+</html>
