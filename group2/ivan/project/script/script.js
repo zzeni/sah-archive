@@ -25,6 +25,28 @@
 		}
 	});
 	//shrinking navbar end
+	//=============================================================================//
+	// Back to Top button start
+	jQuery(document).ready(function () {
+		var offset = 220;
+		var duration = 500;
+		jQuery(window).scroll(function () {
+			if (jQuery(this).scrollTop() > offset) {
+				jQuery('.back-to-top').fadeIn(duration);
+			} else {
+				jQuery('.back-to-top').fadeOut(duration);
+			}
+		});
+
+		jQuery('.back-to-top').click(function (event) {
+			event.preventDefault();
+			jQuery('html, body').animate({
+				scrollTop: 0
+			}, duration);
+			return false;
+		})
+	});
+	// Back to Top button end
 	//===============================================================================//	
 	//navbar navigation start
 	$('.leftNavbar a').click(function (e) {
@@ -61,7 +83,7 @@
 		}
 	});
 	//item  alone end
-	//==================================================================================//
+	//==============================================================================//
 	//Search in shop start
 	$('#search').click(function () {
 		$('.leftNavbar a:first').click();
@@ -81,7 +103,7 @@
 	});
 	//Search in shop end
 })();
-//================================================================================//
+//=================================================================================//
 // accordion and filter helper function start
 function list(group, sort) {
 	if (typeof sort !== 'undefined')
@@ -111,7 +133,7 @@ function Item(pic, name, price, group, kind, desc, id) {
 		$("#products").append('<div class="row"><div class="col-sm-6 col-lg-6 col-md-6"><div class="panel"><div class="panel-body"><img src="' + this.picture + '" class="img-responsive center-block image-alone" alt="Image"></div></div></div><div class="col-sm-6 col-lg-6 col-md-6"><div class="panel"><div class="panel-heading panel-danger"><h3>' + this.name + '</h3></div><div class="panel-body body-alone"><p>' + this.group + ' glass /<span> type: ' + this.kind + '</span></p><p class="lead">Description:</p><p>' + this.description + '</p></div><div class="panel-footer panel-danger"><span class="price">' + this.price + '$</span><a href="#" class="cart pull-right" data-cart="' + this.id + '"><i class="fa fa-shopping-cart"></i></a></div></div></div></div>');
 	};
 	this.toCart = function () {
-		$(".modal-body").append('<div class="row"><div class="col-xs-1 pieces"><span data-count="' + this.id + '">1</span></div><div class="col-xs-4"><img src="' + this.picture + '" class="img-responsive center-block cartImg"></div><div class="col-xs-4">' + this.name + '</div><div class="col-xs-2">' + this.price + '$</div><div class="col-xs-1"><a href="#" class="remove pull-right" data-cart="' + this.id + '">remove</a></div></div>');
+		$(".modal-body").append('<div class="row"><div class="col-xs-1 pieces"><span data-count="' + this.id + '">1</span></div><div class="col-xs-4"><img src="' + this.picture + '" class="img-responsive center-block cartImg"></div><div class="col-xs-3">' + this.name + '</div><div class="col-xs-1 pull-left">' + this.price + '$</div><div class="col-xs-3"><a href="#" class="remove pull-right" data-cart="' + this.id + '">remove</a></div></div>');
 	};
 }
 //Item end
