@@ -13,7 +13,7 @@
              error.target.focus();
              error.target.addClass('error');
          } else {
-             hrow error;
+             throw error;
          }
      }
  });

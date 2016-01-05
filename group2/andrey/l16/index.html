@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Web Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            Contact me</legend>
+
+
+        <form onsubmit='return formValidator()'>
+
+            <div class="table">
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-user"></i>
+                        <label>Your username:<span>*</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="name" placeholder="Type your username">
+
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-phone"></i>
+                        <label>Your password:</label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="pass" placeholder="Type your password">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-phone"></i>
+                        <label>Confirm password:</label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="confPass" placeholder="Type your number">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <i class="fa fa-envelope-o"></i>
+                        <label>E-mail:<span>*</span></label>
+                    </div>
+                    <div class="cell">
+                        <input type="text" id="email" placeholder="Type your e-mail">
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="cell">
+                        <label>Your picture:<span>*</span></label>
+                    </div>
+                    <div class="cell">
+
+                        <input type="text" id="pic" placeholder="Place your image url">
+                        </textarea>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell" id="reset">
+                        <input class="buttons" type="reset" value="reset">
+                    </div>
+                    <div class="cell">
+                        <input class="buttons" type="submit" value='Submit'>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </fieldset>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

@@ -1,115 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="autor" content="Ivan Onchev">
-	<meta name="description" content="E shop">
-
-	<title>e shop - Ivan Onchev</title>
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-	<!-- Custom CSS -->
-	<link href="style.css" rel="stylesheet">
-
-</head>
-
-<body>
-	<!--Header navigation-->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">MustGlass</a>
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li><a href="#">The shop</a></li>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!--/Header navigation-->
-	<!--Shop content-->
-	<div class="container-fluid shop">
-		<div class="row">
-			<!--Accordion-->
-			<div class="col-sm-2">
-				<ul class="nav nav-stacked" id="accordion1">
-
-					<li><a href="#" data-filter="all">All</a></li>
-
-					<li class="panel"> <a data-toggle="collapse" data-parent="#accordion1" href="#firstLink" data-filter="beer">Beer</a>
-						<ul id="firstLink" class="collapse">
-							<li><a href="#" data-filter="pilsner">Pilsner</a></li>
-							<li><a href="#" data-filter="pint">Pint</a></li>
-							<li><a href="#" data-filter="mug">Mug</a></li>
-						</ul>
-					</li>
-
-					<li class="panel"> <a data-toggle="collapse" data-parent="#accordion1" href="#secondLink" data-filter="wine">Wine</a>
-						<ul id="secondLink" class="collapse">
-							<li><a href="#" data-filter="standard">Standard</a></li>
-							<li><a href="#" data-filter="flute">Flute</a></li>
-							<li><a href="#" data-filter="tulip">Tulip</a></li>
-							<li><a href="#" data-filter="coupe">Coupe</a></li>
-							<li><a href="#" data-filter="hock">Hock</a></li>
-						</ul>
-					</li>
-
-					<li class="panel"> <a data-toggle="collapse" data-parent="#accordion1" href="#thirdLink" data-filter="whiskey">Whiskey</a>
-						<ul id="thirdLink" class="collapse">
-							<li><a href="#" data-filter="lowball">Lowball</a></li>
-							<li><a href="#" data-filter="highball">Highball</a></li>
-							<li><a href="#" data-filter="copita">Copita</a></li>
-							<li><a href="#" data-filter="glencairn">Glencairn</a></li>
-						</ul>
-					</li>
-
-					<li><a href="#" data-filter="water">Water</a></li>
-				</ul>
-			</div>
-			<!--/Accordion-->
-			<!--Products container-->
-			<div class="col-sm-10 items-container">
-				<div class="container-fluid">
-					<label for="productsFilter">Filter:</label>
-					<select id="productsFilter">
-						<option value="value">- -</option>
-						<option value="value">From A to Z</option>
-						<option value="value">From Z to A</option>
-						<option value="value">From lowest to highest price</option>
-						<option value="value">From hiest to lowest price</option>
-					</select>
-					<div id="products" class="row">
-					</div>
-				</div>
-			</div>
-			<!--/Products container-->
-		</div>
-	</div>
-	<!--/Shop content-->
-	<script src="script/item.js"></script>
-	<script src="script/itemsRoom.js"></script>
-	<script src="script/script.js"></script>
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="autor" content="Ivan Onchev">
+    <meta name="description" content="E shop">
+	<!-- Fav Icon -------------->  
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+	<!-- Title -------------->  
+    <title>Must Glass</title>
+	<!-- Google Font -------------->  
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:600' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap CSS -------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+    <!--Font Awsome------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- jQuery-------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Accordion plugin-------------->  
+    <script src="script/bjqs-1.3.min.js"></script>
+    <!-- Bootstrap JavaScript -------->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+	<!-- Carousel CSS -->  
+    <link type="text/css" rel="Stylesheet" href="bjqs.css">
+  </head>
+  <body>
+    <!--Header navigation---------------------------------------------------------->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="header_nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">MustGlass</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav leftNavbar">
+            <li><a href="#" data-target="shop">Shop</a>
+            <li><a href="#" data-target="about">About</a></li>
+            <li><a href="#" data-target="contact">Contact</a></li>
+          </ul>
+          <div class="col-sm-3 col-md-3 pull-right">
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search in Shop" name="srch-term" id="search">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="button" disabled="disabled"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--/Header navigation------------------------------------------------------------------------->
+    <!--Home------------------------------------------------------------------------------->
+    <!--Carousel--------------------------------------->
+    <!--Outer wrapper-->
+    <div class="container caro" id="banner-fade">
+      <!-- start Basic Jquery Slider -->
+      <ul class="bjqs">
+        <li><img src="pictures/bar-glasses.jpg" title="Glass for Every Drink"></li>
+        <li><img src="pictures/beer-glasses1.jpg" title="Glass for Every Drink"></li>
+        <li><img src="pictures/whiskey-glasses1.jpg" title="Glass for Every Drink"></li>
+      </ul>
+      <!--/Basic jQuery Slider -->
+    </div>
+    <!--/Outer wrapper -->
+    <!--/Carousel--------------------------------------->
+    <div class="home">
+      <img class="home-image img-responsive pull-right" src="pictures/glencairn2.jpg">
+      <h2 class="home-heading">Whiskey
+        <span class="text-muted">Glassware</span>
+      </h2>
+      <p class="lead">Whiskey. Most people either love it or they hate it, and among those that can palate this oaky alcohol, you'll be hard-pressed to find a more diverse range of drinkers. Whether neat or on the rocks, savored or straight down the hatch, you'll need the right type of whiskey glass for the right person.</p>
+    </div>
+    <div class="home">
+      <img class="home-image img-responsive pull-left" src="pictures/standard2.jpg">
+      <h2 class="home-heading">Wine
+        <span class="text-muted">Glass</span>
+      </h2>
+      <p class="lead">A wine glass is a type of glass stemware that is used to drink and taste wine. It is generally composed of three parts: the bowl, stem, and foot. Selection of a particular wine glass for a wine style is important, as the glass shape can influence its perception.</p>
+    </div>
+    <div class="home">
+      <img class="home-image img-responsive pull-right" src="pictures/pint1.jpg">
+      <h2 class="home-heading">Beer
+        <span class="text-muted">Glassware</span>
+      </h2>
+      <p class="lead">Beer glassware comprises the drinking vessels made of glass designed or commonly used for drinking beer. Different styles of glassware exist for a number of reasons: they may reflect national traditions;they may be folk art, novelty items or used in drinking games; and they may complement different styles of beer for a variety of reasons.</p>
+    </div>
+    <!--/Home------------------------------------------------------------------------------->
+    <!--Shop content------------------------------------------------------------------------>
+    <div class="container-fluid" id="shop">
+      <div class="row">
+        <!--Accordion----------------------------------------------------------------------->
+        <div class="col-sm-2">
+          <ul class="nav nav-stacked" id="accordion1">
+            <li><a href="#" data-filter="all" id="allProducts">All</a></li>
+            <li class="panel">
+              <a data-toggle="collapse" data-parent="#accordion1" href="#firstLink" data-filter="beer">Beer</a>
+              <ul id="firstLink" class="collapse">
+                <li><a href="#" data-filter="pilsner">Pilsner</a></li>
+                <li><a href="#" data-filter="pint">Pint</a></li>
+                <li><a href="#" data-filter="mug">Mug</a></li>
+              </ul>
+            </li>
+            <li class="panel">
+              <a data-toggle="collapse" data-parent="#accordion1" href="#secondLink" data-filter="wine">Wine</a>
+              <ul id="secondLink" class="collapse">
+                <li><a href="#" data-filter="standard">Standard</a></li>
+                <li><a href="#" data-filter="flute">Flute</a></li>
+                <li><a href="#" data-filter="tulip">Tulip</a></li>
+                <li><a href="#" data-filter="coupe">Coupe</a></li>
+                <li><a href="#" data-filter="hock">Hock</a></li>
+              </ul>
+            </li>
+            <li class="panel">
+              <a data-toggle="collapse" data-parent="#accordion1" href="#thirdLink" data-filter="whiskey">Whiskey</a>
+              <ul id="thirdLink" class="collapse">
+                <li><a href="#" data-filter="lowball">Lowball</a></li>
+                <li><a href="#" data-filter="highball">Highball</a></li>
+                <li><a href="#" data-filter="copita">Copita</a></li>
+                <li><a href="#" data-filter="glencairn">Glencairn</a></li>
+              </ul>
+            </li>
+            <li><a href="#" data-filter="water">Water</a></li>
+          </ul>
+        </div>
+        <!--/Accordion-------------------------------------------------------------------------->
+        <!--Products container------------------------------------------------------------------>
+        <div class="col-sm-10 items-container">
+          <div class="container-fluid">
+            <div class="row">
+			  <!--Filter-------------------------------------------------------->	
+              <div class="col-xs-10">
+                <label class="label-filter" for="productsFilter">Filter:</label>
+                <select class="filter" id="productsFilter">
+                  <option value="name_asc">From A to Z</option>
+                  <option value="name_desc">From Z to A</option>
+                  <option value="price_asc">From lowest to highest price</option>
+                  <option value="price_desc">From hiest to lowest price</option>
+                </select>
+              </div>
+			  <!--/Filter-------------------------------------------------------->
+			  <!--Cart Link------------------------------------------------------>	
+              <div class="col-xs-2 pull-right">
+                <a href="#" id="openCart"><i class="fa fa-shopping-cart"></i></a>
+              </div>
+			  <!--/Cart Link------------------------------------------------------> 	
+            </div>
+			<!--Cart Modal------------------------------------------------------>  
+            <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" </span>&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="cartModalLabel">Products in Cart</h4>
+                  </div>
+                  <div class="modal-body">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Continue</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+			<!--/Cart Modal------------------------------------------------------>
+            <div id="products" class="row">
+            </div>
+          </div>
+        </div>
+        <!--/Products container-------------------------------------------------------------------------------->
+      </div>
+    </div>
+    <!--/Shop content----------------------------------------------------------------------------------------------->
+    <!--About-->
+    <div class="container-fluid" id="about">
+      <header class="header-image">
+        <div class="headline">
+          <div class="container">
+            <h1>Must Glass</h1>
+            <h2>All in the glassware that is important</h2>
+          </div>
+        </div>
+      </header>
+    </div>
+    <!--/About------------------------------------------------------------------------------------------------------>
+    <!--Contact----------------------------------------------------------------------------------------------------->
+    <div class="container-fluid" id="contact">
+      <div class="jumbotron contact-form">
+        <form action="#" method="post" novalidate>
+          <h2>CONTACT</h2>
+          <div class="row">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-md-6 form-group" id="nameGroup">
+                  <input class="form-control" id="name" name="Name" placeholder="Name" type="text">
+                  <span id="nameSpan" class="help-block"></span>
+                </div>
+                <div class="col-md-6 form-group" id="emailGroup">
+                  <input class="form-control" id="email" name="Email" placeholder="Email" type="email">
+                  <span id="emailSpan" class="help-block"></span>
+                </div>
+              </div>
+              <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+              <br>
+              <div class="row">
+                <div class="col-md-12 form-group send">
+                  <button type="submit" class="btn btn-default"><i class="fa fa-paper-plane fa-2x"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <p>Contact us and we will respond as soon as we can.</p>
+              <p><span><i class="fa fa-map-marker fa-lg"></i></span> Sofia, BG</p>
+              <p><span><i class="fa fa-mobile fa-lg"></i></span> +359 555-8888-55</p>
+              <p><span><i class="fa fa-envelope fa-lg"></i></span> office@mustglas.com</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--/Contact------------------------------------------------------------------------------------------------------->
+	<!--Back to Top---------------------------------------------------------------------------------------------------->
+	<a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+	<!--/Back to Top--------------------------------------------------------------------------------------------------->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <p>Copyright &copy; Must Glass 2016</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+	<!--Script--------------------------------------->
+    <script src="script/carousel.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/itemsRoom.js"></script>
+    <script src="script/form-validator.js"></script>
+    <script src="script/cart.js"></script>
+    <script src="script/click.js"></script>
+	<!--/Script--------------------------------------->
+  </body>
 </html>

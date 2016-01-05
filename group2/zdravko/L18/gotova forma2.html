@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+  <title>Web Forms Example</title>
+
+  <style>
+    .error {
+      border-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Web forms examples</h2>
+
+  <section id="text-input">
+    <h3>Text inputs</h3>
+
+    <form novalidate>
+      <p>
+        <label for="name">Your name:</label>
+        <input type="text" name="name" placeholder="Your Name Here">
+      </p>
+      <p>
+        <label for="email">email:</label>
+        <input type="email" name="email" placeholder="user@example.com">
+      </p>
+      <p>
+        <label for="message">Your message:</label>
+      </p>
+      <p>
+        <textarea name="message" rows="5" placeholder="enter your message here"></textarea>
+      </p>
+      <p>
+        <input type="reset" value="reset">
+        <input type="submit" name="submit" value="submit">
+      </p>
+    </form>
+
+  </section>
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>
+    "use strict";
+    $('form').submit(function (event) {
+      event.preventDefault();
+      var form = event.target;
+      try {
+        formValidate(form);
+      } catch (error) {
+        if (error.name === "FieldValidationError") {
+          //      alert(error.message);
+          error.target.focus();
+          error.target.addClass('error');
+        } else {
+          throw error;
+        }
+      }
+    });
+    function formValidate(form) {
+      fieldValidate(form, 'name');
+      fieldValidate(form, 'email');
+    }
+    function fieldValidate(form, fieldName) {
+      var fieldInput = $(form).find("input[name=" + fieldName + "]");
+      var fieldValue = fieldInput.val();
+      if (fieldValue === "") {
+        var error = new Error(fieldName + " is mendatory");
+        error.name = "FieldValidationError";
+        error.target = fieldInput;
+        throw error;
+      } else {
+        fieldInput.removeClass('error');
+      }
+    }
+  </script>
+</body>
+
+</html>

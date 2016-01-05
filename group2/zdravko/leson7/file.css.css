@@ -1,0 +1,23 @@
+ <h1>About me: The css solution</h1>
+    <div id="about1">
+      <div id="img1">    
+       <img src="logo.jpg.jpg" alt="Zdravko">
+      </div>
+      <div id="table1">
+        <div id="col1">
+          <p>Name</p>
+          <p>email</p>
+          <p>github</p>
+         
+        </div>
+        <div id="col2">
+          <p>Zdravko Kovache Здравко Ковачев</p>
+          <a href="mailto:djzdravo@gmail.com">djzdravo@gmail.com</a>
+          <a href="<a href="https://github.com/ZdravkoKovachev/swift-academy-homeworks">link</a>
+          
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

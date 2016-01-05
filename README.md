@@ -1,2 +1,3 @@
 # Swift Academy Homeworks
-Kalina's homeworks 
+
+This is the official homeworks' repository for the Swift Academy's 'Front-end Development' course
