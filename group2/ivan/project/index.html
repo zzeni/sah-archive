@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="autor" content="Ivan Onchev">
+	<meta name="description" content="E shop">
+
+	<title>e shop - Ivan Onchev</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- Custom CSS -->
+	<link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<!--Header navigation-->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">MustGlass</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#">The shop</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--/Header navigation-->
+	<!--Shop content-->
+	<div class="container-fluid shop">
+		<div class="row">
+			<!--Accordion-->
+			<div class="col-sm-2">
+				<ul class="nav nav-stacked" id="accordion1">
+
+					<li><a href="#" data-filter="all">All</a></li>
+
+					<li class="panel"> <a data-toggle="collapse" data-parent="#accordion1" href="#firstLink" data-filter="beer">Beer</a>
+						<ul id="firstLink" class="collapse">
+							<li><a href="#" data-filter="pilsner">Pilsner</a></li>
+							<li><a href="#" data-filter="pint">Pint</a></li>
+							<li><a href="#" data-filter="mug">Mug</a></li>
+						</ul>
+					</li>
+
+					<li class="panel"> <a data-toggle="collapse" data-parent="#accordion1" href="#secondLink" data-filter="wine">Wine</a>
+						<ul id="secondLink" class="collapse">
+							<li><a href="#" data-filter="standard">Standard</a></li>
+							<li><a href="#" data-filter="flute">Flute</a></li>
+							<li><a href="#" data-filter="tulip">Tulip</a></li>
+							<li><a href="#" data-filter="coupe">Coupe</a></li>
+							<li><a href="#" data-filter="hock">Hock</a></li>
+						</ul>
+					</li>
+
+					<li class="panel"> <a data-toggle="collapse" data-parent="#accordion1" href="#thirdLink" data-filter="whiskey">Whiskey</a>
+						<ul id="thirdLink" class="collapse">
+							<li><a href="#" data-filter="lowball">Lowball</a></li>
+							<li><a href="#" data-filter="highball">Highball</a></li>
+							<li><a href="#" data-filter="copita">Copita</a></li>
+							<li><a href="#" data-filter="glencairn">Glencairn</a></li>
+						</ul>
+					</li>
+
+					<li><a href="#" data-filter="water">Water</a></li>
+				</ul>
+			</div>
+			<!--/Accordion-->
+			<!--Products container-->
+			<div class="col-sm-10 items-container">
+				<div class="container-fluid">
+					<label for="productsFilter">Filter:</label>
+					<select id="productsFilter">
+						<option value="value">- -</option>
+						<option value="value">From A to Z</option>
+						<option value="value">From Z to A</option>
+						<option value="value">From lowest to highest price</option>
+						<option value="value">From hiest to lowest price</option>
+					</select>
+					<div id="products" class="row">
+					</div>
+				</div>
+			</div>
+			<!--/Products container-->
+		</div>
+	</div>
+	<!--/Shop content-->
+	<script src="script/item.js"></script>
+	<script src="script/itemsRoom.js"></script>
+	<script src="script/script.js"></script>
+</body>
+
+</html>
