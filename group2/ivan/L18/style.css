@@ -1,0 +1,22 @@
+.container-fluid, .jumbotron { 
+   background-color: #c1d4d4 !important;
+}
+.text-danger {
+    text-align: center;
+	color: #cc6666;
+}
+.error {
+	box-shadow: 1px 1px 5px 2px #cc6666;
+	
+    }
+.success {
+	box-shadow: 1px 1px 5px 2px green;
+    
+		}
+.errorSpan {
+	color: #cc6666;
+}
+.successSpan {
+	color: green;
+}
+	

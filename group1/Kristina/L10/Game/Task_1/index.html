@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        
+        <section id="contact">
+            <div class="container">
+                <div class="body">
+                    <h2><i class="fa fa-share"></i> Let's play a game!</h2>
+                    <form method="post" action="http://zenifytheweb.com/api/game/start">
+                        <label for="name">Name</label>
+                        <input name="name" type="text" placeholder="Type Here">
+                        
+                        <label for="email">Email</label>
+                        <input name="email" type="email" placeholder="Type Here">
+                      
+                        <label for="message">Message</label>
+                        <textarea name="message" placeholder="Type Here"></textarea>
+                        
+                        <input type="hidden" name="key" value="1447523055">
+
+                        <input id="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>

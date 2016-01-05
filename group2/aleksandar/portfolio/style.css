@@ -1,0 +1,141 @@
+html, body {
+    height:100%;
+    font-family: 'Open Sans', serif;
+    width:100%;
+    color:black;
+    margin: 0px 0px;
+}
+body {
+	background-image: url(images.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    background-color: dimgrey;
+    color: beige;
+    float: right;
+    width:100%;
+    text-align: right;
+    height: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+	background: none;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline;
+	
+}
+
+nav a {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px auto;
+    font-family: 'Libre Baskerville', serif;
+    font-style: normal;
+}
+
+aside h4 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0 0 10px;
+	background-color: beige;
+}
+
+section h3 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+header {
+	height: 50px;
+}
+
+div {
+	background-color: beige;
+}
+
+#aside li, a {
+    text-decoration: none
+
+}
+
+#aside {
+/*    height: calc(100% - (50px + 30px + 20px));*/
+	background-color: beige;
+}
+
+
+
+#about, #proj, #cont {
+    border-bottom-style: double;
+    border-bottom-width: medium;
+    border-bottom-color: dimgrey;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#about li {
+    margin: 15px 0 15px 15px;
+}
+
+
+#face {
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border-style: double;
+    border-color: dimgrey;
+    border-radius: 5px;
+	
+}
+
+.cont1 {
+	display: -webkit-flex;
+	display: flex;
+}
+.left-side {
+	width: 200px;
+}
+.right-side {
+	-webkit-flex: 1;
+	flex: 1;
+}
+hr {
+    border-style: double;
+}
+footer {
+    position: fixed;
+    bottom:0px;
+    right: 0px;
+    height:20px;
+}
+
+.cont2 {
+    
+    display: flex;
+	align-items: center;
+}
+
+
+.flex-item1 {
+	
+    flex: 3;
+}
+
+.flex-item2 {
+	
+    flex: 5;
+}

@@ -1,73 +1,247 @@
- @import url(https://fonts.googleapis.com/css?family=Lobster);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-body {
-    background-color: azure;
-    font-family: 'Open Sans', sans-serif;
-}
-#banner {
-    padding-bottom: 30px;
-    min-height: 110px;
-    width: 100%;
-    border-radius: 0%
-}
-
-nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 100px;
-    margin-right: 10px;
-    width: 93%;
-    text-align: right;
-    background-color:lightgray; 
-    font-family: 'Lobster', cursive;
-}
-
-aside {
-    background-color:#7DBADA;
-    width: 200px;
-    padding: 30px;
-    height: 100%;
-    position: absolute;
-    font-family: 'Lobster', cursive;
-}
-
-img  {
-    height: 200px;
-    width: 200px;
-    margin-left: auto;
-    float: left;
-    border-radius: 100%;
-}
-.box {
-    display: table;
-    width: 200px;
-}
-.row {
-    display: table-row;
-}
-.col {
-    display: table-cell;
-    padding: 0 10px;
-    vertical-align: top;
-    width: 50%;
-    text-align: left;
-}
-#about, #projects, #contact {
-    padding-left: 360px;
-    padding-top: 30px;
-    padding-bottom: 30px; 
-}
-.table {
-    display: table;
-    width: 200px;
-}
-
-footer {
-    width: 100%;
-    background-color:lightgray;
-    text-align: center;
-    display: block;
-    padding: 15px;
-    position: static;
-    font-family: 'Lobster', cursive;
-}
+        @import url(https://fonts.googleapis.com/css?family=Lobster);
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        body {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        
+        body,
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        input,
+        textarea,
+        iframe,
+        p,
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        
+        body {
+            background-color: #ffffff;
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #banner {
+            padding-bottom: 0px;
+            min-height: 130px;
+            width: 100%;
+            border-radius: 0%;
+            box-sizing: content-box;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        {
+            margin-left: 10;
+            padding-left: 10;
+            border: 0;
+        }
+        
+        main {
+            display: flex;
+        }
+        
+        aside {
+            background-color: #b8ceda;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            -ms-flex: 1;
+            font-family: 'Lobster', cursive;
+        }
+        
+        .another {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            background-color: #b8ceda;
+            padding: 40px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .sections-container {
+            display: flex;
+            flex-direction: column;
+            flex: 4;
+            -ms-flex: 4;
+            padding-left: 40px;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            padding: 10px 0;
+        }
+        
+        h1 {
+            font-size: 2em;
+        }
+        
+        h2 {
+            font-size: 1.6em;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+        }
+        
+        h4 {
+            font-size: 1.2em;
+        }
+        
+        h5 {
+            font-size: 1.1em;
+        }
+        
+        h6 {
+            font-size: 1em;
+        }
+        
+        a:hover {
+            color: hotpink;
+        }
+        
+        nav {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-right: 100px;
+            text-align: right;
+            background-color: lightgray;
+            font-family: 'Lobster', cursive;
+            box-sizing: border-box;
+        }
+        
+        .photo {
+            height: 200px;
+            width: 200px;
+            margin-left: auto;
+            float: left;
+            border-radius: 100%;
+        }
+        
+        #info {
+            text-align: right;
+            vertical-align: middle;
+            font-weight: bold;
+            list-style-type: none;
+            padding-left: 0px;
+        }
+        
+        #list {
+            background-color: lightgray;
+        }
+        
+        #info,
+        #items {
+            display: flex;
+            flex-direction: column;
+            display: table-cell;
+            vertical-align: middle;
+            width: 50%;
+        }
+        
+/*
+        form {
+     overflow-x: scroll;
+     width: 100%;
+ }
+*/
+        
+        .box {
+            display: table;
+            border: 1px #7DBADA solid;
+            box-shadow: 5px 5px 10px #888888;
+            margin-left: 50px;
+        }
+        
+        .cell {
+            display: table-cell;
+            vertical-align: middle;
+            background-color: #b8ceda;
+        }
+        
+        #about,
+        #projects,
+        #contact {
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        
+        pre {
+            overflow-x: scroll;
+        }
+        
+        .table {
+            display: table;
+            width: 100%;
+            overflow-x: scroll;
+        }
+        
+        input {
+            display: flex;
+            flex-direction: column;
+            border: 1px;
+            border-color: black;
+            border-style: solid;
+        }
+        
+        textarea {
+            border: 1px;
+            border-color: black;
+            border-style: solid;
+        }
+        
+        .chuck {
+            width: 200px;
+            height: 200px;
+            float: left;
+            padding-top: 0px;
+        }
+        
+        .ScrollTop {
+            object-position: bottom;
+        }
+        
+        footer {
+            background-color: lightgray;
+            text-align: center;
+            display: block;
+            padding: 15px;
+            position: static;
+            font-family: 'Lobster', cursive;
+            box-sizing: content-box;
+            /*        width: 100%;*/
+        }

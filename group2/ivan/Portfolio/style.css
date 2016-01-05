@@ -1,3 +1,33 @@
+*{
+box-sizing: border-box;
+}
+html { 
+    height: 100%; 
+}
+body { 
+    position: absolute; top:0; bottom:0; right:0; left:0; 
+}
+
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strong, sub, sup, tt, var,
+b, u, i, input, textarea,
+dl, dt, dd, ol, ul, li,
+article, aside, footer, header, nav, section,
+time, mark, {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ol, ul {
+	list-style: none;
+}
+/* Reset End */
 body { 
     background-color: #ffffff;
     margin: 0;
@@ -11,6 +41,7 @@ header{
     margin: 0 auto;
     text-align: left;
     text-transform: uppercase;
+    min-width: 100%;
 }
 
 header span {
@@ -51,31 +82,21 @@ nav a {
 }
 
 main {
-    display: table-row;
-}
-
-aside, #sections {
-    display: table-cell;
+    display: flex;
+    background-color: #e1e0e0;
+    margin-right: 0;
+    text-align: justify;
+    vertical-align: middle;
 }
 
 aside {
-    background-color: #e1e0e0;
-    width: 20%;
-    height: 100%;
-    padding: 2%;
-    margin-right: 0;
-    text-align: justify;
+    -webkit-flex: 1;
+    flex: 1;
     text-transform: uppercase;
+    text-align: center;
 }
-
-aside h3 {
-    padding-left: 18%;
-}
-
-aside ul li {
-    list-style-type: none;
-    font-weight: 400;
-    line-height: 25px;
+aside a {
+    display: block;
 }
 
 aside a:link {
@@ -93,53 +114,42 @@ aside a:hover, active {
     text-decoration: none;
 }
 #sections {
+    -webkit-flex: 4;
+    flex: 4;
     background-color: #ffffff; 
-    padding: 2%;
     text-align: justify;
-    max-width: 60%;
-    height: 100%;
+    padding:  1em;
 }
 
 #sections h1, h2, h3, h4, h5 {
     text-transform: uppercase;
 }
-
-#about #articles {
-     display: inline-flex;
-     padding: 2%;
+#about { 
+    align-items: center;
+    padding:  1em;
 }
 
-#about #img {
-    padding: 6% 1% 1% 8%;
+#articles, #img {
+    display:  inline-flex;
+    vertical-align: middle;
+    padding: 1.5em;
 }
-
+    
 #about img {
-    max-width: 250px;
-    max-height: 300px;   
+    max-width: 17.86em;
+    max-height: 21.43em;
 }
 
 #projects {
     background-color: #e1e0e0;
-    padding: 2%;
+    padding:  1em;
 }
 
-#contacts {
-    padding: 2%
-}
-
-#contacts li {
-    list-style-type: none;
-    text-align: justify;
-}
-
-#contacts li a {
-    text-decoration: none;
-}
 
 footer {
     text-align: center;
-    clear: both;
     background-color: #313030;
+    color: #fff;
     padding: 10px;
     margin: 0 auto;
 }
