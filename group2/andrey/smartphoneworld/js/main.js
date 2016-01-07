@@ -222,7 +222,7 @@ $(document).on("ready", function () {
         var name = $('#uid').val();
         var pass = $("input[type=password]").val();
 
-        if (name == "Andro" && pass == "1234") {
+        if ((name == "Andro" && pass == "1234") || (name == "andro" && pass == "1234") || (name == "Jeni" && pass == "5678") || (name == "jeni" && pass == "5678")) {
             $("#loginTitle").html("Hello!");
             $("#loginButton,#uid, input[type=password]").hide();
             $("#loginAlert").html("Welcome, Andrey!");
