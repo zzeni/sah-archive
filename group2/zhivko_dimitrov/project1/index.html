@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="animate.js"></script>
+    <script src="physparam.js"></script>
+    <script src="delta.js"></script>
+    <style>
+        #field {
+            height: 500px;
+            border-bottom: 3px black groove;
+            position: relative;
+        }
+        
+        #message {
+            text-align: center;
+        }
+        
+        #ball {
+            position: absolute;
+            bottom: 0px;
+            width: 20px;
+            height: 20px;
+            z-index: 9;
+            left: 0px;
+        }
+        
+        #ball2 {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 20px;
+            height: 20px;
+            z-index: 15;
+        }
+        
+        #cannon {
+            position: absolute;
+            bottom: 0px;
+            width: 20px;
+            height: 20px;
+            z-index: 8;
+        }
+        
+        #cannon2 {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 20px;
+            height: 20px;
+            z-index: 8;
+        }
+        
+        #inputt {
+            top: 5px;
+            position: relative;
+            z-index: 5;
+        }
+        
+        #inputt2 {
+            top: 5px;
+            right: 0px;
+            position: relative;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="field">
+        <div id="inputt">
+            Angle
+            <br>
+            <input type="number" name="angle" id="angle">
+
+            <br> Velocity
+            <br>
+            <input type="number" name="velocity" id="velocity">
+            <br>
+            <button id="buttonA">Shoot</button>
+            <p id="points1">
+            </p>
+
+        </div>
+        <div id="inputt2">
+            Angle
+            <br>
+            <input type="number" name="angle" id="angle2">
+            <br> Velocity
+            <br>
+            <input type="number" name="velocity" id="velocity2">
+            <br>
+            <button id="buttonB">Shoot</button>
+            <p id="points2"></p>
+            <div id='message'>
+            </div>
+
+
+        </div>
+        <img src="ball.gif" width="40" height="40" id="ball">
+        <img src="ball.gif" width="40" height="40" id="ball2">
+        <img src="ball.gif" width="40" height="40" id="cannon">
+        <img src="ball.gif" width="40" height="40" id="cannon2">
+    </div>
+
+    <script>
+        var img = document.getElementById('ball');
+        var buttonA = document.getElementById('buttonA');
+        var img2 = document.getElementById('ball2');
+        var buttonB = document.getElementById('buttonB');
+        var cannon2 = document.getElementById('cannon2');
+        var cannon = document.getElementById('cannon');
+        var message = document.getElementById("message");
+        var points1 = document.getElementById("points1");
+        var points2 = document.getElementById("points2");
+        var scores1 = 0;
+        var scores2 = 0;
+        buttonA.onclick = function () {
+
+
+            var velocity = document.getElementById("velocity").value;
+            var angleGrad = document.getElementById("angle").value;
+
+
+
+            var shot = new ShootPhys(velocity, angleGrad)
+            setTimeout(function () {
+                img.style.display = '';
+            }, 20)
+            animate({
+                delay: 20,
+                duration: shot.stime * 200,
+                x: 1.5,
+                delta: makeEaseIn(parabole),
+                step: function (delta) {
+                    img.style.bottom = 2 * shot.height * delta + 'px';
+                }
+            })
+
+            animate({
+                delay: 20,
+                duration: shot.stime * 200,
+                delta: makeEaseIn(linear),
+                step: function (delta) {
+                    img.style.left = shot.width * delta + "px";
+                }
+            })
+            setTimeout(function () {
+                console.log(window.innerWidth);
+                message.style.display = '';
+                if (Math.round(shot.width) >= -20 && Math.round(shot.width) <= 40) {
+
+                    message.innerHTML = 'Player2 scores!';
+                    scores2++;
+                    points2.innerHTML = "Scores: " + scores2;
+                    console.log('hit');
+                } else if (Math.round(shot.width) <= window.innerWidth + 20 && Math.round(shot.width) >= window.innerWidth - 40) {
+                    message.innerHTML = 'Player1 scores!';
+                    scores1++;
+                    points1.innerHTML = "Scores: " + scores1;
+                    console.log('hit');
+
+                } else {
+                    console.log('no hit');
+                    message.innerHTML = 'Try next timme!';
+                }
+                img.style.display = 'none';
+            }, shot.stime * 200 + 300)
+            setTimeout(
+                function () {
+                    message.style.display = 'none';
+                }, shot.stime * 200 + 2000)
+
+        }
+
+        buttonB.onclick = function () {
+
+            var velocity = document.getElementById("velocity2").value;
+            var angleGrad = document.getElementById("angle2").value;
+
+
+
+            var shot2 = new ShootPhys(velocity, angleGrad)
+            setTimeout(function () {
+                img2.style.display = '';
+            }, 20)
+            animate({
+                delay: 20,
+                duration: shot2.stime * 200,
+                x: 1.5,
+                delta: makeEaseIn(parabole),
+                step: function (delta) {
+                    img2.style.bottom = 2 * shot2.height * delta + 'px';
+                }
+            })
+
+            animate({
+                delay: 20,
+                duration: shot2.stime * 200,
+                delta: makeEaseIn(linear),
+                step: function (delta) {
+                    img2.style.right = shot2.width * delta + "px";
+                }
+            })
+            setTimeout(function () {
+                console.log(window.innerWidth);
+                message.style.display = '';
+                if (Math.round(shot2.width) >= -20 && Math.round(shot2.width) <= 40) {
+                    message.innerHTML = 'Player1 scores!';
+                    scores1++;
+                    points1.innerHTML = "Scores: " + scores1;
+                    console.log('hit');
+                } else if (Math.round(shot2.width) <= window.innerWidth + 20 && Math.round(shot2.width) >= window.innerWidth - 40) {
+                    message.innerHTML = 'Player2 scored!';
+                    scores2++;
+                    points2.innerHTML = "Scores: " + scores2;
+                    console.log('hit');
+
+                } else {
+                    console.log('no hit');
+                    message.innerHTML = 'Try next timme!';
+                }
+                img.style.display = 'none';
+            }, shot2.stime * 200 + 300)
+            setTimeout(
+                function () {
+                    message.innerHTML = null;
+                    message.style.display = 'none';
+                }, shot2.stime * 200 + 2000)
+        }
+    </script>
+</body>
+
+</html>
