@@ -156,6 +156,10 @@ header .intro-text .skills {
     letter-spacing: 1px;
 }
 
+.navbar-nav li a {
+    padding: 20px;
+}
+
 .navbar .navbar-nav li a:focus {
     outline: 0;
 }
@@ -455,11 +459,22 @@ footer .footer-below {
 #myPhoto {
     height: 300px;
     width: 300px;
-    border-radius: 100%;
+    /*    border-radius: 100%;*/
 }
 
-.pdata {
-    text-align: center;
+@media(max-width:767px) {
+    .pdata {
+        text-align: right;
+    }
+    .pdata1 {
+        text-align: left;
+    }
+}
+
+@media(min-width:767px) {
+    .pdata .pdata1 {
+        text-align: center;
+    }
 }
 
 .list-1 {
@@ -474,8 +489,9 @@ pre {
     border-radius: 10%;
     text-align: right;
     margin-bottom: 10px;
+    position: absolute;
 }
 
-.list-inline item-details {
-    color: #2c3e50;
+#displayDate {
+    color: #ffffff;
 }
