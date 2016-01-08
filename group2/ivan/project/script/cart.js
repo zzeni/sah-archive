@@ -1,15 +1,17 @@
-var cart = [];
+var cart = {};
 (function () {
 	//==================================================================================//
 	// Items in Cart start
 	$("#products").on("click", ".cart", function (e) {
 		e.preventDefault();
 		var num = $(this).attr("data-cart");
-		for (var i in itemsRoom) {
-			var item = itemsRoom[i];
-			if (num == item.id) {
-				cart.push(item);
-				item.toCart();
+		if (cart[num] !== undefined) {
+			cart[num].count++;
+		} else {
+			for (var i in itemsRoom) {
+				var item = itemsRoom[i];
+				if (num == item.id)
+					cart[item.id] = new cartItem(item);
 			}
 		}
 	});
@@ -18,6 +20,10 @@ var cart = [];
 	// open Cart start
 	$("#openCart").click(function (e) {
 		e.preventDefault();
+		$(".modal-body").empty();
+		for (var itemId in cart) {
+			cart[itemId].toCart();
+		}
 		$('#cartModal').modal();
 	});
 	// open Cart end
@@ -27,16 +33,20 @@ var cart = [];
 		e.preventDefault();
 		$(this).closest('.row').remove();
 		var num = $(this).attr("data-cart");
-		for (var i in cart) {
-			var item = cart[i];
-			if (num == item.id) {
-				var index = cart.indexOf(item);
-				if (index > -1) {
-					cart.splice(index, 1);
-				}
-			}
-		}
+		if (cart[num] !== undefined) delete cart[num];
 	});
 	// remove Items from Crart end
 	//================================================================================//
+	// change quantity by input start
+	$("#cartModal").on("change", "input", function (e) {
+		e.preventDefault();
+		var inp = $(this).attr("itemId");
+		var val = $(this).val();
+		for (var item in cart) {
+			if (cart[item.id] !== inp)
+				cart[item].count = Number(val);
+		}
+	});
+	// change quantity by input end
+//===============================================================================//	
 })();

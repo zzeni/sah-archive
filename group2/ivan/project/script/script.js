@@ -53,7 +53,7 @@
 		})
 	});
 	// Back to Top button end
-	//===============================================================================//	
+	//===============================================================================//
 	//navbar navigation start
 	$('.leftNavbar a').click(function (e) {
 		e.preventDefault();
@@ -63,7 +63,7 @@
 		$('body > div').hide();
 		$('#' + target).show();
 	});
-	//navbar navigation end	
+	//navbar navigation end
 	//===============================================================================//
 	// accordion and filter start
 	$('#accordion1 a').click(function (e) {
@@ -76,9 +76,9 @@
 	$('#productsFilter').change(function (e) {
 		list($('#accordion1 a.current').attr("data-filter"), $(this).val());
 	});
-	// accordion and filter end	
-	//===============================================================================//	
-	// item alone start	
+	// accordion and filter end
+	//===============================================================================//
+	// item alone start
 	$("#products").on("click", "img", function () {
 		var url = $(this).attr("src");
 		$("#products").empty();
@@ -91,7 +91,7 @@
 	//item  alone end
 	//==============================================================================//
 	//Search in shop start
-	$('#search').click(function () {
+	$('#search').focus(function () {
 		$('.leftNavbar a:first').click();
 	});
 
@@ -138,11 +138,16 @@ function Item(pic, name, price, group, kind, desc, id) {
 	this.alone = function () {
 		$("#products").append('<div class="row"><div class="col-sm-6 col-lg-6 col-md-6"><div class="panel"><div class="panel-body"><img src="' + this.picture + '" class="img-responsive center-block image-alone" alt="Image"></div></div></div><div class="col-sm-6 col-lg-6 col-md-6"><div class="panel"><div class="panel-heading panel-danger"><h3>' + this.name + '</h3></div><div class="panel-body body-alone"><p>' + this.group + ' glass /<span> type: ' + this.kind + '</span></p><p class="lead">Description:</p><p>' + this.description + '</p></div><div class="panel-footer panel-danger"><span class="price">' + this.price + '$</span><a href="#" class="cart pull-right" data-cart="' + this.id + '"><i class="fa fa-shopping-cart"></i></a></div></div></div></div>');
 	};
-	this.toCart = function () {
-		$(".modal-body").append('<div class="row"><div class="col-xs-1 pieces"><span data-count="' + this.id + '">1</span></div><div class="col-xs-4"><img src="' + this.picture + '" class="img-responsive center-block cartImg"></div><div class="col-xs-3">' + this.name + '</div><div class="col-xs-1 pull-left">' + this.price + '$</div><div class="col-xs-3"><a href="#" class="remove pull-right" data-cart="' + this.id + '">remove</a></div></div>');
-	};
 }
 //Item end
+function cartItem(item, count) {
+	this.item = item;
+	this.count = (typeof (count) === 'number') ? count : 1;
+
+	this.toCart = function () {
+		$(".modal-body").append('<div class="row"><div class="col-xs-1 pieces"><input type="number" min="1" data-itemId="' + this.item.id + '" value="' + this.count + '"></div><div class="col-xs-4"><img src="' + this.item.picture + '" class="img-responsive center-block cartImg"></div><div class="col-xs-3">' + this.item.name + '</div><div class="col-xs-1 pull-left">' + this.item.price + '$</div><div class="col-xs-3"><a href="#" class="remove pull-right" data-cart="' + this.item.id + '">remove</a></div></div>');
+	};
+}
 //=======================================================================================//
 // filter helper function start
 function sortBy(itemsList, rule) {

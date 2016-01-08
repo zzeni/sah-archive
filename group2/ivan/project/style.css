@@ -237,6 +237,9 @@ footer p {
 	color: white;
 	font-size: .8em;
 }
+.pieces input {
+  width: 40px;
+}
 
 @media screen and (max-width: 35em) {
 	.home-image {
