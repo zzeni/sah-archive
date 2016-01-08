@@ -40,12 +40,10 @@ var cart = {};
 	// change quantity by input start
 	$("#cartModal").on("change", "input", function (e) {
 		e.preventDefault();
-		var inp = $(this).attr("itemId");
+		var inp = $(this).attr("data-itemId");
 		var val = $(this).val();
-		for (var item in cart) {
-			if (cart[item.id] !== inp)
-				cart[item].count = Number(val);
-		}
+			if (cart[inp] !== undefined)
+				cart[inp].count = Number(val);
 	});
 	// change quantity by input end
 //===============================================================================//	
