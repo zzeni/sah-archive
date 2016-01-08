@@ -145,7 +145,7 @@ function cartItem(item, count) {
 	this.count = (typeof (count) === 'number') ? count : 1;
 
 	this.toCart = function () {
-		$(".modal-body").append('<div class="row"><div class="col-xs-1 pieces"><input type="number" min="1" data-itemId="' + this.item.id + '" value="' + this.count + '"></div><div class="col-xs-4"><img src="' + this.item.picture + '" class="img-responsive center-block cartImg"></div><div class="col-xs-3">' + this.item.name + '</div><div class="col-xs-1 pull-left">' + this.item.price + '$</div><div class="col-xs-3"><a href="#" class="remove pull-right" data-cart="' + this.item.id + '">remove</a></div></div>');
+		$(".modal-body").append('<div class="row"><div class="col-xs-1 pieces"><input type="number" min="1" data-itemId="' + this.item.id + '" value="' + this.count + '"></div><div class="col-xs-4"><img src="' + this.item.picture + '" class="img-responsive center-block cartImg"></div><div class="col-xs-3">' + this.item.name + '</div><div class="col-xs-1 pull-left">' + this.count * this.item.price + '$</div><div class="col-xs-3"><a href="#" class="remove pull-right" data-cart="' + this.item.id + '">remove</a></div></div>');
 	};
 }
 //=======================================================================================//

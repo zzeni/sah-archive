@@ -42,9 +42,13 @@ var cart = {};
 		e.preventDefault();
 		var inp = $(this).attr("data-itemId");
 		var val = $(this).val();
-			if (cart[inp] !== undefined)
-				cart[inp].count = Number(val);
+		if (cart[inp] !== undefined)
+			cart[inp].count = Number(val);
+		$("#cartModal .modal-body").empty();
+		for (var itemId in cart) {
+			cart[itemId].toCart();
+		}
 	});
 	// change quantity by input end
-//===============================================================================//	
+	//===============================================================================//	
 })();
