@@ -3,9 +3,9 @@ window.jQuery = window.$ = jQuery;
 /* Custom Scripts */
 
 
-
-/*PRELOADER*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	PRELOADER
+/*-----------------------------------------------------------------------------------*/
 jQuery(window).load(function () {
 	//Preloader
 	setTimeout("jQuery('#preloader').animate({'opacity' : '0'},300,function(){jQuery('#preloader').hide()})",800);
@@ -16,9 +16,9 @@ jQuery(window).load(function () {
 
 
 
-
-/*CONTACT FORM*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	CONTACT FORM
+/*-----------------------------------------------------------------------------------*/
 jQuery(document).ready(function() {
 	$("#ajax-contact-form").submit(function() {
 		var str = $(this).serialize();		
@@ -27,8 +27,9 @@ jQuery(document).ready(function() {
 			url: "contact_form/contact_process.php",
 			data: str,
 			success: function(msg) {
+				// Message Sent - Show the 'Thank You' message and hide the form
 				if(msg == 'OK') {
-					result = '<div class="notification_ok">Вашето съобщение беше изпратено. Благодарим ви!</div>';
+					result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
 					$("#fields").hide();
 				} else {
 					result = msg;
@@ -45,9 +46,9 @@ jQuery(document).ready(function() {
 
 
 
-
-/*MENU*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	MENU
+/*-----------------------------------------------------------------------------------*/
 
 //Fixed Menu
 var fixed_menu = true;
@@ -74,9 +75,9 @@ function scrolled_menu() {
 
 
 	
-
-/*ACCORDION TOGGLES*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	ACCORDION TOGGLES
+/*-----------------------------------------------------------------------------------*/
 jQuery(document).ready(function() {
 	
 	jQuery( "#accordion" ).accordion({
@@ -98,9 +99,9 @@ jQuery(document).ready(function() {
 
 
 
-
-/*404 PAGE*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	404 PAGE
+/*-----------------------------------------------------------------------------------*/
 jQuery(window).load(function(){
 	errorpageHeight();
 
@@ -136,9 +137,9 @@ function errorpageHeight() {
 
 
 
-
-/*FLEXSLIDER*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	FLEXSLIDER
+/*-----------------------------------------------------------------------------------*/
 /*jQuery(window).load(function(){
 	//Top Slider
 	$('.flexslider.top_slider').flexslider({
@@ -209,9 +210,9 @@ function errorpageHeight() {
 
 */
 
-
-/*SCROLL TO TOP*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	SCROLL TO TOP
+/*-----------------------------------------------------------------------------------*/
 $(document).ready(function() {
 	$('a.copyright_logo').click(function(){
 		$('html, body').animate({scrollTop:0}, 'slow');
@@ -226,9 +227,9 @@ $(document).ready(function() {
 
 
 
-
-/*PRETTYPHOTO*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	PRETTYPHOTO
+/*-----------------------------------------------------------------------------------*/
 jQuery(document).ready(function() {
 	jQuery("a[rel^='prettyPhoto']").prettyPhoto();
 });
@@ -239,9 +240,9 @@ jQuery(document).ready(function() {
 
 
 
-
-/*TWITTER*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	TWITTER
+/*-----------------------------------------------------------------------------------*/
 jQuery(document).ready(function() {	
 	jQuery('.tweet_module.sidebar').tweet({
 		modpath: 'twitter/',
@@ -261,9 +262,9 @@ jQuery(document).ready(function() {
 
 
 
-
-/*FLICKR*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	FLICKR
+/*-----------------------------------------------------------------------------------*/
 jQuery(document).ready(function() {
 	$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=90412460@N00&lang=en-us&format=json&jsoncallback=?", function(data){
 		$.each(data.items, function(i,item){
@@ -280,9 +281,9 @@ jQuery(document).ready(function() {
 
 
 
-
-/*IFRAME TRANSPARENT*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	IFRAME TRANSPARENT
+/*-----------------------------------------------------------------------------------*/
 jQuery(document).ready(function() {
 	$("iframe").each(function(){
 		var ifr_source = $(this).attr('src');
@@ -305,9 +306,9 @@ jQuery(document).ready(function() {
 
 
 
-
-/*CHART*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	CHART
+/*-----------------------------------------------------------------------------------*/
 jQuery(document).ready(function(){
     var chart = $('.chart'),
         chartNr = $('.chart-content'),
@@ -360,9 +361,9 @@ jQuery(document).ready(function(){
 
 
 
-
-/*SKILLS*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	SKILLS
+/*-----------------------------------------------------------------------------------*/
 jQuery(document).ready(function(){
 	jQuery('.our-skills').waypoint(function() {
 		setTimeout(function() {
@@ -385,9 +386,9 @@ jQuery(document).ready(function(){
 
 
 
-
-/*	jCarousel*/
-
+/*-----------------------------------------------------------------------------------*/
+/*	jCarousel
+/*-----------------------------------------------------------------------------------*/
 /*! jCarousel - v0.3.0 - 2013-11-22
 * http://sorgalla.com/jcarousel
 * Copyright (c) 2013 Jan Sorgalla; Licensed MIT */
@@ -438,8 +439,9 @@ jQuery(document).ready(function(){
 
 
 
-
-/*	SHOP PRICE FILTER*/
+/*-----------------------------------------------------------------------------------*/
+/*	SHOP PRICE FILTER
+/*-----------------------------------------------------------------------------------*/
 /*! jQuery UI - v1.10.0 - 2013-02-01
 * http://jqueryui.com
 * Includes: jquery.ui.core.js, jquery.ui.widget.js, jquery.ui.mouse.js, jquery.ui.slider.js

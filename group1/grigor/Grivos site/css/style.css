@@ -12,7 +12,7 @@ html{
 	background:#fff;
 }
 body{
-	font-family: 'Stalinist One', cursive;
+	font-family: 'Lobster', cursive;
 }
 .headerLine{
 	position: relative;
@@ -266,14 +266,14 @@ border: none;
 }
 .project h3{
 	letter-spacing: 1px;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-size:37px;
 	font-weight:400;
 	color:#2f2f2f;
 }
 .project h4{
 	margin-left: -5px;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-size:20px;
 	font-weight:300;
 	color:#2f2f2f;
@@ -293,7 +293,7 @@ border: none;
 }
 .cBusiness h3{
 	text-align:center;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-size:28px;
 	font-weight:400;
 }
@@ -393,7 +393,7 @@ border: none;
 .Fresh h4{
 	//margin-left: -15px;
 	margin-top: 17px;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-size:20px;
 	font-weight:300;
 }
@@ -440,7 +440,7 @@ border: none;
 .wwa h3{
 	font-size:28px;
 	color:#2f2f2f;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 400;
 }
 .wwa h4{
@@ -468,7 +468,7 @@ border: none;
 	margin-top: 24px;
 	font-size:20px;
 	color:#2f2f2f;
-	font-family: 'Stalinist One', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 }
 .team h5{
@@ -553,7 +553,7 @@ border: none;
 	margin-top: -19px;
 	font-size:18px;
 	color: #2f2f2f;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 700;
 }
 .percent:after {
@@ -580,7 +580,7 @@ border: none;
 	text-align:center;
 	font-size:20px;
 	color: #2f2f2f;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 }
 .textP p{
@@ -610,14 +610,14 @@ border: none;
 
 	font-size:28px;
 	color: #2f2f2f;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 400;
 }
 .about h3{
 	margin-top: 51px;
 	font-size:16px;
 	color: #2f2f2f;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 }
 .about p{
@@ -626,7 +626,7 @@ border: none;
 	color: #666666;
 	font-family: 'Comfortaa', cursive;
 	font-weight: 300;
-	margin-top: 13px;
+	margin-top: 12px;
 	margin-bottom: 0;
 }
 
@@ -738,7 +738,7 @@ border: none;
 	font-size: 42px;
 	text-align:center;
 	color: #fff;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 400;
 	margin-top: 17px;
 }
@@ -899,7 +899,7 @@ border: none;
 	color:#2f2f2f;
 	font-size: 16px;
 	text-align:center;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 }
 .view li{
@@ -910,7 +910,7 @@ border: none;
 	color:#a9a9a9;
 	font-size: 13px;
 	text-align:center;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 }
 .view a:hover{
@@ -980,7 +980,7 @@ border: none;
 }
 .cBtn .dowbload a, .cBtn .buy a{
 	font-size: 14px;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 700;
 }
 .cBtn .buy{
@@ -1060,14 +1060,14 @@ border: none;
 	text-align:center;
 	color:#2f2f2f;
 	font-size: 16px;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 }
 .news p{	
 	line-height: 23px;
 	color:#666666;
 	font-size: 13px;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 }
 .readMore{
@@ -1086,7 +1086,7 @@ border: none;
 	text-align: center;
 	color: #2f2f2f;
 	font-size: 16px;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 	text-decoration:none;
 }
@@ -1105,7 +1105,7 @@ border: none;
 	list-style:none;
 }
 .news ul li a{
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 	color:#a9a9a9;
 	font-size:13px;
@@ -1113,7 +1113,7 @@ border: none;
 	list-style:none;
 }
 .news ul li{
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 	color:#a9a9a9;
 	font-size:13px;
@@ -1286,26 +1286,27 @@ textarea {
 }
 .forma .cBtn .send{
 	box-shadow: 0px 2px 0px 0px #179abf;
-	background: #2f2f2f; 
+	background:#1fcdff ;
 }
 .forma .cBtn .send:hover{
-	background: lightgreen;
+	background:#2f2f2f;
 	box-shadow: 0px 2px 0px 0px #000 ;
 }
-#reset {
+.reset {
     background: red;
     color: white;
+    border: 0px;
 }
-#submit {
+.submit {
     background: green;
     color: white;
+    border: 0px;
 }
-
 /**/
 .cont{
 	margin-top: 44px;
 	margin-left: -33px;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 	font-size:13px;
 	color:#666666;
@@ -1397,14 +1398,14 @@ textarea {
 	font-size: 42px;
 	text-align:center;
 	color: #fff;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 400;
 }
 .line6 .Ama p{
 	font-size: 16px;
 	text-align:center;
 	color: #fff;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 }
 /**/
@@ -1417,14 +1418,14 @@ textarea {
 .ftext h3{
 	font-size:28px;
 	color: #2f2f2f;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 400; 
 	margin-top: 37px;
 }
 .ftext p{
 	font-size:16px;
 	color: #2f2f2f;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 300;
 	margin-top: 13px;
 	line-height: 24px;
@@ -1440,7 +1441,7 @@ textarea {
 	overflow: hidden;
 	max-height:100%;
 	//background:#3f2d28;
-	background: url(../images/line7Bg) center center no-repeat;
+	background: url(../images/line7Bg.jpg) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1486,7 +1487,7 @@ textarea {
 .footer h3{
 	margin-top: 159px;
 	font-size: 28px;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Lobster', cursive;
 	font-weight: 400;
 	color: #fff;
 	text-align: center;
@@ -1494,7 +1495,7 @@ textarea {
 }
 .footer p{
 	font-size:16px;
-	font-family: 'Lobster', cursive;
+	font-family: 'Comfortaa', cursive;
 	font-weight: 300;
 	color:#fff;
 	text-align:center;
@@ -1770,7 +1771,7 @@ textarea {
 }
 .downLine p{
 	font-size:13px;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Roboto', 'sans-serif';
 	font-weight: 300;
 	color:#fff;
 }
@@ -1784,7 +1785,7 @@ textarea {
 	left: 0;
 	width: 100%;
 	height: 178px;
-	background: url(../images/bgBeforFooter) center center no-repeat;
+	background: url(../images/bgBeforFooter.png) center center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1809,7 +1810,7 @@ textarea {
 	padding: 15px;
 	text-decoration: none;
 	font-size: 13px;
-	font-family: 'Roboto', 'sans-serif';
+	font-family: 'Comfortaa', cursive;
 	font-weight: 300;
 	color: #fff;
 	margin-top: 10px;
@@ -1826,7 +1827,7 @@ textarea {
 	border:0;
 	background:#101010;
 	font-size:13px;
-	font-family: 'Lobster', cursive;
+	font-family: 'Comfortaa', cursive;
 	font-weight: 300;
 	color:#6d6d6d;
 }
