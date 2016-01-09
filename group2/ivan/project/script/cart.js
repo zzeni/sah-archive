@@ -25,6 +25,7 @@ var cart = {};
 			cart[itemId].toCart();
 		}
 		$('#cartModal').modal();
+		updateCartTotal();
 	});
 	// open Cart end
 	//================================================================================//
@@ -48,7 +49,20 @@ var cart = {};
 		for (var itemId in cart) {
 			cart[itemId].toCart();
 		}
+		updateCartTotal();
 	});
 	// change quantity by input end
 	//===============================================================================//	
 })();
+
+function getTotalCost() {
+	var totalPrice = 0;
+	$("#cartModal").find(".price").each(function () {
+		totalPrice += parseFloat($(this).html());
+	});
+	return totalPrice;
+}
+
+function updateCartTotal() {
+	$("#cartSum").html(getTotalCost());
+}
