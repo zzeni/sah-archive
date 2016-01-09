@@ -62,22 +62,24 @@
 	});
 	//item  alone end
 	//==================================================================================//
+	//Search in shop start
 	$('#search').click(function () {
 		$('.leftNavbar a:first').click();
 	});
-	
+
 	$('#search').keyup(function () {
 		var srch = $(this).val();
 		$("#products").empty();
 		for (var i in itemsRoom) {
 			var item = itemsRoom[i];
 			var name = item.name;
-			if (name.indexOf(srch) !== -1) 
+			if (name.indexOf(srch) !== -1)
 				item.toHtml();
 		}
-		if ($("#products").html() == "") 
-				$("#products").append('<div class="col-sm-12 alert alert-danger"><p class="lead text-danger">No Matches found!</p></div>');
+		if ($("#products").html() == "")
+			$("#products").append('<div class="col-sm-12 alert alert-danger"><p class="lead text-danger">No Matches found!</p></div>');
 	});
+	//Search in shop end
 })();
 //================================================================================//
 // accordion and filter helper function start
@@ -109,8 +111,7 @@ function Item(pic, name, price, group, kind, desc, id) {
 		$("#products").append('<div class="row"><div class="col-sm-6 col-lg-6 col-md-6"><div class="panel"><div class="panel-body"><img src="' + this.picture + '" class="img-responsive center-block image-alone" alt="Image"></div></div></div><div class="col-sm-6 col-lg-6 col-md-6"><div class="panel"><div class="panel-heading panel-danger"><h3>' + this.name + '</h3></div><div class="panel-body body-alone"><p>' + this.group + ' glass /<span> type: ' + this.kind + '</span></p><p class="lead">Description:</p><p>' + this.description + '</p></div><div class="panel-footer panel-danger"><span class="price">' + this.price + '$</span><a href="#" class="cart pull-right" data-cart="' + this.id + '"><i class="fa fa-shopping-cart"></i></a></div></div></div></div>');
 	};
 	this.toCart = function () {
-		$(".modal").append('<div class="col-sm-4 col-lg-4 col-md-4"><div class="panel"><div class="panel-heading panel-danger"><h3>' + this.name + '<h3></div><div class="panel-body"><a href="#"><img src="' + this.picture + '" class="img-responsive center-block inList" alt="Image"></a></div><div class="panel-footer panel-danger"><span class="price">' + this.price + '$</span><a href="#" class="cart" data-cart="' + this.id + '"><i class="fa fa-shopping-cart"></i></a></div></div></div>');
-		$(".modal").dialog('open');
+		$(".modal-body").append('<div class="row"><div class="col-xs-1 pieces"><span data-count="' + this.id + '">1</span></div><div class="col-xs-4"><img src="' + this.picture + '" class="img-responsive center-block cartImg"></div><div class="col-xs-4">' + this.name + '</div><div class="col-xs-2">' + this.price + '$</div><div class="col-xs-1"><a href="#" class="remove pull-right" data-cart="' + this.id + '">remove</a></div></div>');
 	};
 }
 //Item end
