@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<<html ng-app="app">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+
+  <body ng-controller="MainController">
+
+    <nav class="navbar navbar-default">
+
+      <div class="container">                 <!-- top intro part -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#/">  OPENCV 3.0.0</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="#/about"><i class="fa fa-shield"></i> About</a></li>
+      <li><a href="#/contact"><i class="fa fa-comment"></i> Contact</a></li>
+    </ul>
+      </div>
+    </nav>
+
+    <ng-view>
+      <div class="row"> <!-- Dropdown menu  -->
+    <div class="col-md-20">
+      <div id="main">
+        <form class="form-horizontal" role="form">
+          <label class="control-label col-md-2">Filter List:</label>
+          <div class="col-md-5">
+        <select class="form-control" 
+            ng-options="filter for filter in filters" 
+            ng-model="filter"
+            ng-change="GoToOpenCVpage(filter)">
+          <option value=""> Select Filter</option>
+        </select>
+          </div>
+        </form>
+      </div>
+    </div>
+      </div>
+    </ng-view>
+
+    <div id = "content"> <!-- stuff showing opencv filter goes in here -->
+      <ng-view>
+
+      </ng-view>
+    </div>
+	<HTML>
+<HEAD>
+<TITLE>JavaScript код, добавен към HTML документ</TITLE>
+<SCRIPT language="JavaScript">
+<!--
+function added_text(text1,text2)
+{var text=text1+" "+text2;
+return text;
+}
+functon print_text()
+{var text=added_text("крем","супа");
+document.write(text);
+}
+var text=added_text("крем","карамел");
+window_alert(text);
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>Страница с функции</H1>
+<P>
+<SCRIPT language="JavaScript">
+<!--
+print_text();
+//-->
+</SCRIPT>
+<P><FONT COLOR="red">Цвета е червен!</FONT></P>
+</BODY>
+</HTML>
+ 
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.14.3.min.js"></script>    
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
+	  
