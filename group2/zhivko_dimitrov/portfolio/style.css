@@ -1,0 +1,63 @@
+body {
+    background-color: whitesmoke;
+    left: 0px;
+    padding-top: 80px;
+    width: 100%;
+    font-family: 'Poiret One', cursive;
+}
+
+header {
+    position: fixed;
+    background-color: lightgreen;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    display: block;
+    padding: 3px;
+}
+
+aside {
+    background-color: aquamarine;
+    width: 200px;
+    padding: 30px;
+    height: 100%;
+    display: block;
+    height: 1312px;
+    position: absolute;
+    z-index: -1;
+}
+
+element {
+    display: block;
+}
+
+#about_me,
+#about,
+#projects,
+#contacts,
+#fabutton,
+#something_else {
+    padding-left: 300px;
+}
+
+#fixed-nav-bar {
+    /*positon:fixed;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    Text-align: right;
+    /*align-content: center;*/
+    background-color: aquamarine;
+    /*colour: white;*/
+    text-transform: uppercase;
+    /*padding: px 40;*/
+    z-index: 1;
+}
+
+footer {
+    text-align: center;
+    background-color: lightgreen;
+    display: block;
+    width: 100%;
+    position: static;
+}
