@@ -1,0 +1,71 @@
+body {
+    padding-top: 50px;
+    /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
+    background-color: bisque;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link,
+h6 a:link {
+    color: black;
+}
+.feature {
+    background-color: bisque;
+}
+.media-left {
+    float: left;
+}
+.media-body {
+    padding-top: 10px;
+}
+#androidCenter,
+#windowsCenter,
+#iosCenter {
+    background-color: floralwhite;
+}
+#welcome,
+#aboutUs {
+    background-color: floralwhite;
+    text-align: center;
+}
+#feature-carousel {
+    min-height: 200px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+#feature-carousel img {
+    margin: 0 auto;
+}
+.footer-blurb {
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #eee;
+    color: black;
+}
+.footer-blurb-item {
+    padding: 20px;
+}
+.small-print {
+    background-color: #fff;
+    padding: 20px 0;
+}
+.feature,
+.page-intro,
+.article-intro,
+.small-print {
+    text-align: center;
+}
+#intro {
+    background-image: url(http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2014/08/Cell-phone-light.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: local;
+}
