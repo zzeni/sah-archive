@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Contact Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="contact_form.css">
+    </head>
+    <body>
+        <h1>
+           Contact Form 
+        </h1>
+        <form  id="myform" name="myForm" action=".php" method="post">
+            <label for="field"></label> 
+            <input class="left" id="field" name="field" placeholder="email">
+            <p>
+                <label for="firstname"></label>
+                <input class="left" id="firstname" name="firstname" minlength="6"  maxlength="15"    placeholder="name">
+            </p>
+            <p>
+                <input type="password" name="password" minlength="6"  maxlength="15"  placeholder="password">
+            </p>
+            <p>
+                <input type="password" name="passwordConfirmation" minlength="6"  maxlength="15"  placeholder="password confirmation">
+            </p>
+            <p>
+              <input type="text" placeholder="picture url">
+            </p>
+            <div>
+                <textarea id="problem_desc"></textarea>
+            </div>
+            <p>
+                <input id="submitForm" name="submit" type="submit"  value="submit" onclick="return validateForm();">
+                <input  name="reset" type="reset" value="reset">
+            </p>
+        </form>
+<script>
+var ck_name = /^[A-Za-z0-9 ]{3,20}$/;
+var ck_email = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i; 
+var ck_username = /^[A-Za-z0-9_]{1,20}$/;
+var ck_password =  /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
+
+    
+function validate(form){
+var name = form.name.value;
+var email = form.email.value;
+var username = form.username.value;
+var password = form.password.value;
+var gender = form.gender.value;
+var errors = [];
+ 
+ if (!ck_name.test(name)) {
+  errors[errors.length] = "You valid Name .";
+ }
+ if (!ck_email.test(email)) {
+  errors[errors.length] = "You must enter a valid email address.";
+ }
+ if (!ck_username.test(username)) {
+  errors[errors.length] = "You valid UserName no special char .";
+ }
+ if (!ck_password.test(password)) {
+  errors[errors.length] = "You must enter a valid Password ";
+ }
+ if (gender==0) {
+  errors[errors.length] = "Select Gender";
+ }
+ if (errors.length > 0) {
+
+  reportErrors(errors);
+  return false;
+ }
+  return true;
+}
+function reportErrors(errors){
+ var msg = "Please Enter Valide Data...\n";
+ for (var i = 0; i<errors.length; i++) {
+ var numError = i + 1;
+  msg += "\n" + numError + ". " + errors[i];
+}
+ alert(msg);
+}
+</script>
+    </body>
+</html>
