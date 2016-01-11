@@ -17,10 +17,10 @@
 <h1>Homework 16</h1>
 
 
-<form>
+<form method="post" action="http://zenifytheweb.com/api/examples/register">
     <p>
         <label for="name">Your name</label>
-        <input type="text" name="name" placeholder="your name" id="name">
+        <input type="text" name="username" placeholder="your name" id="name">
     </p>
     <p>
         <label for="email">Email</label>
@@ -32,19 +32,25 @@
     </p>
     <p>
         <label for="password2">Password</label>
-        <input type="password" name="password2" placeholder="your password again" id="password2">
+        <input type="password" name="password_confirmation" placeholder="your password again" id="password2">
     </p>
     <p>
         <label for="url">Picture</label>
-        <input type="text" name="picture" placeholder="url" id="url">
+        <input type="text" name="avatar_url" placeholder="url" id="url">
     </p>
     <p>
+        <input type="submit">
         <input type="reset" value="reset">
     </p>
 </form>
 <button id="button">Submit</button>
 
+
+
 <script>
+    //$(document).ready
+
+
     $('#button').click(function(){
         var name = $('#name').val();
         var email = $('#email').val();
@@ -77,15 +83,46 @@
         } else {
             $('#email').removeClass('error');
         }
+
+
+
     });
+
+
+
+
     $('#name').blur(function (e) {
+
         var value = $(e.target).val();
+
+
         if (!checkName(value)) {
             $('#name').addClass('error');
         } else {
             $('#name').removeClass('error');
         }
+
+
+
+        $.ajax({
+            method: 'POST',
+            url : 'http://zenifytheweb.com/api/examples/check_username',
+            data : {username:value}
+
+        })
+
+
     });
+
+
+
+
+
+
+
+
+
+
     $('#password').blur(function(e){
         var  value = $(e.target).val();
         if(!checkPass(value)){
@@ -193,6 +230,27 @@
         }
         return true;
     }
+
+    function makeRequest(method, url, data, success, error) {
+        $.ajax({
+            method: 'post',
+            url : 'http://zenifytheweb.com/api/examples',
+            contentType: 'application/json',
+            data : JSON.stringify(data),
+            success: success,
+            error: error
+        })
+    }
+    var username = $('#name');
+    var password = $('#password');
+    var password_configuration = $('#password2');
+    var email = $('#email');
+    var avatar_url = $('#url');
+
+    var params = {
+
+    };
+
 
 
 </script>
