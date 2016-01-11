@@ -18,17 +18,28 @@ $("#twitter").on("click", function () {
 });
 
 ////I am still working over this function in order to get it run....
-//On click over the picture, the same picture should appear (with bigger size) in the .parent element. 
-//On click wherever else in the body, the picture should disappear and the original content in the .parent element should appear.
+//On click over the picture, the same picture should appear (with bigger size) in the .present element. 
+//On click wherever else in the body, the picture should disappear and the original content of the .present element should appear.
 
-//var pictures = $(".img-1").on("click", function () {
-//	var par = $(".present")
-//		.html("<div></div>")
-//		.addClass("img-1-big col-xs-12 col-md-12 col-lg-12")
-//		.append("<img src='img/bothtrainingout.jpg'>");
-//	par.fadeIn(100);
-//
-//	$('.img-1-big').on('click', 'img.img-1-big', function (events) {
-//		$(this).parents('div').eq(1).remove();
-//	});
-//});
+var pictures = $(".img-1, .img-2").on("click", function () {
+	var par = $(".menu")
+		.prepend("<div class='pic'></div>")
+		.addClass("img-1-big col-xs-12 col-md-12 col-lg-12")
+		.append("<img src='" + this.src + "'>");
+	$(".present").hide();
+	$(".pic").show();
+
+	$(".pic").on("click", function () {
+		$(".pic").hide();
+		$(".present").show();
+	});
+});
+
+$(window).on('resize', function () {
+	if ($(window).width() < 980) {
+		$("p.present:nth-child(2)").addClass("col-xs-12 col-sm-12 col-md-12");
+	}
+	if ($(window).width() > 981) {
+		$("p.present:nth-child(2)").removeClass;
+	};
+});
