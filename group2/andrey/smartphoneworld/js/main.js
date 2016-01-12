@@ -14,6 +14,42 @@ $(document).on("ready", function () {
         }
     });
 
+    $("#mySearch").click(function () {
+        $("#center, #windowsCenter, #iosCenter, #androidCenter").hide();
+        $('.huaweiDetails, .galaxys6Details,.lgDetails,.sonyDetails,.xiaomiDetails,.lumia950Details,.lumia550Details,.lumia640Details,.iphone6sDetails,.iphone6Details,.iphone5Details').hide();
+        $(".accord").accordion({
+            collapsible: true,
+            active: false,
+            heightStyle: "content"
+        });
+        $("#allPhonesCenter").fadeIn();
+        $("#mySearch").keyup(function () {
+
+            // Retrieve the input field text and reset the count to zero
+            var filter = $(this).val(),
+                count = 0;
+
+            // Loop through the comment list
+            $("#allPhonesCenter ul li.allPhones").each(function () {
+
+                // If the list item does not contain the text phrase fade it out
+                if ($(this).text().search(new RegExp(filter, "i")) < 0) {
+                    $(this).fadeOut();
+
+                    // Show the list item if the phrase matches and increase the count by 1
+                } else {
+                    $(this).show();
+                    count++;
+                }
+            });
+
+            // Update the count
+            var numberItems = count;
+            $("#filter-count").text("Number of Comments = " + count);
+        });
+    });
+
+
     $('#sidebar').stickyfloat({
         startOffset: 315,
         duration: 400
@@ -52,8 +88,8 @@ $(document).on("ready", function () {
 
     $(".home").click(function () {
 
-        $("#windowsCenter, #iosCenter, #androidCenter").hide();
-
+        $("#windowsCenter, #iosCenter, #androidCenter, #allPhonesCenter").hide();
+        $('.huaweiDetails, .galaxys6Details,.lgDetails,.sonyDetails,.xiaomiDetails,.lumia950Details,.lumia550Details,.lumia640Details,.iphone6sDetails,.iphone6Details,.iphone5Details').hide();
         $(".accord").accordion({
             collapsible: true,
             active: false,
@@ -65,8 +101,8 @@ $(document).on("ready", function () {
 
     $("#aboutNav").click(function () {
 
-        $("#windowsCenter, #iosCenter, #androidCenter").hide();
-
+        $("#windowsCenter, #iosCenter, #androidCenter, #allPhonesCenter").hide();
+        $('.huaweiDetails, .galaxys6Details,.lgDetails,.sonyDetails,.xiaomiDetails,.lumia950Details,.lumia550Details,.lumia640Details,.iphone6sDetails,.iphone6Details,.iphone5Details').hide();
         $(".accord").accordion({
             collapsible: true,
             active: false,
@@ -81,8 +117,8 @@ $(document).on("ready", function () {
 
     $("#contactNav").click(function () {
 
-        $("#windowsCenter, #iosCenter, #androidCenter").hide();
-
+        $("#windowsCenter, #iosCenter, #androidCenter, #allPhonesCenter").hide();
+        $('.huaweiDetails, .galaxys6Details,.lgDetails,.sonyDetails,.xiaomiDetails,.lumia950Details,.lumia550Details,.lumia640Details,.iphone6sDetails,.iphone6Details,.iphone5Details').hide();
         $(".accord").accordion({
             collapsible: true,
             active: false,
@@ -97,8 +133,8 @@ $(document).on("ready", function () {
 
     $("#ratesNav").click(function () {
 
-        $("#windowsCenter, #iosCenter, #androidCenter").hide();
-
+        $("#windowsCenter, #iosCenter, #androidCenter, #allPhonesCenter").hide();
+        $('.huaweiDetails, .galaxys6Details,.lgDetails,.sonyDetails,.xiaomiDetails,.lumia950Details,.lumia550Details,.lumia640Details,.iphone6sDetails,.iphone6Details,.iphone5Details').hide();
         $(".accord").accordion({
             collapsible: true,
             active: false,
@@ -114,72 +150,72 @@ $(document).on("ready", function () {
 
     $("#android").click(function () {
 
-        $("#windowsCenter, #iosCenter, #center").hide();
-
+        $("#windowsCenter, #iosCenter, #center, #allPhonesCenter").hide();
+        $('.huaweiDetails, .galaxys6Details,.lgDetails,.sonyDetails,.xiaomiDetails,.lumia950Details,.lumia550Details,.lumia640Details,.iphone6sDetails,.iphone6Details,.iphone5Details').hide();
         $("html, body").animate({
             scrollTop: 0
         }, "slow");
         $('#androidCenter').fadeIn("slow");
     });
 
-    $("#huaweiDetailsLink").click(function () {
+    $(".huaweiDetailsLink").click(function () {
 
-        $('#huaweiDetails').fadeToggle("slow");
+        $('.huaweiDetails').fadeToggle("slow");
     });
 
-    $("#galaxys6DetailsLink").click(function () {
+    $(".galaxys6DetailsLink").click(function () {
 
-        $('#galaxys6Details').fadeToggle("slow");
+        $('.galaxys6Details').fadeToggle("slow");
     });
 
-    $("#lgDetailsLink").click(function () {
+    $(".lgDetailsLink").click(function () {
 
-        $('#lgDetails').fadeToggle("slow");
+        $('.lgDetails').fadeToggle("slow");
     });
 
-    $("#sonyDetailsLink").click(function () {
+    $(".sonyDetailsLink").click(function () {
 
-        $('#sonyDetails').fadeToggle("slow");
+        $('.sonyDetails').fadeToggle("slow");
     });
 
-    $("#xiaomiDetailsLink").click(function () {
+    $(".xiaomiDetailsLink").click(function () {
 
-        $('#xiaomiDetails').fadeToggle("slow");
+        $('.xiaomiDetails').fadeToggle("slow");
     });
 
-    $("#lumia950DetailsLink").click(function () {
+    $(".lumia950DetailsLink").click(function () {
 
-        $('#lumia950Details').fadeToggle("slow");
+        $('.lumia950Details').fadeToggle("slow");
     });
 
-    $("#lumia550DetailsLink").click(function () {
+    $(".lumia550DetailsLink").click(function () {
 
-        $('#lumia550Details').fadeToggle("slow");
+        $('.lumia550Details').fadeToggle("slow");
     });
 
-    $("#lumia640DetailsLink").click(function () {
+    $(".lumia640DetailsLink").click(function () {
 
-        $('#lumia640Details').fadeToggle("slow");
+        $('.lumia640Details').fadeToggle("slow");
     });
 
-    $("#iphone6sDetailsLink").click(function () {
+    $(".iphone6sDetailsLink").click(function () {
 
-        $('#iphone6sDetails').fadeToggle("slow");
+        $('.iphone6sDetails').fadeToggle("slow");
     });
 
-    $("#iphone6DetailsLink").click(function () {
+    $(".iphone6DetailsLink").click(function () {
 
-        $('#iphone6Details').fadeToggle("slow");
+        $('.iphone6Details').fadeToggle("slow");
     });
 
-    $("#iphone5DetailsLink").click(function () {
+    $(".iphone5DetailsLink").click(function () {
 
-        $('#iphone5Details').fadeToggle("slow");
+        $('.iphone5Details').fadeToggle("slow");
     });
 
     $("#windows").click(function () {
-        $("#androidCenter, #iosCenter, #center").hide();
-
+        $("#androidCenter, #iosCenter, #center, #allPhonesCenter").hide();
+        $('.huaweiDetails, .galaxys6Details,.lgDetails,.sonyDetails,.xiaomiDetails,.lumia950Details,.lumia550Details,.lumia640Details,.iphone6sDetails,.iphone6Details,.iphone5Details').hide();
         $("html, body").animate({
             scrollTop: 0
         }, "slow");
@@ -187,8 +223,8 @@ $(document).on("ready", function () {
     });
 
     $("#ios").click(function () {
-        $("#androidCenter, #windowsCenter, #center").hide();
-
+        $("#androidCenter, #windowsCenter, #center, #allPhonesCenter").hide();
+        $('.huaweiDetails, .galaxys6Details,.lgDetails,.sonyDetails,.xiaomiDetails,.lumia950Details,.lumia550Details,.lumia640Details,.iphone6sDetails,.iphone6Details,.iphone5Details').hide();
         $("html, body").animate({
             scrollTop: 0
         }, "slow");
