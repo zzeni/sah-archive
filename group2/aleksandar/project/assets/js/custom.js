@@ -43,7 +43,7 @@
                 NAV SCRIPTS
             ======================================*/
             $(window).bind('scroll', function () {
-                var navHeight = $(window).height() -300;
+                var navHeight = $(window).height() ;
                 if ($(window).scrollTop() > navHeight) {
                     $('nav').addClass('fixed');
                 }
