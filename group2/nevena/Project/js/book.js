@@ -40,7 +40,6 @@ else{
 		$.each(currentCategory.books, function(index, book){
 			if (bookid == book.id) {
 				currentBook = book;
-				console.log(currentBook);
 				return false;
 			};
 
