@@ -1,0 +1,293 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	outline-offset: 0;
+	outline: none;
+}
+
+body {
+	background-image: url(img/background2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Yeseva One', cursive;
+}
+
+aside ul li {
+	margin: 15px;
+	background-color: #7B4714;
+	border: 2 pcs solid white;
+	box-shadow: 5px 5px 2px #7B4714;
+	border-radius: 25px 0px 25px 0px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	width: 140px;
+	height: 50px;
+	font-weight: bold;
+	background: -webkit-linear-gradient(top, #351F09 70%, #7B4714, white);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(top, #351F09 70%, #7B4714, white);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(top, #351F09 70%, #7B4714, white);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, #351F09 70%, #7B4714, white);
+	/* Standard syntax */
+	opacity: 0.95;
+	/*ADD all possible values for opacity! */
+}
+
+aside ul li a {
+	color: whitesmoke;
+	font-size: 16px;
+}
+
+body aside .nav li a:focus,
+body aside .nav li a:hover {
+	background-color: #351F09;
+	color: whitesmoke;
+	border-radius: 25px 0px 25px 0px;
+	box-shadow: 7px 7px 5px #7B4714;
+	width: 110%;
+	height: 110%;
+	font-size: 18px;
+	background: -webkit-linear-gradient(top, #351F09 80%, #7B4714, white);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(top, #351F09 80%, #7B4714, white);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(top, #351F09 80%, #7B4714, white);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, #351F09 80%, #7B4714, white);
+	/* Standard syntax */
+}
+
+body aside .nav li a:active {
+	margin: 15px;
+	background-color: #7B4714;
+	border: 2 pcs solid white;
+	box-shadow: 5px 5px 2px #7B4714;
+	border-radius: 25px 0px 25px 0px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	width: 140px;
+	height: 50px;
+	font-size: 14px;
+	font-weight: bold;
+	background: -webkit-linear-gradient(top, #351F09 70%, #7B4714, white);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(top, #351F09 70%, #7B4714, white);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(top, #351F09 70%, #7B4714, white);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, #351F09 70%, #7B4714, white);
+	/* Standard syntax */
+	opacity: 0.95;
+	/*ADD all possible values for opacity! */
+}
+
+article div {
+	flex: 1;
+}
+
+.present {
+	justify-content: center;
+	text-align: justify;
+	font-family: 'Yeseva One', cursive;
+	font-size: 1em;
+	width: 100%;
+	height: 500px;
+	padding-right: 25px;
+}
+
+.present p {
+	font-family: 'Yeseva One', cursive;
+	font-size: 17px;
+	margin-top: 20px;
+}
+
+.row {
+	align-content: center;
+	justify-content: center;
+}
+
+.img-1 {
+	width: 260px;
+	min-width: 200px;
+	min-height: 160px;
+	height: 200px;
+	border: 1px solid white;
+	border-radius: 25px;
+	justify-content: space-between;
+	position: absolute top right;
+	margin-right: 5px;
+	float: right;
+}
+
+.img-2 {
+	width: 260px;
+	min-width: 200px;
+	min-height: 140px;
+	height: 200px;
+	border: 1px solid white;
+	border-radius: 25px;
+	justify-content: space-between;
+	position: absolute bottom left;
+	margin-left: 0;
+	float: left;
+	margin-right: 80px;
+	margin-top: 15px;
+}
+
+.img-1:hover,
+.img-2:hover {
+	width: 300px;
+	height: 240px;
+}
+
+.present p:hover {
+	font-size: 19px;
+}
+
+h3:hover {
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+table {
+	font-size: 14px;
+}
+
+table:hover {
+	font-size: 16px;
+}
+
+th,
+tr,
+td {
+	text-align: justify;
+	justify-content: center;
+}
+
+.menu {
+	width: 100%;
+	height: 540px;
+	border: 1px solid white;
+	border-radius: 25px;
+	background: rgba(255, 255, 255, 0.4);
+	color: black;
+	font-weight: 400;
+	display: none;
+	color: #7B4714;
+}
+
+.menu:first-child {
+	display: block;
+}
+
+h3 {
+	text-align: center;
+}
+
+.first {
+	height: 70px;
+	background: none;
+	justify-content: center;
+}
+
+.first-nav {
+	height: 60px;
+	align-items: flex-end;
+	text-align: right;
+	background: none;
+	padding-right: 10px;
+	justify-content: center;
+}
+
+.first-nav li {
+	display: inline-flex;
+	text-align: right;
+	background: none;
+	justify-content: center;
+}
+
+.first-nav li img {
+	width: 50px;
+	height: 50px;
+	background-color: none;
+}
+
+.first-nav li img:hover {
+	width: 60px;
+	height: 60px;
+}
+
+@media only screen and (max-width: 600px) {
+	/* For small tablets: */
+	.img-1,
+	.img-2 {
+		float: left;
+		clear: both;
+		width: auto;
+		height: auto;
+		text-align: justify;
+	}
+	.img-2 {
+		padding-left: 0;
+	}
+	.menu {
+		height: auto;
+	}
+	.img-1:hover,
+	.img-2:hover {
+		width: auto;
+		height: auto;
+	}
+	.menu p {
+		text-align: left;
+	}
+	* {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	/* For tablets: */
+	.img-1,
+	.img-2 {
+		float: left;
+		clear: both;
+		width: 75%;
+		height: 75%;
+		max-width: 260px;
+		max-height: 200px;
+	}
+	.img-1 {
+		align-self: flex-end;
+	}
+	.img-2 {
+		padding-left: 0;
+	}
+	.menu {
+		height: auto;
+	}
+	.img-1:hover,
+	.img-2:hover {
+		width: auto;
+		height: auto;
+	}
+	.menu p {
+		text-align: justify;
+	}
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	body {
+		background-image: url(img/background.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}

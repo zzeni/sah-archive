@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <title>Name of the page</title>
+    <!--<meta name="description" content="">-->
+    <!--<link rel="shortcut icon" href="/favicon.ico">-->
+    <meta neme="keywords" content="">
+    <meta name="autor" content="Ivan Onchev">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!--Font Awasome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <h2>About me</h2>
+            <ul class="nav nav-tabs">
+                <li data-target="about" class="active"><a href="#">Main</a></li>
+                <li data-target="some-words" ><a href="#">Some Words</a></li>
+                <li data-target="contact" ><a href="#">Contact</a></li>
+            </ul>
+
+
+            <div class="box tabs-body">
+                <!--Main start-->
+                <div class="row" id="about">
+                    <div class="col-xs-8 col-sm-8 col-md-6 col-lg-6 micro-screen vertical-align">
+                        <div class="col-xs-12 col-sm-4 micro-screen image-box">
+                            <img src="https://scontent-ams2-1.xx.fbcdn.net/hphotos-ash2/v/t1.0-9/10888807_10205448430040539_6079888363108043134_n.jpg?oh=ff5c22963bdaf345d6cc1d6229aaaf75&oe=5686DF96" class="img-circle img-responsive center-block">
+                        </div>
+                        <!--Second col start-->
+                        <div class="col-xs-12 col-sm-8 micro-screen info-box">
+                            <div class="row">
+                                <div class="col-xs-4 text-right">
+                                    <p><i>Name</i></p>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p>Ivan Onchev </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 text-right">
+                                    <p><i>email</i></p>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p><a href="mailto:onchevivan@gmail.com" class="text-primary">onchevivan@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 text-right">
+                                    <p><i>github</i></p>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p><a href="https://github.com/gaFace" class="text-danger">Link</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 text-right">
+                                    <p><i>LinkedIn</i></p>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p><a href="https://www.linkedin.com/pub/ivan-onchev/4a/342/939" class="text-danger">Link</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second col end-->
+                </div>
+                <!--Main end-->
+                <!--Some Words-->
+                <div class="row" id="some-words">
+                    <h2>I am Ivan
+                <span class="text-muted">I like to Design & Code</span>
+            </h2>
+                    <p class="lead">My name is Ivan Onchev and I'm a Web Developer. I decided to learn Front-end on my own. I’ve always loved solving problems.</p>
+                    <h2>How my interest in web developing came?</h2>
+                    <p class="lead">There is no miracle behind this decision of mine. Like many of the people from my generation I graduated Economy just to be with the flow. After a short time, I realized that this is not going to make me happy.Despite of this fact I collected the useful knolege that was provided for me and closed this page.</p>
+                    <p class="lead"><em>You are happy only when create something. I think that the world of code is perfect place to create. This is the idea which generates in me the desire to design and code.</em></p>
+                </div>
+                <!--Some Words End-->
+                <!--Contact Form-->
+                <div class="row" id="contact">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                                    </div>
+                                </div>
+                                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="4"></textarea>
+                                <br>
+                                <div class="row">
+                                    <div id="send" class="col-md-12 form-group send">
+                                        <button type="submit" class="btn btn-default"><i class="fa fa-paper-plane fa-lg"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <p class="lead text-uppercase">Feel free to share your idea with me!</p>
+                                <p><span><i class="fa fa-map-marker fa-lg"></i></span> Sofia, BG</p>
+                                <p><span><i class="fa fa-mobile fa-lg"></i></span> +359 555-8888-55</p>
+                                <p><span><i class="fa fa-envelope fa-lg"></i></span> onchevivan@gmail.com</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--Contact Form End-->
+
+            </div>
+        </section>
+    </div>
+        <script src="script.js"></script>
+
+</body>
+
+</html>

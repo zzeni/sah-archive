@@ -1,0 +1,32 @@
+body{
+    margin: auto;
+    max-width: 60%;
+    background-color: darkturquoise;
+    color:black;
+}
+h1{
+    color: azure;
+    font-size: 50px;
+    text-align: center;
+}
+ul{
+    color:crimson
+}
+h2{
+    color: azure;
+    font-size: 30px;
+    text-align: center;
+}
+a { 
+    color:#007ca5; 
+    text-decoration:none; 
+    outline: none; 
+}
+	
+a:visited { 
+    color:firebrick; 
+}
+
+a:active { 
+    color:black; 
+}

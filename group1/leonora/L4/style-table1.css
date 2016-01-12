@@ -1,0 +1,36 @@
+.about-image img {
+    vertical-align: top;
+    width: 140px;
+    border-radius: 100%;
+}
+
+.about-image {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+a { color: lightgreen;}
+
+.about-info {
+    background-color: lightseagreen;
+}
+.col,
+td {
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.about-info .box,
+.about-info table {
+    font-family: monospace;
+    list-style: none;
+    line-height: 1.5;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+.about-info .col:first-child,
+.about-info th {
+    text-align: right;
+    font-weight: bold;
+}

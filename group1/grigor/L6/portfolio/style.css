@@ -1,0 +1,164 @@
+header{
+    background-color:gold;
+    color: blue; 
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 30px; 
+    width: 98%;
+    height: 50px
+}
+
+p, li, h1, h3, h4, a, label, input  {
+    font-family: 'Comfortaa', cursive,;
+}
+
+nav {
+    border-radius: 50%;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color:lightblue;
+    width: 100%;
+}
+
+nav a {
+    padding: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+aside {
+    width: 220px;
+    height: auto;
+    display: flex;
+    padding: 30px;
+    display: block;
+    position: absolute;
+    vertical-align: middle;
+    text-align: center;
+    
+} 
+
+#cont img {
+    width: 100px;
+    height: 50px;
+}
+
+aside img {
+    width: 212px;
+    height: 212px;
+    vertical-align: middle;
+}
+
+section {
+    padding-left: 300px;
+}
+
+#about, #projects, #contact {
+    padding-left: 340px; 
+}
+
+h1 { font-family: ‘Metrophobic’, Arial, serif; font-weight: 400; }
+
+#about p {
+    padding-left: 50px;
+}
+
+footer {
+    width: 100%;
+    display: block;
+    background-color:lightblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: static;
+}
+
+#about {
+    display: table;
+    height: 100%
+    width: 886px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    float: left;
+    padding-right: 20px;
+
+}
+#about li {
+    list-style-type: none;
+    
+} 
+
+#contact {
+    text-align: center;
+}
+s
+/* contact form css settings*/
+
+
+input, textarea  {
+    padding: 10px;
+    border: 1px solid black;
+    width: 200px;
+    color: gray;
+}
+h2 {
+    color: red;
+}
+
+.submit input {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border-radius: 10%;
+    font-size: 17px;
+    margin-bottom: 15px;
+    margin-left: 215px;
+}
+
+.reset input {
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+            /* form setings start from here */
+.name input {
+    width: 400px;
+    height: 30px;
+    margin: 10px 10px 10px 10px;
+}
+
+form p {
+    margin: 0px;
+}
+
+.telephone input {
+    width: 400px;
+    height: 30px;
+    margin: 10px 10px 10px 10px;
+}
+
+.email input {
+    width: 400px;
+    height: 30px;
+    margin: 10px 10px 20px 10px;
+}
+
+textarea {
+    margin: 10px 10px 10px 10px;
+     width: 500px;
+    height: 250px;
+    max-width: 800px;
+}

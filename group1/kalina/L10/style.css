@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+.writing {
+    width: 40%;
+    height: 40px;
+    font-family: Verdana;
+    font-size: 1em;
+    border: 5px dotted blue;
+    border-radius: 25px;
+    padding-left: 10px;
+    background: #b3e0ff;
+}
+
+textarea {
+    border-left: 10px;
+    border-radius: 25px;
+    font-family: Verdana;
+    font-size: 1em;
+    border: 5px dotted blue;
+    width: 40%;
+    height: 100px;
+    padding-left: 10px;
+    font-size: 1em;
+    background: #b3e0ff;
+}
+
+button {
+    width: 10%;
+    height: 60px; 
+    border: 5px dotted #b3e0ff;
+    border-radius: 25px;
+}
+
+.submit {
+    background-color: #003399;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 300; 
+    font-size: 1.5em;
+ }

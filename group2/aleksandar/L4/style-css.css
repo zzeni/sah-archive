@@ -1,0 +1,72 @@
+body {
+	/*	padding: 0px;*/
+	/*	margin: 0px;*/
+}
+
+#about {
+	background-color: white;
+	display: table-row;
+	font-family: "Libre Baskerville", serif;
+}
+
+#img,
+#table {
+	display: table-cell;
+	height: 200px;
+}
+
+#img {
+	width: 200px;
+	background-color: dimgrey;
+}
+
+img {
+	width: 100%;
+	height: 200px;
+	border-radius: 100%;
+}
+
+#table {
+	width: 400px;
+	vertical-align: middle;
+	background-color: beige;
+}
+
+#table div {
+	display: table-cell;
+}
+
+#col1 {
+	width: 100px;
+	text-align: right;
+	padding-right: 16px;
+	padding-left: 8px;
+	font-style: oblique;
+}
+
+#col2 {
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.col1,
+.col2 {
+	margin-top: 30px;
+}
+
+a,
+#name,
+#col2 li {
+	text-decoration: none;
+	color: dimgrey;
+}
+
+#col2 ul {
+	padding: 0px;
+}
+
+ul,
+li {
+	list-style: none;
+}

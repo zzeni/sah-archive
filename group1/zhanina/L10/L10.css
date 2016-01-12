@@ -1,0 +1,59 @@
+    * {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.table {
+    border: 1px black solid;
+    background-color: antiquewhite;
+    padding: 20px;
+    width: 360px;
+    flex: 1;
+    -ms-flex: 1;
+}
+
+.ex1 {
+    border: 1px black solid;
+    background-color: azure;
+    padding: 20px;
+    width: 360px;
+    flex: 1;
+    -ms-flex: 1;
+}
+
+.ex2 {
+    border: 1px black solid;
+    background-color: bisque;
+    padding: 20px;
+    width: 360px;
+    flex: 1;
+    -ms-flex: 1;
+}
+
+#playing-the-game {
+    border: 1px black solid;
+    background-color: darksalmon;
+    padding: 20px;
+    width: 360px;
+    flex: 1;
+    -ms-flex: 1;
+}
+
+.ex3 {
+    border: 1px black solid;
+    background-color: deeppink;
+    padding: 20px;
+    width: 360px;
+    flex: 1;
+    -ms-flex: 1;
+    input {
+        border: 1px black solid;
+    }
