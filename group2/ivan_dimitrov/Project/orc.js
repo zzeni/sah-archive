@@ -18,7 +18,7 @@
         var playSound = (localStorage['game.playSound'] == true);
 
         if (playSound) {
-            volume = 1;
+            volume = 0.5;
             $('.sound').addClass('sound-on').removeClass('sound-off');
         } else {
             volume = 0;
@@ -618,7 +618,7 @@
             enemies.push(new Sprite(
                 canvas.width + platformWidth % player.speed,
                 platformBase - platformHeight * platformSpacer - platformWidth,
-                'fires', 'barrel', 'spikes', 'drag'/**nachin za random na obekti ? osven math.random() ili da vzima ot enemies po nqkakav nachin. chetoh v stack overflow ama ne si namerih podhodqsht otgovor ***/
+                ['fires', 'barrel', 'spikes', 'drag'][Math.floor(Math.random() * 4)]
             ));
         }
     }
@@ -809,7 +809,7 @@
         // sound on
         else {
             $this.removeClass('sound-off').addClass('sound-on');
-            volume = 1;
+            volume = 0.5;
         }
 
         if (canUseLocalStorage) {
