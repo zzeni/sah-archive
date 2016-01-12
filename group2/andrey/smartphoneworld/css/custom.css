@@ -28,7 +28,8 @@ h6 a:link {
 }
 #androidCenter,
 #windowsCenter,
-#iosCenter {
+#iosCenter,
+#allPhonesCenter {
     background-color: floralwhite;
 }
 #welcome,
