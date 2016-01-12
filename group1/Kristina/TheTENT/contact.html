@@ -79,7 +79,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="portfolio-item">
-                                    <form novalidate="true" action="">
+                                    <form novalidate="true" method="post" action="form.php">
                                         <label for="name">Name</label>
                                         <input name="name" type="text" placeholder="Type your name here">
 
@@ -88,6 +88,8 @@
 
                                         <label for="message">Message</label>
                                         <textarea name="message" placeholder="Type Here"></textarea>
+                                        
+                                        <div id="clear"></div>
 
                                         <input id="submit" type="submit" value="submit" name="submit">
                                     </form>

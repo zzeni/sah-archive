@@ -1,13 +1,18 @@
 body {
-    background-color: #d2d2cf;
+    background-image: url("../img/Untitled-5.png");
+    background-repeat:repeat;
 }
 
 .article {
     background-color: #fff;
     font-size: 1.2em;
-    border: 1px #000 solid;
+    border: 1px #abccb2 solid;
     border-radius: 5px;
     margin: 30px; 
+}
+
+.absurd_img {
+    max-height: 400px;
 }
 
 footer {

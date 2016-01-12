@@ -27,8 +27,7 @@ input, textarea {
     border-radius:5px;
 }
 #submit {
-	display: block;
-    width:127px;
+    width:439px;
     height:40px;
     border:1px solid #dedede;
     margin-top:10px;
@@ -43,9 +42,20 @@ textarea {
 	height:213px;
 }
 
+#clear {
+    clear: both;
+}
+
 .error {
     border: 1px red solid;
 }
 .error-span {
     color: coral;
+}
+
+@media (max-width: 660px) {
+    input, textarea {
+        max-width: 300px;
+        max-height: 150px;
+    }
 }
