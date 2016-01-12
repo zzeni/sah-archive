@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+body {
+	background-color: black;
+	background-image: url(../images/Acoustic-Guitar.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	margin: 0 auto;
+	border: 1px black solid;
+}
+
+
+/*title*/
+
+.intro {
+	background-color: black;
+	background-image: url(../images/wood_background_texture_36573_3840x2400.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	padding: 20px;
+	width: 100%;
+	height: 600px;
+}
+
+.nav-home {
+	margin: 0 auto;
+	padding: 50px;
+	color: #DBC588;
+	text-align: left;
+}
+
+.nav-home a {
+	color: #333333;
+	text-decoration: none;
+}
+
+.nav-home h1 {
+	text-align: center;
+}
+
+#body-intro {
+	background-color: #333;
+}
+
+ol {
+	list-style: none;
+}
+
+header {
+	background-color: black;
+	background-image: url(../images/266.jpg);
+	background-repeat: no-repeat;
+	color: #DBC588;
+	height: 180px;
+	padding-left: 45px;
+	padding-top: 35px;
+}
+
+
+/*---------------------------------------*/
+
+
+/*logo*/
+
+#logo {
+	position: relative;
+	font-family: 'Lobster', cursive;
+	padding: 5px 5px 5px 20px;
+	width: 250px;
+	height: 110px;
+}
+
+#logo-stamp {
+	background-color: darkgoldenrod;
+	padding: 5px 5px 5px 20px;
+	width: 90px;
+	height: 90px;
+	border-top-left-radius: 60px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 60px;
+	border-bottom-left-radius: 90px;
+	position: absolute;
+	z-index: 1;
+}
+
+#logo-text {
+	position: absolute;
+	z-index: 2;
+}
+
+#logo h1 {
+	font-size: 25px;
+}
+
+
+/*--------------------------*/
+
+nav {
+	margin: 0 auto;
+	width: 80%;
+	position: sticky;
+	display: flex;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+nav ul li {
+	width: 100px;
+	background-color: #333;
+	list-style-type: none;
+	float: right;
+}
+
+nav ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	background-color: goldenrod;
+	text-decoration: none;
+}
+
+#login-buy {
+	display: inline-block;
+	flex: 1;
+}
+
+about {
+	background-image: url(Acoustic-Guitar.jpg);
+	background-color: white;
+	margin: 0 auto;
+	width: 80%;
+	display: none;
+}
+
+aside {
+	border: 1px grey solid;
+	padding-left: 15px;
+	height: 388px;
+}
+
+aside ul li {
+	list-style-type: none;
+}
+
+aside a:hover {
+	text-decoration: none;
+}
+
+section {
+	display: padding: 5px;
+	height: 100%;
+}
+
+#related {
+	height: 10%;
+}
+
+#related ul li {
+	margin-top: 5px;
+}
+
+#pager {
+	overflow: auto;
+	height: 550px;
+}
+
+.product {
+	background-color: #E7E7E7;
+	border: 1px grey solid;
+	width: 200px;
+	height: 300px;
+	padding: 10px;
+	margin-right: 10px;
+}
+
+.product-img {
+	width: 90%;
+	height: 70%;
+	border: 1px black solid;
+	margin: 0 auto;
+}
+
+.info {
+	width: 90%;
+	height: 20%;
+	border: 1px black solid;
+	margin: 0 auto;
+}
+
+.price {
+	width: 90%;
+	height: 10%;
+	border: 1px black solid;
+	margin: 0 auto;
+}
+
+article {}
+
+article ul li {
+	list-style-type: none;
+	padding-top: 10px;
+}
+
+footer {
+	background-color: black;
+	border: 1px grey solid;
+	height: 165px;
+	text-align: center;
+	padding-top: 40px;
+}
+
+
+/*products*/
+
+#products {
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+.col-md-4 {
+	margin: 0;
+}
+
+
+/*products*/
+
+
+/*form*/
+
+#nav-log {
+	padding-top: 50px;
+	margin: 0 auto;
+	display: none;
+}
+
+form {
+	margin: 0 auto;
+	width: 600px flex: 1;
+}
+
+legend {
+	color: black;
+	font-weight: bolder;
+}
+
+input {
+	color: black;
+}
+
+#col-lable {
+	text-align: right;
+	font-size: 18px;
+}
+
+#submit-form {
+	border: 3px #333 solid;
+	text-align: center;
+}
+
+#buton,
+#submit {
+	width: 100px;
+}

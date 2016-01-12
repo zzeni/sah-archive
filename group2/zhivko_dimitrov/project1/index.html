@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="animate.js"></script>
+    <script src="physparam.js"></script>
+    <script src="delta.js"></script>
+    <style>
+        #field {
+            height: 500px;
+            border-bottom: 3px black groove;
+            position: relative;
+        }
+        
+        #message {
+            text-align: center;
+        }
+        
+        #ball {
+            position: absolute;
+            bottom: 0px;
+            width: 15px;
+            height: 15px;
+            z-index: 9;
+            left: 0px;
+        }
+        
+        #ball2 {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 15px;
+            height: 15px;
+            z-index: 15;
+        }
+        
+        #cannon {
+            position: absolute;
+            bottom: 0px;
+            width: 30px;
+            height: 30px;
+            z-index: 8;
+        }
+        
+        #cannon2 {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 30px;
+            height: 30px;
+            z-index: 8;
+            -moz-transform: scale(-1, 1);
+            -o-transform: scale(-1, 1);
+            -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+        }
+        
+        #inputt {
+            top: 5px;
+            position: absolute;
+            z-index: 5;
+        }
+        
+        #inputt2 {
+            top: 5px;
+            right: 0px;
+            position: absolute;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="field">
+
+        <div id="inputt">
+            <p>Player 1: </p>
+            <div id="points1"></div>
+            <div id="playerControl1">
+                Angle (grad)
+                <br>
+                <input type="number" id="angle">
+
+                <br> Velocity (m/s)
+                <br>
+                <input type="number" id="velocity">
+                <br>
+                <button id="buttonA">Shoot</button>
+                <br>
+            </div>
+
+
+
+        </div>
+        <div id="inputt2">
+            <p>Player 2: </p>
+            <div id="points2"></div>
+            <div id="playerControl2">
+                Angle (grad)
+                <br>
+                <input type="number" id="angle2">
+                <br> Velocity (m/s)
+                <br>
+                <input type="number" id="velocity2">
+                <br>
+                <button id="buttonB">Shoot</button>
+            </div>
+
+        </div>
+
+        <div id='message'>
+        </div>
+        <img src="cannonball.jpg" width="20" height="20" id="ball">
+        <img src="cannonball.jpg" width="20" height="20" id="ball2">
+        <img src="cannon.png" width="40" height="40" id="cannon">
+        <img src="cannon.png" width="40" height="40" id="cannon2">
+    </div>
+
+    <script>
+        var img = document.getElementById('ball');
+        var buttonA = document.getElementById('buttonA');
+        var img2 = document.getElementById('ball2');
+        var buttonB = document.getElementById('buttonB');
+        var cannon2 = document.getElementById('cannon2');
+        var cannon1 = document.getElementById('cannon');
+        var message = document.getElementById("message");
+        var points1 = document.getElementById("points1");
+        var points2 = document.getElementById("points2");
+        var field = document.getElementById("field")
+        var scores1 = 0;
+        var scores2 = 0;
+        var playerControl1 = document.getElementById("playerControl1");
+        var playerControl2 = document.getElementById("playerControl2");
+        img.style.display = 'none';
+        img2.style.display = 'none';
+
+        function groundBounce(shot) {
+            setTimeout(function () {
+                animate({
+                    delay: 20,
+                    duration: 1000,
+                    delta: makeEaseIn(finish),
+                    step: function (delta) {
+                        field.style.bottom = (field.offsetHeight / 2) * delta + "px";
+                    }
+                });
+            }, shot.stime * 200);
+
+        }
+
+        function playerKilled(player) {
+            if (player == 1) {
+                message.innerHTML = 'Player 2 scored!';
+                scores2++;
+                points2.innerHTML = "Scores: " + scores2;
+            } else if (player == 2) {
+                message.innerHTML = 'Player 1 scored!';
+                scores1++;
+                points1.innerHTML = "Scores: " + scores1;
+            }
+        }
+
+        function hitDisplay(hint, image) {
+            setTimeout(function () {
+                message.style.display = '';
+                if (image.offsetLeft <= cannon2.offsetLeft + 20 && image.offsetLeft >= cannon2.offsetLeft - 20) {
+                    playerKilled(2);
+                } else if (image.offsetLeft <= cannon1.offsetLeft + 20 && image.offsetLeft >= cannon1.offsetLeft - 20) {
+                    playerKilled(1);
+                } else {
+                    console.log('no hit');
+                    message.innerHTML = 'Try next time!';
+                }
+
+                image.style.display = 'none';
+            }, hint.stime * 200 + 300);
+            setTimeout(
+                function () {
+                    message.style.display = 'none';
+                }, hint.stime * 200 + 2000)
+        }
+
+
+        buttonA.onclick = function () {
+            var velocity = document.getElementById("velocity").value;
+            var angleGrad = document.getElementById("angle").value;
+            try {
+                if (velocity > 2000) {
+                    "Velocity is too high. You'll miss!";
+                }
+                if (angleGrad < 0 || angleGrad > 180) {
+                    throw "Please, enter an angle between 0 and 180!";
+                }
+                var shot = new ShootPhys(velocity, angleGrad)
+                setTimeout(function () {
+                    img.style.display = '';
+                }, 20);
+                animate({
+                    delay: 20,
+                    duration: shot.stime * 200,
+                    x: 1.5,
+                    delta: makeEaseIn(parabole),
+                    step: function (delta) {
+                        img.style.bottom = 2 * shot.height * delta + 'px';
+                    }
+                })
+
+                animate({
+                    delay: 20,
+                    duration: shot.stime * 200,
+                    delta: makeEaseIn(linear),
+                    step: function (delta) {
+                        img.style.left = shot.width * delta + "px";
+                    }
+                })
+                groundBounce(shot);
+                hitDisplay(shot, img);
+                playerControl1.style.display = 'none';
+                playerControl2.style.display = '';
+            } catch (err) {
+                message.style.display = '';
+                message.innerHTML = err;
+                setTimeout(function () {
+                    message.style.display = 'none';
+                }, 3000);
+            }
+        }
+
+
+        buttonB.onclick = function () {
+            var velocity = document.getElementById("velocity2").value;
+            var angleGrad = document.getElementById("angle2").value;
+            try {
+                if (velocity > 2000)
+                    throw "Velocity is too high. You'll miss!";
+
+                if (angleGrad < 0 || angleGrad > 180)
+                    throw "Please, enter an angle between 0 and 180!";
+
+
+                var shot2 = new ShootPhys(velocity, angleGrad)
+                setTimeout(function () {
+                    img2.style.display = '';
+                }, 20)
+                animate({
+                    delay: 20,
+                    duration: shot2.stime * 200,
+                    x: 1.5,
+                    delta: makeEaseIn(parabole),
+                    step: function (delta) {
+                        img2.style.bottom = 2 * shot2.height * delta + 'px';
+                    }
+                })
+
+                animate({
+                    delay: 20,
+                    duration: shot2.stime * 200,
+                    delta: makeEaseIn(linear),
+                    step: function (delta) {
+                        img2.style.right = shot2.width * delta + "px";
+                    }
+                })
+                groundBounce(shot2);
+                hitDisplay(shot2, img2);
+                playerControl1.style.display = '';
+                playerControl2.style.display = 'none';
+            } catch (err) {
+                message.style.display = '';
+                message.innerHTML = err;
+                setTimeout(function () {
+                    message.style.display = 'none';
+                }, 3000);
+            }
+
+        }
+    </script>
+</body>
+
+</html>
