@@ -11,7 +11,7 @@ h1 {
 nav {
     display: block;
     background-color: green;
-    text-align: right;
+    text-align: left;
     padding: 20px 0;
     text-transform: uppercase;
 }
