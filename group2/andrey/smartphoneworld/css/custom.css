@@ -1,9 +1,10 @@
 body {
     padding-top: 50px;
     /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
-    background-image: url("../img/background/2.jpg");
+    background-image: url("");
     background-position: center;
     background-size: cover;
+    background-color: #000033;
 }
 h1,
 h2,
@@ -19,26 +20,35 @@ h5 a:link,
 h6 a:link {
     color: black;
 }
+#loadPage {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    background-image: url("../img/background/4.gif");
+    background-position: center;
+    background-size: cover;
+}
 .phoneTitle {
     font-family: 'Orbitron', sans-serif;
     font-weight: 900;
-    color:black;
+    color: black;
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: red;
 }
 .btn,
-.panel-title{
+.panel-title {
     font-family: 'Black Ops One', cursive;
     font-size: 18px;
 }
-
 .text-center {
     font-family: 'Orbitron', sans-serif;
     font-weight: 900;
-     
 }
 #panelTitle,
-#panelTitleonVote{
+#panelTitleonVote {
     font-family: 'Black Ops One', cursive;
     font-size: 22px;
 }
@@ -92,7 +102,7 @@ a {
 .iphone6sDetailsLink,
 .iphone6DetailsLink,
 .iphone5DetailsLink,
-.table{
+.table {
     font-family: 'Jura', sans-serif;
     font-weight: 600;
     font-size: 18px;
