@@ -27,12 +27,18 @@ h6 a:link {
     -webkit-text-stroke-color: red;
 }
 .btn,
-.panel-title {
+.panel-title{
     font-family: 'Black Ops One', cursive;
     font-size: 18px;
 }
+
+.text-center {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+     
+}
 #panelTitle,
-#panelTitleonVote {
+#panelTitleonVote{
     font-family: 'Black Ops One', cursive;
     font-size: 22px;
 }
@@ -85,7 +91,8 @@ a {
 .lumia640DetailsLink,
 .iphone6sDetailsLink,
 .iphone6DetailsLink,
-.iphone5DetailsLink {
+.iphone5DetailsLink,
+.table{
     font-family: 'Jura', sans-serif;
     font-weight: 600;
     font-size: 18px;
