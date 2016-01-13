@@ -19,6 +19,7 @@ body {
   background-image: url(images/background-news2.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
+  background-attachment:fixed;
 }
 
 .logos {
@@ -125,7 +126,6 @@ main {
 
 aside {
   flex: 1;
-  border-left: 1px solid #3e3e3e;
 }
 
 .mainimg {
@@ -208,6 +208,11 @@ aside {
   background-color: rgba(70, 70, 70, 0.75);
   border-radius: 5px;
   opacity: 0.75;
+}
+
+.rownews img {
+  width: 178.891px;
+  height: 110px;
 }
 
 .rowimg:hover {
