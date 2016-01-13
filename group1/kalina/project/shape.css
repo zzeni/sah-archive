@@ -96,29 +96,17 @@ body aside .nav li a:active {
 }
 
 
-/* section - the main content */
-
-section div {
-	flex: 1;
-}
-
-
 /* the parent div holding the whole content */
 
 .menu {
 	width: 100%;
-	height: 540px;
 	border: 1px solid white;
 	border-radius: 25px;
 	background: rgba(255, 255, 255, 0.4);
-	color: black;
 	font-weight: 400;
 	display: none;
 	color: #7B4714;
-}
-
-.menu:first-child {
-	display: block;
+	padding-bottom: 20px;
 }
 
 h3 {
@@ -133,68 +121,40 @@ h3 {
 .present {
 	justify-content: center;
 	text-align: justify;
+	align-content: center;
 	font-family: 'Yeseva One', cursive;
 	font-size: 1em;
 	width: 100%;
 	height: auto;
+	margin-right: 0;
+	padding-bottom: 20px;
+	padding-right: 0;
 }
 
 .present p {
 	font-family: 'Yeseva One', cursive;
 	font-size: 17px;
 	margin-top: 20px;
-}
-
-
-/* first div in .present */
-
-.row {
-	align-content: center;
-	justify-content: center;
-	object-fit: contain;
-}
-
-
-/* second div in .present */
-
-.row:nth-child(2) {
-	padding-top: 20px;
+	margin-bottom: 20px;
+	text-align: justify;
 }
 
 
 /* the images */
 
-.img-1 {
-	width: 260px;
-	min-width: 180px;
-	min-height: 120px;
-	height: 200px;
-	border: 1px solid white;
-	border-radius: 25px;
-	justify-content: space-between;
-	position: top;
-	float: right;
-}
-
+.img-1,
 .img-2 {
-	width: 260px;
-	min-width: 180px;
-	min-height: 120px;
-	height: 200px;
 	border: 1px solid white;
 	border-radius: 25px;
-	justify-content: space-between;
-	position: bottom;
-	margin-left: 0;
-	float: left;
-	clear: both;
-	margin-right: 80px;
-	margin-top: 15px;
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
 }
 
 
 /* JS function classes for the new, bigger images created */
 
+/*
 .img-1-big {
 	text-align: center;
 	justify-content: center;
@@ -206,16 +166,15 @@ h3 {
 	border: 1px solid white;
 	border-radius: 25px;
 	align-self: center;
-}
+}*/
 
 
 /* the schedule */
 
-.timetable li {
-	display: inline-flex;
+.row li {
 	text-decoration: none;
-	/*	box-sizing: padding-box;*/
 	font-size: 16px;
+	display: table;
 }
 
 
@@ -258,22 +217,18 @@ h3 {
 .footer {
 	text-align: right;
 	width: 100%;
-	height: 20px;
 	padding-right: 60px;
-	padding-top: 10px;
-	margin-top: 10px;
-	justify-content: center;
-	flex: 1;
 	color: #390f0f;
 	font-size: 13px;
-	position: relative;
-	top: 10px;
+	position: fixed;
+	bottom: 10px;
+	z-index: -1;
 }
 
 .footer a {
 	text-decoration: none;
 	color: #390f0f;
-/*	padding-top: 10px;*/
+	/*	padding-top: 10px;*/
 }
 
 
@@ -282,6 +237,8 @@ h3 {
 
 /* For smart phones and >: */
 
+
+/*
 @media only screen and (max-width: 600px) {
 	.img-1,
 	.img-2 {
@@ -315,14 +272,17 @@ h3 {
 		background-position: center;
 	}
 }
+*/
 
 
 /* For tablets: */
 
-@media only screen and (min-width: 601px and max-width: 768px) {
+
+/*
+@media only screen and (max-width: 768px) {
 	.img-1,
 	.img-2 {
-		float: center;
+		float: left;
 		clear: both;
 		width: 75%;
 		height: 75%;
@@ -344,12 +304,16 @@ h3 {
 		background-image: url(img/background.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 }
+*/
 
 
 /* For notepads: */
 
+
+/*
 @media only screen and (max-width: 980px) {
 	.img-1,
 	.img-2 {
@@ -376,9 +340,13 @@ h3 {
 	}
 }
 
+*/
+
 
 /* For desctops: */
 
+
+/*
 @media only screen and (min-width: 981px) {
 	.img-1,
 	.img-2 {
@@ -404,4 +372,4 @@ h3 {
 		padding: 0;
 		margin: 0;
 	}
-}
+}*/
