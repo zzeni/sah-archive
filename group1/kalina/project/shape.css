@@ -151,8 +151,8 @@ h3 {
 	margin-top: 20px;
 }
 
-
 /* JS function classes for the new, bigger images created */
+
 
 /*
 .img-1-big {
@@ -345,31 +345,11 @@ h3 {
 
 /* For desctops: */
 
-
 /*
 @media only screen and (min-width: 981px) {
-	.img-1,
-	.img-2 {
-		max-width: 260px;
-		max-height: 200px;
+	#content4 .img-1 {
+		position: absolute;
+		top: 0px;
 	}
-	.img-1 {
-		float: right;
-		clear: left;
-	}
-	.img-2 {
-		float: left;
-		clear: right;
-	}
-	.menu {
-		height: auto;
-		padding-bottom: 40px;
-	}
-	.menu p {
-		text-align: justify;
-	}
-	* {
-		padding: 0;
-		margin: 0;
-	}
-}*/
+}
+*/
