@@ -1,7 +1,9 @@
 body {
     padding-top: 50px;
     /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
-    background-color: bisque;
+    background-image: url("../img/background/2.jpg");
+    background-position: center;
+    background-size: cover;
 }
 h1,
 h2,
@@ -17,8 +19,79 @@ h5 a:link,
 h6 a:link {
     color: black;
 }
+.phoneTitle {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    color:black;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: red;
+}
+.btn,
+.panel-title {
+    font-family: 'Black Ops One', cursive;
+    font-size: 18px;
+}
+#panelTitle,
+#panelTitleonVote {
+    font-family: 'Black Ops One', cursive;
+    font-size: 22px;
+}
+#ourLocation,
+.home,
+#aboutNav,
+#contactNav,
+#ratesNav {
+    font-family: 'Black Ops One', cursive;
+    font-size: 22px;
+    color: white;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+}
+.small-print {
+    font-family: 'Black Ops One', cursive;
+    font-size: 16px;
+    color: white;
+}
+#searchTool {
+    position: relative;
+    top: 5px;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h2 a,
+a {
+    color: black;
+}
+#allPhonesCenter p,
+#androidCenter p,
+#windowsCenter p,
+#iosCenter p,
+#loginAlert,
+.panel-body,
+.accord,
+#android,
+#windows,
+#ios,
+.fancybox,
+.galaxys6DetailsLink,
+.huaweiDetailsLink,
+.lgDetailsLink,
+.sonyDetailsLink,
+.xiaomiDetailsLink,
+.lumia950DetailsLink,
+.lumia550DetailsLink,
+.lumia640DetailsLink,
+.iphone6sDetailsLink,
+.iphone6DetailsLink,
+.iphone5DetailsLink {
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
 .feature {
-    background-color: bisque;
+    background: rgba(0, 0, 0, 0);
 }
 .media-left {
     float: left;
@@ -30,11 +103,11 @@ h6 a:link {
 #windowsCenter,
 #iosCenter,
 #allPhonesCenter {
-    background-color: floralwhite;
+    background-color: aliceblue;
 }
 #welcome,
 #aboutUs {
-    background-color: floralwhite;
+    background-color: aliceblue;
     text-align: center;
 }
 #feature-carousel {
@@ -48,14 +121,14 @@ h6 a:link {
 .footer-blurb {
     padding: 10px 0;
     margin-top: 20px;
-    background-color: #eee;
+    background-color: aliceblue;
     color: black;
 }
 .footer-blurb-item {
     padding: 20px;
 }
 .small-print {
-    background-color: #fff;
+    background: rgba(0, 0, 0, 0);
     padding: 20px 0;
 }
 .feature,
