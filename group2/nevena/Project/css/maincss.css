@@ -74,3 +74,20 @@ footer {
 	padding: 5px 0;
 	position: static;
 }
+#back-to-top{
+	position: fixed;
+    display: block;
+    right: 0;
+    top: 50%;
+    height: 30px;
+}
+#back-to-top::before{
+	font-size: 25px;
+}
+#back-to-top:hover, #back-to-top:focus{
+	text-decoration: none;
+	color: blue;
+}
+#search-icon{
+	margin-left: -30px;
+}

@@ -462,19 +462,12 @@ footer .footer-below {
     /*    border-radius: 100%;*/
 }
 
-@media(max-width:767px) {
-    .pdata {
-        text-align: right;
-    }
-    .pdata1 {
-        text-align: left;
-    }
+.pdata {
+    text-align: right;
 }
 
-@media(min-width:767px) {
-    .pdata .pdata1 {
-        text-align: center;
-    }
+.pdata1 {
+    text-align: left;
 }
 
 .list-1 {

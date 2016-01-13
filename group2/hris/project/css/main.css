@@ -1,0 +1,105 @@
+
+body {
+	font-family: 'Helvetica Neue',Arial,sans-serif;
+	background-color: #fcfcfc;
+}
+.text-faded {
+	color: rgba(255,255,255,0.95);
+}
+
+/*Bilangual Flags*/
+.navbar-header {
+	position: relative;
+}
+.bg, .en {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+	background-image: url("../img/flags.png");
+	background-position: -0px -0px;
+	width: 30px;
+	height: 18px; 
+	display: inline-block;
+	border: 1px solid black;
+}
+.bg {
+	background-position: -0px -0px;
+}
+.en {
+	background-position: -0px -18px;
+}
+.bg:hover, .en:hover {
+	cursor: pointer;
+}
+#map {
+	width: 90%;
+	height: 30em;
+	margin: auto;
+}
+
+header .header-content .header-content-inner p {
+	font-weight: 700;
+	color: rgba(255,255,255,.95);
+}
+
+/*Carousel*/
+#myCarousel {
+	width: 50%;
+	margin: auto;
+}
+.carousel-inner img {
+	width: 100%;
+	margin: auto;
+}
+
+.carousel-caption h3 {
+	color: #fff !important;
+}
+
+
+/*Video*/
+.clickable {
+	position: relative;
+	opacity: .8;
+}
+
+i.fa.fa-4x.fa-video-camera.bounceIn.text-primary, i {
+	color: #808080;
+	transition: 0.5s ease;
+}
+.clickable:hover {
+	opacity: 1;
+}
+.clickable:hover i.fa.fa-4x.fa-video-camera.bounceIn.text-primary, i:hover   {
+	color: #f05f40;
+	font-size: 5em;
+	opacity: 1;
+}
+
+/*Social*/
+i.fa.fa-3x.wow.bounceIn {
+	padding-bottom: 1em;
+}
+
+.service-box a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+@media (max-width: 950px) {
+	#myCarousel {
+		width: 80%;
+	}
+}
+@media (max-width: 600px) {
+	.carousel-caption {
+		display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+	}
+	#myCarousel {
+		width: 100%;
+	}
+}

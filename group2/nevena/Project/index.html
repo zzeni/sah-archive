@@ -2,6 +2,9 @@
 <html lang="bg">
 <head>
 	<meta charset="UTF-8">
+    <meta name="description" content="Books review">
+    <meta name="keywords" content="HTML,CSS,JQuery">
+    <meta name="author" content="Nevena Veleva">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BooksReview</title>
 
@@ -34,7 +37,7 @@
 			<nav class="navbar navbar-default">
 			  <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
+			    <div id="top" class="navbar-header">
 			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 			        <span class="sr-only">Toggle navigation</span>
 			        <span class="icon-bar"></span>
@@ -54,18 +57,25 @@
 			        </li>
 			        <li><a href="category.html?99">Предстоящи <span class="sr-only">(current)</span></a></li>
 			      </ul>
+			      <form class="navbar-form navbar-left" role="search">
+			        <div class="form-group">
+			          <input type="text" class="form-control" placeholder="заглавие или автор">
+			          <span id="search-icon" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			        </div>
+			      </form>
 		    	</div><!-- /.navbar-collapse -->
 			  </div><!-- /.container-fluid -->
 			</nav>
 		</div>
 		<div class="box-holder">
 		</div>
+		<a href="#top" id="back-to-top" class="glyphicon glyphicon-circle-arrow-up"></a>
 		<div class="row">
 			<footer>
 	          <a href="https://www.facebook.com/profile.php?id=100002332702074" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
 	          <a href="https://www.linkedin.com/profile/view?id=AAIAAAi6YikBDPh7M_dWEho1kLCzZlcV8PLj8kE&trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
 	          <a href="https://github.com/nveleva" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-	          <a href="index.html"><i class="fa fa-home fa-2x"></i></a>
+	          <a href="#top" class="scroll"><i class="fa fa-home fa-2x"></i></a>
 	          <p>Невена Велева</p>
 	        </footer>
     	</div>
@@ -74,5 +84,6 @@
 <script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/mainjs.js"></script>
+<script type="text/javascript" src="js/smoothScroll.js"></script>
 </body>
 </html>
