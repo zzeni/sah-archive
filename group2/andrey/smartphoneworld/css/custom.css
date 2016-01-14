@@ -1,7 +1,7 @@
 body {
     padding-top: 50px;
     /* Padding for .navbar-fixed-top. Change value if navbar height changes. Remove if using .navbar-static-top. */
-    background-image: url("");
+    
     background-position: center;
     background-size: cover;
     background-color: #000033;

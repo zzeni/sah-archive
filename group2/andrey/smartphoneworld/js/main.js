@@ -185,60 +185,120 @@ $(document).on("ready", function () {
                                 $('#androidCenter').fadeIn("slow");
                             });
 
-                            $(".huaweiDetailsLink").click(function () {
 
-                                $('.huaweiDetails').fadeToggle("slow");
+
+                            $('.huaweiDetailsLink').click(function (e) {
+                                e.stopPropagation();
+                                $('.huaweiDetails').fadeIn();
+                                return false;
                             });
 
-                            $(".galaxys6DetailsLink").click(function () {
-
-                                $('.galaxys6Details').fadeToggle("slow");
+                            $(document).click(function () {
+                                $('.huaweiDetails').fadeOut();
                             });
 
-                            $(".lgDetailsLink").click(function () {
 
-                                $('.lgDetails').fadeToggle("slow");
+                            $('.galaxys6DetailsLink').click(function (e) {
+                                e.stopPropagation();
+                                $('.galaxys6Details').fadeIn();
+                                return false;
                             });
 
-                            $(".sonyDetailsLink").click(function () {
-
-                                $('.sonyDetails').fadeToggle("slow");
+                            $(document).click(function () {
+                                $('.galaxys6Details').fadeOut();
                             });
 
-                            $(".xiaomiDetailsLink").click(function () {
 
-                                $('.xiaomiDetails').fadeToggle("slow");
+                            $('.lgDetailsLink').click(function (e) {
+                                e.stopPropagation();
+                                $('.lgDetails').fadeIn();
+                                return false;
                             });
 
-                            $(".lumia950DetailsLink").click(function () {
-
-                                $('.lumia950Details').fadeToggle("slow");
+                            $(document).click(function () {
+                                $('.lgDetails').fadeOut();
                             });
 
-                            $(".lumia550DetailsLink").click(function () {
-
-                                $('.lumia550Details').fadeToggle("slow");
+                            $('.sonyDetailsLink').click(function (e) {
+                                e.stopPropagation();
+                                $('.sonyDetails').fadeIn();
+                                return false;
                             });
 
-                            $(".lumia640DetailsLink").click(function () {
-
-                                $('.lumia640Details').fadeToggle("slow");
+                            $(document).click(function () {
+                                $('.sonyDetails').fadeOut();
                             });
 
-                            $(".iphone6sDetailsLink").click(function () {
-
-                                $('.iphone6sDetails').fadeToggle("slow");
+                            $('.xiaomiDetailsLink').click(function (e) {
+                                e.stopPropagation();
+                                $('.xiaomiDetails').fadeIn();
+                                return false;
                             });
 
-                            $(".iphone6DetailsLink").click(function () {
-
-                                $('.iphone6Details').fadeToggle("slow");
+                            $(document).click(function () {
+                                $('.xiaomiDetails').fadeOut();
                             });
 
-                            $(".iphone5DetailsLink").click(function () {
-
-                                $('.iphone5Details').fadeToggle("slow");
+                            $('.lumia950DetailsLink').click(function (e) {
+                                e.stopPropagation();
+                                $('.lumia950Details').fadeIn();
+                                return false;
                             });
+
+                            $(document).click(function () {
+                                $('.lumia950Details').fadeOut();
+                            });
+
+                            $('.lumia550DetailsLink').click(function (e) {
+                                e.stopPropagation();
+                                $('.lumia550Details').fadeIn();
+                                return false;
+                            });
+
+                            $(document).click(function () {
+                                $('.lumia550Details').fadeOut();
+                            });
+
+                            $('.lumia640DetailsLink').click(function (e) {
+                                e.stopPropagation();
+                                $('.lumia640Details').fadeIn();
+                                return false;
+                            });
+
+                            $(document).click(function () {
+                                $('.lumia640Details').fadeOut();
+                            });
+
+                            $('.iphone6sDetailsLink').click(function (e) {
+                                e.stopPropagation();
+                                $('.iphone6sDetails').fadeIn();
+                                return false;
+                            });
+
+                            $(document).click(function () {
+                                $('.iphone6sDetails').fadeOut();
+                            });
+
+                            $('.iphone6DetailsLink').click(function (e) {
+                                e.stopPropagation();
+                                $('.iphone6Details').fadeIn();
+                                return false;
+                            });
+
+                            $(document).click(function () {
+                                $('.iphone6Details').fadeOut();
+                            });
+
+                            $('.iphone5DetailsLink').click(function (e) {
+                                e.stopPropagation();
+                                $('.iphone5Details').fadeIn();
+                                return false;
+                            });
+
+                            $(document).click(function () {
+                                $('.iphone5Details').fadeOut();
+                            });
+
 
                             $("#windows").click(function () {
                                 $("#androidCenter, #iosCenter, #center, #allPhonesCenter").hide();
