@@ -1,5 +1,5 @@
 function ShootPhys(velocity, angleGrad) {
-    var ACCELERATION = 10;
+    var ACCELERATION = 1.62519;
     this.angle = (Math.PI / 180) * angleGrad;
     this.velX = velocity * Math.cos(this.angle);
     this.velY = velocity * Math.sin(this.angle);
@@ -11,7 +11,6 @@ function ShootPhys(velocity, angleGrad) {
     //this.igrek0 = 0;
     //this.hiks0 = 0;
     //this.aconst = (this.igrek0 - this.vertexY) / Math.pow((this.hiks0 - this.vertexX), 2);
-    console.log(this.spaceX);
     this.height = this.spaceY;
     this.width = this.spaceX;
 }

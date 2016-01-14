@@ -87,7 +87,13 @@
                 var yearsOld = Math.floor(msOld / yearsMs);
                 console.log(yearsOld);
                 return yearsOld;
-
+            }
+            this.currentMonth = currentDate.getMonth();
+            this.birthdayMonth = birthdate.getMonth();
+            this.birthdatecurrentDay = currentDate.getDate();
+            this.birthDayDay = birthdate.getDate();
+            if (this.birthdayMonth == this.currentMonth && this.birthdatecurrentDay == this.birthDayDay) {
+                this.hasBirthDayToday = true;
             }
 
             /*
