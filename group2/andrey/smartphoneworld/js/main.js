@@ -7,17 +7,11 @@ $(document).on("ready", function () {
             active: false,
             heightStyle: "content"
         });
-        $(".navbar").show("blind", 1000, function () {
-            $(".jumbotron").show("fade", 1000, function () {
+        $(".navbar").show("blind", 500, function () {
+            $(".jumbotron").show("fade", 500, function () {
                 $(function () {
-
-
-                    $("#sidebar").show("drop", 1200, function () {
-                        $("#center, #foot").show("fade", 1200, function () {
-
-                            $('body').css('background-image', 'url("../img/background/2.jpg")');
-
-
+                    $("#sidebar").show("drop", 500, function () {
+                        $("#center, #foot").show("fade", 1000, function () {
 
                             $(window).on('scroll', function (e) {
                                 var distanceY = window.pageYOffset || document.documentElement.scrollTop;
