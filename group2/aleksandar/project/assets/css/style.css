@@ -62,7 +62,7 @@ p {
 }
 
 .g-pad-bottom {
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 }
 
 .for-full-back {
@@ -104,9 +104,11 @@ section {
 	background-color: #fff!important;
 }
 
+/*
 .color-dark {
 	background-color: #696969!important;
 }
+*/
 
 .color-light {
 	background-color: #E9E9E9!important;
@@ -183,7 +185,7 @@ nav {
 }
 
 .team-member > h3 {
-	background: rgba(95, 154, 255, 0.85);
+	background: dimgrey;
 	bottom: 25px;
 	color: #fff;
 	font-size: 20px;
@@ -253,4 +255,11 @@ nav {
 	color: #fff;
 	padding: 20px 50px 20px 50px;
 	text-align: right;
+}
+
+section.for-full-back:nth-of-type(even) {
+	background-color: rgba(0,0,0,0.9) !important;
+	background: black!important;	
+	color: white;
+	opacity: 1;
 }
