@@ -1,0 +1,87 @@
+header {
+  padding: 15px;
+  position: center;
+}
+
+img {
+    width:200px
+}
+
+h1 {
+    text-align:center;
+    font-size:40px;
+    font-family: 'Dancing script', cursive;
+    display: block
+}
+
+navbar {
+    background-color: pink;
+    text-align: center;
+    display: block;
+}
+navbar ul li {
+    padding: 15px;
+    display: inline-block;
+}
+
+navbar a {
+    text-decoration: inherit;
+    font-size: 1em;
+    font-family: fantasy;
+    color: firebrick;
+}
+
+main {
+    display: table
+}
+
+aside {
+    background-color: pink;
+    padding: 30px;
+    display: table-cell;
+}
+
+h2 {
+    font-family: cursive;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin: 1em, 1em, 0px, 0px;
+    padding: 40px
+}
+
+li {
+    display: list-item;
+    text-align: left;
+}
+
+a {
+    color: firebrick;
+    text-decoration: underline;
+    cursor: auto;
+
+}
+
+
+nav {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  float: right;
+}
+
