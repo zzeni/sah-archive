@@ -2,7 +2,8 @@
 
 ### Задача за домашна работа
 
-Създайте в папката L5 (от лекцията) _два_ html файла: about_with_table.html и about_with_css.html
+Създайте папка L5 във вашата директория от _swift-academy-homeworks_ проекта.  
+В нея създайте _два_ html файла: about_with_table.html и about_with_css.html
 
 И в двата трябва да има следното съдържание:
 
@@ -16,6 +17,10 @@
 
 Резултатът трябва да изглежда ето така:
 https://github.com/zzeni/swift-academy-homeworks/blob/fe-03/tasks/L05/example.jpg
+
+Ползвайте **padding**, **margin** и **border** където е необходимо!  
+
+**Важно:** _CSS решението не може да ползва елементите **table**, **ul** и **ol**!_
 
 #### Подсказка:
 
