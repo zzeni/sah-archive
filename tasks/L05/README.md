@@ -1,13 +1,39 @@
 ## Урок 5
 
-### Задание за домашна работа
+### Задача за домашна работа
 
-Разцъкайте следният курс за интерактивно обучение на code school:
+Създайте в папката L5 (от лекцията) _два_ html файла: about_with_table.html и about_with_css.html
 
-https://www.codeschool.com/courses/front-end-foundations
+И в двата трябва да има следното съдържание:
 
-Курсът е от 5 части и само първата е безплатна. Минете я (като си изпълните всички assignments там), след което направете print screen на резултата и го качете в l5 на вашите папки в гитхъб.
+- about секция
+- ваша снимка
+- две подравнени колони:
+ - в едната Name, email, github, linkedin
+ - в другата - съответните ваши данни
+- Като искам в единия файл да използвате table елемента
+- в другия да използвате само css (display-table)
 
-Ето пример:
+Резултатът трябва да изглежда ето така:
+https://github.com/zzeni/swift-academy-homeworks/blob/fe-03/tasks/L05/example.jpg
 
-https://github.com/zzeni/swift-academy-homeworks/tree/master/tasks/L5/example.jpg
+#### Подсказка:
+
+за да направите една картинка кръгла
+
+1. тя трябва да е квадратна
+2. използвайте css property-то: { border-radius: 100%; }
+
+За да направите email-a ви да е линк използвайте следния формат:
+
+    <a href="mailto:emanolova@gmail.com">emanolova@gmail.com</a>
+
+Хоризонтално подравняване на текст и съдържание: **text-align**
+
+За вертикално подравняване (при таблици и при display-table): **vertical-align**
+
+
+#### Източници за четене:
+
+http://j4n.co/blog/Creating-your-own-css-grid-system  
+http://colintoh.com/blog/display-table-anti-hero
