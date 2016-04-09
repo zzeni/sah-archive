@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../img/background-2.jpg);
+	background-size: 1280px 800px;
+	background-repeat: no-repeat;
+}
+
+.conteiner {
+	width: 700px;
+	height: 260px;
+	background-color: rgba(146, 214, 230, 0.9);
+	border-radius: 15px;
+	box-shadow: -2px -2px black;
+	margin: 180px 260px;
+}
+
+.row-1 {
+	display: table-row;
+	width: 100%;
+}
+
+.row-1-cell-1 {
+	width: 100%;
+	display: table-cell;
+}
+
+.row-1-cell-1 h1 {
+	text-align: left;
+	font-size: 1.6em;
+	font-family: helvetica, serif;
+	text-transform: capitalize;
+}
+
+.row-2 {
+	display: table-row;
+}
+
+.row-2-cell-1 {
+	display: table-cell;
+	float: left;
+	height: 230px;
+	padding-top: 27px;
+}
+
+.row-2-cell-1 img {
+	width: 200px;
+	border-radius: 100%;
+}
+
+.row-2-cell-2 {
+	display: table-cell;
+	float: left;
+	width: 247px;
+	height: 230px;
+	font-weight: bold;
+	font-family: helvetica, serif;
+	font-size: 20px;
+	direction: rtl;
+}
+
+.name {
+	padding: 15px;
+	text-transform: capitalize;
+}
+
+.email {
+	padding: 15px;
+	letter-spacing: 4px;
+}
+
+.github {
+	padding: 15px;
+	letter-spacing: 5px;
+}
+
+.linkedin {
+	text-transform: capitalize;
+	padding: 15px;
+	letter-spacing: 6px;
+}
+
+.row-2-cell-3 {
+	display: table-cell;
+	float: left;
+	width: 230px;
+	height: 230px;
+	padding-left: 20px;
+}
+
+.name-2 {
+	text-transform: capitalize;
+	font-family: helvetica, serif;
+	font-size: 17px;
+	margin-top: 18px;
+}
+
+.email-2 {
+	display: block;
+	padding-top: 32px;
+}
+
+.github-2 {
+	display: block;
+	padding-top: 36px;
+}
+
+.linkedin-2 {
+	display: block;
+	padding-top: 34px;
+}
