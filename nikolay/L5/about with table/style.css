@@ -2,6 +2,7 @@ tr img {
     width: 150px;
     border-radius: 100%;
     padding: 0 10px 0 10px;
+    vertical-align: middle;
 }
 
 main {
