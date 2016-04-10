@@ -1,0 +1,31 @@
+tr img {
+    width: 150px;
+    border-radius: 100%;
+    padding: 0 10px 0 10px;
+}
+
+main {
+    font-family: 'Slabo 27px', serif;
+}
+
+table {
+    background-color: #f1f8ff;
+}
+
+th {
+    text-align: right;
+    vertical-align: middle;
+    padding: 0 5px 0 20px;
+    font-weight: bold;
+}
+
+.info td {
+    text-align: left;
+    vertical-align: middle;
+    padding: 0 20px 0 5px;
+}
+
+.photo {
+    background-color: #b5d7e3;
+    vertical-align: middle;
+}
