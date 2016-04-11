@@ -1,0 +1,223 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url("../img/lamp.jpg");
+	background-attachment: fixed;
+	background-size: 1280px 800px;
+}
+
+#navigation {
+	width: 100%;
+	height: 45px;
+	background-color: rgb(247, 200, 17);
+}
+
+#navigation ul {
+	margin-left: 20%;
+	width: 60%;
+	height: 44px;
+}
+
+#navigation ul li {
+	display: inline-block;
+	width: 32%;
+	margin: 1px 0;
+	text-align: center;
+	height: 44px;
+	line-height: 40px;
+}
+
+#navigation ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 22px;
+	height: 44px;
+	color: #404040;
+}
+
+#navigation ul li a:hover {
+	display: block;
+	height: 44px;
+	background-color: #373737;
+	color: #fff;
+}
+
+#navigation ul li a:active {
+	display: block;
+	height: 44px;
+	background-color: #fff;
+	color: #373737;
+}
+
+section {
+	height: 680px;
+	width: 100%;
+	display: flex;
+	display: -webkit-flex;
+}
+
+.header-1 {
+	width: 330px;
+	height: 123px;
+	margin: 490px 470px;
+}
+
+section div h1 {
+	font-family: 'Lobster', cursive;
+	text-shadow: 1px 1px rgb(230, 230, 0);
+	font-size: 60px;
+	text-align: center;
+	text-transform: capitalize;
+	color: #fff;
+	border-top: 4px solid rgb(247, 200, 17);
+	border-bottom: 4px solid rgb(247, 200, 17);
+}
+
+#about {
+	width: 100%;
+	height: 600px;
+	margin-bottom: 10px;
+}
+
+.table {
+	width: 80%;
+	height: 600px;
+	margin-left: 10%;
+	background-color: rgba(153, 153, 153, 0.5);
+	border-radius:  25px;
+	display: table;
+}
+
+.table-row {
+	width: 100%;
+	height: 600px;
+	display: table-row;
+}
+
+.table-cell-1 {
+	width: 760px;
+	height: 600px;
+	float: left;
+	display: table-cell;
+}
+
+.table-cell-1 .information {
+	padding: 71px 96px;
+}
+
+.table-cell-1 .information h2 {
+	text-align: center;
+	font-size: 40px;
+	text-transform: capitalize;
+	font-family: helvetica, serif;
+}
+
+.table-cell-1 .information p {
+	text-align: justify;
+	font-family: helvetica, serif;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.table-cell-2 {
+	width: 240px;
+	height: 520px;
+	float: right;
+	display: table-cell;
+}
+
+.table-cell-2 .image {
+	margin-top: 70px;
+	border-radius: 25px 0 0 25px;
+}
+
+#contacts {
+	width: 100%;
+	height: 500px;
+	margin: 150px 0 50px 0;
+}
+
+.contact-table {
+	width: 80%;
+	height: 500px;
+	margin-left: 10%;
+	background-color: rgba(153, 153, 153, 0.5);
+	border-radius:  40px;
+	display: table;
+}
+
+.contact-row {
+	display: table-row;
+	
+}
+
+.contact-cell-1 {
+	width: 45%;
+	display: table-cell;
+	padding: 133px 40px;
+}
+
+.contact-cell-1 p {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-family: helvetica, serif;
+	line-height: 190%;
+	text-shadow: 1px 1px rgb(153, 153, 153);
+	font-weight: bold;
+}
+
+.contact-cell-2 {
+	width: 45%;
+	display: table-cell;
+	padding: 133px 40px;
+}
+
+.contact-cell-2 p {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: helvetica, serif;
+	text-shadow: 1px 1px rgb(153, 153, 153);
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.contact-cell-2 .social-logo {
+	width: 50px;
+	margin-left: 68px;
+}
+
+.contact-cell-2 hr {
+	width: 295px;
+	margin-left: 67px;
+	height: 3px;
+	background-color: rgb(247, 200, 17);
+	border: none;
+}
+
+.contact-cell-2 form {
+	margin-left: 67px;
+}
+
+.contact-cell-2 input {
+	height: 25px;
+	width: 240px;
+}
+
+.contact-cell-2 button {
+	height: 30px;
+	width: 50px;
+}
+
+.foot {
+	width: 100%;
+	height: 20px;
+	background-color: rgb(247, 200, 17);
+	text-align: center;
+}
