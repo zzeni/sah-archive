@@ -1,0 +1,50 @@
+body {
+    background-image: url(starry-night-1.gif);
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: aqua;
+}
+
+hr {
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    display: block;
+    text-align: justify;
+    color: yellow;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    float: left;
+    color: aqua;
+}
+
+ul {
+    text-transform: uppercase;
+    line-height: 3;
+    list-style: none;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+footer {
+    float: left;
+    margin-left: 20px;
+}
