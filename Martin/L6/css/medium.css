@@ -1,0 +1,22 @@
+main {
+    background-color: #fa8765;
+}
+
+#responsiveCircle {
+  background-color: dodgerblue;
+}
+
+#responsiveText:before {
+  content: "medium";
+  display: block;
+  line-height: 1em;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+#responsiveText:after {
+  clear: left;
+  font-size: .5em;
+  content: "460px - 679px";
+  text-transform: lowercase;
+  font-family: 'Gloria Hallelujah', cursive;
+}
