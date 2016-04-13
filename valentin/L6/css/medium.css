@@ -7,7 +7,7 @@ main {
 }
 
 #responsiveText:before {
-  content: "small";
+  content: "medium";
   display: block;
   line-height: 1em;
 }
