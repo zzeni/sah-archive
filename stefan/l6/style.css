@@ -1,11 +1,10 @@
 
 img {
-    width:500px;
-    height:200px;
+    width:700px;
 }
 body {
     background-color: aqua;
-    width:950px;
+    width:100%x;
     margin:0px;
     z-index:-1
     
@@ -24,13 +23,6 @@ body {background-color: bisque}
     
 
 sections {
-    width:600px;
-    height:200px;
     background-color: azure;
     margin:30px;
-    float:left;
-}
-#aside {
-    width:200px;
-    float:right;
 }
