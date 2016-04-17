@@ -1,0 +1,47 @@
+﻿/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% Free To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITs AND TELL YOUR FRIENDS ABOUT US
+
+    Color: Blue
+   
+    ========================================================  */
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+    background-color: #5656AA;
+}
+/* =============================================================
+   NAVBAR  STYLES
+ ============================================================ */
+.navbar-inverse {
+background-color: #3C3C96;
+border-color: #3C3C96;
+}
+
+/* =============================================================
+   ABOUT STYLES
+ ============================================================ */
+.developer-img {
+    border: 5px solid #5656AA;
+}
+
+
+
+.testimonial:after {
+    border-top-color: #5656AA;
+}
+
+.testimonial {
+    border: 1px solid #5656AA;
+}
+
+.testimonial-name {
+    color: #5656AA;
+}

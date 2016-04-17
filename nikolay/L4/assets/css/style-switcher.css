@@ -1,0 +1,100 @@
+﻿/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% Free To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITs AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+/*=====================================
+  THEME SWITCHER STYLES 
+   ===================================*/
+.switcher {
+    width:150px;
+    padding:15px;
+    position:fixed;
+    z-index:2000;
+    top:90px;
+    right:0;
+    background-color:#fff;
+    -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    -ms-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out;
+	color:#000000;
+}
+   
+.switcher #switch-panel {
+    position:absolute;
+    right:-34px;
+    top:0px;
+    width:34px;
+    height:38px;
+    z-index:1990;
+    display:block;
+    background-color:#fff;
+	margin-left:0;
+    cursor: pointer;
+}
+.switcher #switch-panel i {
+    font-size: 20px;
+    font-weight:900;
+    line-height: 40px;
+    padding-left:10px;
+    color:#000;
+}
+.switcher .colors-list {
+    margin:0;
+    padding:0;
+}
+.switcher .colors-list li {
+    float:left;
+    display:block;
+    margin-bottom:2px;
+    margin-right:6px;
+}
+.switcher .colors-list li a {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    cursor: pointer;
+}
+.switcher .colors-list-bk {
+    padding:5px 30px 5px 30px;
+}
+.switcher .colors-list-bk li {
+    float:left;
+    display:block;
+    margin-bottom:2px;
+    margin-right:6px;
+}
+.switcher .colors-list-bk li a,.switcher .colors-list-bk li a:hover {
+    display:block;
+    cursor: pointer;
+    color:black;
+    text-decoration:none;
+    font-weight:900;
+}
+.span-text {
+    display:block;
+    font-size:12px;
+}
+
+.switcher .colors-list a.yellow {
+    background-color:#8A8A36;  
+}
+
+.switcher .colors-list a.blue {
+    background-color:#5656AA; 
+}
+.switcher .colors-list a.green {
+    background-color:#339966; 
+}
+.switcher .colors-list a.red {
+    background-color:#F83434; 
+}
+
+
