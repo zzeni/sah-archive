@@ -1,0 +1,69 @@
+body {
+    background-color: pink
+}
+
+header {
+    text-align: center
+}
+
+navbar {
+    background-color: lightgreen;
+    text-align: center;
+    display: block;
+}
+navbar ul li {
+    padding: 15px;
+    display: inline-block;
+}
+
+navbar a {
+    text-decoration: inherit;
+    font-size: 1em;
+    font-family: fantasy, cursive;
+    color: firebrick;
+}
+
+aside {
+    width: 20%;
+    background-color: lightgreen;
+    padding: 30px;
+    display: table-cell;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    display: inline-block;
+}
+
+h3 {
+    width: 170px;
+    background-color: lightgreen;
+    display: table-cell;
+}
+
+div {
+    display: block;
+}
+
+div img {
+    margin-right: 20px;
+    float: none;
+    border: 5px solid black;
+    width: 20%;
+}
+h4 {
+    font: 400 18px/22px;
+    font-family: serif;
+}
+
+footer {
+  background-color: palevioletred;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  line-height: 2em;
+  text-align: center;
+}
