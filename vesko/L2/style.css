@@ -1,0 +1,58 @@
+header {
+    position: relative;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+nav {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #CDDC39;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+img {
+    width:220px;
+    margin: 0 auto;
+    display: block
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+}
+
+aside {
+    float: left;
+    background-color: antiquewhite;
+    padding: 20px;
+    width: 25%;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    clear: left;
+    background-color: burlywood;
+    color: white;
+    height: 80px;
+    padding: 10px;
+    line-height: 20px;
+    text-align: center;
+}

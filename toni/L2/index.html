@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="toni tenev, designer, html developer, big comany, enterprise, html vcard toni tenev, service archtect, web designer vcard">
+        <title>Toni Tenev - Web Designer at your service</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>  
+          <link rel="icon" href="img/icon.jpg" >
+       <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="Chart.PolarArea.js"></script>
+    </head>
+    <body>
+        
+            <main class="bio">
+                <img class="bio-pic" src="img/bio-background.jpg">
+                <article class="about">
+                   <div class="pic">
+                        <img class="pictire" alt="That's me allright" src="img/bio-pic.jpg">
+                   </div>
+                    <div class="textbox">
+                        <div class="background"></div>       
+                        <p> Young, harworking individual with a cnack for creating websites from scratch looking for editor in chief head money man baby daddy to promote a lifestyle of stuntin on deez b*tches. Will write content for lean.</p>
+                    </div>
+                    <div class="button-box">
+                        <ul>
+                            <li><a href="https://www.facebook.com/tony.tenev"><img src="img/Facebook-icon.png"></a></li>
+                            <li><a href="https://twitter.com/TonyTenev"><img src="img/Twitter-icon.png"></a></li>
+                            <li><a href="http://coffenapackofboros.tumblr.com/"><img src="img/Tumblr-icon.png"></a></li>
+                            <li><a href="https://www.linkedin.com/in/tony-tenev-42476543?trk=nav_responsive_tab_profile_pic"><img src="img/LinkedIn-icon.png"></a></li>
+                            <li><a href="https://plus.google.com/u/0/103628715825805008913/posts"><img src="img/GooglePlus-icon.png"></a></li>
+                        </ul>    
+                    </div>
+                </article> 
+                <aside class="stats">
+                    <div class="content">
+                        <h4>Ok, here's what I do best</h4>
+                        <div style="width:70%">
+                            <canvas id="canvas" height="1000" width="1000"></canvas>
+                        </div>
+
+
+                    <script>
+                    var radarChartData = {
+                        labels: ["HTML", "JavaScript", "Ruby", "Designing", "Java", "CSS", "Soft Skills"],
+                        datasets: [
+                            {
+                                label: "My knowledge",
+                                fillColor: "rgba(220,220,220,0.2)",
+                                strokeColor: "rgba(220,220,220,1)",
+                                pointColor: "rgba(220,220,220,1)",
+                                pointStrokeColor: "#fff",
+                                pointHighlightFill: "#fff",
+                                pointHighlightStroke: "rgba(220,220,220,1)",
+                                data: [65,59,90,81,56,55,40]
+                            },
+                            {
+                                label: "My experience",
+                                fillColor: "rgba(151,187,205,0.2)",
+                                strokeColor: "rgba(151,187,205,1)",
+                                pointColor: "rgba(151,187,205,1)",
+                                pointStrokeColor: "#fff",
+                                pointHighlightFill: "#fff",
+                                pointHighlightStroke: "rgba(151,187,205,1)",
+                                data: [76,18,50,49,65,76,100]
+                            }
+                        ]
+                    };
+                    window.onload = function(){
+                        window.myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
+                            responsive: true
+                        });
+                    }
+                        </script>   
+                         <h5>Current Clases</h5>
+                        <p class="timespan">Total estimated Completion: 10th of July </p>
+                        <ul>
+                            <li>Front-End Programming: Swift Academy</li>
+                            <li>Java: Swift Academy</li>
+                            <li>Digital Web Marketing and SEO: Software University</li>
+                            <li>java Web Development: Software University</li>
+                        </ul>
+                    </div>
+                </aside>
+                
+                <aside class="resume">
+                    <div class="content">
+                        <h4>What I've done so far</h4>
+                        
+                        <h6>Bachelor or Arts: Film and Media Studies</h6>
+                        <h5>University of Central Lancashire, Preston, Lancashire, UK</h5>
+                        <p class="timespan">9 September 2011 - May 2014</p>
+                        <ul>
+                            <li>Media Institutions, Texts and the Public</li>
+                            <li>Consumer Culture and the Media</li>
+                            <li>Social Media and PR</li>
+                            <li>Advertising and Social Communication</li>
+                        </ul>
+                                                
+                        <h6>Radio Hosting Training Session</h6>
+                        <h5>Preston FM, Preston, Lancashire, UK</h5>
+                        <p class="timespan">January 2013 - February 2014</p>
+                        <ul>
+                            <li>Developed great communication skills as part of the program</li>
+                            <li>Consumer Culture and the Media</li>
+                            <li>Understood how to generate influence using tone of voice</li>
+                        </ul>
+                        
+                        <h6>SEO Training</h6>
+                        <h5>Softbridge Academy, Sofia </h5>
+                        <p class="timespan">May 2014 - July 2014</p>
+                        <ul>
+                            <li>Gained invaluable knowledge and skills to market and transform a site’s visibility online</li>
+                            <li>Has achieved the ability to further enhance his SEO strategies, acquired while in university</li>
+                            <li>Social Media and PR</li>
+                            <li>Became an expert at founding and developing further SEO strategies by utilizing social media platforms and blogs</li>
+                        </ul>
+                    </div>
+                </aside>
+    
+                
+	
+
+             </main>      
+
+
+    </body>    
+</html>
