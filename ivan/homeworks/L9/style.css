@@ -1,0 +1,10 @@
+body {
+    background-color: azure;
+    font-size: 1.5em;
+}
+
+.container {
+    background-color: skyblue;
+    margin-top: 15%;
+    border-radius: 10px;
+}
