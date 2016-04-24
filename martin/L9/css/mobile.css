@@ -1,0 +1,65 @@
+html body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+body hr {
+    height: 5px;
+    background-color: deepskyblue;
+    border: 0px;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0px;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    color: deepskyblue;
+} 
+
+main {
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+input {
+    text-align: center;
+}
+
+textarea {
+    text-align: center;
+}
+
+i {
+    color: deepskyblue;
+}
+
+
+label {
+    color: white;
+    font-size: 1.2em;
+}
+
+#btn {
+    color: black;
+    background-color: deepskyblue;
+    border: 2px solid deepskyblue;
+    box-shadow: 5px 15px;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#btn i {
+    color: black;
+}
+
+footer {
+    text-align: center;
+    color: deepskyblue;
+    margin-top: 100px;
+}
+
+
