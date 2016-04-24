@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 8px;
+}
+
+main {
+    display: table;
+    background-color: white;
+    width: 100%;
+}
+
+header {
+    display: table;
+    width: 100%;
+    height: 200px;
+    background: #b0d4e3;
+    background: -moz-linear-gradient(top, #b0d4e3 0%, #88bacf 100%);
+    background: -webkit-linear-gradient(top, #b0d4e3 0%, #88bacf 100%);
+    background: linear-gradient(to bottom, #b0d4e3 0%, #88bacf 100%);
+    border: 5px solid #03A9F4;
+    margin-bottom: 8px;
+}
+
+article {
+    display: table-cell;
+}
+
+section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav {
+    display: table-cell;
+    width: 20%;
+    background: #DEFFEE;
+    border: 3px solid #8BC34A;
+}
+
+a {
+    color:inherit;
+    text-decoration:inherit;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-image: url(../img/Actions-arrow-right-icon.png);
+    background-repeat: no-repeat;
+    line-height: 27px;
+    padding-left: 30px;
+}
+
+h1 {
+    padding-left: 30px;
+    display: table-cell;
+    vertical-align: middle
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+footer img {
+    position: fixed;
+    bottom: 13px;
+    right: 13px;
+}
