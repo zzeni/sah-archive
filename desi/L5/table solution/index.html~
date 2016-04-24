@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Card</title>
+    <link rel=stylesheet href="style.css">
+</head>
+
+<body>
+    <h2>About me: Table solution</h2>
+    <section>
+        <table id="img">
+            <tr>
+                <td id="img"><img src="business.jpg"></td>
+            </tr>
+        </table>
+        <table id="info">
+            <tr>
+                <th>Name:</th>
+                <td>Desislava Filipova</td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><a href="mailto:desi.beltova@gmail.com">desi.beltova@gmail.com</a></td>
+            </tr>
+            <tr>
+                <th>Github:</th>
+                <td><a href="https://github.com/desislavafilipova">Link</a></td>
+            </tr>
+            <tr>
+                <th>Linkedin:</th>
+                <td><a href="https://bg.linkedin.com/in/desislava-filipova-34a81a116">Link</a></td>
+            </tr>
+        </table>
+        <p>or visit my portfolio <a href="#">here</a></p>
+    </section>
+</body>
