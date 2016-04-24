@@ -1,0 +1,132 @@
+      h2 {
+            margin: 0;
+            color: #666;
+            padding-top: 90px;
+            font-size: 52px;
+            font-family: "trebuchet ms", sans-serif;
+        }
+        .item {
+            background: #333;
+            text-align: center;
+            height: 650px !important;
+        }
+        .carousel {
+        }
+
+        .bs-example {
+        }
+
+        #services {
+            background-color:black;
+            color:whitesmoke;
+        }
+        .section-header {
+            text-align:center;
+            margin: 10px 10px 10px 10px;
+            padding-bottom:10px;
+            
+        }
+        .section-header h2 {
+            text-align:center;
+            margin: 10px 10px 10px 10px;
+            padding-bottom:10px;
+            color:whitesmoke;
+        }
+        .section-header p {
+            text-align:center;
+            margin: 10px 10px 10px 10px;
+            padding-bottom:10px;
+            font-size:large;
+        }
+            .mid_header h4 {
+                float: left;
+                vertical-align:central;
+                padding-left:10px;
+            }
+            .mid_header p {
+                float: left;
+                vertical-align:middle;
+                padding-left:10px;
+            }
+        .Graphics {
+            font-size:44px;
+            color:skyblue;
+            float: left;
+        }
+
+        .product_head {
+            margin-top:70px;
+            text-align:center;
+            font-size:40px;
+            color:#d1d3d2;
+        }
+        .products {
+            color: AppWorkspace;
+			padding-left:30px;
+            padding-right:30px;
+
+        }
+            .products h2 {
+                font-size:32px;
+                color: AppWorkspace;
+            }
+            .products p {
+             text-indent: 55px;
+             margin-top:10px;
+             font-size:16px;
+             text-align:justify;
+             color:#d1d3d2;
+            }
+        #WhatWeOffer {
+            background-color:black;
+            padding-bottom:100px;
+            
+        }
+.whoweare  h3{
+            font-size:36px;
+            text-align:center;
+			padding-top:50px;
+            padding-bottom:50px;
+        }
+		.gallary h3 {
+            font-size:36px;
+            text-align:center;
+			padding-top:50px;
+            padding-bottom:50px;
+        }
+        .contact_us {
+        text-align:left;
+        background-color:black;
+        color:white;
+        }
+        .contact_us h3 {
+            font-size:36px;
+            text-align:center;
+            
+        }
+        .p_footer {
+            background-color:black;
+            height:50px;
+            width:auto;
+            text-align:center;
+            color:#d1d3d2;
+            
+            
+             
+        }
+        .t_right {
+                text-align:center;
+                padding-top:30px;
+                    
+            }
+        address {
+            text-align:center;
+            margin-top:5px;
+         padding-bottom:30px;
+        }
+        .contact_us h3 {
+            padding-top:50px;
+         margin-top:20px;
+         margin-bottom:20px;
+        }
+  
