@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    background-color: skyblue
+}
+
+
+
+main {
+    display: table;
+}
+
+.side-nav {
+    position: fixed;
+}
+
+aside {
+    width: 30%;
+    background-color: pink;
+    padding: 30px;
+    display: table-cell;
+}
+
+section {
+    padding-left: 30px;
+    display: table-cell;
+}
+
+#top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 2em
+}
+
+footer {
+    background-color: crimson;
+    color: white;
+    height: 40px;
+    padding: 10px;
+    line-height: 20px;
+    text-align: center;
+}
