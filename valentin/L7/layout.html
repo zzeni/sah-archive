@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Responsive layout">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Responsive Design 2</title>
+<style>
+* {
+	box-sizing: border-box;
+}
+	
+ul li {
+	list-style-type: none;
+}
+	
+ul li a {
+	text-decoration: none;
+}
+	
+.scrolltotop {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 100;
+}
+	
+img {
+	width: 60px;
+	height:60px;
+}
+		
+@media (min-width: 800px) {
+	header div {
+		width: 100%;
+		background-color: dodgerblue;
+		padding: 10px;
+	}
+		
+	header div h1 {
+		color: white;
+	}
+				
+	.container {
+		display:table;
+		width: 100%;
+		margin-top: 20px;
+	}
+			
+	nav {
+		display: table-cell;
+		width: 25%;
+		background-color: deepskyblue;
+		color: white;
+	}
+		
+	section {
+		display: table-cell;
+		padding-left: 20px;
+	}
+	}
+	
+	@media (min-width: 600px) and (max-width: 799px) {
+		
+	header div {
+		background-color: deepskyblue;
+		padding: 10px;
+	}
+		
+	.container {
+		display:table;
+		width: 100%;
+		margin-top: 20px;
+	}
+			
+	nav {
+		display: table-cell;
+		width: 25%;
+		color: white;
+		background-color: dodgerblue;
+	}
+		
+	section {
+		display: table-cell;
+		padding-left: 20px;
+	}
+	}
+
+	@media (max-width: 599px) {
+	header, nav, div, section {
+		width:100%;
+	}
+			
+	header div {
+		background-color: deepskyblue;
+		padding: 10px;
+	}
+			
+	nav {
+		display: table;
+		margin-top: 10px;
+		background-color: dodgerblue;
+	}
+			
+	nav h1 {
+		display: table-cell;
+		width: 30%;
+	} 
+			
+	nav ul li {
+		display: table-cell;
+		width: 30%;
+	}
+	}                                                                                                            
+
+</style>
+
+</head>
+
+<body>
+<header>
+	<div id="topbar">
+		<h1>Header</h1>
+	</div>
+</header>
+<div class="container">
+	<nav>
+	<h1>Navigation side</h1>
+	<ul>
+		<li><a href="#article1">article1</a></li>
+		<li><a href="#article2">article2</a></li>
+	</ul>
+	</nav>
+	<main>
+		<section>
+		<h2>Main Content</h2>
+		<article id="article1">
+			<h3>article 1</h3>
+			<p>Lorem ipsum dolor sit amet, cu duo esse quaestio, ad usu tollit deseruisse. Sed id veri partem mucius, legere praesent tractatos et qui, at decore epicuri quaestio mei. Cu alienum perfecto mei, nobis hendrerit in per. Id mel nibh mollis copiosae, quo ex urbanitas sadipscin.
+Ea mei dictas laoreet deseruisse, ea qui illum nemore scripta, tation possim insolens quo ea. Vix vidit mnesarchum at, duo nullam definitionem in. Duo ei graece qualisque dissentiunt, no stet eruditi deterruisset mei, vim propriae menandri in. Nam et simul numquam, in dolores omittam sit, pro id mentitum insolens corrumpit. Altera senserit accusamus pri eu, ne quas error per. Et esse salutatus prodesset cum, ne sed error nonumes. Mel integre prodesset an, sea hinc errem iudico id, mucius postea fierent his ei.Lorem ipsum dolor sit amet, cu duo esse quaestio, ad usu tollit deseruisse. Sed id veri partem mucius, legere praesent tractatos et qui, at decore epicuri quaestio mei. Cu alienum perfecto mei, nobis hendrerit in per. Id mel nibh mollis copiosae, quo ex urbanitas sadipscin.
+Ea mei dictas laoreet deseruisse, ea qui illum nemore scripta, tation possim insolens quo ea. Vix vidit mnesarchum at, duo nullam definitionem in. Duo ei graece qualisque dissentiunt, no stet eruditi deterruisset mei, vim propriae menandri in. Nam et simul numquam, in dolores omittam sit, pro id mentitum insolens corrumpit. Altera senserit accusamus pri eu, ne quas error per. Et esse salutatus prodesset cum, ne sed error nonumes. Mel integre prodesset an, sea hinc errem iudico id, mucius postea fierent his ei.</p>
+		</article>
+		<article id="article2">
+			<h3>article 2</h3>
+			<p>Lorem ipsum dolor sit amet, cu duo esse quaestio, ad usu tollit deseruisse. Sed id veri partem mucius, legere praesent tractatos et qui, at decore epicuri quaestio mei. Cu alienum perfecto mei, nobis hendrerit in per. Id mel nibh mollis copiosae, quo ex urbanitas sadipscing.
+
+Ea mei dictas laoreet deseruisse, ea qui illum nemore scripta, tation possim insolens quo ea. Vix vidit mnesarchum at, duo nullam definitionem in. Duo ei graece qualisque dissentiunt, no stet eruditi deterruisset mei, vim propriae menandri in. Nam et simul numquam, in dolores omittam sit, pro id mentitum insolens corrumpit. Altera senserit accusamus pri eu, ne quas error per. Et esse salutatus prodesset cum, ne sed error nonumes. Mel integre prodesset an, sea hinc errem iudico id, mucius postea fierent his ei.Lorem ipsum dolor sit amet, cu duo esse quaestio, ad usu tollit deseruisse. Sed id veri partem mucius, legere praesent tractatos et qui, at decore epicuri quaestio mei. Cu alienum perfecto mei, nobis hendrerit in per. Id mel nibh mollis copiosae, quo ex urbanitas sadipscin.
+
+Ea mei dictas laoreet deseruisse, ea qui illum nemore scripta, tation possim insolens quo ea. Vix vidit mnesarchum at, duo nullam definitionem in. Duo ei graece qualisque dissentiunt, no stet eruditi deterruisset mei, vim propriae menandri in. Nam et simul numquam, in dolores omittam sit, pro id mentitum insolens corrumpit. Altera senserit accusamus pri eu, ne quas error per. Et esse salutatus prodesset cum, ne sed error nonumes. Mel integre prodesset an, sea hinc errem iudico id, mucius postea fierent his ei.</p>
+						
+		</article>
+		</section>			
+	</main>
+	<a class="scrolltotop" href="#topbar">
+		<img src="back_to_top.png">
+	</a>
+    </div>
+</body>
+
+</html>
