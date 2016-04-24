@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Our first test. Main task.">
+    <meta name="keywords" content="HTML,CSS,JavaScript, SwiftAcademy">
+    <meta name="author" content="Ivan Ivanov">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Take this test.</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: lightyellow;
+            font-family: sans-serif;
+            font-size: 1.2em;
+        }
+        
+        .table {
+            display: table;
+        }
+        
+        .row {
+            display: table-row;
+            width: 100%;
+        }
+        
+        .cell {
+            display: table-cell;
+            float: left;
+            height: 500px;
+            min-height: 100%;
+        }
+        
+        header {
+            background-color: cornflowerblue;
+            border: 3px solid purple;
+            padding-left: 5%;
+            color: white;
+            width: 100%;
+        }
+        
+        header h2 {
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+            vertical-align: middle;
+        }
+        
+        aside {
+            background-color: palegoldenrod;
+            width: 15%;
+            max-width: 100%;
+            border: 3px solid green;
+            margin-top: 10px;
+        }
+        
+        aside ul {
+            list-style: none;
+            padding: 10px;
+        }
+        
+        aside a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        
+        aside a::before {
+            content: "-> "
+        }
+        
+        .main-content {
+            width: 85%;
+            padding-left: 4%;
+            padding-right: 4%;
+            margin-top: 20px;
+        }
+        
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+        #up {
+            position: fixed;
+            bottom: 15px;
+            right: 50px;
+            background-color: palevioletred;
+            border: 10px solid palevioletred;
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        #up a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+        
+        #top-header {
+            height: 60px;
+        }
+        
+        #gist {
+            font-size: 2.5em;
+        }
+        
+        @media screen and (max-width: 800px) {
+            header {
+                background-color: coral;
+            }
+            aside {
+                background-color: cadetblue;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .cell {
+                width: 100%;
+                height: 100%;
+            }
+            header {
+                padding-left: 1%;
+                vertical-align: middle;
+                margin-bottom: 1%;
+            }
+            aside {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                min-height: 100px;
+            }
+            aside ul li {
+                display: inline-block;
+            }
+            aside h3 {
+                float: left;
+                padding-right: 50px;
+                padding-left: 10px;
+                padding-top: 5px;
+            }
+            aside ul li a::after {
+                content: " | "
+            }
+            #main-content {
+                padding-left: 1%;
+                padding-right: 1%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+
+        <section class="row">
+            <header class="cell" id="top-header">
+                <h2>header</h2>
+            </header>
+        </section>
+
+
+        <section class="row content">
+            <aside class="cell">
+                <h3>Side Navigation</h3>
+                <ul>
+                    <li>
+                        <a href="#article1">article 1</a>
+                    </li>
+                    <li>
+                        <a href="#article2">article 2</a>
+                    </li>
+                    <li>...</li>
+                </ul>
+            </aside>
+
+            <div class="main-content cell">
+                <h1>Main Content</h1>
+
+                <article id="article1">
+                    <h3>Article 1</h3>
+                    <p>Известен факт е, че читателя обръща внимание на съдържанието, което чете, а не на оформлението му. Свойството на Lorem Ipsum е, че до голяма степен има нормално разпределение на буквите и се чете по-лесно, за разлика от нормален текст на английски език като "Това е съдържание, това е съдържание". Много системи за публикуване и редактори на Уеб страници използват Lorem Ipsum като примерен текстов модел "по подразбиране", поради което при търсене на фразата "lorem ipsum" в Интернет ще бъдат открити много сайтове в процес на разработка. Някой от тези сайтове биват променяни с времето, а други по случайност или нарочно(за забавление и пр.) биват оставяни в този си незавършен вид.</p>
+                </article>
+
+                <article id="article2">
+                    <h3>Article 2</h3>
+                    <p>Известен факт е, че читателя обръща внимание на съдържанието, което чете, а не на оформлението му. Свойството на Lorem Ipsum е, че до голяма степен има нормално разпределение на буквите и се чете по-лесно, за разлика от нормален текст на английски език като "Това е съдържание, това е съдържание". Много системи за публикуване и редактори на Уеб страници използват Lorem Ipsum като примерен текстов модел "по подразбиране", поради което при търсене на фразата "lorem ipsum" в Интернет ще бъдат открити много сайтове в процес на разработка. Някой от тези сайтове биват променяни с времето, а други по случайност или нарочно(за забавление и пр.) биват оставяни в този си незавършен вид.</p>
+                    <p><a id="gist" href="https://gist.github.com/Acrelion/921bc99099315c2e60ff4165792c3c67" target="_blank">GIST LINK</a></p>
+                </article>
+            </div>
+        </section>
+    </div>
+    <div id="up"><a href="#"><i class="glyphicon glyphicon-menu-up"></i></a></div>
+</body>
