@@ -15,7 +15,7 @@
 
 _Съвет: ако правите **modal**-а сами, можете да ползвате **box-shadow** CSS poperty-то, за да постигете 3D ефект._
   
-![Box shadow example](https://github.com1/zzeni/swift-academy-homeworks/blob/fe-03/tasks/L10/box_shadow.jpg)
+![Box shadow example](box_shadow.jpg)
 
 Приятна работа! 
 
