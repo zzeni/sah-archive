@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 	
+        <meta name="description" content="Contact form">
+        <meta name="author" content="Martin Tsvein">
+
+        <title>Contact form</title>
+        
+        <link href="img/from.ico" rel="icon">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/mobile.css"> 
+        <link rel="stylesheet" media="screen and (min-width: 601px)" href="css/desktop.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+        <script src="js/jquery-1.12.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+    </head>
+    <body> 
+        <header>
+            <h1><i id="main-i" class="fa fa-spinner fa-spin"></i> Contact form</h1>
+            <hr>
+        </header>
+        <main>
+        <section>
+    
+            <!-- modal btn -->
+
+            <div id="btn-open-container">
+                <button id="btn-open" class="btn btn-primary btn-lg" data-toggle="modal" data-target="form">
+                    Click to open
+                </button>
+            </div>
+            
+            <!-- End modal btn -->
+            
+            <!-- Start modal form container -->
+            
+            <form method="post" class="modal fade" tabindex="-1">
+                <div id="modal-container" class="modal-content">
+                    <div class="form-group form-div">
+                        <i class="fa fa-user faa-pulse animated fa-2x"></i>
+                        <label for="user-name">User name :</label>
+                        <input type="text" name="name"  id="user-name" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group form-div">
+                        <i class="fa fa-envelope fa-2x faa-shake animated"></i>
+                        <label for="user-email">Email :</label>
+                        <input type="email" name="email" class="form-control" id="user-email" placeholder="Email your addres">
+                    </div>
+                    <div id="phone-div" class="form-group">
+                        <i class="fa fa-phone fa-2x faa-horizontal animated"></i>
+                        <label for="phone">Phone :</label>
+                        <input type="tel" name="tel" class="form-control" id="phone" placeholder="Your phone number">
+                    </div>
+                    <div id="form-massage" class="form-group">
+                        <i class="fa fa-pencil fa-2x faa-passing animated"></i>
+                        <label for="message">Message :</label>
+                        <textarea row="5" cols="40" name="textarea" placeholder="Type message" class="form-control" id="message"></textarea>
+                    </div>
+                    <div id="btn-container">
+                        <div class="form-group div-float">
+                            <button type="submit" class="btn btn-default btn-my"><span><i class="fa fa-send"></i>
+                            </span>Submit</button>
+                        </div>
+                        <div id="close" class="form-group div-float">
+                            <button type="button" class="btn btn-default btn-my" data-dismiss="modal">X</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+            <!-- End modal container -->
+            
+        </section>
+        </main>
+        <footer>
+            <p>Copyright<i class="fa fa-copyright"></i> Martin Tsvein 2016. </p>
+        </footer>
+    </body>
+</html>
