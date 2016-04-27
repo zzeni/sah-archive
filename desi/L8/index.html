@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Test - Desislava Filipova</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML,CSS,JavaScript,FrontEnd">
+    <meta name="author" content="Desislava Filipova">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        header {
+            position: relative;
+            text-align: center;
+            font-size: 20px;
+            background-color: #87CBE0;
+            padding: 10px;
+        }
+        
+        main {
+            display: table;
+        }
+        
+        aside {
+            width: 30%;
+            background-color: #E5C4D7;
+            padding: 20px;
+            display: table-cell;
+        }
+        
+        .nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: black;
+        }
+        
+        section {
+            padding-left: 30px;
+            display: table-cell;
+        }
+        
+        footer {
+            background-color: #87CBE0;
+            height: 40px;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        section h1 {
+            font-size: 50px;
+        }
+        
+        .button {
+            display: ;
+            position: fixed;
+            bottom: 30px;
+            right: 15px;
+            width: 25px;
+            height: 20px;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            background-color: lawngreen;
+            border-radius: 100%;
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 600px) {
+            section {
+                display: table-row;
+                width: 100%;
+            }
+            aside {
+                background-color: #E7A170;
+                display: table-row;
+            }
+            header,
+            footer {
+                background-color: #8EB960;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <main>
+        <aside>
+            <nav class="nav">
+                <h3>Side Navigation</h3>
+                <ul>
+                    <li><a href="#art1">--> Article 1</a></li>
+                    <li><a href="#art2">--> Article 2 </a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section>
+            <h1>Main Content</h1>
+            <article id="art1">
+                <h2>Article 1</h2>
+                <p>Lorem ipsum dolor sit amet, eros tempor ad est. His mollis mentitum te, id diam debitis perfecto mei. Ex nec eirmod oblique. Nulla percipitur vel te. Omnis pertinacia deterruisset ius ei, velit alterum alienum vis et. Ex per modus consul graeci, has posse scribentur contentiones te. Omnes affert ad eum, justo utamur at mei. Est ipsum semper percipit at. At his utroque percipitur definitiones. Accumsan offendit insolens ad pro, ius eleifend electram voluptaria eu. Eos an causae suscipiantur, essent ceteros delectus vis in. Ex officiis expetenda his, ubique patrioque ei nec, mei ad quidam mediocrem. Ne duo suavitate evertitur, cum id errem libris. Utamur elaboraret te sed. Pri errem imperdiet eu, no pro discere adversarium, has dicunt delenit accusamus in. Usu eu alterum mediocrem forensibus, corpora urbanitas vix no, percipitur scribentur vis an. Ad nam latine dolores, ius verterem sadipscing te. Te illud dignissim dissentiunt has, vim ne hinc officiis omittantur. Aliquid corpora cotidieque in pri, cum at utinam fabellas sensibus, est nihil veniam appellantur ut. Pri graeco quaestio disputando at, per ei viris viderer. Cu sale oratio facilisis his, mundi definitionem ut mel. Id vel augue luptatum, eam doming eloquentiam ea. Ipsum vocent interpretaris qui no. Suas habeo cum ex, unum urbanitas id duo. Tale singulis dissentiunt et pri, no mei esse ignota pericula, an agam nibh laboramus eam. Per in nibh iudico philosophia, aeque feugait insolens id sea, ad ius tempor nostrud voluptatum. Ut quaestio democritum omittantur vel, at vel hinc debitis. Eos ei cibo debet dolore, viris inermis euripidis at nec.</p>
+            </article>
+            <article id="art2">
+                <h2>Article 2</h2>
+                <p>Lorem ipsum dolor sit amet, eros tempor ad est. His mollis mentitum te, id diam debitis perfecto mei. Ex nec eirmod oblique. Nulla percipitur vel te. Omnis pertinacia deterruisset ius ei, velit alterum alienum vis et. Ex per modus consul graeci, has posse scribentur contentiones te. Omnes affert ad eum, justo utamur at mei. Est ipsum semper percipit at. At his utroque percipitur definitiones. Accumsan offendit insolens ad pro, ius eleifend electram voluptaria eu. Eos an causae suscipiantur, essent ceteros delectus vis in. Ex officiis expetenda his, ubique patrioque ei nec, mei ad quidam mediocrem. Ne duo suavitate evertitur, cum id errem libris. Utamur elaboraret te sed. Pri errem imperdiet eu, no pro discere adversarium, has dicunt delenit accusamus in. Usu eu alterum mediocrem forensibus, corpora urbanitas vix no, percipitur scribentur vis an. Ad nam latine dolores, ius verterem sadipscing te. Te illud dignissim dissentiunt has, vim ne hinc officiis omittantur. Aliquid corpora cotidieque in pri, cum at utinam fabellas sensibus, est nihil veniam appellantur ut. Pri graeco quaestio disputando at, per ei viris viderer. Cu sale oratio facilisis his, mundi definitionem ut mel. Id vel augue luptatum, eam doming eloquentiam ea. Ipsum vocent interpretaris qui no. Suas habeo cum ex, unum urbanitas id duo. Tale singulis dissentiunt et pri, no mei esse ignota pericula, an agam nibh laboramus eam. Per in nibh iudico philosophia, aeque feugait insolens id sea, ad ius tempor nostrud voluptatum. Ut quaestio democritum omittantur vel, at vel hinc debitis. Eos ei cibo debet dolore, viris inermis euripidis at nec.</p>
+            </article>
+
+        </section>
+
+        <a href="#" class="button">Top</a>
+
+    </main>
+
+    <footer> Footer </footer>
+
+</body>
+
+</html>
