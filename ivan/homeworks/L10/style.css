@@ -1,0 +1,98 @@
+@font-face {
+	font-family: Happy_Fox;
+	src: url(fonts/LunchtypeBold.ttf);
+	font-weight: bold;
+}
+
+body {
+    background-color: #f5f8fa;
+    font-size: 12px;
+    font-size: 2em;
+	box-sizing: border-box;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    height: 500px;
+    background-color: #1e3948;
+    color: white;
+	background: url('background1.jpg') no-repeat center center;
+	font-family: Happy_Fox, sans-serif;
+}
+
+.jumbotron .container {
+	margin-left: 50px;
+}
+
+.main-message {
+	margin-top: 170px;
+	background-color: black;
+	opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+
+
+.navbar {
+    border-radius: 0;
+	margin-bottom: 0;
+}
+
+.container-fluid {
+    margin: 0;
+	width: 100%;
+}
+
+.container-fluid .row {
+    height: 500px;
+	min-height: 100%;
+    border-bottom: 1px solid gray;
+    padding: 40px 0 40px 0;
+	text-align: justify;
+}
+
+#first_row {
+	height: 100%;
+}
+
+.same-height {
+	height: 320px;
+}
+
+.row:nth-child(even) {
+	background-color: #DAE4F7;
+}
+
+.center {
+    height: 50px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    font-size: 1.1em;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.affix.breadcrumb {
+    top: 65px;
+    width: 100%;
+    margin: 0;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+footer {
+    margin: 0;
+    min-height: 150px;
+    background-color: darkslategray;
+    color: white;
+}
