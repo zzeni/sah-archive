@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<title>Swift Academy front end - Домашно 11</title>
-
-<xmp theme="cerulean" style="display:none;">
 ## Урок 11
 
 ### Задача за домашна работа
@@ -26,8 +20,3 @@ http://zenlabs.pro/api/game
 Когато минете всички нива от играта, ще получите своята "награда" на email-a.
 
 Успех и приятна работа! :)
-
-</xmp>
-
-<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
-</html>
