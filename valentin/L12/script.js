@@ -48,7 +48,7 @@ function callback(list, value) {
 function hofAny(callback, array) {
 
 for (var i = 0; i < array.length; i++) {
-if (callback(array, array[i]) === 1) {
+if ((callback(array, array[i]) === 1) || (callback(array, array[i]) === 2)) {
     return true;
  } else if (callback(array, array[i]) === 0){
     return false;
