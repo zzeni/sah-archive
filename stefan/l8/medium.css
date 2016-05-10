@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif
+}
+h1,
+h2,
+h3, {
+    font-family:'Shadow into light',cursive;
+
+}
+
+header {
+    position: relative;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    background-color:aquamarine
+}
+
+
+main {
+    display:table;
+}
+
+.side-nav {
+    width:30%;
+    background-color: bisque;
+    padding: 30px;
+    display:table-cell;
+}
+
+section {
+    padding-left: 30px;
+    display: table-cell;
+}
+
+#top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 2em
+}
+
+footer {
+     background-color: coral;
+    color: whitesmoke;
+    height: 40px;
+    padding: 10px;
+    line-height: 20px;
+    text-align: center;
+}
