@@ -5,7 +5,7 @@
 Решете следните задачи, така че да получите резултатите, дадени в примерите по-долу:
 
 **Важно!**  
-_Актуалните условия са качени тук: http://zenifytheweb.com/courses/lessons/lesson14/example/index.html_
+_Актуалните условия са качени тук: http://zenlabs.pro/courses/archive-2015/lessons/lesson14/example/index.html_
 
 1. Напишете функция greeting, която приема параметър name и като резултат връща стринг, който поздравява. 
 
