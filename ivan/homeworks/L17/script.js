@@ -26,6 +26,7 @@ window.onload = function () { // I need the picture to be loaded too.
         var pauseButton = document.getElementById("pause");
         var resetButton = document.getElementById("reset");
         var running = true;
+        var rocket_bay = document.getElementById("rocket_bay");
 
         function clear() {
             /* Clears the interval named countingInterval*/
@@ -39,17 +40,22 @@ window.onload = function () { // I need the picture to be loaded too.
             window.location.href = "https://www.google.bg/";
         }
 
+
+        function hideAfterAnimation() {
+            rocket_bay.className += " hideme";
+        }
+
+
         function liftOff() {
             /* 
                Switches the rocket sprite and adds a new class name to the img holder.
                By adding the new class we are starting the CSS animation associated with this class.	
             */
 
-            var rocket_bay = document.getElementById("rocket_bay");
+            rocket_bay = document.getElementById("rocket_bay");
 
             rocket_bay.className += " liftingOffNow";
-            rocket_bay.style.backgroundPosition = "299px 0px";
-
+            rocket_bay.className += " taking-off";
         }
 
         function decrease() {
@@ -79,6 +85,8 @@ window.onload = function () { // I need the picture to be loaded too.
         }
 
         /////////////////////////// Handlers ///////////////////////////////
+
+
 
         function resumeHandler() {
             /*Checks if the interval is NOT running. If not, it starts it with the current value for the counterIndex and sets the flag to true.*/
@@ -114,6 +122,8 @@ window.onload = function () { // I need the picture to be loaded too.
         resumeButton.addEventListener("click", resumeHandler);
         pauseButton.addEventListener("click", pauseHandler);
         resetButton.addEventListener("click", resetHandler);
+
+        rocket_bay.addEventListener('animationend', hideAfterAnimation);
 
     }());
 };
