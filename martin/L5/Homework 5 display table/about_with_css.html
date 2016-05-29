@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> 	
         <meta name="description" content="Homework 5">
         <meta name="author" content="Martin Tsvein">
-        
+
         <title>Homework 5</title>
         
         <link rel="stylesheet" href="css/style.css">
@@ -18,38 +18,34 @@
         </header>
         <section>
             <article>
-                <h2>About me: The table solution</h2>
+                <h2>About me: The css solution</h2>
             </article>
         </section>
         <section>
-            <article>
+            <article id="main-info-content">
                 <div id="img-content">
                     <img id="my-img" src="img/me.jpg" alt="Pic of me">
                 </div>
                 <div id="info-content">
-                    <table>
-                        <tr>
-                            <th>Name</th>
-                            <td>Martin Tsvein</td>
-                        </tr>
-                        <tr>
-                            <th>email</th>
-                            <td><a href="mailto:martin.v.tsvein@gmail.com">martin.v.tsvein@gmail.com</a></td>
-                        </tr>
-                        <tr>
-                            <th>github</th>
-                            <td><a href="https://github.com/MTsvein">link</a></td>
-                        </tr>
-                        <tr>
-                            <th>LinkedIn</th>
-                            <td><a href="https://www.linkedin.com/in/martin-tsvein-96126bb6?trk=nav_responsive_tab_profile">link</a></td>
-                        </tr>
-                    </table>
+                    <div id="info-content-cell">
+                        <div id="left-column">
+                            <p>Name</p>
+                            <p>email</p>
+                            <p>github</p>
+                            <p>LinkedIn</p>
+                        </div>
+                        <div id="right-column">
+                            <p>Martin Tsvein</p>
+                            <p><a href="mailto:martin.v.tsvein@gmail.com">martin.v.tsvein@gmail.com</a></p>
+                            <p><a href="https://github.com/MTsvein">link</a></p>
+                            <p><a href="https://www.linkedin.com/in/martin-tsvein-96126bb6?trk=nav_responsive_tab_profile">link</a></p>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
         <footer>
             <p>or visit my web page <span><a href="http://mvt.uchenici.bg/">link</a></span></p>
-        </footer>
+        </footer>     
     </body>
 </html>

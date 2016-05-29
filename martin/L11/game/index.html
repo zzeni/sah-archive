@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact form">
+    <meta name="author" content="Martin Tsvein">
+
+    <title>Contact form</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <form  action="http://zenlabs.pro/api/game/continue" name="form" method="post">
+                <h3>Моля, попълвай само на латиница!</h3>
+                <p>
+                    <label for="answer_1">Коя година е приет HTML5 стандарта?</label>
+                    <br>
+                    <input type="checkbox" name="answer_1" value="2014" checked>2014
+                    <br>
+                </p>
+
+                <p>
+                    <label for="answer_2">Кой е създателят на JSON нотацията?</label>
+                    <br>
+                    <input type="text" name="answer_2">
+                </p>
+
+                <p>
+                    <label for="answer_3">Кой от изброените HTML атрибути не е глобален?</label>
+                    <br>
+                    <input type="radio" name="answer_3" value="data"> data
+                    <br>
+                    <input type="radio" name="answer_3" value="title"> title
+                    <br>
+                    <input type="radio" name="answer_3" value="alt"> alt
+                </p>
+                <p>
+                    <input type="hidden" name="key" value="1464442784">
+                </p>
+
+                <p>
+                    <input type="submit" name="submit"  value="Изпрати">
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
