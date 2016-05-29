@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>The square task</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    
+    .square {
+      width: 200px;
+      height: 200px;
+      color: white;
+      display: table;
+    }
+    
+    .red {
+      background-color: red;
+    }
+    
+    .blue {
+      background-color: blue;
+    }
+    
+    .green {
+      background-color: green;
+    }
+    
+    .black {
+      background-color: black;
+    }
+    
+    p {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    /* Bonus points if you can make the text be centered in the square */
+    
+    /* Smallest first (<399px) */
+    @media only screen and (max-width: 399px) {
+      .red,
+      .blue, 
+      .green,  
+      .black {
+        width: 100%;
+      }
+    }
+    /* 400 - 499 */
+    @media only screen and (min-width: 400px) and (max-width: 499px) {
+      .red {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .blue {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .green {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .black {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    /* 500 - 599 */
+    @media only screen and (min-width: 500px) and (max-width: 599px) {
+      .blue {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .green {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .black {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .red {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    /* 600 - 699 */
+    @media only screen and (min-width: 600px) and (max-width: 699px) {
+      .green {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .black {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .red {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .blue {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    /* 700 - 799 */
+    @media only screen and (min-width: 700px) and (max-width: 799px) {
+      .black {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .red {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .blue {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .green {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    /* > 800 */
+    @media only screen and (min-width: 800px) {
+      .square {
+        float: left;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="square red">
+    <p>
+      RED
+    </p>
+  </div>
+  <div class="square blue">
+    <p>
+      BLUE
+    </p>
+  </div>
+  <div class="square green">
+    <p>
+      GREEN
+    </p>
+  </div>
+  <div class="square black">
+    <p>
+      BLACK
+    </p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.container {
+    font-family: Sans-Serif;
+}
+
+table {
+    width: 700px;
+    background-color: aquamarine;
+}
+
+#portrait {
+    width: 150px;
+    background-color: dodgerblue;
+}
+
+img {
+    width: 200px;
+    border: 20px solid dodgerblue;
+    border-radius: 100%;
+}
+
+.title {
+    text-align: right;
+    font-weight: bold;
+}
+
+.description {
+    padding-left: 20px;
+}

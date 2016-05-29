@@ -1,0 +1,20 @@
+main {
+    background-color: #ffe6e6;
+}
+
+#responsiveCircle {
+    background-color: #e6005c;
+}
+
+#responsiveText:before {
+    content: "extra large";
+    display: block;
+    line-height: 1em;
+}
+
+#responsiveText:after {
+    clear: left;
+    font-size: .5em;
+    content: ">1000px";
+    text-transform: lowercase;
+}

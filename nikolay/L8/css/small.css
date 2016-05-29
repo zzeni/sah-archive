@@ -1,0 +1,27 @@
+main {
+    display: block;
+}
+
+nav {
+    width: 100%;
+    border-width: 1px 3px;
+    border-style: solid #8BC34A;
+}
+
+#responsivenav {
+    display: inline-block;
+}
+
+ul {
+    padding-left: 16px;
+}
+
+li:not(:last-child):after {
+    content: "|";
+    margin-left: 4px;
+}
+
+li {
+    margin-right: -4px;
+}
+

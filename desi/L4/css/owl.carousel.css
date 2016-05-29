@@ -1,0 +1,106 @@
+
+
+
+#owl {
+	z-index: 1;
+	position: relative;
+	margin: 0 -10px 43px;
+}
+
+
+.owl-item {
+	float: left;
+}
+
+#owl .item {
+	color: #8f8f8f;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 10px;
+	padding: 0 58px;
+}
+
+#owl .item .quote_autor .color1 {
+	display: inline-block;
+	font-size: 14px;
+	position: relative;
+	padding: 0 32px;
+}
+
+#owl .item .quote_autor .color1:before,
+#owl .item .quote_autor .color1:after {
+	background-color: #c9c9c9;
+	height: 1px;
+	width: 21px;
+	position: absolute;
+	content: '';
+	top: 50%;
+}
+
+#owl .item .quote_autor .color1:before {
+	left: 0;
+}
+
+
+#owl .item .quote_autor .color1:after  {
+	right: 0;
+}
+
+#owl .item * {
+	position: relative;
+	z-index: 6;
+}
+
+#owl .item img { 
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 12px;
+	border-radius: 500px;
+}
+
+.quote_autor {
+	position: relative;
+	padding-top: 22px;
+}
+
+
+#owl .owl-wrapper-outer {
+	overflow: hidden;
+}
+
+#owl  .owl-controls {
+}
+
+
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-webkit-perspective: 1000;
+}
+
+#owl .owl-prev, #owl .owl-next {
+	cursor: pointer;
+	position: absolute;
+	background: url(../images/prevnext.png) 0 0 no-repeat;
+	display: block;
+	width: 9px;
+	height: 15px;
+	bottom: 81px;
+	left: 50%;
+	margin-left: -80px;
+	overflow: hidden;
+	text-indent: -999px;
+	z-index: 20;
+}
+
+#owl .owl-next {
+	margin-left: 68px;
+	background-position: right bottom;
+}
+
+#owl .owl-next:hover,
+#owl .owl-prev:hover {
+	opacity: 0.5;
+}

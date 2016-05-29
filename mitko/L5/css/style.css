@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../img/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+section {
+	margin: 170px 22%;
+}
+
+table { 
+	width: 700px;
+	height: 300px;
+	background-color: #ffff00;
+	border-radius: 15px;
+	box-shadow: 2px 2px black;
+}
+
+thead {
+	text-align: left;
+	font-size: 1.6em;
+	font-family: helvetica, serif;
+	text-transform: capitalize;
+}
+
+img {
+	border-radius: 100%;
+	width: 200px;
+}
+
+td {
+	width: 170px;
+	padding: 0 20px;
+	vertical-align: center;
+}
+
+.left-collum {
+	font-weight: bold;
+	font-family: helvetica, serif;
+	font-size: 20px;
+	direction: rtl;
+}
+
+.right-collum {
+	text-transform: capitalize;
+	font-family: helvetica, serif;
+	font-size: 17px;
+}
+
+#name {
+	padding-left: 130px;
+	text-transform: capitalize;
+}
+
+#email {
+	padding-left: 120px;
+	letter-spacing: 4px;
+}
+
+#github {
+	padding-left: 100px;
+	letter-spacing: 5px;
+}
+
+#linkedin {
+	text-transform: capitalize;
+	padding-left: 50px;
+	letter-spacing: 6px;
+}

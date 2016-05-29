@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bootstrap Elements">
+    <meta name="keywords" content="HTML,CSS,JavaScript, SwiftAcademy, Bootstrap">
+    <meta name="author" content="Ivan Ivanov">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Take me for a spin</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="modal fade" tabindex="-1" role="dialog" id="contactModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form class="form-horizontal" role="form" action="index.html" method="post">
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="yourname">Your Name:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="yourname" placeholder="Enter password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="youremail">Your Email:</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="youremail" placeholder="Enter email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <label class="control-label col-sm-3" for="message">Message:</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" rows="3" placeholder="Your message to me" id="message"></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-primary btn-lg" data-dismiss="modal">Send</button>
+                                <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 main-message">
+                    <h1>All waves. All day.</h1>
+                    <p>Enjoy a fairy tale at the pearl white sand, just next to the Waves!</p>
+                    <p><a class="btn btn-primary" id="learn-more" href="#" role="button">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="500">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Waves Holidays</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Offers</a></li>
+					<li><a href="#">Vacation</a></li>
+                </ul>
+
+
+                <div class="nav navbar-nav navbar-right">
+                    <button type="submit" class="btn btn-primary navbar-btn" id="contact" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+                </div>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row" id="first_row">
+		
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
+				<div class="row">
+					<div class="col-xs-12 col-md-4">		
+						<div class="thumbnail same-height">
+							<img src="sea1.jpg" alt="sea"  width="300">
+							<div class="caption">
+								<h3>Pearl white waves!</h3>
+								<p>Imagine the feeling of the waves on your skin.</p>				
+							</div>
+						</div>
+					</div>
+			
+			
+					<div class="col-xs-12 col-md-4">
+						<div class="thumbnail same-height">
+							<img src="beach1.jpg" alt="sea" width="300">
+							<div class="caption">
+								<h3>Golden sand</h3>
+								<p>There is nothing warmer than the sand!</p>				
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-xs-12 col-md-4">
+						<div class="thumbnail same-height">
+							<img src="sunset1.jpg" alt="sea" width="300">
+							<div class="caption">
+								<h3>The sunset of your life!</h3>
+								<p>Breath taking sunsets will blow your mind!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+						          			
+	
+        </div>
+
+        <div class="row">
+            <div class="col-xs-10 col-sm-offset-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod risus non enim dapibus blandit. Mauris vulputate id elit vitae dapibus. Nulla metus libero, tempus quis cursus non, finibus ut lorem. Sed sit amet ligula lobortis mauris egestas hendrerit posuere ut augue. Curabitur gravida nisl vel erat sodales, commodo imperdiet enim fermentum. Aliquam consequat viverra metus vitae rhoncus. Morbi tempus ultrices maximus. Donec eget orci venenatis, consequat purus vitae, cursus metus. Etiam et neque commodo, elementum magna eu, consequat sapien. Vestibulum ornare placerat ipsum, eget dignissim tortor mattis porttitor. Nunc a rutrum libero. Nunc interdum ipsum augue. Suspendisse potenti. Mauris lacus arcu, semper eu nibh sed, faucibus pretium est. Nulla nec augue id turpis mollis fringilla vel eget nunc. In sollicitudin massa nibh, vitae tempus felis euismod vitae. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-sm-offset-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod risus non enim dapibus blandit. Mauris vulputate id elit vitae dapibus. Nulla metus libero, tempus quis cursus non, finibus ut lorem. Sed sit amet ligula lobortis mauris egestas hendrerit posuere ut augue. Curabitur gravida nisl vel erat sodales, commodo imperdiet enim fermentum. Aliquam consequat viverra metus vitae rhoncus. Morbi tempus ultrices maximus. Donec eget orci venenatis, consequat purus vitae, cursus metus. Etiam et neque commodo, elementum magna eu, consequat sapien. Vestibulum ornare placerat ipsum, eget dignissim tortor mattis porttitor. Nunc a rutrum libero. Nunc interdum ipsum augue. Suspendisse potenti. Mauris lacus arcu, semper eu nibh sed, faucibus pretium est. Nulla nec augue id turpis mollis fringilla vel eget nunc. In sollicitudin massa nibh, vitae tempus felis euismod vitae. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-sm-offset-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod risus non enim dapibus blandit. Mauris vulputate id elit vitae dapibus. Nulla metus libero, tempus quis cursus non, finibus ut lorem. Sed sit amet ligula lobortis mauris egestas hendrerit posuere ut augue. Curabitur gravida nisl vel erat sodales, commodo imperdiet enim fermentum. Aliquam consequat viverra metus vitae rhoncus. Morbi tempus ultrices maximus. Donec eget orci venenatis, consequat purus vitae, cursus metus. Etiam et neque commodo, elementum magna eu, consequat sapien. Vestibulum ornare placerat ipsum, eget dignissim tortor mattis porttitor. Nunc a rutrum libero. Nunc interdum ipsum augue. Suspendisse potenti. Mauris lacus arcu, semper eu nibh sed, faucibus pretium est. Nulla nec augue id turpis mollis fringilla vel eget nunc. In sollicitudin massa nibh, vitae tempus felis euismod vitae. </p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 center">
+                    <p>© 2016 I&D, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+
+</html>
