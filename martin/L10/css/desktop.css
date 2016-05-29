@@ -1,0 +1,154 @@
+html body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+body hr {
+    height: 5px;
+    background-color: deepskyblue;
+    border: 0px;
+}
+
+header h1 {
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    color: deepskyblue;
+}
+
+#main-i {
+    color: deepskyblue;
+}
+
+main {
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+textarea {
+    text-align: center;
+}
+
+.form-div {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#phone-div {
+    width: 50%;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+#form-massage {
+    width: 100%;
+    padding: 10px;
+}
+
+#btn-container {
+    display: table;
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+.btn-my {
+    color: black;
+    background-color: #FFF;
+    border-radius: 15px;
+    border: 2px solid deepskyblue;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+}
+
+.btn-my i {
+    color: black;
+}
+
+#close {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 20px;
+}
+
+.div-float {
+    display: table-cell;
+}
+
+label {
+    color: black;
+    font-size: 1.2em;
+}
+
+i {
+    color: black;
+}
+
+#btn-open-container {
+    margin-top: 200px;
+}
+
+#btn-open {
+    background-color: deepskyblue;
+    text-transform: uppercase;
+    position:relative;  
+	width:200px;
+	color:#FFF;
+	display:block;
+    border: 3px solid deepskyblue;
+	text-decoration:none;
+	margin:0 auto;
+	border-radius:5px;
+	background:deepskyblue;
+	text-align:center;
+	padding:20px 30px;
+	
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 3px 9px 0px #0699cb;
+    -moz-box-shadow: 3px 9px 0px #0699cb;
+    box-shadow: 3px 9px 0px #0699cb;
+}
+
+#btn-open:active{
+    -webkit-box-shadow: 2px 2px 0px rgb(49, 197, 247);
+    -moz-box-shadow: 2px 2px 0px #0699cb;
+    box-shadow: 2px 2px 0px #0699cb;
+    position:relative;
+    top:7px;
+}
+
+#modal-container {
+    width: 60%;
+    background-color: deepskyblue;
+    position: fixed;
+    border-radius: 20px;
+    top: 250px;
+    left: 20%;
+}
+
+footer {
+    text-align: center;
+    color: deepskyblue;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
