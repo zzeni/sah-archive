@@ -1,0 +1,85 @@
+        body {
+        margin: 0px;
+        font-family: "Lucida Sans", Verdana, sans-serif;
+        display: absolute;
+        background-color: aliceblue;
+        width: 100%;
+    }
+    /* 360 - 600 */
+    
+    @media screen and (min-width: 360px) {
+        header {
+            padding: 10px;
+            margin: 5px;
+            background-color: skyblue;
+            width: 100%;
+            text-align: left;
+            border: 2px solid #0000FF;
+        }
+        nav {
+            padding: 5px;
+            margin: 5px;
+            width: 100%;
+            background-color: antiquewhite;
+            vertical-align: 50px;
+            text-align: center;
+            border: 1px solid skyblue;
+            border-right: 3px solid skyblue;
+            border-left: 3px solid skyblue;
+        }
+        nav li {
+            display: inline;
+        }
+        section {
+            padding-left: 30px;
+            display: table-cell;
+        }
+    }
+    
+    div.buton {
+        position: fixed;
+        right: 50px;
+        bottom: 5px;
+    }
+    /* 800 */
+    
+    @media screen and (min-width: 800px) {
+        header {
+            padding: 10px;
+            margin: 20px;
+            background-color: skyblue;
+            border: 3px solid #0000FF;
+            width: 95%;
+            text-align: left;
+            color: white;
+        }
+        nav {
+            padding: 2px;
+            margin: 20px;
+            background-color: coral;
+            width: 200px;
+            height: 500px;
+            display: table;
+            border: 1px solid black;
+            opacity: 0.6;
+            filter: alpha(opacity=40);
+            /* For IE8 and earlier */
+        }
+        nav li {
+            display: block;
+            float: left;
+            list-style-type: none;
+            margin: 10px;
+            vertical-align: middle;
+        }
+        section {
+            position: absolute;
+            top: 150px;
+            padding-left: 270px;
+            display: table;
+        }
+        div.buton {
+            position: fixed;
+            right: 50px;
+            bottom: 5px;
+        }

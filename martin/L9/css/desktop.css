@@ -1,0 +1,80 @@
+html body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+body hr {
+    height: 5px;
+    background-color: deepskyblue;
+    border: 0px;
+}
+
+header h1 {
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    color: deepskyblue;
+}
+
+main {
+    width: 50%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+textarea {
+    text-align: center;
+}
+
+.form-div {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#phone-div {
+    width: 50%;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+#form-massage {
+    width: 100%;
+    padding: 10px;
+}
+
+#btn {
+    color: black;
+    background-color: deepskyblue;
+    border: 2px solid deepskyblue;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+#btn i {
+    color: black;
+}
+
+label {
+    color: white;
+    font-size: 1.2em;
+}
+
+i {
+    color: deepskyblue;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    color: deepskyblue;
+}

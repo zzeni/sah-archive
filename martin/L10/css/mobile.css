@@ -1,0 +1,138 @@
+html body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+body hr {
+    height: 5px;
+    background-color: deepskyblue;
+    border: 0px;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0px;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    color: deepskyblue;
+} 
+
+#main-i {
+    color: deepskyblue;
+}
+
+main {
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+input {
+    text-align: center;
+}
+
+textarea {
+    text-align: center;
+}
+
+i {
+    color: black;
+}
+
+
+label {
+    color: black;
+    font-size: 1.2em;
+}
+
+#btn {
+    color: black;
+    background-color: #FFF;
+    border: 2px solid deepskyblue;
+    box-shadow: 5px 15px;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#btn i {
+    color: black;
+}
+
+#btn-open-container {
+    margin-top: 200px;
+    position: relative;
+}
+
+#btn-open {
+    background-color: deepskyblue;
+    text-transform: uppercase;  
+	color:#FFF;
+	display:block;
+    border: 3px solid deepskyblue;
+	text-decoration:none;
+	margin:0 auto;
+	border-radius:5px;
+	background:deepskyblue;
+	text-align:center;
+	padding:20px 30px;
+	
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 3px 9px 0px #0699cb;
+    -moz-box-shadow: 3px 9px 0px #0699cb;
+    box-shadow: 3px 9px 0px #0699cb;
+}
+
+#btn-open:active{
+    -webkit-box-shadow: 2px 2px 0px rgb(49, 197, 247);
+    -moz-box-shadow: 2px 2px 0px #0699cb;
+    box-shadow: 2px 2px 0px #0699cb;
+    position:relative;
+    top:7px;
+}
+
+#modal-container {
+    width: 100%;
+    background-color: deepskyblue;
+    margin-top: 50px;
+}
+
+#btn-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.btn-my {
+    color: black;
+    background-color: #FFF;
+    border: 2px solid deepskyblue;
+    border-radius: 15px;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+}
+
+.btn-my i {
+    color: black;
+}
+
+.div-float {
+    display: table-cell;
+}
+
+footer {
+    text-align: center;
+    color: deepskyblue;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+

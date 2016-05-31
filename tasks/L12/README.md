@@ -1,23 +1,79 @@
 ## Урок 12
 
-### Задание за домашна работа
+### Задача за домашна работа
 
-Здравейте, 
+Довършете примерите от днес.
+  
+Имплементирайте следните 2 функции:
+  
+```javascript
+  function any(list, value) {
+    // returns true if at least one value of the array is equal to the passed argument value
+  }
+```
+  
+```javascript
+  function all(list, value) {
+    // returns true if all the valuee of the array are equal to the passed argument value
+  }
+```
+  
+След това направете `higher order` версия на горните функции, така че:
+  
+- `hofAny(callback, array)` връща _true_ ако условието, което се намира в _callback_ функцията се изпълни поне един път и _false_ в противен случай
+- `hofAll(callback, array)` връща _true_ ако условието, което се намира в _callback_ функцията се изпълни всеки път и _false_ в противен случай
 
-Задачата за следващият път е да направите JavaScript функция, която да се казва `calcAge()` и да смята възрастта на човек по зададен `birthdate`, който е стринг.
-
-Т.е:
+Пример:
+  
+```javascript
+  var array = [
+    { name: 'David Bowie', age: 69 },
+    { name: 'Thom Yorke', age: 47 },
+    { name: 'Matt Berninger', age: 45 },
+    { name: 'Tracy Chapman', age: 52 },
+    { name: 'Jim Morrison', age: 27 },
+    { name: 'Nick Cave', age: 58 }
+  ];
+  
+  hofAny(function (artist) {
+    return artist.age < 50;
+  }, array); // true
+                           
+  hofAll(function (artist) {
+    return artist.age < 50;
+  }, array); // false
+```
+  
+И накрая, разгледайте следният случай:
+  
+```javascript
+  var artists = {
+    list: array,
+    any: function (callback) {
+      return hofAny(callback, this.list);
+    },
+    all: function (callback) {
+      return hofAll(callback, this.list);
+    }
+  };
 
 ```
-calcAge('2002-3-14'); // 13
-calcAge('1990-12-1'); // 24
+  
+Какво ще се случи ако след като сме създали обекта `artisit`, изпълним кода по-долу?
+  
+```javascript
+  artists.any(function (artist) {
+    return artist.age < 50;
+  });
+                           
+  artists.all(function (artist) {
+    return artist.age < 50;
+  });
 ```
+  
+Решенията качете във файл `script.js` на папка `L12` от проекта с домашните.
+Добавете и един `index.html`, който да включва скрипта, за да може лесно да се провери решението в конзолата.
 
-Също така, искам функцията да лог-ва: `"Happy birthday"` в конзолата, ако човека има рожден ден (датата съвпада с днешния ден).
+  
+Приятна работа!
 
-Накрая, измислете какво да се случва ако датата, която е подадена е в бъдещето, или пък ако е много назад във времето.
-
-Очаквам решенията ви до понеделник.
-
-Поздрави  
-Жени
