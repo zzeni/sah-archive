@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Violeta Ichovska">
+    <meta name="viewport" content="width=device-width, initial-skale=1">
+    <title>The square task</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        .square {
+            width: 200px;
+            height: 200px;
+            color: white;
+            text-align: center;
+        }
+        
+        .red {
+            background-color: red;
+        }
+        
+        .blue {
+            background-color: blue;
+        }
+        
+        .green {
+            background-color: green;
+        }
+        
+        .black {
+            background-color: black;
+        }
+        /* Bonus points if you can make the text be centered in the square */
+        /* Smallest first (<399px) */
+        
+        @media screen and (max-width:399px) {
+            .square {
+                width: 100%;
+            }
+            .red {
+                position: absolute;
+                top: 0;
+            }
+            .blue {
+                position: absolute;
+                top: 200px;
+            }
+            .green {
+                position: absolute;
+                top: 400px;
+            }
+            .black {
+                position: absolute;
+                top: 600px;
+            }
+        }
+        
+        @media screen and (min-width:400px) and (max-width:499px) {
+            .red {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .blue {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .green {
+                background-color: green;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .black {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        /* 400 - 499 */
+        
+        @media screen and (min-width:500px) and (max-width:599px) {
+            .red {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            .blue {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .green {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .black {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        /* 500 - 599 */
+        
+        @media screen and (min-width:600px) and (max-width:699px) {
+            .red {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .blue {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            .green {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .black {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+        /* 600 - 699 */
+        
+        @media screen and (min-width:700px) and (max-width:799px) {
+            .red {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .blue {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .green {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            .black {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        /* 700 - 799 */
+        
+        @media screen and (min-width:800px) {
+            body {
+                position: relative;
+            }
+            .red {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .blue {
+                position: absolute;
+                left: 200px;
+                top: 0;
+            }
+            .green {
+                position: absolute;
+                left: 400px;
+                top: 0;
+            }
+            .black {
+                position: absolute;
+                left: 600px;
+                top: 0;
+            }
+        }
+        /* > 800 */
+    </style>
+</head>
+
+<body>
+    <div class="square red">
+        <p>
+            RED
+        </p>
+    </div>
+    <div class="square blue">
+        <p>
+            BLUE
+        </p>
+    </div>
+    <div class="square green">
+        <p>
+            GREEN
+        </p>
+    </div>
+    <div class="square black">
+        <p>
+            BLACK
+        </p>
+    </div>
+</body>
+
+</html>
