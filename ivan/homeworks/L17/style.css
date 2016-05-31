@@ -23,10 +23,10 @@
 /* Lifting off animation */
 
 @keyframes toTheMoon {
-    from {
+    0% {
         top: 0px;
     }
-    to {
+    100% {
         top: -1400px;
     }
 }
@@ -35,4 +35,12 @@
     animation-name: toTheMoon;
     animation-duration: 3s;
     animation-timing-function: ease-in;
+}
+
+#rocket_bay.taking-off {
+    background-position: 298px 0;
+}
+
+#rocket_bay.hideme {
+    opacity: 0;
 }
