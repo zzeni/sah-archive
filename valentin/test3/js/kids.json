@@ -2,6 +2,7 @@
   {
     "name": "Дейвид",
     "age": "4",
+    "picName": "david.png",
     "color": "зелен",
     "game": "LEGO",
     "food": "сладолед"
@@ -9,6 +10,7 @@
   {
     "name": "Сюзан",
     "age": "4",
+    "picName": "susan.jpg",
     "color": "син",
     "game": "кукла Барби",
     "food": "крем карамел"
@@ -16,6 +18,7 @@
   {
     "name": "Брайън",
     "age": "6",
+     "picName": "brian.jpg",
     "color": "лилаво",
     "game": "футбол",
     "food": "хот дог"
@@ -23,6 +26,7 @@
   {
     "name": "Ашли",
     "age": "3",
+    "picName": "ashley.jpg",
     "color": "розово",
     "game": "кукли",
     "food": "пуканки"
@@ -30,6 +34,7 @@
   {
     "name": "Ема",
     "age": "5",
+    "picName": "ema.jpg",
     "color": "оранжево",
     "game": "криеница",
     "food": "торта"
@@ -37,6 +42,7 @@
   {
     "name": "Том",
     "age": "5",
+    "picName": "tom.png",
     "color": "червено",
     "game": "фризби",
     "food": "ябълки"
