@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>L19 HW</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <style>
+        .error {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form name="Registration">
+                    <div class="form-group">
+                        <label class="control-label" for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Please enter your name.">
+                        <span class="error">Your name can't contain any spaces or special symbols!</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Please enter valid e-mail." novalidate>
+                        <span class="error">Please enter a valid e-mail address!</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="password">Password</label>
+                        <input type="text" class="form-control" id="password" placeholder="Please type in your password.">
+                        <span class="error">Bad password! Please use atleast 5 small or capital letters and numbers!</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="passwordSecond">Confirm Password</label>
+                        <input type="text" class="form-control" id="passwordSecond" placeholder="Please re-type your password again.">
+                        <span class="error">The two passwords does not match or bad password!</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="bday">Birthday</label>
+                        <input type="text" class="form-control" id="bday" placeholder="Please enter your birthdate.">
+                        <span class="error">Please enter a valid date in the format dd-mm-yyyy!</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="picture">Picture URL</label>
+                        <input type="text" class="form-control" id="picture" placeholder="Please enter a valid URL.">
+                        <span class="error">Please enter a valid URL</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
