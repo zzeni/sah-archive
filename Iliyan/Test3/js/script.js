@@ -15,7 +15,7 @@ $(document).ready(function() {
             '<div class="kid">' +
             '<div class="panel panel-info">' +
             '<div class="panel-heading">' +
-            '<h3> име ' + this.name + '</h3>' +
+            '<h3> ' + this.name + '</h3>' +
             '</div>' +
             '<div class="panel-body">' +
             '<div class="col-sm-4">' +
