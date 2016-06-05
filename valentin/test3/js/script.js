@@ -54,7 +54,7 @@ $(document).ready(function () {
 
 
   function printBkids(bikes) {
-    var dbContainer = $(".container");
+    var dbContainer = $("#kids");
     dbContainer.empty();
     
     bikes.forEach(function (kid) {
