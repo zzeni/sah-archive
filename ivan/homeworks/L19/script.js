@@ -41,7 +41,7 @@ $(document).ready(function () {
             if (passChecked === "green") {
                 check($("#password").val(), value, theParent);
             } else if (passChecked === "default") {
-                check(passRE, value, theParent);
+                check(passRE, value, theParent); // HERE IS THE BUG
             } else {
                 setError(theParent);
             }
@@ -66,6 +66,16 @@ $(document).ready(function () {
         parent.find('.error').hide();
     }
 
+    function cleanClass(parNT) {
+        if (parNT.hasClass("has-error")) {
+            parNT.removeClass("has-error");
+            parNT.find(".error").hide();
+        }
+        if (parNT.hasClass("has-success")) {
+            parNT.removeClass("has-success");
+        }
+    }
+
 
     function check(RE, elementVal, parentArg) {
 
@@ -73,30 +83,19 @@ $(document).ready(function () {
 
         if (Boolean(elementVal.match(RE))) {
 
-            if (parentArg.hasClass("has-error")) {
-                parentArg.removeClass("has-error");
-                parentArg.find('.error').hide();
-            }
+            cleanClass(parentArg);
             good2go(parentArg);
 
             return "green";
 
         } else if (!Boolean(elementVal.match(RE)) && elementVal !== "") {
-            if (parentArg.hasClass("has-success")) {
-                parentArg.removeClass("has-success");
-            }
+            cleanClass(parentArg)
             setError(parentArg);
 
             return "red";
 
         } else {
-            if (parentArg.hasClass("has-error")) {
-                parentArg.removeClass("has-error");
-                parentArg.find('.error').hide();
-            }
-            if (parentArg.hasClass("has-success")) {
-                parentArg.removeClass("has-success");
-            }
+            cleanClass(parentArg);
 
             return "default";
         }
