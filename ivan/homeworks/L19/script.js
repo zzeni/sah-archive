@@ -78,7 +78,7 @@ $(document).ready(function () {
 
 
     function check(RE, elementVal, parentArg) {
-
+        var status = '';
 
 
         if (Boolean(elementVal.match(RE))) {
@@ -86,19 +86,21 @@ $(document).ready(function () {
             cleanClass(parentArg);
             good2go(parentArg);
 
-            return "green";
+            status = "green";
 
         } else if (!Boolean(elementVal.match(RE)) && elementVal !== "") {
             cleanClass(parentArg)
             setError(parentArg);
 
-            return "red";
+            status = "red";
 
         } else {
             cleanClass(parentArg);
 
-            return "default";
+            status = "default";
         }
+
+        return status;
 
     }
 });

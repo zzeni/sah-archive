@@ -1,0 +1,13 @@
+body {
+  min-height: 460px;
+}
+
+#stash {
+  background-color: #f0f0f0;
+  min-height: 3.2em;
+  color: #999;
+  font-family: "Courier New", monospace;
+  padding: 1em;
+  line height: 1em;
+  margin-bottom: 1em;
+}

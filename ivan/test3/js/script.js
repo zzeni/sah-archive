@@ -1,6 +1,9 @@
 $(document).ready(function () {
     'use strict';
 
+    var gitems = {};
+
+
     function Toddler(name, age, color, game, food, image) {
         this.name = name;
         this.age = age;
@@ -35,8 +38,6 @@ $(document).ready(function () {
             '</div>');
 
 
-        console.log(this.name);
-
         return kid;
     };
 
@@ -54,12 +55,16 @@ $(document).ready(function () {
         });
 
         printChildren(childrenDB);
+
+        gitems.childrenDB = childrenDB;
     });
 
 
 
     function printChildren(children) {
-        var dbContainer = $("#kids");
+        var dbContainer = $("#toddlers");
+
+        dbContainer.html("");
 
         children.forEach(function (child) {
             dbContainer.append(child.toHTML());
@@ -67,6 +72,19 @@ $(document).ready(function () {
     }
 
 
+
+    $("#search").keyup(function (event) {
+        var value = $(this).val();
+        var filtered = [];
+        if (value.length >= 1) {
+            filtered = gitems.childrenDB.filter(function (child) {
+                return (child.name + child.age + child.color + child.food + child.game).match(new RegExp(value));
+            });
+        } else {
+            filtered = gitems.childrenDB;
+        }
+        printChildren(filtered);
+    });
 
 
 });
