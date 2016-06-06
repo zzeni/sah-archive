@@ -1,0 +1,100 @@
+body {
+    background-image: url(img/peizaj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    border: 2px solid skyblue;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 2px 2px 2px skyblue;
+}
+
+nav {
+    display: block;
+}
+
+ul {
+    position: fixed;
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 0;
+    overflow: hidden;
+    width: 150px;
+    background-color: cornflowerblue;
+    opacity: 0.7;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 20px;
+
+}
+
+
+li a {
+    display: inline-block;
+    color: #000;
+    padding: 10px 0 10px 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-image: url(img/Happy%20Apple_Green.png);
+    width: 50px;
+    color: white;
+    background-size: contain;
+    background-repeat:  no-repeat;
+}
+
+
+.conteiner {
+    display: block;
+    background-image: url(img/durvo.png);
+    width: 750px;
+    height: 650px;
+    margin: auto;
+}
+
+#clon1 {
+    margin: 15px 200px;
+}
+
+#clon2 {
+    margin: 100px 100px;
+}
+
+#clon3 {
+    margin: -120px 300px;
+}
+
+#clon4 {
+    margin: 10px 330px;
+}
+
+#clon5 {
+    margin: 20px 400px;
+}
+
+#clon6 {
+    margin: 20px 520px;
+}
+
+#clon7 {
+    margin: 20px 680px;
+}
+
+#clon8 {
+    margin: -50px 50px;
+}
+
+#clon9 {
+    margin: 40px 170px;
+}
+
+#clon10 {
+    margin: -50px 360px;
+}
+ 
