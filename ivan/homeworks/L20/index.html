@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>L20 HW</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="heading">
+  <div class="jumbotron text-center">
+    <h1>Sorting numbers</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="input-group">
+        <input type="number" id="number" placeholder="tell me a number" class="form-control input-lg">
+        <span class="input-group-btn">
+          <button id="submit" class="btn btn-info btn-lg">Add to stash</button></span>
+      </div>
+      <h3>Stash contents:</h3>
+      <div id="stash"></div>
+      <div class="button-group">
+        <button class="btn btn-lg btn-success" id="sort">Sort stash!</button>
+
+        <button class="btn btn-lg btn-danger" id="eraze">Empty stash!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="mainscript.js"></script>
+</body>
+</html>
