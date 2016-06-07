@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Дейвид",
+		"image": "david.png",
+		"age": "4",
+		"color": "зелен",
+		"game": "LEGO",
+		"food": "сладолед"
+  },
+	{
+		"name": "Сюзан",
+		"image": "susan.jpg",
+		"age": "4",
+		"color": "син",
+		"game": "кукла Барби",
+		"food": "крем карамел"
+  },
+	{
+		"name": "Брайън",
+		"image": "brian.jpg",
+		"age": "6",
+		"color": "лилаво",
+		"game": "футбол",
+		"food": "хот дог"
+  },
+	{
+		"name": "Ашли",
+		"image": "ashley.jpg",
+		"age": "3",
+		"color": "розово",
+		"game": "кукли",
+		"food": "пуканки"
+  },
+	{
+		"name": "Ема",
+		"image": "ema.jpg",
+		"age": "5",
+		"color": "оранжево",
+		"game": "криеница",
+		"food": "торта"
+  },
+	{
+		"name": "Том",
+		"image": "tom.png",
+		"age": "5",
+		"color": "червено",
+		"game": "фризби",
+		"food": "ябълки"
+  }
+]
