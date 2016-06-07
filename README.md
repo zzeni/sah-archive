@@ -1,3 +1,5 @@
-# Swift Academy Homeworks
+# Project EventFactory
 
-This is the official homeworks' repository for the Swift Academy's 'Front-end Development' course
+---
+
+EventFactory е уебсайт за хора който търсят професионално услуги за мероприятия. Той ще е главно фокусиран в малки събития като сватби , кръщанета и т.н , но също така ще предлага и наем на сцени, осветление, професионално озвучаване.
