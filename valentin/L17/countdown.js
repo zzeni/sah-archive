@@ -12,11 +12,10 @@ $(document).ready(function(){
   }
 
   function pausedf(){
-	if (paused){
+    if (paused){
       timer = setInterval(countdown, 1000);
       paused = false;
-  	}
-    
+    }
   }
   
   timer = setInterval(countdown, 1000);
@@ -34,8 +33,6 @@ $(document).ready(function(){
   });
   
   $("#Resume").click(function(){  
-  pausedf(); 
+    pausedf(); 
   });
-  
-  
 });
