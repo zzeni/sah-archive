@@ -4,7 +4,7 @@ body {
     background-size: cover;
 }
 
-h1 {
+/*h1 {
     color: white;
     border: 2px solid skyblue;
     border-radius: 4px;
@@ -15,22 +15,21 @@ h1 {
 nav {
     display: block;
 }
-
+*/
 ul {
-    position: fixed;
+    position: absolute;
     list-style-type: none;
     margin-bottom: 20px;
     padding: 0;
     overflow: hidden;
     width: 150px;
+    margin: 0 20px;
     background-color: cornflowerblue;
     opacity: 0.7;
     border: 2px solid white;
     border-radius: 4px;
     font-size: 20px;
-
 }
-
 
 li a {
     display: inline-block;
@@ -40,23 +39,26 @@ li a {
     text-align: center;
 }
 
-/* Change the link color on hover */
+
+/* Change the link image on hover */
+
 li a:hover {
     background-image: url(img/Happy%20Apple_Green.png);
     width: 50px;
     color: white;
     background-size: contain;
-    background-repeat:  no-repeat;
+    background-repeat: no-repeat;
 }
-
 
 .conteiner {
     display: block;
     background-image: url(img/durvo.png);
     width: 750px;
-    height: 650px;
-    margin: auto;
+    height: auto;
+    margin-top: 1cm;
+    margin-left: auto;
 }
+
 
 #clon1 {
     margin: 15px 200px;
@@ -97,4 +99,26 @@ li a:hover {
 #clon10 {
     margin: -50px 360px;
 }
- 
+
+#dqdo {
+    margin-top: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+.testing {
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    height: 250px;
+    padding: 10px 30px 20px 40px;
+    background-image: url(img/old-paper.png);
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 1px 1px black;
+    margin: 0 190px;
+    text-align: center;
+    opacity: 0.9;
+    
+}
