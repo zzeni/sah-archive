@@ -41,9 +41,9 @@ window.onload = function () { // I need the picture to be loaded too.
         }
 
 
-        function hideAfterAnimation() {
+        /*function hideAfterAnimation() {
             rocket_bay.className += " hideme";
-        }
+        }*/
 
 
         function liftOff() {
@@ -123,7 +123,7 @@ window.onload = function () { // I need the picture to be loaded too.
         pauseButton.addEventListener("click", pauseHandler);
         resetButton.addEventListener("click", resetHandler);
 
-        rocket_bay.addEventListener('animationend', hideAfterAnimation);
+        //rocket_bay.addEventListener('animationend', hideAfterAnimation);
 
     }());
 };
