@@ -313,8 +313,18 @@ blockquote p {
 #contact {
 	background-color: #CFD8DC;
 	/*background-image: url('../img/contactbg.jpg');*/
-	
+	background-image: url('../img/city2.svg');   /* CREDIT: freepik.com  */
 }
+
+@media screen and (max-width: 991px) {
+	#contact {
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+}
+
+
 
 #contact #contact_info {
 	background-color: rgba(255,255,255,0.8);
@@ -404,9 +414,9 @@ blockquote p {
 		font-size: 0.5em;
 		padding-left: 6px;
 		padding-right:6px;
-	}	
-	
-	
+	}
+
+
 	.navbar_item,
 	.navbar_item:hover,
 	.navbar_item:focus,
@@ -416,11 +426,10 @@ blockquote p {
 }
 
 @media screen and (max-height: 387px) {
-	
+
 	.navbar_item {
 		font-size: 1.3em;
 		padding-top: 4px;
 		padding-bottom: 4px;
 	}
 }
-
