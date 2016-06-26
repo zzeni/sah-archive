@@ -1,0 +1,435 @@
+/*!
+ * Start Bootstrap - Full Slider HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+html,body {
+	height: 100%;
+	background-color: #eaecee;
+}
+
+.navbar {
+	-webkit-user-select: none;
+/* Chrome all / Safari all */
+	-moz-user-select: none;
+/* Firefox all */
+	-ms-user-select: none;
+/* IE 10+ */
+	user-select: none;
+}
+
+.navbar-nav li,.navbar-nav li:hover,.navbar-nav li:active,.navbar-nav li:focus {
+	outline: 0;
+}
+
+.navbar-nav a,.navbar-nav a:hover,.navbar-nav a:active,.navbar-nav a:focus {
+	outline: 0;
+	font-size: 1.2em;
+}
+
+.navbar-brand,.navbar-brand:hover,.navbar-brand:active,.navbar-brand:focus {
+	font-size: 1.8em;
+	outline: 0;
+	color: #FFFFF0;
+}
+
+.navbar-nav li.active {
+	color: #FFFFF0;
+}
+
+.lang_select {
+	cursor: pointer;
+}
+
+
+.lang_select.navbar_item.active_lang {
+	color: #CFD8DC;
+}
+
+
+.carousel,.item,.active {
+	height: 100%;
+}
+
+.carousel-inner {
+	height: 100%;
+}
+
+.carousel-caption h2 {
+	background: rgba(0,0,0,0.3);
+	font-size: 1.9em;
+	margin-bottom: 30px;
+	padding: 10px;
+	max-width: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+.fill {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+#carouselButtons {
+	right: 0;
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+}
+
+/*Fullscreen effect for all sections, exept shortinfo*/
+.fullscreen {
+	height: 100%;
+	min-height: 100vh;
+}
+
+/*Additional global CSS settings*/
+#gallery,#menu,#about,#contact,#reservations,footer {
+	padding: 50px 0;
+}
+
+.page-header {
+	font-size: 2.3em;
+}
+
+.regtm {
+	vertical-align: super;
+	font-size: .5em;
+}
+
+.slideanim {
+	visibility: hidden;
+}
+
+.slide {
+	animation-name: slide;
+	-webkit-animation-name: slide;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	visibility: visible;
+}
+
+@keyframes slide {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(70%);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+	}
+}
+
+@-webkit-keyframes slide {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(70%);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0%);
+	}
+}
+
+/*Short info*/
+#shortinfo {
+	padding: 60px;
+	background-color: #435B65;
+	color: #F7F9FE;
+	min-height: 100%;
+	height: 100%;
+	max-height: 100%;
+}
+
+.info_description {
+	font-size: 1.6em;
+	margin-bottom: 30px;
+}
+
+blockquote {
+	quotes: "\201C""\201D""\2018""\2019";
+	font-style: italic;
+	background: rgba(93,117,127,0.5);
+}
+
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: .1em;
+	margin-right: .25em;
+	vertical-align: -.4em;
+}
+
+blockquote p {
+	display: inline;
+}
+
+.info_footer {
+	color: #ECECEA;
+}
+
+/*Gallery styles*/
+#gallery {
+	background-color: #F7F9FE;
+}
+
+.gallery-item {
+	cursor: pointer;
+	z-index: 1;
+}
+
+.thumb {
+	margin-bottom: 20px;
+}
+
+#modal-resizer {
+	width: 70%;
+}
+
+/* Flashing */
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.gallery-item:hover {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
+#menu {
+	background-color: #ECECEA;
+}
+
+#menu .category_thumb {
+	margin-bottom: 20px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#menu .img_to_overlay {
+	position: relative;
+}
+
+#menu .info {
+	background-color: rgba(0,0,0,0.8);
+	color: #ECECEA;
+	font-weight: 700;
+	text-align: center;
+}
+
+#downloadIcon {
+	font-size: 1.5em;
+}
+
+/*Reservations*/
+#reservations {
+	background-color: #F7F9FE;
+}
+
+#emailid:optional,#comments:optional {
+	border: 1px solid #eee;
+}
+
+/*About*/
+#about {
+	background-color: #ECECEA;
+}
+
+#about #our_history,#our_philosophy {
+	padding: 25px;
+	background-color: #DEE0E5;
+}
+
+#about #MASLogo {
+	margin: 0 auto;
+}
+
+#about #our_team {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #fff;
+}
+
+#about .team_name {
+	text-align: center;
+}
+
+#about .team_position {
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+#about .team_descr {
+	text-align: justify;
+}
+
+/*.team_pic {
+	margin: 0 auto;
+}*/
+#about .about_section_title {
+	text-align: center;
+	font-size: 2.3em;
+}
+
+#about .history_text {
+	text-align: justify;
+}
+
+#about .thumbnail {
+	text-align: center;
+	border: none;
+	background-color: ;
+}
+
+#about .thumbnail h4 {
+	font-style: italic;
+}
+
+/*Contact*/
+#contact {
+	background-color: #CFD8DC;
+	/*background-image: url('../img/contactbg.jpg');*/
+	background-image: url('../img/city2.svg');   /* CREDIT: freepik.com  */
+}
+
+@media screen and (max-width: 991px) {
+	#contact {
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+}
+
+
+
+#contact #contact_info {
+	background-color: rgba(255,255,255,0.8);
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+
+
+#map {
+	width: 100%;
+	height: 400px;
+	background-color: grey;
+}
+
+/* Footer styles */
+.row-footer {
+	text-align: center;
+	background-color: #263238;
+	color: #F7F9FE;
+	width: 100%;
+}
+
+/* Scroll to top */
+.cd-top {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.05);
+/* image replacement properties */
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background: rgba(175,175,175,0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity .3s 0s,visibility 0 .3s;
+	-moz-transition: opacity .3s 0s,visibility 0 .3s;
+	transition: opacity .3s 0s,visibility 0 .3s;
+}
+
+.cd-top.cd-is-visible,.cd-top.cd-fade-out,.no-touch .cd-top:hover {
+	-webkit-transition: opacity .3s 0s,visibility 0 0;
+	-moz-transition: opacity .3s 0s,visibility 0 0;
+	transition: opacity .3s 0s,visibility 0 0;
+}
+
+.cd-top.cd-is-visible {
+/* the button becomes visible */
+	visibility: visible;
+	opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+/* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+	opacity: .6;
+}
+
+.no-touch .cd-top:hover {
+	background-color: #D4DBCC;
+	opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+	.cd-top {
+		right: 20px;
+		bottom: 20px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.cd-top {
+		height: 60px;
+		width: 60px;
+		right: 30px;
+		bottom: 30px;
+	}
+}
+
+
+/* Media query for adjusting the navbar */
+@media screen and (min-width:768px) and (max-width:991px){
+	.navbar-header {
+		font-size: 0.5em;
+		padding-left: 6px;
+		padding-right:6px;
+	}
+
+
+	.navbar_item,
+	.navbar_item:hover,
+	.navbar_item:focus,
+	.navbar_item:active {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-height: 387px) {
+
+	.navbar_item {
+		font-size: 1.3em;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+}
