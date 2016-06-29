@@ -16,8 +16,8 @@ $(document).ready(function() {
     // Contains the current language set by the cookie.
     common.cookieLanguage = "";
     // Translations cashes.
-    common.englishTranslation = [];
-    common.bulgarianTranslation = [];
+    common.englishTranslation = {};
+    common.bulgarianTranslation = {};
     // Common function for adding the generated elements by the menu and the gallery.
     common.appendItems = function(parent, itemsList) {
         itemsList.forEach(function(item) {
@@ -39,6 +39,33 @@ $(document).ready(function() {
             $(".lang_select").removeClass("active_lang");
             $('#' + common.cookieLanguage).addClass("active_lang");
         }
+		else {
+			common.cookieLanguage === "en";
+			
+			$('html').attr('lang', common.cookieLanguage);
+			$(".lang_select").removeClass("active_lang");
+            $('#' + common.cookieLanguage).addClass("active_lang");
+		}
+		
+		
+		
+		if ((localStorage.getItem("englishTranslationObj") !== null) && (localStorage.getItem("bulgarianTranslationObj") !== null)) {
+            common.englishTranslation = localStorage.getItem("englishTranslationObj");
+            common.bulgarianTranslation = localStorage.getItem("bulgarianTranslationObj");
+
+            applyTranslation();
+		} else {
+			$.getJSON('js/langs.json', function(data) {
+
+				common.englishTranslation = data.en;
+				common.bulgarianTranslation = data.bg;
+
+				localStorage.setItem("englishTranslationObj", common.englishTranslation);
+				localStorage.setItem("bulgarianTranslationObj", common.bulgarianTranslation);
+
+			}).then(applyTranslation);
+		}
+		
 
 
         // Event handler for switching the language.
@@ -75,49 +102,49 @@ $(document).ready(function() {
 
             console.log(document.cookie);
         }
-
-
+		
+		
+		
+		
 
         // Code for reading the json and applying the translation
 
         function applyTranslation() {
+				
+			var typesOfDataTags = ["data-nav-ts", "data-carousel-ts", "data-shortinfo-ts",
+			"data-header-ts", "data-menu-ts", "data-reservations-ts", "data-about-ts", "data-contact-ts"];	
 
             if (common.cookieLanguage === "bg") {
+				
+				
+				
+				$("[data-nav-ts]").each(function(){
+					$(this).html(common.bulgarianTranslation["navigation"][$(this).attr("data-nav-ts").toString()]);
+				});
+				
+				
+				
                 $("[data-translate]").each(function() {
                     $(this).html(common.bulgarianTranslation[$(this).attr("data-translate")].toString());
                 });
+				
+				
+				
+				
             } else {
                 $("[data-translate]").each(function() {
                     $(this).html(common.englishTranslation[$(this).attr("data-translate").toString()]);
                 });
             }
+			
+			
+			function applyTranslationForType(dataTag, )
+			
+			
+			
         }
 
-        if ((localStorage.getItem("englishTranslationArr") !== null) && (localStorage.getItem("bulgarianTranslationArr") !== null)) {
-            commonVars.englishTranslation = localStorage.getItem("englishTranslationArr");
-            commonVars.bulgarianTranslation = localStorage.getItem("bulgarianTranslationArr");
-
-            applyTranslation();
-        } else {
-            $.getJSON('js/langs.json', function(data) {
-
-                var english = [];
-                var bulgarian = [];
-
-                for (var idx = 0; idx < 7; idx++) {
-                    english.push(data[0].en[idx]);
-                    bulgarian.push(data[0].bg[idx]);
-                }
-
-
-                commonVars.englishTranslation = english;
-                commonVars.bulgarianTranslation = bulgarian;
-
-                localStorage.setItem("englishTranslationArr", english);
-                localStorage.setItem("bulgarianTranslationArr", bulgarian);
-
-            }).then(applyTranslation);
-        }
+        
 
     }());
 
@@ -191,6 +218,17 @@ $(document).ready(function() {
         $.getJSON('js/datanew.json', function(data) {
             var galleryDB = [];
             var galleryParent = $("#galleryContainer");
+
+
+            /* if (common.cookieLanguage === "en"){
+                    data.forEach(function(obj){
+                        var thumbnailObj = new GalleryItemClass(obj.url, common.englishTranslation[gallery][obj.altKey])
+                });
+                }
+
+            */
+
+
             data.forEach(function(obj) {
                 var thumbnailObj = new GalleryItemClass(obj.url, obj.alt);
                 galleryDB.push(thumbnailObj);
@@ -230,12 +268,28 @@ $(document).ready(function() {
                 []
             ];
             var menuParents = [$("#menucol1"), $("#menucol2"), $("#menucol3")];
-            data.forEach(function(objwrapper) {
-                objwrapper.forEach(function(obj) {
+
+            function createMenuObjects(obj) {
+                var menuItemObject = new MenuItemClass(obj.title, obj.description);
+                return menuItemObject;
+            }
+
+            data.breakfast.forEach(function(obj) {
+                menuDBs[0].push(createMenuObjects(obj))
+            });
+            data.lunch.forEach(function(obj) {
+                menuDBs[1].push(createMenuObjects(obj))
+            });
+            data.dinner.forEach(function(obj) {
+                menuDBs[2].push(createMenuObjects(obj))
+            });
+
+
+            /*objwrapper.forEach(function(obj) {
                     var menuItemObject = new MenuItemClass(obj.title, obj.description);
                     menuDBs[data.indexOf(objwrapper)].push(menuItemObject);
-                });
-            });
+            });*/
+
             common.appendItems(menuParents[0], menuDBs[0]);
             common.appendItems(menuParents[1], menuDBs[1]);
             common.appendItems(menuParents[2], menuDBs[2]);
