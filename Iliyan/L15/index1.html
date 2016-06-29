@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Count</title>
+  </head>
+
+  <body>
+    <input type="button" value="Click me" id="countButton" />
+
+      <p>The button was pressed <div id="displayCount">0</div> times.</p>
+
+    <script type="text/javascript">
+      var count = 0;
+      var button = document.getElementById("countButton");
+      var display = document.getElementById("displayCount");
+
+      button.onclick = function(){
+        count++;
+        display.innerHTML = count;
+      }
+    </script>
+  </body>
+</html>

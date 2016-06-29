@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" language="JavaScript">
+ 
+        var secs;
+        var timerID = null;
+        var timerRunning = false;
+        var delay = 1000;
+ 
+        function InitializeTimer(seconds) {
+            secs = seconds;
+            StopTheClock();
+            StartTheTimer();
+        }
+ 
+        function StopTheClock() {
+            if (timerRunning)
+                clearTimeout(timerID);
+            timerRunning = false;
+        }
+ 
+        function StartTheTimer() {
+            if (secs == 0) {
+                StopTheClock();
+                window.location.href = window.location.href;
+                alert("Your page has been refreshed !!!!");
+            }
+            else {
+                document.getElementById("lbltime").innerText = secs + " ";
+                secs = secs - 1;
+                timerRunning = true;
+                timerID = self.setTimeout("StartTheTimer()", delay);
+            }
+        }
+    </script>
+</head>
+<body onload="InitializeTimer(10)">
+    <form id="form1" runat="server">
+    <div class="timer">
+        <p>The page will redirect in </p>
+        <asp:Label ID="lbltime" runat="server" Style="font-weight: bold; font-size 20px;"></asp:Label><p>seconds</p>
+    </div>
+    </form>
+</body>
+</html>
