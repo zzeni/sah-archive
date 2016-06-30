@@ -148,7 +148,7 @@
 
         "about_us": {
             "history": "Our History",
-            "history_text": "Our restaurant was born in the flames of passion. Our passion for tasty meat dishes and sweet deserts. So one day we decided to share with the rest of the world the wonderful recipes we have discovered with a bit of style. The rest is a dream come true. We have opened our restaurant in 2014 in the city of Sofia, Bulgaria. It is located at the top of the Lozenets hill, Korab Planina street. Since the opening of the restaurant we came to the conclusion that we need to search for even more recipes. And we did. Today we have a dedicated Recipe Hunter that scouts the world for all these tasty treasures.",
+            "history_text": "Our restaurant was born in the flames of passion. Our passion for tasty meat dishes and sweet deserts. So one day we decided to share with the rest of the world the wonderful recipes we have discovered with a bit of style. The rest is a dream come true. We have opened our restaurant in 2014 in the city of Sofia, Bulgaria. Since the opening of the restaurant we came to the conclusion that we need to search for even more recipes. And we did. Today we have a dedicated Recipe Hunter that scouts the world for all these tasty treasures.",
             "our_team": "Our Team",
             "ceo_name": "Dragomir Ivanov",
             "ceo_position": "CEO",
@@ -314,7 +314,7 @@
         },
 
         "reservations": {
-            "res_note": "За компании от шест, препоръчваме да направите резервация поне две седмици по-рано. За клиенти без резервация, спазваме принципа - сервираме първо на първо дошлите до капацитета на ресторанта.",
+            "res_note": "За групи от шест, препоръчваме да направите резервация поне две седмици по-рано. За клиенти без резервация, спазваме принципа - настаняваме всички дошли до капацитета на ресторанта.",
             "res_note2": "За компании от седем или повече, моля обадете ни се на:",
             "first_name": "Първо име *",
             "last_name": "Фамилия *",
@@ -327,14 +327,14 @@
 
         "about_us": {
             "history": "Нашата история",
-            "history_text": "Нашият ресторант се роди в пламъците на страстта. Нашата страст за вкусни месни ястия и сладки десерти. Затова един ден решихме да споделим с останалия свят тези чудесни рецепти, които открихме, с малко стил. Останалото е една сбъдната мечта. Отворихме нашия ресторант през 2014 в град София, България. Намира се на върха на хълма Лозенец, на улица Кораб планина. От отварянето на ресторанта, стигнахме до извода, че ни трябва да потърсим още рецепти. И ние го направихме. Днес имаме специално назначен ловец на рецепти, който кръстосва света в търсене на всички онези вкусни съкровища.",
+            "history_text": "Нашият ресторант се роди в пламъците на страстта. Нашата страст за вкусни месни ястия и сладки десерти. Затова един ден решихме да споделим с останалия свят тези чудесни рецепти, които открихме, с малко стил. Останалото е една сбъдната мечта. Отворихме нашия ресторант през 2014 в град София, България. От отварянето на ресторанта, стигнахме до извода, че ни трябва да потърсим още рецепти. И ние го направихме. Днес имаме специално назначен ловец на рецепти, който кръстосва света в търсене на всички онези вкусни съкровища.",
             "our_team": "Нашият отбор",
             "ceo_name": "Драгомир Иванов",
             "ceo_position": "Управител",
             "ceo_description": "Нашият управител и съосновател Драго е сърцето на ресторанта. Той е човекът, който тормозим за всичко, затова понякога той оставя всичко и си взима нещо от кухнята.",
             "chef_name": "Иван Иванов",
             "chef_position": "Финанси, Майстор готвач",
-            "chef_description": "Иван е истински магьосник в кухнята. Неговите два любими вида ястия са... правилно предположихте -месни и сладкиши. И при това той ги превръща в реалност.",
+            "chef_description": "Иван е истински магьосник в кухнята. Неговите два любими вида ястия са... правилно предположихте - месни и сладкиши. И при това той ги превръща в реалност.",
             "hunter_name": "Галя Димитрова",
             "hunter_position": "Гастроном, Ловец на рецепти",
             "hunter_description": "Ловът е в разгара си! Галя обикаля света в търсене на страхотни нови рецепти, които да ви предложим в ресторанта. Представете си как пътувате докато се храните. Ние го правим.",
@@ -343,7 +343,7 @@
         },
 
         "contact": {
-            "location1": "Локация",
+            "location1": "Адрес",
             "location2": "123 улица Кораб Планина",
             "location3": "България, София 1000",
             "hours1": "Работно време",

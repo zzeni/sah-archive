@@ -9,6 +9,23 @@ body {
     height: 100%;
     background-color: #eaecee;
 }
+.modal-body {
+    background-color: #222222;
+    color: #FFFFF0;
+    font-weight: bold;
+    padding: 0px;
+}
+#modal-resizer {
+    padding-top: 3%;
+}
+.modal-body .close {
+    color: #FFFFF0;
+    z-index: 99;
+    padding-right: 1%;
+}
+.modal-body #modalAltText {
+    padding-left: 1%;
+}
 .navbar {
     -webkit-user-select: none;
     /* Chrome all / Safari all */
@@ -21,7 +38,11 @@ body {
 .navbar-nav li,
 .navbar-nav li:hover,
 .navbar-nav li:active,
-.navbar-nav li:focus {
+.navbar-nav li:focus,
+.btn,
+.btn:hover,
+.btn:active,
+.btn:focus {
     outline: 0;
 }
 .navbar-nav a,
@@ -135,6 +156,10 @@ footer {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
+}
+.error {
+    display: none;
+    color: #FF0000;
 }
 
 /*Short info*/
@@ -297,7 +322,6 @@ blockquote p {
 
 #contact {
     background-color: #CFD8DC;
-    /*background-image: url('../img/contactbg.jpg');*/
     background-image: url('../img/city2.svg');
     /* CREDIT: freepik.com  */
 }
@@ -311,6 +335,39 @@ blockquote p {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     margin-bottom: 15px;
+}
+
+/* When contact form is being sent animation for message. */
+
+@-webkit-keyframes fadeinout {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+@keyframes fadeinout {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+#message_sent {
+    font-size: 1.3em;
+    display: inline-block;
+    opacity: 0;
+    text-align: left;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.message_sent_animation {
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
 }
 #map {
     width: 100%;
@@ -396,5 +453,12 @@ blockquote p {
         font-size: 1.3em;
         padding-left: 5px;
         padding-right: 5px;
+    }
+}
+@media screen and (max-width: 991px) {
+    #modal-resizer {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 12%;
     }
 }

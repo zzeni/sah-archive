@@ -9,10 +9,9 @@
     <meta content="Ivan Ivanov" name="author">
     <title>Meat And Sweet</title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css"> -->
     <!-- Custom CSS -->
     <link href="css/full-slider.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -297,7 +296,7 @@
                             <div class="row">
                                 <div class="col-sm-12 col-md-3"><img alt="Meat And Sweet Logo" class="img-responsive" id="MASLogo" src="img/logo.png"></div>
                                 <div class="col-sm-12 col-md-9">
-                                    <p class="history_text" data-about-ts="history_text">Our restaurant was born in the flames of passion. Our passion for tasty meat dishes and sweet deserts. So one day we decided to share with the rest of the world the wonderful recipes we have discovered with a bit of style. The rest is a dream come true. We have opened our restaurant in 2014 in the city of Sofia, Bulgaria. It is located at the top of the Lozenets hill, Korab Planina street. Since the opening of the restaurant we came to the conclusion that we need to search for even more recipes. And we did. Today we have a dedicated Recipe Hunter that scouts the world for all these tasty treasures.
+                                    <p class="history_text" data-about-ts="history_text">Our restaurant was born in the flames of passion. Our passion for tasty meat dishes and sweet deserts. So one day we decided to share with the rest of the world the wonderful recipes we have discovered with a bit of style. The rest is a dream come true. We have opened our restaurant in 2014 in the city of Sofia, Bulgaria. Since the opening of the restaurant we came to the conclusion that we need to search for even more recipes. And we did. Today we have a dedicated Recipe Hunter that scouts the world for all these tasty treasures.
                                     </p>
                                 </div>
                             </div>
@@ -393,12 +392,13 @@
                         <div id="map"></div>
                     </div>
                     <div class="col-xs-12 col-md-6">
-                        <form role="form" id="contact_form" action="" class="form-horizontal" method="post" role="form">
+                        <form role="form" id="contact_form" action="http://omicron.uchenici.bg/contact.php" class="form-horizontal" method="post" role="form">
                             <div class="form-group">
                                 <!-- Name -->
                                 <label class="sr-only" for="sender_name" data-contact-ts="your_name">Your name</label>
                                 <div class="col-sm-12">
-                                    <input class="form-control" id="sender_name" name="sender_name" required="" type="text" placeholder="Your Name / Вашето име">
+                                    <input class="form-control" id="sender_name" name="sender_name" required="" type="text" placeholder="Your Name / Вашето име *">
+									<span class="error">Please enter a valid name.</span>
                                 </div>
                             </div>
 
@@ -407,13 +407,15 @@
                                 <label class="sr-only" for="telnum" data-contact-ts="contact_phone">Phone</label>
                                 <div class="col-sm-12">
                                     <input class="form-control" id="telnum" name="telnum" type="tel" placeholder="Phone (Optional) / Телефон (Не е задължително)">
+									<span class="error">Please enter a valid phone number.</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <!-- Email -->
                                 <label class="sr-only" for="emailid">Email</label>
                                 <div class="col-sm-12">
-                                    <input class="form-control" id="emailid" name="emailid" type="email" required="" placeholder="Your Email / Вашия email адрес">
+                                    <input class="form-control" id="emailid" name="emailid" type="email" required="" placeholder="Your Email / Вашия email адрес *">
+									<span class="error">Please enter a valid email.</span>
                                 </div>
                             </div>
 
@@ -421,14 +423,16 @@
                                 <!-- Textarea -->
                                 <label for="contact_message" class="sr-only" data-contact-ts="contact_message">Your message</label>
                                 <div class="col-sm-12">
-                                    <textarea class="form-control" id="contact_message" name="contact_message" rows="8" placeholder="Your Message / Вашето съобщение"></textarea>
+                                    <textarea class="form-control" id="contact_message" name="contact_message" rows="8" placeholder="Your Message / Вашето съобщение *"></textarea>
+									<span class="error">Please enter more than 3 symobols.</span>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <!-- Button -->
                                 <div class="col-sm-12">
-                                    <button class="btn btn-primary" type="submit" data-contact-ts="contact_send">Send</button>
+                                    <button class="btn btn-primary" id="contact_submit_btn" type="submit" data-contact-ts="contact_send" value="Send">Send</button>
+									<span id="message_sent">Message SEND!</span>
                                 </div>
                             </div>
 
@@ -480,8 +484,8 @@
     </script>
     <!-- Bootstrap Core JavaScript -->
 
-    <script src="js/bootstrap.min.js">
-
+    <!--<script src="js/bootstrap.min.js">-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     </script>
     <!-- Latest compiled and minified JavaScript -->
