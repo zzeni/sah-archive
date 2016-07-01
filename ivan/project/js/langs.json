@@ -1,0 +1,361 @@
+{
+    "en": {
+        "navigation": {
+            "home": "Home",
+            "gallery": "Gallery",
+            "menu": "Menu",
+            "reservations": "Reservations",
+            "about": "About",
+            "contact": "Contact"
+        },
+        "carousel": {
+            "caption1": "Ejoy meat in recipies from all around the world.",
+            "caption2": "Meat And Sweet<span class=\"regtm\">&reg;</span> is perfect for your events. Small or Large.",
+            "caption3": "The most important meal for the day is the Desert. And we know it."
+        },
+        "shortinfo": {
+            "paragraph1": "Meat And Sweet<span class=\"regtm\">&reg;</span> is a restourtant, trying to provide the combination we love most. We have collected the best recipies, the best ingredients and we have mixed them with our own passion to create an experience you will never forget.",
+            "paragraph2": "You will find the Meat And Sweet<span class=\"regtm\">&reg;</span> meals in every country, in every kitchen, in every restourant. But you can't visit them all. So we brought some of the best together under one roof. Because we love Meat And Sweet<span class=\"regtm\">&reg;</span> stuff.",
+            "footer_info": "Ivan Ivanov, Master Chef, <cite title=\"Meat And Sweet's Kitchen\">Meat And Sweet's Kitchen</cite>"
+        },
+
+        "section_headers": {
+            "gallery_header": "Gallery",
+            "menu_header": "Menu",
+            "reservations_header": "Reservations",
+            "about_header": "About Us",
+            "contact_header": "Contact Us"
+        },
+
+        "gallery": [{
+            "url": "img/gallery1.jpg",
+            "alt": "Cathering for a company party"
+            }, {
+            "url": "img/gallery2.jpg",
+            "alt": "East wing on dusk"
+            }, {
+            "url": "img/gallery3.jpg",
+            "alt": "Lamb ribs"
+            }, {
+            "url": "img/gallery4.jpg",
+            "alt": "Morning serving layout"
+            }, {
+            "url": "img/gallery5.jpg",
+            "alt": "Our kitchens"
+            }, {
+            "url": "img/gallery6.jpg",
+            "alt": "White forest desert"
+            }, {
+            "url": "img/gallery7.jpg",
+            "alt": "Our best slised meat"
+            }, {
+            "url": "img/gallery8.jpg",
+            "alt": "Chocolate musse with strawberry"
+            }, {
+            "url": "img/gallery9.jpg",
+            "alt": "Snow dish"
+            }, {
+            "url": "img/gallery10.jpg",
+            "alt": "Our summer garden tables"
+            }, {
+            "url": "img/gallery11.jpg",
+            "alt": "Summer cold desert"
+            }, {
+            "url": "img/gallery12.jpg",
+            "alt": "Champion breakfast nest"
+            }],
+
+
+        "menu": {
+            "description": "Here are some of our favourite meals. For the full list, please click here. <a href=\"menu.pdf\"><span aria-hidden=\"true\" class=\"glyphicon glyphicon-download\" id=\"downloadIcon\"></span></a>",
+            "category_breakfast": "Breakfast",
+            "category_lunch": "Lunch",
+            "category_dinner": "Dinner",
+
+            "breakfast": [{
+                    "title": "Eggs Benedict",
+                    "description": "Hot buttered English muffins, Canadian-style bacon, and poached eggs are topped with a heavenly drizzle of hollandaise sauce."
+                }
+
+                , {
+                    "title": "Blueberry Oat Squares",
+                    "description": "Our version of these delicious bars is not only mouth watering, but it will keep you coming for more!"
+                }
+
+                , {
+                    "title": "Fresh Start Sampller",
+                    "description": "Start your day with a mix of low fat vanilla yogurt, fresh seasonal fruit topped with our honey oat granola mix with almonds and dried fruit, two eggs* cooked to order."
+                }
+
+                , {
+                    "title": "Double Meat Breakfast",
+                    "description": "Three eggs cooked to order with a full order of bacon and sausage patties. Served with Grits, Sawmill Gravy, homemade Buttermilk Biscuits and real butter."
+                }
+
+            ],
+
+            "lunch": [{
+                    "title": "Beef Lasagne",
+                    "description": "Rich beef ragu and creamy bechamel sauce layered between pasta sheets, with Neapolitan sauce."
+                }
+
+                , {
+                    "title": "Buttermilk Flapjacks",
+                    "description": "Three flapjacks served with molasses and our signature sassafras-infused whipped cream."
+                },
+
+                {
+                    "title": "Braised Stuffed Morel",
+                    "description": "Welcome to the rich taste of a smoked duck, foie gras, asparagus and black garlic in style."
+                }
+
+                , {
+                    "title": "Strawberry Custard Tart",
+                    "description": "This incredible desert consists of elderflower, mascarpone sorbet and sweet cicely."
+                }
+            ],
+
+            "dinner": [{
+                    "title": "Buttermilk Pancakes",
+                    "description": "Three pancakes with your choice of one of our warm fruit toppings. All topped with real whipped cream. Enjoy apple, blackberry or peach."
+                }
+
+                , {
+                    "title": "Lemonade Parfait",
+                    "description": "A beautiful combination of honey, bergamot, sheep's milk yoghurt and something special."
+                }, {
+                    "title": "Pork Roulet With Spanach",
+                    "description": "This fine meal is made from pork, spanach, mini pumkins and fresh potatoes."
+                }, {
+                    "title": "\"Eggplant “Mignon\" Plus",
+                    "description": "Large herb-infused eggplant steak, ratatouille, roasted tomato and mint pesto."
+                }
+            ]
+
+        },
+
+        "reservations": {
+            "res_note": "For parties of six, we recommend making reservations at least two weeks in advance. For walk-ins, we only seat parties on a first come, first served basis.",
+            "res_note2": "For parties of seven and more, Please call us at:",
+            "first_name": "First Name *",
+            "last_name": "Last Name *",
+            "phone": "Phone *",
+            "guests": "Number of Guests *",
+            "date": "Date",
+            "comments": "Comments",
+            "send_button": "Send"
+        },
+
+        "about_us": {
+            "history": "Our History",
+            "history_text": "Our restaurant was born in the flames of passion. Our passion for tasty meat dishes and sweet deserts. So one day we decided to share with the rest of the world the wonderful recipes we have discovered with a bit of style. The rest is a dream come true. We have opened our restaurant in 2014 in the city of Sofia, Bulgaria. Since the opening of the restaurant we came to the conclusion that we need to search for even more recipes. And we did. Today we have a dedicated Recipe Hunter that scouts the world for all these tasty treasures.",
+            "our_team": "Our Team",
+            "ceo_name": "Dragomir Ivanov",
+            "ceo_position": "CEO",
+            "ceo_description": "Our CEO and co-founder Drago is the heart of the restaurant. He is like the person we bother with everything, so he  leaves all and gets a meal from the kitchen.",
+            "chef_name": "Ivan Ivanov",
+            "chef_position": "CFO, Master Chef",
+            "chef_description": "Ivan is a true magician in the kitchen. His two favourite types of dishes are... you have guessed right - meat and sweet ones. And he turns them into reality.",
+            "hunter_name": "Galya Dimitrova",
+            "hunter_position": "Gourmet, Recipe Hunter",
+            "hunter_description": "The hunt is on! Galya is scouting the world for great new recipes for us to offer you in the restaurant. Image you are traveling while eating. We do this.",
+            "our_philosophy": "Our Philosophy",
+            "philosophy_text": "Our philosophy is simple. There are too many great dishes out there and we simply can't reach them. So, there is a solution. To bring them to us. We are not shy to admit that meat is the thing to eat. But after a perfect meal we asked ourselfs what follows? A sweet desert of course!"
+        },
+
+        "contact": {
+            "location1": "Location",
+            "location2": "123 Korab Planina Street",
+            "location3": "Bulgaria, Sofia 1000",
+            "hours1": "Hours",
+            "hours2": "Mon - Thu, 8 am - 10 pm",
+            "hours3": "Fri - Sun, 9 am - 12 pm",
+            "contact1": "Contact",
+            "your_name": "Your Name",
+            "contact_phone": "Phone",
+            "contact_message": "Your Message",
+            "contact_send": "Send"
+        }
+
+    },
+    "bg": {
+        "navigation": {
+            "home": "Начало",
+            "gallery": "Галерия",
+            "menu": "Меню",
+            "reservations": "Резервации",
+            "about": "За Нас",
+            "contact": "Контакти"
+        },
+        "carousel": {
+            "caption1": "Насладете се на месото в рецепти от цял свят.",
+            "caption2": "Meat And Sweet<span class=\"regtm\">&reg;</span> е перфектен за вашите събития. Малки или големи.",
+            "caption3": "Най-важното ядене за деня е Десертът. И го знаем."
+        },
+        "shortinfo": {
+            "paragraph1": "Meat And Sweet<span class=\"regtm\">&reg;</span> е ресторант, опитващ да предложи комбинацията, която обичаме най-много. Събрахме най-добрите рецепти, най-добрите съставки и ги смесихме с нашата собствена страст, за да създадем изживяване, което няма да забравите.",
+            "paragraph2": "Ще намерите месо и сладки ястия във всяка държава, във всяка кухня, във всеки ресторант. Но не можете да ги посетите всичките. Затова събрахме някои от най-добрите от тях заедно под един покрив. Защото обичаме Meat And Sweet<span class=\"regtm\">&reg;</span> неща.",
+            "footer_info": "Иван Иванов, Главен Готвач, <cite title=\"Кухнята на Meat And Sweet\">Кухнята на Meat And Sweet</cite>"
+        },
+
+        "section_headers": {
+            "gallery_header": "Галерия",
+            "menu_header": "Меню",
+            "reservations_header": "Резервации",
+            "about_header": "За Нас",
+            "contact_header": "Контакти"
+        },
+
+        "gallery": [
+            {
+                "url": "img/gallery1.jpg",
+                "alt": "Кетъринг за фирмено парти"
+            }, {
+                "url": "img/gallery2.jpg",
+                "alt": "Източното крило по здрач"
+            }, {
+                "url": "img/gallery3.jpg",
+                "alt": "Агнешки ребърца"
+            }, {
+                "url": "img/gallery4.jpg",
+                "alt": "Сутрешно сервиране"
+            }, {
+                "url": "img/gallery5.jpg",
+                "alt": "Нашата кухня"
+            }, {
+                "url": "img/gallery6.jpg",
+                "alt": "Десерт Бяла гора"
+            }, {
+                "url": "img/gallery7.jpg",
+                "alt": "Нашето най-добре нарязано месо"
+            }, {
+                "url": "img/gallery8.jpg",
+                "alt": "Шоколадов мус с ягоди"
+            }, {
+                "url": "img/gallery9.jpg",
+                "alt": "Снежно ястие"
+            }, {
+                "url": "img/gallery10.jpg",
+                "alt": "Масите в нашата лятна градина"
+            }, {
+                "url": "img/gallery11.jpg",
+                "alt": "Летен студен десерт"
+            }, {
+                "url": "img/gallery12.jpg",
+                "alt": "Загнездена закуска за шампиони"
+            }],
+
+        "menu": {
+            "description": "Тук са някои от нашите любими ястия. За пълния списък, моля натиснете тук. <a href=\"menu.pdf\"><span aria-hidden=\"true\" class=\"glyphicon glyphicon-download\" id=\"downloadIcon\"></span></a>",
+            "category_breakfast": "Закуска",
+            "category_lunch": "Обяд",
+            "category_dinner": "Вечеря",
+
+            "breakfast": [{
+                    "title": "Яйца Бенедикт",
+                    "description": "Прясно изпечена английска кифличка с масло, бекон в канадски стил, и печени яйца са покрити с райски полъх от холандски сос."
+                }
+
+                , {
+                    "title": "Боровинкови квадратчета",
+                    "description": "Нашата версия на тези вкусни квадратчета е не само предизвикваща слюнка, но ще ви накара да се връщате за още!"
+                }
+
+                , {
+                    "title": "Свежо начало на деня",
+                    "description": "Започнете деня си с микс от нискомаслено ванилово мляко, свежи плодове покрити с нашата медена гранола, смесена с бадеми и изсушени плодове, две яйца* сготвени поред"
+                }
+
+                , {
+                    "title": "Двойно месна закуска",
+                    "description": "Три яйца, сготвени поред с пълната подкрепа на бекон и мини наденички. Сервирано с Grits, Sawmill сос, домашни мътени бисквити и истинско масло."
+                }
+
+            ],
+
+            "lunch": [{
+                    "title": "Говежда лазаня",
+                    "description": "Говеждо рагу с богат вкус и кремообразен сос бешамел, покрит със слой паста с Неаполитански сос."
+                }
+
+                , {
+                    "title": "Мътени джапанки",
+                    "description": "Три палачинки сервирани с меласа и нашия уникален сметанен крем с шафран."
+                },
+
+                {
+                    "title": "Задушени пълнени гърди",
+                    "description": "Добре дошли в богатия вкус на задушено патешко, гъши дроб, аспарагус и черен чесън, поднесен със стил."
+                }
+
+                , {
+                    "title": "Ягодов сладкиш",
+                    "description": "Този невероятен десерт се състои от бъз, сорбе от маскарпоне и сладки Cicely."
+                }
+            ],
+
+            "dinner": [{
+                    "title": "Маслени палачинки",
+                    "description": "Три палачинки с топла гарнитура от плодове по ваш избор. Всичко това обгърнато от истински маслен крем. Насладете се на ябълка, къпини или праскова."
+                }
+
+                , {
+                    "title": "Лимонадено парфе",
+                    "description": "Красива комбинация от мед, бергамонт, кисело овче мляко и нещо специално в допълнение."
+                }, {
+                    "title": "Свинско роле със спанак",
+                    "description": "Това изискано ястие е направено от свинско, спанак, мини тиквички и свежи картофи."
+                }, {
+                    "title": "\"Яйца Миньон\" Плюс",
+                    "description": "Голяма пържола от яйца с подправки, рататуй, печени домати и ментово песто."
+                }
+            ]
+
+        },
+
+        "reservations": {
+            "res_note": "За групи от шест, препоръчваме да направите резервация поне две седмици по-рано. За клиенти без резервация, спазваме принципа - настаняваме всички дошли до капацитета на ресторанта.",
+            "res_note2": "За компании от седем или повече, моля обадете ни се на:",
+            "first_name": "Първо име *",
+            "last_name": "Фамилия *",
+            "phone": "Телефон *",
+            "guests": "Брой гости *",
+            "date": "Дата",
+            "comments": "Коментари",
+            "send_button": "Изпрати"
+        },
+
+        "about_us": {
+            "history": "Нашата история",
+            "history_text": "Нашият ресторант се роди в пламъците на страстта. Нашата страст за вкусни месни ястия и сладки десерти. Затова един ден решихме да споделим с останалия свят тези чудесни рецепти, които открихме, с малко стил. Останалото е една сбъдната мечта. Отворихме нашия ресторант през 2014 в град София, България. От отварянето на ресторанта, стигнахме до извода, че ни трябва да потърсим още рецепти. И ние го направихме. Днес имаме специално назначен ловец на рецепти, който кръстосва света в търсене на всички онези вкусни съкровища.",
+            "our_team": "Нашият отбор",
+            "ceo_name": "Драгомир Иванов",
+            "ceo_position": "Управител",
+            "ceo_description": "Нашият управител и съосновател Драго е сърцето на ресторанта. Той е човекът, който тормозим за всичко, затова понякога той оставя всичко и си взима нещо от кухнята.",
+            "chef_name": "Иван Иванов",
+            "chef_position": "Финанси, Майстор готвач",
+            "chef_description": "Иван е истински магьосник в кухнята. Неговите два любими вида ястия са... правилно предположихте - месни и сладкиши. И при това той ги превръща в реалност.",
+            "hunter_name": "Галя Димитрова",
+            "hunter_position": "Гастроном, Ловец на рецепти",
+            "hunter_description": "Ловът е в разгара си! Галя обикаля света в търсене на страхотни нови рецепти, които да ви предложим в ресторанта. Представете си как пътувате докато се храните. Ние го правим.",
+            "our_philosophy": "Нашата философия",
+            "philosophy_text": "Нашата философия е проста. Съществуват прекалено много страхотни ястия по света, но просто не можем да ги достигнем. Затова имаме решение. Да ги пренесем до нас. Ние не се свеним да си признаем, че месото е това, което се яде. Но след перфектно ястие се запитахме какво следва? Сладък десерт, разбира се!"
+        },
+
+        "contact": {
+            "location1": "Адрес",
+            "location2": "123 улица Кораб Планина",
+            "location3": "България, София 1000",
+            "hours1": "Работно време",
+            "hours2": "Пон - Пет, 8 ам - 10 пм",
+            "hours3": "Пет - Нед, 9 ам - 12 пм",
+            "contact1": "Контакти",
+            "your_name": "Вашето име",
+            "contact_phone": "Телефон",
+            "contact_message": "Вашето съобщение",
+            "contact_send": "Изпрати"
+        }
+
+    }
+
+}
