@@ -18,6 +18,48 @@ $(document).ready(function () {
     // Translations cashes.
     common.englishTranslation = {};
     common.bulgarianTranslation = {};
+    // Regular expressions
+    // The id serves as key for the RE, but we are getting the unique values from an additional storage
+    common.regulars = {
+        list: {
+            name: /^[A-Za-z ,.'-]+$/,
+            mail: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
+            message: /^.{5,}$/,
+            phone: /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/
+        },
+
+        firstname: function () {
+            return this.list.name;
+        },
+        lastname: function () {
+            return this.list.name;
+        },
+        clientphone: function () {
+            return this.list.phone;
+        },
+        clientemail: function () {
+            return this.list.mail;
+        },
+        comments: function () {
+            return this.list.message;
+        },
+        sendername: function () {
+            return this.list.name;
+        },
+        telnum: function () {
+            return this.list.phone;
+        },
+        emailid: function () {
+            return this.list.mail;
+        },
+        contactmessage: function () {
+            return this.list.message;
+        }
+
+        ///\b([A-Z]{1}[a-z]{1,30}[- ]{0,1}|[A-Z]{1}[- \']{1}[A-Z]{0,1}[a-z]{1,30}[- ]{0,1}|[a-z]{1,2}[ -\']{1}[A-Z]{1}[a-z]{1,30}){2,5}/        old /^[a-zA-Z0-9_-]{4,10}$/;
+    };
+
+
     // Common function for adding the generated elements by the menu and the gallery.
     common.appendItems = function (parent, itemsList) {
         itemsList.forEach(function (item) {
@@ -26,28 +68,96 @@ $(document).ready(function () {
     };
 
 
+    // Common function for adding has-error class to the parent of the checked input.
+    // Shows the .error span with instructions.
+    // Also disables the Send button for the form.
+    common.setError = function (parent, btn) {
+        parent.addClass('has-error');
+        parent.find('.error').show();
+        $(btn).prop('disabled', true);
+    };
+
+    // Common function for adding a has-success class to the parent of the checked input.
+    // Hides the .error span.
+    common.good2go = function (parent) {
+        parent.addClass('has-success');
+        parent.find('.error').hide();
+    };
+
+    // Common function for cleaning the .has-error and .has-success classes, i.e. returning the input
+    // to a default state.
+    // Enables the Send button.
+    common.cleanClass = function (parent, btn) {
+        $(btn).prop('disabled', false);
+
+        if (parent.hasClass("has-error")) {
+            parent.removeClass("has-error");
+            parent.find(".error").hide();
+        }
+        if (parent.hasClass("has-success")) {
+            parent.removeClass("has-success");
+        }
+    };
+
+    // A function used for asynchronously submitting the content of the form to a php script that
+    // sends this content to a hard coded (in the php) file email. It is given in the sendToMail.txt
+    common.contactSubmitHandler = function (givenForm) {
+
+        $.ajax({
+            url: $(givenForm).attr("action"),
+            type: $(givenForm).attr("method"),
+            data: $(givenForm).serialize(),
+            cache: false,
+            error: function (e) {
+                console.log(e);
+            }
+        });
+    };
+
+    // Checks the given value of the input against the corresponding RegExp and checks if it is mandatory.
+    common.checkInput = function (id, value, mandatory) {
+
+        var everythingOk = true;
+
+
+        if (!Boolean(value.match(common.regulars[id])) && mandatory) {
+            everythingOk = false;
+        }
+
+        return everythingOk;
+    };
+
+
+
+
+
 
 
     (function cookieManagementAndGenerate() {
+        'use strict';
 
-
+        // Class for the gallery items. Accepts an url addres and an alt. They are from langs.json and the alt has two versions.
         function GalleryItemClass(url, alt) {
             this.url = url;
             this.alt = alt;
         }
+
+        // Own method for generating the html for the gallery item.
         GalleryItemClass.prototype.generateHTML = function () {
             var galleryElementWrapper = '<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">' + '<div class="thumbnail">' +
                 '<img class="img-responsive gallery-item" src="' + this.url + '" alt="' + this.alt + '">' + '</div>' + '</div>';
             return galleryElementWrapper;
         };
 
-
+        // Class for the menu items (the text). It has title and description that are from langs.json
         function MenuItemClass(title, description) {
             this.title = title;
             this.description = description;
         }
+
+        // Own method for generating the html for the menu item.
         MenuItemClass.prototype.generateHTML = function () {
-            var menuElementWrapper = '<div class="col-sm-6 col-md-12 menuItem">' + '<h4 class="dishTitle">' + this.title + '</h4>' + '<p>' + this.description +
+            var menuElementWrapper = '<div class="col-md-6 col-lg-12 menuItem">' + '<h4 class="dishTitle">' + this.title + '</h4>' + '<p>' + this.description +
                 '</p>' + '</div>';
             return menuElementWrapper;
         };
@@ -58,11 +168,12 @@ $(document).ready(function () {
 
 
         // Cookie management code
-
+        // loadCookies - reads the cookie and and stores it to an object in common.cookie
+        // Gets the language from the cookie and stores it in common.cookieLanguage
         loadCookies(common.cookies);
         common.cookieLanguage = common.cookies.language;
 
-
+        // Sets the lang
         if (common.cookieLanguage && (common.cookieLanguage === "bg" || common.cookieLanguage === "en")) {
             $('html').attr('lang', common.cookieLanguage);
 
@@ -80,11 +191,8 @@ $(document).ready(function () {
 
         /* if ((localStorage.getItem("englishTranslationObj") !== null) && (localStorage.getItem("bulgarianTranslationObj") !== null)) {
 
-
              //common.englishTranslation = localStorage.getItem("englishTranslationObj");
              //common.bulgarianTranslation = localStorage.getItem("bulgarianTranslationObj");
-
-
 
              applyTranslation();
          } else {*/
@@ -148,6 +256,7 @@ $(document).ready(function () {
         // Code for reading the json and applying the translation
 
         function applyTranslation() {
+
 
             var typesOfDataTags = ["data-nav-ts", "data-carousel-ts", "data-shortinfo-ts",
                                    "data-header-ts", "data-menu-ts", "data-reservations-ts", "data-about-ts", "data-contact-ts"];
@@ -238,6 +347,8 @@ $(document).ready(function () {
 
 
     function carouselControls() {
+        'use strict';
+
         $("#myCarousel").carousel({
             interval: 5000
         });
@@ -273,7 +384,7 @@ $(document).ready(function () {
         } // End if
     });
 
-    // For sliding in elements.
+    // For sliding (fading) in elements.
     $(window).scroll(function () {
         $(".slideanim").each(function () {
             var pos = $(this).offset().top;
@@ -293,6 +404,8 @@ $(document).ready(function () {
 
     // For gallery modal.
     function callModal() {
+        'use strict';
+
         $('.gallery-item').click(function (event) {
             event.preventDefault();
             $('.imagepreview').attr('src', $(this).attr('src'));
@@ -309,6 +422,8 @@ $(document).ready(function () {
 
     // Date picker in Reservations
     $(function () {
+        'use strict';
+
         var today = new Date();
         $('#datetimepicker12').datetimepicker({
             inline: true,
@@ -318,147 +433,64 @@ $(document).ready(function () {
     });
 
     //hide or show the "back to top" link
-    $(window).scroll(function () {
-
-    });
+    //$(window).scroll(function () {
+    //});
 
 
     // Google Maps
-    function initMap() {
-        var mapDiv = $("map");
-        var map = new google.maps.Map(mapDiv, {
+    /*function initMap() {
+        'use strict';
+
+        //var mapDiv = $("#map");
+        var map = new google.maps.Map(document.getElementById('map'), {
             center: {
-                lat: 44.540,
-                lng: -78.546
+                lat: -34.397,
+                lng: 150.644
             },
             zoom: 8
         });
-    }
+    }*/
 
 
-	(function contactFormHandler(){
-		
-		function checkInput(id, value){
-			var nameRE =  /\b([A-Z]{1}[a-z]{1,30}[- ]{0,1}|[A-Z]{1}[- \']{1}[A-Z]{0,1}[a-z]{1,30}[- ]{0,1}|[a-z]{1,2}[ -\']{1}[A-Z]{1}[a-z]{1,30}){2,5}/  // old /^[a-zA-Z0-9_-]{4,10}$/;
-			var phoneRE = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
-			var emailRE = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
-			
-			var everythingOk = true;
-			
-			if (id === "sender_name") {
-				if ( !Boolean(value.match(nameRE)) ) {
-					everythingOk = false;
-				}
-			}
-			else if (id === "telnum" && value !== "") {
-				if ( !Boolean(value.match(phoneRE)) ) {
-					everythingOk = false;
-				}
-			}
-			else if (id === "emailid") {
-				if ( !Boolean(value.match(emailRE)) ) {
-					everythingOk = false;
-				}
-			}
-			else if (id === "contact_message") {
-				if (value.length < 3) {
-					everythingOk = false;
-				}
-			}
-			
-			return everythingOk;
-		}
-		
-		
-		
-		
-		function setError(parent) {
-			parent.addClass('has-error');
-			parent.find('.error').show();
-			$("#contact_submit_btn").prop('disabled', true);
-		}
 
-		function good2go(parent) {
-			parent.addClass('has-success');
-			parent.find('.error').hide();
-		}
+    $("#reservation_form input, #contact_form input").blur(function () {
+        var value = $(this).val() || "";
+        var id = $(this).attr("id");
+        var inputParent = $(this).parent();
+        var theBtn = $(this).hasClass("contact_element") ? "#contact_submit_btn" : "send_reservation";
+        var isRequired = $(this).prop("required");
 
-		function cleanClass(parent) {
-			$("#contact_submit_btn").prop('disabled', false);
-			
-			if (parent.hasClass("has-error")) {
-				parent.removeClass("has-error");
-				parent.find(".error").hide();
-			}
-			if (parent.hasClass("has-success")) {
-				parent.removeClass("has-success");
-			}
-		}
-		
-
-		
-		$("#contact_form input, #contact_message").blur(function(){
-			var value = $(this).val();
-			var id = $(this).attr("id");
-			var inputParent = $(this).parent();
-			
-			
-			
-			if (checkInput(id, value) === true && value !== "") { // if everything is ok
-				cleanClass(inputParent);
-				good2go(inputParent);
-			}
-			else if (checkInput(id, value) === false && value !== "") {
-				cleanClass(inputParent);
-				setError(inputParent);
-			}
-			else {
-				cleanClass(inputParent);
-			}
-			
-		});	
-		
-		
-		function contactSubmitHandler() {
-		
-			$.ajax({
-				url: $("#contact_form").attr("action"),
-				type: $("#contact_form").attr("method"),
-				data: $("#contact_form").serialize(),
-				cache: false,
-				error: function (e) {
-					console.log(e);
-				}
-			});
-		}
-
-		$("#contact_form").on('submit', function (ev) {
-			
-			//if ( $("#contact_form").find('.error').length !== 0  ) { // if there are no errors
-			
-				contactSubmitHandler();
-				ev.preventDefault();	
-
-				document.getElementById("contact_form").reset();
-				
-				$(".has-success, .has-error").removeClass("has-success has-error");
-				$("#message_sent").addClass("message_sent_animation");
-				
-			
-			
-			ev.preventDefault()
-			
-
-		});
-			
-	}());
-	
-	
-
-	
-	
+        var statusOfInput = common.checkInput(id, value, isRequired);
 
 
+        if (statusOfInput === true && value !== "") { // if everything is ok
+            common.cleanClass(inputParent, theBtn);
+            common.good2go(inputParent);
+        } else if (statusOfInput === false && value !== "") {
+            common.cleanClass(inputParent, theBtn);
+            common.setError(inputParent, theBtn);
+        } else {
+            common.cleanClass(inputParent, theBtn);
+        }
+    });
+
+
+
+
+    $("#contact_form").on('submit', function (ev) {
+
+        //if ( $("#contact_form").find('.error').length !== 0  ) { // if there are no errors
+
+        common.contactSubmitHandler("#contact_form");
+        ev.preventDefault();
+
+        document.getElementById("contact_form").reset();
+
+        $(".has-success, .has-error").removeClass("has-success has-error");
+        $("#message_sent").addClass("message_sent_animation");
+
+        ev.preventDefault();
+    });
 
 
 
