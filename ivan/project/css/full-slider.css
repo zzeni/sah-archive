@@ -1,8 +1,4 @@
-/*!
- * Start Bootstrap - Full Slider HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+/**/
 
 html,
 body {
@@ -52,11 +48,12 @@ body {
     outline: 0;
     font-size: 1.3em;
 }
-.navbar-brand,
+.navbar-brand {
+    font-size: 1.8em;
+}
 .navbar-brand:hover,
 .navbar-brand:active,
 .navbar-brand:focus {
-    font-size: 1.8em;
     outline: 0;
     color: #FFFFF0;
 }
@@ -97,7 +94,7 @@ body {
     -o-background-size: cover;
 }
 #carouselButtons {
-    right: 0;
+    left: 0;
     position: absolute;
     bottom: 0;
     z-index: 10;
@@ -261,13 +258,11 @@ blockquote p {
 #reservations {
     background-color: #F7F9FE;
 }
-#emailid:optional,
-#comments:optional {
-    border: 1px solid #eee;
-}
-.reservation_text {
+
+/*.reservation_text {
     text-align: justify;
-}
+}*/
+
 
 /*About*/
 
@@ -322,6 +317,7 @@ blockquote p {
 
 #contact {
     background-color: #CFD8DC;
+    /*background-image: url('../img/contactbg.jpg');*/
     background-image: url('../img/city2.svg');
     /* CREDIT: freepik.com  */
 }
@@ -382,6 +378,28 @@ blockquote p {
     background-color: #263238;
     color: #F7F9FE;
     width: 100%;
+}
+#social_container {
+    padding-bottom: 20px;
+}
+.fa_link,
+.fa_link:hover,
+.fa_link:active,
+.fa_link:focus {
+    outline: 0;
+}
+.fa {
+    font-size: 2.2em;
+    color: rgba(255, 255, 255, 0.6);
+    width: 50px;
+    height: 50px;
+    outline: 0;
+}
+.fa:hover,
+.fa:active,
+.fa:focus {
+    color: #FFFFF0;
+    outline: 0;
 }
 
 /* Scroll to top */
