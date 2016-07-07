@@ -21,14 +21,16 @@ $(document).ready(function () {
     // Regular expressions
     // The id serves as key for the RE, but we are getting the unique values from an additional storage
     common.regStorage = {
-        name: /^[A-Za-z ,.'-]+$/,
+        name: /^[А-яA-Za-z ,.'-]+$/,
         mail: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
         message: /^.{5,}$/,
         phone: /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/
     };
 
 
-
+	// This object holds all the regexs used for the validation.
+	// The keys are the ids of the items that will be validated.
+	// So we are using the ids instead of an additional params.
     common.regulars = {
 
         firstname: common.regStorage.name,
@@ -415,32 +417,13 @@ $(document).ready(function () {
         });
     });
 
-    //hide or show the "back to top" link
-    //$(window).scroll(function () {
-    //});
 
 
-    // Google Maps
-    /*function initMap() {
-        'use strict';
-
-        //var mapDiv = $("#map");
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: {
-                lat: -34.397,
-                lng: 150.644
-            },
-            zoom: 8
-        });
-    }*/
-
-
-
-    $("#reservation_form input, #contact_form input").blur(function () {
+    $("#reservation_form input, #contact_form input, #contactmessage").blur(function () {
         var value = $(this).val() || "";
         var id = $(this).attr("id");
         var inputParent = $(this).parent();
-        var theBtn = $(this).hasClass("contact_element") ? "#contact_submit_btn" : "send_reservation";
+        var theBtn = $(this).hasClass("contact_element") ? "#contact_submit_btn" : "#send_reservation";
         //var isRequired = $(this).prop("required");
 
         var statusOfInput = common.checkInput(id, value);

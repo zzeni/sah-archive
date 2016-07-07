@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="" name="description">
+    <meta content="Meat And Sweet is a restaurant delicious and exotic meat recipes and deserts from around the world." name="description">
     <meta content="Ivan Ivanov" name="author">
     <title>Meat And Sweet</title>
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
     <!-- Bootstrap Core CSS -->
     <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/full-slider.css" rel="stylesheet">
@@ -42,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button> <a class="navbar-brand" href="#home">MEAT AND SWEET</a>
+                </button> <a class="navbar-brand" href="#home">MEAT AND SWEET<span class="regtm">&reg;</span></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
@@ -213,12 +216,13 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-9">
-                    <form action="" class="form-horizontal" method="post" role="form">
+                    <form action="" id="reservation_form" class="form-horizontal" method="post" role="form">
                         <div class="form-group">
                             <!-- First Name -->
                             <label class="col-sm-3 control-label" for="firstname" data-reservations-ts="first_name">First Name *</label>
                             <div class="col-sm-9">
                                 <input class="form-control" id="firstname" name="firstname" required="" type="text">
+                                <span class="error">Please enter a valid first name.</span>
                             </div>
                         </div>
                         <div class="form-group">
@@ -226,27 +230,29 @@
                             <label class="col-sm-3 control-label" for="lastname" data-reservations-ts="last_name">Last Name *</label>
                             <div class="col-sm-9">
                                 <input class="form-control" id="lastname" name="lastname" required="" type="text">
+                                <span class="error">Please enter a valid last name.</span>
                             </div>
                         </div>
                         <div class="form-group">
                             <!-- Area and Phone Number -->
-                            <label class="col-xs-12 col-sm-3 control-label" for="telnum" data-reservations-ts="phone">Phone *</label>
+                            <label class="col-xs-12 col-sm-3 control-label" for="clientphone" data-reservations-ts="phone">Phone *</label>
                             <div class="col-sm-9 col-md-9">
-                                <input class="form-control" id="telnum" name="telnum" required="" type="tel">
+                                <input class="form-control" id="telnum" name="clientphone" required="" type="tel">
                             </div>
                         </div>
                         <div class="form-group">
                             <!-- Email -->
-                            <label class="col-sm-3 control-label" for="emailid">Email</label>
+                            <label class="col-sm-3 control-label" for="clientemail">Email</label>
                             <div class="col-sm-9">
-                                <input class="form-control" id="emailid" name="emailid" type="email">
+                                <input class="form-control" id="clientemail" name="emailid" type="email" placeholder="Optional / Не е задължително">
+                                <span class="error">Please enter a valid email.</span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label" for="radios" data-reservations-ts="guests">Number of Guests *</label>
-                            <div class="col-sm-9" id="radios">
+                            <label class="col-sm-3 control-label" for="numberOfGuests" data-reservations-ts="guests">Number of Guests *</label>
+                            <div class="col-sm-9" id="numberOfGuests">
                                 <label class="radio-inline">
-                                    <input id="inlineRadio1" name="inlineRadioOptions" type="radio" value="option1">1</label>
+                                    <input id="inlineRadio1" name="inlineRadioOptions" type="radio" value="option1" checked="checked">1</label>
                                 <label class="radio-inline">
                                     <input id="inlineRadio2" name="inlineRadioOptions" type="radio" value="option2">2</label>
                                 <label class="radio-inline">
@@ -269,13 +275,14 @@
                             <!-- Comments -->
                             <label class="col-sm-3 control-label" for="comments" data-reservations-ts="comments">Comments</label>
                             <div class="col-sm-9">
-                                <input class="form-control" id="comments" name="commnets" type="text">
+                                <input class="form-control" id="comments" name="comments" type="text" placeholder="Optional / Не е задължително">
+                                <span class="error">Please enter more than 5 symobols.</span>
                             </div>
                         </div>
                         <div class="form-group">
                             <!-- Button -->
                             <div class="col-sm-offset-3 col-sm-9">
-                                <button class="btn btn-primary" type="submit" data-reservations-ts="send_button">Send</button>
+                                <button class="btn btn-primary" type="submit" data-reservations-ts="send_button" id="send_reservation">Send</button>
                             </div>
                         </div>
                     </form>
@@ -389,16 +396,18 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
-                        <div id="map"></div>
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5866.97335097735!2d23.327753888520103!3d42.67223222836032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85acabf78135%3A0x1c9aa1f8713b0927!2z0YPQuy4g4oCe0JrQvtGA0LDQsSDQv9C70LDQvdC40L3QsOKAnCwg0KHQvtGE0LjRjw!5e0!3m2!1sbg!2sbg!4v1467495678755" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <form role="form" id="contact_form" action="http://omicron.uchenici.bg/contact.php" class="form-horizontal" method="post" role="form">
                             <div class="form-group">
                                 <!-- Name -->
-                                <label class="sr-only" for="sender_name" data-contact-ts="your_name">Your name</label>
+                                <label class="sr-only" for="sendername" data-contact-ts="your_name">Your name</label>
                                 <div class="col-sm-12">
-                                    <input class="form-control" id="sender_name" name="sender_name" required="" type="text" placeholder="Your Name / Вашето име *">
-									<span class="error">Please enter a valid name.</span>
+                                    <input class="form-control contact_element" id="sendername" name="sender_name" required="" type="text" placeholder="Your Name / Вашето име *">
+                                    <span class="error">Please enter a valid name.</span>
                                 </div>
                             </div>
 
@@ -406,25 +415,25 @@
                                 <!-- Phone (optinal) -->
                                 <label class="sr-only" for="telnum" data-contact-ts="contact_phone">Phone</label>
                                 <div class="col-sm-12">
-                                    <input class="form-control" id="telnum" name="telnum" type="tel" placeholder="Phone (Optional) / Телефон (Не е задължително)">
-									<span class="error">Please enter a valid phone number.</span>
+                                    <input class="form-control contact_element" id="telnum" name="telnum" type="tel" placeholder="Phone (Optional) / Телефон (Не е задължително)">
+                                    <span class="error">Please enter a valid phone number.</span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <!-- Email -->
                                 <label class="sr-only" for="emailid">Email</label>
                                 <div class="col-sm-12">
-                                    <input class="form-control" id="emailid" name="emailid" type="email" required="" placeholder="Your Email / Вашия email адрес *">
-									<span class="error">Please enter a valid email.</span>
+                                    <input class="form-control contact_element" id="emailid" name="emailid" type="email" required="" placeholder="Your Email / Вашия email адрес *">
+                                    <span class="error">Please enter a valid email.</span>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <!-- Textarea -->
-                                <label for="contact_message" class="sr-only" data-contact-ts="contact_message">Your message</label>
+                                <label for="contactmessage" class="sr-only" data-contact-ts="contact_message">Your message</label>
                                 <div class="col-sm-12">
-                                    <textarea class="form-control" id="contact_message" name="contact_message" rows="8" placeholder="Your Message / Вашето съобщение *"></textarea>
-									<span class="error">Please enter more than 3 symobols.</span>
+                                    <textarea class="form-control contact_element" id="contactmessage" name="contact_message" rows="8" placeholder="Your Message / Вашето съобщение *"></textarea>
+                                    <span class="error">Please enter more than 5 symobols.</span>
                                 </div>
                             </div>
 
@@ -432,19 +441,13 @@
                                 <!-- Button -->
                                 <div class="col-sm-12">
                                     <button class="btn btn-primary" id="contact_submit_btn" type="submit" data-contact-ts="contact_send" value="Send">Send</button>
-									<span id="message_sent">Message SEND!</span>
+                                    <span id="message_sent">Message SEND!</span>
                                 </div>
                             </div>
 
                         </form>
                     </div>
                 </div>
-
-
-
-
-
-
 
             </div>
         </div>
@@ -453,6 +456,21 @@
     <!-- Footer -->
     <footer class="row-footer">
         <div class="container">
+
+            <div class="row" id="social_container">
+                <div class="col-sm-4 col-sm-offset-4">
+                    <div class="col-xs-4 social_">
+                        <a href="https://www.facebook.com/" target="_blank" class="fa_link"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://twitter.com/" target="_blank" class="fa_link"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="https://plus.google.com/" target="_blank" class="fa_link"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-lg-12">
                     <p>Copyright &copy; Meat And Sweet<span class="regtm">&reg;</span> 2016</p>
@@ -466,35 +484,21 @@
     <a class="cd-top" href="#home"></a>
     <!-- jQuery -->
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js">
-
-
-    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <!-- Moment JS -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js">
-
-
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
     <!-- Boostrap DateTime js -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js">
-
-
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
 
     <!--<script src="js/bootstrap.min.js">-->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script> -->
-
-    <script src="js/script.js">
-
-
-    </script>
+    <!-- My custom script -->
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
