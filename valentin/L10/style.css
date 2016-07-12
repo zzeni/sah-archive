@@ -1,0 +1,10 @@
+textarea {
+  width: 100%;
+}
+
+.center-block {
+  text-align: center;
+}
+
+.modal-content {
+  background-color: skyblue;

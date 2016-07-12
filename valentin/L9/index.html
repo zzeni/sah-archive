@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Contact form">
+  <meta name="author" content="Valentin Nedyalkov">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Contact me </title>
+</head>
+
+<body>
+  <header>
+    <div class="container text-center">
+      <h1>Contact Us </h1>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 ">
+        <form method="post" action="index.html" id="ContactForm">
+          <div class="form-group">
+            <label for="username">Your name</label>
+            <input class="form-control" type="text" id="username" name="username" placeholder="Please type your name here" required/>
+          </div>
+          <div class="form-group">
+            <label for="email">Your email</label>
+            <input class="form-control" type="email" id="email"  name="email" placeholder="user@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Your phone</label>
+            <input class="form-control" type="tel" id="phone" name="telephone" placeholder="Please type your phone here"  required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea rows="10" id="message" name="message"/></textarea>
+          </div>
+          <div class="form-group">
+            <button class="form-control" type="submit" form="ContactForm" value="Submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
