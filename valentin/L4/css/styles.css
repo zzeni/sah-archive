@@ -1,0 +1,150 @@
+/*-------------------------------------------------
+GLOBALS CLASSES 
+-------------------------------------------------*/
+*{padding:0; margin:0;}
+body{ font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#1491c1; background:url(../images/bg.jpg) repeat;}
+img{border:none;}
+h1{ font-family: 'Droid Serif', serif; font-weight:normal; color:#fff;}
+h2{ font-family: 'Droid Serif', serif; font-weight:normal; color:#fff; font-size:18px;}
+P{ line-height:20px;}
+a{text-decoration:none; color:#1491c1;}
+a:hover{color:#fff;}
+
+/*-------------------------------------------------
+GENERAL CLASSES
+-------------------------------------------------*/
+.mar-top{ margin-top:40px;}
+.mar-top30{ margin-top:30px;}
+.mar-bottom{ margin-bottom:40px;}
+.mar-Right{ margin-right:40px;}
+.mar-right115{ margin-right:115px;}
+.float-left{ float:left;}
+.float-right{ float:right;}
+.clearing { clear:both;}
+.bor-bottm-non{border-bottom:none!important;}
+.panel{}
+.title{}
+.content{}
+.wrap{width:960px; margin:0 auto;overflow:hidden; background:url(../images/page-bg.jpg);}
+.page{ width:580px; margin:0 auto;overflow:hidden; padding-bottom:50px;}
+.page-content{ width:580px; margin:0 auto;overflow:hidden; padding-bottom:30px; padding-top:30px;}
+.block{padding:20px 20px 20px 20px; margin:0 auto;}
+.block2{padding:20px 20px 20px 20px; margin:0 auto;}
+.button a{text-decoration:none; display:block; width:70px; height:30px; background:#1491c1; color:#ffffff; font-family:Arial, Helvetica, sans-serif; line-height:30px; text-align:center;}
+.button a:hover{ background:#0e5295;}
+
+/*-------------------------------------------------
+CONTENT CLASSES
+-------------------------------------------------*/
+.page-content{ width:580px; margin:0 auto;overflow:hidden; padding-bottom:30px; padding-top:30px;}
+.page-content .content h3{ padding-bottom:20px;font-family: 'Droid Serif', serif; font-weight:normal; color:#fff; font-size:16px;}
+.page-content .content p{ padding-bottom:15px;}
+
+/*-------------------------------------------------
+HEADER CLASSES
+-------------------------------------------------*/
+.header-wrap{ background:#083266; height:162px;}
+.header{ width:960px; margin:0 auto;}
+.logo{ float:left; background:#1491c1; width:300px; float:left;}
+.logo h1{font-size:52px; text-align:center; padding:52px 0px 50px 0px;}
+
+.menu{ float:left;}
+.menu ul li{ list-style:none; float:left; border-right:#093e76 solid 1px; padding:115px 20px 30px 20px;}
+.menu ul li a{ text-decoration:none; color:#80d2f8; font-size:14px; text-align:center;}
+.menu ul li a:hover{ color:#1491c1;}
+.menu ul li a.active{ color:#1491c1;}
+
+/*-------------------------------------------------
+BANNER CLASSES
+-------------------------------------------------*/
+.banner{ width:660px; overflow:hidden; margin-bottom:50px;}
+.banner img{ border:none;}
+
+
+/*-------------------------------------------------
+SEARCH CLASSES
+-------------------------------------------------*/
+.search{ background:url(../images/search-bg.jpg) repeat-x center; width:260px; padding:18px 20px 25px 20px; margin-bottom:22px; overflow:hidden;}
+.search h1{ font-size:20px; padding-bottom:18px;}
+.search-input{ float:left;}
+.search-btn{ float:left;}
+.input-style{ background:#07366b; text-decoration:5px; font-family:Arial, Helvetica, sans-serif; color:#1491c1; font-size:13px; border:none; height:34px; width:219px;}
+
+/*-------------------------------------------------
+LEFTCOL CLASSES
+-------------------------------------------------*/
+.leftcol{ float:left; width:300px; overflow:hidden;}
+.leftcol .title{ margin-bottom:25px;}
+.leftcol .content ul li{ list-style:none; border-bottom:#0c4680 solid 1px; line-height:40px;}
+.leftcol .content ul li a{ text-decoration:none; color:#1491c1;}
+.leftcol .content ul li a:hover{color:#80d2f8;}
+.leftcol .panel img{ float:left; border:#fff solid 4px; margin:9px 20px 0px 0px;}
+.leftcol .panel .content{ color:#1491c1; overflow:hidden;}
+.leftcol .panel .content .button a{ width:53px; height:24px; line-height:24px; float:left; margin:15px 0px 20px 0px;}
+.block2 .panel{border-bottom:#0c4680 solid 1px; margin-bottom:18px;}
+ 
+/*-------------------------------------------------
+RIGHT CLASSES
+-------------------------------------------------*/
+.rightcol{ float:left; width:660px; overflow:hidden;}
+.rightcol .title{ margin-bottom:25px;}
+.rightcol .button{ margin-top:0px;}
+.rightcol img{ float:left; margin-right:40px;}
+.rightcol .content p{ padding-bottom:30px;}
+.button2 a{text-decoration:none; display:block; width:70px; height:30px; background:#1491c1; color:#ffffff; font-family:Arial, Helvetica, sans-serif; line-height:30px; text-align:center; float:left;}
+.button2 a:hover{ background:#0e5295;}
+
+/*-------------------------------------------------
+SERVICES CLASSES
+-------------------------------------------------*/
+.services .panel .content img{ float:left; margin-right:30px; background:#0d3d78; padding:5px;}
+
+/*-------------------------------------------------
+BOX CLASSES
+-------------------------------------------------*/
+.box{ width:230px; background:#083266; padding:20px 20px 35px 20px; float:left;}
+.box img{ margin-bottom:25px;}
+.box .title{margin-bottom:20px;}
+.box .title h1{ font-size:20px; font-weight:normal;}
+
+/*-------------------------------------------------
+CONTACT FORM CLASSS
+-------------------------------------------------*/
+
+.contact-form { background:#0d3d78; padding:30px; width:440px; float:left;}
+.contact-form label {display: block; padding:10px 0 10px 0;}
+.contact-form label span {display: block; color:#fff;font-size:14px; float:left; width:80px; text-align:left; padding:5px 20px 0 0; font-family: 'Droid Serif', serif;}
+.contact-form .input_text {padding:10px 10px;width:318px;background:#07366b; border:none; color:#fff; outline:none;}
+.contact-form .message{padding:10px 10px;width:318px; background:#07366b; border:none; overflow:hidden;height:150px; color:#fff; font-size:14px; outline:none;}
+.contact-form .button{padding:8px;background:#1491c1; color:#ffffff; text-transform:uppercase; font-family:'Oswald', sans-serif;border:0px solid;margin-left:100px;margin-top:20px;}
+
+.address { float:left; width:250px; margin-left:30px; margin-top:50px;}
+.address .panel { border:none; color:#fff;}
+.address .panel .title h1 {  color:#1491c1; padding-bottom:10px;}
+.address .panel .content p span { color:#fff;}
+.address .panel .content p .number{ font-size:15px;}
+
+
+
+/*-------------------------------------------------
+FOOTER CLASSES
+-------------------------------------------------*/
+.footer-wrap{ background:#1491c1; overflow:hidden;}
+.footer{ width:960px; margin:0 auto; padding:40px 0px 50px 0px; overflow:hidden;}
+.footer .bolg{ width:598px; float:left;}
+.footer .panel{ float:left; width:230px;}
+.footer .title{ border-bottom:#107eb4 solid 1px; padding-bottom:20px; margin-bottom:30px;}
+.footer .title h1{ font-size:20px;}
+.footer .panel .content ul li{ float:left; list-style:none; color:#062c5b; font-weight:bold;}
+.footer .panel .content p{ color:#fff; font-size:12px; line-height:inherit; padding-top:20px; clear:both;}
+.footer .panel .content p a{color:#062c5b; text-decoration:none;}
+.footer .panel .content p a:hover{ color:#fff;}
+.footer .panel .content p span{ color:#062c5b; font-weight:bold; font-size:12px;}
+.footer .quickcontact{ width:270px; float:right;}
+
+.copyright-wrap{ background:#fff; overflow:hidden; padding-top:30px; padding-bottom:30px;}
+.copyright{ width:960px; margin:0 auto;}
+.copyright .content{ text-align:center;}
+.copyright .content a{ text-decoration:none; color:#1491c1;}
+.copyright .content a:hover{color:#062c5b;}
+.copyright .content a.active{color:#062c5b;}
