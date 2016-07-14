@@ -4,146 +4,237 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="game">
+    <meta name="description" content="questions game">
     <meta name="author" content="Martin Tsvein">
 
-    <title>Name of the game</title>
+    <title>Магическа Книга</title>
 
+    <link href="img/book-ico.png"  rel="icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flipBook.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <form class="form-inline" name="log-in" method="post">
-            <div class="form-group">
-                <label for="username">Име</label>
-                <input type="text" class="form-control" name="username" placeholder="Твоето име">
-            </div>
-            <div class="form-group">
-                <label for="password">Парола</label>
-                <input type="password" class="form-control" name="password" placeholder="парола">
-            </div>
-            <button id="log-in" type="submit" class="btn btn-primary" name="logbutton">Влез</button>
-        </form>
+        <div class="col-md-12">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="exampleInputName3">ИМЕ</label>
+                    <input type="text" class="form-control" id="exampleInputName3" placeholder="Твоето име">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">ПАРОЛА</label>
+                    <input type="password" class="form-control" id="exampleInputEmail3" placeholder="Твоята парола">
+                </div>
+                <button id="log-in-btn" type="submit" class="btn btn-primary">ВЛЕЗ</button>
+            </form>
+        </div>
     </header>
     <section>
-        <h1>Провери знанията си</h1>
+        <div id="name-game" class="col-md-12">
+            <img src="img/8.png">
+        </div>
     </section>
+    <aside>
+        <div class="col-md-4">
+            <div class="col-md-12">
+                <img src="img/big-star.gif">
+            </div>
+            <div class="col-md-12">
+                <img id="fairy" src="img/fairy.png">
+            </div>
+            <div class="col-md-12">
+                <img id="small-star-left" src="img/small-star.gif">
+            </div>
+        </div>
+    </aside>
     <main>
-        <section>
-            <div id="game-btn">
-                <div>
-                    <img id="magic-book" src="img/magic-book.png">
-                </div>
-                <div id="main-btn">
-                    <button id="start-btn" type="button" class="book-btn" data-toggle="modal" data-target="#startDialog">Старт</button>
-                    <button class="book-btn">Продължи</button>
-                    <button id="help-btn" type="button" class="book-btn btn btn-primary" data-toggle="modal" data-target="#helpDialog">Помощ</button>
-                    <button class="book-btn">Изход</button>
-                </div>
-                <div>
-                    <img id="wizard" src="img/wizard.png">
-                </div>
+        <div class="col-md-4">
+            <div id="button-ramk">
+                <button id="start-game" class="main-button" type="button" data-toggle="modal" data-target="#myModal3">СТАРТ</button>
+                <button class="main-button" type="button" data-toggle="modal" data-target="#setings">ЗА ИГРАТА</button>
+                <button id="exit-game" class="main-button" type="button">ИЗХОД</button>
             </div>
-        </section>
-        <footer>
-            <div id="rating-container">
-                <h3>Оцени играта</h3>
-                <span class="rating">
-                    <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
-                    <label for="rating-input-1-5" class="rating-star"></label>
-                    <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
-                    <label for="rating-input-1-4" class="rating-star"></label>
-                    <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
-                    <label for="rating-input-1-3" class="rating-star"></label>
-                    <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
-                    <label for="rating-input-1-2" class="rating-star"></label>
-                    <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
-                    <label for="rating-input-1-1" class="rating-star"></label>
-                </span>
-                <!--  <audio src="audio/Game%20of%20Thrones%20-%20Main%20Theme%20(Extended)%20HD.mp3" repeat autoplay></audio> -->
+            <div id="book">
+                <img id="book-img" src="img/magic-book.png">
             </div>
-            <div>
-                <ul id="social">
-                    <li>
-                        <a href="#" target="_blank"><img class="social-ico" src="img/fb.png"></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img class="social-ico" src="img/twet.png"></a>
-                    </li>
-                    <li>
-                        <a href="#" target="_blank"><img class="social-ico" src="img/google.png"></a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+        </div>
     </main>
+    <aside>
+        <div class="col-md-4">
+            <div class="col-md-12">
+                <img src="img/small-star.gif">
+            </div>
+            <div class="col-md-12">
+                <img src="img/wizard.png">
+            </div>
+            <div class="col-md-12">
+                <img src="img/big-star.gif">
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div id="social-footer" class="col-md-12">
+            <ul class="social-network social-circle">
+                <li><a href="https://www.facebook.com/profile.php?id=100009635107877" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/MTsvein" class="icoTwitter" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/117824211399914729637" class="icoGoogle" title="Google +" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </div>
+        <p class="col-md-12">Copyright&#169 M.Tsvein All rights reserved 2016</p>
+    </footer>
 
-    <!-- ========== Modal's ========== -->
+    <!--==========================       Modal section     ==============================================-->
 
-    <!-- Start game button -->
-    <div id="startDialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg">
-            <div id="start-game" class="modal-content">
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div id="book-modal" class="modal-content">
                 <div id="flipbook">
-                    <div id="book-cover" class="hard">
-                        <img src="img/book-cover.png">
-                        <button type="button">назад</button>
-                        <button type="button">напред</button>
+                    <div class="hard">
+                        <button  type="button" class="btn btn-secondary exit-game-cover-btn" data-dismiss="modal">Изход</button>
+                        <img class="cover" src="img/book2.jpg">
+                        <button id="cover-forward" class="btn btn-secondary step-forward">Започни</button>
                     </div>
                     <div class="hard">
-                        <h3>Започва ниво 1</h3>
-                        <button class="page-move-btn-left" type="button">назад</button>
+                        <p id="intro-game">Оoo, Господи къде се озовах? Какво е това магическо място? Как да се измъкна от този свят? Може би, ако отговоря правилно на въпросите, които се намират в тази МАГИЧЕСКА КНИГА, ще се върна обратно в истинския свят? Е, какво пък единственото, което мога да направя е поне да опитам... Сигурно ще се забавлявам много!</p>
+                        <div id="book-boy">
+                            <img id="book-boy" src="img/book%20boy.jpg">
+                        </div>
+                        <button id="go-first-page" class="step-back"><i class="fa fa-backward" aria-hidden="true"></i> Назад</button>
                     </div>
-                    <div>
-                        <button class="page-move-btn-right" type="button">напред</button>
+                    <div class="page">
+                        <button type="button" class="btn btn-secondary exit-game-btn" data-dismiss="modal">Изход</button>
+                        <h2>НИВO І </h2>
+                        <div id="book-three-feary" >
+                            <img src="img/magiq.jpg">
+                        </div>
+                        <button id="start" class="forward step-forward" data-toggle="modal" data-target="#video" >Старт <i class="fa fa-forward" aria-hidden="true"></i></button>
                     </div>
-                    <div>
-                        <h3>Въпрос 1</h3>
-                        <button class="page-move-btn-left" type="button">назад</button>
+                    <div class="page">
+                        <div id="page1" class="ornam-top-left">
+                            <img src="img/ornament-left-top.png">
+                        </div>
+                        <h2>Въпрос №1</h2>
+                        <div id="magic-hat">
+                            <img src="img/magic%20hat.png">
+                        </div>
+                        <h3 id="question">Тук ще бъде садържанието на въпросите?</h3>
+                        <div class="orman-left-bottom">
+                            <img src="img/ornament-left-bottom.png">
+                        </div>
                     </div>
-                    <div>
-                        <p>otgovor 1</p>
-                        <p>otgovor 2</p>
-                        <p>otgovor 3</p>
-                        <p>otgovor 4</p>
-                        <button class="page-move-btn-right" type="button">напред</button>
+                    <div class="page">
+                        <div class="ornament-right-bottom">
+                            <img src="img/ornament-right-bottom.png">
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-secondary exit-game-btn" data-dismiss="modal">Изход</button>
+                            <div id="joker-container">
+                                <button class="joker-btn" type="button"><i class="fa fa-users" aria-hidden="true"></i></button>
+                                <button class="joker-btn" type="button">50/50</button>
+                                <button class="joker-btn" type="button"> ? </button>
+                            </div>
+                            <div>
+                                <h5>Време :</h5>
+                                <p><span id="timer">120</span> секунди</p>
+                            </div>
+                            <div id="answer-container">
+                                <button id="answer1" type="submit" class="test-answer">otgovor1</button>
+                                 <button id="answer2" type="submit" class="test-answer">otgovor2</button>
+                                 <button id="answer3" type="submit" class="test-answer">otgovor3</button>
+                                 <button id="answer4" type="submit" class="test-answer">otgovor4</button>
+                            </div>
+                            </div>
+                        <div class="ornament-right-top">
+                            <img src="img/ornament-right-top.png">
+                        </div>
+                        <button id="next-question" class="step-forward">Напред <i class="fa fa-forward" aria-hidden="true"></i></button>
                     </div>
-                    <div class="color"> Page 4 </div>
+                    <div class="page">
+                        <p class="final-text"> - Нека да събудим Магьосника вече... Той се справи отлично с Магическата книга и трудностите в нея.<br> Време е да разбере, че е Избраният да помогне на нашето Царство!</p>
+                        <div id="sleep-boy">
+                            <img class="cover" src="img/sleep-boy.jpg">
+                        </div>
+                        <button id="backward" class="step-back"><i class="fa fa-backward" aria-hidden="true"></i> Назад</button>
+                    </div>
                     <div class="hard">
-                        <h3>Край на играта</h3>
+                        <button id="to-end"  class="step-forward">Напред <i class="fa fa-forward" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary exit-game-btn" data-dismiss="modal">Изход</button>
+                        <p class="final-text">Нима всичко това е било сън?! Отговорих на всички въпроси правилно само, за да се събудя отново в реалността?<br><br>
+                              -Ти ще решиш дали това е било сън или истина... <br>
+                            Магьоснико, не случайно ти попадна в този вълшебен свят... <br>За всичко си има причина! </p>
+                        <div id="final-fairy-container">
+                            <img class="cover" src="img/final%20fairy.jpg">
+                        </div>
                     </div>
-                    <div class="hard"></div>
+                    <div id="end" class="hard">
+                        <button type="button" class="btn btn-secondary exit-game-cover-btn" data-dismiss="modal">Изход</button>
+                        <img class="cover" src="img/end-cover.jpg">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- End Start game button -->
-
-    <!-- Help button -->
-
-    <div id="helpDialog" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg">
-            <div id="help" class="modal-content">
-                <h3>The question</h3>
+    <div class="modal fade" id="setings" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <img src="img/ornament-top.png">
+                <div class="modal-header">
+                    <h4>Добре дошъл в Магическа Книга!</h4>
+                </div>
+                    <p>Отговори на всички въпроси и провери своите знания. Ако се затрудниш на някой от въпросите не се колебай, използвай един от 3-те жокера. Времето с което разполагаш да отговориш на всеки въпрос е 120 секунди. На колкото повече въпроси отговаряш, толкова по-сложни ще стават те. Всяко ниво е по трудно от предното. Провери дали ще успееш да омагьосаш света... Успех, Магьоснико!</p>
+                <div class="modal-footer">
+                    <img src="img/ornament-bottum.png">
+                    <button type="button" class="btn btn-default modal-close close-video" data-dismiss="modal">Изход</button>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- End Help button -->
-
-    <!-- ========= End modal's ======== -->
+    <div id="video" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <video id="video-one">
+                    <source src="video/intro.webm" type="video/webm">
+                    <source src="video/intro.mp4" type="video/mp4">
+                    Your browser do not support this video
+                </video>
+                <button id="skip" type="button" class="btn btn-default modal-close close-video" data-dismiss="modal">Пропусни</button>
+            </div>
+        </div>
+    </div>
+      <div id="time-out" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div id="top-right-stars">
+                    <img class="cover" src="img/meny%20stars.png">
+                </div>
+                <div id="top-left-stars">
+                    <img class="cover" src="img/meny%20stars.png">
+                </div>
+                <p>Времето ти изтече !!!<br> Опитай пак !</p>
+                <button id="close-time-out" type="button" class="btn btn-default modal-close" data-dismiss="modal">Опитай отново</button>
+                <div id="bottom-left-stars">
+                    <img class="cover" src="img/meny%20stars.png">
+                </div>
+                <div id="fairy-right">
+                    <img class="cover" src="img/fairy3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==========================     End Modal section   ==============================================-->
 
 
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-stars.js"></script>
     <script src="js/ion.sound.min.js"></script>
-    <script src="js/script.js"></script>
     <script src="js/turn.min.js"></script>
+    <script src="plugin/flipBook.js"></script>
+    <script src="js/jquery.animate-colors-min"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

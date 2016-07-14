@@ -1,0 +1,54 @@
+
+
+#flipbook .page {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+#flipbook .page-wrapper {
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    -ms-perspective: 2000px;
+    -o-perspective: 2000px;
+    perspective: 2000px;
+}
+
+#flipbook .hard {
+    background: #ffcf8d !important;
+    color: antiquewhite;
+    -webkit-box-shadow: inset 0 0 5px #666;
+    -moz-box-shadow: inset 0 0 5px #666;
+    -o-box-shadow: inset 0 0 5px #666;
+    -ms-box-shadow: inset 0 0 5px #666;
+    box-shadow: inset 0 0 5px #666;
+    font-weight: bold;
+}
+
+#flipbook .odd {
+    background: -webkit-gradient(linear, right top, left top, color-stop(0.95, #cb9300), color-stop(1, #f0ba58));
+    background-image: -webkit-linear-gradient(right, #ffe3bd 95%, #f0ba58 100%);
+    background-image: -moz-linear-gradient(right, #ffe3bd 95%, #f0ba58 100%);
+    background-image: -ms-linear-gradient(right, #ffe3bd 95%, #f0ba58 100%);
+    background-image: -o-linear-gradient(right, #ffe3bd 95%, #f0ba58 100%);
+    background-image: linear-gradient(right, #ffe3bd 95%, #f0ba58 100%);
+    -webkit-box-shadow: inset 0 0 5px #666;
+    -moz-box-shadow: inset 0 0 5px #666;
+    -o-box-shadow: inset 0 0 5px #666;
+    -ms-box-shadow: inset 0 0 5px #666;
+    box-shadow: inset 0 0 5px #666;
+}
+
+#flipbook .even {
+    background: -webkit-gradient(linear, left top, right top, color-stop(0.95, #ffe3bd), color-stop(1, #f0ba58));
+    background-image: -webkit-linear-gradient(left, #ffe3bd 95%, #f0ba58 100%);
+    background-image: -moz-linear-gradient(left, #ffe3bd 95%, #f0ba58 100%);
+    background-image: -ms-linear-gradient(left, #ffe3bd 95%, #f0ba58 100%);
+    background-image: -o-linear-gradient(left, #ffe3bd 95%, #f0ba58 100%);
+    background-image: linear-gradient(left, #ffe3bd 95%, #f0ba58 100%);
+    -webkit-box-shadow: inset 0 0 5px #666;
+    -moz-box-shadow: inset 0 0 5px #666;
+    -o-box-shadow: inset 0 0 5px #666;
+    -ms-box-shadow: inset 0 0 5px #666;
+    box-shadow: inset 0 0 5px #666;
+}
