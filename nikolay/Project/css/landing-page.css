@@ -4,17 +4,6 @@ html {
     height: 100%;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-}
-
 .topnav {
     font-size: 14px; 
 }
@@ -25,18 +14,19 @@ h6 {
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+    padding-top: 50px;
+    /*padding-bottom: 50px;*/
     text-align: center;
     color: #f8f8f8;
     background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-attachment: fixed;
     background-size: cover;
 }
 
 .intro-message {
     position: relative;
     padding-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 8%;
 }
 
 .intro-message > h1 {
@@ -151,13 +141,4 @@ h6 {
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
-}
-
-footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
-
-p.copyright {
-    margin: 15px 0 0;
 }
