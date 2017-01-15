@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The square task</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    
+    .square {
+      width: 200px;
+      height: 200px;
+      color: white;
+    }
+    
+    .red {
+      background-color: red;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+    
+    .green {
+      background-color: green;
+    }
+    
+    .black {
+      background-color: black;
+    }
+    
+    /* Bonus points if you can make the text be centered in the square */
+    
+    /* Smallest first (<399px) */
+    @media screen and (max-width: 399px) {
+        .square {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+      }
+    .square p{
+        text-align: center;
+        padding-top: 38%;
+        }      
+      }
+    /* 400 - 499 */
+    @media screen and (min-width: 400px) and (max-width: 499px) {
+    .square {
+        display: inline-block;
+      }
+    .square p{
+        text-align: center;
+        padding-top: 38%;
+        }      
+    .red{
+        position: fixed;
+        top:0px;
+        left: 0px;
+        }
+    .blue{
+        position: fixed;
+        top:0px;
+        right: 0px;
+        }
+    .green{
+        position: fixed;
+        bottom:0px;
+        left: 0px;
+        }
+    .black{
+        position: fixed;
+        bottom:0px;
+        right: 0px;
+        }    
+        
+        
+      }
+    /* 500 - 599 */
+       @media screen and (min-width: 500px) and (max-width: 599px) {
+    .square {
+        display: inline-block;
+      }
+    .square p{
+        text-align: center;
+        padding-top: 38%;
+        }  
+    .red{
+        position: fixed;
+        bottom:0px;
+        right: 0px;
+        }
+    .blue{
+        position: fixed;
+        top:0px;
+        left: 0px;
+        }
+    .green{
+        position: fixed;
+        top:0px;
+        right: 0px;
+        }
+    .black{
+        position: fixed;
+        bottom:0px;
+        left: 0px;
+        } 
+      }
+    /* 600 - 699 */
+  @media screen and (min-width: 600px) and (max-width: 699px) {
+    .square {
+        display: inline-block;
+      }
+    .square p{
+        text-align: center;
+        padding-top: 38%;
+        }    
+    .red{
+        position: fixed;
+        bottom:0px;
+        left: 0px;
+        }
+    .blue{
+        position: fixed;
+        bottom:0px;
+        right: 0px;
+        }
+    .green{
+        position: fixed;
+        top:0px;
+        left: 0px;
+        }
+    .black{
+        position: fixed;
+        top:0px;
+        right: 0px;
+        }      
+  }
+    /* 700 - 799 */
+  @media screen and (min-width: 700px) and (max-width: 799px) {
+    .square {
+        display: inline-block;
+      }
+    .square p{
+        text-align: center;
+        padding-top: 38%;
+        }  
+    .red{
+        position: fixed;
+        top:0px;
+        right: 0px;
+        }
+    .blue{
+        position: fixed;
+        bottom:0px;
+        left: 0px;
+        }
+    .green{
+        position: fixed;
+        bottom:0px;
+        right: 0px;
+        }
+    .black{
+        position: fixed;
+        top:0px;
+        left: 0px;
+        }      
+  }
+    /* > 800 */
+    @media screen and (min-width: 800px) {
+    .square {
+        display: table-cell;
+      }
+    .square p{
+        text-align: center;
+        padding-top: 38%;
+        }    
+      }
+    
+  </style>
+</head>
+
+<body>
+  <div class="square red">
+    <p>
+      RED
+    </p>
+  </div>
+  <div class="square blue">
+    <p>
+      BLUE
+    </p>
+  </div>
+  <div class="square green">
+    <p>
+      GREEN
+    </p>
+  </div>
+  <div class="square black">
+    <p>
+      BLACK
+    </p>
+  </div>
+</body>
+
+</html>

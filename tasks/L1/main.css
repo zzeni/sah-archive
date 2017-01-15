@@ -1,0 +1,103 @@
+body{
+    image-resolution: from-image;
+    background-image: url(tumblr_o4amchUgfk1trmyo0o1_500.jpg);
+    align-content: center;
+    text-align: center;
+}
+
+.banner{
+    position: fixed;
+    top: 10px;
+    left:200px;
+    width:960px;
+    margin:0px auto;
+    opacity: 1;
+    height: 50px;
+    text-align: left;
+    text-decoration-style: solid;
+    text-emphasis-style: open;
+    font-size: 30px;
+    font-style: oblique;
+    vertical-align: middle;
+    color: whitesmoke;
+}
+
+audio{
+    opacity: 0.50;
+    padding-top: 20px;
+    padding-left: 533px;
+}
+
+h1{
+    text-align: center;
+    color: cornsilk;
+    font-family: "Courier New";
+}
+form{
+    border-collapse: inherit;
+    border-width: thin;
+    border-color: whitesmoke;
+    opacity: 0.75;
+    background-position: center;
+    display: inline-block;
+    box-sizing: border-box;
+    align-content: center;
+    align-items: center;
+    background-color: gray;
+    background-blend-mode: overlay;
+    color: cornsilk;
+    font-family: "Courier New";
+}
+
+form:hover{
+    opacity: 1;
+}
+
+input{
+    color: dimgrey;
+    padding: 3px 3px 3px 5px;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    margin-top: 2px;
+    outline: 0 none;
+}
+div{
+    color:whitesmoke;
+    font-family: "Courier New";  
+}
+button{
+    margin: 0 auto;
+    width:250px;
+    backface-visibility: visible;
+    shape-inside: ellipse();
+    background-color: darkgrey;
+    color:whitesmoke;
+    font-family: "Courier New";
+}
+
+img{
+    margin: 50px auto;
+    opacity: 0.75;
+    height: 720px;
+    width: 450px;
+}
+
+img:hover{
+    opacity: 1;
+
+}
+.wrapper{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto - 4em;
+}
+
+footer, .push{
+    color:whitesmoke;
+    font-family: "Courier New";
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: right;
+    height: 4em;
+}
