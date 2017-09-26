@@ -1,0 +1,8 @@
+body{
+    background-color: green;
+}
+
+img {
+    float:none;
+    display:inline-block;
+}

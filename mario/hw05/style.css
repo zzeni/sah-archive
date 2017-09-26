@@ -1,0 +1,52 @@
+body{
+    background-color: #fefefe;
+}
+
+#predstavqne {
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.profile-img {
+    width: 250px;
+    float: left;
+    margin-right: 20px;
+}
+
+#predstavqne p{
+    margin-bottom: 100px;
+}
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+nav ul li {
+    margin-bottom: 40px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.predstavqne {
+    background-color: green;
+}
+
+.portfolio {
+    background-color: orange;
+}
+
+.kontakti {
+    background-color: skyblue;
+}
+
+.img-portfolio {
+    width: 45%;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 50px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}

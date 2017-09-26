@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6em;
+
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+
+
+}
+
+#blue {
+    background-color: rgb(0, 0, 139);
+    position: absolute;
+    top: 10%;
+    left: 3%;
+}
+
+#red {
+    background-color: rgb(139, 0, 0);
+    position: absolute;
+    top: 8%;
+    right: 13%
+}
+
+#green {
+    background-color: rgb(0, 100, 0);
+    position: absolute;
+    bottom: 11%;
+    left: 14%
+}
+
+#yellow {
+    background-color: rgb(255, 255, 0);
+    position: absolute;
+    bottom: 15%;
+    right: 18%
+}

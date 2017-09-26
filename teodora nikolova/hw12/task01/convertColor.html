@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ConvertColor</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="ConvertColor.css">
+    <script src="ConvertColor.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <header><h1>Hi,there! You want to convert rgb color?</h1>
+        <h2>Please pick a color in <br> rgb format!</h2>
+
+        <input id="background-color" class=".col-md-3" type="color" value="#00E96D"/>
+    </header>
+
+    <form>
+        <div class="form-group form-inline">
+            <label for="exampleInputRed">Red</label>
+            <input type="text" class="form-control" id="exampleInputRed" placeholder="red">
+        </div>
+        <div class="form-group form-inline">
+            <label for="exampleInputGreen">Green</label>
+            <input type="text" class="form-control" id="exampleInputGreen" placeholder="green">
+        </div>
+        <div class="form-group form-inline ">
+            <label for="exampleInputBlue">Blue</label>
+            <input type="text" class="form-control" id="exampleInputBlue" placeholder="blue">
+        </div>
+
+        <button class="btn btn-default" type="button" onclick="convert() ()">Convert</button>
+        <div class="form-group form-inline">
+            <label for="exampleInputConvertColor"> Convert Color</label>
+            <input type="text" class="form-control" id="exampleInputConvertColor" readonly>
+        </div>
+    </form>
+</div>
+</body>
+</html>

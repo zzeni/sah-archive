@@ -1,0 +1,29 @@
+header {
+    justify-content: space-between;
+    padding: inherit;
+}
+
+body {
+    font-size: 24px;
+    background-color: lightseagreen;
+}
+
+img {
+    width: 50px;
+}
+
+main {
+    width: 800px;
+}
+
+hr {
+    width: 900px;
+}
+
+nav a {
+    padding: 10px 10px 10px 10px;
+    border: 3px solid darkred;
+    background-color: aquamarine;
+    color: darkred;
+    text-decoration: none;
+}

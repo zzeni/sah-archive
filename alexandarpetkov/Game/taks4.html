@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <section id="playing-the-game">
+        <form action="http://zenlabs.pro/api/game/continue" method="post">
+            <p>
+                Type your key, please:
+                <input type="text" name="key" value="">
+            </p>
+            <p>
+                Let the JS to generate this:
+                <input id="javascript-rocks" type="text" name="javascript-rocks" readonly>
+            </p>
+            <p>
+                <input type="submit" value="Go!">
+            </p>
+        </form>
+
+        <script>
+            var myVar = "let's keep it simple".length;
+            var myOtherVar = 213 % 36 - 5 * 3;
+            if (myVar == myOtherVar) {
+                myVar += 1;
+            } else {
+                myVar = myOtherVar;
+            }
+
+            var myDate = new Date;
+            myVar *= myDate.getFullYear() - Number(7);
+            console.log(myVar);
+
+            /*
+             The following code will update the value of the `javascript-rocks' field
+             with the result from the calculation above. It uses the JS object `document'
+             to access arbitrary elements in our html code by their id tag.
+             HINT: It doesn't contain the error, look for it in the calculations! ;)
+             */
+            document.getElementById("javascript-rocks").value = myVar;
+        </script>
+
+</section>
+</body>
+</html>
+
+<!--В кода по-долу има точно една грешка в Javascript-a, и няма други грешки.-->
+<!--Тази грешка е изтормозила много програмисти по света и въпреки, че всеки я знае, продължаваме да я допускаме и да си патим от нея.-->
+
+<!--Открий грешката и я оправи, след което събмитни формата:-->
+
+<!--(ако кода не се "чете", можеш да го отвориш и от прикачения файл)-->
+

@@ -1,0 +1,479 @@
+@font-face {
+    font-family: "Josefin Sans";
+    src: url(fonts/Josefin_Sans/JosefinSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Exo 2";
+    src: url(fonts/Exo_2/Exo2-Regular.ttf);
+}
+#wrapper {
+    width: 70.3125%;
+    height: auto;
+    font-size: 16px;
+    /*font-family: "Yanone Kaffeesatz", sans-serif;*/
+    font-family: "Josefin Sans", sans-serif;
+    margin: 50px auto;
+    background: #e0dede;
+    padding: 5% 5% 60px 5%;
+}
+p, h3 {
+    font-family: "Exo 2", sans-serif;
+}
+p {
+    font-size: 0.8em;
+}
+
+    /*HEADER*/
+
+header {
+    width: 100%;
+    height: 60px;
+    text-align: left;
+    box-sizing: border-box;
+    padding-top: 0.5%;
+    font-family: "Exo 2", sans-serif;
+    font-weight: bold; 
+}
+header > h1 {
+    font-size: 2.3em;
+    display: inline-block;
+    width: auto;
+    margin: 0 0 0 2.8%;
+    font-weight: normal;
+    font-style: italic;
+}
+
+    /*MAIN*/
+main {
+    background-color: white;
+    padding: 2% 2% 1% 2%; 
+}
+main h2, main nav {
+    display: inline-block;
+    width: auto;
+    height: 30px; 
+}
+main h2 {
+    margin: 0 1.5% 0 1.5%;
+    vertical-align: top;
+}
+nav > img {
+    width: 30px;
+    height: auto;
+}
+section > nav {
+    width: 50px;
+    box-sizing: border-box;    
+}
+section {
+    width: 100%;
+    margin-bottom: 2%;
+    height: auto;
+}
+section:first-of-type {
+    height: 350px;
+}
+main article {
+    width: calc(100% - 3px);
+    height: auto;
+    display: none;
+    padding-left: 7.6%;
+    padding-right: 1%;
+    margin-left: 3px;
+    box-sizing: border-box;
+    border: 2px solid lightblue;
+    background-color: AntiqueWhite;
+}
+main section:first-of-type > article {
+    height: calc(350px - 33px);
+}
+section:first-of-type article {
+    display: block;
+}
+section:last-of-type > nav > img {
+    margin-top: 4px;
+}
+section:nth-of-type(2):hover > .drop1,
+section:nth-of-type(3):hover > .drop2,
+section:last-of-type:hover > .drop3 {
+    display: block;
+    cursor: pointer;
+}
+section:nth-of-type(2):hover > h2::after,
+section:nth-of-type(3):hover > h2::after,
+section:last-of-type:hover > h2::after {
+    display: none;
+}
+section:nth-of-type(2):hover > h2,
+section:nth-of-type(3):hover > h2,
+section:last-of-type:hover > h2 {
+    margin-top: 5px;
+}
+section:first-of-type nav, section:nth-of-type(4) nav  {
+    margin-left: 3px;
+}
+section:nth-of-type(3) nav{
+    margin-left: 2px;
+}
+h2::after {
+    content: "\25BE";
+    margin-left: 10px;
+    color: #00acf1;
+}
+        /* SECTION 1*/
+
+section:first-of-type > article nav  {
+    height:71.43%;
+    width: 33.06%;
+    margin-top: 45px;
+    overflow: hidden;
+}
+section:first-of-type > article img {
+    width: 100%;
+    height: auto;
+}  
+section:first-of-type > article aside {
+    display: inline-block;
+    width: 31.5%;
+    height: 71.43%;
+    vertical-align: top;
+    margin-top: 45px;
+    text-align: justify;
+    margin-left: 1%;
+}
+section:first-of-type > article p {
+    margin: 0;
+}
+section:first-of-type > article p:nth-of-type(2) {
+    margin-top: 5px;
+}
+h3 {
+    margin: 0 0 5px 0;
+    width: auto;
+    text-align: center;
+    font-size: 1em;
+}
+span {
+    color: #00acf1;
+}
+section:first-of-type > article p {
+    margin-bottom: 5px;
+}
+section:first-of-type aside:last-of-type > p:first-of-type {
+    margin-top: 24px;
+}
+        /* SECTION 2 */
+section:nth-of-type(2) h3 {
+    margin-top: 10px;
+}
+section:nth-of-type(2) .left, 
+section:nth-of-type(2) .right {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    text-align: justify;
+
+}
+section:nth-of-type(2) .left {
+    width: 34%;
+    margin-right: 1.4%;
+}
+section:nth-of-type(2) .left > p {
+    margin:0;
+}
+section:nth-of-type(2) .right {
+    width: 63%;
+}
+section:nth-of-type(2) p {
+    /*text-align: center;*/
+    margin-top: 0;
+}
+        /*SECTION 4*/
+section > .drop3 > h3 {
+    margin-top: 1%;
+}
+.drop3 > .right, .drop3 > .left {
+    width: 48%;
+    height: auto;
+    display: inline-block;
+}
+.drop3 > .left {
+    margin-right: 2%;
+}
+.drop3 > .right {
+    vertical-align: top;
+}
+.drop3 > .left > div {
+    border: 2px solid lightblue;
+} 
+        /* FOOTER */
+footer > div {
+    width: 205px;
+    height: 30px;
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+}
+footer > div:after {
+    clear: both;
+}
+.social {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+}
+footer a { 
+    margin-left: 1%;
+    border: 2px solid white;
+    display: inline-block;
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
+    background-image: url("icons/ok-icon.png");
+    background-repeat: no-repeat;
+    background-position: -31.7px -292.5px;
+}
+footer a:hover {
+    background-position: -32px -14px;
+}
+footer a:nth-of-type(2) {
+    background-position: -185.5px -292.5px;
+}
+footer a:nth-of-type(2):hover {
+    background-position: -185.5px -14px;
+}
+footer a:nth-of-type(3) {
+    background-image: url("icons/withskype.jpg");
+    background-position: -565px -655px;
+}
+footer a:nth-of-type(3):hover {
+    background-position: -581px -295px;
+}
+footer a:last-of-type {
+    background-image: url("icons/github.png");
+    background-position: -452px -50px;
+}
+footer a:last-of-type:hover {
+    background-position: -452px -125px;
+}
+            /* RESPONCIVE */
+
+@media only screen and (max-width: 1060px) and (min-width: 820px) { 
+    #wrapper {
+        font-size: 18px;
+        width: calc(100% - 1%);
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+            /* SECTION 1 */
+    section:first-of-type > article {
+        padding-left: 2%;
+    }
+    section:first-of-type > article > aside {
+        margin-top: 2%;
+        width: 63%;
+        height: 100px;
+    }
+    section:first-of-type > article > aside:last-of-type > p {
+        display: inline-block;
+    }
+    section:first-of-type > article {
+        position: relative;
+    }
+    section:first-of-type > article > aside:last-of-type {
+        position: absolute;
+        right: 1%;
+        top: 45%;
+    }
+
+            /* SECTION 2 */
+    section:nth-of-type(2) > article {
+        padding-left: 2%;
+    }
+    section:nth-of-type(2) > article > .left,
+    section:nth-of-type(2) > article > .right {
+        display: inline-block;
+        width: 100%;
+    }
+    section:nth-of-type(2) > article > .left {
+        margin-bottom: 3%;
+        text-align: center;
+    }
+            /* SECTION 4 */
+    section:last-of-type .right > p:nth-of-type(4) {
+        word-wrap: break-word;
+    }
+
+            /* FOOTER */
+    footer > div {
+        margin-top: 0.5%;
+    }
+}
+
+@media only screen and (max-width: 820px) and (min-width: 540px){
+
+    #wrapper {
+        font-size: 20px;
+        width: calc(100% - 1%);
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+
+            /* SECTION 1 */
+    section:first-of-type > article {
+        padding-left: 2%;
+        padding-right: 2%;
+        height: 100%;
+    }
+    section:first-of-type {
+        height: 930px;
+    }
+    main section:first-of-type > article {
+        height: 100% ;
+    }
+    section:first-of-type > article > nav {
+        margin-top: 1%;
+        width: 100%;
+        height: 500px;
+    }
+
+    section:first-of-type > article > aside {
+        margin-top: 2%;
+        width: 95%;
+        height: auto;
+    }
+    section:first-of-type > article > aside:last-of-type > 
+    p:first-of-type {
+        margin-top: 0;
+    }
+    section:first-of-type > article > aside:last-of-type {
+        right: 1%;
+        margin-top: 0;
+    }
+        
+            /* SECTION 2 */
+    section:nth-of-type(2) {
+        margin-top: 7%;
+    }
+            /* SECTION 2 */
+    section:nth-of-type(2) > article {
+        padding-left: 2%;
+    }
+    section:nth-of-type(2) > article > .left,
+    section:nth-of-type(2) > article > .right {
+        display: inline-block;
+        width: 100%;
+    }
+    section:nth-of-type(2) > article > .left {
+        margin-bottom: 3%;
+        text-align: center;
+    }
+           /* SECTION 4 */
+    section:last-of-type .right > p:nth-of-type(4) {
+        word-wrap: break-word;
+    }
+    .drop3 > .right, .drop3 > .left {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+            /* FOOTER */
+    footer > div {
+        margin-top: 0.5%;
+    }
+}
+@media only screen and (max-width: 540px) and (min-width: 320px) {
+        #wrapper {
+        font-size: 20px;
+        width: calc(100% - 1%);
+        padding: 0 0.5%;
+        margin: 0 auto;
+    }
+    main > section:last-of-type > article {
+        padding-left: 0;
+        text-align: center;
+    }
+    header > h1 {
+        font-size: 1.5em; 
+    }
+            /* MAIN */
+
+    main {
+        padding: 2% 0 1% 0;
+    }
+            /* SECTION 1 */
+    main h2 {
+        font-size: 1.1em;
+    }
+    section:first-of-type > article {
+        padding-left: 2%;
+        padding-right: 2%;
+        height: 100%;
+    }
+    section:first-of-type {
+        height: 930px;
+    }
+    main section:first-of-type > article {
+        height: auto ;
+    }
+    section:first-of-type > article > nav {
+        margin-top: 1%;
+        width: 100%;
+        height: auto;
+    }
+    section:first-of-type > article > aside {
+        margin-top: 2%;
+        width: 95%;
+        height: auto;
+    }
+    section:first-of-type > article > aside:last-of-type > 
+    p:first-of-type {
+        margin-top: 0;
+    }
+    section:first-of-type > article > aside:last-of-type {
+        right: 1%;
+        margin-top: 0;
+    }   
+            /* SECTION 2 */
+    section:nth-of-type(2) {
+        margin-top: 36%;
+    }
+            /* SECTION 2 */
+    section:nth-of-type(2) > article {
+        padding-left: 2%;
+    }
+    section:nth-of-type(2) > article > .left,
+    section:nth-of-type(2) > article > .right {
+        display: inline-block;
+        width: 100%;
+    }
+    section:nth-of-type(2) > article > .left {
+        margin-bottom: 3%;
+        text-align: center;
+    }
+           /* SECTION 4 */
+    section:last-of-type .right > p:nth-of-type(4) {
+        word-wrap: break-word;
+    }
+    .drop3 > .right, .drop3 > .left {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+            /* FOOTER */
+    footer > div {
+        display: block;
+        margin: 5% auto;
+        float: none;
+    }
+    #wrapper > footer > #copy {
+        text-align: center !important;
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 0;
+        font-size: 0.5em !important;
+    }
+    footer {
+        padding-bottom: 3%;
+    }
+}

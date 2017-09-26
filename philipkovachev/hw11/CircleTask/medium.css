@@ -1,0 +1,15 @@
+div {
+    background-color: cornflowerblue;
+}
+
+body {
+    background-color: #FF8756;
+}
+
+p::after {
+    content: "460px + 679px";
+}
+
+p::before {
+    content: "Medium";
+}

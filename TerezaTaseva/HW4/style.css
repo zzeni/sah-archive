@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+h1{
+    color: #999;
+    text-align: center;
+    font-family: "Verdana", sans-serif;
+    font-size: 12px;
+    font-weight: 150;
+}
+
+body{
+    background-color: #eee;
+    position: relative;
+}
+
+nav{
+    text-align: center;
+    font-family: "Verdana", sans-serif;
+    font-size: 14px;
+    font-weight: 150;
+    background-color: #333;
+    display: block;
+    padding: 20px;
+}
+nav a {
+    color: #fff;
+}
+
+h2{
+    text-align: center;
+    font-family: "Verdana", sans-serif;
+    font-size: 24px;  
+    font-weight: 200; 
+    display: block;
+    padding: 20px;
+}
+img{
+    border-radius: 20px;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    padding-bottom: 15px;
+    margin: auto;
+}
+p{
+    text-align: center;
+    font-family: "Verdana", sans-serif;
+    font-size: 15px;  
+    font-weight: 200; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-style: none;
+    width: 1200px;
+}
+div {
+    box-sizing: border-box;
+    margin: auto;
+    width: 50%;
+}
+div img{
+    max-width: 250px;
+    height: auto;
+    display: inline-block;
+    padding: 20px;
+    width: 50%;
+}
+
+
+.contactTable {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.contactTable td,
+.contactTable th {
+    border:1px solid;
+        padding: 10px;
+    text-align: left;
+}
+
+.projectHolder {
+    width: 100%;
+    text-align: center;
+}
+
+.GoToTopHolder {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+}
+
+.top-link {
+  text-decoration: none;
+}
+
+.top-link:before {
+  content: "\2191";
+}

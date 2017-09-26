@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--    <link href="hw11-task2.css" rel="stylesheet">-->
+    <title>The square task</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        
+        .square {
+            width: 200px;
+            height: 200px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .red {
+            background-color: red;
+        }
+        
+        .blue {
+            background-color: blue;
+        }
+        
+        .green {
+            background-color: green;
+        }
+        
+        .black {
+            background-color: black;
+        }
+        /* Bonus points if you can make the text be centered in the square */
+        /* Smallest first (<399px) */
+        
+        @media screen and (max-width: 399px) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            .square {
+                width: 100%;
+                display: flex;
+            }
+            .red {
+                width: 100%;
+            }
+            .blue {
+                width: 100%;
+            }
+            .green {
+                width: 100%;
+            }
+            .black {
+                width: 100%;
+            }
+        }
+        /* 400 - 499 */
+        
+        @media screen and (max-width: 499px) and (min-width: 400px) {
+            .red {
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
+            .blue {
+                position: fixed;
+                right: 0;
+                top: 0;
+            }
+            .green {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+            }
+            .black {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        /* 500 - 599 */
+        
+        @media screen and (max-width: 599px) and (min-width: 500px) {
+            .red {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+            }
+            .blue {
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
+            .green {
+                position: fixed;
+                right: 0;
+                top: 0;
+            }
+            .black {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        /* 600 - 699 */
+        
+        @media screen and (max-width: 699px) and (min-width: 600px) {
+            .red {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+            }
+            .blue {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+            }
+            .green {
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
+            .black {
+                position: fixed;
+                right: 0;
+                top: 0;
+            }
+        }
+        /* 700 - 799 */
+        
+        @media screen and (max-width: 799px) and (min-width: 700px) {
+            .red {
+                position: fixed;
+                right: 0;
+                top: 0;
+            }
+            .blue {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+            }
+            .green {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+            }
+            .black {
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
+        }
+        /* > 800 */
+        
+        @media screen and (min-width: 800px) {
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .square {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="square red">
+        <p>
+            RED
+        </p>
+    </div>
+    <div class="square blue">
+        <p>
+            BLUE
+        </p>
+    </div>
+    <div class="square green">
+        <p>
+            GREEN
+        </p>
+    </div>
+    <div class="square black">
+        <p>
+            BLACK
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+div {
+    background-color: olive;
+
+}
+
+body {
+    background-color: bisque;
+}
+
+span::after {
+    content: "< 460";
+}
+
+span::before {
+    content: "Small";
+}

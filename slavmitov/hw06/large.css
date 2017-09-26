@@ -1,0 +1,16 @@
+body {
+	font-size: 29px;
+	background-color: gainsboro;
+}
+
+img {
+	width: 300px;
+}
+
+#main {
+	width: 1200px;
+}
+
+hr {
+	width: 1400px;
+}

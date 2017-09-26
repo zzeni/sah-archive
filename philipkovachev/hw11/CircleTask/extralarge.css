@@ -1,0 +1,16 @@
+div {
+    background-color: purple;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+p::after {
+    content: ">1000px";
+}
+
+p::before {
+    content: "Extra-Large";
+}
+

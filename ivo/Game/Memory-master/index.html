@@ -1,0 +1,114 @@
+<!--## License Licensed under the MIT license - http://www.opensource.org/licenses/mit-license.php -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="A memory game, built for fun with HTML, CSS, and JavaScript.">
+    <meta name="author" content="">
+    <title>Memory Game!</title>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="css/memory.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="header clearfix">
+
+            <h1 class="header__title">Memory Game!</h1>
+        </div>
+        <!-- /.header -->
+
+        <div class="content">
+            <div class="container">
+
+                <div id="my-memory-game"></div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!-- /.wrapper -->
+
+    <!-- js -->
+    <script src="js/classList.min.js"></script>
+    <script src="js/memory.js"></script>
+
+    <!-- start memory! -->
+    <script>
+        (function() {
+            var myMem = new Memory({
+                wrapperID: "my-memory-game",
+                cards: [{
+                    id: 1,
+                    img: "img/default/football-01.png"
+                }, {
+                    id: 2,
+                    img: "img/default/football-02.png"
+                }, {
+                    id: 3,
+                    img: "img/default/football-03.png"
+                }, {
+                    id: 4,
+                    img: "img/default/football-04.png"
+                }, {
+                    id: 5,
+                    img: "img/default/football-05.png"
+                }, {
+                    id: 6,
+                    img: "img/default/football-06.png"
+                }, {
+                    id: 7,
+                    img: "img/default/football-07.png"
+                }, {
+                    id: 8,
+                    img: "img/default/football-08.png"
+                }, {
+                    id: 9,
+                    img: "img/default/football-09.png"
+                }, {
+                    id: 10,
+                    img: "img/default/football-10.png"
+                }, {
+                    id: 11,
+                    img: "img/default/football-11.png"
+                }, {
+                    id: 12,
+                    img: "img/default/football-12.png"
+                }, {
+                    id: 13,
+                    img: "img/default/football-13.png"
+                }, {
+                    id: 14,
+                    img: "img/default/football-14.png"
+                }, {
+                    id: 15,
+                    img: "img/default/football-15.png"
+                }, {
+                    id: 16,
+                    img: "img/default/football-16.png"
+                }],
+                onGameStart: function() {
+                    return false;
+                },
+                onGameEnd: function() {
+                    return false;
+                }
+            });
+        })();
+
+    </script>
+
+
+</body>
+
+</html>

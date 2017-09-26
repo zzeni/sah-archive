@@ -1,0 +1,136 @@
+/************** CONTACT *************/
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+}
+
+.contact {
+    padding: 0 !important;
+    overflow-y: auto !important;
+    background-position: 100% 0%;
+    background-size: 22%;
+}
+
+.contact_text_content {
+    color: #4d001f;
+    height: 400px;
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#contact_container {
+    zoom: 1.2;
+    color: #4d001f;
+}
+
+.text_title {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.contact .error-message {
+    display: block;
+    color: #d60053;
+    font-weight: bold;
+    visibility: hidden;
+    margin-bottom: 3px;
+}
+
+#left-bkg {
+    width: 100%;
+    height: 100%;
+    background-position: left 84%;
+    background-size: 18%;
+    padding: 100px 64px !important;
+}
+
+#contact_us {
+    float: left;
+    width: 50%;
+}
+
+#contact_us input {
+    margin: 4px 0 0;
+    border: 1px solid #4d001f;
+    height: 22px;
+}
+
+#contact_us #phone {
+    margin-bottom: 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#contact_us #subject {
+    width: 270px;
+}
+
+#contact_us #submit {
+    background-color: #4d001f;
+    border: 4px solid #ffa366;
+    border-radius: 20px;
+    color: #ffa366;
+    margin-left: 10px;
+    padding: 3px 16px;
+    height: 27px;
+    float: left;
+    margin-right: 3%;
+    cursor: pointer;
+}
+
+#contact_us textarea {
+    border: 1px solid #4d001f;
+    margin-top: 4px;
+    float: left;
+}
+
+#no-valid {
+    display: none;
+    width: 40%;
+    float: right;
+}
+
+.qtip-content {
+    display: none;
+    color: #4d001f !important;
+    font-weight: normal !important;
+    font-size: 14px !important;
+    line-height: 1.2em !important;
+    border-color: #f5416c !important!;
+}
+
+#valid {
+    display: none;
+}
+
+#successText {
+    float: left;
+    width: 50%;
+    font-size: 18px;
+}
+
+#successText h3 {
+    color: #4d001f;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+#successText a {
+    color: #00add9;
+    text-decoration: underline;
+}

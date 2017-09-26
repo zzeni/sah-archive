@@ -1,0 +1,29 @@
+#Blue {
+    width: 150px;
+ height: 150px;
+ border 3px;
+ background-color: coral;
+ border-radius: 10px;
+ display: block;
+ margin: 10px;
+}
+
+#Red {
+    width: 150px;
+    height: 150px;
+    border 3px;
+    background-color: coral;
+    border-radius: 10px;
+    display: block;
+    margin: 10px;
+}
+
+#Green {
+    width: 150px;
+    height: 150px;
+    border 3px;
+    background-color: coral;
+    border-radius: 10px;
+    display: block;
+    margin: 10px;
+}

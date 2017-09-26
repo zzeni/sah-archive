@@ -1,0 +1,28 @@
+.square:hover{
+
+    animation-name: bigSmall;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+}
+@keyframes bigSmall {
+    0%   {width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        opacity: 0.75;}
+    25%  {width: 125px;
+        height: 125px;
+        border-radius: 100%;
+        opacity: 0.75;}
+    50%  {width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        opacity: 0.75;}
+    75%  {width: 180px;
+        height: 180px;
+        border-radius: 100%;
+        opacity: 0.75;}
+    100% {width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        opacity: 0.75;}
+}

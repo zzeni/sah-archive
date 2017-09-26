@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" href="style07.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>REGISTER FORM</h1>
+        <form method="post" action="#">
+            <label for="user">Your username:</label>
+            <input type="text" name="username" id="user" placeholder="place to write username" autofocus="autofocus" required="required">
+            <label for="pass">Your password:</label>
+            <input type="password" name="password" id="pass" placeholder="place to write password" required="required">
+            <label for="mail">Your e-mail:</label>
+            <input type="email" name="email" id="mail" placeholder="place to write e-mail" required="required">
+            <label for="phone">Your phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="+359xxxxxxxxx" required="required">
+            <div class="newrow">
+                <select name="language">
+                    <option value="choose language" selected="selected">choose your language...</option>
+                    <option value="bul">Bulgarian</option>
+                    <option value="fre">French</option>
+                    <option value="isp">Spanish</option>
+                    <option value="ser">Serbian</option>
+                    <option value="ger">German</option>
+                    <option value="rom">Rоmanian</option>
+                    <option value="gre">Greek</option>
+                    <option value="tur">Turkish</option>
+                    <option value="mac">Macedonian</option>
+                </select>
+                <select name="country">
+                    <option value="choose country" selected="selected">
+                        choose your country...
+                    </option> 
+                    <option value="BG">Bulgaria</option>
+                    <option value="FR">France</option>
+                    <option value="ES">Spain</option>
+                    <option value="SE">Serbia</option>
+                    <option value="GER">Germany</option>
+                    <option value="ROM">Romania</option>
+                    <option value="GR">Greece</option>
+                    <option value="TR">Turkey</option>
+                    <option value="MK">Macedonia</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Choose your sex:</legend>
+                <label for="male">Male:</label>
+                <input type="radio" name="sex" value="male" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="sex" value="female" id="female">
+            </fieldset>
+            <textarea name="" id="" cols="30" rows="10" readonly="readonly">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa maiores soluta voluptates repellendus quibusdam qui ut exercitationem, quisquam sunt nisi sequi inventore corporis deserunt neque aut ipsum ea. Quis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa maiores soluta voluptates repellendus quibusdam qui ut exercitationem, quisquam sunt nisi sequi inventore corporis deserunt neque aut ipsum ea. Quis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa maiores soluta voluptates repellendus quibusdam qui ut exercitationem, quisquam sunt nisi sequi inventore corporis deserunt neque aut ipsum ea. Quis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa maiores soluta voluptates repellendus quibusdam qui ut exercitationem, quisquam sunt nisi sequi inventore corporis deserunt neque aut ipsum ea. Quis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa maiores soluta voluptates repellendus quibusdam qui ut exercitationem, quisquam sunt nisi sequi inventore corporis deserunt neque aut ipsum ea. Quis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa maiores soluta voluptates repellendus quibusdam qui ut exercitationem, quisquam sunt nisi sequi inventore corporis deserunt neque aut ipsum ea. Quis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa maiores soluta voluptates repellendus quibusdam qui ut exercitationem, quisquam sunt nisi sequi inventore corporis deserunt neque aut ipsum ea. Quis?
+            </textarea>
+            <label for="conf">Приемам условията за ползване на сайта:</label>
+            <input type="checkbox" name="confirm" value="confirm-rules" id="conf" required="required">
+            <input type="submit" name="submit" value="SEND">
+            <input type="reset" value="CLEAR">
+        </form>
+    </div>
+</body>
+</html>

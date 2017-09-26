@@ -1,0 +1,36 @@
+img {
+    height: 200px;
+    width: 270px;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    max-width: 100%;
+}
+
+main {
+    width: 800px;
+    margin: auto;
+    max-width: 100%;
+}
+
+hr {
+    width: 900px;
+    max-width: 100%;
+}
+
+.float {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+* {
+    box-sizing: border-box;
+}

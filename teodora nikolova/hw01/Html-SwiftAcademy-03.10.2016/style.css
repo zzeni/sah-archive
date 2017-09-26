@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 350px;
+    height: 300px;
+    margin: 0 auto;
+}
+.disain{
+    width: 350px;
+    height: 300px;
+    border: 10px solid red;
+    margin-left: 50px;
+    display: inline-block;
+    float: left;
+
+}
+span{
+    font-size:36px;
+}
+.hover:hover{
+    color: green;
+}
+ header h1{
+    text-align: center;
+}
+ h2{
+     text-align: center;
+ }
+li{
+    list-style: none;
+}
+ul li::before {
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 35px;
+    background-image: url('8i654XjMT.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -35px;
+    vertical-align: middle;
+}
+#wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+.second-part{
+    width: 650px;
+    display: inline-block;
+    margin-left: 50px;
+    border: 10px solid green;
+    height: 300px;
+
+        }
+
+.left{
+    float: left;
+
+}
+hr{
+    margin-top: 50px;
+    color: aqua;
+    height: 20px;
+}
+hr.style-eight {
+    padding: 0;
+    border: none;
+    border-top: medium double blue;
+    color: blue;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+blockquote{
+    padding-left: 320px;
+}
+.exactly{
+    padding-left: 10px;
+}
+h3{
+    text-align: center;
+}

@@ -1,0 +1,419 @@
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+    font-family: verdana;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f3ddc6;
+}
+
+header{
+    height:150px;
+    width:100%;
+    border-bottom:5px solid #ffffff;
+    background:	#774e34;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    text-align:center;
+}
+
+a{padding:0px; margin: 0px;}
+
+
+p {
+    font-size: 1em;
+    text-align: justify;
+    color:#003366;
+}
+
+h1 {
+    font-size:2.5em;
+    color: #ffffff;
+    display:block;
+    text-transform: uppercase;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-size:2em;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color:#ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size:1.1em;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color:#003366;
+    margin-bottom:10px;
+}
+
+img {
+    width:100px;
+    height:100px;
+    max-width: 100%;
+    float:left;
+    padding: 0 10px 0 0;
+}
+
+nav {
+    background-color: #ddb373;
+    font-family: Verdana;
+    text-align: center;
+    text-transform: uppercase;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;  
+}
+
+#mobile{
+    display:none;
+}
+
+label,input {
+    display:none;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    height:40px;
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    width: 100%;
+    margin: 0 10px 0 10px;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+nav a:hover{
+    background: #904617;
+}
+
+
+main {
+    width:1024px;
+    margin:0 auto;
+    text-align: left;
+    max-width: 100%;
+    display:flex;
+    margin-top:10px;
+    height:100%
+}
+
+section{
+    width:704px;
+    max-width:100%;
+    margin-right:10px;
+    display:block;
+    flex-wrap: wrap;
+    
+}
+
+
+article {
+    max-width:100%;
+    width:100%; 
+    height:250px;
+    background: #ffcc66;
+    margin-bottom:5px;
+    position: relative;
+    background-size: auto;
+    max-height:100%;
+}
+
+.article-info{
+    width:250px;
+    height:250px;
+    max-width: 100%;
+    background: rgba(101,66,45,0.8);
+    padding:20px;
+    display:block;
+    text-decoration: none; color:#ffffff;
+    box-sizing: border-box;
+}
+
+.article-info:hover {
+    background: rgba(221,179,115,0.9);
+    transform: scale(0.9);
+    transition: all .9s;
+}
+
+
+.obshta-informaciq{
+    background-image: url("../images/1.jpg");
+    background-size: auto;
+}
+
+.chasovnikova-kula{
+    background-image: url("../images/2.jpg");
+}
+
+.zograf{
+    background-image: url("../images/3.jpg");
+}
+
+.knigovez{
+    background-image: url("../images/4.jpg");
+}
+
+.gryncharnica{
+    background-image: url("../images/5.jpg");
+}
+
+.dyrvorezbar{
+    background-image: url("../images/6.jpg");
+}
+
+.gevreci{
+    background-image: url("../images/7.jpg");
+}
+
+.shapkar{
+    background-image: url("../images/8.jpg");
+}
+
+.bychvar{
+    background-image: url("../images/9.jpg");
+}
+
+.kovach{
+    background-image: url("../images/10.jpg");
+}
+.shevici{
+    background-image: url("../images/11.jpg");
+}
+.kojuhar{
+    background-image: url("../images/12.jpg");
+}
+
+
+
+
+
+#post-info{
+    height:30px;
+    color:#003366;
+    max-width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:5px;
+    position:relative;
+    right:0;
+    bottom:0;
+}
+
+#post-info .date{
+    width:60%;
+    text-align:center;
+    max-width: 100%;
+    display:block;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#post-info a{
+    display:inline-block;
+    background:#003366;
+    height:30px;
+    width:40%;
+    max-width: 100%;
+    font-size:0.6em;
+    text-transform: uppercase;
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+
+article:nth-of-type(3n) {
+	margin-right: 0;	
+}
+
+article:last-of-type {
+	margin-bottom: 0;	
+}
+
+
+
+aside{
+    width:320px;
+    max-width:100%;
+    background: #ddb373;
+}
+
+footer{
+    width:100%;
+    height:120px;
+    border-top:5px solid #ffffff;
+    background: #774e34;
+    }
+
+a img{
+    width:40px;
+    height:40px;
+    right:30px;
+    bottom: 30px;
+    position: fixed;
+    padding:0px;
+}
+
+.collapse{
+    cursor: pointer;
+    display: block;
+    background: #ddb373;
+    height:100%;
+    line-height:30px;
+    color:#ffffff;
+    font-weight:bold;
+    padding-top: 5px;
+
+}
+
+
+.collapse + input{
+  display: none; /* hide the checkboxes */
+    
+}
+.collapse + input + div{
+  display:none;
+}
+.collapse + input:checked + div{
+  display:block;
+}
+   
+
+
+
+
+@media screen and (max-width: 700px) {
+    
+    main{
+        flex-direction: column;
+    }
+    
+    img {
+        display: block;
+        width:300px;
+        max-width:100%;
+        float:none;
+        height:100%;
+        margin:0 auto;
+        padding: 0;
+        margin-bottom:5px;
+    }
+    
+    header{
+        height:100px;
+        width:100%;
+    }
+    
+    h1{
+        font-size: 1.4em;
+        font-weight:bold;
+    }
+    
+    h2 {
+        font-size: 2em;
+        font-weight:bold;
+        display:block;
+        text-align: center;
+        
+    }
+    
+    h3{
+        text-align: center;
+    }
+    
+
+    #mobilenav ul{
+        display:block;
+    }
+    
+    nav {
+        width:100%;
+        height:100%;
+        display:block;
+    }
+    
+    #mobile{
+        display:block;
+    }
+    
+    nav ul{
+        display:none;
+        width:100%;
+    }
+    
+    nav li {
+        display: block;
+        width:100%;
+        border-bottom: 2px solid #ffffff;
+    }
+    
+    nav a {
+        width:100%;
+        font-size:0.7em;
+        margin:0;
+        background-color: #774e34;
+    }
+    
+    section {
+        width: 100%;
+        padding:0;
+    }
+    
+    article {
+        width:100%;
+        display: block;
+        padding:0;
+                
+    }
+    
+    .article-info{
+        width:100%; 
+        display: block;
+
+    }
+    
+    
+    aside {
+        background: #886762;
+        width: 100%;
+        border-top: 5px solid #ffffff;
+    }
+    
+    
+
+}

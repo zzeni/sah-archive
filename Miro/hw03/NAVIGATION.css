@@ -1,0 +1,86 @@
+h1 {
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+ul {
+    display: block;
+    text-align: center;
+    background-color: orange;
+    border: 3px solid;
+    height: 25px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+h3 {
+    font-size: 15px;
+    font-style: italic;
+    border: 1px solid #ccc;
+    width: 180px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title-picture {
+    width: 1000px;
+}
+
+.basic-information {
+    text-align: center;
+}
+
+li {
+    display: inline;
+    text-decoration: none;
+}
+
+.main {
+    width: 1000px;
+    display: inline-block;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 250px;
+}
+
+#main-picture {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#basic-information {
+    width: 300px;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+#social {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.facebook {
+    width: 50px;
+    height: 50px;
+}
+
+.abv {
+    width: 50px;
+    height: 50px;
+}
+
+.skype {
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,19 @@
+.flexbox {
+    box-sizing: border-box;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+#first,
+#second {
+    max-width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.yellow,
+.green,
+.red,
+.blue {
+    flex-grow: 1;
+}

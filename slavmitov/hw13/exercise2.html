@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homework13</title>
+    <meta name="description" content="Homework13"> </head>
+
+<body>
+    <h1>Exercise 2</h1>
+    <script>
+        (function () {
+            "use string"
+            var artists = [
+                {
+                    name: 'David Bowie'
+                    , born: 1947
+                    , died: 2016
+                    }
+                    , {
+                    name: 'Thom Yorke'
+                    , born: 1968
+                    }
+                    , {
+                    name: 'Matt Berninger'
+                    , born: 1971
+                    }
+                    , {
+                    name: 'Tracy Chapman'
+                    , born: 1964
+                    }
+                    , {
+                    name: 'Jim Morrison'
+                    , born: 1943
+                    , died: 1971
+                    }
+                    , {
+                    name: 'Nick Cave'
+                    , born: 1957
+                    }
+  ];
+            artists.forEach(function (artist) {
+                var currentYear = (new Date()).getFullYear();
+                artist.age = (artist.died || currentYear) - artist.born;
+            });
+
+            function avarageAge(list, age) {
+                // returns the average age of all artists
+                var total = 0;
+                for (let i = 0; i < list.length; i++) {
+                    total += list[i].age;
+                }
+                return Math.round(total / list.length);
+            }
+            console.log(artists);
+            console.log("avarageAge(artists)", avarageAge(artists)); // => 50
+        })();
+    </script>
+</body>
+
+</html>

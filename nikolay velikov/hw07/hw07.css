@@ -1,0 +1,41 @@
+body {
+  background-color:antiquewhite;
+}
+input,
+textarea {
+  padding: 8px;
+  margin: 4px 0 20px 0;
+  background: #fff;
+  width: 220px;
+  font-size: 14px;
+  color: #555;
+  border: 1px #ddd solid;
+}
+
+fieldset {
+  border: none;
+}
+
+#user-message {
+  float: left;
+}
+{
+margin: 0 auto;
+margin-left: 30px;
+  
+
+}
+input.submit {
+  width: 150px;
+  color: #eee;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-left: -200px;
+  background-color: #18a5cc;
+  border: none;
+}
+selector:pseudo-class {
+ property: value;
+}
+input:hover, textarea:hover {background:azure;}
+input:focus, textarea:focus {background:gray;}

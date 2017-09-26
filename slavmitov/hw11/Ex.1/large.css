@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  background-color: lightpink;
+}
+
+#responsiveCircle {
+  background-color: forestgreen;
+}
+
+#responsiveText:before {
+  content: "large";
+  display: block;
+  line-height: 1em;
+}
+
+#responsiveText:after {
+  clear: left;
+  font-size: .5em;
+  content: "> 680px and <999px";
+  text-transform: lowercase;
+}

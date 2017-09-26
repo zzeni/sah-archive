@@ -1,0 +1,9 @@
+
+            /* RESPONSIVE */
+
+@media only screen and (max-width: 768px) and (min-width: 414px) {
+    
+    #mainNavigation li {
+        height: auto;
+    }
+}

@@ -1,0 +1,46 @@
+body {
+	box-sizing: border-box;
+	font-size: 1.2em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header,
+.social-buttons {
+	border: 5px solid rgb(102, 102, 102);
+	border-radius: 10px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.header {
+	color: white;
+	background-color: rgb(102, 102, 102);
+	height: 200px;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+.social-buttons {
+	height: 360px;
+	margin-top: inherit;
+}
+
+#facebook,
+#google,
+#instagram,
+#pinterest,
+#twitter {
+	padding: 20px 80px;
+	border: rgb(102, 102, 102);
+	color: rgb(102, 102, 102);
+	font-weight: bold;
+}
+
+#facebook {
+	background-image: image(social-media.jpg);
+	background-size: auto 35px;
+	margin: 10px
+}

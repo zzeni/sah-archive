@@ -1,0 +1,235 @@
+    body {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font: 12px Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #061C37;
+    background: gray;
+}
+
+* {
+    margin: 0 auto 0 auto;
+    text-align: left;
+}
+
+#container {
+    display: block;
+    height: auto;
+    position: relative;
+    width: 960px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#header {
+    height: 85px;
+    width: 960px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#header h1 {
+    position: absolute;
+    text-align: left;
+    font-size: 45px;
+    color: black;
+    left: 14px;
+    top: 18px;
+}
+
+#header h2 {
+    position: absolute;
+    text-align: right;
+    color: #A9D1FA;
+    left: 490px;
+    top: 38px;
+    width: 400px;
+}
+
+.off {
+    color: #67A0F5;
+}
+
+#menu {
+    display: block;
+    float: left;
+    clear: both;
+    /*0width: 1800px;*/
+    height: 54px;
+    float: left;
+    clear: both;
+    max-width: 100%;
+}
+
+#leftmenu {
+    margin-top: 15px;
+    width: 204px;
+    float: left;
+}
+
+#leftmenu_top {
+    width: 204px;
+    height: 14px;
+}
+
+#leftmenu_bottom {
+    width: 204px;
+    height: 14px;
+}
+
+#leftmenu_main {
+    width: 204px;
+    height: auto;
+    background-color: #1C478E;
+}
+
+#leftmenu_main ul {
+    list-style: none;
+    padding: 0px;
+    width: 204px;
+}
+
+#leftmenu_main h3 {
+    list-style: none;
+    padding: 45px;
+    width: 148px;
+    color: white;
+    padding-left: 25px;
+    padding-bottom: 14px;
+}
+
+#leftmenu_main ul li {
+    list-style: none;
+    padding: 45px;
+    width: 113px;
+    text-align: left;
+}
+
+#leftmenu_main ul li a,
+#leftmenu_main ul li a:visited {
+    display: block;
+    list-style: none;
+    padding: 0px;
+    width: 145px;
+    padding-left: 13px;
+    padding-top: 4px;
+    height: 50px;
+    text-align: left;
+    margin-top: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#leftmenu_main ul li a:hover {
+    color: #87BCF8;
+}
+
+#content {
+    display: block;
+    float: left;
+    width: 689px;
+    height: auto;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 532px;
+}
+
+#content_top {
+    width: 689px;
+    height: 25px;
+}
+
+#content_main {
+    width: 659px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#content_bottom {
+    width: 689px;
+    height: 25px;
+}
+
+#footer {
+    width: inherit;
+    height: auto;
+}
+
+#footer h3 a,
+#footer h3 a:visited {
+    display: inline;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: #87BCF8;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: auto;
+    width: 960px;
+}
+
+#menu a {
+    float: left;
+    height: 36px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding-top: 18px;
+    font-size: 15px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+#menu a:hover {
+    color: #86AEF9;
+}
+
+#content p {}
+
+html,
+body {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    #leftmenu_top .ul {
+        height: 14px;
+        list-style-type: none;
+    }
+    #leftmenu {
+        margin-top: 15px;
+        float: none;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        font: 12px Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: #061C37;
+        background: gray;
+    }
+    a.back to top {
+        display: none;
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        background: green url(https://www.bikeblackspot.org/images/arrow-blue.png) no-repeat center 43%;
+        text-indent: -9999px;
+        border-radius: 30px;
+    }

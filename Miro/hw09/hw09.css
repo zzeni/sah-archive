@@ -1,0 +1,80 @@
+header {
+    display: block;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: grey;
+    width: 450px;
+    height: 150px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+}
+nav {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+#facebook {
+    font-size: 40px;
+    border: solid 1px;
+    width: 450px;
+    height: 60px;
+    border-color: gray;
+    padding-top: 15px;
+    color: gray;
+    padding-left: 5px;
+}
+#instagram {
+    font-size: 40px;
+    border: solid 1px;
+    width: 450px;
+    height: 60px;
+    padding-top: 15px;
+    border-color: gray;
+    color: gray;
+    padding-left: 5px;
+}
+#twitter {
+    font-size: 40px;
+    border: solid 1px;
+    width: 450px;
+    height: 60px;
+    padding-top: 15px;
+    border-color: gray;
+    color: gray;
+    padding-left: 5px;
+}
+#pinterest {
+    font-size: 40px;
+    border: solid 1px;
+    border-color: gray;
+    width: 450px;
+    height: 60px;
+    padding-top: 15px;
+    color: gray;
+    padding-left: 5px;
+}
+#google {
+    font-size: 40px;
+    border: solid 1px;
+    border-color: gray;
+    width: 450px;
+    height: 60px;
+    padding-top: 15px;
+    color: gray;
+    padding-left: 5px;
+}

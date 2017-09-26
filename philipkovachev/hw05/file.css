@@ -1,0 +1,52 @@
+main {
+    width: 800px;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+header {
+    text-align: justify;
+    border: solid 5px;
+    border-color: #9984bf;
+    height: 80px;
+    background-color: #61c7ed;
+    padding: 10px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+nav {
+    margin-top: 15px;
+    float: left;
+    border: solid 1px;
+    background-color: #f8fb90;
+    border-color: green;
+    height: 800px;
+    padding: 25px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: inherit;
+}
+
+body {
+    background-color: #daf2da;
+}
+
+img {
+    float: right;
+    height: 100px;
+    width: 100px;
+}
+
+* {
+    box-sizing: border-box;
+    max-height: 100%;
+    max-width: 100%;
+}

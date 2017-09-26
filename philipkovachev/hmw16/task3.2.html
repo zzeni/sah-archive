@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <button onclick="startP()">Start</button>
+    <button onclick="stopP()">Stop</button>
+
+    <p id="paragraph"></p>
+
+    <script>
+        var task;
+
+        function startP() {
+            task = setInterval(function () {
+                alertFunc();
+            }, 2000);
+        }
+
+        function alertFunc(param1, param2) {
+            document.getElementById("paragraph").innerHTML += "Do you know how to stop me? ";
+
+        }
+
+        function stopP() {
+            clearInterval(task);
+        }
+    </script>
+
+</body>
+
+</html>

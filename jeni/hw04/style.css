@@ -1,0 +1,83 @@
+body {
+	background-color: white;
+}
+
+div {
+	background-color: whitesmoke;
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 60px;
+	padding: 20px;
+}
+
+header {
+	padding: 20px 50px;
+	background-color: green;
+	border: 5px dashed;
+	margin: 30px auto;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	color: white;
+	/*	float: right;*/
+	width: 400px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.green {
+	background-color: green;
+}
+
+.green {
+	background-color: green;
+}
+
+.green {
+	background-color: green;
+}
+
+nav {
+	text-align: center;
+}
+
+nav a {
+	font-family: Helvetica;
+	text-decoration: none;
+	text-align: none;
+	display: inline-block;
+	padding: 10px;
+	color: white;
+	border-color: white;
+}
+
+h2 {
+	font-family: Helvetica;
+	color: green;
+}
+
+h4 {
+	font-family: Helvetica;
+	color: green;
+}
+
+ul {
+	font-family: Helvetica;
+	color: green
+}
+
+p {
+	font-family: Helvetica;
+	font-size: 16px;
+}
+
+img {
+	float: right;
+	margin: 30px;
+}
+
+#header {
+	float: right;
+	margin-right: 0px;
+}

@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: #ffe4e1;
+    font-family: cursive;
+}
+.circle {
+    background-color: #afa879;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.circle::before {
+    content: 'SMALL';
+    font-size: 1.6em;
+    color: #fff;
+}
+
+.circle::after {
+    content: '< 460px';
+    color: #fff;
+}
+
+@media (min-width: 460px) and (max-width: 679px) {
+    body {
+        background-color: #e65a2d;
+    }
+    .circle {
+        background-color: #3b8a9b;
+    }
+    .circle::before {
+        content: 'MEDIUM';
+    }
+    .circle::after {
+        content: '460px + 679px';
+}
+}
+@media (min-width: 680px) and (max-width: 999px) {
+    body {
+        background-color: #ccffcc;
+    }
+    .circle {
+        background-color: #377e27;
+    }
+    .circle::before {
+        content: 'LARGE';
+    }
+    .circle::after {
+        content: '680px + 999px';
+}
+}
+@media (min-width: 1000px) {
+    body {
+        background-color: #ffe4e1;
+    }
+    .circle {
+        background-color: #e62d5d;
+    }
+    .circle::before {
+        content: 'EXTRA LARGE';
+    }
+    .circle::after {
+        content: '>1000px';
+}
+}

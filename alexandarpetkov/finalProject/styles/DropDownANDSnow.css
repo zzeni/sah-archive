@@ -1,0 +1,31 @@
+
+.mySnowFl {
+    position: fixed;
+    top: 16px;
+    right: 10px;
+    color: #DAA520;
+    animation-name: snowFlake;  
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes snowFlake {
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes snowFlake{
+    100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes snowFlake{
+    100% {-moz-transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
+
+
+

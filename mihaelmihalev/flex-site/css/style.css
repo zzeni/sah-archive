@@ -1,0 +1,82 @@
+
+
+body{
+    background: #000000;
+    font-size:16px;
+}
+
+
+main{
+    margin:0 auto;
+    width:600px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+
+section{
+    display:flex; 
+    flex-grow: 1;
+    margin-bottom:10px;
+}
+
+
+#jylt{
+    background-color: yellow;
+    max-width: 100%;
+    width:100%;
+    margin-right:10px;
+}
+
+#zelen{
+    background-color: green;
+    max-width:100%;
+    width:100%;
+}
+
+
+aside{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    width:100%;
+    max-width: 100%;
+}
+
+#cherven{
+    background-color: red;
+    display: flex;
+    flex-grow: 2;
+    margin-right:10px;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 0;
+    flex-direction: column;
+
+}
+
+#cherven p{
+    color:#ffffff;
+    font-size:3em;
+    font-weight: bold;
+    font-family:sans-serif;
+    text-align: center;
+    margin:0;
+}
+
+#sin{
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+}
+
+#subsin{
+    background-color: blue;
+    flex-grow: 1;
+}
+
+#subsin:first-of-type{
+    margin-bottom: 10px;
+}
+

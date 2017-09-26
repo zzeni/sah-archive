@@ -1,0 +1,47 @@
+<!DOCUMENT html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+
+    <form name="calculator">
+        <input type="textfield" name="answer" id="display" value="">
+        <div id="calculator">
+            <main class="calculator">
+                <div class="first row">
+                    <input type="button" class="one" value="1" onclick="calculator.answer.value+='1'">
+                    <input type="button" class="two " value="2" onclick=" calculator.answer.value+='2'">
+                    <input type="button" class="three" value="3" onclick="calculator.answer.value+='3'">
+                    <input type="button" class="star" value="*" onclick="calculator.answer.value+='*'">
+                </div>
+                <div class="second row ">
+                    <input type="button" class="four" value="4" onclick="calculator.answer.value+='4'">
+                    <input type="button" class="five" value="5" onclick="calculator.answer.value+='5'">
+                    <input type="button" class="six" value="6" onclick="calculator.answer.value+='6'">
+                    <input type="button" class="minus" value="-" onclick="calculator.answer.value+='-'">
+                </div>
+                <div class="third row ">
+                    <input type="button" class="seven" value="7" onclick="calculator.answer.value+='7'">
+                    <input type="button" class="eight" value="8 " onclick="calculator.answer.value+='8'">
+                    <input type="button" class="nine" value="9 " onclick="calculator.answer.value+='9'">
+                    <input type="button" class="plus" value="+" onclick="calculator.answer.value+='+'">
+                </div>
+                <div class="fourth row ">
+                    <input type="button" class="zero" value="0" onclick="document.calculator.answer.value+='0'">
+                    <input type="button" class="point" value="." onclick="calculator.answer.value+='.'">
+                    <input type="button" class="reset" value="C" onclick="calculator.answer.value+='C'">
+                    <input type="button" class="ravno" value="=" onclick="calculator.answer.value+='='">
+                </div>
+            </main>
+        </div>
+    </form>
+    <script>
+    </script>
+</body>
+
+</html>

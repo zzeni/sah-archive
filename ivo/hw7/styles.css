@@ -1,0 +1,34 @@
+h1 {
+    margin: 10px;
+    margin-top: 20px;
+}
+
+textarea {
+    width: 270px;
+    height: 120px;
+    margin-left: 103px;
+    margin-top: -16px;
+}
+
+form {
+    margin: 10px;
+    margin-top: -20px;
+}
+
+select,
+input {
+    margin: 5px;
+}
+
+button {
+    margin: 5px;
+    margin-left: 100px;
+}
+
+#tel {
+    margin-left: 42px;
+}
+
+#send {
+    margin-left: auto;
+}

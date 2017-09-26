@@ -1,0 +1,264 @@
+
+#main-header {
+    width: 100%;
+    height: 60px;
+    border: 5px solid black;
+    background-color: #5bc0de;
+    color: white;
+    padding: 10px 40px;
+    font-size: 2em;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+.aside {
+    width: 20%;
+    height: 80%;
+    border: 3px solid green;
+    background-color: khaki;
+    padding: 30px 5px 10px 20px;
+    line-height: 1.5em;
+    float: left;
+    position: fixed;
+
+}
+
+.aside p {
+    font-size: 1.5em;
+
+}
+
+main {
+    width: 90%;
+    height: auto;
+    display: inline-block;
+    padding-left: 250px;
+
+}
+
+header h2 {
+    font-size: 2em;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+
+header h3 {
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+p {
+    margin-left: 10px;
+}
+
+.glyphicon-menu-up {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: hotpink;
+
+}
+
+.glyphicon {
+    color: white;
+    position: fixed;
+    /*left: 1250px;
+    top: 600px;*/
+    left: 92%;
+    top: 60%;
+    text-align: center;
+    line-height: 50px;
+}
+
+#wrapper {
+    margin: 10px;
+}
+
+li {
+    width: auto;
+}
+
+.menu li > a:before {
+    content: '>> ';
+}
+
+a {
+    color: inherit;
+}
+
+@media only screen and (min-width: 800px) {
+    #main-header {
+        width: 100%;
+        height: 60px;
+        border: 5px solid black;
+        background-color: #5bc0de;
+        color: white;
+        padding: 10px 40px;
+        font-size: 2em;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .aside {
+        width: 20%;
+        height: 600px;
+        border: 3px solid green;
+        background-color: khaki;
+        padding: 30px 5px 10px 20px;
+        line-height: 1.5em;
+        float: left;
+
+    }
+
+    .aside p {
+        font-size: 1.5em;
+
+    }
+
+    main {
+        width: 90%;
+        height: auto;
+        display: inline-block;
+        margin: 50px 30px;
+
+    }
+
+    header h2 {
+        font-size: 2em;
+        padding-bottom: 20px;
+    }
+
+    header h3 {
+        font-size: 1.5em;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .glyphicon-menu-up {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: hotpink;
+
+    }
+
+    .glyphicon {
+        color: white;
+        position: fixed;
+        left: 92%;
+        top: 90%;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    #wrapper {
+        margin: 10px;
+    }
+
+    li {
+        width: auto;
+    }
+
+    .menu li > a:before {
+        content: '>>';
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+@media  all  and (max-width: 799px) and (min-width: 601px) {
+
+    #main-header {
+        background-color: #c7254e;
+    }
+
+    .aside{
+        background-color: #5bc0de;
+    }
+    aside p {
+        display: none;
+    }
+    .glyphicon {
+        color: white;
+        position: fixed;
+        /*left: 1250px;
+        top: 600px;*/
+        left: 92%;
+        top: 90%;
+        text-align: center;
+        line-height: 50px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+
+    .aside {
+        width: 96%;
+        height: 10%;
+        border: 3px solid green;
+        background-color: khaki;
+        /*padding: 30px 5px 10px 20px;*/
+
+        position: fixed;
+
+    }
+    nav{
+        display: inline-block;
+        width: 96%;
+    }
+
+    li,aside p{
+        display: inline-block;
+        height: 50px;
+       margin: 0 auto;
+        text-align: center;
+
+    }
+    aside p{
+        font-size: 0.5em;
+
+
+
+    }
+    main {
+        width: 90%;
+        height: auto;
+        padding-left: 5px;
+        padding-top: 80px;
+
+
+    }
+    .glyphicon {
+        color: white;
+        position: fixed;
+
+        left: 90%;
+        top: 90%;
+        text-align: center;
+        line-height: 50px;
+    }
+    aside p{
+       display: none;
+
+    }
+    nav{
+        text-align: center;
+        display: inline-flex;
+        justify-content: center;
+
+    }
+    ul{
+        display: inline-block;
+        text-align: center;
+
+    }
+    ul li:last-child{
+        display: none;
+    }
+
+
+}

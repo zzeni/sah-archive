@@ -1,0 +1,131 @@
+body {
+    background: lightgrey;
+}
+#wrapper {
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+    border: 2px solid blue;
+    font-size: 16px;
+    padding: 1%;
+    background: white;
+    font-family: sans-serif;
+    position: absolute;
+}
+header {
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid pink;   
+    background: lightblue;
+    color: white;
+    height: 8%;
+    text-align: center;
+    margin-bottom: 1%;
+}
+nav {
+    display: inline-block;
+    width: 25%;
+    height: 550px;
+    vertical-align: top;
+    border: 2px solid lightgreen;
+    background: lightyellow;
+    box-sizing: border-box;
+    padding-left: 1.5%;
+    position: fixed;
+    word-break: break-all;
+}
+nav > h3 {
+    font-size: 1.8em;
+}
+nav > ul {
+    padding: 0;
+}
+li {
+        list-style-type: none;
+        margin-top: 3%;
+}
+li > a {
+    text-decoration: none;
+    color: black;
+}
+main {
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 5%;
+    width: 65%;
+    vertical-align: top;
+    float: right;
+}
+main:after {
+    clear: both;
+}
+main > article {
+    text-align: justify;
+}
+main > h2 {
+    font-size: 2em;
+}
+#wrapper  div {
+    display: inline-block;
+    position: fixed;
+    bottom: 2%;
+    right: 2.5%;
+    width: 40px;
+    height: 40px;
+    border: 3px solid pink;
+    background: lightblue;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+#wrapper > a {
+    color: white;
+}
+
+        /* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: block;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        position: relative;
+    }
+    li {
+        display: inline-block;
+        margin: 0.5% 0;
+
+    }
+    ul {
+        margin: 0;
+        display: inline-block;
+        margin-left: 2%;
+    }
+    nav > h3 {
+        margin: 0.5% 0;
+        display: inline-block;
+    }
+    main {
+        margin-top: 10%;
+        width: 100%;
+        position: static;
+        box-sizing: border-box;
+        float: none;
+        margin-left: 0;
+    }
+    #wrapper {
+        box-sizing: border-box;
+    }
+    #wrapper  div {
+        right: 5%;
+        opacity: 0.5;
+    }
+    #wrapper > a:hover div{
+        opacity: 1;
+    }
+}
+

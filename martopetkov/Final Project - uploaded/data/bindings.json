@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Eiki Pro Model",
+        "url": "img/bindings/switchback-eiki-pro-model-snowboard-bindings-2017-blue-purple.jpg",
+        "price": 259,
+        "desc": "Initiate wizard mode as soon as you buckle into the Switchback Eiki Pro Model Snowboard Bindings. Are the bindings what's behind all of Eiki Helgason's magic and trick sorcery? No, but they'll sure make your time on the board more enjoyable. They've got got the plushest padding in the Switchback lineup, have unrestricted tweakability with the Flatback highback, and are never prone to foot pinching or ill-fit thanks to the Miller Straps. You might not be hucking blind 3's into boardslide (if you are, ill) but you'll be enjoying the ride just as much as the pros with the Switchback Eiki Pro Model Snowboard Bindings.",
+        "rating": 4.5,
+        "category": "bindings",
+        "brand": "switchback",
+        "gender": "men"
+  },
+    {
+        "title": "Halldor Pro Model",
+        "url": "img/bindings/switchback-halldor-pro-model-snowboard-bindings-2017-pink-yellow.jpg",
+        "price": 279,
+        "desc": "What's going on in Halldor's cranium? You don't know, we don't know, and his bindings sure as hell don't know - but we love it. Therefore Switchback has quite the task to create a binder that can take whatever move his twisted mind thinks up next. Constructed with the mega-cushy Jib Pads, Eames straps and the medium-flexing Wrapback highbacks, the Switchback Halldor Pro Model Snowboard Bindings offer tremendous amounts of response and comfort. From 60 ft booters to tight urban lines, the Switchback Halldor Pro Model Snowboard Bindings keep things controlled while leaving some room to spread some sauce.",
+        "rating": 4.5,
+        "category": "bindings",
+        "brand": "switchback",
+        "gender": "men"
+  },
+    {
+        "title": "Trilogy Bindings - Women's",
+        "url": "img/bindings/union-trilogy-snowboard-bindings-women-s-2017-black.jpg",
+        "price": 229,
+        "desc": "Professional rippers Jamie Anderson and Jess Kimura demand a lot out of their bindings, whether they're throwing double corks or greasing rails; that's why they ride the Union Trilogy Snowboard Bindings for all their slopestyle needs. Not only are they the lightest female bindings on the market, but they've also got extremely tough/durable baseplates that Union backs for life. If you're an established rider looking to add to your bag of tricks this season, step into the Union Trilogy Snowboard Bindings and soar to new heights.",
+        "rating": 4.1,
+        "category": "bindings",
+        "brand": "union",
+        "gender": "women"
+  },
+    {
+        "title": "Flite Pro",
+        "url": "img/bindings/union-flite-pro-snowboard-bindings-2017-black.jpg",
+        "price": 159,
+        "desc": "Freakin' light (aka 'Flite'), the Union Flite Pro Snowboard Bindings are durably made all-terrain foot holders that won't garner your wages. Not to mention, they're pretty freakin' light. Their CP1 Highback was developed and tested by living legend Gigi Ruf to provide a comfortable, yet highly responsive feel for snowboarders of every level. Plus, with extruded 3D aluminum heelcups the Union Flite Pro Bindings are durable and fully capable of letting you push the limits.",
+        "rating": 4.5,
+        "category": "bindings",
+        "brand": "union",
+        "gender": "men"
+  },
+    {
+        "title": "Juliet - Women's",
+        "url": "img/bindings/union-juliet-snowboard-bindings-women-s-2017-aqua.jpg",
+        "price": 179,
+        "desc": "The Union Juliet Snowboard Bindings will make you want to rename your board Romeo. Designed to complement your all-mountain setup, the Juliet Bindings are easy to use, durably constructed, and ergonomically designed for an optimal fit. Symmetric 3D straps work to evenly distribute pressure across the top of the foot to alleviate hot spots, while a full-coverage multi-density EVA foam base actively dampens impacts and fatiguing vibrations. With a moderate flex, lifetime-backed construction, and versatile style, the Union Juliet Snowboard Bindings are perfect for regular riders that do it all.",
+        "rating": 3.5,
+        "category": "bindings",
+        "brand": "union",
+        "gender": "women"
+  },
+    {
+        "title": "Yeah Yeah - Women's",
+        "url": "img/bindings/k2-yeah-yeah-snowboard-bindings-women-s-2016-burgundy.jpg",
+        "price": 158,
+        "desc": "Searching for a binding that'll let you butter and play while still providing ample support for ripping at aggressive speeds? The K2 Yeah Yeah Snowboard Bindings offer the ideal blend of flex and support for ladies looking to progress in the park, pipe, and all over the mountain thanks to an A-Line GF baseplate that lets the board flex naturally underfoot combined with women's specific, highly supportive Peaceback™ highbacks. New this year, the K2 Yeah Yeah Snowboard Bindings also boast a universal disc mount, so you can affix them to any shred stick you please.",
+        "rating": 4.1,
+        "category": "bindings",
+        "brand": "k2",
+        "gender": "women"
+  }
+]

@@ -1,0 +1,73 @@
+[
+    {
+        "title": "Light JP Walker Pro Model",
+        "url": "img/boots/32-light-jp-walker-pro-model-snowboard-boots-2017-black-grey-red.jpg",
+        "price": 199,
+        "desc": "Lightweight and cushy, the 32 Light JP Walker Pro Model Snowboard Boots were designed for jibbers and park rats who know the intricate flex pattern of their snowboard better than anything. Who said a performance boot can't be soft and comfortable? Not JP Walker! Outfitted with high performance fit features like a 3D molded tongue and an articulating cuff for superior tweaks and grabs, the 32 Light JP Walker Pro Model Snowboard Boots are your ticket to freestyle domination this winter.",
+        "rating": 4.1,
+        "category": "boots",
+        "brand": "32",
+        "gender": "men"
+  },
+    {
+        "title": "Focus Boa",
+        "url": "img/boots/32-focus-boa-snowboard-boots-2017-black.jpg",
+        "price": 359,
+        "desc": "It's hard to focus on stomping tricks or riding technical lines when you're feet slosh around in your boots, so dial in the perfect fit this season with the quick and easy Dual Boa® Closure System of the 32 Focus Boa Snowboard Boots. Featuring the highest level performance fit and a stiff, responsive flex, the Focus Boa Snowboard Boots will guide your feet through any terrain you put before 'em and let you focus your attention where it matters most.",
+        "rating": 4.1,
+        "category": "boots",
+        "brand": "32",
+        "gender": "men"
+  },
+    {
+        "title": "Lashed Boa - Women's",
+        "url": "img/boots/32-lashed-boa-snowboard-boots-women-s-2017-black.jpg",
+        "price": 259,
+        "desc": "From sun-up to sun-down, slackcountry to in-bounds jibbing, the 32 Lashed Boa Snowboard Boots handle it all with uncanny familiarity. As a rendition of the worldwide #1 best seller, these snowboarding kicks flaunt a Boa® lacing system that quite literally allows you to \"dial-in\" the perfect fit to meet your needs. Quick-adjusting, comfortable, and capable of shredding the entirety of the resort with authority, it's tough to find a more versatile or well-rounded boot than the 32 Lashed Boa Snowboard Boots.",
+        "rating": 4.1,
+        "category": "boots",
+        "brand": "32",
+        "gender": "women"
+  },
+    {
+        "title": "Lashed - Women's",
+        "url": "img/boots/32-lashed-snowboard-boots-women-s-2017-burgundy.jpg",
+        "price": 229,
+        "desc": "There's a reason why the 32 Lashed Snowboard Boots are the #1 selling boot on planet Earth. With an optimum all-mountain flex, 32 s long-developed Team Fit with fully heat moldable Level 2 liners, and a trusty lacing system, the 32 Lashed Snowboard Boots are akin to that one pair of sneakers that literally do it all and leave your feet feeling 100% at the end of a full-fledged epic day. Girl, trust us, you can't go wrong with these bad boys!",
+        "rating": 4.1,
+        "category": "boots",
+        "brand": "32",
+        "gender": "women"
+  },
+    {
+        "title": "Lashed FT - Women's",
+        "url": "img/boots/32-lashed-ft-snowboard-boots-women-s-2016-blue.jpg",
+        "price": 189,
+        "desc": "Kiss those frustrating days of heel lift goodbye with the 32 Lashed FT Snowboard Boots. With an internal lacing system, cushy liner, and 32 s proprietary Fast Track Lacing System, you'll be able to dial in the fit on these snazzy little dancing boots without skipping a beat. They've got a solid, mid-range flex that will hold in those off-piste dalliances (but won't feel too stiff in the park), a high density outsole for grip on bootpacks, and independent eyestays to keep your foot enveloped comfortably. Dial in your fit, head for the hills, and take on whatever lies in your path with ease.",
+        "rating": 4.1,
+        "category": "boots",
+        "brand": "32",
+        "gender": "women"
+  },
+    {
+        "title": "Binary Boa ",
+        "url": "img/boots/32-binary-boa-snowboard-boots-2017-brown-black.jpg",
+        "price": 229,
+        "desc": "If you're thinking about intentionally going for that dub cork this season -- not just another \"when in trouble, tuck for double\" thing -- the 32 Binary Boa Snowboard Boots belong on your feet. With a fit that's tailored to 32 s pro team riders, the Binary Boa Snowboard Boots come equipped with 100% heat moldable Level 2 Liners, an articulated cuff for aggressive heel hold, and shock absorbent STI Evolution Foam® outsoles. Add in the Binary Boa's extra snug, leg-hugging nature with an external dual Boa® closure system and a separate internal lacing system, and you'll be riding away from those dub corks in no time!",
+        "rating": 4.1,
+        "category": "boots",
+        "brand": "32",
+        "gender": "women"
+  },
+    {
+        "title": "Burton Boot model",
+        "url": "img/boots/32-binary-boa-snowboard-boots-2017-brown-black.jpg",
+        "price": 229,
+        "desc": "Burton boots information goese here!",
+        "rating": 4.1,
+        "category": "boots",
+        "brand": "burton",
+        "gender": "women"
+  }
+    
+]

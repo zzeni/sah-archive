@@ -1,0 +1,144 @@
+p {
+    text-align: center;
+    line-height: 250px;
+}
+
+#red {
+    color: white;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 10px;
+}
+
+#blue {
+    color: white;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    top: 0;
+    right: 0;
+    position: fixed;
+    padding: 10px;
+}
+
+#green {
+    color: white;
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    padding: 10px;
+}
+
+#black {
+    color: white;
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    padding: 10px;
+}
+
+@media (min-width: 399px)and (max-width: 499px) {
+    #red {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    #blue {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    #green {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    #black {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media (min-width: 499px)and (max-width: 599px) {
+    #blue {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    #green {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    #black {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    #red {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media (min-width: 599px)and (max-width: 699px) {
+    #green {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    #black {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    #red {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    #blue {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+
+@media (min-width: 699px)and (max-width: 799px) {
+    #black {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    #red {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    #blue {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    #green {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    float: left;
+}

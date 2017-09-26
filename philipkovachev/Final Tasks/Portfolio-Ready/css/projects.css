@@ -1,0 +1,210 @@
+h2 {
+    color: white;
+    margin-top: 30px;
+    float: left;
+    padding: 10px;
+}
+
+span {
+    color: lightgray;
+}
+
+hr {
+    opacity: 0.3;
+    width: 100%;
+}
+
+h1,
+{
+    color: white;
+}
+
+main {
+    font-size: 30;
+    background-color: white;
+    height: 900px;
+    width: 800px;
+}
+
+a {
+    font-size: 30px;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.blue {
+    background-color: #396170;
+    flex: 1;
+}
+
+.purple {
+    background-color: #31223C;
+    flex: 1;
+}
+
+.red {
+    background-color: #411A1B;
+    flex: 1;
+}
+
+.green {
+    background-color: #1C532E;
+    flex: 1;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    opacity: 0.80
+}
+
+div {
+    color: black;
+}
+
+body {
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: black;
+}
+
+.right {
+    float: right;
+    padding: 30px;
+    font-size: 20px;
+}
+
+input {
+    height: 50px;
+    width: 260px;
+    border: solid 1px white;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #484848;
+    color: aliceblue;
+}
+
+.message {
+    color: black;
+    margin: 50px;
+}
+
+section {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    opacity: 0.9
+}
+
+@media screen and (max-width: 480px) {
+    a {
+        font-size: 15px;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    opacity: 0.80
+}
+
+.animation {
+    /* Webkit */
+    background-image: -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 40, from(white), color-stop(0.1, rgba(248, 255, 128, .5)), to(transparent)), -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 30, from(white), color-stop(0.1, rgba(255, 186, 170, .4)), to(transparent)), -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 40, from(rgba(255, 255, 255, .9)), color-stop(0.05, rgba(251, 255, 186, .3)), to(transparent)), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from(rgba(255, 255, 255, .4)), color-stop(0.03, rgba(253, 255, 219, .2)), to(transparent));
+    /* Firefox */
+    background-image: -moz-radial-gradient(circle, #FFFFFF 2px, rgba(248, 255, 128, .5) 4px, transparent 40px), -moz-radial-gradient(circle, #FFFFFF 1px, rgba(255, 186, 170, .4) 3px, transparent 30px), -moz-radial-gradient(circle, rgba(255, 255, 255, .9) 1px, rgba(251, 255, 186, .3) 2px, transparent 40px), -moz-radial-gradient(circle, rgba(255, 255, 255, .4), rgba(253, 255, 219, .2) 1px, transparent 30px);
+    /* Background images size */
+    background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
+    /* Background images position*/
+    background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    /* Animation */
+    animation-name: movement;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* Firefox */
+    -moz-animation-name: movement;
+    -moz-animation-duration: 5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    /* Webkit */
+    -webkit-animation-name: movement;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes movement {
+    from {
+        background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    }
+    to {
+        background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+    }
+}
+
+@-moz-keyframes movement {
+    from {
+        background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    }
+    to {
+        background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+    }
+}
+
+@-webkit-keyframes movement {
+    from {
+        background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    }
+    to {
+        background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+    }
+}
+
+[lang="bg"] .lang-en {
+    display: none;
+}
+
+[lang="en"] .lang-bg {
+    display: none;
+}
+
+h6 {
+    text-align: center;
+}
+
+section {
+    margin: 50px;
+}
+
+h5 {
+    text-align: center;
+    font-size: 25px;
+}

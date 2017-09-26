@@ -1,0 +1,64 @@
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+#wrapper {
+    width: 350px;
+    height:500px;
+    margin: 50px auto;
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+#number, #operators, #point {
+    text-align: center;
+    line-height: 50px;
+}
+#number {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+#operators {
+    display: flex;
+    flex-direction: column;
+}
+#number > div, #operators > div, #point {
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    margin: 15px;
+    font-size: 25px;
+}
+#point {
+    width: calc(100% - 45px);
+    margin-top: 0;
+}
+p {
+    height: 60px;
+    width: auto;
+    text-align: end;
+    font-size: 30px;
+    background: white;
+    border: 1px solid black;
+    width: 100%;
+    line-height: 60px;
+}
+
+input[type="reset"] {
+    border: none;
+    width:100%;
+    height:100%;
+    font-size: 25px;
+}

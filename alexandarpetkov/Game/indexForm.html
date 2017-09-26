@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <form action="http://zenlabs.pro/api/game/start" name="regform" method="post">
+            <label for="name">Your name:</label>
+            <input type="text" name="name" placeholder="write name">
+            <label for="email">Your e-mail:</label>
+            <input type="email" name="email" placeholder="write e-mail">
+            <label for="message">Your message:</label>
+            <input type="text" name="message" placeholder="write message">
+            <input type="submit" name="submit" value="SUBMIT">
+        </form>
+    </div>
+
+
+    <style>
+        #wrapper {
+            width: 280px;
+            height: auto;
+            background-color: lightpink;
+            margin: 0 auto;
+            padding: 30px; 
+        }
+        input, label {
+            display: block;
+            margin: 10px;
+            height: 20px;
+            width: 220px;
+            outline: none;
+        }       
+    </style>
+</body>
+</html>

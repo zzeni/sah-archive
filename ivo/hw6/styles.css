@@ -1,0 +1,90 @@
+            #header {
+                background-color: #15d2ef;
+                max-width: 100%;
+                border: 4px solid pink;
+                box-sizing: border-box;
+            }
+            
+            header {
+                text-align: center;
+                font-size: 1.3em;
+                color: white;
+            }
+            
+            nav a {
+                text-decoration: none;
+                display: block;
+                height: 20px;
+            }
+            
+            #navigation {
+                float: left;
+                padding: 1px;
+                margin-top: 5px;
+                height: 564px;
+                width: 100px;
+                max-width: 100%;
+                box-sizing: border-box;
+                background-color: #f2ff91;
+                border: 4px solid green;
+                text-align: center;
+                position: absolute;
+            }
+            
+            article {
+                margin-left: 110px;
+                margin-right: 35px;
+                font-size: 1em;
+                position: inherit;
+            }
+            
+            #totop {
+                width: 32px;
+                height: 30px;
+                float: right;
+                position: fixed;
+                bottom: 4px;
+                right: 6px;
+                display: block;
+                max-width: 100%;
+            }
+            
+            @media only screen and (min-width:600px) and (max-width: 799px) {
+                #header {
+                    background-color: blue;
+                }
+                #navigation {
+                    background-color: coral;
+                }
+            }
+            
+            @media only screen and (max-width: 599px) {
+                #navigation {
+                    height: 60px;
+                    width: 97%;
+                    max-width: 100%;
+                    box-sizing: border-box;
+                    background-color: #f2ff91;
+                    border: 4px solid green;
+                }
+                nav a {
+                    display: inline;
+                    margin-top: 50px;
+                    font-size: 0.9em;
+                }
+                #par-left {
+                    text-align: left;
+                    padding-left: 2px;
+                    font-size: 1 em;
+                }
+                #article1 {
+                    margin-top: 70px;
+                }
+                nav {
+                    margin-top: -37px;
+                    font-size: 1.3em;
+                }
+                article {
+                    margin-left: 10px;
+                }
+            }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+<div id="container">
+    <table>
+        <tbody>
+        <tr>
+            <td colspan="4"><input type="text" name="input" id="screen"></td>
+        </tr>
+        <tr>
+            <td><button id="1" onclick="makeString(this.id)">1</button></td>
+            <td><button id="2" onclick="makeString(this.id)">2</button></td>
+            <td><button id="3" onclick="makeString(this.id)">3</button></td>
+            <td><button id="plus" onclick="makeString(this.id)">+</button></td>
+        </tr>
+        <tr>
+            <td><button id="4" onclick="makeString(this.id)">4</button></td>
+            <td><button id="5" onclick="makeString(this.id)">5</button></td>
+            <td><button id="6" onclick="makeString(this.id)">6</button></td>
+            <td><button id="minus" onclick="makeString(this.id)">-</button></td>
+        </tr>
+        <tr>
+            <td><button id="7" onclick="makeString(this.id)">7</button></td>
+            <td><button id="8" onclick="makeString(this.id)">8</button></td>
+            <td><button id="9" onclick="makeString(this.id)">9</button></td>
+            <td><button id="multiply" onclick="makeString(this.id)">*</button></td>
+        </tr>
+        <tr>
+            <td><button id="clear" onclick="makeString(this.id)">C</button></td>
+            <td><button id="0" onclick="makeString(this.id)">0</button></td>
+            <td><button id="result" onclick="makeString(this.id)">=</button></td>
+            <td><button id="devide" onclick="makeString(this.id)">/</button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    var calcDisplay = document.getElementById("screen");
+    var stringToEvaluate = "0";
+    calcDisplay.value = stringToEvaluate;
+    stringToEvaluate = "";
+    function makeString(clickedID) {
+        if (clickedID != "result" && clickedID != "clear") {
+            switch (clickedID) {
+                case "plus": stringToEvaluate += "+"; calcDisplay.value = stringToEvaluate; break;
+                case "minus": stringToEvaluate += "-"; calcDisplay.value = stringToEvaluate; break;
+                case "multiply": stringToEvaluate += "*"; calcDisplay.value = stringToEvaluate; break;
+                case "devide": stringToEvaluate += "/"; calcDisplay.value = stringToEvaluate; break;
+                default: stringToEvaluate += clickedID; calcDisplay.value = stringToEvaluate; break;
+            }
+        }
+        else if (clickedID == "clear") {
+            stringToEvaluate = "0";
+            calcDisplay.value=stringToEvaluate;
+            stringToEvaluate = "";
+        }
+        else if (clickedID == "result") {
+            var resultString = eval(stringToEvaluate);
+            calcDisplay.value = resultString;
+            stringToEvaluate = resultString;
+        }
+    }
+</script>
+</body>
+</html>

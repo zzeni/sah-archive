@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+    border-bottom: dashed;
+    border-color: red;
+    padding: 20px;
+}
+
+main {
+    height: 480px;
+    width: 800px;
+    background-color: orange;
+    max-height: 100% max-width: 100%;
+    border: dashed;
+    border-color: #b48c81;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+nav {
+    display: inline-flex;
+}
+
+.red {
+    background-color: #c66b31;
+}
+
+.green {
+    background-color: #858d27;
+}
+
+.yellow {
+    background-color: #515e78;
+}
+
+.black {
+    background-color: #c24956;
+}
+
+a {
+    text-decoration: none;
+    border: dashed 10px;
+    border-color: lightgray;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    font-size: 1, 5 em;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}
+
+header {
+    text-align: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a:hover {
+    width: 135px;
+    height: 135px;
+}

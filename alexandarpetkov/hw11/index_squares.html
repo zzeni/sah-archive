@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- <link rel="stylesheet" href="style_squares.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The square task</title>
+
+</head>
+<style>
+  body {
+  font-family: sans-serif;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.black {
+  background-color: black;
+}
+.black, .green, .red, .blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Bonus points if you can make the text be centered in the square */
+
+/* Smallest first (<399px) */
+@media only screen and (max-width: 400px) {
+  .square {
+    width: 100%;
+  }
+}
+
+@media {}
+/* 400 - 499 */
+@media only screen and (min-width: 400px) and (max-width: 499px){
+  .square {
+    position: fixed;
+  }
+  .red {
+    left: 0;
+    top: 0;
+  }
+  .blue {
+    right: 0;
+    top: 0;
+  }
+  .green {
+    left: 0;
+    bottom: 0;
+  }
+  .black {
+    right: 0;
+    bottom: 0;
+  }
+
+}
+/* 500 - 599 */
+@media only screen and (min-width: 500px) and (max-width: 599px){
+  .square {
+    position: fixed;
+  }
+  .blue {
+    left: 0;
+    top: 0;
+  }
+  .green {
+    right: 0;
+    top: 0;
+  }
+  .black {
+    left: 0;
+    bottom: 0;
+  }
+  .red {
+    right: 0;
+    bottom: 0;
+  }
+}
+/* 600 - 699 */
+@media only screen and (min-width: 600px) and (max-width: 699px){
+  .square {
+    position: fixed;
+  }
+  .green {
+    left: 0;
+    top: 0;
+  }
+  .black {
+    right: 0;
+    top: 0;
+  }
+  .red {
+    left: 0;
+    bottom: 0;
+  }
+  .blue {
+    right: 0;
+    bottom: 0;
+  }
+}
+/* 700 - 799 */
+@media only screen and (min-width: 700px) and (max-width: 799px){
+  .square {
+    position: fixed;
+  }
+  .black {
+    left: 0;
+    top: 0;
+  }
+  .red {
+    right: 0;
+    top: 0;
+  }
+  .blue {
+    left: 0;
+    bottom: 0;
+  }
+  .green {
+    right: 0;
+    bottom: 0;
+  }
+}
+/* > 800 */
+@media only screen and (min-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+}
+</style>
+<body>
+  <div class="square red">
+    <p>
+      RED
+    </p>
+  </div>
+  <div class="square blue">
+    <p>
+      BLUE
+    </p>
+  </div>
+  <div class="square green">
+    <p>
+      GREEN
+    </p>
+  </div>
+  <div class="square black">
+    <p>
+      BLACK
+    </p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+[
+        {
+            "name": "eel",
+            "url": "images/eel.jpg",
+            "category": "bonyfish"
+  },
+        {
+            "name": "fish",
+            "url": "images/fish.jpg",
+            "category": "bonyfish"
+  },
+        {
+            "name": "fish2",
+            "url": "images/fish2.jpg",
+            "category": "bonyfish"
+  },
+        {
+            "name": "turbot",
+            "url": "images/turbot.jpg",
+            "category": "bonyfish"
+  },
+        {
+            "name": "ray",
+            "url": "images/ray.jpg",
+            "category": "cartilagefish"
+  },
+        {
+            "name": "ray2",
+            "url": "images/ray2.jpg",
+            "category": "cartilagefish"
+  },
+        {
+            "name": "shark",
+            "url": "images/shark.jpg",
+            "category": "cartilagefish"
+  },
+        {
+            "name": "shark2",
+            "url": "images/shark2.jpg",
+            "category": "cartilagefish"
+  },
+        {
+            "name": "newt",
+            "url": "images/newt.jpg",
+            "category": "caudata"
+  },
+        {
+            "name": "proteus",
+            "url": "images/proteus.jpg",
+            "category": "caudata"
+  },
+        {
+            "name": "salamander1",
+            "url": "images/salamander1.jpg",
+            "category": "caudata"
+  },
+        {
+            "name": "salamander2",
+            "url": "images/salamander2.jpg",
+            "category": "caudata"
+  },
+        {
+            "name": "frog",
+            "url": "images/frog.jpg",
+            "category": "ecaudata"
+  },
+        {
+            "name": "frog2",
+            "url": "images/frog2.jpg",
+            "category": "ecaudata"
+  },
+        {
+            "name": "frog3",
+            "url": "images/frog3.jpg",
+            "category": "ecaudata"
+  },
+        {
+            "name": "gegeo",
+            "url": "images/gegeo.jpg",
+            "category": "legless"
+  },
+        {
+            "name": "siphonops",
+            "url": "images/siphonops.jpg",
+            "category": "legless"
+  },
+        {
+            "name": "crocodile",
+            "url": "images/crocodile.jpg",
+            "category": "crocodile"
+  },
+        {
+            "name": "crocodile2",
+            "url": "images/crocodile2.jpg",
+            "category": "crocodile"
+  },
+        {
+            "name": "crocodile3",
+            "url": "images/crocodile3.jpg",
+            "category": "crocodile"
+  },
+        {
+            "name": "chameleon",
+            "url": "images/chameleon.jpg",
+            "category": "scaled"
+  },
+        {
+            "name": "lizard",
+            "url": "images/lizard.jpg",
+            "category": "scaled"
+  },
+        {
+            "name": "lizard2",
+            "url": "images/lizard2.jpg",
+            "category": "scaled"
+  },
+        {
+            "name": "snake",
+            "url": "images/snake.jpg",
+            "category": "scaled"
+},
+        {
+            "name": "snake2",
+            "url": "images/snake2.jpg",
+            "category": "scaled"
+  },
+        {
+            "name": "tortoise",
+            "url": "images/tortoise.jpg",
+            "category": "tortoise"
+  },
+        {
+            "name": "turtle",
+            "url": "images/turtle.jpg",
+            "category": "tortoise"
+  },
+        {
+            "name": "turtle2",
+            "url": "images/turtle2.jpg",
+            "category": "tortoise"
+  },
+        {
+            "name": "penguin",
+            "url": "images/penguin.jpg",
+            "category": "swimming"
+  },
+        {
+            "name": "penguin2",
+            "url": "images/penguin2.jpg",
+            "category": "swimming"
+  },
+        {
+            "name": "penguin3",
+            "url": "images/penguin3.jpg",
+            "category": "swimming"
+  },
+        {
+            "name": "emu",
+            "url": "images/emu.jpg",
+            "category": "running"
+  },
+        {
+            "name": "kiwi",
+            "url": "images/kiwi.jpg",
+            "category": "running"
+  },
+        {
+            "name": "ostrich",
+            "url": "images/ostrich.jpg",
+            "category": "running"
+  },
+        {
+            "name": "rhea",
+            "url": "images/rhea.jpg",
+            "category": "running"
+  },
+        {
+            "name": "bird",
+            "url": "images/bird.jpg",
+            "category": "flying"
+  },
+        {
+            "name": "bird2",
+            "url": "images/bird2.jpg",
+            "category": "flying"
+  },
+        {
+            "name": "bird3",
+            "url": "images/bird3.jpg",
+            "category": "flying"
+  },
+        {
+            "name": "bird4",
+            "url": "images/bird4.jpg",
+            "category": "flying"
+  },
+        {
+            "name": "bird5",
+            "url": "images/bird5.jpg",
+            "category": "flying"
+  },
+        {
+            "name": "bird6",
+            "url": "images/bird6.jpg",
+            "category": "flying"
+  },
+        {
+            "name": "bird7",
+            "url": "images/bird7.jpg",
+            "category": "flying"
+  },
+        {
+            "name": "bird8",
+            "url": "images/bird8.jpg",
+            "category": "flying"
+  },
+        {
+            "name": "bird9",
+            "url": "images/bird9.jpg",
+            "category": "flying"
+  },
+        {
+            "name": "echidna",
+            "url": "images/echidna.jpg",
+            "category": "egglaying"
+  },
+        {
+            "name": "echidna2",
+            "url": "images/echidna2.jpg",
+            "category": "egglaying"
+  },
+        {
+            "name": "platypus",
+            "url": "images/platypus.jpg",
+            "category": "egglaying"
+  },
+        {
+            "name": "kangaroo",
+            "url": "images/kangaroo.jpg",
+            "category": "pouched"
+  },
+        {
+            "name": "koala",
+            "url": "images/koala.jpg",
+            "category": "pouched"
+ },
+        {
+            "name": "opossum",
+            "url": "images/opossum.jpg",
+            "category": "pouched"
+  },
+        {
+            "name": "bat",
+            "url": "images/bat.jpg",
+            "category": "placental"
+  },
+        {
+            "name": "fenek",
+            "url": "images/fenek.jpg",
+            "category": "placental"
+  },
+        {
+            "name": "lion",
+            "url": "images/lion.jpg",
+            "category": "placental"
+  },
+        {
+            "name": "rabbit",
+            "url": "images/rabbit.jpg",
+            "category": "placental"
+  },
+        {
+            "name": "taral",
+            "url": "images/taral.jpg",
+            "category": "placental"
+  }
+]

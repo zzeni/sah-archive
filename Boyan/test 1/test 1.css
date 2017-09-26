@@ -1,0 +1,63 @@
+        main {
+            border-style: dashed;
+            box-sizing: 800px;
+            padding: 20px;
+            background-color: darkorange;
+            text-align: center;
+            color: white;
+        }
+        
+        h1 {
+            border-style: dashed;
+            background-color: darkorange;
+            padding: 30px;
+        }
+        
+        h2 {
+            border-style: dashed;
+            padding-bottom: 1000px;
+        }
+        
+        .btn {
+            display: block;
+            justify-content: center;
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+            font: white;
+            display: flex;
+        }
+        
+        .btn-red {
+            background-color: red;
+            border: 10px dashed;
+            border-radius: 0%;
+            width: 50px;
+            height: 50px;
+            align-items: center;
+        }
+        
+        .btn-green {
+            background-color: green;
+            border: dashed 10px;
+        }
+        
+        .btn-golden {
+            background-color: darkgoldenrod;
+            border: dashed 10px;
+        }
+        
+        .btn-blue {
+            background-color: blue;
+            border: dashed 10px;
+        }
+        
+        .btn {
+            text-decoration: none;
+            border-radius: 0%;
+        }
+        
+        @media and (max-width: 470px;
+        )nav {
+            display: ;
+        }

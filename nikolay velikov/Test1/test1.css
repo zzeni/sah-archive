@@ -1,0 +1,35 @@
+.btn {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px
+    border-radius: 100%;
+}
+
+.btn-red {
+  background-color: #965454;  
+  border: rgba(224, 192, 168, .5) 10px dashed;
+}
+
+.btn-green {
+  background-color: #488448;  
+  border: rgba(192, 224, 168, .5) 10px dashed;
+}
+
+.btn-yellow {
+  background-color: #968454;  
+  border: rgba(224, 192, 168, .5) 10px dashed;
+}
+
+.btn-blue {
+  background-color: #484856;  
+  border: rgba(168, 198,224, .5) 10px dashed;
+}
+.btn{display:block;width:100px;height:100px;border-radius:50px;font-size:20px;color:#fff;line-height:100px;text-align:center;
+  display:inline-block;
+  margin:-10px;
+ 
+  
+  
+  

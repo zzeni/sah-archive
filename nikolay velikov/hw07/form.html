@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	
+	<!-- Import Google Font - Yanone Kaffeesatz  -->	
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css' />
+ 
+	<title>Contact Form</title> 
+	
+	<style type="text/css"> 
+	
+	* { margin: 0px; padding: 0px; }
+	
+	body { 
+		margin: 0 auto; 
+		background: #f5f5f5; 	
+		color: #555;	 
+		width: 800px; 
+				
+		/* make reference to the Yanone Kaffeesatz font */
+		font-family: 'Yanone Kaffeesatz', arial, sans-serif;
+	}
+	
+	h1 { 
+		color: #555; 
+		margin: 0 0 20px 0; 
+	}	
+		
+	label {	
+		font-size: 20px;
+		color: #666; 
+	}
+	
+	form { 
+		float: left;
+		border: 1px solid #ddd; 
+		padding: 30px 40px 20px 40px; 
+		margin: 75px 0 0 0;
+		width: 715px;
+		background: #fff;
+				
+		/* -- CSS3 - define rounded corners for the form -- */	
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px; 		
+		
+		/* -- CSS3 - create a background graident -- */
+		background: -webkit-gradient(linear, 0% 0%, 0% 40%, from(#EEE), to(#FFFFFF)); 
+		background: -moz-linear-gradient(0% 40% 90deg,#FFF, #EEE); 
+		
+		/* -- CSS3 - add a drop shadow -- */
+		-webkit-box-shadow:0px 0 50px #ccc;
+		-moz-box-shadow:0px 0 50px #ccc; 
+		box-shadow:0px 0 50px #ccc;		 		
+	}	
+	
+	fieldset { border: none; }
+	
+	#user-details { 
+		float: left;
+		width: 230px; 
+	}
+	
+	#user-message { 
+		float: right;
+		width: 405px;
+	}
+	
+	input, textarea { 		
+		padding: 8px; 
+		margin: 4px 0 20px 0; 
+		background: #fff; 
+		width: 220px; 
+		font-size: 14px; 
+		color: #555; 
+		border: 1px #ddd solid;
+		
+		/* -- CSS3 Shadow - create a shadow around each input element -- */ 
+		-webkit-box-shadow: 0px 0px 4px #aaa;
+		-moz-box-shadow: 0px 0px 4px #aaa; 
+		box-shadow: 0px 0px 4px #aaa;
+		
+		/* -- CSS3 Transition - define what the transition will be applied to (i.e. the background) -- */		
+		-webkit-transition: background 0.3s linear;							
+	}
+	
+	textarea {		
+		width: 390px; 
+		height: 175px; 		 		
+	}
+	
+	input:hover, textarea:hover { 
+		background: #eee; 
+	}
+		
+	input.submit { 	
+		width: 150px; 
+		color: #eee; 
+		text-transform: uppercase; 
+		margin-top: 10px;
+		background-color: #18a5cc;
+		border: none;
+		
+		/* -- CSS3 Transition - define which property to animate (i.e. the shadow)  -- */
+		-webkit-transition: -webkit-box-shadow 0.3s linear;
+		
+		/* -- CSS3 - Rounded Corners -- */
+		-moz-border-radius: 4px; 
+		-webkit-border-radius: 4px;
+		border-radius: 4px; 
+						
+		/* -- CSS3 Shadow - create a shadow around each input element -- */ 
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#18a5cc), to(#0a85a8)); 
+		background: -moz-linear-gradient(25% 75% 90deg,#0a85a8, #18a5cc);		
+	} 
+	
+	input.submit:hover { 		
+		-webkit-box-shadow: 0px 0px 20px #555;
+		-moz-box-shadow: 0px 0px 20px #aaa; 
+		box-shadow: 0px 0px 20px #555;	
+		cursor:  pointer; 
+	} 		
+				
+	</style> 
+	
+</head> 
+ 
+<body> 
+	
+	<form action="#"> 
+	
+		<h1>Get In Touch With Us ...</h1>
+				
+		<fieldset id="user-details">	
+			
+			<label for="name">Name:</label>
+			<input type="text" name="name" value="" /> 
+		
+			<label for="email">Email:</label> 
+			<input type="email" name="email" value=""  /> 
+		
+			<label for="phone">Phone:</label> 
+			<input type="text" name="phone" value=""  /> 
+            <div>Language
+            <select name="language"required>
+            <option readonly>Please choose..</option>
+            <option value="Bulgarian">Bulgarian</option>
+                <option value="English">English</option>
+                <option value="German">German</option>
+                <option value="Italian">Italian</option>
+                <option value="Spanish">Spanish</option>
+                <option value="French">French</option>
+                </select>
+                </div>
+		
+		
+		</fieldset><!--end user-details-->
+        
+        
+		
+		<fieldset id="user-message">
+		
+			<label for="message">Your Message:</label> 
+			<textarea name="message" rows="0" cols="0"></textarea> 
+		
+			<input type="submit" value="Submit Message" name="submit" class="submit" />		
+		
+		</fieldset><!-- end user-message -->
+		 
+	</form>	
+
+</body> 
+</html> 

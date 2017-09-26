@@ -1,0 +1,62 @@
+header {
+    display: block;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: grey;
+    width: 450px;
+    height: 150px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+}
+
+nav {
+    width: 445px;
+}
+
+#facebook {
+    position: relative;
+    border: solid 1px;
+    padding-left: 5px;
+    border-color: gray;
+}
+
+#google {
+    position: relative;
+    border: solid 1px;
+    padding-left: 5px;
+    border-color: gray;
+}
+
+#instagram {
+    position: relative;
+    border: solid 1px;
+    padding-left: 5px;
+    border-color: gray;
+}
+
+#pinterest {
+    position: relative;
+    border: solid 1px;
+    padding-left: 5px;
+    border-color: gray;
+}
+
+#twitter {
+    position: relative;
+    border: solid 1px;
+    padding-left: 5px;
+    border-color: gray;
+}

@@ -1,0 +1,125 @@
+#wrapper .mainCarousel .carousel p {
+    margin: 0;
+}
+.mainCarousel ul {
+    display: flex;
+    flex-direction: row;
+}
+.mainCarousel li {
+    list-style-type: none;
+}
+.mainCarousel img {
+    width: 250px;
+    height: 410px;
+    background-color: lightgrey;
+    border: 1px solid rgba(51, 51, 51, 0.6);
+    max-width: none;
+    z-index: 100;
+}
+/*#mainCarousel .carousel {
+    margin-top: 200px;
+}*/
+.mainCarousel .imageRotate,
+.mainCarousel .imageRotate1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainCarousel .imageRotate > li,
+.mainCarousel .imageRotate1 > li {
+    /*display: none;*/
+    margin: 5px;
+}
+.mainCarousel .imageRotate > li:first-of-type,
+.mainCarousel .imageRotate > li:nth-of-type(2),
+.mainCarousel .imageRotate > li:nth-of-type(3),
+.mainCarousel .imageRotate1 > li:first-of-type,
+.mainCarousel .imageRotate1 > li:nth-of-type(2),
+.mainCarousel .imageRotate1 > li:nth-of-type(3) {
+    display: block;
+}
+
+.mainCarousel .mainConteiner,
+.mainCarousel .mainConteiner1 {
+    /*width: 100%;*/
+    width: 80%;
+    /*height: 230px;*/
+    height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(51, 51, 51, 1);
+    border-top: 2px solid rgba(51, 51, 51, 1);
+    /*margin: 50px 20px;*/
+    margin: 0 20px;
+    overflow: hidden;
+}
+.mainCarousel .mainConteiner .popUp,
+.mainCarousel .mainConteiner1 .popUp1 {
+    background-color: lightblue;
+    background-size: 100% 100%;
+    position: absolute;
+    display: none;
+}
+.mainCarousel .mainConteiner .popUp.large,
+.mainCarousel .mainConteiner1 .popUp1.large {
+    width: 550px;
+    height: 420px;
+    border: 3px solid black;
+    animation-name: fullImage;
+    animation-duration: 2s;
+}
+@keyframes fullImage {
+    from {width: 250px; height: 180px;}
+}
+.mainCarousel .arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*height: 300px;*/
+    margin: 0 auto;
+    padding: 0 0;
+    box-sizing: initial;
+}
+.mainCarousel .leftArrow, .mainCarousel .rightArrow,
+.mainCarousel .leftArrow1, .mainCarousel .rightArrow1 {
+    width: 50px;
+    height: 100px;
+    /*background-color: grey;*/
+    background-image: url('../images/bars_and_arrows/rightArrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.mainCarousel .leftArrow,
+.mainCarousel .leftArrow1 {
+    transform: rotate(180deg);
+}
+.mainCarousel .leftArrow:hover, .mainCarousel .rightArrow:hover,
+.mainCarousel .leftArrow1:hover, .mainCarousel .rightArrow1:hover,
+.mainCarousel .imageRotate > li:hover,
+.mainCarousel .imageRotate1 > li:hover {
+    cursor: pointer;
+}
+.mainCarousel span {
+    position: absolute;
+}
+
+.smoothRot {
+    transition: 0.5s all ease-out;
+}
+/*.mainCarousel {
+    height: 390px;
+}*/
+
+
+
+
+
+
+
+

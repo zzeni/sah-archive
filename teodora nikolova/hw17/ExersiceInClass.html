@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="/https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<button  id="firstButton" type="button" class="firstButton" style="width: 200px"> FirstButton </button>
+<button  id="secondButton" type="button" class="secondButton">SecondButton</button>
+<script>
+//    var firstCounter=0;
+//    var secondCounter=0;
+var body=document.getElementsByTagName("body")[0];
+    var first=document.getElementById("firstButton");
+var second=document.getElementById("secondButton");
+
+    first.addEventListener("click",function (){
+
+        body.style.background="blue";
+
+    });
+    second.addEventListener("click",function () {
+//        body.style.background="red";
+        if(body.style.background==="blue"){
+            body.style.background="red";
+        }
+        else{
+            body.style.background="orange";
+        }
+    });
+first.addEventListener("dblclick",function (){
+
+    body.style.background="white";
+
+});
+
+</script>
+</body>
+</html>

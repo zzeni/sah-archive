@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Shop Snowboarding Equipment Online">
+    <meta name="author" content="Airtime Design Studios">
+
+    <script src=" https://use.fontawesome.com/8c19b504d8.js"></script>
+    <title>Shop Snowboard Equipment</title>
+
+
+    <!--  jQuery UI -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/hover.css" rel="stylesheet" media="all">
+
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link href="css/shop.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+
+</head>
+
+<body>
+
+    <a href="index.html" id="logohome"><img src="img/airlogo5.png" height="45" alt="Logo-Homepage"></a>
+
+    <!-- Side menu effect START ///////////////////////////////// -->
+    <ul id="gn-menu" class="gn-menu-main">
+        <li class="gn-trigger">
+            <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+
+            <i id="sandwich" class="fa fa-bars fa-3x gn-trigger" aria-hidden="true"></i>
+
+            <nav class="gn-menu-wrapper">
+                <div class="gn-scroller">
+                    <ul class="gn-menu">
+                        <li class="gn-search-item">
+                            <input placeholder="Search" type="search" class="gn-search">
+                            <a class="gn-icon gn-icon-search"><span>Search</span></a>
+                        </li>
+                        <li>
+                            <a href="snowboards.html" class="gn-icon gn-icon-download">Snowboards</a>
+                            <ul class="gn-submenu">
+
+                            </ul>
+                        </li>
+                        <li><a href="bindings.html" class="gn-icon gn-icon-cog">Bindings</a></li>
+                        <li>
+                            <li><a href="boots.html" class="gn-icon gn-icon-cog">Boots</a></li>
+                            <li>
+                                <li><a href="outerwear.html" class="gn-icon gn-icon-cog">Outerwear</a></li>
+                                <li>
+                                    <li><a href="contacts.html" class="gn-icon gn-icon-cog">Contact us</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+            </li>
+    </ul>
+
+
+    <!-- Side menu effect END ///////////////////////////////// -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">044772525</a>
+                    </li>
+
+                    <li>
+                        <a href="#">my account</a>
+                    </li>
+                    <a href="cart.html" id="cart"><img src="img/cart.png" height="25" alt="Cart"></a>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 sidefilters">
+                <p>
+                    <input type="text" placeholder="Search products" id="search" class="form-control">
+                </p>
+                <h3>Filter by category</h3>
+
+                <!-- Drop down menu -->
+                <select id="select-category" class="form-control">
+                    <option value="all" selected>All</option>
+                    <option value="snowboards">Snowboards</option>
+                    <option value="bindings">Bindings</option>
+                    <option value="boots">Boots</option>
+                    <option value="outerwear">Outerwear</option>
+
+                </select>
+
+
+                <h3>Gender</h3>
+                <select id="select-gender" class="form-control">
+                    <option value="all" selected>All</option>
+                    <option value="men">Men's</option>
+                    <option value="women">Women's</option>
+                    <option value="youth">Youth's</option>
+                </select>
+
+                <h3>Brand</h3>
+                <select id="select-brand" class="form-control">
+                    <option value="all" selected>All</option>
+                    <option value="jones">Jones</option>
+                    <option value="libtech">Lib Tech</option>
+                    <option value="bataleon">Bataleon</option>
+                    <option value="32">Thirty Two</option>
+                    <option value="686">686</option>
+                    <option value="burton">Burton</option>
+                    <option value="bataleon">Bataleon</option>
+                </select>
+
+
+                <!--  END Drop down menu -->
+
+
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <p>
+                            <label for="amount">Price range:</label>
+                            <input type="text" id="amount" readonly style="border:0; color:#1278c3; font-weight:bold;">
+                        </p>
+
+                        <div id="slider-range"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="row" id="product-container">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container2">
+
+        <a href="shop.html" id="shopurl"><h2>Shop Now</h2></a>
+
+        <div class="prefooter">
+
+            <a href="#" class="hvr-bounce-to-bottom">Size Chart</a>
+            <a href="#" class="hvr-bounce-to-bottom">Fitting Guide</a>
+            <a href="#" class="hvr-bounce-to-bottom">Shipping information</a>
+            <a href="#" class="hvr-bounce-to-bottom">FAQ</a>
+            <a href="#" class="hvr-bounce-to-bottom">Returns</a>
+        </div>
+
+        <div>
+            <img class="lowerfullwidth" src="img/products1.jpg" alt="image of a product goes here">
+        </div>
+
+        <ul class="photo-grid">
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="img/bindings/switchback-halldor-pro-model-snowboard-bindings-2017-pink-yellow.jpg" height="230" width="230" alt="Shop Bindings">
+                        <figcaption>
+                            <p>Shop Bindings</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="img/boots/32-lashed-snowboard-boots-women-s-2017-burgundy.jpg" height="230" width="230" alt="Shop Boots">
+                        <figcaption>
+                            <p>Shop Boots</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="img/snowboards/funk-kink.jpg" height="230" width="230" alt="Shop Snowboards">
+                        <figcaption>
+                            <p>Shop Snowboards</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <figure>
+                        <img src="img/outerwear/32-deep-creek-parka-burgundy.jpg" height="230" width="230" alt="Shop Outerwear">
+                        <figcaption>
+                            <p>Shop Outerwear</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+
+        </ul>
+        <!-- Footer -->
+        <footer>
+            <div class="footerbottom">
+
+                <div class="footerbox1">
+                    <h2>Get Social</h2>
+
+                    <a href="#" class="hvr-wobble-horizontal">Facebook</a>
+                    <a href="#" class="hvr-wobble-horizontal">Twitter</a>
+                    <a href="#" class="hvr-wobble-horizontal">Instagram</a>
+
+
+                </div>
+
+                <div class="footerbox2">
+                    <h2>Information</h2>
+                    <a href="#" class="hvr-wobble-horizontal">Coupon codes</a>
+                    <a href="#" class="hvr-wobble-horizontal">Gift Cards</a>
+                    <a href="#" class="hvr-wobble-horizontal">Size Chart</a>
+                    <a href="#" class="hvr-wobble-horizontal">Fitting Guide</a>
+                    <a href="#" class="hvr-wobble-horizontal">Shipping information</a>
+                    <a href="#" class="hvr-wobble-horizontal">FAQ</a>
+                    <a href="#" class="hvr-wobble-horizontal">Returns</a>
+
+                </div>
+
+
+                <div class="footerbox3">
+                    <h2>Abouts</h2>
+                    <a href="#" class="hvr-wobble-horizontal">Locations</a>
+                    <a href="#" class="hvr-wobble-horizontal">Press/Media</a>
+                    <a href="#" class="hvr-wobble-horizontal">Cause</a>
+                    <a href="#" class="hvr-wobble-horizontal">Affiliate Program</a>
+
+                </div>
+            </div>
+
+            <p>Copyright &copy; Airtime Design 2017</p>
+        </footer>
+
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--  my custom script-->
+    <script src="js/script.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/gnmenu.js"></script>
+    <script>
+        new gnMenu(document.getElementById('gn-menu'));
+    </script>
+</body>
+
+</html>

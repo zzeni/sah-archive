@@ -1,0 +1,32 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    border-radius: 50% ;
+    width:50 px;
+    height: 50 px;
+}
+
+.btn-red {
+  background-color: #965454;  
+  border: rgba(224, 192, 168, .5) 10px dashed;
+        
+}
+
+.btn-green {
+  background-color: #488448;  
+  border: rgba(192, 224, 168, .5) 10px dashed;
+    
+}
+
+.btn-yellow {
+  background-color: #968454;  
+  border: rgba(224, 192, 168, .5) 10px dashed;
+    
+}
+
+.btn-blue {
+  background-color: #484856;  
+  border: rgba(168, 198,224, .5) 10px dashed;
+    
+}

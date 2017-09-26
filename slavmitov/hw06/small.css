@@ -1,0 +1,54 @@
+body {
+	font-size: 15px;
+}
+
+head {
+	font-size: 20px;
+	padding 15px;
+}
+
+nav a {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	max-width: auto;
+}
+
+body {
+	max-width: 300px;
+	background-image: url(background.png);
+	background-attachment: fixed;
+	display: inline;
+	background-position: center;
+}
+
+#h22,
+#section2,
+p {
+	float: left;
+}
+
+#section1,
+#section2,
+#section3 {
+	float: left;
+}
+
+#2 {
+	float: left;
+}
+
+#main {
+	padding: 20px 20px 5px 5px;
+	display: inline;
+	width: 600px;
+	font-size: 16px;
+}
+
+hr {
+	width: 600px;
+}
+
+footer {
+	float: left;
+}

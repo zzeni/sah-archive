@@ -1,0 +1,283 @@
+#wrapper{
+    width: 800px;
+    background: #000;
+
+    color: #ff3333;
+    margin: 0 auto;
+    border-bottom: 30px solid black;
+}
+@font-face {
+    font-family: "Ricks";
+    src:url("../fonts/RicksAmericanNF.ttf")
+}
+@font-face {
+    font-family: "Vollkorn";
+    src:url("../fonts/Vollkorn-Regular.ttf")
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Ricks",sans-serif;
+    word-spacing: 20px;
+    padding-bottom: 25px;
+    margin-top: 40px;
+    padding-top: 10px;
+
+}
+nav {
+    width: 800px;
+    height: 50px;
+    padding-left: 150px;
+}
+header nav > ul li {
+    width: 160px;
+    height: 30px;
+    display: inline-block;
+    font-size: 27px;
+    float: left;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Ricks", sans-serif;
+    /*text-align: center;*/
+}
+img{
+    width:200px ;
+    height: 250px;
+    border-radius: 5px;
+}
+
+section{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url("../images/FzVI8Vt.jpg");
+    border: 50px solid darkred;
+    border-radius: 5px;
+}
+
+.left{
+    width: 200px;
+    padding: 22px;
+    margin-top: 5px;
+    float: left;
+}
+.icons{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+}
+footer{
+    width: 600px;
+
+    word-spacing: 100px;
+    margin: 5px 100px 0 20px;
+    text-align: center;
+}
+.right{
+    width: 350px;
+    float: left;
+
+}
+.text-question{
+    width: 100px;
+    display: inline;
+
+}
+h2 ,h3{
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    color: white;
+    padding-top: 50px;
+}
+h3{
+    font-size:  19px;
+    color: white;
+}
+strong{
+    color: white;
+    font-weight: bold;
+    margin-right:30px;
+}
+p{
+    line-height: 35px;
+}
+span{
+
+    color: white;
+    font-family: Vollkorn,sans-serif;
+
+}
+.age{
+    padding-left: 50px;
+}
+.address{
+    padding-left: 10px;
+}
+.phone{
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+.email{
+    padding-left: 25px;
+}
+nav ul li:hover{
+    width: 150px;
+    height: 40px;
+    background-color: darkred;
+    border: 2px solid  darkred;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+
+
+
+}
+
+ul ul {
+    display: none;
+
+}
+.wordpress .websait{
+    width: 50px;
+    height:50px ;
+}
+li img{
+    width: 25px;
+    height:25px;
+}
+li:hover > ul {
+    display: block;
+
+
+
+}
+.dropdown{
+    border: 2px solid white;
+    width: 150px;
+    height: 75px;
+    border-radius: 5px;
+    background-color: rgb(217,217,223);
+    /*margin-top: 1px;*/
+    color: black;
+    text-align: center;
+
+
+}
+footer a img:hover{
+    cursor: pointer;
+    background-color: rgba(217,217,223,0.8);
+    border: 2px solid black;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 25%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 345px;
+    left: 625px;
+    /*background-image: url("../images/FzVI8Vt.jpg"); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 30px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+}
+
+/* The navigation menu links */
+.sidenav a {
+    /*padding: 8px 8px 8px 32px;*/
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+footer{
+    position: fixed;
+    top:535px;
+    left: 390px;
+}
+.close{
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+}
+.main-information{
+    font-size: 30px;
+    font-family: "Vollkorn", sans-serif;
+    cursor: pointer;
+    text-align: center;
+    color:white;
+}
+.quote{
+    height: 85%;
+    margin: 10px auto;
+    margin-left: 80px;
+
+}
+.main-picture{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+position: relative;
+}
+.up{
+    width: 30px;
+    height: 30px;
+    margin-left: 280px;
+}
+.portfolio-picture{
+    height: 130px;
+    margin-left: 80px;
+
+}
+.hide{
+    font-size: 40px;
+
+}
+
+.info {
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+.caption-background {
+    height: 200px;
+    background: blue;
+}
+.hidden {
+    display: none;
+}

@@ -1,0 +1,49 @@
+body {
+    background-color: red;
+}
+
+h1 {
+    text-align: center;
+    border-style: dashed;
+    background-color: #965454;
+    border: rgba(224, 192, 168, .5) 10px dashed;
+}
+
+.main {
+    height: 800px;
+    width: 400px;
+    border-style: dashed;
+    position: absolute;
+    bottom: 0px;
+}
+
+nav {
+    text-align: center;
+    margin: auto;
+   display: inline;
+}
+.red{
+    border: dashed;
+    border-radius: 100%
+}
+.blue{
+    border: dashed;
+    border-radius: 100%
+}
+.white{
+    border: dashed;
+    border-radius: 100%
+}
+.green{
+    border: dashed;
+    border-radius: 100%;
+}
+.a{
+     border: dashed;
+    border-radius: 100%;
+    padding: 25px;
+        
+}
+.green{
+    border: dashed;
+}

@@ -1,0 +1,42 @@
+body {
+    background-color: burlywood;
+}
+
+header {
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+hr {
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+nav a {
+    background-color: bisque;
+    border-style: solid;
+    border-color: darkred;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+   
+}
+
+.img {
+    float: none;
+    margin-right: 10px;
+    width: 200px;
+}
+main{
+   
+}

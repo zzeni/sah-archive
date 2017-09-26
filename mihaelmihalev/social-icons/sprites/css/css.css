@@ -1,0 +1,31 @@
+a{
+    display: inline-block;
+}
+
+.icons{
+    background-image: url(../images/social-media.jpg);
+    width:100px;
+    height:100px;
+    background-size:cover;
+}
+
+.fcb{
+     background-position:-10px;
+}
+
+.google{
+     background-position:420px;
+}
+
+.instagram{
+     background-position:320px;
+}
+
+.pinterest{
+     background-position:210px;
+}
+
+
+.twitter{
+     background-position:105px;
+}

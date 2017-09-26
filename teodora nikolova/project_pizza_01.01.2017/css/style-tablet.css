@@ -1,0 +1,230 @@
+@media only screen and (max-width: 991px) {
+    .main-heading {
+        font-size: 2rem;
+        max-width: 100%;
+    }
+
+    h4 {
+        font-size: 1rem;
+        padding-left: 40px;
+    }
+
+    .first-column {
+        margin: 10px;
+    }
+
+    .thirth-column {
+        margin-right: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .main-heading, .order-phone {
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+
+    .conect {
+        max-width: 100%;
+    }
+
+    .carousel-caption {
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+.carousel{
+    position: inherit;
+}
+.right , .left{
+    margin-top: 265px;
+}
+    /*.navbar{*/
+    /*font-size: 1rem;*/
+    /*max-width: 100%;*/
+    /*}*/
+    .footer {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    .carousel {
+        margin-top: 65px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+    .nav-other{
+        display: none;
+    }
+
+    .main-page {
+        max-width: 100%;
+    }
+
+    .carousel-caption {
+        font-size: 15px;
+    }
+
+    .language {
+        padding-bottom: 15px;
+    }
+
+    h4 {
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .conect {
+        display: none;
+    }
+
+    .navbar {
+        max-width: 100%;
+        border-radius: 20px;
+
+    }
+    .right, .left{
+        position: absolute;
+        top: 600px;
+    }
+
+    /*.main-page{*/
+    /*max-width: 100%;*/
+    /*}*/
+    li.nav {
+        display: block;
+        width: 450px;
+        max-width: 100%;
+        opacity: 0.9;
+        border-radius: 20px;
+        margin-bottom: 2px;
+
+    }
+    li.nav:hover,li.nav-other:hover{
+        color: black;
+        background-color: darkred;
+        text-decoration: none;
+        width:450px;
+        max-width:100%;
+
+
+    }
+    .nav-other:hover{
+margin-bottom: 20px;
+    }
+
+    footer {
+        color: white;
+    }
+
+    footer a {
+        color: black;
+        font-weight: bold;
+    }
+
+    .nav-pizza {
+        margin-top: 30px;
+    }
+    .main-container{
+        padding-right: 70px;
+    }
+    .phone{
+        padding-left: 0;
+    }
+    .carousel-control{
+        margin-top: 165px;
+    }
+    div{
+        max-width: 100%;
+    }
+    .footer{
+        display:block;
+    }
+    .navbar{
+        max-width: 100%;
+    }
+    .navbar-header:hover{
+        color: #1f7e9a;
+    }
+    .carousel-control{
+        display: none;
+    }
+    .carousel-indicators{
+        /*width: 150px;*/
+        /*height: 50px;*/
+        /*margin: 0 auto;*/
+    text-shadow: 10px 2px black;
+    }
+    li.nav{
+        width: 320px;
+        max-width: 100%;
+    }
+    .main-container{
+        padding-left: 50px;
+        padding-right: 1px;
+
+    }
+    li.nav:hover{
+        width: 320px;
+    }
+    .controls{
+        font-size: 1rem;
+        max-width: 100%;
+        width:150px;
+    }
+    .carousel-caption>h3{
+        font-size: 1.5rem;
+    }
+
+
+
+}
+@media only screen and (max-width: 460px) {
+    .second-column,.thirth-column{
+        display: none;
+    }
+    .fourth-column{
+        float: right;
+        padding-right: 150px;
+    }
+    div{
+        max-width: 100%;
+
+    }
+    .carousel-control{
+        display: none;
+    }
+    li.nav{
+        width: 250px;
+        max-width: 100%;
+    }
+    .main-container{
+        padding-left: 1px;
+        padding-right: 1px;
+
+    }
+    li.nav:hover{
+        width: 250px;
+    }
+    .controls{
+        font-size: 1rem;
+        max-width: 100%;
+        width:150px;
+    }
+    .logo {
+        float: left;
+    }
+    .main-heading{
+        text-align: left;
+        padding-left: 22px;
+    }
+}

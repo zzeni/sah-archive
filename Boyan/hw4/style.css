@@ -1,0 +1,33 @@
+body {
+    background-color: lightgrey;
+}
+
+nav a {
+    font-family: helvetica, sans-serif;
+    padding: 12px, 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+}
+
+nav {
+    padding: 10px;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+}
+
+#about {
+    background-color: orange;
+}
+
+button {
+    border: solid;
+    border-bottom-style: double;
+    padding: 1px px;
+    color: blueviolet brown;
+    text-align: center;
+    font-size: 19px;
+}

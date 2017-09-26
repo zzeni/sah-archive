@@ -1,0 +1,433 @@
+[{
+        "title": "Fiona",
+        "url": "img/bangle/bangle(1).jpg",
+        "price": 20,
+        "brand": " Crystal Perfect",
+        "color": " montana ",
+        "category": "bangle"
+	}, {
+        "title": "Dorian crystal",
+        "url": "img/bangle/bangle(2).jpg",
+        "price": 25,
+        "brand": " Crystal Perfect",
+        "color": "crystal ",
+        "category": "bangle"
+	}, {
+        "title": "Esther silver",
+        "url": "img/bangle/bangle(3).jpg",
+        "price": 25,
+        "brand": " Crystal Perfect",
+        "color": " crystal ",
+        "category": "bangle"
+	}, {
+        "title": "Verona",
+        "url": "img/bangle/bangle(4).jpg",
+        "price": 35,
+        "brand": " Crystal Perfect",
+        "color": " Semiprecious stones ",
+        "category": "bangle"
+	}, {
+        "title": "Rosie",
+        "url": "img/bangle/bangle(5).jpg",
+        "price": 25,
+        "brand": " Crystal Perfect",
+        "color": " crystal ",
+        "category": "bangle"
+	}, {
+        "title": "Juliette",
+        "url": "img/bangle/bangle(6).jpg",
+        "price": 40,
+        "brand": " Crystal Perfect",
+        "color": " crystal ",
+        "category": "bangle"
+	}, {
+        "title": "Juliette gold",
+        "url": "img/bangle/bangle(7).jpg",
+        "price": 45,
+        "brand": " Crystal Perfect",
+        "color": " crystal ",
+        "category": "bangle"
+	}, {
+        "title": "Lisbeth",
+        "url": "img/bangle/bangle(8).jpg",
+        "price": 20,
+        "brand": " Crystal Perfect",
+        "color": " crystal ",
+        "category": "bangle"
+	}, {
+        "title": "Lolita",
+        "url": "img/bangle/bangle(9).jpg",
+        "price": 25,
+        "brand": " Crystal Perfect",
+        "color": " crystal ",
+        "category": "bangle"
+	}, {
+        "title": "Marissa",
+        "url": "img/bangle/bangle(10).jpg",
+        "price": 18,
+        "brand": " Crystal Perfect",
+        "color": " bermuda blue  ",
+        "category": "bangle"
+	}, {
+        "title": "Shelley violet",
+        "url": "img/earrings/earrings(1).jpg",
+        "price": 10,
+        "brand": " Crystal Perfect",
+        "color": " purple velvet ",
+        "category": "earrings"
+
+	}, {
+        "title": "Ava black",
+        "url": "img/earrings/earrings(2).jpg",
+        "price": 15,
+        "brand": " Crystal Perfect",
+        "color": " crystal ",
+        "category": "earrings"
+
+	}, {
+        "title": "Vayana white",
+        "url": "img/earrings/earrings(3).jpg",
+        "price": 18,
+        "brand": " Crystal Perfect",
+        "color": " multy ",
+        "category": "earrings"
+
+	}, {
+        "title": "Zhulin",
+        "url": "img/earrings/earrings(4).jpg",
+        "price": 12,
+        "brand": " Crystal Perfect",
+        "color": " silk ",
+        "category": "earrings"
+
+	}, {
+        "title": "Rachel ",
+        "url": "img/earrings/earrings(5).jpg",
+        "price": 20,
+        "brand": " Crystal Perfect",
+        "color": " saim ",
+        "category": "earrings"
+
+	}, {
+        "title": "Galant silver",
+        "url": "img/earrings/earrings(6).jpg",
+        "price": 9,
+        "brand": " Crystal Perfect",
+        "color": " crystal ",
+        "category": "earrings"
+
+	}, {
+        "title": "Lusy gold",
+        "url": "img/earrings/earrings(7).jpg",
+        "price": 20,
+        "brand": " Crystal Perfect",
+        "color": " golden shadow ",
+        "category": "earrings"
+
+	}, {
+        "title": "Cherry",
+        "url": "img/earrings/earrings(8).jpg",
+        "price": 8,
+        "brand": " Crystal Perfect",
+        "color": " silk ",
+        "category": "earrings"
+
+	}, {
+        "title": "Livia",
+        "url": "img/earrings/earrings(9).jpg",
+        "price": 22,
+        "brand": " Crystal Perfect",
+        "color": " crystal ",
+        "category": "earrings"
+
+	}, {
+        "title": "Cristal jet",
+        "url": "img/earrings/earrings(10).jpg",
+        "price": 15,
+        "brand": " Crystal Perfect",
+        "color": " jet ",
+        "category": "earrings"
+
+	}, {
+        "title": "Melina",
+        "url": "img/earrings/earrings(11).jpg",
+        "price": 25,
+        "brand": " Crystal Perfect",
+        "color": "light amethyst",
+        "category": "earrings"
+
+	}, {
+        "title": "Finley jet",
+        "url": "img/earrings/earrings(12).jpg",
+        "price": 24,
+        "brand": " Crystal Perfect",
+        "color": " jet ",
+        "category": "earrings"
+
+	}, {
+        "title": "Angela sapphire",
+        "url": "img/earrings/earrings(13).jpg",
+        "price": 17,
+        "brand": " Crystal Perfect",
+        "color": " sapphire ",
+        "category": "earrings"
+
+	}, {
+        "title": "Donatela blue",
+        "url": "img/necklace/necklace(1).jpg",
+        "price": 18,
+        "brand": " Crystal Perfect",
+        "color": " night blue ",
+        "category": "necklace"
+
+	}, {
+        "title": "Emona",
+        "url": "img/necklace/necklace(2).jpg",
+        "price": 15,
+        "brand": " Crystal Perfect",
+        "color": " crystal ",
+        "category": "necklace"
+
+	}, {
+        "title": "Crystal jet",
+        "url": "img/necklace/necklace(3).jpg",
+        "price": 12,
+        "brand": " Crystal Perfect",
+        "color": " jet",
+        "category": "necklace"
+
+	}, {
+        "title": "Evita",
+        "url": "img/necklace/necklace(4).jpg",
+        "price": 16,
+        "brand": " Crystal Perfect",
+        "color": " sapphire ",
+        "category": "white pearl"
+
+	}, {
+        "title": "Elia aqua",
+        "url": "img/necklace/necklace(5).jpg",
+        "price": 22,
+        "brand": " Crystal Perfect",
+        "color": " sapphire ",
+        "category": "aquamarine"
+
+	}, {
+        "title": "Julin",
+        "url": "img/necklace/necklace(6).jpg",
+        "price": 23,
+        "brand": " Crystal Perfect",
+        "color": " silk",
+        "category": "necklace"
+
+	}, {
+        "title": "Crystal cube",
+        "url": "img/necklace/necklace(7).jpg",
+        "price": 20,
+        "brand": " Crystal Perfect",
+        "color": " crystal",
+        "category": "necklace"
+
+	}, {
+        "title": "Charity sapphire",
+        "url": "img/necklace/necklace(8).jpg",
+        "price": 25,
+        "brand": " Crystal Perfect",
+        "color": " sapphire ",
+        "category": "necklace"
+
+	}, {
+        "title": "Elfy crystal",
+        "url": "img/necklace/necklace(9).jpg",
+        "price": 19,
+        "brand": " Crystal Perfect",
+        "color": "crystal ",
+        "category": "necklace"
+
+	}, {
+        "title": "Lizbet",
+        "url": "img/necklace/necklace(10).jpg",
+        "price": 15,
+        "brand": " Crystal Perfect",
+        "color": "white pearl ",
+        "category": "necklace"
+
+	}, {
+        "title": "Ester silver",
+        "url": "img/necklace/necklace(11).jpg",
+        "price": 26,
+        "brand": " Crystal Perfect",
+        "color": " crystal",
+        "category": "necklace"
+
+	}, {
+        "title": "Kalia sapphire",
+        "url": "img/parure/parure(1).jpg",
+        "price": 29,
+        "brand": " Crystal Perfect",
+        "color": "sapphire ",
+        "category": "parure"
+
+	}, {
+        "title": "Chloe",
+        "url": "img/parure/parure(2).jpg",
+        "price": 32,
+        "brand": " Crystal Perfect",
+        "color": "crystal ",
+        "category": "parure"
+
+	}, {
+        "title": "Candy",
+        "url": "img/parure/parure(3).jpg",
+        "price": 35,
+        "brand": " Crystal Perfect",
+        "color": "crystal",
+        "category": "parure"
+
+	}, {
+        "title": "Judith",
+        "url": "img/parure/parure(4).jpg",
+        "price": 30,
+        "brand": " Crystal Perfect",
+        "color": "crystal ",
+        "category": "parure"
+
+	}, {
+        "title": "Dice",
+        "url": "img/parure/parure(5).jpg",
+        "price": 33,
+        "brand": " Crystal Perfect",
+        "color": "crystal ",
+        "category": "parure"
+
+	}, {
+        "title": "Deborah crystal",
+        "url": "img/parure/parure(6).jpg",
+        "price": 35,
+        "brand": " Crystal Perfect",
+        "color": "crystal ",
+        "category": "parure"
+
+	}, {
+        "title": "Barbara",
+        "url": "img/parure/parure(7).jpg",
+        "price": 28,
+        "brand": " Crystal Perfect",
+        "color": "white pearl ",
+        "category": "parure"
+
+	}, {
+        "title": "Arista",
+        "url": "img/parure/parure(9).jpg",
+        "price": 37,
+        "brand": " Crystal Perfect",
+        "color": "mystic black ",
+        "category": "parure"
+
+	}, {
+        "title": "Joan",
+        "url": "img/parure/parure(10).jpg",
+        "price": 35,
+        "brand": " Crystal Perfect",
+        "color": "light amethyst ",
+        "category": "parure"
+
+	}, {
+        "title": "Vitali",
+        "url": "img/parure/parure(11).jpg",
+        "price": 20,
+        "brand": " Crystal Perfect",
+        "color": "montana ",
+        "category": "parure"
+
+	}, {
+        "title": "Zhulin",
+        "url": "img/parure/parure(12).jpg",
+        "price": 20,
+        "brand": " Crystal Perfect",
+        "color": "silk",
+        "category": "parure"
+
+	}, {
+        "title": "Crystalline Jet",
+        "url": "img/parure/parure(14).jpg",
+        "price": 20,
+        "brand": " Crystal Perfect",
+        "color": "jet",
+        "category": "parure"
+
+	}, {
+        "title": "Arista",
+        "url": "img/ring/ring(1).jpg",
+        "price": 20,
+        "brand": " Crystal Perfect",
+        "color": "mystic black",
+        "category": "ring"
+
+	}, {
+        "title": "Ivia",
+        "url": "img/ring/ring(3).jpg",
+        "price": 22,
+        "brand": " Crystal Perfect",
+        "color": "golden shadow",
+        "category": "ring"
+
+	}, {
+        "title": "Heart",
+        "url": "img/ring/ring(4).jpg",
+        "price": 25,
+        "brand": " Crystal Perfect",
+        "color": "gold",
+        "category": "ring"
+
+	}, {
+        "title": "Dolores",
+        "url": "img/ring/ring(5).jpg",
+        "price": 18,
+        "brand": " Crystal Perfect",
+        "color": "gold",
+        "category": "ring"
+
+	}, {
+        "title": "Charm",
+        "url": "img/ring/ring(6).jpg",
+        "price": 19,
+        "brand": " Crystal Perfect",
+        "color": "crystal",
+        "category": "ring"
+
+	}, {
+        "title": "Nansy",
+        "url": "img/ring/ring(7).jpg",
+        "price": 24,
+        "brand": " Crystal Perfect",
+        "color": "silver",
+        "category": "ring"
+
+	}, {
+        "title": "Paola",
+        "url": "img/ring/ring(8).jpg",
+        "price": 26,
+        "brand": " Crystal Perfect",
+        "color": "crystal",
+        "category": "ring"
+
+	}, {
+        "title": "Romance",
+        "url": "img/ring/ring(9).jpg",
+        "price": 20,
+        "brand": " Crystal Perfect",
+        "color": "white pearl",
+        "category": "ring"
+
+	}, {
+        "title": "Miranda",
+        "url": "img/ring/ring(10).jpg",
+        "price": 20,
+        "brand": " Crystal Perfect",
+        "color": "light amethyst",
+        "category": "ring"
+
+	}
+
+]

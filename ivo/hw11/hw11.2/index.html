@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>The square task</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+            body {
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        p {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
+        .square {
+            width: 200px;
+            height: 200px;
+            color: white;
+            display: table;
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+        
+        .red {
+            background-color: red;
+        }
+        
+        .blue {
+            background-color: blue;
+        }
+        
+        .green {
+            background-color: green;
+        }
+        
+        .black {
+            background-color: black;
+        }
+        
+        @media only screen and (max-width:399px) {
+            .square {
+                min-width: 100%;
+            }
+        }
+        
+        @media only screen and (min-width:400px) and (max-width: 499px) {
+            .red {
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
+            .blue {
+                position: fixed;
+                right: 0;
+                top: 0;
+            }
+            .green {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+            }
+            .black {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        
+        @media only screen and (min-width:500px) and (max-width: 599px) {
+            .blue {
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
+            .green {
+                position: fixed;
+                right: 0;
+                top: 0;
+            }
+            .black {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+            }
+            .red {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        
+        @media only screen and (min-width:600px) and (max-width: 699px) {
+            .red {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+            }
+            .blue {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+            }
+            .green {
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
+            .black {
+                position: fixed;
+                right: 0;
+                top: 0;
+            }
+        }
+        
+        @media only screen and (min-width:700px) and (max-width: 799px) {
+            .red {
+                position: fixed;
+                right: 0;
+                top: 0;
+            }
+            .blue {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+            }
+            .green {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+            }
+            .black {
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
+        }
+        
+        @media only screen and (min-width:800px) {
+            .red,
+            .blue,
+            .green,
+            .black {
+                float: left;
+            }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="square red">
+        <p>
+            RED
+        </p>
+    </div>
+    <div class="square blue">
+        <p>
+            BLUE
+        </p>
+    </div>
+    <div class="square green">
+        <p>
+            GREEN
+        </p>
+    </div>
+    <div class="square black">
+        <p>
+            BLACK
+        </p>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

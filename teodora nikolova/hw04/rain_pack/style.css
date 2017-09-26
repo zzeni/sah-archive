@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background: url("rain.mp4");
+    position: fixed;
+    top: 0;
+    display: block;
+}
+
+body, ul, video, audio {
+    padding: 0;
+    margin: 0;
+
+}
+
+video {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+audio {
+    width: 300px;
+
+    align-items: center;
+    position: absolute;
+    right: 530px;
+    z-index: 500;
+    top: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(46, 143, 196);
+    position: fixed;
+    top: 600px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    line-height: 40px;
+
+}
+
+nav ul li {
+    text-transform: uppercase;
+    width: 96px;
+    color: white;
+
+    display: inline-block;
+
+}
+
+.main ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 10px;
+    height: 40px;
+    text-align: center;
+    line-height: 20px;
+
+    font-size: 19px;
+
+}
+
+.main ul {
+    display: inline-block;
+    border-width: 5px;
+    border-style: solid;
+    border-top-color: rgb(46, 143, 196);
+    border-bottom-color: rgb(46, 143, 196);
+    border-left-color: transparent;
+    border-right-color: transparent;
+
+    margin-top: 20px;
+
+}
+
+nav {
+    position: absolute;
+    z-index: 9999999;
+    width: 100%;
+    display: inline-block;
+    margin: 45px auto;
+    left: 535px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li:hover {
+    width: 95px;
+    height: 40px;
+    background-color: rgb(46, 143, 196);
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    padding-bottom: 10px;
+    margin-top: 2px;
+
+}

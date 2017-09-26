@@ -1,0 +1,54 @@
+<meta charset="utf-8">
+
+Свържете се с нас!
+
+<style>
+
+    div{
+        width:600px;
+        background-color:#fffaaa;
+        display: flex;
+        justify-content: space-between;
+        margin:10px;
+    }
+    
+    select, input, textarea {width:300px; min-height:40px;}
+    
+    textarea {height:150px;}
+    
+</style>
+
+<form action="" method="post">
+    <div>
+        <label for="name">Име</label>
+      <input type="text" id="username" name="username" placeholder="your username here">
+    </div>
+
+    <div>
+        <label for="email">Вашият Email:</label>
+      <input type="email" id="email" name="email" placeholder="your email here">
+    </div>
+
+    <div>
+        <label for="email">Език:</label>
+      <select id="choice" type="choise" name="choice" value="first">
+        <option>Български</option>
+        <option>Патагонски</option>
+        </select>
+    </div>
+        
+    <div>
+        <label for="phone">Телефон:</label>
+      <input type="number" id="phone" name="phone" placeholder="+359ххххххххх">
+    </div>
+    
+    <div>
+        <label for="message">Съобщение:</label>
+      <textarea>dsadas</textarea>
+    </div>
+
+    <div>
+        <input type="submit" value="Изпрати">
+        <input type="reset" value="Изтрий">
+    </div>
+</form>

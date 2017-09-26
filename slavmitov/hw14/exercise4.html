@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homework14</title>
+    <meta name="description" content="Homework14"> </head>
+
+<body>
+    <h1>Exercise 4</h1>
+    <script>
+        var shoppingCart = [
+            {
+                name: "apple"
+                , type: "fruit"
+                , quantity: 5
+	}
+            , {
+                name: "banana"
+                , type: "fruit"
+                , quantity: 2
+	}
+            , {
+                name: "potato"
+                , type: "vegetable"
+                , quantity: 10
+	}
+            , {
+                name: "cheese"
+                , type: "diry"
+                , quantity: 1
+	}
+            , {
+                name: "yogurt"
+                , type: "diry"
+                , quantity: 3
+	}
+            , {
+                name: "steak"
+                , type: "meat"
+                , quantity: 1
+	}
+            , {
+                name: "ice cream"
+                , type: "sweet"
+                , quantity: 1
+	}
+            , {
+                name: "bounty"
+                , type: "sweet"
+                , quantity: 3
+	}
+];
+        // This function accepts a shopping cart list and returns the overall quantity of all the items in it
+        function quantity(shoppingCart) {
+            var result = 0;
+            shoppingCart.forEach(function (item) {
+                result = result + item.quantity;
+            });
+            return result;
+        }
+        // This function accepts a shopping cart list and returns the quantity of the fruit and vegetable items in it
+        function veganQuantity(shoppingCart) {
+            var result = 0;
+            //  for(var i=0;i<shoppingCart.length;i++){
+            //  var item=shoppingCart[i];
+            //  if (item.type=== "fruit"||item.type==="vegetable")
+            //  {result=result+item.quantity;}
+            //	return result;
+            //}
+            //}
+            var filtered = shoppingCart.filter(function (item) {
+                return (item.type === "fruit" || item.type === "vegetable");
+            });
+            result = quantity(filtered);
+            return result;
+        }
+        console.log('overall', quantity(shoppingCart)); // should return 26
+        console.log('vegan', veganQuantity(shoppingCart)); // should return 17
+    </script>
+</body>
+
+</html>

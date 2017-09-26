@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.square {
+    width: 200px;
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+@media (max-width: 399px) {
+    .square {
+
+        width: 100%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+    .square {
+        position: fixed;
+    }
+    .red {
+        top: 0;
+        left: 0;
+    }
+    .blue {
+        top:0;
+        right:0;
+    }
+    .green {
+        bottom:0;
+        left:0;
+    }
+    .black {
+        bottom:0;
+        right:0;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    .square {
+        position: fixed;
+    }
+    .blue {
+        top: 0;
+        left: 0;
+    }
+    .green {
+        top:0;
+        right:0;
+    }
+    .black {
+        bottom:0;
+        left:0;
+    }
+    .red {
+        bottom:0;
+        right:0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 699px) {
+    .square {
+        position: fixed;
+    }
+    .green {
+        top: 0;
+        left: 0;
+    }
+    .black {
+        top:0;
+        right:0;
+    }
+    .red {
+        bottom:0;
+        left:0;
+    }
+    .blue {
+        bottom:0;
+        right:0;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 799px) {
+    .square {
+        position: fixed;
+    }
+    .black {
+        top: 0;
+        left: 0;
+    }
+    .red {
+        top:0;
+        right:0;
+    }
+    .blue {
+        bottom:0;
+        left:0;
+    }
+    .green {
+        bottom:0;
+        right:0;
+    }
+}
+
+@media (min-width: 800px) {
+    .square {
+        float: left;
+    }
+}

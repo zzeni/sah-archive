@@ -1,0 +1,57 @@
+td,
+th {
+    padding: 10px;
+}
+
+th {
+    text-align: right;
+    background-color: #5a5a5a;
+    padding-left: 20px;
+}
+
+td {
+    background-color: #5a5a5a;
+    padding-right: 20px;
+}
+
+nav a {
+    font-family: Helvetica, sans-serif;
+    padding: 10px 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+}
+
+
+}
+.top-link {
+    text-decoration: none;
+}
+.top-link::before {
+    content: "\2191";
+}
+.green {
+    background-color: #689f5b;
+}
+.yellow {
+    background-color: #fbc701;
+}
+.red {
+    background-color: #d11f00;
+}
+body {
+    background-color: #000000;
+}
+body {
+    background-image: url("https://media.licdn.com/mpr/mpr/p/1/005/06d/21d/0a611cd.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+body {
+    color: whitesmoke;
+}
+h1 {
+    color: whitesmoke;
+}

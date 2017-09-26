@@ -1,0 +1,44 @@
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+    border: 50px solid rgba(255, 206, 231, 0.8);
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+body {
+    background-image: url("images/back.jpg");
+    margin: 20px;
+}
+
+#background-color {
+    width: 150px;
+    height: 80px;
+
+}
+
+#background-color:hover {
+    cursor: pointer;
+    border-color: #204d74;
+    border-radius: 20px;
+    background-color: #ac2925;
+}
+
+.form-group {
+    font-size: 25px;
+}
+
+.btn {
+    background-color: #00E96D;
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #4cae4c;
+    color: white;
+}

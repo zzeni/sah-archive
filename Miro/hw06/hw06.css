@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    border;solid 3px;
+    background: yellow;
+    border-color: greenyellow;
+}
+nav a{
+    border:solid 2px;
+    background: yellow;
+    border-color: greenyellow;
+    display: block;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+.jumbotron {
+    background-color: #666666 !important;
+    color: white !important;
+    width: 700px !important;
+}
+
+.list-group {
+    width: 700px;
+}
+
+i {
+    vertical-align: middle;
+}
+
+span {
+    font-size: 20px !important;
+    font-weight: bold !important;
+}

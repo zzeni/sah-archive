@@ -1,0 +1,35 @@
+body {
+	box-sizing: border-box;
+	font-size: 1.2em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header,
+.social-buttons {
+	border: 5px solid rgb(102, 102, 102);
+	border-radius: 10px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.header {
+	color: white;
+	background-color: rgb(102, 102, 102);
+	height: 200px;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+.social-buttons {
+	margin-top: inherit;
+}
+
+.social-media-icon {
+	text-decoration: none;
+	display: block;
+	color: rgb(102, 102, 102);
+	padding: 20px;
+}

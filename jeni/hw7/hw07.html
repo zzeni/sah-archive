@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Web Forms</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="hw07.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+	<h1>Свържете се с нас!</h1>
+	<form method="post" action="api/send-feedback.php">
+
+		<label for="name">Вашите имена:</label>
+		<input class="form" type="text" name="Your Name">
+
+		<label for="email">Вашият имейл:</label>
+		<input class="form" type="email" name="email">
+
+		<label for="password">Парола:</label>
+		<input class="form" type="password" name="password">
+
+		<label for="language">Език:</label>
+		<select class="form" name="language">
+			<option value="english">Английски</option>
+			<option value="german">Немски</option>
+			<option value="bulgarian">Български</option>
+		</select>
+
+		<label for="phone">Телефон:</label>
+		<input class="form" type="text" name="phone">
+		<br>
+
+		<label for="message">Съобщение:</label>
+
+		<textarea class="form" name="message">Напишете вашето съобщение тук</textarea>
+	</form>
+	<br>
+	<div class="btn" >
+	<button type="submit">Изпрати</button>
+	<button type="reset">Итрий</button>
+	</div>
+</body>
+
+</html>

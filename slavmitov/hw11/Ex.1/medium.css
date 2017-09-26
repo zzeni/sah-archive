@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  background-color: orange;
+}
+
+#responsiveCircle {
+  background-color: cadetblue;
+}
+
+#responsiveText:before {
+  content: "medium";
+  display: block;
+  line-height: 1em;
+}
+
+#responsiveText:after {
+  clear: left;
+  font-size: .5em;
+  content: "> 460px and <679px";
+  text-transform: lowercase;
+}

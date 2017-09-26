@@ -1,0 +1,16 @@
+div {
+    background-color: #4A8422;
+
+}
+
+body {
+    background-color: #FFF7DD;
+}
+
+p::after {
+    content: "680px + 999px";
+}
+
+p::before {
+    content: "Large";
+}

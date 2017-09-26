@@ -1,0 +1,54 @@
+.freshWF, .saltWF, .molluscs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.freshWF img, .saltWF img, .molluscs img {
+    width: 300px;
+    height: 230px;
+}
+.freshWF div, .saltWF div, .molluscs div {
+    margin: 10px 0;
+}
+.freshWF p:first-of-type, .saltWF p:first-of-type, .molluscs p:first-of-type {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.descr {
+    width: 300px;
+    text-align: justify;
+    word-wrap: break-word;
+    font-size: 13px;
+}
+.heading {
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid rgba(255, 139, 56, 1);
+    width: 90%;
+    margin: 15px auto;
+    height: 42px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+#mainNavigation li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 768px) and (min-width: 414px) {
+    header li {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .heading {
+        height: auto;
+        line-height: 24px;
+        font-size: 24px;
+    }
+}

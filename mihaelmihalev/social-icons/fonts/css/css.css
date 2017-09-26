@@ -1,0 +1,18 @@
+@import
+
+a{
+    display: inline-block;
+}
+
+i {
+    color: grey;
+}
+
+i:hover {
+    color: black;
+}
+
+.icons{
+    width:70px;
+    height:70px;
+}

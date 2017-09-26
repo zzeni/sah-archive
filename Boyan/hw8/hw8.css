@@ -1,0 +1,50 @@
+    body {
+        background-color: black;
+        height: 500px;
+        width: 800px;
+    }
+    
+    div {
+        height: 150px;
+        width: 50%;
+        margin: auto;
+    }
+    
+    .h1 {
+        background-color: yellow;
+        margin: 8px;
+        flex-grow: 1;
+    }
+    
+    .h2 {
+        background-color: green;
+        margin: 8px;
+        flex-grow: 1;
+    }
+    
+    .h3 {
+        background-color: red;
+        margin: 8px;
+        flex-grow: 2;
+        color: white;
+        font-family: serif;
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    .h4 {
+        background-color: blue;
+        margin: 8px;
+        flex-grow: 1;
+        flex-flow: row row-reverse;
+    }
+    
+    .fb1 {
+        display: flex;
+        height: 150px;
+    }
+    
+    .fb2 {
+        display: flex;
+        height: 200px;
+    }

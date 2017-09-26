@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Toggle</title>
+</head>
+<body>
+<button onclick="startCount()">Start the maddness</button>
+<button onclick="stopCount()">Stop the maddness</button>
+<p id="para"></p>
+<script>
+function startCount(){
+    myVar = setInterval(alertFunc, 2000, 'parameter');
+}
+function alertFunc(parameter) {
+    document.getElementById('para').innerHTML += 'Do you know how to stop me?'
+}
+function stopCount() {
+    clearInterval(myVar);
+}
+</script>
+
+</body>
+</html>

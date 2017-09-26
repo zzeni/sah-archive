@@ -1,0 +1,63 @@
+#blue {
+    animation: blueSquare 3s linear infinite;
+}
+
+@keyframes blueSquare {
+    75% {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        opacity: 0.75;
+    }
+}
+
+#red {
+    animation: redSquare 2.5s linear infinite;
+}
+
+@keyframes redSquare {
+    55% {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        opacity: 0.75;
+    }
+}
+
+#green {
+    animation: greenSquare 1.5s linear infinite;
+}
+
+@keyframes greenSquare {
+    15% {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        opacity: 0.75;
+    }
+}
+
+#yellow {
+    animation: yellowSquare 4.5s linear infinite;
+}
+
+@keyframes yellowSquare {
+    35% {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        opacity: 0.75;
+    }
+}
+
+h1 {
+    animation: header 3.2s ease-in-out infinite;
+}
+
+@keyframes header {
+    20% {
+        color: rgb(255, 1, 203);
+        opacity: 0.95;
+        font-size: 2.2em;
+    }
+}

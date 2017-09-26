@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test04</title>
+</head>
+<body>
+<section id="playing-the-game">
+    <form action="http://zenlabs.pro/api/game/continue" method="post">
+        <input type="hidden" name="key" value="1479741860">
+        <p>
+
+            <label for="code">Type your key, please:</label>
+            <input type="text" id="code" name="key" value="1479741860">
+        </p>
+        <p>
+            <label for="javascript-rocks"></label>
+            Let the JS to generate this:
+            <input id="javascript-rocks" type="text" name="javascript-rocks" readonly>
+        </p>
+        <p>
+            <input type="submit" value="Go!">
+        </p>
+    </form>
+
+    <script>
+        var myVar = "let's keep it simple".length;
+        var myOtherVar = 213 % 36 - 5 * 3;
+        if (myVar === myOtherVar) {
+            myVar += 1;
+        } else {
+            myVar = myOtherVar;
+        }
+
+        var myDate = new Date;
+        myVar *= myDate.getFullYear() - Number(7);
+
+        /*
+         The following code will update the value of the `javascript-rocks' field
+         with the result from the calculation above. It uses the JS object `document'
+         to access arbitrary elements in our html code by their id tag.
+         HINT: It doesn't contain the error, look for it in the calculations! ;)
+         */
+        document.getElementById("javascript-rocks").value = myVar;
+    </script>
+
+</section>
+
+</body>
+</html>

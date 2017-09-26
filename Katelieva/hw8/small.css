@@ -1,0 +1,17 @@
+ ul {
+     display: block;
+ }
+ 
+ ul,
+ ul li,
+ .btn {
+     width: 100%;
+     box-sizing: border-box;
+     padding: 0;
+ }
+ 
+ .btn {
+     height: auto;
+     border-radius: 0;
+     padding: 5px;
+ }

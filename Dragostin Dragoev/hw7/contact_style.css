@@ -1,0 +1,38 @@
+
+body {
+    font-size: 16px;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+}
+
+input {
+    padding: 3px;
+}
+
+div textarea {
+    resize: none;
+    margin-left:204px;
+}
+div {
+    position: relative;
+    width: 700px;
+    height: 200px;
+}
+div label {
+    position: absolute;
+    top: 0px;
+}
+.btn {
+    margin-left: 204px;
+    box-sizing: border-box;
+}
+.btn button {
+    padding: 10px 20px;
+    width: 100px;
+}
+.btn .res {
+    margin-right: 10px;
+}

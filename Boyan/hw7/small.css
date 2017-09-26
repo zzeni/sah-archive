@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box:
+}
+
+header {
+    border-style: solid;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: inline;
+    line-height: 35px;
+    font-size: 20px;
+    text-decoration-color: crimson;
+}
+
+nav a {
+    display: block;
+    text-decoration-color: crimson;
+    border: 1px solid;
+    color: black;
+    text-align: center;
+}
+
+#b1 {
+    color: white;
+    padding: 10px 10px;
+}
+
+button {
+    padding: 10px;
+}
+
+#sec1 img {
+    width: 100%;
+    margin: 8px;
+    float: left;
+    padding:
+}
+
+#sec2 img {
+    width: 100%;
+    margin: 8px;
+    float: right;
+}

@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.imageRotate, .imageRotate1 {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.imageRotate > li,
+.imageRotate1 > li {
+    width: 100%;
+    height: calc(100% - 22px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mainConteiner {
+    width: 500px;
+    /*height: 300px;*/
+    /*border: 2px solid lightgrey;*/
+    margin: 50px auto;
+}
+.mainConteiner .popUp,
+.mainConteiner .popUp1 {
+    background-color: lightblue;
+    background-size: 100% 100%;
+    position: absolute;
+    display: none;
+}
+.mainConteiner .popUp.large,
+.mainConteiner .popUp1.large {
+    width: 550px;
+    height: 100%;
+    border: 3px solid black;
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    /*height: 300px;*/
+    margin: 0 auto;
+    padding: 0 85px;
+}
+/*.leftArrow, .rightArrow {
+    width: 30px;
+    height: 90%;
+    background-color: grey;
+}*/
+.leftArrow:hover, .imageRotate > li:hover, .rightArrow:hover,
+.leftArrow1:hover, .imageRotate1 > li:hover, .rightArrow1:hover {
+    cursor: pointer;
+}
+/*span {
+    position: absolute;
+}*/
+.mainConteiner li, .mainConteiner1 li {
+    transition: background-image 0.5s ease-in-out;
+}
+#wrapper > .fistSection article {
+    height: auto;
+}
+
+.dots,
+.dots1 {
+    width: 100%;
+    height: 20px;
+    padding: 2px 155px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.dots > li,
+.dots1 > li {
+    width: 8px;
+    height: 8px;
+    border: 1px solid grey;
+    border-radius: 100%;
+    list-style: none;
+}
+.redDot {
+    background-color: rgba(255, 139, 56, 1);
+}
+@media only screen and (max-width: 414px){
+    .dots, .dots1{
+        padding: 0;
+    }
+    .imageRotate > li, .imageRotate1 > li {
+        background-size: contain;
+    }
+    .mainCarousel .mainConteiner, .mainCarousel .mainConteiner1 {
+        height: 300px;
+    }
+}
+
+
+

@@ -1,0 +1,128 @@
+body {
+    background-color: lightgrey;
+    color: white;
+}
+* {
+    box-sizing: border-box;
+}
+#wrapper {
+    width: 48%;
+    height: auto;
+    margin: 0 auto;
+    background-image: url("back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    padding: 2%;
+}
+h1 {
+    text-align: center;
+    margin: 1% auto;
+    margin-bottom: 5%;
+}
+select {
+    text-align: center;
+    height: 20px;
+}
+select {
+    margin: 5% auto;
+}
+select:last-of-type {
+        float:right;
+}
+select:last-of-type:after {
+    clear: both;
+}
+textarea {
+    width: 100%;
+    height: 250px;
+    overflow-y: scroll;
+    text-align: justify;
+    text-indent: 0;
+}
+fieldset {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 2% 0;
+    border-radius: 10px;
+}
+label[for="female"] {
+    margin-left: 19%;
+}
+label[for="pass"]:before, label[for="mail"]:before, 
+label[for="phone"]:before {
+    content: "\a";
+    white-space: pre;
+}
+input[type="text"], input[type="password"], 
+input[type="email"], input[type="tel"] {
+    margin-bottom: 3%;
+    height: 20px;
+    width: 42%;
+}
+input[type="email"] {
+    margin-left: 21px;
+}
+input[type="password"] {
+    margin-left: 1.5px;
+}
+input[type="tel"] {
+    margin-left: 23px;
+}
+.newrow {
+    margin-bottom: 2%;
+}
+input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    margin-top: 4%;
+    font-size: 1.3em;
+    background-color: rgba(33, 150, 243, 0.5);
+    border-radius: 0 10px 0 10px;
+    border: 2px solid grey;
+    color: #e91e63;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    transition: height linear 0.2s;
+    height: 50px;
+    background-color: rgba(33, 150, 243, 0.8);
+}
+
+input[type="text"]:required:valid, 
+input[type="password"]:required:valid, 
+input[type="email"]:required:valid {
+    background-image: url("greenball.png");
+    background-size: 10px 10px;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: green;
+}
+input[type="text"]:required:invalid, 
+input[type="password"]:required:invalid, 
+input[type="email"]:required:invalid {
+    background-image: url("redball.png");
+    background-size: 10px 10px;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: red;
+}
+
+input[type="reset"] {
+    display: block;
+    margin: 1% auto;
+    width: 70px;
+    height: 20px;
+    background-color: red;
+    border: none; 
+    color: white;
+}
+input[type="reset"]:after {
+    clear: both;
+}
+
+        /*REMOVE STILE FROM BROWSER*/
+[type="submit"] {
+  -webkit-appearance: button; 
+}
+        /*REMOVE STILE FROM BROWSER - end*/

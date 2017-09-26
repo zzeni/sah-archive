@@ -1,0 +1,94 @@
+nav {
+    text-align: center;
+    margin-top: 30px;
+    margin: 0 auto;
+    width: 800px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #194d33;
+}
+
+nav a {
+    display: inline-block;
+    color: #D0D0D0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 25px;
+}
+
+h2,
+.heading2 {
+    background-color: #D0D0D0;
+    color: #194d33
+}
+
+hr {
+    margin-top: 40px;
+    width: 900px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+#img1 {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.img2 {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+.heading2 {
+    text-align: right;
+}
+
+header,
+div {
+    margin: 0 auto;
+    width: 800px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+#img1,
+.img2 {
+    margin: 10px;
+}
+
+img {
+    width: 800px;
+    height: 300px;
+}
+
+@font-face {
+    font-family: 'gunsnroses';
+    src: url('C:/Users/fe-user/Desktop/swift-academy-homeworks/ivatsolova/hw06/Task 19.10/guns-n-roses');
+}
+
+nav a,
+h1,
+h2 {
+    font-family: 'gunsnroses';
+}
+
+footer {
+    color: #D0D0D0;
+    background-color: #194d33;
+     margin: 0 auto;
+    width: 800px;
+    height: 30px;
+    text-align: right;
+    padding: 5px;
+
+}

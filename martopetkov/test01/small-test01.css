@@ -1,0 +1,30 @@
+nav {
+    display:block;
+    border-radius: none;
+    
+    background-color: greenyellow;
+/*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+*/
+    width: 100%;
+    height: 40px;
+   
+    border: none;
+    color: white;
+    
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.btn {
+    
+    border-radius: none;
+    display:block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    box-sizing: border-box;
+    max-width: 100%;
+}

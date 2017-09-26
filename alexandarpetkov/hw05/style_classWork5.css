@@ -1,0 +1,48 @@
+#wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url("rain_pack/bg.jpg");
+    background-size: 100% auto;
+    position: absolute;
+    font-family: sans-serif;
+}
+audio {
+    margin-top: 20px;
+}
+header {
+    text-align: center;
+}
+video {
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+ul, footer {
+    position: relative;
+}
+ul, p {
+    color: white;
+}
+ul {
+    width: 280px;
+    border-top: 5px solid #2e8fc4;
+    border-bottom: 5px solid #2e8fc4;
+    margin: 20px auto;
+    padding: 10px 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: auto 8px;
+}
+p {
+    text-align: center;
+}
+footer {
+    top: 71%;
+    width: 100%;
+    height: 5%;
+    background: #2e8fc4;
+    line-height: 32px;
+}

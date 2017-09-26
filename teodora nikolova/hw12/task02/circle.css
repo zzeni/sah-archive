@@ -1,0 +1,49 @@
+form {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    border: 10px solid black;
+    background-image: url("circ.png");
+    background-size: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-group {
+    font-size: 18px;
+}
+
+#exampleRadius {
+    width: 80px;
+    padding-left: 20px;
+    margin-right: 170px;
+
+}
+
+.jumbotron {
+    text-align: center;
+    width: 800px;
+    margin: 10px auto;
+
+}
+
+.btn {
+    width: 80px;
+    background: darkred;
+    color: white;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-left: 100px;
+}
+
+.param {
+    margin: 10px;
+
+}
+
+#exampleInputConvertColor {
+    width: 80px;
+}

@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 900px;
+    margin: 0 auto;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body,
+ul {
+    padding: 0;
+}
+
+#title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding: 0 20px 0 20px;
+}
+
+.left-img {
+    float: left;
+    width: 100px;
+    padding-right: 30px;
+    margin-left: 10px;
+}
+
+.right-img {
+    width: 100px;
+    float: right;
+    padding-left: 30px;
+    margin-right: 10px;
+}
+
+.left-title {
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+.right-title {
+    text-align: right;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: dodgerblue;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    margin-top: 50px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: dodgerblue;
+}
+
+nav ul li {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin: 0 auto;
+    width: 230px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+@media (max-width: 980px) {
+    body {
+        width: 100%;
+    }
+    #title {
+        text-align: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        display: inline-block;
+    }
+    #main {
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+        padding: 0 20px 0 20px;
+    }
+    .left-img {
+        float: none;
+        width: 100%;
+        padding-right: 0px;
+        margin-left: 0px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .right-img {
+        width: 100%;
+        display: block;
+        float: none;
+        padding-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .left-title {
+        text-align: center;
+        margin-top: 40px;
+        text-decoration: underline;
+    }
+    .right-title {
+        text-align: center;
+    }
+    #mobile-nav {
+        float: right;
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul li {
+        display: block;
+        font-size: 22px;
+        border-bottom: 1px solid #000;
+    }
+    .left p {
+        font-size: 18px;
+        text-align: justify;
+    }
+    .right p {
+        font-size: 18px;
+        text-align: justify;
+    }
+    #mobile-title {
+        background-color: dodgerblue;
+        padding: 20px 10px;
+        border-bottom: 2px solid #000;
+    }
+    #mobile-title hr {
+        display: none;
+    }
+}
+
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    margin-bottom: 30px;
+}
+
+#slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+}
+
+#slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 300px;
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
+}
+
+.one-fifth {
+    width: 20%;
+    float: left;
+}
+
+.one-fifth button {
+    width: 95%;
+    min-height: 40px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+#start {
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.fish {
+    background-color: skyblue;
+}
+
+.amfibians {
+    background-color: yellow;
+}
+
+.reptiles {
+    background-color: yellowgreen;
+}
+
+.birds {
+    background-color: lightgrey;
+}
+
+.mammals {
+    background-color: indianred;
+}
+
+#results {
+    display: none;
+}
+
+#wrong-answers img {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 50%;
+    min-width: 50%;
+    width: 50%;
+}
+
+#wrong-answers li {
+    list-style: none;
+}
+
+#wrong {
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    margin-top: 20px;
+}
+
+#correct {
+    font-size: 18px;
+    font-weight: bold;
+    color: forestgreen;
+    margin-top: 20px;
+}

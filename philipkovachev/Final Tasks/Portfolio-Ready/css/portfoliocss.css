@@ -1,0 +1,186 @@
+h2 {
+    color: white;
+    margin-top: 30px;
+    float: left;
+    padding: 10px;
+}
+
+span {
+    color: lightgray;
+}
+
+hr {
+    opacity: 0.3;
+    width: 100%;
+}
+
+h1,
+p {
+    color: white;
+}
+
+main {
+    margin-top: 150px;
+    font-size: 30
+}
+
+a {
+    display: inline-block;
+    font-size: 30px;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+nav {
+    margin-top: 150px;
+    display: flex;
+    width: 100%;
+    opacity: 0.9
+}
+
+.blue {
+    background-color: #396170;
+    flex-grow: 1
+}
+
+.purple {
+    background-color: #31223C;
+    flex-grow: 1
+}
+
+.red {
+    background-color: #411A1B;
+    flex-grow: 1
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    opacity: 0.80
+}
+
+body {
+    background-color: #191919;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.animation {
+    background-color: black;
+    /* Webkit */
+    background-image: -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 40, from(white), color-stop(0.1, rgba(248, 255, 128, .5)), to(transparent)), -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 30, from(white), color-stop(0.1, rgba(255, 186, 170, .4)), to(transparent)), -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 40, from(rgba(255, 255, 255, .9)), color-stop(0.05, rgba(251, 255, 186, .3)), to(transparent)), -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 30, from(rgba(255, 255, 255, .4)), color-stop(0.03, rgba(253, 255, 219, .2)), to(transparent));
+    /* Firefox */
+    background-image: -moz-radial-gradient(circle, #FFFFFF 2px, rgba(248, 255, 128, .5) 4px, transparent 40px), -moz-radial-gradient(circle, #FFFFFF 1px, rgba(255, 186, 170, .4) 3px, transparent 30px), -moz-radial-gradient(circle, rgba(255, 255, 255, .9) 1px, rgba(251, 255, 186, .3) 2px, transparent 40px), -moz-radial-gradient(circle, rgba(255, 255, 255, .4), rgba(253, 255, 219, .2) 1px, transparent 30px);
+    /* Background images size */
+    background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
+    /* Background images position*/
+    background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    /* Animation */
+    animation-name: movement;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* Firefox */
+    -moz-animation-name: movement;
+    -moz-animation-duration: 5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    /* Webkit */
+    -webkit-animation-name: movement;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes movement {
+    from {
+        background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    }
+    to {
+        background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+    }
+}
+
+@-moz-keyframes movement {
+    from {
+        background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    }
+    to {
+        background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+    }
+}
+
+@-webkit-keyframes movement {
+    from {
+        background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
+    }
+    to {
+        background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
+    }
+}
+
+.right {
+    float: right;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+    a {
+        font-size: 15px;
+        height: 100px;
+        width: 100px;
+    }
+    div {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    nav {
+        position: absolute;
+        margin-bottom: 150px;
+    }
+    .right {
+        margin: 5px;
+    }
+}
+
+img {
+    height: 90px;
+}
+
+select {
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+header {
+    background-color: black;
+}
+
+[lang="bg"] .lang-en {
+    display: none;
+}
+
+[lang="en"] .lang-bg {
+    display: none;
+}

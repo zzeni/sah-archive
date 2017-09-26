@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>h12</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+  // 1va zadacha
+        function convert(x,y,z){
+
+            x = x.toString(16);
+            y = y.toString(16);
+            z = z.toString(16);
+
+            var result = '#' + x + y + z;
+
+            return result
+
+        }
+
+        convert(255,192,253);
+        console.log(convert(255,192,253));
+
+//// 2ra zadacha
+
+        function circle(radius) {
+            var result = 2 * Math.PI * radius;
+            result = Math.round(result)
+            return result
+        }
+        console.log(circle(8));
+        </script>
+    </body>
+</html>

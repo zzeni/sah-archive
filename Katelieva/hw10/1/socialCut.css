@@ -1,0 +1,65 @@
+body {
+    background-color: gray;
+    font-family: 'Shrikhand', cursive;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#title {
+    background-color: azure;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#social {
+    display: block;
+    background-color: white;
+    padding: 30px;
+    height: 300px;
+    text-align: left 30px;
+    text-decoration-color: gainsboro;
+    border-radius: 5px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    background-size: auto 35px;
+    background-position: 20px 10px;
+    margin: 10px 10px 10px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+hr {
+    width: auto 750px;
+    color: gainsboro;
+}
+
+label {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+#facebook {
+    background-image: url(social-media_03.gif);
+}
+
+#google {
+    background-image: url(social-media_05.gif);
+}
+
+#instagram {
+    background-image: url(social-media_07.gif);
+}
+
+#pins {
+    background-image: url(social-media_09.gif);
+}
+
+#twitter {
+    background-image: url(social-media_11.gif);
+}

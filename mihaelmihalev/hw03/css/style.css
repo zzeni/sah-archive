@@ -1,0 +1,225 @@
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 14px;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+    font-family: verdana;
+}
+
+
+body {
+        background: #b5a397;
+    }
+
+
+    h1 {
+        color: #30231d;
+        font-size: 24pt;
+        text-align: center;
+        font-family: verdana;
+        margin: 0;
+        padding: 20pt 0 0 0;
+        line-height: 30pt;
+    }
+
+    h2 {
+        color: #30231d;
+        font-size: 22pt;
+        font-family: 'Marck Script', cursive;
+        text-align: center;
+        line-height: 20pt;
+        margin: 0;
+        padding: 5pt;
+    }
+
+    h3 {
+        color: #000000;
+        font-size: 20pt;
+        font-family: 'Marck Script', cursive;
+        text-align: center;
+        line-height: 20pt;
+        margin: 0;
+        padding: 5pt;
+    }
+
+    p {
+        color: #ffffff;
+        font-size: 12pt;
+    }
+
+    ol {
+        color: #ffffff;
+    }
+
+    a {
+        color: orange;
+        text-decoration: none;
+    }
+
+    table {
+        background-color:#ffaa66;
+    }
+
+    th, td {
+        padding:10px;
+        border:2px dashed #fff;
+    }
+
+    header {
+        background-color: #ffffff;
+        min-height: 120px;
+        width: 100%;
+    }
+
+    nav {
+        border-bottom: 3pt solid #ffffff;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        line-height: 50pt;
+        height: 60px;
+        background-color: #6a5750;
+    }
+
+    .brown1 {
+        background-color:#231709
+    }
+
+    .brown2 {
+        background-color:#4b371c;    
+    }
+
+    .brown3 {
+        background-color:#3c280d;    
+    }
+
+    .brown4 {
+        background-color:#795c34;    
+    }
+
+    .brown5 {
+        background-color:#362511;    
+    }
+
+    .brown6 {
+        background-color:#371d10;    
+    }
+
+    nav ul {
+        color: #fff;
+        margin: 0px;
+        height: 60pt;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-top:10px;
+        height: 30px;
+        line-height:30px;
+        border-top-left-radius: 2em 0.5em;
+        border-top-right-radius: 1em 3em;
+        border-bottom-right-radius: 4em 0.5em;
+        border-bottom-left-radius: 1em 3em;
+        border: solid transparent;
+    }
+
+    nav ul li:hover {
+        background:#30231d; 
+        border: solid #ffffff;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        font-size: 14pt;
+        padding:10px;
+        text-align:center;
+    }
+
+    section {
+        background-color: #FFF;
+        width: 20%;
+        height:100%;
+        padding: 0.52%;
+        text-align: center;
+        color: #7fdbff;
+        float:left;
+    }
+
+    section:after{
+        clear:both;
+    }
+
+    section p {
+        color: #000000;
+        text-align: justify;
+        font-size: 11pt;
+    }
+
+    section h2 {
+        color: #000000;
+        font-size: 15pt;
+    }
+
+    section ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: #6a5750;
+    }
+
+    section ul li {
+        width: 100%;
+        color: #ffaa11;
+        background: #f6f1ed;
+        margin: 5pt;
+        height: 30pt;
+        line-height: 30pt;
+    }
+
+    main {
+        width: 77.92%;
+        padding: 0.52%;
+        height: 100%;
+        color: #000000;
+        float:left;
+    }
+
+    main:after{
+        clear:both;
+    }
+
+    main article {
+        width: 98%;
+        padding:1%;
+        background: #f6f1ed;
+        height: 200px;
+        margin-bottom: 0.52%;
+        float:left;
+    }
+
+    main article:after {
+        clear:both;
+    }
+
+    main article #blok1 #blok2 #blok3 #blok4 #blok5 {
+        width: 96%;
+        background: #ffffff;
+        height: 200px;
+        margin-bottom: 10px;
+        padding:2%;
+    }
+
+    footer{
+        background-color: #6a5750;
+        height:200px;
+        width:100%;
+        float:left;
+    }
+
+   footer:after{
+        clear:both;
+    }

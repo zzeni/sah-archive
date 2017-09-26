@@ -1,0 +1,134 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 16px;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+    font-family: Verdana;
+    box-sizing: border-box;
+}
+
+header {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width:120px;
+    height:120px;
+    color:#ffffff;
+    font-weight:bold;
+    max-width: 100%;
+    text-align: center;
+	-moz-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	text-decoration:none;
+}
+
+a:hover{
+	margin-top: -10px;
+	-moz-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+
+a:focus{
+	background-color:#003366;
+	border:3px solid #ff0000;
+}
+
+a:visited{
+	text-decoration:none;
+}
+
+ul {
+    width:100%;
+    display:flex;
+    max-width: 100%;
+}
+
+ul li {
+    list-style: none;
+    max-width: 100%;
+}
+
+.btn-red {
+    background-color: #965454;
+    border: rgba(224, 192, 168, .5) 10px dashed;
+}
+
+.btn-green {
+    background-color: #488448;  
+    border: rgba(192, 224, 168, .5) 10px dashed;
+    margin-left:-10px;
+}
+
+.btn-yellow {
+  background-color: #968454;  
+  border: rgba(224, 192, 168, .5) 10px dashed;
+    margin-left:-10px;
+}
+
+.btn-blue {
+  background-color: #484856;  
+  border: rgba(168, 198,224, .5) 10px dashed;
+        margin-left:-10px;
+}
+
+main{
+    width:800px;
+    max-width: 100%;
+    background-color: #965454;
+    border: rgba(224, 192, 168, .5) 10px dashed;
+    margin:0 auto;
+    padding:10px;
+    margin-top:20px;
+}
+
+p {
+    color:#ffffff;
+    font-weight: bold;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+
+    header{
+        display:block;
+    }
+    
+    a{
+        display:block;
+        border-radius:0px;
+        max-width:100%;
+        width:100%;
+        height:30px;
+    }
+    
+    ul {
+        display:block;
+    }
+    
+    ul li{
+        display:block;
+    }
+    
+    .btn-red, .btn-green, .btn-yellow, .btn-blue {
+        margin:0;
+    }
+
+
+}

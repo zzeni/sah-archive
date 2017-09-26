@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Contact us">
+
+    <script src=" https://use.fontawesome.com/8c19b504d8.js"></script>
+    <title>Contact us</title>
+
+       <!--  jQuery UI -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrapValidator.css" />
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom CSS -->
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link href="css/contacts.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body>
+
+    <a href="index.html" id="logohome"><img src="img/airlogo5.png" height="45" alt="Logo-Homepage"></a>
+
+    <!-- Side menu effect START ///////////////////////////////// -->
+    <ul id="gn-menu" class="gn-menu-main">
+        <li class="gn-trigger">
+            <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+
+            <i id="sandwich" class="fa fa-bars fa-3x gn-trigger" aria-hidden="true"></i>
+
+            <nav class="gn-menu-wrapper">
+                <div class="gn-scroller">
+                    <ul class="gn-menu">
+                        <li class="gn-search-item">
+                            <input placeholder="Search" type="search" class="gn-search">
+                            <a class="gn-icon gn-icon-search"><span>Search</span></a>
+                        </li>
+                        <li>
+                            <a class="gn-icon gn-icon-download">Snowboards</a>
+                            <ul class="gn-submenu">
+                            </ul>
+                        </li>
+                        <li><a class="gn-icon gn-icon-cog">Bindings</a></li>
+
+
+                        <li><a class="gn-icon gn-icon-cog">Boots</a></li>
+
+
+                        <li><a class="gn-icon gn-icon-cog">Outerwear</a></li>
+
+
+                        <li><a href="contacts.html" class="gn-icon gn-icon-cog">Contact us</a></li>
+
+                    </ul>
+                </div>
+                <!-- /gn-scroller -->
+            </nav>
+        </li>
+
+    </ul>
+    <!-- Side menu effect END ///////////////////////////////// -->
+
+
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="cart">
+                        <a href="#">044772525</a>
+                    </li>
+
+                    <li class="cart">
+                        <a href="#">my account</a>
+                    </li>
+                    <a href="cart.html" id="cart"><img src="img/cart.png" height="25" alt="Cart"></a>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- /.navbar-end -->
+    <!-- Page Content -->
+
+    <!-- /.container -->
+
+    <div class="container2">
+
+        <a href="shop.html" id="shopurl"><h2>Shop Now</h2></a>
+
+        <!--  Start form/////////////////////////////////-->
+
+        <div class="container">
+            <div class="row">
+                <!--        <h1>Contact us</h1>-->
+                <!-- form: -->
+                <section>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="page-header">
+                            <h1>Contact us</h1>
+                        </div>
+
+                        <form id="defaultForm" method="post" class="form-horizontal" action="target.php" data-bv-message="This value is not valid" data-bv-feedbackicons-valid="glyphicon glyphicon-ok" data-bv-feedbackicons-invalid="glyphicon glyphicon-remove" data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label hvr-backward">Your name</label>
+                                <div class="col-lg-5">
+                                    <input type="text" class="form-control" name="firstName" placeholder="Name goes here" required data-bv-notempty-message="The Name field is required and cannot be empty" />
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label hvr-backward">Username</label>
+                                <div class="col-lg-5">
+                                    <input type="text" class="form-control" name="username" placeholder="jsmith07" data-bv-message="The username is not valid" required data-bv-notempty-message="The username is required and cannot be empty" pattern="^[a-zA-Z0-9]+$" data-bv-regexp-message="The username can only consist of alphabetical and digits" data-bv-stringlength="true" data-bv-stringlength-min="6" data-bv-stringlength-max="30" data-bv-stringlength-message="The username must be more than 6 and less than 30 characters long" data-bv-different="true" data-bv-different-field="password" data-bv-different-message="The username and password cannot be the same as each other" data-bv-remote="true" data-bv-remote-url="remote.php" data-bv-remote-message="The username is not available" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label hvr-backward">Email address</label>
+                                <div class="col-lg-5">
+                                    <input class="form-control" name="email" type="email" placeholder="example@domain.com" data-bv-emailaddress-message="The input is not a valid email address" />
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label hvr-backward">Issue</label>
+                                <div class="col-lg-5">
+                                    <select class="form-control" name="" data-bv-notempty data-bv-notempty-message="Type of issue is required">
+                                        <option value="">-- Select type of issue --</option>
+                                        <option value="Product question">Product question</option>
+                                        <option value="Order question/issue">Order question/issue</option>
+                                        <option value="Shipping ">Shipping question</option>
+                                        <option value="Returns question">Returns question</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label hvr-backward">Order in reference</label>
+                                <div class="col-lg-5">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="shipping_to" value="current" checked /> I don't have an order number
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="shipping_to" value="new" /> My order number is:
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="newAddress">
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label hvr-backward">Details</label>
+                                    <div class="col-lg-5">
+                                        <select name="country" class="form-control" disabled>
+                                            <option value="">-- Specify details --</option>
+                                            <option value="">Damaged Items</option>
+                                            <option value="">International Delivery</option>
+                                            <option value="">Didn't arrive on time</option>
+                                            <option value="">Size doesn't fit</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label"></label>
+                                    <div class="col-lg-5">
+                                        <input type="text" placeholder="FG77634" class="form-control" name="street" disabled />
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label class="col-lg-3 control-label hvr-buzz-out">Question</label>
+                                    <div class="col-lg-5">
+                                        <textarea class="form-control" name="bio" rows="10" data-bv-stringlength data-bv-stringlength-max="100" data-bv-stringlength-message="Please explain in details wat is your query"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-9 col-lg-offset-3">
+                                    <button type="submit" class="btn btn-primary">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                </section>
+                <!-- :form -->
+                </div>
+            </div>
+
+
+            <!--  END form/////////////////////////////////-->
+
+
+
+            <div class="prefooter">
+
+                <a href="#" class="hvr-bounce-to-bottom">Size Chart</a>
+                <a href="#" class="hvr-bounce-to-bottom">Fitting Guide</a>
+                <a href="#" class="hvr-bounce-to-bottom">Shipping information</a>
+                <a href="#" class="hvr-bounce-to-bottom">FAQ</a>
+                <a href="#" class="hvr-bounce-to-bottom">Returns</a>
+            </div>
+
+            <div>
+                <img class="lowerfullwidth" src="img/products3.jpg" alt="image of a product goes here">
+            </div>
+
+            <ul class="photo-grid">
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="img/bindings/switchback-halldor-pro-model-snowboard-bindings-2017-pink-yellow.jpg" height="230" width="230" alt="Shop Bindings">
+                            <figcaption>
+                                <p>Shop Bindings</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="img/boots/32-lashed-snowboard-boots-women-s-2017-burgundy.jpg" height="230" width="230" alt="Shop Boots">
+                            <figcaption>
+                                <p>Shop Boots</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="img/snowboards/funk-kink.jpg" height="230" width="230" alt="Shop Snowboards">
+                            <figcaption>
+                                <p>Shop Snowboards</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <figure>
+                            <img src="img/outerwear/32-deep-creek-parka-burgundy.jpg" height="230" width="230" alt="Shop Outerwear">
+                            <figcaption>
+                                <p>Shop Outerwear</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+
+            </ul>
+            <!-- Footer -->
+            <footer>
+                <div class="footerbottom">
+
+                    <div class="footerbox1">
+                        <h2>Get Social</h2>
+
+                        <a href="#" class="hvr-wobble-horizontal">Facebook</a>
+                        <a href="#" class="hvr-wobble-horizontal">Twitter</a>
+                        <a href="#" class="hvr-wobble-horizontal">Instagram</a>
+
+
+                    </div>
+
+                    <div class="footerbox2">
+                        <h2>Information</h2>
+                        <a href="#" class="hvr-wobble-horizontal">Coupon codes</a>
+                        <a href="#" class="hvr-wobble-horizontal">Gift Cards</a>
+                        <a href="#" class="hvr-wobble-horizontal">Size Chart</a>
+                        <a href="#" class="hvr-wobble-horizontal">Fitting Guide</a>
+                        <a href="#" class="hvr-wobble-horizontal">Shipping information</a>
+                        <a href="#" class="hvr-wobble-horizontal">FAQ</a>
+                        <a href="#" class="hvr-wobble-horizontal">Returns</a>
+
+                    </div>
+
+
+                    <div class="footerbox3">
+                        <h2>Abouts</h2>
+                        <a href="#" class="hvr-wobble-horizontal">Locations</a>
+                        <a href="#" class="hvr-wobble-horizontal">Press/Media</a>
+                        <a href="#" class="hvr-wobble-horizontal">Cause</a>
+                        <a href="#" class="hvr-wobble-horizontal">Affiliate Program</a>
+
+                    </div>
+                </div>
+
+                <p>Copyright &copy; Airtime Design 2017</p>
+            </footer>
+
+        </div>
+        <!-- /.container -->
+
+        <!-- jQuery -->
+        <!--    <script src="js/jquery.js"></script>-->
+
+        <!-- jQuery UI -->
+        <!--    <script src="js/jquery-ui.min.js"></script>-->
+
+        <!-- Bootstrap Core JavaScript -->
+        <!--    <script src="js/bootstrap.min.js"></script>-->
+
+
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/bootstrapValidator.js"></script>
+
+        <!--  my custom script-->
+        <script src="js/script.js"></script>
+
+
+
+        <!--  Form script-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#defaultForm').bootstrapValidator();
+            });
+        </script>
+
+        <!--  Form script2-->
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#checkoutForm').bootstrapValidator({
+                    message: 'This value is not valid',
+                    feedbackIcons: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        street: {
+                            enabled: false,
+                            validators: {
+                                notEmpty: {
+                                    message: 'The street is required and cannot be empty'
+                                }
+                            }
+                        },
+                        city: {
+                            enabled: false,
+                            validators: {
+                                notEmpty: {
+                                    message: 'The city is required and cannot be empty'
+                                }
+                            }
+                        },
+                        country: {
+                            enabled: false,
+                            validators: {
+                                notEmpty: {
+                                    message: 'The country is required and cannot be empty'
+                                }
+                            }
+                        },
+                        state: {
+                            enabled: false,
+                            validators: {
+                                notEmpty: {
+                                    message: 'The state is required and cannot be empty'
+                                }
+                            }
+                        }
+                    }
+                });
+
+                // Enable street/city/country validators if user want to ship to other address
+                $('input[name="shipping_to"]').on('change', function () {
+                    var bootstrapValidator = $('#checkoutForm').data('bootstrapValidator'),
+                        shipNewAddress = ($(this).val() == 'new');
+
+                    shipNewAddress ? $('#newAddress').find('.form-control').removeAttr('disabled') : $('#newAddress').find('.form-control').attr('disabled', 'disabled');
+
+                    bootstrapValidator.enableFieldValidators('street', shipNewAddress)
+                        .enableFieldValidators('city', shipNewAddress)
+                        .enableFieldValidators('country', shipNewAddress)
+                        .enableFieldValidators('state', shipNewAddress && $('select[name="country"]').val() == 'US');
+                });
+
+                $('select[name="country"]').on('change', function () {
+                    var bootstrapValidator = $('#checkoutForm').data('bootstrapValidator');
+                    bootstrapValidator.enableFieldValidators('state', $(this).val() == 'US');
+                });
+            });
+        </script>
+
+        <!--  Form END script2-->
+
+
+        <script src="js/classie.js"></script>
+        <script src="js/gnmenu.js"></script>
+        <script>
+            new gnMenu(document.getElementById('gn-menu'));
+        </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Memory cards game</title>
+	<link rel="stylesheet" href="css/game.css" />
+</head>
+
+<body>
+	<h1 id="timer-area">0</h1>
+	<div id="menu-area">
+		<h1 id="menu-message">Let's play memory cards!</h1>
+		<button onclick="startNewGame(2)">2 x 2</button>
+		<button onclick="startNewGame(6)">6 x 2</button>
+		<button onclick="startNewGame(8)">8 x 2</button>
+		<button onclick="startNewGame(12)">12 x 2</button>
+		<button onclick="startNewGame(2, 3)">2 x 3</button>
+		<button onclick="startNewGame(6, 3)">6 x 3</button>
+<button onclick="startNewGame(4, 4)">4 x 4</button>	</div>
+	<div id="game-area"></div>
+	<script src="js/cards.js"></script>
+	<script src="js/game.js"></script>
+	<script src="js/timer.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

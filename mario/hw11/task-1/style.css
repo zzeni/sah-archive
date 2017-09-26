@@ -1,0 +1,48 @@
+* {
+    box-shadow: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #666;
+    font-size: 24px;
+}
+
+.jumbotron {
+    background-color: #666;
+    color: #fff;
+}
+
+a.list-group-item {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    background-image: url(social-media.jpg);
+    background-size: auto 45px;
+    background-position-y: -2px;
+}
+
+#facebook {
+    background-position-x: -3px;
+}
+
+#google {
+    background-position-x: -50px;
+}
+
+#pinterest {
+    background-position-x: -97px;
+}
+
+#instagram {
+    background-position-x: 95px;
+}
+
+#twitter {
+    background-position-x: 47px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="contact_style.css">
+</head>
+<body>
+    <h1>Свържете се с нас!</h1>
+<form method="post" action="">
+    <label for="fname">Вашите имена</label>
+    <input id="fname" type="text" name="first_name" placeholder="Име и Фамилия" autocomplete="on"><br><br>
+
+    <label for="em">Вашият имейл</label>
+    <input id="em" type="email" name="email" placeholder="email@example.com" autocomplete="on" multiple><br><br>
+
+    <label for="lang">Избор на език</label>
+    <select id="lang" name="language">
+        <option selected value="bg">Български</option>
+        <option value="en">Английски</option>
+        <option value="ch">Китайски</option>
+        <option value="jp">Японски</option>
+    </select><br><br>
+
+    <label for="tel">Телефон</label>
+    <input id="tel" type="text" name="phone" placeholder="+359ххххххххх" maxlength="10"><br><br>
+
+<div>
+    <label for="descr">Съобщение</label>
+    <textarea rows="10" cols="40" id="descr" name="description" placeholder="Опишете Вашето запитване тук"></textarea>
+</div>
+<div class="btn">
+    <button class="res" type="reset" name="reset">Изтрий</button>
+    <button type="submit" name="submit">Изпрати</button>
+</div>
+</form>
+</body>
+</html>

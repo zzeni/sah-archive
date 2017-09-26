@@ -1,0 +1,155 @@
+body {
+    display: block;
+    margin-left: 600px;
+    padding-bottom: 150px;
+    margin-top: 100px;
+    height: 200px;
+    width: 280px;
+    border: solid 1px;
+    border-radius: 3px;
+}
+
+.calculator {
+    padding-left: 10px;
+    margin: 10px;
+}
+
+#calculator {
+    display: block;
+    margin: 1px;
+    height: 242px;
+    width: 242px;
+    border: solid 1px;
+    background: blue;
+    margin-left: 16px;
+    margin-top: 5px;
+    background-color: black;
+}
+
+#display {
+    width: 242px;
+    border: solid 3px;
+    margin-left: 17px;
+    background-color: burlywood;
+    margin-top: 37px;
+}
+
+.one {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 3px;
+    font-family: fantasy;
+    border-radius: 10px;
+}
+
+.two {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+}
+
+.three {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+}
+
+.star {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+    background-color: firebrick;
+}
+
+.four {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 3px;
+    font-family: fantasy;
+    border-radius: 10px;
+}
+
+.five {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+}
+
+.six {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+}
+
+.minus {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+    background-color: firebrick;
+}
+
+.seven {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 3px;
+    font-family: fantasy;
+    border-radius: 10px;
+}
+
+.eight {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+}
+
+.nine {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+}
+
+.plus {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+    background-color: firebrick;
+}
+
+.zero {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+}
+
+.point {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+}
+
+.reset {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+
+.ravno {
+    width: 50px;
+    height: 50px;
+    font-family: fantasy;
+    border-radius: 10px;
+    background-color: firebrick;
+}

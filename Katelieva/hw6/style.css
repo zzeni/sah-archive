@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    border-style: darkred;
+}
+
+nav {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+    padding-top: 20px;
+}
+
+hr {
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+main {
+    padding: 20px;
+    max-width: 100%;
+    border: 3px solid darkred;
+    box-sizing: border-box;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.img-left {
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.img-right {
+    float: right;
+    margin-left: 10px;
+    width: 200px;
+}
+

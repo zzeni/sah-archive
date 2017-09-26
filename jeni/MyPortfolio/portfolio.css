@@ -1,0 +1,204 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+html[lang="en"] .lang-bg {
+	display: none;
+}
+
+#langSelect {
+	float: right;
+	margin-left: 25px;
+	margin-top: 12px;
+	border-radius: 10px;
+}
+
+html[lang="bg"] .lang-en {
+	display: none;
+}
+
+html,
+body,
+div.page-header,
+#about,
+#myProjects,
+#myContact {
+	/*	height: 100%;*/
+	max-width: 100%;
+	box-sizing: border-box;
+	/*	margin: 0 auto; */
+}
+
+.page-header {
+	display: block;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #ABE8C7;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+#my_img {
+	margin: 0 auto;
+	padding-top: 15%;
+}
+
+#hrefContact {
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	font-size: 1em;
+	color: #ABE8C7;
+}
+
+#hrefContact:hover {
+	color: white;
+	background-color: #ABE8C7;
+	border-radius: 10px;
+}
+
+
+/* MY-PROJECTS */
+
+.portfolio-grid {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.portfolio-grid li {
+	display: inline-block;
+	margin: 5px 5px 5px 5px;
+	vertical-align: top;
+	width: 212px;
+}
+
+.portfolio-grid li > a,
+.portfolio-grid li > a img {
+	width: 100%;
+	border: none;
+	outline: none;
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	border-radius: 20px;
+	color: black;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+.portfolio-grid li > a img:hover {
+	border-radius: 100%;
+	z-index: 9999;
+}
+
+.animated {
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes flipInX {
+	0% {
+		-webkit-transform: perspective(400px) rotateX(90deg);
+		opacity: 0;
+	}
+	40% {
+		-webkit-transform: perspective(400px) rotateX(-10deg);
+	}
+	70% {
+		-webkit-transform: perspective(400px) rotateX(10deg);
+	}
+	100% {
+		-webkit-transform: perspective(400px) rotateX(0deg);
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes flipInX {
+	0% {
+		-moz-transform: perspective(400px) rotateX(90deg);
+		opacity: 0;
+	}
+	40% {
+		-moz-transform: perspective(400px) rotateX(-10deg);
+	}
+	70% {
+		-moz-transform: perspective(400px) rotateX(10deg);
+	}
+	100% {
+		-moz-transform: perspective(400px) rotateX(0deg);
+		opacity: 1;
+	}
+}
+
+@-o-keyframes flipInX {
+	0% {
+		-o-transform: perspective(400px) rotateX(90deg);
+		opacity: 0;
+	}
+	40% {
+		-o-transform: perspective(400px) rotateX(-10deg);
+	}
+	70% {
+		-o-transform: perspective(400px) rotateX(10deg);
+	}
+	100% {
+		-o-transform: perspective(400px) rotateX(0deg);
+		opacity: 1;
+	}
+}
+
+@keyframes flipInX {
+	0% {
+		transform: perspective(400px) rotateX(90deg);
+		opacity: 0;
+	}
+	40% {
+		transform: perspective(400px) rotateX(-10deg);
+	}
+	70% {
+		transform: perspective(400px) rotateX(10deg);
+	}
+	100% {
+		transform: perspective(400px) rotateX(0deg);
+		opacity: 5;
+	}
+}
+
+.flipInX {
+	-webkit-backface-visibility: visible !important;
+	-webkit-animation-name: flipInX;
+	-moz-backface-visibility: visible !important;
+	-moz-animation-name: flipInX;
+	-o-backface-visibility: visible !important;
+	-o-animation-name: flipInX;
+	backface-visibility: visible !important;
+	animation-name: flipInX;
+}
+
+#myName.active {
+	display: none;
+}
+
+
+/* CONTACT PAGE */
+
+
+/* FOOTER */

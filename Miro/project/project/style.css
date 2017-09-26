@@ -1,0 +1,427 @@
+.nav {
+    display: block;
+    text-align: center;
+    width: 1690px;
+    height: 130px;
+    border: solid 1px;
+    padding: 45px;
+    font-size: 20px;
+    background-color: black;
+}
+
+.favicon {
+    float: right;
+    position: absolute;
+    font-size: 15px;
+    top: 45px;
+    margin-left: 1530px;
+    color: white;
+    width: 120px;
+    padding: 10px;
+}
+
+#brand {
+    position: absolute;
+    top: 30px;
+    padding: 5px;
+}
+
+.Shop {
+    font-size: 25px;
+    margin: 15px;
+    color: white;
+    font-family: fantasy;
+}
+
+.Realeases {
+    font-size: 25px;
+    margin: 15px;
+    color: white;
+    font-family: fantasy;
+}
+
+.Community {
+    font-size: 25px;
+    margin: 15px;
+    color: white;
+    font-family: fantasy;
+}
+
+#select {
+    margin: 5px;
+    font-size: 15px;
+    height: 40px;
+    font-family: fantasy;
+    font-size: 15px;
+    padding: 5px;
+}
+
+#Page {
+    float: right;
+    position: relative;
+    top: -40px;
+    margin: -20px;
+    font-family: fantasy;
+}
+
+#Gender {
+    position: relative;
+    top: -730px;
+    margin: 10px;
+    font-family: fantasy;
+    font-size: 15px;
+}
+
+main {
+    width: 1000px;
+    height: 700px;
+    display: inline-flex;
+    margin-left: 400px;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+#one:hover {
+    height: 200px;
+    width: 200px;
+    opacity: 0.6;
+    position: static;
+}
+
+#two:hover {
+    height: 200px;
+    width: 200px;
+    opacity: 0.6;
+    position: static;
+}
+
+#three:hover {
+    height: 200px;
+    width: 200px;
+    opacity: 0.6;
+    position: static;
+}
+
+#four:hover {
+    height: 200px;
+    width: 200px;
+    opacity: 0.6;
+    position: static;
+}
+
+#five:hover {
+    height: 200px;
+    width: 200px;
+    opacity: 0.6;
+    position: static;
+}
+
+#six:hover {
+    height: 200px;
+    width: 200px;
+    opacity: 0.6;
+    position: static;
+}
+
+.red {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: solid 1px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.yellow {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border: solid 1px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.blue {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border: solid 1px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.orange {
+    width: 20px;
+    height: 20px;
+    background-color: orangered;
+    border: solid 1px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.black {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border: solid 1px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.white {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: solid 1px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+#box {
+    width: 130px;
+    display: flex;
+    position: relative;
+    top: -650px;
+    margin: 10px;
+    font-family: fantasy;
+}
+
+.Shoes {
+    display: inline-block;
+    width: 250px;
+    height: 30px;
+    position: relative;
+    top: -620px;
+    margin-left: -30px;
+    margin-bottom: 200px;
+    font-family: fantasy;
+}
+
+.size {
+    width: 130px;
+    height: 260px;
+    font-family: fantasy;
+    margin-top: -750px;
+    padding: 10px;
+    display: block;
+}
+
+#social {
+    width: 420px;
+    height: 70px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 1270px;
+}
+
+#instagram {
+    width: 70px;
+    height: 60px;
+}
+
+#google {
+    width: 60px;
+    height: 60px;
+}
+
+#twitter {
+    width: 60px;
+    height: 60px;
+}
+
+#facebook {
+    width: 60px;
+    height: 60px;
+}
+
+#snapchat {
+    width: 60px;
+    height: 60px;
+}
+
+#youtube {
+    width: 60px;
+    height: 60px;
+}
+
+.social {
+    float: right;
+    padding: -10px;
+    margin-right: 150px;
+    font-family: fantasy;
+    font-size: 20px;
+    color: white;
+    top: 8px;
+    position: relative;
+}
+
+footer {
+    background-color: black;
+    display: block;
+    height: 500px;
+    width: 1690px;
+    margin-top: 200px;
+    position: static;
+}
+
+#pay {
+    width: 290px;
+    height: 60px;
+    margin: 10px;
+    position: relative;
+    display: block;
+    top: -80px;
+}
+
+#american {
+    width: 60px;
+    height: 60px;
+}
+
+#visa {
+    width: 60px;
+    height: 60px;
+}
+
+#paypal {
+    width: 60px;
+    height: 60px;
+}
+
+#Master {
+    width: 75px;
+    height: 60px;
+}
+
+.pay {
+    width: 110px;
+    height: 40px;
+    color: white;
+    font-family: fantasy;
+    font-size: 18px;
+    display: block;
+    position: relative;
+    padding: 10px;
+    top: -495px;
+    margin-left: 80px;
+}
+
+#help {
+    width: 900px;
+    height: 40px;
+    font-family: fantasy;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    position: relative;
+    top: -300px;
+    padding-left: 10px;
+    margin: 170px;
+    margin: auto;
+}
+
+.p1:hover {
+    color: red;
+    opacity: 0.8;
+}
+
+.p2:hover {
+    color: red;
+    opacity: 0.8;
+}
+
+.p3:hover {
+    color: red;
+    opacity: 0.8;
+}
+
+.p4:hover {
+    color: red;
+    opacity: 0.8;
+}
+
+.p5:hover {
+    color: red;
+    opacity: 0.8;
+}
+
+.p6:hover {
+    color: red;
+    opacity: 0.8;
+}
+
+.range {
+    height: 80px;
+    width: 250px;
+    display: block;
+    position: relative;
+    top: -780px;
+    float: left;
+    font-family: fantasy;
+    margin-left: -30px;
+    font-size: 15px;
+}
+
+p7 {
+    position: relative;
+    top: -80px;
+    width: 90px;
+    height: 80px;
+    font-family: fantasy;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+p8 {
+    position: relative;
+    width: 120px;
+    height: 80px;
+    font-family: fantasy;
+    font-size: 15px;
+    margin-right: 25px;
+    top: -70px;
+}
+
+p9 {
+    position: relative;
+    top: -60px;
+    width: 120px;
+    height: 70px;
+    font-family: fantasy;
+    font-size: 15px;
+    margin-right: 50px;
+}
+
+p10 {
+    position: relative;
+    top: 290px;
+    width: 120px;
+    height: 70px;
+    font-family: fantasy;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+p12 {
+    position: relative;
+    top: -70px;
+    width: 90px;
+    height: 70px;
+    font-family: fantasy;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+p13 {
+    position: relative;
+    top: -80px;
+    height: 60px;
+    width: 100px;
+    font-family: fantasy;
+    font-size: 15px;
+    margin-right: 10px;
+}

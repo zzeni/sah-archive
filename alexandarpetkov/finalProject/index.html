@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content="This site is dedicated to fishing, fishes and beautiful places. You will see at first my fishing adventures in Bulgaria and Greece. Everybody who want to see photos of beautifull places can see my gallery. You can see a lot of different sea and freshwater fishes and some information of it. You can read about different tools that every fisherman must have and use."> -->
+    <meta name="description" content="Този сайт е посветен на риболова, рибите и красиви места. В началото можете да видите първите ми риболовни приключения в България и Гърция. Всеки, който иска да види снимки на красиви места, може да види моята галерия. Можете да видите много различни морски и сладководни риби и малко информация за тях. Можете да прочетете за различни инструменти, които всеки рибар трябва да имат и използват.">
+    <meta name="author" content="Aleksandar Petkov">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Raleway:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/preLoader.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-carousel.css">
+    <link rel="stylesheet" href="styles/lastCarousel.css">
+    <link rel="icon" href="favicon-32x32.png">
+    <title>Fishing Site</title>
+</head>
+<body>
+    <script src="JS_and_DB/preLoad.js"></script>
+    <!-- <div id="fb-root"></div>
+    <script>(function(d, s, id) {   
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.8";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script> -->
+    <div id="wrapper">
+        <main>
+            <header id="topHeader">
+                <h1>OB<span>FS</span></h1>
+                <aside><p id="dropdownBars"></p></aside>
+                <nav id="mainNavigation">
+                    <ul>
+                        <li>
+                            <a href="#One">Риби и Мекотели</a>
+                        </li>
+                        <li>
+                            <a href="#Four">BG излети</a>
+                        </li>
+                        <li>
+                            <a href="#Five">GR излети</a>
+                        </li>
+                        <li>
+                            <a href="#Six">Такъми</a>
+                        </li>
+                        <li>
+                            <a href="#Eight">Контакти</a> </li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                <article>
+                    <h1>OB<span>FS</span></h1>
+                    <h1>КРАСИВИ МЕСТА и КРАСИВИ РИБИ</h1>
+                    <hr class="white">
+                    <p>
+                        Това е учебен проекто-сайт изготвен по скицата на прототипа си.
+                        В сайта ще видите, някои интересни факти и снимки за риболова
+                        исамите риби, ще видите риболовните ми приключения в България и
+                        Гърция. На последно място снимки от доста красиви места.
+                    </p>
+                    <button class="sign1">SING IN</button>
+                    <button class="sign2">SING UP</button>
+                    <!-- <button class="sign3">SING OUT</button> -->
+                </article>
+                <article id="registration">
+                    <header>
+                        <h2>Виж напълно <span>безплатно</span> всичко!</h2>
+                    </header>
+                    <form action="#" method="#">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="password" name="pass" placeholder="Password">
+                        <input type="submit" name="btn" value="Get Started">
+                    </form>
+                </article>
+            </section>
+            <footer>
+                <article>
+                    <h3>Социални мрежи</h3>
+                    <p>Ако искате да научите или да видите нещо повече за нашия сайт, имате възможноста в следните социални мрежи:</p>
+                </article>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/obfishingsite/?ref=bookmarks" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/?hl=en" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.stumbleupon.com" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.rss.com" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+        <section class="fistSection" id="One">
+            <div class="btnOne">
+                <a href="#">
+                    <p>РИБИ</p>
+                    <p>соленоводни</p>
+                </a>
+                <a href="#">
+                    <p>РИБИ</p>
+                    <p>сладководни</p>
+                </a>
+                <a href="#">
+                    <p>МЕКОТЕЛИ</p>
+                    <p>и др.</p>
+                </a>
+            </div>
+            <article>
+                <div class="mainCarousel">
+                    <div class="carousel">
+                        <ul class="arrows">
+                            <li class="leftArrow"></li>
+                            <li class="mainConteiner">
+                                <ul class="imageRotate">
+                                   
+                                </ul>
+                                <div class="popUp"></div>
+                            </li>
+                            <li class="rightArrow"></li>
+                        </ul>
+                    </div>
+                <ul class="dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
+                <button>РИБИТЕ и МЕКОТЕЛИТЕ</button>
+                <div id="tab_2">
+
+                </div>
+                <div id="tab_3">
+
+                </div>
+            </article>
+        </section>
+        <section class="secondSection" >
+            <div class="barPicture">
+                <div class="bar">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <img src="images/frontPage/winter_3.jpg" alt="winter_fishing">
+            </div>
+            <article>
+                <h3>Риболовни излети в България</h3>
+                <hr class="orange">
+                <p>В този раздел ще може да намерите снимки (а в последствие и информация) за всичките ми съзнателни риболовни приключения в България, като всички са в близост до района на София. В галерията ще намерят място и снимки на красивите места по нашите язовири и реки, които когато мога посещавам.</p> 
+                <div class="asideDiv">
+                    
+                </div>
+                <div class="goLarge"></div>
+            </article>
+        </section>
+        <section class="thirdSection">
+            <article>
+                <h3>С въдица и кърпа в Гърция</h3>
+                <hr class="orange">
+                <p>В този раздел ще може да намерите снимки и информация за много красиви места, които успях да посетя последните години в съседна Гърция. Снимките са от места, като островите Лефкада, Корфу, Закинтос, Тасос и п-в Халкидики. </p>
+            </article>
+            <div class="barPicture">
+                <div class="bar">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                    <img src="images/frontPage/photo1.jpg" alt="sunset_fishing">
+            </div>
+        </section>
+        <section class="fourthSection" id="Four">
+            <section>
+                <h1>Включете се и ВИЕ</h1>
+                <hr class="orange">
+                <p>
+                    Изпратете ни Вашите истории, които да поместим на сайта
+                </p>
+            </section>
+            <div class="main">
+                <article>
+                    <i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
+                    <h3>Вашите приключения</h3>
+                    <p>Пишете ни за Вашите риболовни приключения. Всички забавни и пленяващи истории в света на риболова ще бъдат поместени на отделна Ваша страница в сайта.</p>
+                </article>
+                <article>
+                    <i class="fa fa-keyboard-o fa-2x" aria-hidden="true"></i>
+                    <h3>Вашите снимки</h3>
+                    <p>Винаги може да ни изпращате и снимки, който сте 'нащракали' по време на вашия излет, както сред природата, така и по време на всеки риболовен излет.</p>
+                </article>
+                <article>
+                    <i class="fa fa-bolt fa-2x" aria-hidden="true"></i>
+                    <h3>Вашите съвети</h3>
+                    <p>Винаги може да помогнете и на други риболовци, когато подадете информация за успешните и неуспешните си излети. Това ще спаси от разочарование много колеги!</p>
+                </article>
+            </div>
+        </section>
+        <section class="fifthSection" id="Five">
+            <section>
+                <h1>Основни риболовни такъми</h1>
+                <hr class="orange">
+                <p>В зависимост от риболова (морски или сладководен)</p>
+            </section>
+            <section>
+                <article>
+                    <header><h3 class="whiteText">Такъми за морски риболов</h3></header>
+                    <main>
+
+                    </main>
+                    <footer class="firstDR1">
+                        <div class="dropD1 whiteText">OUR MOST POPULAR</div>
+                    </footer>
+                    <ul>
+                        <li>Пръти(въдици)</li>
+                        <li>Макари</li>
+                        <li>Куки</li>
+                        <li>Влакна</li>
+                        <li>Тежести</li>
+                    </ul>
+                </article>
+                <article>
+                    <header><h3 class="whiteText">Такъми за сладководен риболов</h3></header>
+                    <main>
+
+                    </main>
+                    <footer class="firstDR2">
+                        <div class="dropD2 whiteText">OUR MOST POPULAR</div>
+                    </footer>
+                    <ul>
+                        <li>Пръти(въдици)</li>
+                        <li>Макари</li>
+                        <li>Куки</li>
+                        <li>Влакна</li>
+                        <li>Изкуствени промамки</li>
+                        <li>Тежести</li>
+                    </ul>
+                </article>
+                <article>
+                    <header><h3 class="whiteText">Аксесоари за риболов</h3></header>
+                    <main>
+
+                    </main>
+                    <footer class="firstDR3">
+                        <div class="dropD3 whiteText">OUR MOST POPULAR</div>
+                    </footer>
+                    <ul>
+                        <li>Калъфи и Чанти</li>
+                        <li>Инструменти</li>
+                        <li>Плувки</li>
+                        <li>Дребни аксесоари</li>
+                        <li>Живарници и кепове</li>
+                        <li>Стръв</li>
+                        <li>Захранка</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+        <section class="sixthSection" id="Six">
+            <section>
+                <h1>Последни коментари за нашия сайт</h1>
+                <hr class="orange">
+                <p>Вашите коментари <span>не</span> се манипулират от нас !</p>
+            </section>
+            <div class="main">
+                <!-- <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, molestias, vitae! Suscipit, iste sequi ipsa dolorum vitae iusto aspernatur, ut fuga repellat nostrum commodi nobis ducimus ea eos, expedita at.</p>
+                    <div class="user">
+                        <img src="images/frontPage/profile_1.jpg" alt="">
+                        <h3>John Jameson</h3>
+                        <p>Manager</p>
+                    </div>
+                </article> -->
+                <!-- <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt commodi, dolorum recusandae iste perspiciatis molestias. Enim autem, inventore repellendus magnam suscipit itaque. Dignissimos, doloribus.</p>
+                    <div class="user">
+                        <img src="images/frontPage/profile_2.png" alt="">
+                        <h3>Amber Rodriges</h3>
+                        <p>Web designer</p>
+                    </div>
+                </article>
+                <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est autem culpa architecto nihil explicabo numquam, reiciendis vel omnis perspiciatis in quasi minima corporis animi tempora iusto!</p>
+                    <div class="user">
+                        <img src="images/frontPage/profile_3.jpg" alt="">
+                        <h3>Liham Ankor</h3>
+                        <p>Human resources</p>
+                    </div>
+                </article> -->
+            </div>
+        </section>
+        <section class="seventhSection" >
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/bg_BG/sdk.js#xfbml=1&version=v2.8";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+            <h1 class="whiteText">Може да ни намерите и във Facebook</h1>
+            <hr class="white">
+            <p>Ако искате да видите всички снимки, които не се събраха в сайта, елате на нашата Facebook страница</p>
+            <div class="fb-like" data-href="https://www.facebook.com/obfishingsite/" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+            <!-- <button>Download</button> -->
+        </section>
+        <section class="contacts">
+            <section>
+                <h1>пишете ни сега</h1>
+                <hr class="orange">
+                <p>Може да ни напише съобщение без да сте регистриран или да ни пишете на petkovsasho@gmail.com !</p>
+            </section>
+            <form action="#" method="post">
+                <div>
+                    <input type="text" name="name" placeholder="Име">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <input type="text" name="subject" placeholder="Тема">
+                </div>  
+                <textarea name="message" cols="20" rows="10" placeholder="Съобщение"></textarea>
+                <input type="submit" value="ИЗПРАТИ" name="sendMessage">
+            </form>
+        </section>
+        <footer class="lastFooter" id="Eight">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-stumbleupon fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>made by using PSD Axure protopype</p>
+        </footer>
+        <a href="#" id="GoTop">
+            <i class="fa fa-angle-up fa-4x" aria-hidden="true"></i>
+        </a>
+    </div>    
+    <script src="JS_and_DB/jquery-3.1.1.min.js"></script>
+    <script src="JS_and_DB/script.js"></script>
+    <script src="JS_and_DB/lastCarousel.js"></script>
+</body>
+</html>

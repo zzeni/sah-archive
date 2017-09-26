@@ -1,0 +1,84 @@
+#menu-area {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#menu-area button {
+	font-size: large;
+	padding: 5px;
+}
+
+#game-area {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#timer-area {
+	visibility: hidden;
+	text-align: center;
+}
+
+.card {
+	display: inline-block;
+	border: 1px solid gray;
+	margin: 3px;
+	width: 200px;
+	height: 200px;
+	background-image: url('../images/all.jpg');
+}
+
+.closed {
+	background-image: url('../images/abstract-background.jpg');
+}
+
+.solved {
+	visibility: hidden;
+}
+
+.icon0 {
+	background-position: 0px 0px;
+}
+
+.icon1 {
+	background-position: 200px 0px;
+}
+
+.icon2 {
+	background-position: 400px 0px;
+}
+
+.icon3 {
+	background-position: 600px 0px;
+}
+
+.icon4 {
+	background-position: 0px 200px;
+}
+
+.icon5 {
+	background-position: 200px 200px;
+}
+
+.icon6 {
+	background-position: 400px 200px;
+}
+
+.icon7 {
+	background-position: 600px 200px;
+}
+
+.icon8 {
+	background-position: 0px 400px;
+}
+
+.icon9 {
+	background-position: 200px 400px;
+}
+
+.icon10 {
+	background-position: 400px 400px;
+}
+
+.icon11 {
+	background-position: 600px 400px;
+}

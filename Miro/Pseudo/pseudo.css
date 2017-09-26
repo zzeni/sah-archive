@@ -1,0 +1,54 @@
+body {
+    display: flex;
+}
+
+}
+main {
+    margin: 0 20px;
+    padding: 20px;
+    border: solid 1 px #ccc;
+    width: 100%;
+    display: block;
+    
+}
+.nav-btn {
+    display: block;
+    width: 120px;
+    border: solid 3 px;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+.nav-btn:hover {
+    background-color: #e1e1e1;
+}
+section {
+    display: none;
+}
+section:target {
+    display: block;
+}
+.quote {
+    font-style: italic;
+}
+.quote::before {
+    content: '\201C';
+    font-size: 2em;
+}
+.quote::after {
+    content: '\201C';
+    font-size: 2em;
+}
+.strikethru:: after {
+    border: solid 1px;
+    width: 100% display: block;
+    position: relative;
+}
+.pseudo:hover::after {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}

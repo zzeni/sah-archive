@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+#wrapper {
+    display: flex;
+    background-color: black;
+    width: 600px;
+    height: 500px;
+    margin: 5% auto;
+    padding: 3% 5%;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+        /* FIRST row */
+
+section:first-child {
+    display: flex;
+    flex-grow: 1;
+}
+.yellow {
+    background-color: yellow; 
+    flex-grow: 1;
+}
+.green {
+    background-color: lightgreen;
+    flex-grow: 1;
+}
+        /* SECOND row */
+
+main {
+    display: inline-flex;
+    flex-grow: 2;
+    flex-basis: 0;  /*red stay with his height*/
+}
+        /* Section red */
+
+main > section:first-of-type {
+    display: flex;
+    flex-grow: 2;
+    flex-basis: 0; /*red stay with his width*/
+}
+.red {
+    background-color: red;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+        /* Section two */
+
+main > section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.blueOne {
+    background-color: lightblue;
+    flex-grow: 1;
+}
+.blueTwo {
+    background-color: lightblue;
+    flex-grow: 1;
+}
+
+div {
+    margin: 5px;
+}
+p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 3em;
+    font-family: sans-serif;
+}
+
+        /* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+    
+    #wrapper > main {
+        flex-wrap: wrap;
+    }
+
+    #wrapper > main > section:last-of-type {
+        width: 100%;
+    }
+}
+
+
+

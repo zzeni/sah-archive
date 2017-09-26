@@ -1,0 +1,207 @@
+@media only screen and (min-width: 481px) {
+    #wrapper {
+
+        width: auto;
+        background: white;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+
+    .btn-red {
+        background-color: #965454;
+        border: rgba(224, 192, 168, .5) 10px dashed;
+    }
+
+    .btn-green {
+        background-color: #488448;
+        border: rgba(192, 224, 168, .5) 10px dashed;
+    }
+
+    .btn-yellow {
+        background-color: #968454;
+        border: rgba(224, 192, 168, .5) 10px dashed;
+    }
+
+    .btn-blue {
+        background-color: #484856;
+        border: rgba(168, 198, 224, .5) 10px dashed;
+    }
+
+    /*nav{
+        width: 800px;
+        margin: 0 auto;
+        display: inline-block;
+
+    }*/
+    li {
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    ul li:hover .btn {
+        position: absolute;
+        top: 10px;
+
+    }
+
+    a:focus {
+        color: black;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    main {
+        width: 800px;
+        color: white;
+
+        background-color: #965454;
+
+        margin: 0 auto;
+        margin-top: 110px;
+        height: 500px;
+
+    }
+
+    main h1 {
+        color: white;
+        background-color: #965454;
+        border: 10px dashed;
+        border-color: rgba(224, 192, 168, .5);
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    h2 {
+        padding: 20px;
+    }
+
+    section {
+        background-color: rgb(180, 140, 129);
+        border: 10px dashed;
+        border-color: rgb(141, 89, 87);
+        height: 500px;
+        border-top: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        color: white;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-red {
+        background-color: #965454;
+        border: rgba(224, 192, 168, .5) 10px dashed;
+    }
+
+    .btn-green {
+        background-color: #488448;
+        border: rgba(192, 224, 168, .5) 10px dashed;
+    }
+
+    .btn-yellow {
+        background-color: #968454;
+        border: rgba(224, 192, 168, .5) 10px dashed;
+    }
+
+    .btn-blue {
+        background-color: #484856;
+        border: rgba(168, 198, 224, .5) 10px dashed;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    main h1 {
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    main {
+        width: auto;
+        margin-top: 30px;
+    }
+
+    section h2 {
+        width: auto;
+        height: 500px;
+        border: 10px dashed;
+        border-color: #965454;
+        border-top: none;
+        padding: 10px;
+    }
+
+    section {
+        background-color: rgb(180, 140, 129);
+        /* border: 10px dashed;
+         border-color: rgb(141, 89, 87);*/
+        height: 500px;
+
+    }
+
+    main h1 {
+        color: white;
+        background-color: #965454;
+        border: 10px dashed;
+        border-color: rgba(224, 192, 168, .5);
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+
+    }
+
+    ul li:hover .btn {
+        position: relative;
+        top: 5px;
+        padding-top: 10px;
+
+    }
+
+    a:focus {
+        color: black;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+}

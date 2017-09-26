@@ -1,0 +1,36 @@
+main {
+    background-color: #3d4543;
+    height: 250px;
+    width: 250px;
+    border: solid 1px;
+    border-radius: 8px;
+    margin: auto;
+}
+
+form {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn {
+    height: 40px;
+    width: 40px;
+}
+
+.display {
+    background-color: #bccd96;
+    width: 190px;
+    height: 25px;
+}
+
+#pink {
+    background-color: #ff4667;
+}
+
+#yellow {
+    background-color: #FD9830;
+}
+
+input {
+    margin: 4px;
+}

@@ -1,0 +1,111 @@
+body {
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 250px;
+}
+
+.wrappper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrappper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+h1 {
+    font-size: 2.6em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+p {
+    font-size: 20px;
+}
+
+#alphabet {
+    margin: 15px auto;
+    padding: 0;
+    max-width: 900px;
+}
+
+#alphabet:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#alphabet li {
+    float: left;
+    margin: 0 10px 10px 0;
+    list-style: none;
+    width: 35px;
+    height: 30px;
+    padding-top: 10px;
+    background: lightblue;
+    color: #006699;
+    font-size: 18px;
+    cursor: pointer;
+    border: solid 1px #fff;
+}
+
+#alphabet li:hover {
+    background: #c1d72e;
+    border: solid 1px #fff;
+    color: #fff;
+}
+
+#my-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+    display: block;
+}
+
+#my-word li {
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.6em;
+}
+
+.active {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    cursor: default;
+}
+
+.active:hover {
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#mylives {
+    font-size: 1.6em;
+    text-align: center;
+    display: block;
+}

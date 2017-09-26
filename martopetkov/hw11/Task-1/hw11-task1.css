@@ -1,0 +1,131 @@
+body,
+html,
+main {
+    height: 100%;
+}
+
+main {
+    background-color: lightblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.responsiveCircle {
+    background-color: magenta;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#responsiveText {
+    text-transform: uppercase;
+    font-family: 'Kite One', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    /*    top: .5em;*/
+    left: 210px;
+}
+
+#largetext {
+    visibility: hidden;
+    text-transform: uppercase;
+    font-family: 'Kite One', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    left: 75px;
+}
+
+#mediumtext {
+    visibility: hidden;
+    text-transform: uppercase;
+    font-family: 'Kite One', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    left: -70px;
+}
+
+#smalltext {
+    visibility: hidden;
+    text-transform: uppercase;
+    font-family: 'Kite One', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    left: -220px;
+}
+
+
+/*START Media query 680-999px */
+
+@media screen and (max-width: 999px) and (min-width: 680px) {
+    main {
+        background-color: bisque;
+    }
+    .responsiveCircle {
+        background-color: green;
+    }
+    #largetext {
+        visibility: visible;
+    }
+    #responsiveText {
+        visibility: hidden;
+    }
+}
+
+
+/*    END Media query 680-999px */
+
+
+/*   START Media query 460-679px */
+
+@media screen and (max-width: 679px) and (min-width: 460px) {
+    main {
+        background-color: darkorange;
+    }
+    .responsiveCircle {
+        background-color: dodgerblue;
+    }
+    #mediumtext {
+        visibility: visible;
+    }
+    #responsiveText {
+        visibility: hidden;
+    }
+}
+
+
+/*    END Media query 460-679px*/
+
+
+/*    START Media query < 459 (small)*/
+
+@media screen and (max-width: 459px) {
+    main {
+        background-color: beige;
+    }
+    .responsiveCircle {
+        background-color: darkolivegreen;
+    }
+    #smalltext {
+        visibility: visible;
+    }
+    #responsiveText {
+        visibility: hidden;
+    }
+}
+
+
+/*    END Media query < 459 (small) */

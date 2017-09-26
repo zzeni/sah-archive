@@ -1,0 +1,87 @@
+.icons {
+    width: 35px;
+    height: 35px;
+    background-image: url("social-media.jpg");
+    /* padding:8px;*/
+}
+
+#facebook {
+    background-size: auto 35px;
+    background-position: -2px 0;
+}
+
+#googleicon {
+    background-size: auto 35px;
+    background-position: -39px 0;
+}
+
+#instagram {
+    background-size: auto 35px;
+    background-position: 36px 0;
+}
+
+#pinterest {
+    background-size: auto 35px;
+    background-position: -39px 0;
+}
+
+#tweeter {
+    background-size: auto 35px;
+    background-position: 39px 0;
+}
+
+.box {
+    /*    background-color: grey;*/
+    height: 55px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+
+.box div {
+    font-family: sans-serif;
+    font-size: 21px;
+    font-feature-settings: bold;
+    color: dimgrey;
+    font-weight: 700;
+}
+
+.boxheading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: grey;
+    height: 140px;
+    width: 500px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    /*    flex-direction: column;*/
+    justify-content: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 21px;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}

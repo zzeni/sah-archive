@@ -1,0 +1,33 @@
+.wrapper{
+    width: 800px;
+    height: 500px;
+    border: 10px solid lightskyblue ;
+    border-radius: 10%;
+    margin: 0 auto;
+}
+main{
+    text-align: center;
+}
+input{
+
+    margin: 0 auto;
+    width: 200px;
+    height: 60px;
+    border-radius: 10%;
+    color: red;
+    background-color: lightsalmon;
+    font-size: 36px;
+
+    border: 2px solid;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap:wrap ;
+    position: fixed;
+    top: 450px;
+   left: 600px;
+}
+.stop{
+    cursor: pointer;
+}

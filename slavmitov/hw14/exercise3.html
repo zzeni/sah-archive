@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homework14</title>
+    <meta name="description" content="Homework14"> </head>
+
+<body>
+    <h1>Exercise 3</h1>
+    <script>
+        "use strict";
+        var bikes = [
+            {
+                name: "Drag"
+                , price: 200
+  }
+            , {
+                name: "RAM"
+                , price: 500
+  }
+            , {
+                name: "Scott"
+                , price: 1200
+  }
+];
+        console.log("Need a bike?..");
+
+        function logBikes(bikesList) {
+            var bikesCount = bikesList.length;
+            for (var i = 0; i < bikesCount; i++) {
+                var bike = bikesList[i];
+                console.log(bike.name + ":" + bike.price + "$");
+            }
+        }
+        /*
+        bikesList.forEach(function(bikes){
+          console.log(bike.name+": "+"$"+bike.price);
+        });
+        */
+        logBikes(bikes); // => Drag: 200$
+        //    RAM: 500$
+        //    Scott: 1200$
+    </script>
+</body>
+
+</html>

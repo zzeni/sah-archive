@@ -1,0 +1,69 @@
+header {
+    background-color: #eeeeee;
+    border-radius: 5px;
+    height: 200px;
+    width: 520px;
+    margin: auto 0;
+    text-align: center;
+    padding: 5px;
+}
+
+body {
+    background-color: #526870;
+    font-family: 'Oswald', sans-serif, serif;
+    font-weight: 900;
+}
+
+main {
+    height: 800px;
+    width: 600px;
+    margin: auto;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+a {
+    color: #555555;
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    height: 50px;
+    width: 500px;
+    border: solid 1px;
+    border-color: black;
+    background-color: #ffffff;
+    border-color: #dedede;
+    padding: 15px;
+}
+
+a:hover {
+    opacity: 0.80;
+}
+
+.icon {
+    background-image: url(images/social-media.jpg);
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+    background-size: auto 35px;
+    float: left;
+}
+
+#google {
+    background-position: -40px;
+}
+
+#instagram {
+    background-position: -75px;
+}
+
+#pinterest {
+    background-position: -115px;
+}
+
+#twitter {
+    background-position: -150px;
+}

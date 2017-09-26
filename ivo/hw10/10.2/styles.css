@@ -1,0 +1,40 @@
+.social-icon {
+    width: 35px;
+    height: 35px;
+    background-image: url(social-media.jpg);
+}
+
+#facebook-icon {
+    background-size: auto 35px;
+    background-position: 1px;
+}
+
+#google-icon {
+    background-size: auto 35px;
+    background-position: -36px;
+}
+
+#instagram-icon {
+    background-size: auto 35px;
+    background-position: 114px;
+}
+
+#pinterest-icon {
+    background-size: auto 35px;
+    background-position: -110px;
+}
+
+#twitter-icon {
+    background-size: auto 35px;
+    background-position: -148px;
+}
+
+.social-name {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -28px;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}

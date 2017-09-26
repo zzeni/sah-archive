@@ -1,0 +1,82 @@
+#wrapper {
+    width: 100%;
+    height: auto;
+    background-color: lightblue;
+}
+h1 {
+    margin: 0;
+    margin-left: 40px; 
+    font-family: sans-serif;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+li {
+    list-style-type: none;
+    height: 39px;
+    width: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-image: url("social-media.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 35px;
+}
+li:nth-of-type(1) a {
+    background-position: -2px 0px;
+}
+li:nth-of-type(2) a {
+    background-position: -39px 0px;
+}
+li:nth-of-type(3) a {
+    background-position: -76px 0px;
+}
+li:nth-of-type(4) a {
+    background-position: -113px 0px;
+}
+li:nth-of-type(5) a {
+    background-position: -150px 0px;
+}
+
+li:nth-of-type(1) a:hover {
+    opacity: 0.3;
+    border: 2px solid blue;
+}
+li:nth-of-type(2) a:hover {
+    opacity: 0.3;
+    border: 2px solid blue;
+}
+li:nth-of-type(3) a:hover {
+    opacity: 0.3;
+    border: 2px solid blue;
+}
+li:nth-of-type(4) a:hover {
+    opacity: 0.3;
+    border: 2px solid blue;
+}   
+li:nth-of-type(5) a:hover {
+    opacity: 0.3;
+    border: 2px solid blue;
+}      
+
+
+
+
+
+
+

@@ -1,0 +1,139 @@
+#wrapper{
+    width: 800px;
+    background: #000;
+    color: #ff3333;
+    margin: 0 auto;
+    border-bottom: 30px solid black;
+}
+@font-face {
+    font-family: "Ricks";
+    src:url("../fonts/RicksAmericanNF.ttf")
+}
+@font-face {
+    font-family: "Vollkorn";
+    src:url("../fonts/Vollkorn-Regular.ttf")
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Ricks",sans-serif;
+    word-spacing: 20px;
+    padding-bottom: 25px;
+    margin-top: 40px;
+    padding-top: 10px;
+
+}
+nav {
+    width: 800px;
+    height: 50px;
+    padding-left: 50px;
+}
+header nav > ul li {
+    width: 160px;
+    height: 30px;
+    display: inline-block;
+    font-size: 27px;
+    float: left;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Ricks", sans-serif;
+    text-align: center;
+}
+img{
+    width:200px ;
+    height: 250px;
+    border-radius: 5px;
+}
+
+section{
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    background-image: url("../images/FzVI8Vt.jpg");
+    border: 50px solid darkred;
+    border-radius: 5px;
+}
+
+.left{
+    width: 200px;
+    padding: 22px;
+    margin-top: 5px;
+    float: left;
+}
+.icons{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+}
+footer{
+    width: 600px;
+
+    word-spacing: 100px;
+    margin: 5px 100px 0 20px;
+    text-align: center;
+}
+.right{
+    width: 350px;
+    float: left;
+
+}
+.text-question{
+    width: 100px;
+    display: inline;
+
+}
+h2 ,h3{
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    color: white;
+    padding-top: 50px;
+}
+h3{
+    font-size:  19px;
+    color: white;
+}
+strong{
+    color: white;
+    font-weight: bold;
+    margin-right:30px;
+}
+p{
+    line-height: 47px;
+}
+span{
+
+    color: white;
+    font-family: Vollkorn,sans-serif;
+
+}
+.age{
+    padding-left: 50px;
+}
+.address{
+    padding-left: 10px;
+}
+.phone{
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
+.email{
+    padding-left: 25px;
+}
+nav ul li:hover{
+    width: 150px;
+    height: 40px;
+    background-color: darkred;
+    border: 2px solid  darkred;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+
+}

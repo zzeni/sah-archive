@@ -1,0 +1,116 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-left: -14px;
+}
+
+.btn-container {
+    overflow: visible;
+    width: 110px;
+}
+
+.btn-red {
+    background-color: #965454;
+    border: rgba(224, 192, 168, .5) 10px dashed;
+}
+
+.btn-green {
+    background-color: #488448;
+    border: rgba(192, 224, 168, .5) 10px dashed;
+}
+
+.btn-yellow {
+    background-color: #968454;
+    border: rgba(224, 192, 168, .5) 10px dashed;
+}
+
+.btn-blue {
+    background-color: #484856;
+    border: rgba(168, 198, 224, .5) 10px dashed;
+}
+
+#main-header {
+    text-align: center;
+    width: 800px;
+    height: inherit;
+    color: white;
+    font-size: 1em;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #965454;
+    border: rgba(224, 192, 168, .5) 10px dashed;
+    margin-top: 50px;
+}
+
+#main {
+    text-align: left;
+    font-size: 1.5em;
+    width: 800px;
+    height: 380px;
+    color: white;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #BC8A7E;
+    border: #965454 10px dashed;
+    border-top-color: #BC8A7E;
+    margin-top: auto;
+}
+
+p {
+    margin-left: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.btn:visited {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 480px) {
+    .btn:hover {
+        margin-top: -8px;
+        position: absolute;
+    }
+    .btn:focus {
+        border: #edf2f9 10px dotted;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .btn {
+        margin-bottom: 10px;
+        border-radius: 0%;
+        height: 100%;
+        position: static;
+        width: 100%;
+        box-sizing: border-box;
+        border: rgba(224, 192, 168, .5) 10px solid;
+        text-align: center;
+        margin-left: auto;
+    }
+    nav {
+        max-width: 100%;
+        box-sizing: border-box;
+        position: static;
+        display: block;
+        margin-top: 10px;
+    }
+    .btn-container {
+        width: auto;
+        margin-left: 3px;
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrapper">
+    <form action method="get">
+        <header><h1>Свържете с нас!</h1></header>
+
+        <div class="form-group">
+            <label for="exampleInputName2">Вашите имена</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Име Фамалия">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail2">Вашият имейл</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="email@example.com">
+        </div>
+        <div>
+            <label for="chooselanguage">Избор на език</label>
+            <select class="form-control" id="chooselanguage">
+                <option selected>Български</option>
+                <option>Английски</option>
+                <option>Немски</option>
+                <option>Фрески</option>
+                <option>Друг</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPhone">Телефон</label>
+            <input type="tel" class="form-control" id="exampleInputPhone" placeholder="+359xxxxxxxxx">
+        </div>
+        <div><label for="exampleText" class="title-textarea">Съобщение</label>
+            <textarea class="form-control" id="exampleText" rows="7" cols="30"
+                      placeholder="Опишете Вашито запитване тук"></textarea>
+        </div>
+        <button type="reset" class="btn-default">Изтрий</button>
+        <button type="submit" class="btn-default2">Изпрати</button>
+
+
+    </form>
+</div>
+</body>
+</html>

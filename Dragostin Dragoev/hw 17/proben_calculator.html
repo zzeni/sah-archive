@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercise</title>
+    <style>
+        input, button {width: 30px;height: 30px;}
+
+        #result {width: 162px;margin-bottom: 10px;}
+
+    </style>
+</head>
+<body>
+<form name="frm">
+    <input id="result"><br>
+    <input type="button" name="1" value="1" onclick="runOne()">
+    <input type="button" name="2" value="2" onclick="runTwo()">
+    <input type="button" name="3" value="3" onclick="runThree()">
+    <input type="button" name="plus" value="+" onclick="runPlus()">
+    <input type="button" name="minus" value="-" onclick="runMin()"><br>
+    <input type="button" name="4" value="4" onclick="runFour()">
+    <input type="button" name="5" value="5" onclick="runFive()">
+    <input type="button" name="6" value="6" onclick="runSix()">
+    <input type="button" name="multiplication" value="&times;" onclick="runMul()">
+    <input type="button" name="multiplication" value="&divide;" onclick="runDiv()"><br>
+    <input type="button" name="dot" value="." onclick="runDot()">
+    <input type="button" name="calculate" value="=" onclick="runEval()">
+    <button id="btn">CE</button>
+</form>
+<script>
+
+var buttonClear = document.getElementById('btn');
+buttonClear.addEventListener('click', clearAll)
+
+function clearAll() {
+    document.getElementById('frm') = clear();
+}
+
+
+function runOne() {
+    document.frm.result.value += '1';
+}
+function runTwo() {
+    document.frm.result.value += '2';
+}
+function runThree() {
+    document.frm.result.value += '3';
+}
+function runPlus() {
+    document.frm.result.value += '+';
+}
+function runMin() {
+    document.frm.result.value += '-';
+}
+function runFour() {
+    document.frm.result.value += '4';
+}
+function runFive() {
+    document.frm.result.value += '5';
+}
+function runSix() {
+    document.frm.result.value += '6';
+}
+function runMul() {
+    document.frm.result.value += '*';
+}
+function runDiv() {
+    document.frm.result.value += '/';
+}
+function runDot() {
+    document.frm.result.value += '.';
+}
+
+
+function runEval () {
+    var evaluate = eval(document.frm.result.value);
+    document.frm.result.value = evaluate;
+}
+</script>
+</body>
+</html>

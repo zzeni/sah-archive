@@ -1,0 +1,99 @@
+        body {
+            background-image: url('background.jpg');
+            font-family: 'Lobster', cursive;
+            font-size: 20px;
+        }
+        
+        .navbar-brand {
+            font-size: 20px;
+            color: #ffa366;
+        }
+        
+        #navbar-color {
+            background-color: #4d001f;
+        }
+        
+        h3 {
+            margin-left: 20px;
+            white-space: pre-line;
+            white-space: pre-wrap;
+            color: #4d001f;
+        }
+        
+        #lead {
+            padding-left: 30px;
+            font-size: 50px;
+            color: #4d001f;
+        }
+        
+        #select-category {
+            color: #4d001f;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        label,
+        legend,
+        {
+            color: #4d001f;
+        }
+        
+        .about {
+            color: #4d001f;
+            margin-left: 35px;
+            margin-right: 35px;
+            margin-top: 20px;
+            white-space: pre-line;
+            white-space: pre-wrap;
+        }
+        
+        .contact {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            color: #4d001f;
+            font-size: 25px;
+        }
+        
+        input,
+        label {
+            color: #4d001f;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .display {
+            width: 100%;
+            height: auto;
+            padding: 1%;
+        }
+        
+        .col-md-6 {
+            float: left;
+            height: 40%;
+            width: 40%;
+        }
+        
+        #slide-img {
+            float: inherit 0;
+        }
+        
+        .leftindex {
+            float: left;
+        }
+        
+        .rightindex {
+            margin: -31% 0% 0% 0%;
+            padding-right: 5%;
+        }
+        
+        .icon {
+            background-size: auto 50px;
+            background-position: right 50px;
+            margin: 10px 10px 10px 10px;
+            padding-right: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+      

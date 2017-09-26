@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homework16</title>
+    <meta name="description" content="Homework16"> </head>
+
+<body>
+    <h1>Exercise 1</h1>
+    <script>
+        var cars = [
+            {
+                brand: "citroen"
+                , color: "grey"
+                , engine: "2.5"
+            }
+            , {
+                brand: "dacia"
+                , color: "blue"
+                , engine: "2.2"
+            }
+            , {
+                brand: "citroen"
+                , color: "red"
+                , engine: "2.1"
+            }
+            , {
+                brand: "opel"
+                , color: "red"
+                , engine: "1.9"
+            }
+            , {
+                brand: "subaru"
+                , color: "black"
+                , engine: "2.4"
+            }
+            , {
+                brand: "ford"
+                , color: "blue"
+                , engine: "2.1"
+            }
+            ];
+        var filtered = cars.filter(function (item) {
+            return (item.color === "red");
+        });
+        console.log("red cars: ", filtered);
+        var filtered1 = cars.filter(function (item) {
+            return (item.color === "blue");
+        });
+        console.log("blue cars: ", filtered1);
+        var filtered2 = cars.filter(function (item) {
+            return (item.engine > 2.2);
+        });
+        console.log("cars with engines bigger than 2.2: ", filtered2);
+    </script>
+</body>
+
+</html>

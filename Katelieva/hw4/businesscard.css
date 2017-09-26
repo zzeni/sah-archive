@@ -1,0 +1,73 @@
+nav a {
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    padding: 10px 15px;
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+}
+
+.presentation {
+    background: #191970;
+}
+
+.portfolio {
+    background: #800080;
+}
+
+.contakts {
+    background: #C71585;
+}
+
+h2 {
+    color: bisque;
+    padding-left: 20px;
+}
+
+.aboutme {
+    background: #191970;
+}
+
+.portfolioO {
+    background: #800080;
+}
+
+.contactsS {
+    background: #C71585;
+}
+
+.img {
+    margin: inherit;
+    border-radius: 50%;
+}
+
+th {
+    padding: 20px;
+}
+
+th {
+    text-align: right;
+    background-color: #FFB6C1;
+    padding-left: 20px;
+}
+
+td {
+    background-color: #FFE4E1;
+    padding-right: 20px;
+}
+
+h1 {
+    background-color: #FFE4E1
+}
+div{
+    text-align: right;
+}
+h1, h2, h3  {
+  padding: 0.6em;
+}
+
+p {
+  padding: 4px 0;
+}

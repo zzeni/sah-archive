@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>js-jq</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <button id="native">native JS fire</button>
+    <button id="jquery">jquery fire</button>
+
+    <p>You fired native JS <span id="native-counter">0</span> times</p>
+    <p>You fired jquery <span id="jquery-counter">0</span> times</p>
+
+    <script>
+        var js_counter = 0;
+        var jq_counter = 0;
+        var native = document.getElementById("native");
+
+        native.addEventListener("click", function (event) {
+            document.getElementById("native-counter").innerHTML = ++js_counter;
+        });
+        native.addEventListener("click", function (event) {
+            document.getElementById("native_counter").innerHTML = ++jq_counter;
+
+        });
+    </script>
+</body>
+
+</html>

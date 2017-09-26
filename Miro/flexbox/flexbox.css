@@ -1,0 +1,35 @@
+body{
+    display: flex;
+ width: 700px;
+    height: 500px;
+    border: solid 2px black;
+}
+
+.flexbox1{
+    border: solid 1 px;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    
+}
+.yellow{
+    background-color: yellow;
+    flex-basis: 200px;
+    width: 50px;
+    height: 50px;
+}
+.red{
+    flex-basis: 100px;
+    background-color: red;
+}
+.green{
+    flex-basis: 50px;
+    background-color: red;
+}
+.flexbox:first-of-type div{
+    flex-grow: 0px;
+}
+.flexbox:last-of-type div{
+    flex-grow: 1px;
+}

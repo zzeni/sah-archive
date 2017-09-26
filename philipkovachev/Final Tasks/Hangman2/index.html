@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Hangman game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <audio autoplay loop id="playme">
+        <source src="music/Who%20Wants%20To%20Be%20A%20Millionaire%20Music%20-%20%C2%A364000%20-%20%C2%A3500000%20Questions.mp3" type="audio/mp3"> "Sorry your browser does not support mp3 format"
+
+
+    </audio>
+
+    <div class="wrapper">
+        <h1>Hangman for front end developers!</h1>
+        <p>Use the alphabet below to guess the word. </p>
+    </div>
+    <div class="wrapper">
+        <div id="buttons">
+        </div>
+        <p id="catagoryName"></p>
+        <div id="hold">
+        </div>
+        <p id="mylives"></p>
+        <div class="container">
+            <input type="button" value="Play again" onClick="window.location.reload()">
+
+
+
+        </div>
+    </div>
+    <script src="hangman.js"></script>
+
+</body>
+
+</html>

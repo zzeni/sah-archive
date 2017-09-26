@@ -1,0 +1,63 @@
+    nav {
+        display: inline-flex;
+    }
+    
+    div {
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+        opacity: 0.9;
+    }
+    
+    .orange {
+        border: dashed 5px;
+        border-radius: 100px;
+        justify-content: center;
+        align-items: center;
+        background-color: orange;
+        font-size: 25px;
+        height: 120px;
+        width: 120px;
+        display:block;
+    }
+    
+    .green {
+        border: dashed 5px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
+        font-size: 25px;
+        height: 120px;
+        width: 120px;
+    }
+    
+    .blue {
+        border: dashed 5px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: skyblue;
+        font-size: 25px;
+        height: 120px;
+        width: 120px;
+    }
+    
+    .pink {
+        border: dashed 5px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        font-size: 25px;
+        height: 120px;
+        width: 120px;
+    }
+    
+    a:hover {
+        width: 130px;
+        height: 130px;
+    }

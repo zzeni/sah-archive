@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Function colors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--<script type="application/javascript" src="script.js"</script> -->
+
+<script>
+    function convert (myNumber1, myNumber2, myNumber3) {
+    let myHexNumber1 = myNumber1.toString(16);
+    console.log(myHexNumber1)
+    let myHexNumber2 = myNumber2.toString(16);
+    console.log(myHexNumber2)
+    let myHexNumber3 = myNumber3.toString(16);
+    console.log(myHexNumber3)
+    let result = '#' + myHexNumber1 + myHexNumber2 + myHexNumber3;
+    return result;
+}
+convert(255, 192, 253);
+
+/*let myNumber = 255;
+let myHexNumber = myNumber.toString(16);
+console.log(myHexNumber);
+let mySecondNumber = 192;
+let mySecondHexNumber = mySecondNumber.toString(16);
+console.log(mySecondHexNumber);
+let myThirdNumber = 253;
+let myThirdHexNumber = myThirdNumber.toString(16);
+console.log(myThirdHexNumber);
+let hexValue = myHexNumber + mySecondHexNumber + myThirdHexNumber;
+console.log(hexValue);*/
+</script>
+</body>
+</html>

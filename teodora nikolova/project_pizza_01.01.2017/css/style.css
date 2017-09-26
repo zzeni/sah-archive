@@ -1,0 +1,336 @@
+#wrapper{
+    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+#carousel-example-generic {
+    text-align: center;
+}
+
+.carousel-caption > h3 {
+    /*margin-top: 50px;*/
+    font-size: 2rem;
+
+}
+
+.carousel-caption > p {
+    font-size: 1.8rem;
+}
+.carousel-caption{
+    text-shadow: 3px 2px #000000;
+
+}
+
+body {
+    background-image: url("../images/background.jpg");
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 800px;
+    height: 200px;
+    margin: 0 auto
+
+}
+
+.first-container {
+    display: flex;
+    width: 800px;
+}
+
+.shopping-Cart {
+    float: right;
+}
+
+.bg {
+    display: none;
+
+}
+
+.en {
+    float: right;
+}
+
+.register {
+    display: none;
+}
+
+.logo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+
+}
+
+.account {
+    width: 100px;
+    height: 50px;
+}
+
+.column {
+    justify-content: flex-end;
+}
+
+.user-button {
+    width: 100px;
+    height: 50px;
+    font-family: "Ricks", sans-serif;
+    line-height: 40px;
+
+}
+
+.glyphicon {
+    font-size: 50px;
+    color: red;
+}
+
+li {
+    text-decoration: none;
+    display: inline;
+    width: 150px;
+}
+
+.fa-shopping-bag {
+
+    font-size: 2rem;
+    color: #c6392f;
+
+}
+
+.phone {
+    text-align: center;
+    height: 92px;
+    line-height: 92px;
+}
+
+.fa-phone {
+    color: red;
+}
+
+.conect {
+    padding-top: 10px;
+}
+
+.user-in {
+    padding-top: 10px;
+}
+
+.sign-in {
+    width: 100px;
+    padding-left: 10px;
+    /*font-size: 22px;*/
+    font-weight: bold;
+    /*display: inline-flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    padding-top: 2px;
+    vertical-align: middle;
+}
+
+.fa-user-o {
+    padding-right: 10px;
+}
+
+.main {
+    /*width: 33.33%;*/
+    width: 400px;
+    height: 600px;
+    border: 5px solid red;
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    /*align-items: flex-start;*/
+    /*display: inline-block;*/
+
+    margin: 10px;
+
+    padding-left: 10px;
+}
+
+.container {
+    margin: 0;
+    /*display: inline-block;*/
+    float: left;
+
+}
+
+.container-middle {
+    width: 600px;
+    height: 600px;
+    border: 5px solid red;
+    display: inline-block;
+}
+
+.middle {
+    width: 1200px;
+    max-height: 100%;
+    height: 600px;
+    margin: 10px;
+}
+
+.navbar {
+    clear: both;
+    text-align: center;
+    width: 750px;
+    height: 50px;
+
+}
+
+.nav {
+    text-decoration: none;
+    border: 1px solid black;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: #1f2021;
+    font-size: 25px;
+}
+
+.navbar {
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+li .nav {
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    padding: 20px;
+
+}
+
+.nav-links {
+    color: inherit;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.nav-links:hover, .carousel-control:hover {
+    color: black;
+    background-color: darkred;
+    text-decoration: none;
+}
+
+.fa-phone {
+    font-size: 2rem;
+}
+
+.order-phone {
+    font-size: 2rem;
+    color: white;
+}
+
+.order-phone:hover, .order-phone:active {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    color: white;
+    line-height: 10px;
+    margin-top: 20px;
+
+}
+
+.carousel-item {
+    width: 600px;
+    height: 375px;
+    margin: 0 auto;
+}
+
+.img-responsive {
+    width: 225px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 1px solid white;
+}
+
+.row {
+    text-align: center;
+}
+
+.promotion {
+
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    bottom: 0;
+    color: rgb(95, 149, 0);
+
+}
+
+.footer {
+    margin-top: 150px;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.newLine {
+    display: block;
+    color: black;
+}
+
+.main-page {
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    margin: 10px;
+    border: 1px solid white;
+    margin-top: 50px;
+}
+
+.footer-alight{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+.container{
+    /*width: 100%;*/
+    /*max-width: 100%;*/
+    /*padding: 0;*/
+    /*!*height: auto;*!*/
+    /*box-sizing: border-box;*/
+    /*!*height:100vh;*!*/
+}
+button{
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: lightskyblue;
+}
+
+.nav-links:visited{
+
+    color: white;
+    text-decoration: none;
+
+}
+.nav-links:hover{
+    color: black;
+}

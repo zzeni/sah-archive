@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <form action="" method="post" class="col-md-4 col-sm-4 col-md-offset-4 col-sm-offset-4">
+            <h1 class="form-control custom alert-danger">REGISTER FORM:</h1>
+            <div class="input-group">
+                <input type="text" placeholder="Your First Name" autofocus="" class="form-control">
+                <span class="input-group-addon"> <span class="glyphicon glyphicon-pencil"></span></span>
+            </div>
+            <div class="input-group">
+                <input type="text" placeholder="Your Last Name" class="form-control"><span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>
+            </div>
+            <div class="input-group">
+            <input type="email" placeholder="Your email" class="form-control"><span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+            </div>
+            <div class="input-group">
+            <input type="tel" placeholder="Your mobile phone" class="form-control"><span class="input-group-addon"><span class="glyphicon glyphicon-phone-alt"></span></span>
+            </div>
+            <textarea placeholder=" Write Your message" class="form-control"></textarea>
+            <input type="submit" value="Submit" class="btn btn-danger btn-sm col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+        </form>
+    </div>
+    <style>
+        #wrapper {
+            background-color: lightblue;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+        }
+        form {
+            padding: 20px !important;
+            border: 3px solid lightyellow;
+            border-radius: 10px;
+            background-color: rgba(128, 128, 0, 0.3);
+        }
+        input {
+            outline: none;
+        }
+        input:last-child {
+            margin-top: 10px;
+        }
+        .custom {
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

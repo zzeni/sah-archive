@@ -1,0 +1,55 @@
+body {
+    background-image: url(skyline-silhouette-wallpaper-4.jpg);
+    max-width: 100%;
+    background-color: #cccccc;
+    background-blend-mode: hard-light;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+h1 {
+    color: floralwhite;
+    margin: 10px;
+    padding: 10px;
+}
+
+div {
+    display: block;
+    margin: 30px;
+}
+
+label {
+    margin-right: 7px;
+    color: #FFFAF0;
+    font-size: 1.1em;
+}
+
+#message {
+    display: inline-flex;
+    margin-top: 15px;
+}
+
+#button {
+    margin-top: 10px;
+    margin-left: 180px;
+}
+
+button {
+    margin: 5px;
+    font-size: 16px;
+    padding: 5px 20px;
+    color: #00001a;
+    opacity: 0.4;
+    border-radius: 4%;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+textarea,
+#language,
+input {
+    opacity: 0.5;
+}
