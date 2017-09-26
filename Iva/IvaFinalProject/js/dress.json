@@ -1,0 +1,100 @@
+[
+    {
+        "title": "Black Dress 1",
+        "url": "img/dress/black1.jpg",
+        "price": 500,
+        "description": "Black dress",
+        "rating": 4.5,
+        "category": "black"
+    },
+    {
+        "title": "Black Dress 2",
+        "url": "img/dress/black2.jpg",
+        "price": 600,
+        "description": "Black dress",
+        "rating": 3.9,
+        "category": "black"
+    },
+    {
+        "title": "Black Dress 3",
+        "url": "img/dress/black3.jpg",
+        "price": 800,
+        "description": "Black dress",
+        "rating": 4.1,
+        "category": "black"
+    },
+    {
+        "title": "Prom dress 1",
+        "url": "img/dress/prom1.jpg",
+        "price": 300,
+        "description": "Prom dress",
+        "rating": 4.1,
+        "category": "blue"
+    },
+    {
+        "title": "Prom dress 2",
+        "url": "img/dress/prom2.jpg",
+        "price": 500,
+        "description": "Prom dress",
+        "rating": 4.1,
+        "category": "blue"
+    },
+    {
+        "title": "Prom dress 3",
+        "url": "img/dress/prom3.jpg",
+        "price": 550,
+        "description": "Prom dress",
+        "rating": 4.1,
+        "category": "blue"
+    },
+    {
+        "title": "Red dress 1",
+        "url": "img/dress/red1.jpg",
+        "price": 350,
+        "description": "Red dress",
+        "rating": 4.1,
+        "category": "red"
+    },
+    {
+        "title": "Red dress 2",
+        "url": "img/dress/red2.jpg",
+        "price": 450,
+        "description": "Red dress",
+        "rating": 4.1,
+        "category": "red"
+    },
+    {
+        "title": "Red dress 3",
+        "url": "img/dress/red3.jpg",
+        "price": 450,
+        "description": "Red dress",
+        "rating": 4.1,
+        "category": "red"
+    },
+    {
+        "title": "White dress 1",
+        "url": "img/dress/white1.jpg",
+        "price": 450,
+        "description": "White dress",
+        "rating": 4.1,
+        "category": "white"
+
+    },
+    {
+        "title": "White dress 2",
+        "url": "img/dress/white2.jpg",
+        "price": 450,
+        "description": "White dress",
+        "rating": 4.1,
+        "category": "white"
+    },
+    {
+        "title": "White dress 3",
+        "url": "img/dress/white3.jpg",
+        "price": 450,
+        "description": "White dress",
+        "rating": 4.1,
+        "category": "white"
+
+    }
+]

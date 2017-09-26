@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contacts form</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="contacts,form,name,e-mail,phone,message">
+        <meta name="keywords" content="contacts,form,name,e-mail,,phone,message">
+        <link rel="stylesheet" href="contactsform2.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="contactUs.js"></script>
+    </head>
+
+    <body>
+        <div class="header-footer-container">
+            <header>
+                <nav>
+                    <a href="#">Хотели</a>
+                    <a href="#">Ресторанти</a>
+                    <a href="#">Контакти</a>
+                </nav>
+            </header>
+        </div>
+        <main>
+            <div class="whole-contacts-form">
+                
+                <button type="button" class="btn btn-sample btn-lg" data-toggle="modal" data-target="#myModal">
+                    Свържете се с нас !
+                </button>
+            </div>
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="exampleModalLabel">Контакти</h2>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="whole-contacts-form">
+                                <div id="contactsForm">
+                                    <form>
+                                        <h1>Свържете се с нас!</h1>
+                                        <div>
+                                            <div class="form-group name">
+                                                <label>Име</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-user"></span>
+                                                    </span>
+                                                    <input type="text" class="form-control" placeholder="Име">
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form-group name">
+                                                <label>Фамилия</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                                    </span>
+                                                    <input type="text" class="form-control" placeholder="Фамилия">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>E-mail</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                                                </span>
+                                                <input type="text" class="form-control" placeholder="E-Mail Adress">
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Телефон #</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-earphone"></span>
+                                                </span>
+                                                <input type="text" class="form-control" placeholder="359 889 678">
+
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message">Съобщение</label>
+                                            <textarea class="form-control" rows="10" cols="30" name="message"></textarea>
+                                        </div>
+
+
+
+
+                                        <button id="submit-button" type="submit" class="btn btn-default btn-block">
+                                             Изпрати
+                                            <span class="glyphicon glyphicon-send"></span>
+                                            
+
+                                        </button>
+
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+        <div class="header-footer-container">
+            <footer>Copyright &copy; 2017
+            </footer>
+        </div>
+
+    </body>
+
+</html>

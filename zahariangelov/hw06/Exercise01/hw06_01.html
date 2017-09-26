@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>hw06_01</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <h1>Свържете се с нас!</h1>
+    <form>
+        <div>
+            <label for="name">Вашите имена</label>
+            <input type="text" name="name" placeholder="Име Фамилия" required>
+        </div>
+        <div>
+            <label for="Вашият имейл">Вашият емайл</label>
+            <input type="text" name="email" placeholder="email@domain.com " required>
+        </div>
+        <div>
+            <label for="language">Избор на език</label>
+            <select name="language" required>
+                <option value="">Изберете език</option>
+                <option value="bulgarian">Български</option>
+                <option value="english">Английски</option>
+                <option value="german">Немски</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="tel">Телефон</label>
+            <input type="number" name="tel" placeholder="+359-XX-XX-XX" required>
+        </div>
+        <div id="box">
+            <label for="message"">Съобщение</label>
+            <textarea rows="10" cols="30" name="message" placeholder="Опишете Вашите запивания тук" required></textarea>
+        </div>
+        <div id="buttons">
+            <label for="submit"></label>
+                <input type="submit" name="submit" value="Изпрати">
+                <input type="reset" value="Изтрий">
+        </div>
+    </form>
+</body>
+
+</html>

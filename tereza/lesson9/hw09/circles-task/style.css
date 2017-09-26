@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #F9F0E7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background-color: #837C12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@media (max-width: 459px) {
+  #circle::before {
+    content: "small";
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    top: 35px;
+  }
+  #circle:hover::after {
+    content: ">460px";
+    color: white;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 35px;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 679px) {
+  body {
+    background-color: #EE875C;
+  }
+  #circle:hover {
+    background-color: #6A9BEA;
+  }
+  #circle::before {
+    content: "medium";
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    top: 35px;
+  }
+  #circle:hover::after {
+    content: "460px + 679px";
+    color: white;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 35px;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+  body {
+    background-color: #FFF8DE;
+  }
+  #circle:hover {
+    background-color: #4A8420;
+  }
+  #circle::before {
+    content: "large";
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    top: 35px;
+  }
+  #circle:hover::after {
+    content: "680px + 999px";
+    color: white;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 35px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-color: #F3FFFF;
+  }
+  #circle:hover {
+    background-color: #E94D97;
+  }
+  #circle::before {
+    content: "extra-large";
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.3em;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  #circle:hover::after {
+    content: ">1000px";
+    color: white;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 25px;
+  }
+}

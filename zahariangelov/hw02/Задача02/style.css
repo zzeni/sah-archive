@@ -1,0 +1,60 @@
+section, main, header, footer, article {
+  margin: 25px;
+  padding: 25px;
+}
+
+body {
+    font-family: Verdana;
+}
+
+ul {
+    list-style-image: url(img/yes.png);
+}
+
+ul#nav li {
+    list-style-image: url(img/star_off.png);
+}
+
+img#header {
+    display: inline-block;
+}
+
+header {
+    text-align: center;
+    background-color: aliceblue;
+}
+
+nav {
+    background-color: aqua;
+}
+
+main {
+    background-color: blanchedalmond;
+    padding: 25px;
+}
+
+footer {
+    background-color: forestgreen;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+article {
+    background-color:aquamarine;
+}
+
+section {
+  background-color:darkcyan
+}

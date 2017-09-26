@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap contact form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#clients">Clients</a>
+                </li>
+                <li>
+                    <a href="#contact">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="col-lg-10 col-lg-offset-1 hide" id="contact">
+
+            <div class="page-header text-center">
+                <h1>Contact Us</h1>
+                <p>
+                    Eu aute lorem nam doctrina est elit ut incididunt.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group col-sm-6">
+                            <input class="form-control input-lg" placeholder="Your name">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <input class="form-control input-lg" placeholder="Your email">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <textarea cols="6" class="form-control input-lg" placeholder="Your message"></textarea>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <button class="btn btn-primary btn-lg pull-right">Submit</button>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <section id="contacts" class="col-md-12">
+                        INFORMATION
+                        <ul class="list-unstyled">
+                            <li>
+                                <span class="glyphicon glyphicon-map-marker"></span>
+                                <span>
+                  Velit pariatur <br>
+                  sed exquisitaque ab <br>
+                  doctrina non nulla.
+                </span>
+                            </li>
+                            <li>
+                                <span class="glyphicon glyphicon-earphone"></span> +359 888 333 444
+                            </li>
+                            <li>
+                                <span class="glyphicon glyphicon-print"></span> +359 888 333 444
+                            </li>
+                            <li>
+                                <span class="glyphicon glyphicon-envelope"></span> info@example.com
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-10 col-lg-offset-1 hide" id="clients">
+            <img src="under-construction.jpg" alt="under-construction">
+        </div>
+        <div class="col-lg-10 col-lg-offset-1 hide" id="about">
+            <img src="under-construction.jpg" alt="under-construction">
+        </div>
+    </main>
+
+    <footer>
+        <span class="small">Copyright &copy; 2017</span>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--<script>
+        $(document).ready(function() {
+            $('.nav-tabs > li > a').click(function(event) {
+                event.preventDefault(); //stop browser to take action for clicked anchor
+
+                //get displaying tab content jQuery selector
+                var active_tab_selector = $('.nav-tabs > li.active > a').attr('href');
+
+                //find actived navigation and remove 'active' css
+                var actived_nav = $('.nav-tabs > li.active');
+                actived_nav.removeClass('active');
+
+                //add 'active' css into clicked navigation
+                $(this).parents('li').addClass('active');
+
+                //hide displaying tab content
+                $(active_tab_selector).removeClass('active');
+                $(active_tab_selector).addClass('hide');
+
+                //show target tab content
+                var target_tab_selector = $(this).attr('href');
+                $(target_tab_selector).removeClass('hide');
+                $(target_tab_selector).addClass('active');
+            });
+        });
+
+    </script>-->
+</body>
+
+</html>

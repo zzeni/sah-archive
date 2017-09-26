@@ -1,0 +1,96 @@
+#circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+@media screen and (max-width:459px) {
+    body {
+        background: pink;
+    }
+    #circle {
+        background: green;
+    }
+    #circle:before {
+        content: "Small";
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    #circle:after {
+        content: "< 460px";
+        font-size: .7rem;
+    }
+}
+
+@media screen and (min-width: 460px) and (max-width:679px) {
+    body {
+        background: orange;
+    }
+    #circle {
+        background: blue;
+    }
+    #circle:before {
+        content: "Medium";
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    #circle:after {
+        content: "460px + 679px";
+        font-size: .7rem;
+    }
+}
+
+@media screen and (min-width: 680px) and (max-width:999px) {
+    body {
+        background: pink;
+    }
+    #circle {
+        background: brown;
+    }
+    #circle:before {
+        content: "Large";
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    #circle:after {
+        content: "680px + 999px";
+        font-size: .7rem;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    body {
+        background: lightblue;
+    }
+    #circle {
+        background: purple;
+    }
+    #circle:before {
+        content: "Extra-large";
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    #circle:after {
+        content: ">1000px";
+        font-size: .7rem;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Coffee Machine</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header class="container jumbotron">
+      <div class="page-heading text-center">
+        <h1>Welcome to the machine</h1>
+      </div>
+    </header>
+    <div class="container">
+      <div class="col-sm-6">
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <h3>Machine status</h3>
+          </div>
+          <div class="panel-body" id="statusContainer">
+          </div>
+        </div>
+        <h3 class="text-center">Load the machine</h3>
+        <div class=" text-center">
+          <div class="btn-group">
+            <button id="smallLoad" class="btn btn-warning">small</button>
+            <button id="mediumLoad" class="btn btn-danger">medium</button>
+            <button id="bigLoad" class="btn btn-primary">big</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3>Make an order</h3>
+          </div>
+          <div class="panel-body">
+            <button class="btn btn-info btn-block btn-lg order-btn" data-beverage="coffee">Coffee</button>
+            <button class="btn btn-info btn-block btn-lg order-btn" data-beverage="coffee_with_milk">Coffee with milk</button>
+            <button class="btn btn-info btn-block btn-lg order-btn" data-beverage="americano">Americano</button>
+            <button class="btn btn-info btn-block btn-lg order-btn" data-beverage="cappuccino">Cappuccino</button>
+            <button class="btn btn-info btn-block btn-lg order-btn" data-beverage="latte">Latte</button>
+            <button class="btn btn-info btn-block btn-lg order-btn" data-beverage="double">Double coffee</button>
+          </div>
+        </div>
+        <div id="error" class="panel panel-danger hidden">
+          <div class="panel-heading">
+            <h3>Machine error</h3>
+          </div>
+          <div class="panel-body">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="machine.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>

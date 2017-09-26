@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0 auto;
+    width: 800px;
+    font-family: cursive;
+}
+
+.main1 {
+    border: 7px dashed #B48C81;
+    background-color: #8D5957;
+    margin: 50px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #8D5957;
+    margin: 0;
+    /*по дефолт има margin*/
+    padding: 20px;
+    border-bottom: 7px dashed #B48C81;
+    color: aliceblue;
+}
+
+p {
+    height: 500px;
+    background-color: #B48C81;
+    margin: 0;
+}
+
+#resume {
+    background-color: #597F48;
+}
+
+#about {
+    background-color: #8D5957;
+}
+
+#folio {
+    background-color: #948257;
+}
+
+#contact {
+    background-color: #474956;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    border: 7px dashed #B48C81;
+    border-radius: 100%;
+    padding-top: 40px;
+    margin: -10px;
+    height: 120px;
+    width: 120px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px;
+}
+
+@media (max-width: 480px) {
+    body,
+    .main1{
+        margin: 0;
+        width: 100%;
+    }
+    .button {
+        margin: 10px 0;
+        display: block;
+        width: 100%;
+        border-radius: 0%;
+        height: 100px;
+
+    }
+    nav{
+        width: 100%;
+        margin: 0;
+    }
+
+}

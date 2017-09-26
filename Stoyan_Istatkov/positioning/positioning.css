@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+
+div {
+
+    vertical-align: top;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+.container {
+    font-size: 18px;
+    overflow: auto;
+    border: 2px solid darkgray;
+    position: relative;
+    width: 410px;
+    height: 500px;
+}
+#static, #relative, #absolute, #fixed {
+    line-height: 200px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+#static {
+    float: left;
+    margin-right: 10px;
+    background-color: aqua;
+}
+#relative {
+    float: left;
+    bottom: 80px;
+    left:80px;
+    background-color: #ffc088;
+    position: relative;
+}
+#absolute {
+    bottom: 140px;
+    left:90px;
+    background-color: coral;
+    position: absolute;
+}
+#fixed {
+    background-color: crimson;
+    position: fixed;
+}

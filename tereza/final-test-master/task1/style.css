@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6em;
+}
+
+.subtask {
+  margin: 20px 0;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+ul>li {
+  list-style-type: none;
+  padding: 20px;
+  float: left;
+  background-color: lightpink;
+  width: calc(100%/6);
+}
+
+ul>li img {
+  margin: 0 auto;
+  display: block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+/* Вашият CSS от тук надолу */
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+li img {
+  display: inline-block;
+  width: 100%;
+}
+
+li:nth-of-type(even) {
+  background-color: lightblue;
+}
+
+li img:hover {
+  background-color: lightblue;
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -ms-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+#subtask4 {
+  position: relative;
+}
+#subtask4 ul::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: black;
+  opacity: 0.3;
+}
+#subtask5 {
+  position: relative;
+}
+#subtask5 ul::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: black;
+  opacity: 0.3;
+}
+#subtask5 ul li::after {
+  content:  "IMAGINE THAT!";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 399px) {
+  ul > li{
+    width: 100%;
+  }
+}
+
+@media (max-width: 599px) and (min-width: 400px) {
+  ul>li {
+    width: calc(100%/2);
+  }
+}
+
+@media (max-width: 999px) and (min-width: 600px) {
+  ul>li {
+    width: calc(100%/3);
+  }
+}
+
+

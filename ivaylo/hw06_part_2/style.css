@@ -1,0 +1,19 @@
+label {
+    margin: 10px;
+}
+
+#tel {
+    margin-left: 38px;
+}
+
+#area {
+    margin-left: 20px;
+}
+
+#message {
+    float: left;
+}
+
+#buttons {
+    margin-left: 120px;
+}

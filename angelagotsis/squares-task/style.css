@@ -1,0 +1,65 @@
+    body {
+        font-family: sans-serif;
+        line-height: 1.6em;
+    }
+    
+    .container {
+        border: 2px solid black;
+        width: 100%;
+        min-height: 600px;
+    }
+    
+    .square {
+        color: white;
+    }
+    
+    .red {
+        background-color: red;
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .blue {
+        background-color: blue;
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .green {
+        background-color: green;
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .black {
+        background-color: black;
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+    
+    @media screen and (max-width:399px) {
+        .container {
+            position: relative;
+        }
+        .square {
+            position: absolute;
+        }
+    }
+    
+    @media {}
+    /* 500 - 599 */
+    
+    @media {}
+    /* 600 - 699 */
+    
+    @media {}
+    /* 700 - 799 */
+    
+    @media {}
+    /* > 800 */
+    
+    @media {}

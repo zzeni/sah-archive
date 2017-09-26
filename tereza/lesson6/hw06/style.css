@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  margin: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+input,
+select,
+textarea {
+  margin-left: 10px;
+}
+
+#reset {
+  margin-left: 180px;
+}

@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  position: relative;
+}
+
+body,
+ul,
+video,
+audio {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+audio {
+  position: absolute;
+  top: 30px;
+}
+
+nav {
+  position: absolute;
+  top: 90px;
+  padding: 20px;
+  border: 5px solid #4690BF;
+  border-right: none;
+  border-left: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+li:hover {
+  background-color: #4690BF;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  margin: 10px;
+}
+
+main {
+  background-image: url(rain.mp4);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  width: 100%;
+  background-color: #4690BF;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  padding: 10px;
+}

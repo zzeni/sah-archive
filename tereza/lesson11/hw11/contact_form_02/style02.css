@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+}
+
+body,
+.panel {
+  background-color: whitesmoke;
+}
+
+.panel {
+  margin: auto;
+  width: 500px;
+  padding: 20px;
+  overflow: auto;
+}
+
+label {
+  width: 100px;
+  float: left;
+}
+
+button {
+  background-color: orange;
+  color: white;
+  float: right;
+}

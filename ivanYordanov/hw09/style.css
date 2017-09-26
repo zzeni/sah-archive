@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #FAF0E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #808000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#circle-text {
+    font-family: papyrus;
+    color: white;
+}
+
+#circle-text::before {
+    content: "small";
+    text-transform: uppercase;
+    display: block;
+    font-size: 2em;
+}
+
+#circle-text::after {
+    content: "< 460px";
+    display: block;
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: #E7F5F5;
+    }
+
+    #circle {
+        background-color: #F94E89;
+    }
+
+    #circle-text::before {
+        content: "extra large";
+    }
+
+    #circle-text::after {
+        content: "> 1000px";
+    }
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+    body {
+        background-color: #FFF8DC;
+    }
+
+    #circle {
+        background-color: #207F20;
+    }
+
+    #circle-text::before {
+        content: "large";
+    }
+
+    #circle-text::after {
+        content: "680px \00f7  999px";
+    }
+}
+
+@media (min-width: 460px) and (max-width: 679px) {
+    body {
+        background-color: #FF7F50;
+    }
+
+    #circle {
+        background-color: #6495ED;
+    }
+
+    #circle-text::before {
+        content: "Medium";
+    }
+
+    #circle-text::after {
+        content: "460px \00f7  679px";
+    }
+}
+

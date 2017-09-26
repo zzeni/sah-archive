@@ -1,0 +1,42 @@
+footer {
+    background-color: #2D3E50;
+    color: #ECF0F1;
+    padding: 20px;
+}
+
+main {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    background-color: forestgreen;
+    padding: 1em;
+}
+
+body {
+    background-color: #ECF0F1;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li a {
+    color: white;
+}
+
+ul.nav-tabs {
+    border-bottom: none;
+}
+
+#clients,
+#about {
+    text-align: center;
+}

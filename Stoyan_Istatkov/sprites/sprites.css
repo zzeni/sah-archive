@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: left;
+    width: 100%;
+    background-color: darkcyan;
+}
+
+
+nav a {
+    border: 1px solid aquamarine;
+    margin: 10px;
+    display: inline-block;
+    height:100px ;
+    width:100px ;
+}
+
+#facebook {
+    margin-left: 20px;
+    background: url("img/social-media.jpg");
+    background-position: -17px -10px;
+}
+#google {
+    background: url("img/social-media.jpg");
+    background-position: 489px -10px;
+}
+#instagram {
+    background: url("img/social-media.jpg");
+    background-position: 365px -10px;
+}
+#pinterest {
+    background: url("img/social-media.jpg");
+    background-position: 242px -10px;
+}
+#twitter {
+    background: url("img/social-media.jpg");
+    background-position: 115px -10px;
+}

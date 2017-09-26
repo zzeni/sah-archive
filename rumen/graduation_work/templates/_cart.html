@@ -1,0 +1,20 @@
+<form id="shopping-cart" action="cart.html" method="post">
+    <table class="shopping-cart">
+        <thead>
+            <tr>
+                <th scope="col" data-info="picture">Picture</th>
+                <th scope="col" data-info="ithem">Item</th>
+                <th scope="col" data-info="quantity">Qty</th>
+                <th scope="col" data-info="price">Price</th>
+                <th scope="col" data-info="clear">
+                    <button class="clear bnt btn-danger">Clear cart</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="body"></tbody>
+    </table>
+    <p id="sub-total">
+        <strong>Sub Total</strong>: <span id="stotal"></span>
+    </p>
+    <a href="#home-container" data-toggle="tab" data-info="home" class="btn btn-primary">Continue Shopping</a>
+</form>

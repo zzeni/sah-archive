@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "type" : "jackets",
+    "brand" : "ORTOVOX",
+    "price" : 121.00,
+    "color" : "blue",
+    "img" : "./images/products/male/male1.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 2,
+    "type" : "jackets",
+    "brand" : "BURTON",
+    "price" : 189.00,
+    "color" : "blue",
+    "img" : "./images/products/male/male2.jpg",
+    "inStock": true,
+    "size" : ["L", "XL", "XXL"]
+  },
+  {
+    "id": 3,
+    "type" : "jackets",
+    "brand" : "MAMMUT",
+    "price" : 325.99,
+    "color" : "red",
+    "img" : "./images/products/male/male3.jpg",
+    "inStock": true,
+    "size" : ["L"]
+  },
+  {
+    "id": 4,
+    "type" : "jackets",
+    "brand" : "MAMMUT",
+    "price" : 125.99,
+    "color" : "orange",
+    "img" : "./images/products/male/male4.jpg",
+    "inStock": false,
+    "size" : ["L"]
+  },
+  {
+    "id": 5,
+    "type" : "jackets",
+    "brand" : "ORTOVOX",
+    "price" : 100.00,
+    "color" : "orange",
+    "img" : "./images/products/male/male5.jpg",
+    "inStock": false,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 6,
+    "type" : "jackets",
+    "brand" : "BURTON",
+    "price" : 100.57,
+    "color" : "white",
+    "img" : "./images/products/male/male6.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 7,
+    "type" : "jackets",
+    "brand" : "BURTON",
+    "price" : 543.99,
+    "color" : "white",
+    "img" : "./images/products/male/male7.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L","XXL"]
+  },
+  {
+  "id": 8,
+  "type" : "jackets",
+  "brand" : "ORTOVOX",
+  "price" : 201.99,
+  "color" : "red",
+  "img" : "./images/products/male/male8.jpg",
+  "inStock": true,
+  "size" : ["S"]
+},
+  {
+    "id": 9,
+    "type" : "jackets",
+    "brand" : "MAMMUT",
+    "price" : 78.98,
+    "color" : "red",
+    "img" : "./images/products/male/male9.jpg",
+    "inStock": true,
+    "size" : ["S","L","XXL"]
+  },
+  {
+    "id": 10,
+    "type" : "jackets",
+    "brand" : "ORTOVOX",
+    "price" : 300.96,
+    "color" : "orange",
+    "img" : "./images/products/male/male10.jpg",
+    "inStock": false,
+    "size" : ["S","XXL"]
+  },
+  {
+    "id": 11,
+    "type" : "jackets",
+    "brand" : "BURTON",
+    "price" : 97.99,
+    "color" : "blue",
+    "img" : "./images/products/male/male11.jpg",
+    "inStock": false,
+    "size" : ["S"]
+  },
+  {
+    "id": 12,
+    "type" : "jackets",
+    "brand" : "BURTON",
+    "price" : 243.99,
+    "color" : "blue",
+    "img" : "./images/products/male/male12.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L","XXL"]
+  },
+  {
+    "id": 13,
+    "type" : "jackets",
+    "brand" : "MAMMUT",
+    "price" : 542.00,
+    "color" : "white",
+    "img" : "./images/products/male/male13.jpg",
+    "inStock": true,
+    "size" : ["M", "L","XXL"]
+  },
+  {
+    "id": 14,
+    "type" : "pants",
+    "brand" : "MAMMUT",
+    "price" : 79.00,
+    "color" : "orange",
+    "img" : "./images/products/male/male14.jpg",
+    "inStock": false,
+    "size" : ["L","XXL"]
+  },
+  {
+    "id": 15,
+    "type" : "pants",
+    "brand" : "BURTON",
+    "price" : 300.99,
+    "color" : "white",
+    "img" : "./images/products/male/male15.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L","XXL"]
+  },
+  {
+    "id": 16,
+    "type" : "pants",
+    "brand" : "BURTON",
+    "price" : 169.99,
+    "color" : "blue",
+    "img" : "./images/products/male/male16.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L","XXL"]
+  },
+  {
+    "id": 17,
+    "type" : "pants",
+    "brand" : "MAMMUT",
+    "price" : 69.89,
+    "color" : "orange",
+    "img" : "./images/products/male/male17.jpg",
+    "inStock": false,
+    "size" : ["S", "M", "L","XXL"]
+  },
+  {
+    "id": 18,
+    "type" : "pants",
+    "brand" : "MAMMUT",
+    "price" : 423.00,
+    "color" : "red",
+    "img" : "./images/products/male/male18.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L","XXL"]
+  },
+  {
+    "id": 19,
+    "type" : "pants",
+    "brand" : "ORTOVOX",
+    "price" : 223.89,
+    "color" : "red",
+    "img" : "./images/products/male/male19.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+  "id": 20,
+  "type" : "pants",
+  "brand" : "ORTOVOX",
+  "price" : 283.89,
+  "color" : "red",
+  "img" : "./images/products/male/male20.jpg",
+  "inStock": true,
+  "size" : ["S", "M"]
+},
+  {
+    "id": 21,
+    "type" : "pants",
+    "brand" : "ORTOVOX",
+    "price" : 222.00,
+    "color" : "red",
+    "img" : "./images/products/male/male21.jpg",
+    "inStock": false,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 22,
+    "type" : "pants",
+    "brand" : "BURTON",
+    "price" : 328.00,
+    "color" : "blue",
+    "img" : "./images/products/male/male22.jpg",
+    "inStock": false,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 23,
+    "type" : "pants",
+    "brand" : "MAMMUT",
+    "price" : 128.99,
+    "color" : "orange",
+    "img" : "./images/products/male/male23.jpg",
+    "inStock": true,
+    "size" : ["M"]
+  },
+  {
+    "id": 24,
+    "type" : "googles",
+    "brand" : "MAMMUT",
+    "price" : 34.99,
+    "color" : "orange",
+    "img" : "./images/products/male/male24.jpg",
+    "inStock": true,
+    "size" : ["M"]
+  },
+  {
+    "id": 25,
+    "type" : "googles",
+    "brand" : "BURTON",
+    "price" : 30.99,
+    "color" : "white",
+    "img" : "./images/products/male/male25.jpg",
+    "inStock": true,
+    "size" : ["S"]
+  },
+  {
+    "id": 26,
+    "type" : "googles",
+    "brand" : "BURTON",
+    "price" : 13.99,
+    "color" : "blue",
+    "img" : "./images/products/male/male26.jpg",
+    "inStock": true,
+    "size" : ["S"]
+  },
+  {
+    "id": 27,
+    "type" : "googles",
+    "brand" : "ORTOVOX",
+    "price" : 110.00,
+    "color" : "white",
+    "img" : "./images/products/male/male27.jpg",
+    "inStock": false,
+    "size" : ["S"]
+  },
+  {
+    "id": 28,
+    "type" : "googles",
+    "brand" : "ORTOVOX",
+    "price" : 100.89,
+    "color" : "blue",
+    "img" : "./images/products/male/male28.jpg",
+    "inStock": false,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 29,
+    "type" : "googles",
+    "brand" : "ORTOVOX",
+    "price" : 232.99,
+    "color" : "white",
+    "img" : "./images/products/male/male29.jpg",
+    "inStock": false,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 30,
+    "type" : "googles",
+    "brand" : "MAMMUT",
+    "price" : 23.00,
+    "color" : "red",
+    "img" : "./images/products/male/male30.jpg",
+    "inStock": true,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 31,
+    "type" : "googles",
+    "brand" : "BURTON",
+    "price" : 299.00,
+    "color" : "blue",
+    "img" : "./images/products/male/male31.jpg",
+    "inStock": true,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 32,
+    "type" : "googles",
+    "brand" : "BURTON",
+    "price" : 12.00,
+    "color" : "white",
+    "img" : "./images/products/male/male32.jpg",
+    "inStock": true,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 33,
+    "type" : "googles",
+    "brand" : "ORTOVOX",
+    "price" : 12.00,
+    "color" : "white",
+    "img" : "./images/products/male/male33.jpg",
+    "inStock": true,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 33,
+    "type" : "googles",
+    "brand" : "ORTOVOX",
+    "price" : 12.00,
+    "color" : "white",
+    "img" : "./images/products/male/male33.jpg",
+    "inStock": true,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 34,
+    "type" : "gloves",
+    "brand" : "ORTOVOX",
+    "price" : 32.00,
+    "color" : "blue",
+    "img" : "./images/products/male/male34.jpg",
+    "inStock": true,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 35,
+    "type" : "gloves",
+    "brand" : "BURTON",
+    "price" : 12.00,
+    "color" : "orange",
+    "img" : "./images/products/male/male35.jpg",
+    "inStock": true,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 36,
+    "type" : "gloves",
+    "brand" : "BURTON",
+    "price" : 12.00,
+    "color" : "white",
+    "img" : "./images/products/male/male36.jpg",
+    "inStock": false,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 37,
+    "type" : "gloves",
+    "brand" : "MAMMUT",
+    "price" : 99.00,
+    "color" : "red",
+    "img" : "./images/products/male/male37.jpg",
+    "inStock": false,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 38,
+    "type" : "gloves",
+    "brand" : "MAMMUT",
+    "price" : 43.78,
+    "color" : "orange",
+    "img" : "./images/products/male/male38.jpg",
+    "inStock": false,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 39,
+    "type" : "gloves",
+    "brand" : "ORTOVOX",
+    "price" : 74.98,
+    "color" : "blue",
+    "img" : "./images/products/male/male39.jpg",
+    "inStock": false,
+    "size" : ["S", "M"]
+  }
+]

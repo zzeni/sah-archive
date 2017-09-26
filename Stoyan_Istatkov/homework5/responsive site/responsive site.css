@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+}
+#logo {
+    justify-self:flex-start;
+}
+header {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    background-color: #2e8572;
+    flex-grow: 1;
+}
+#title-container {
+    flex-grow: 5;
+    text-align: center;
+}
+#title {
+    margin: 0;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+aside {
+    display: flex;
+    background-color: #9f0d3b;
+    flex-grow: 1;
+    flex-basis: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+nav ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+aside ul li {
+    text-align: center;
+    list-style-type: none;
+
+}
+aside ul li a {
+    text-transform: uppercase;
+    display: block;
+    border: 2px solid aliceblue;
+    padding: 22px;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 5px;
+    background-color: #2e8572;
+}
+section {
+    color: #2e8572;
+    padding: 20px;
+    background-color: aliceblue;
+    flex-grow: 7;
+}
+article {
+    border-bottom: 2px solid darkcyan;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+article p {
+    margin-top: 15px;
+}
+
+#go-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #9f0d3b;
+    text-align: center;
+    line-height: 30px;
+}
+footer {
+    background-color: #2e8572;
+    color: aliceblue;
+    padding: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+@media screen and (max-width:800px) {
+    header {
+        background-color: #9f0d3b;
+    }
+    aside{
+        background-color: #2e8572;
+    }
+    aside ul li a {
+        background-color: #9f0d3b;
+    }
+
+}
+@media screen and (max-width:600px) {
+    main {
+        flex-direction: column;
+        flex-grow: 10;
+    }
+    header {
+        background-color: #9f0d3b;
+    }
+
+    aside {
+        justify-content: center;
+        flex-basis:100px;
+
+ }
+    aside{
+        background-color: #9f0d3b;
+    }
+     aside nav ul {
+         flex-grow: 0;
+         margin-top:10px;
+        flex-direction: row;
+    }
+    aside ul li a {
+        background-color: #2e8572;
+    }
+
+}

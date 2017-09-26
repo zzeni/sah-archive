@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS трикове</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="heading text-center">
+      <h1>CSS трикове</h1>
+    </div>
+
+    <section class="subtask row" id="subtask1">
+      <h3>Задача 1.а (8т.)</h3>
+      <p>
+        Направете така, че да се показват по 6 картинки на ред при ширина на екрана над 1000px, по 3 картинки на ред при ширина на екрана над 600px, по две при ширина над 400px и по една картинка във всички останали случаи.<br>
+        <em>Картинките не трябва да се застъпват! Задачата ви е да направите responcive дизайн.</em><br>
+        Нека тези стилове са валидни за всички картинки на страницата (+ тези от следващияте подточки)
+      </p>
+      <ul>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Beer.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Air%20Balloon.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Ice%20Cream.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Helicopter.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Hamburger.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/UFO.png"></li>
+      </ul>
+      <div class="clearfix"></div>
+    </section>
+
+    <section class="subtask row" id="subtask2">
+      <h3>Задача 1.b (3т.)</h3>
+      <p>
+        Направете така, че фона на всички картинки, които са на четни позиции, да стане светло син (lightblue)
+      </p>
+      <ul>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Beer.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Air%20Balloon.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Ice%20Cream.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Helicopter.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Hamburger.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/UFO.png"></li>
+      </ul>
+      <div class="clearfix"></div>
+    </section>
+
+    <section class="subtask row" id="subtask3">
+      <h3>Задача 1.c (4т.)</h3>
+      <p>
+        Направете така, че при преминаване с мишката над всяка картинка, тя да се завърта около себе си (хоризонтално или вертикално) в рамките на 1 секунда и фонът й да става светло син.<br>
+        Подсказка: използвайте <code>transform: rotate</code> пропъртито
+      </p>
+      <ul>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Beer.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Air%20Balloon.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Ice%20Cream.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Helicopter.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Hamburger.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/UFO.png"></li>
+      </ul>
+      <div class="clearfix"></div>
+    </section>
+
+    <section class="subtask row" id="subtask4">
+      <h3>Задача 1.d (5т.)</h3>
+      <p>
+        Без да променяте HTML-a, направете така, че върху всяка картинка (&lt;li&gt; елемент), да стои черен полу-прозрачен слой така, че картинката да изглежда затъмнена<br>
+        Подсказка: използвайте следния CSS за основа на решението ви:<br>
+        <code>li::after {  content: ""; position: absolute; }</code>
+      </p>
+      <ul>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Beer.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Air%20Balloon.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Ice%20Cream.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Helicopter.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Hamburger.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/UFO.png"></li>
+      </ul>
+      <div class="clearfix"></div>
+    </section>
+
+    <section class="subtask row" id="subtask5">
+      <h3>Задача 1.e (5т.)</h3>
+      <p>
+        Без да променяте HTML-a, направете така, че при преминаване с мишката над всяка картинка (&lt;li&gt; елемент), върху нея да се появява текст "IMAGINE THAT!", който да е вертикално и хоризонтално центриран<br>
+        Подсказка: използвайте решението от задача 4 за основа
+      </p>
+      <ul>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Beer.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Air%20Balloon.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Ice%20Cream.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Helicopter.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/Hamburger.png"></li>
+        <li><img src="http://swift-academy.zenlabs.pro/misc/clip-art/UFO.png"></li>
+      </ul>
+      <div class="clearfix"></div>
+    </section>
+  </body>
+
+</html>

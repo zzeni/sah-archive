@@ -1,0 +1,95 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2.6em;
+    animation: blink-text 1.5s ease infinite;
+}
+
+h1:hover{
+    color: pink;
+    transform: scale(1.3);
+    transition: all 0.5s ;
+    text-shadow: 0 0 2px  black;
+}
+
+div {
+    position:fixed;
+    width: 100px;
+    height: 100px;
+    transition: all 0.8s ;
+
+}
+
+.container:hover div {
+    opacity: 0.25;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#blue {
+    top:10%;
+    left: 5%;
+    background-color: lightblue;
+    animation: blink 3s ease-out infinite;
+}
+
+#green {
+    bottom:11%;
+    left: 14%;
+    background-color: green;
+    animation: blink 2.5s ease-in infinite;
+    animation-delay: 1s;
+}
+
+#yellow {
+    bottom:15%;
+    right: 18%;
+    background-color: yellow;
+    animation: blink 3.5s ease-in-out infinite ;
+}
+#red {
+    top:8%;
+    right: 13%;
+    background-color: red;
+    animation: blink 2s linear infinite;
+    animation-delay: 1.5s;
+}
+
+
+@keyframes blink {
+
+     0% , 100% {
+         transform: scale(1);
+     }
+     50% {
+         opacity: 0.25;
+         border-radius: 100%;
+         transform: scale(2);
+     }
+
+ }
+
+@keyframes blink-text {
+
+    0% , 100% {
+        transform: scale(1);
+        color: black;
+        }
+    50% {
+        color: pink;
+        transform: scale(1.3);
+        text-shadow: 0 0 2px  black;
+    }
+
+}
+

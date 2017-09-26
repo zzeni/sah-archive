@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 200px;
+
+}
+
+#circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+@media (max-width: 459px) {
+    #circle {
+        background-color: forestgreen;
+    }
+    #circle:hover {}
+}
+
+@media (min-width: 460px) and (max-width: 679px) {
+    body {
+        background-color: darkorange;
+    }
+    #circle {
+        background-color: lightblue;
+    }
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+    body {
+        background-color: beige;
+    }
+    #circle {
+        background-color: forestgreen;
+    }
+    #circle:hover{
+        background-color: red;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: bisque;
+    }
+    #circle {
+        background-color: pink;
+    }
+}

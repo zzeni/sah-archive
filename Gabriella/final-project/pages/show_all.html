@@ -1,0 +1,40 @@
+<script src="./js/third-party/range-picker.js"></script>
+<script src="./js/show-all.js"></script>
+<script src="./js/filter.js"></script>
+<link rel="stylesheet" href="./css/products.css">
+<link rel="stylesheet" href="./css/filter.css">
+<div id="filter-container">
+    <h5>Price range</h5>
+    <div class="wrapper" style="width: 180px; margin-top: 25px;">
+        <div id="double_number_range"></div>
+    </div>
+    <h5>Color</h5>
+    <select class="form-control" id="color-filter">
+        <option value="">Select color...</option>
+        <option value="red">Red</option>
+        <option value="white">White</option>
+        <option value="blue">Blue</option>
+        <option value="orange">Orange</option>
+    </select>
+    <h5>Brand</h5>
+    <select class="form-control" id="brand-filter">
+        <option value="">Select brand...</option>
+        <option value="BURTON">Burton</option>
+        <option value="ORTOVOX">Ortovox</option>
+        <option value="MAMMUT">Mammut</option>
+    </select>
+    <h5>Size</h5>
+    <select class="form-control" id="size-filter">
+        <option value="">Select size...</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+    </select>
+    <button class="btn btn-warning btn-block" id="do-filter">FILTER</button>
+    <button class="btn btn-primary btn-block" id="clear-filter">CLEAR FILTER</button>
+</div>
+<div id="productsLib">
+
+</div>

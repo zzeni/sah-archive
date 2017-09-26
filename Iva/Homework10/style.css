@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 600px;
+    margin: 60px auto;
+    padding: 5px;
+    max-width: 100%;
+}
+
+#main {
+    text-align: center;
+    background-color: gray;
+    border-radius: 2%;
+    border: 100%;
+    color: aliceblue;
+    padding: 10px auto;
+}
+.m1 {
+    display: flex;
+    align-items: center;
+    border: 2px solid grey;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#social {
+   /* border: 2px solid black;*/
+}
+
+.sprite {
+    width: 39px;
+    height: 35px;
+    background-image: url("social-media.jpg");
+    background-size: auto 35px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+#google {
+    background-position: -38px;
+}
+
+#twitter {
+    background-position: 39px;
+}
+
+#foto {
+    background-position: -74px;
+}
+
+#pinterest {
+    background-position: 75px;
+}

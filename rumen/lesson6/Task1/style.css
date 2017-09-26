@@ -1,0 +1,17 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin: 10px;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+#infodiv {
+    display: flex;
+}

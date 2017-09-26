@@ -1,0 +1,280 @@
+[
+
+    {
+        "title": "Cat food Royal Canini",
+        "url": "img/products/cats/catfoodroyal.jpg",
+        "link": "./item-templates/royalCanini.html",
+        "price": 8,
+        "description": "Delicious food for your furry babies.",
+        "rating": 5,
+        "category": "cat"
+
+    },
+    {
+        "title": "Cat food Felix",
+        "url": "img/products/cats/catfoodfelix.jpg",
+        "link": "./item-templates/felix.html",
+        "price": 6,
+        "description": "Yummy cat food.",
+        "rating": 4.5,
+        "category": "cat"
+
+    },
+    {
+        "title": "Cat bowl",
+        "url": "img/products/cats/catbowl.jpg",
+        "link": "./item-templates/catbowl.html",
+        "price": 5,
+        "description": "Beautiful ceramic bowl for your cat.",
+        "rating": 5,
+        "category": "cat"
+
+    },
+    {
+        "title": "Cat treats",
+        "url": "img/products/cats/cattreat.jpg",
+        "link": "./item-templates/cattreats.html",
+        "price": 6,
+        "description": "Yummy praise for a good cat.",
+        "rating": 5,
+        "category": "cat"
+
+    },
+    {
+        "title": "Cat bed",
+        "url": "img/products/cats/catbed.jpg",
+        "link": "./item-templates/catbed.html",
+        "price": 20,
+        "description": "A comfortable cat bed.",
+        "rating": 5,
+        "category": "cat"
+
+    },
+
+    {
+        "title": "Cat scratcher",
+        "url": "img/products/cats/catscratcher.jpg",
+        "link": "./item-templates/catscratcher.html",
+        "price": 23,
+        "description": "For your kitty's manicure.",
+        "rating": 4.5,
+        "category": "cat"
+
+    },
+    {
+        "title": "Cat toilet",
+        "url": "img/products/cats/cattoilet.jpg",
+        "link": "./item-templates/cattoilet.html",
+        "price": 18,
+        "description": "For your cat's needs.",
+        "rating": 4,
+        "category": "cat"
+
+    },
+
+    {
+        "title": "Cat carrier",
+        "url": "img/products/cats/cattransport.jpg",
+        "link": "./item-templates/cattransport.html",
+        "price": 50,
+        "description": "Transport your cat everywhere with this awesome carrier.",
+        "rating": 4,
+        "category": "cat"
+
+    },
+
+    {
+        "title": "Cat shampoo",
+        "url": "img/products/cats/catshampoo.jpg",
+        "link": "./item-templates/catshampoo.html",
+        "price": 12,
+        "description": "Unleash the diva in your cat.",
+        "rating": 3.5,
+        "category": "cat"
+
+    },
+
+    {
+        "title": "Dog food Pedigree",
+        "url": "img/products/dogs/dogfoodped.jpg",
+        "link": "./item-templates/pedigree.html",
+        "price": 6,
+        "description": "Yummy food for dogs.",
+        "rating": 5,
+        "category": "dog"
+
+    },
+    {
+        "title": "Dog food Bento",
+        "url": "img/products/dogs/dogfoodbento.jpg",
+        "link": "./item-templates/bento.html",
+        "price": 5,
+        "description": "Delicious!",
+        "rating": 4.5,
+        "category": "dog"
+
+    },
+    {
+        "title": "Dog bowl",
+        "url": "img/products/dogs/bowl.jpg",
+        "link": "./item-templates/dogbowl.html",
+        "price": 5,
+        "description": "Cute bowl for your dog. Available in white, green, red and blue.",
+        "rating": 4.5,
+        "category": "dog"
+
+    },
+    {
+        "title": "Dog treats",
+        "url": "img/products/dogs/dogtreats.jpg",
+        "link": "./item-templates/dogtreats.html",
+        "price": 4,
+        "description": "Delicious treats for good dogs",
+        "rating": 4,
+        "category": "dog"
+
+    },
+
+    {
+        "title": "Dog muzzle",
+        "url": "img/products/dogs/dogmuzzle.jpg",
+        "link": "./item-templates/dogmuzzle.html",
+        "price": 15,
+        "description": "For safety reasons.",
+        "rating": 5,
+        "category": "dog"
+
+    },
+    {
+        "title": "Dog brush",
+        "url": "img/products/dogs/dogbrush.jpg",
+        "link": "./item-templates/dogbrush.html",
+        "price": 8,
+        "description": "For keeping your dog's fur looking sleek.",
+        "rating": 3,
+        "category": "dog"
+
+    },
+    {
+        "title": "Dog bed",
+        "url": "img/products/dogs/dogbed.jpg",
+        "link": "./item-templates/dogbed.html",
+        "price": 40,
+        "description": "A perfect place for your pet to rest after a long day of being adorable.",
+        "rating": 5,
+        "category": "dog"
+
+    },
+    {
+        "title": "Dog toy",
+        "url": "img/products/dogs/dogtoy.jpg",
+        "link": "./item-templates/dogtoy.html",
+        "price": 10,
+        "description": "We promise your dog would love this bone toy.",
+        "rating": 5,
+        "category": "dog"
+
+    },
+    {
+        "title": "Bird food",
+        "url": "img/products/birds/birdfood.jpg",
+        "link": "./item-templates/birdfood.html",
+        "price": 3,
+        "description": "Delicious seeds for your birds.",
+        "rating": 4.5,
+        "category": "bird"
+
+    },
+    {
+        "title": "Bird water dispenser",
+        "url": "img/products/birds/birdwaterdispenser.jpg",
+        "link": "./item-templates/birdwater.html",
+        "price": 12,
+        "description": "A practical water dispenser.",
+        "rating": 4,
+        "category": "bird"
+
+    },
+    {
+        "title": "Bird house",
+        "url": "img/products/birds/birdhouse.jpg",
+        "link": "./item-templates/birdhouse.html",
+        "price": 22,
+        "description": "A pretty little bird house.",
+        "rating": 3.2,
+        "category": "bird"
+
+    },
+    {
+        "title": "Bird cage",
+        "url": "img/products/birds/birdcage.jpg",
+        "link": "./item-templates/birdcage.html",
+        "price": 45,
+        "description": "A cage for exotic birds.",
+        "rating": 4.8,
+        "category": "bird"
+
+    },
+
+    {
+        "title": "Bird ring",
+        "url": "img/products/birds/birdring.jpg",
+        "link": "./item-templates/birdring.html",
+        "price": 15,
+        "description": "Fun activity for birds.",
+        "rating": 4.5,
+        "category": "bird"
+
+    },
+    {
+        "title": "Fish food",
+        "url": "img/products/fish/fishfood.jpg",
+        "link": "./item-templates/fishfood.html",
+        "price": 2,
+        "description": "Yummy fish food.",
+        "rating": 5,
+        "category": "fish"
+
+    },
+    {
+        "title": "Fish Aquarium",
+        "url": "img/products/fish/fishaquarium.jpg",
+        "link": "./item-templates/fishaquarium.html",
+        "price": 30,
+        "description": "A stylish Aquarium which will look good in any home.",
+        "rating": 5,
+        "category": "fish"
+
+    },
+
+    {
+        "title": "Fish Green Floor",
+        "url": "img/products/fish/fishfloor.jpg",
+        "link": "./item-templates/fishfloor.html",
+        "price": 3,
+        "description": "Green floor for your aquarium.",
+        "rating": 3.5,
+        "category": "fish"
+
+    },
+    {
+        "title": "Fish Castle",
+        "url": "img/products/fish/fishcastle.jpg",
+        "link": "./item-templates/fishcastle.html",
+        "price": 20,
+        "description": "May your fish feel like royalty.",
+        "rating": 5,
+        "category": "fish"
+
+    },
+    {
+        "title": "Aquarium Decoration",
+        "url": "img/products/fish/fishmagiclamp.jpg",
+        "link": "./item-templates/fishlamp.html",
+        "price": 13,
+        "description": "Rub the lamp to see magic.",
+        "rating": 4,
+        "category": "fish"
+
+    }
+]

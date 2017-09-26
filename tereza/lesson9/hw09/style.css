@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+nav a {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 100px;
+  border: 10px dashed;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+nav a:hover {
+  z-index: 1;
+}
+
+#about {
+  margin-left: 30px;
+  background-color: indianred;
+  border-color: #E3A7A7;
+}
+
+#resume {
+  background-color: darkgreen;
+  border-color: lightgreen;
+  left: -20px;
+}
+
+#portfolio {
+  background-color: darkgoldenrod;
+  border-color: yellow;
+  left: -40px;
+}
+
+#contact {
+  background-color: darkblue;
+  border-color: lightblue;
+  left: -60px;
+}
+
+main {
+  margin: 20px auto;
+  width: 800px;
+}
+
+#title {
+  text-align: center;
+  color: white;
+  padding: 5px;
+  height: 100px;
+  border: 8px;
+  border-style: dashed;
+  border-color: #E3A7A7;
+  background-color: indianred;
+}
+
+#content {
+  height: 600px;
+  background-color: #E3A7A7;
+  border: 8px dashed indianred;
+  border-top-style: none;
+}
+
+
+@media (max-width: 480px) {
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  nav a {
+    border-radius: 0px;
+  }
+  li {
+    display: block;
+    width: 100%;
+  }
+  #about,
+  #resume,
+  #portfolio,
+  #contact {
+    width: 100%;
+    position: static;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+  @media (min-width: 480px) and (max-width: 600px){
+    nav a {
+      width: 90px;
+      height: 90px;
+  }
+}
+@media (max-width: 800px){
+  main {
+    width: 100%;
+  }
+}

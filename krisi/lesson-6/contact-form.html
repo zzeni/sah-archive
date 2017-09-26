@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web forms example</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial- scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Свържете се с нас!</h1>
+
+    <form method="post">
+        <div>
+            <label for="names">Вашите имена</label>
+            <input type="text" name="names" id="names" placeholder="Име Фамилия">
+        </div>
+        <div>
+            <label for="email">Вашият имейл</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com">
+        </div>
+        <div>
+            <label for="language">Избор на език</label>
+            <select name="language" id="language">
+                <option value="BG">Български</option>
+                <option value="EN">Английски</option>
+                <option value="RU">Руски</option>
+            </select>
+        </div>
+        <div>
+            <label for="number">Телефон</label>
+            <input type="tel" name="number" id="number" placeholder="+359xxxxxxxxxxx">
+        </div>
+        <div>
+            <label for="text">Съобщение</label>
+            <textarea name="text" placeholder="Опишете Вашето запитване тук" id="text"></textarea>
+        </div>
+
+        <div id="buttons">
+            <label>&nbsp;</label>
+            <input type="reset" value="Изтрий">
+            <button type="submit">Изпрати</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

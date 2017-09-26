@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MY MOVIE COLLECTION</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-size: 18px;
+            padding: 30px;
+            background-color: rgba(0, 78, 209, 0.09);
+        }
+        h1 {
+            font-size: 2.5em;
+            font-family: "Lato Heavy" , sans-serif;
+            color: rgb(232, 190, 29);
+            text-shadow: 2px 1px 6px #444444;
+        }
+        .well {
+            background-color: #d1a91d;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+        .thumbnail {
+
+            padding: 10px;
+            background-color: rgba(209, 169, 29, 0.44);
+            border: 2px solid #d1a91d ;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="well">
+    <div class="page-header">
+        <h1 class="text-center">MY MOVIE COLLECTION</h1>
+        <div   class="row" >
+            <div class=" col-lg-offset-5 col-lg-2 col-md-offset-5 col-md-2 col-xm-offset-5 col-xm-2 col-xs-offset-3 col-xs-6">
+                <button id="add_movie" class="btn btn-info btn-block text-center">ADD MOVIE</button>
+            </div>
+        </div>
+    </div>
+    <div id="form_container" >
+
+    </div>
+</div>
+
+<ul id="collection"></ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="movie3.js" type="application/javascript"></script>
+</body>
+
+</html>

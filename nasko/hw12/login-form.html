@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap example</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+     main {
+        margin-top: 10vh;
+      }
+
+        .panel-login {
+        margin: auto;
+        width: 200px;
+        padding: 1em;
+      }
+    </style>
+
+  
+      </head>
+
+  <body>
+    <main>
+      <div class="panel panel-default panel-login">
+        <h3>Login area</h3>
+
+        <hr>
+
+        <form>
+          <div class="form-group">
+            <label>Username</label>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <span class="glyphicon glyphicon-user"></span>
+              </span>
+              <input type="text" class="form-control" placeholder="Username">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <span class="glyphicon glyphicon-star"></span>
+              </span>
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+          </div>
+
+          <hr>
+
+          <button type="button" class="btn btn-success">
+            <span class="glyphicon glyphicon-arrow-left"></span>
+            Back
+          </button>
+          <button type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-lock"></span>
+            Login
+          </button>
+        </form>
+
+      </div>
+    </main>
+  </body>
+</html>

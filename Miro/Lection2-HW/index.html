@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Block elements</title>
+    <style>
+        body {
+            background: #c2c2c2;
+        }
+        /* Header */
+
+        header,
+        main,
+        footer {
+            background: #333;
+            color: white;
+            padding: 2rem;
+            margin: 3rem;
+        }
+
+        header,
+        footer {
+            text-align: center
+        }
+
+        header a {
+            font-size: 2rem;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        /* Navigation */
+
+        nav {
+            color: #fff;
+            padding: 1rem;
+            list-style: none;
+            text-align: center;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul a {
+            padding: 2rem;
+            border: 1px solid #fff;
+            text-decoration: none;
+            transition: border .5s;
+        }
+
+        ul a:hover {
+            border-left: 10px solid #fff;
+        }
+        /* Section and Article */
+
+        .article_image {
+            width: 30%;
+            float: left;
+            margin: 0 10px 0 0;
+        }
+
+        article p {
+            text-align: inherit
+        }
+
+        article {
+            background: #C49A6C;
+            padding: 2rem;
+            color: #333;
+            display: inline-block;
+            width: 45%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        figure {
+            width: 20%;
+            border: 1px solid #fff;
+            display: inline-block;
+            margin: 2.2%;
+            overflow: hidden;
+            transition: border-radius .3s, opacity .3s;
+        }
+
+        figure:hover {
+            opacity: .4;
+            border: 1px solid #fff;
+            border-radius: 20%;
+        }
+
+        figcaption {
+            padding: 1rem;
+        }
+
+        a {
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .arrow { width: 30px; margin: 10px;}
+        .arrow:hover { opacity: .6; }
+
+    </style>
+</head>
+
+<body>
+    <header id="top"><a href="">Your logo</a></header>
+    <nav>
+        <ul>
+            <li><a href="#article">Go straight to article</a></li>
+            <li><a href="#footer">Go straight to footer</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>This is main container</h2>
+            <a href="https://www.facebook.com/MMRoDesign/" target="_blank">
+                <figure> <img src="img/tutorial3.png" alt="image">
+                    <figcaption>This is a link to website</figcaption>
+                </figure>
+            </a>
+            <a href="https://www.facebook.com/MMRoDesign/photos/a.145914682569177.1073741830.115983478895631/149679075526071/?type=3&theater" target="_blank">
+                <figure> <img src="img/tutorial3.png" alt="image">
+                    <figcaption>This is a link to section</figcaption>
+                </figure>
+            </a>
+            <a href="https://www.facebook.com/MMRoDesign/" target="_blank">
+                <figure> <img src="img/tutorial3.png" alt="image">
+                    <figcaption>This is how figure works</figcaption>
+                </figure>
+            </a>
+            <a href="https://www.facebook.com/MMRoDesign/" target="_blank">
+                <figure> <img src="img/tutorial3.png" alt="image">
+                    <figcaption>This is how figure works</figcaption>
+                </figure>
+            </a>
+        </section>
+        <section id="article">
+            <h2>This is section 2</h2>
+            <article>
+                <h2>This is article</h2> <img src="img/graphic-design.jpg" class="article_image" alt="image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum sagittis molestie. Aenean gravida dui lectus, a convallis quam pretium quis. Suspendisse potenti. Donec volutpat tellus nisi, iaculis feugiat odio ultricies sed. Integer consequat, odio quis condimentum pharetra, lacus est pharetra velit, rhoncus bibendum ipsum justo sit amet odio.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum sagittis molestie. Aenean gravida dui lectus, a convallis quam pretium quis. Suspendisse potenti. Donec volutpat tellus nisi, iaculis feugiat odio ultricies sed. Integer consequat, odio quis condimentum pharetra, lacus est pharetra velit, rhoncus bibendum ipsum justo sit amet odio.</p>
+            </article>
+            <article>
+                <h2>This is article</h2> <img src="img/graphic-design.jpg" class="article_image" alt="image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum sagittis molestie. Aenean gravida dui lectus, a convallis quam pretium quis. Suspendisse potenti. Donec volutpat tellus nisi, iaculis feugiat odio ultricies sed. Integer consequat, odio quis condimentum pharetra, lacus est pharetra velit, rhoncus bibendum ipsum justo sit amet odio.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum sagittis molestie. Aenean gravida dui lectus, a convallis quam pretium quis. Suspendisse potenti. Donec volutpat tellus nisi, iaculis feugiat odio ultricies sed. Integer consequat, odio quis condimentum pharetra, lacus est pharetra velit, rhoncus bibendum ipsum justo sit amet odio.</p>
+            </article>
+        </section>
+<a href="#top">
+    <img src="img/arrow-971322_960_720.png" class="arrow" alt="arrow" title="clik here to scroll all the way up" ></a>
+    </main>
+    <footer id="footer">This is foorer &copy;</footer>
+</body>
+
+</html>

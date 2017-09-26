@@ -1,0 +1,46 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.mine {
+    margin: 0;
+    padding: 40px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label.text-right {
+    text-align: left;
+}
+
+@media (min-width: 992px) {
+    h2 {
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-group {
+        display: block;
+    }
+    label.text-right {
+        text-align: right;
+    }
+}

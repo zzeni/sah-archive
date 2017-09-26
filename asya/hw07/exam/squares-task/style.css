@@ -1,0 +1,157 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.6em;
+}
+
+.container {
+  border: 2px solid black;
+  width: 100%;
+  min-height: 600px;
+}
+
+.square {
+  color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.black {
+  background-color: black;
+}
+
+/* Smallest first (<399px) */
+@media (max-width: 399px){
+    .square {
+        width: 100%;
+    }
+}
+
+/* 400 - 499 */
+@media (min-width: 400px) and (max-width: 499px){
+    .red {
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .blue {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .green {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+
+    .black {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+/* 500 - 599 */
+@media (min-width: 500px) and (max-width: 599px){
+    .red {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+
+    .blue {
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .green {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .black {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+/* 600 - 699 */
+@media (min-width: 600px) and (max-width: 699px){
+    .red {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+
+    .blue {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+
+    .green {
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .black {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+}
+
+/* 700 - 799 */
+@media (min-width: 700px) and (max-width: 799px) {
+    .red {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+
+    .blue {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+    }
+
+    .green {
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    .black {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+}
+
+/* > 800 */
+@media (min-width: 800px){
+    .square {
+        float: left;
+    }
+}

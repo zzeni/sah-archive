@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url("background_image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 4rem 4rem 8rem 4rem;
+}
+
+.headline {
+    width: 60%;
+    margin: 3rem auto 5rem auto;
+    padding: 2rem 6rem;
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    padding: 36px;
+}
+
+nav a {
+    padding: 12px;
+}
+
+
+main section {
+    width: 820px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#pics a {
+    float: left;
+    margin: 10px;
+
+}
+
+#pics a:hover {
+    opacity: .6;
+}
+.image {
+    width: 250px;
+    height:  250px;
+}
+
+.image1 {
+    background: url("img/image1.jpg");
+    background-size: cover;
+}
+
+.image2 {
+    background: url("img/image2.jpg");
+    background-size: cover;
+}
+
+.image3 {
+    background: url("img/image3.jpg");
+    background-size: cover;
+}
+
+.image4 {
+    background: url("img/image4.jpg");
+    background-size: cover;
+}
+
+.image5 {
+    background: url("img/image5.jpg");
+    background-size: cover;
+}
+
+.image6 {
+    background: url("img/image6.jpg");
+    background-size: cover;
+}
+
+.clearfix {
+    clear: both;
+}
+    
+footer {
+    background: #333;
+    color: #c2c2c2;
+    padding: 4rem;
+    text-align: center;
+    margin-top:100px;
+}
+
+ul.social li {
+    display: inline;
+}
+
+ul.social i{
+    color: white;
+    margin-top: 2rem;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+
+
+@media screen and (max-width:700px) {
+    nav a {
+        
+        padding: 3px;
+        margin: 0;
+        display: block;
+    }
+}

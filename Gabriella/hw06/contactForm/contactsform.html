@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Свържете се с нас!</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="name,email,language,phone,message" />
+    <meta name="keywords" content="name,email,language,phone,mеssage" />
+    <style>
+        #messageContainer * {
+            vertical-align: text-top;
+        }
+        
+        label {
+            display: inline-block;
+            width: 140px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Свържете се с нас!</h1>
+    <form>
+        <div>
+            <label for="name">Вашите имена</label>
+            <input type="text" name="name" placeholder="вашите имена" required>
+        </div>
+        <div>
+            <label for="Вашият имейл">Вашият емайл</label>
+            <input type="text" name="email" placeholder="email@example.com " required>
+        </div>
+        <div>
+            <label for="language">Избор на език</label>
+            <select name="language" required>
+                <option value="">Изберете език</option>
+                <option value="bg">Български</option>
+                <option value="ro">Румънски</option>
+                <option value="gr">Гръцки</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="tel">Телефон</label>
+            <input type="number" name="tel" placeholder="+359xxx" required>
+        </div>
+        <div id="messageContainer">
+            <label for="message">Съобщение</label>
+            <textarea rows="10" cols="30" name="message" placeholder="Опишете Вашите запивания тук" require></textarea>
+        </div>
+        <div>
+            <label for="submit"></label>
+                <input type="submit" name="submit" value="Изпрати">
+                <input type="reset" value="Изтрий">
+        </div>
+    </form>
+</body>
+
+</html>

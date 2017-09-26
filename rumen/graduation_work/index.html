@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fishing Store</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="online store for fishing equipment" />
+    <meta name="author" content="Rumen Stoyanov" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default nav-custom">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-custom">
+                        <li><a href="#home-container" data-toggle="tab" data-info="home">Home</a></li>
+                        <li><a href="#rods-container" data-toggle="tab" data-info="rods">RODS</a></li>
+                        <li><a href="#reels-container" data-toggle="tab" data-info="reels">REELS</a></li>
+                        <li><a href="#lure-container" data-toggle="tab" data-info="lure">LURES</a></li>
+                        <li><a href="#lines-container" data-toggle="tab" data-info="lines">LINES</a></li>
+                        <li><a href="#hooks-container" data-toggle="tab" data-info="hooks">HOOKS</a></li>
+                        <li><a href="#floats-container" data-toggle="tab" data-info="floats">FLOATS</a></li>
+                        <li class="pull-right">
+                            <a href="#cart-container" data-toggle="tab" data-info="cart">
+                                <span id="total"></span>
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> </a>
+                        </li>
+                        <li>
+                            <a href="about.html" data-info="about">About us</a>
+                        </li>
+                        <li class="invisible">
+                            <a href="#single-container" data-toggle="tab" data-info="stock">STock</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+                <!-- /.container-fluid -->
+            </div>
+        </nav>
+
+    </header>
+    <main class="tab-content">
+        <div class="container">
+            <div id="carousel-example-generic" class="carousel slide carousel-custom" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="https://daiwasports.co.uk" target="_blank"><img src="img/diawa.png" alt="Daiwa logo"></a>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="https://berkley-fishing.com" target="_blank"><img src="img/Berkley.png" alt="Berkley logo"></a>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="httpS://fish.shimano.com/" target="_blank"><img src="img/Shimano.png" alt="Shimano logo"></a>
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="home-container" class="container tab-pane fade in active"></div>
+        <div id="rods-container" class="container tab-pane fade"></div>
+        <div id="reels-container" class="container tab-pane fade"></div>
+        <div id="lure-container" class="container tab-pane fade"></div>
+        <div id="lines-container" class="container tab-pane fade"></div>
+        <div id="hooks-container" class="container tab-pane fade"></div>
+        <div id="floats-container" class="container tab-pane fade"></div>
+        <div id="single-container" class="container tab-pane fade"></div>
+        <div id="cart-container" class="container tab-pane fade"></div>
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://Facebook.com" target="_blank">
+                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div>
+            <p>Copyright &copy;</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

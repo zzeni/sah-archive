@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    /*    height: 100%;*/
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    height: 250px;
+    background-color: dodgerblue;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header>h1 {
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: 100;
+    align-self: center;
+}
+
+main {
+    background-color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px;
+}
+
+aside {
+    width: 400px;
+    height: 850px;
+    background-color: coral;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center
+}
+
+section {
+    background-color: aqua;
+    width: 100%;
+    height: 850px;
+    margin: ;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* if all text should be visible - overflow: scroll */
+}
+
+.article {
+    padding: 30px;
+}
+
+.article>h1 {
+    font-size: 25px;
+}
+
+.arrows {
+    font-size: 25px;
+}
+
+.box {
+    position: relative;
+}
+
+.box_item {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 100%;
+    font-size: 22px;
+    padding: 10px;
+    background-color: pink
+}
+
+@media (max-width: 799px) and (min-width:600px) {
+    * {
+        box-sizing: border-box;
+    }
+    header {
+        background-color: lightgreen;
+    }
+    aside {
+        background-color: chocolate;
+    }
+    section {
+        /*   if all text should be visible - overflow: scroll */
+    }
+}
+
+@media (max-width:599px) {
+    * {
+        box-sizing: border-box;
+    }
+    html,
+    body {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+        height: 130px;
+        background-color: dodgerblue;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    header>h1 {
+        text-align: center;
+        font-size: 2.5em;
+        align-self: center;
+    }
+    main {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+    }
+    aside {
+        width: 100%;
+        height: 100px;
+        margin: 5px auto;
+        display: flex;
+        background-color: coral;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.arrows {
+    font-size: 1.5em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    /* if all text should be visible - overflow: scroll; */
+}
+
+
+}

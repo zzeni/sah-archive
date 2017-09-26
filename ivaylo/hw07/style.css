@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+}
+
+main {
+    display: flex;
+    width: 500px;
+    height: 600px;
+    border: 10px solid brown;
+    margin: 20px auto;
+    flex-direction: row;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
+
+@media (max-width: 399px) {
+    main {
+        flex-direction: column;
+    }
+    .item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .red {
+        align-self: flex-start
+    }
+    .blue {
+        align-self: flex-start
+    }
+    .green {
+        align-self: flex-end
+    }
+    .black {
+        align-self: flex-end
+    }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .red {
+        order: 4;
+        align-self: flex-end;
+    }
+    .blue {
+        order: 1;
+    }
+    .green {
+        order: 2;
+    }
+    .black {
+        align-self: flex-end;
+        order: 3;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 699px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .red {
+        align-self: flex-end;
+        order: 3;
+    }
+    .blue {
+        align-self: flex-end;
+        order: 4;
+    }
+    .green {
+        order: 1;
+    }
+    .black {
+        order: 2;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 799px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .red {
+        order: 3;
+    }
+    .blue {
+        order: 4;
+    }
+    .green {
+        order: 1;
+    }
+    .black {
+        order: 2;
+    }
+}
+
+@media (min-width: 800px) {
+    main {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 800px;
+    }
+    .red {
+        order: 1;
+    }
+    .blue {
+        order: 2;
+    }
+    .green {
+        order: 3;
+    }
+    .black {
+        order: 4;
+    }
+}

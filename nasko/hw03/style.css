@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+td, th {
+    padding: 10px;
+}
+th {
+    text-align: right;
+    background-color: lightgoldenrodyellow;
+    padding-left: 20px;
+}
+td {
+    background-color: lightgoldenrodyellow;
+    padding-right: 20px;
+}
+main,
+aside {
+  float: left;
+/*  padding: 20px;*/
+/*  border: 1px solid black;*/
+/*  box-sizing: border-box;*/
+}
+
+main {
+  width: 75%;
+  min-height: 440px;
+  background-color: lightgrey;
+}
+nav a{
+font-family: Helvetica, sans-serif;
+padding: 10px 20px;
+color: white;
+text-decoration: none;
+text-align: center;
+width: 150px;
+display: flex;
+}
+/*I know height should have been no more than 400 px but I could not set the footer property correctly */
+aside {
+  width: 25%;
+  height: 630px;
+  background-color: lightyellow;
+    border: 1px solid pink;
+}
+
+header {
+  background-color: lightgreen;
+}
+
+footer {
+  background-color: burlywood;
+}
+/* I tried to set the picture here to be inline with text content but could not get it to work */
+div{
+  display:inline-block  
+}
+
+.green {
+    background-color: #689f5b;
+}
+.yellow {
+    background-color: #fbc701;
+}
+.red {
+    background-color: #d11f00;
+}
+.cyan {
+    background-color: #0292bf;
+}

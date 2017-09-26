@@ -1,0 +1,73 @@
+body {
+    background-color: whitesmoke;
+}
+
+.circle {
+    background-color: lightpink;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.text {
+    font-family: cursive;
+    font-size: 35px;
+    line-height: 200px;
+}
+
+@media only screen and (max-width: 459px) {
+    body {
+        background-color: floralwhite;
+    }
+    .circle {
+        background-color: darkolivegreen;
+    }
+    .text::after {
+        content: "SMALL";
+    }
+}
+
+@media only screen and (min-width: 460px) {
+    body {
+        background-color: coral;
+    }
+    .circle {
+        background-color: cadetblue;
+    }
+    .text::after {
+        content: "MEDIUM";
+    }
+}
+
+@media only screen and (min-width: 679px) {
+    body {
+        background-color: lemonchiffon;
+    }
+    .circle {
+        background-color: forestgreen;
+    }
+    .text::after {
+        content: "LARGE";
+    }
+}
+
+@media only screen and (min-width: 999px) {
+    body {
+        background-color: antiquewhite;
+    }
+    .circle {
+        background-color: palevioletred;
+    }
+    .text::after {
+        content: "SUPER";
+    }
+}

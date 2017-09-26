@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstap</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        form {
+            margin: auto;
+            max-width: 400px;
+            padding: 1em;
+        }
+        label {
+            padding-right: 20px;
+            text-align: right;
+            width: 100px;
+            float: left;
+        }
+.input-group {
+    margin-bottom: 5px;
+}
+.btn {
+    margin-top: 1em;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="well">
+        <div class="panel-heading">
+        <h3>Свържете се с нас !</h3>
+            <hr>
+        </div>
+    <form  method="post" action="#">
+                <label for="name" >Име</label>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="name"><span class="glyphicon glyphicon-user"></span></span>
+                    <input type="text" name="first-name" class="form-control"  placeholder="Име" aria-describedby="name">
+                    </div>
+                <label for="family">Фамилия</label>
+
+                     <div class="input-group">
+                         <span class="input-group-addon" id="family"><span class="glyphicon glyphicon-user"></span></span>
+                    <input type="text" name="family" class="form-control" placeholder="Фамилия" aria-describedby="family">
+                    </div>
+                <label for="email">E-Mail</label>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="email"><span class="glyphicon glyphicon-envelope"></span></span>
+                    <input type="email" name="email" class="form-control" placeholder="E-Mail Address" aria-describedby="email">
+                    </div>
+
+                <label for="phone" >Телефон #</label>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="phone"><span class="glyphicon glyphicon-earphone"></span></span>
+                    <input type="tel" name="tel" class="form-control" placeholder="359 88 555 5555" aria-describedby="phone">
+                    </div>
+
+                <label for="message" >Съобщение</label>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="message"><span class="glyphicon glyphicon-pencil"></span></span>
+                    <textarea class="form-control"  placeholder="359 88 555 5555" aria-describedby="message" wrap="hard">
+                    </textarea>
+                    </div>
+
+        <label for="btn"></label>
+        <button class="btn btn-warning" type="submit" id="btn">
+            Изпрати&nbsp;<span class="glyphicon glyphicon-send"></span>
+        </button>
+    </form>
+
+    </div>
+</div>
+
+
+</body>
+</html>

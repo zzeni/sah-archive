@@ -1,0 +1,101 @@
+                        * {
+                        box-sizing: border-box;
+                    }
+                    
+                    html,
+                    body {
+                        height: 100%;
+                    }
+                    
+                    body {
+                        padding: 0;
+                        margin: 0;
+                        display: block;
+                    }
+                    
+                    header {
+                        background-color: floralwhite;
+                        max-width: 100%;
+                        border: 5px solid green;
+                        padding: 10px;
+                        margin: 10px;
+                    }
+                    
+                    ul.sidenav {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        width: 10%;
+                        background-color: darkolivegreen;
+                        position: fixed;
+                        height: 100%;
+                        overflow: auto;
+                    }
+                    
+                    ul.sidenav li a {
+                        display: block;
+                        color: aliceblue;
+                        padding: 8px 16px;
+                        text-decoration: none;
+                    }
+                    
+                    div.content {
+                        margin-left: 15%;
+                        margin-right: 15px;
+                        padding: 1px 16px;
+                        height: 800px;
+                    }
+                    
+                    .footer {
+                        position: fixed;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        background-color: #c7998b;
+                        text-align: center;
+                        border: 1px double #832a3a;
+                        padding: 1rem;
+                    }
+
+                    #top {
+                            position: fixed;
+                            bottom: 10px;
+                            right: 20px;
+                            display: block;
+                            width: 40px;
+                            height: 40px;
+                            background-color: brown;
+                            text-align: center;
+                            line-height: 40px;
+                            text-decoration: none;
+                            color: white;
+                            font-weight: bolder;
+                            border-radius: 100%;
+                        }
+                    @media screen and (max-width:800px) {
+                        ul.sidenav {
+                            width: 100%;
+                            height: auto;
+                            position: relative;
+                        }
+                        ul.sidenav li a {
+                            float: left;
+                            padding: 15px;
+                        }
+                        div.content {
+                            margin-left: 0;
+                        }
+                        @media screen and (max-width:599px) {
+                            ul.sidenav li a {
+                                text-align: center;
+                                float: none;
+                            }
+                            body {
+                                background-color: papayawhip;
+                            }
+                            ul.sidenav {
+                                background-color: rebeccapurple;
+                            }
+                        }
+                        

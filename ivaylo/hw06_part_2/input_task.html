@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <title>Контактна форма</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <main>
+        <h1>Свържете се с нас!</h1>
+        <form method="post">
+
+            <div>
+
+                <label for="imena">Вашите имена</label>
+
+                <input type="text" name="imena" id="imena" placeholder="Име Фамилия">
+            </div>
+            <br>
+            <div>
+                <label for="email">Вашият емайл</label>
+                <input type="email" name="email" id="email" placeholder="email@example.com">
+            </div>
+            <br>
+            <div>
+                <label for="lang">Избор на език</label>
+                <select>
+                        <option value="bg">Български</option>
+                        <option value="de">Немски</option>
+                        <option value="en">Английски</option>
+                    </select>
+            </div>
+            <br>
+            <div>
+                <label for="tel">Телефон</label>
+                <input id="tel" type="tel" name="tel"  placeholder="+359xxxxxxx">
+            </div>
+            <br>
+
+            <label id="message" for="area">Съобщение</label>
+
+            <div>
+                <textarea id="area" cols="40" rows="6"   placeholder="Опишете Вашето Запитваме"></textarea>
+            </div>
+            <div id="buttons">
+                <button type="reset">Изтрий</button>
+                <button type="submit">Изпрати</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

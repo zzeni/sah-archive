@@ -1,0 +1,5 @@
+main, aside 
+{   float: left;  }
+
+main {   width: 75%;  }
+aside {   width: 25%;  }

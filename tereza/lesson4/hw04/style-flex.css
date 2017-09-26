@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  background-color: #825028;
+  height: 100px;
+}
+
+.top-nav {
+  list-style-type: none;
+  display: inline;
+  background-color: #2150AF;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  width: 120px;
+  height: 30px;
+}
+
+.top-nav:first-child {
+  margin-left:200px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: flex;
+  background-color: #917F42;
+}
+
+#left {
+  flex-direction: column;
+  flex-basis: 200px;
+  background-color: #38466B;
+  height:100%;
+  position: fixed; 
+  overflow: auto;
+}
+
+.nav {
+  list-style-type: none;
+  background-color: #AA3B2C;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  padding: 5px;
+  width: 120px;
+  height: 30px;
+}
+
+#right {
+  flex-grow: 1;
+  margin-left: 180px;
+  padding: 0;
+}
+#info, #resume, #portfolio, #contacts {
+  background-color: #677A54;
+  margin:0 20px;
+  padding:0 30px;
+}
+.image {
+  width: 300px;
+}
+
+footer {
+  flex-basis: 20px;
+  background-color: #917F42;
+  text-align: center;
+  border-top: 2px solid black;
+}

@@ -1,0 +1,36 @@
+.basket-img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#basket-content {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#item-info {
+    display: inline-block;
+    width: 50%;
+}
+
+#empty-basket {
+    width: 50%;
+    display: inline-block;
+}
+
+#overall-price {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+#clear-basket {
+    margin-left: 75px;
+}

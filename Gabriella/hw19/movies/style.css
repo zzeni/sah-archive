@@ -1,0 +1,14 @@
+form {
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.form-images {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+h3{
+  text-align: center;
+}

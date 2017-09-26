@@ -1,0 +1,19 @@
+body {
+    background-color: darkolivegreen;
+}
+
+header {
+    background-color: bisque;
+    width: 50%;
+    padding: 30px;
+    margin: auto;
+}
+
+h1 {
+    background-color: coral;
+    width: 50%;
+    border-style: dashed;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}

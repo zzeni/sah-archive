@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+#top {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 50px;
+    text-shadow: 3px 3px yellow;
+    background-color: #00897b;
+    border: 2px solid yellow;
+    ;
+    border-radius: 345px;
+    display: block;
+}
+
+img {
+    float: left;
+    display: block;
+    padding: 10px;
+    border-radius: 120px;
+}
+
+#section_intro p {
+    overflow: auto;
+    padding: 20px;
+    margin: 10;
+    background-color: #00897b;
+    border: 3px solid green;
+    border-radius: 300px;
+}
+
+#section_intro h1,
+#section_resume h1,
+#portfolio h1,
+#contacts h1 {
+    background-color: #00897b;
+    border-radius: 200px;
+    text-align: center;
+    border: 3px solid green;
+    font-size: 30px;
+}
+
+section p {
+    font-size: 20px;
+}
+
+#art {
+    padding: 20px;
+}
+
+#book {
+    padding: 20px;
+}
+
+#section_intro {
+    overflow: hidden;
+    padding: 10px;
+}
+
+#section_resume {
+    clear: left
+}
+
+#left {
+    flex-basis: 300px;
+    background-color: #092E57;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    padding-right: 20px;
+}
+
+nav ul li {
+    color: darkturquoise;
+}
+
+#left,
+#left a {
+    color: white;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px auto;
+    margin-left: 145px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #CE3636;
+}
+
+main {
+    background-color: #18508C;
+    flex-grow: 1;
+    padding: 50px;
+}
+
+#tr,
+th,
+td {
+    border: 7px double green;
+    padding: 10px;
+    text-align: center;
+    widows: 100px;
+    height: 40px;
+}
+
+#table {
+    padding-left: 400px;
+}
+
+#go_to {
+    color: black;
+    float: right;
+    display: block;
+}
+
+footer {
+    background-color: #CE3636;
+    flex-basis: 40px;
+    text-align: center;
+    border-top: 2px solid black;
+    padding: 10px;
+}

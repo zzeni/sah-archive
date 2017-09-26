@@ -1,0 +1,22 @@
+
+
+html, body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input, textarea {
+    font-style: italic;
+}
+
+.btn-custom {
+    background-color: darkorange;
+    color: aliceblue;
+}
+
+.btn-custom:hover {
+    background-color: orange;
+    color: aliceblue;
+}

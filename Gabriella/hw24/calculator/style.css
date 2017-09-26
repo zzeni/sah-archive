@@ -1,0 +1,91 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+body, main, section, article, nav, p, ul {
+  padding: 0;
+  margin: 0;
+}
+
+html, body, main {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 360px;
+  max-height: 740px;
+}
+
+#calculator {
+  width: 374px;
+  height: 340px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #ccc;
+  background-color: #fcfcfc;
+  padding: 5px;
+  font-weight: bold;
+}
+
+#display {
+  height: 54px;
+  border: 4px solid #333;
+  color: white;
+  background-color: cadetblue;
+  font-size: 2em;
+  text-align: right;
+  line-height: 44px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#buttons {
+  display: flex;
+}
+
+#buttons .numbers {
+  flex-basis: 220px;
+}
+
+#buttons .controls {
+  flex-basis: 140px;
+}
+
+#buttons .btn {
+  width: 60px;
+  height: 56px;
+  line-height: 20px;
+  padding: 5px;
+  border: 4px grove #999;
+  background-color: #c0c0c0;
+  border-radius: 5px;
+  font-size: 1.6em;
+}
+
+#buttons li {
+  list-style: none;
+  float: left;
+  padding: 5px;
+}
+
+#buttons .numbers li {
+  width: 33.33%;
+}
+
+#buttons .controls li .btn {
+  background-color: #676767;
+  color: #f1f1f1;
+}
+
+#buttons li .btn.danger {
+  background-color: indianred;
+}
+
+#buttons .btn.double {
+  width: 130px;
+}

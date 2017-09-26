@@ -1,0 +1,100 @@
+label.error {
+    color: red;
+}
+
+input.error {
+    border: 2px solid red;
+}
+
+div.error {
+    color: red;
+}
+
+header {
+    background-color: #996633;
+    position: fixed;
+    height: 50px;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+main {
+    margin-top: 70px;
+}
+
+#logo {
+    height: 50px;
+}
+
+.header-button {
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+#carousel {
+    width: 80%;
+    margin: 90px auto;
+}
+
+#cart-container {
+    float: right;
+    width: 100%;
+    position: relative;
+}
+
+#itemCount {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    text-align: center;
+}
+
+#shopping-card-icon {
+    content:url("../images/icons/cart.png");
+    width: 48px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+.logo-container {
+    margin-left: 30px;
+    width: 20%;
+    display: inline-block;
+    position: fixed;
+}
+
+#logout-icon {
+    content:url("../images/icons/logout-icon.png");
+    width: 35px;
+    margin-top: 8px;
+    margin-left: 40px;
+}
+
+#greeting {
+    height: 48px;
+    padding: 10px;
+}
+
+#greeting-text {
+    font-size: 20px;
+    cursor: default;
+}
+
+#logout-icon:hover {
+    cursor: pointer;
+}
+
+#shopping-card-icon:hover {
+    cursor: pointer;
+}

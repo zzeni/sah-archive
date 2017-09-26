@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Stevis Luxury Watches Online Store">
+    <meta name="author" content="Stoyan Istatkov">
+    <title>Stevis Luxury Watches Store</title>
+
+    <!-- Font awesome CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    <!-- Font Cinzel -->
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Animate CSS -->
+
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div id="main-header" class="container-fluid hidden-xs wow fadeIn" data-wow-delay="0.1s">
+        <div class="row">
+
+            <div id="title-frame" class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 wow fadeIn" data-wow-delay="0.4s ">
+                <div class="header-thumb">
+                    <h1 class="text-center wow fadeIn" data-wow-delay="1.0s">Stevis Watches</h1>
+                    <h4 class=" text-uppercase text-center wow fadeInDown" data-wow-delay="1.0s">luxury timepieces</h4>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+<nav id="top" class="navbar navbar-default wow fadeIn" data-wow-delay="0.2s">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand wow fadeInLeft" data-wow-delay="0.3s" href="#">Stevis Watches</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a id="home" class="wow fadeIn" data-wow-delay="0.3s" href="#" >Home</a></li>
+                <li><a id="about" class="wow fadeIn" data-wow-delay="0.3s" href="#">About us</a></li>
+                <li><a id="contact" class="wow fadeIn" data-wow-delay="0.3s" href="#">Contacts</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right wow fadeIn" data-wow-delay="0.3s">
+
+                <li class="not-logged-in">
+                    <a href="#login" data-toggle="modal" data-target="#login-modal">Log in</a>
+                </li>
+                <li class="logged-in">
+                    <a href="#logout" class="logout-btn">Log out</a>
+                </li>
+                <li class="logged-in ">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    <span class="username-placeholder">user</span>
+                </li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<main >
+
+   <div id="main-container" class="container-fluid">
+
+        <div  class="row">
+
+            <div  id="sidebar" class="col-md-3 col-lg-2 col-xs-12 wow fadeIn" data-wow-delay="0.2s">
+                <div  class="row">
+                    <div  class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                         <div class="list-group" id="filterCategories">
+                             <a href="#" id="all" data-category="" class="list-group-item">All</a>
+                             <a href="#" data-category="man" class=" gender list-group-item">Man</a>
+                             <a href="#" data-category="woman" class="gender list-group-item">Woman</a>
+                             <a href="#" data-category="automat" class=" movement list-group-item">Automat</a>
+                             <a href="#" data-category="quartz" class=" movement list-group-item">Quartz</a>
+                         </div>
+                    </div>
+                    <div  class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                         <div  class="well">
+                             <form id="filters" name="filtersForm" class="form">
+
+                                <div class="form-group">
+                                     <label for="brand">Brand</label>
+                                        <select id="brand" name="sortBybrand" class="form-control">
+                                           <option value="">All</option>
+                                           <option value="candino">Candino</option>
+                                           <option value="casio">Casio</option>
+                                           <option value="certina">Certina</option>
+                                           <option value="fossil">Fossil</option>
+                                           <option value="omega">Omega</option>
+                                           <option value="panerai">Panerai</option>
+                                           <option value="rado">Rado</option>
+                                           <option value="rolex">Rolex</option>
+                                           <option value="seiko">Seiko</option>
+                                           <option value="tagheuer">Tag heuer</option>
+                                           <option value="tissot">Tissot</option>
+                                           <option value="zenith">Zenith</option>
+                                      </select>
+                               </div>
+
+                                <div class="form-group">
+                                    <label for="sort-by">Sort</label>
+                                    <select id="sort-by" name="sortBy" class="form-control">
+                                           <option value="">All</option>
+                                           <option value="name-asc">Name &uarr;</option>
+                                           <option value="name-desc">Name &darr;</option>
+                                           <option value="price-asc">Price &uarr;</option>
+                                           <option value="price-desc">Price &darr;</option>
+                                   </select>
+                              </div>
+
+                              <div class="form-group">
+                                   <input id="search" type="text" class="form-control wow fadeIn" data-wow-delay="0.2s" placeholder="Search">
+                              </div>
+                                <button id="btn-search" type="submit" class="btn btn-block  btn-default wow fadeIn" data-wow-delay="0.2s"><i class="fa fa-search" aria-hidden="true"></i></button>
+
+                           </form>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="clearfix hidden-md hidden-lg"></div>
+           <div id="shop-container" class="col-md-9 col-lg-10">
+
+
+               <div class="col-sm-4 col-lg-4 col-md-4 text-center wow fadeInUp" data-wow-delay="1.0s">
+                  <div class="thumbnail">
+
+                      <img class="img-thumbnail" src="%IMAGE%" alt="watch" >
+
+                         <div class="caption" >
+                             <section >
+                                <h4 class="pull-right">%PRICE%$</h4>
+                                <h4 class="pull-left">%BRAND%</h4>
+                                <div class="row"></div>
+                                   <div class="list-group" >
+                                      <h5><span>%GENDER%</span> watch</h5>
+                                      <h5>Movement: <span>%MOVEMENT%</span></h5>
+                                   </div>
+                             </section>
+                         </div>
+
+                         <button type="button" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">More</button>
+
+                 </div>
+               </div>
+
+           </div>
+        </div>
+
+
+   </div>
+
+
+
+</main>
+
+
+
+
+<footer class=" well well-sm col-lg-12">
+     <div class="col-md-12">
+         <div class=" text-center col-lg-4 col-lg-offset-4 col-xs-8 col-xs-offset-2 wow fadeIn" data-wow-delay="0.3s">
+             <!--Facebook-->
+             <button type="button" class="btn btn-fb"><i class="fa fa-facebook left"></i> Facebook</button>
+             <!--Twitter-->
+             <button type="button" class="btn btn-tw"><i class="fa fa-twitter left"></i> Twitter</button>
+             <!--Google +-->
+             <button type="button" class="btn btn-gplus"><i class="fa fa-google-plus left"></i> Google +</button>
+         </div>
+     </div>
+     <div class="clearfix "></div>
+         <p class=" text-center wow fadeIn" data-wow-delay="0.5s">Copyright &copy; Stevis Watches 2017</p>
+
+</footer>
+
+<a id="go-top" href="#top"><i class="fa fa-2x  fa-chevron-up" aria-hidden="true"></i></a>
+
+    <!-- Modals -->
+
+    <div id="log-modal">
+
+        <div id="login-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <form name="loginForm" class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Log in</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </span>
+                                <input type="text" name="username" class="form-control" placeholder="Username" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <div class="input-group">
+              <span class="input-group-addon">
+                <span class="glyphicon glyphicon-star"></span>
+              </span>
+                                <input type="password" name="password" class="form-control" placeholder="Password" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            <span class="glyphicon glyphicon-arrow-left"></span>
+                            Close
+                        </button>
+                        <button type="submit" class="btn btn-default">
+                            <span class="glyphicon glyphicon-lock"></span>
+                            Login
+                        </button>
+                    </div>
+                </form><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
+    </div>
+
+    <div  class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn btn-default pull-right" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <div class="thumbnail">
+                    <div class="row carousel-holder">
+
+                        <div class="col-md-12">
+                            <div id="carousel-example-generic" class="carousel slide" data-interval="false"  data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img class="slide-image" src="%IMAGE%" alt="watch">
+                                    </div>
+                                    <div class="item">
+                                        <img class="slide-image" src="%IMAGE%" alt="watch">
+                                    </div>
+                                    <div class="item">
+                                        <img class="slide-image" src="%IMAGE%" alt="watch">
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="caption" >
+                        <section >
+                            <h4 class="pull-right">%PRICE%$</h4>
+                            <h4 class="pull-left">%BRAND%</h4>
+                            <div class="row"></div>
+                            <div class="list-group" >
+                                <h5><span>%GENDER%</span> watch</h5>
+                                <h5>Movement: <span>%MOVEMENT%</span></h5>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Wow.js JavaScript animation -->
+<script src="js/wow.min.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+
+</script>
+<!-- Cookies -->
+<script src="js/js.cookie.js"></script>
+
+<!-- Login JS -->
+<script src="js/login.js"></script>
+
+<!-- custom script -->
+<script src="js/custom.js"></script>
+
+</body>
+</html>

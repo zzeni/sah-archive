@@ -1,0 +1,14 @@
+label {
+    display: inline-block;
+    width: 160px;
+    float: left;
+}
+
+div {
+    margin: 15px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+}

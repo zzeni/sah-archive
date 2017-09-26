@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 10px;
+    font-size: 16px;
+}
+
+.panel-login {
+    width: 700px;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+.control-label {
+    width: 200px;
+}
+
+input, textarea {
+    width: 100px;
+}

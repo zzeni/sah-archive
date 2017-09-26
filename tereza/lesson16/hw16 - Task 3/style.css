@@ -1,0 +1,17 @@
+.panel-title {
+  font-size: 2em;
+}
+.panel {
+  text-align: center;
+}
+#new-models-heading {
+  padding: 20px;
+  background-color: white;
+}
+.btn {
+  margin: 10px;
+  background-color: darksalmon;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}

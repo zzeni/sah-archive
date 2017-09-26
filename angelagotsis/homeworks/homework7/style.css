@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+body {
+    background-color: #2d2d2d;
+}
+
+#h1 {
+    background-color: whitesmoke;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: darkred;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:darkred;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+#header {
+    background-color: whitesmoke;
+    color: #2d2d2d;
+    display: flex;
+    height: 250px;
+    width: 100%;
+    align-items: center;
+    border: 3px solid white;
+    background-image: url(images/portra.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    color: red;
+}
+
+li {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.gallery {
+    width: 640px;
+    margin: 0 auto;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+.gallery > div {
+    position: relative;
+    float: left;
+    padding: 5px;
+}
+
+.gallery > div > img {
+    display: block;
+    width: 200px;
+    transition: .1s transform;
+    transform: translateZ(0);
+}
+
+.gallery > div:hover {
+    z-index: 1;
+}
+
+.gallery > div:hover > img {
+    transform: scale(1.7, 1.7);
+    transition: .3s transform;
+}
+
+.cf:before,
+.cf:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #170000;
+    text-align: center;
+    border-top: 2px double snow;
+    padding: 1rem;
+    color: whitesmoke;
+}

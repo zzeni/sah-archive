@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{ 
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    border-radius: 100%;
+    border: 10px dashed lightpink;
+    position: relative;
+    }
+main h1{
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 10px dashed brown;
+
+}
+    
+nav{
+    display: flex;
+    justify-content: center;
+    
+}
+@media(max-width: 479px){
+    nav{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    nav a{
+        width: 100%;
+        border-radius: 0;
+        height: 80px;
+        margin: 10px 0;
+        
+    }
+    
+main{
+    min-height: 400px;
+    background-color: bisque;
+    border: 10px dashed brown;
+}
+
+    }
+
+nav a:hover{
+    transform: scale(1.50);
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "1",
+    "brand": "Candino",
+    "gender": "Man",
+    "movement": "automat",
+    "price": "999",
+    "image": "img/candino.jpg"
+  },
+  {
+    "id": "2",
+    "brand": "Candino",
+    "gender": "Woman",
+    "movement": "quartz",
+    "price": "750",
+    "image": "img/candino-f.jpg"
+  },
+  {
+    "id": "3",
+    "brand": "Casio",
+    "gender": "Man",
+    "movement": "quartz",
+    "price": "300",
+    "image": "img/casio.jpg"
+  },
+  {
+    "id": "4",
+    "brand": "Casio",
+    "gender": "Woman",
+    "movement": "quartz",
+    "price": "600",
+    "image": "img/casio-f.jpg"
+  },
+  {
+    "id": "5",
+    "brand": "Certina",
+    "gender": "Man",
+    "movement": "automat",
+    "price": "400",
+    "image": "img/certina.jpg"
+  },
+  {
+    "id": "6",
+    "brand": "Certina",
+    "gender": "Woman",
+    "movement": "quartz",
+    "price": "346",
+    "image": "img/certina-f.jpg"
+  },
+  {
+    "id": "7",
+    "brand": "Fossil",
+    "gender": "Man",
+    "movement": "quartz",
+    "price": "910",
+    "image": "img/fossil.jpg"
+  },
+  {
+    "id": "8",
+    "brand": "Fossil",
+    "gender": "Woman",
+    "movement": "quartz",
+    "price": "380",
+    "image": "img/fossil-f.jpg"
+  },
+  {
+    "id": "9",
+    "brand": "Omega",
+    "gender": "Man",
+    "movement": "automat",
+    "price": "455",
+    "image": "img/omega.jpg"
+  },
+  {
+    "id": "10",
+    "brand": "Panerai",
+    "gender": "Woman",
+    "movement": "quartz",
+    "price": "755",
+    "image": "img/panerai.jpg"
+  },
+  {
+    "id": "11",
+    "brand": "Rado",
+    "gender": "Woman",
+    "movement": "quartz",
+    "price": "255",
+    "image": "img/rado.jpg"
+  },
+  {
+    "id": "12",
+    "brand": "Rolex",
+    "gender": "Man",
+    "movement": "automat",
+    "price": "370",
+    "image": "img/rolex.jpg"
+  },
+  {
+    "id": "13",
+    "brand": "Seiko",
+    "gender": "Man",
+    "movement": "quartz",
+    "price": "855",
+    "image": "img/seiko.jpg"
+  },
+  {
+    "id": "14",
+    "brand": "Tag heuer",
+    "gender": "Woman",
+    "movement": "quartz",
+    "price": "525",
+    "image": "img/tag.jpg"
+  },
+  {
+    "id": "15",
+    "brand": "Tissot",
+    "gender": "Woman",
+    "movement": "quartz",
+    "price": "725",
+    "image": "img/tissot.jpg"
+  },
+  {
+    "id": "15",
+    "brand": "Zenith",
+    "gender": "Man",
+    "movement": "automat",
+    "price": "966",
+    "image": "img/zenith.jpg"
+  }
+]

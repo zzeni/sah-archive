@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  position: relative;
+  background-image: url('rain.mp4');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+  margin: 0 auto;
+}
+
+body, ul, video, audio {
+  padding: 0;
+}
+
+header {
+    position: fixed;
+    position: top;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 38%;
+}
+
+audio {
+    width: 300px;
+    margin: 0 auto;
+}
+
+nav {
+    position: relative;
+    position: top;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}   
+
+li {
+    list-style-type: none;
+    position: absolute;
+    top: 50px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    position: top;
+}
+
+a:hover {
+    background-color: #4690BF;
+}
+
+footer {
+    background-color: #2E8DC3;
+    width: 100%;
+    position: fixed;
+    color: white;
+    font-weight: bold;
+    bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+main,
+aside {
+    float: left;
+}
+
+main {
+    width: 75%;
+}
+
+aside {
+    width: 25%;
+    color: #FDD273;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 10px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: circle;
+}
+
+html {
+    background: url(images/amsterdam-background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#title {
+    background-color: #FDD273;
+    padding: 5px;
+    text-align: center;
+    opacity: 0.8;
+    border: 10px solid;
+    border-radius: 50px
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+article {
+    background-color: #FDD273;
+    opacity: 0.8;
+    text-align: justify;
+    border: 10px solid;
+    border-radius: 50px;
+    padding: 20px;
+    overflow: auto;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    clear: left;
+    text-align: center;
+    color: #FDD273;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

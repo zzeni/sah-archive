@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  padding: 2px;
+  text-align: center;
+  width: 300px;
+  border-radius: 3px;
+  background-color: #666666;
+  color: white;
+}
+
+.button{
+  display: block;
+  padding: 0 10px;
+  position: relative;
+  width: 300px;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+}
+
+.button:hover {
+  background-color: whitesmoke;
+}
+
+.title {
+  font-size: 1.5em;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  color: #666666;
+}
+
+.nav {
+  background: url(social-media2.png);
+  height: 50px;
+  width: 50px;
+}
+.nav-google-plus {
+  background-position: -65px;
+}
+
+.nav-instagram {
+  background-position: -130px;
+}
+
+.nav-pinterest {
+  background-position: -195px;
+}
+
+.nav-twitter {
+  background-position: -260px;
+}

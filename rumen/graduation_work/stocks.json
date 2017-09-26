@@ -1,0 +1,425 @@
+[
+    {
+        "stock_type": "rods",
+        "brand": "Daiwa",
+        "model": "PRO MATCH",
+        "type": "match",
+        "length": "335",
+        "weight": "158",
+        "image": "img/rods/promatch.jpg",
+        "price": "254.99"
+    },
+    {
+        "stock_type": "rods",
+        "brand": "Daiwa",
+        "model": "RS MATCH",
+        "type": "match",
+        "length": "390",
+        "weight": "187 g",
+        "image": "img/rods/rsmatch.jpg",
+        "price": "227.59"
+    },
+    {
+        "stock_type": "rods",
+        "brand": "Daiwa",
+        "model": "AIRITY FEEDER",
+        "type": "feeder",
+        "length": "300",
+        "weight": "164",
+        "image": "img/rods/airity_match.jpg",
+        "price": "187.89"
+    },
+    {
+        "stock_type": "rods",
+        "brand": "Shimano",
+        "model": "TRIBAL ULTRA",
+        "type": "carp",
+        "length": "396",
+        "weight": "451",
+        "image": "img/rods/tribal_ultra.png",
+        "price": "287.99"
+    },
+    {
+        "stock_type": "rods",
+        "brand": "Shimano",
+        "model": "Fireblood",
+        "type": "feeder",
+        "length": "366",
+        "weight": "298",
+        "image": "img/rods/fireblood.png",
+        "price": "243.29"
+    },
+    {
+        "stock_type": "rods",
+        "brand": "Shimano",
+        "model": "Expride",
+        "type": "spinning",
+        "length": "366",
+        "weight": "298",
+        "image": "img/rods/expride.png",
+        "price": "150.46"
+    },
+    {
+        "stock_type": "rods",
+        "brand": "Berkley",
+        "model": "Inshore",
+        "type": "spinning",
+        "length": "370",
+        "weight": "228",
+        "image": "img/rods/inshore.jpg",
+        "price": "186.00"
+    },
+    {
+        "stock_type": "rods",
+        "brand": "Daiwa",
+        "model": "Basia AGS",
+        "type": "carp",
+        "length": "366",
+        "weight": "302",
+        "image": "img/rods/basia_ags.jpg",
+        "price": "254.67"
+    },
+    {
+        "stock_type": "reels",
+        "brand": "Daiwa",
+        "model": "Crossfire",
+        "action": "L/UL",
+        "bearing": "3BB, 1RB",
+        "gear": "5.3:1",
+        "image": "img/reels/crossfire.png",
+        "type": "front drag",
+        "price": "128.60"
+    },
+    {
+        "stock_type": "reels",
+        "brand": "Daiwa",
+        "model": "RG-AB",
+        "action": "L/UL",
+        "bearing": "9BB, 1RB",
+        "gear": "5.6:1",
+        "image": "img/reels/rg.png",
+        "type": "front drag",
+        "price": "183.76"
+    },
+    {
+        "stock_type": "reels",
+        "brand": "Daiwa",
+        "model": "EXIST",
+        "action": "UL/-",
+        "bearing": "2MBB, 10CRBB, 1RB",
+        "gear": "4.8:1",
+        "image": "img/reels/exist.jpg",
+        "type": "front drag",
+        "price": "140.00"
+    },
+    {
+        "stock_type": "reels",
+        "brand": "Daiwa",
+        "model": "SWEEPFIRE",
+        "action": "L/UL",
+        "bearing": "1BB",
+        "gear": "5.1:1",
+        "image": "img/reels/sweepfire.jpg",
+        "type": "rear drag",
+        "price": "115.69"
+    },
+    {
+        "stock_type": "reels",
+        "brand": "Shimano",
+        "model": "SPIREX",
+        "action": "L/UL",
+        "bearing": "5BB, 1RB",
+        "gear": "6.2:1",
+        "image": "img/reels/spirex.png",
+        "type": "rear drag",
+        "price": "177.20"
+    },
+    {
+        "stock_type": "reels",
+        "brand": "Shimano",
+        "model": "IX",
+        "action": "L/UL",
+        "bearing": "5BB, 1RB",
+        "gear": "6.2:1",
+        "image": "img/reels/IX.png",
+        "type": "rear drag",
+        "price": "100.40"
+    },
+    {
+        "stock_type": "reels",
+        "brand": "Shimano",
+        "model": "SUSTAIN",
+        "action": "L/UL",
+        "bearing": "8BB, 1RB",
+        "gear": "6.0:1",
+        "image": "img/reels/sustain.png",
+        "type": "front drag",
+        "price": "220.86"
+    },
+    {
+        "stock_type": "reels",
+        "brand": "Berkley",
+        "model": "Heritage Ice",
+        "action": "L/UL",
+        "bearing": "3BB",
+        "gear": "4.8:1",
+        "image": "img/reels/heritage.jpg",
+        "type": "front drag",
+        "price": "199.96"
+    },
+    {
+        "stock_type": "reels",
+        "brand": "Daiwa",
+        "model": "Crosscast",
+        "action": "L/UL",
+        "bearing": "3BB",
+        "gear": "4.9:1",
+        "image": "img/reels/crosscast.jpg",
+        "type": "double drag",
+        "price": "203.56"
+    },
+    {
+        "stock_type": "reels",
+        "brand": "Shimano",
+        "model": "Tiagra",
+        "action": "L/UL",
+        "bearing": "4/6A-RB",
+        "gear": "2.5:1/1:1.3",
+        "image": "img/reels/tiagra.png",
+        "type": "multiplier",
+        "price": "500.00"
+    },
+    {
+        "stock_type": "lure",
+        "brand": "Daiwa",
+        "model": "Bullet AT",
+        "type": "spinners",
+        "image": "img/lure/bulletAt.jpg",
+        "price": "15.43"
+    },
+    {
+        "stock_type": "lure",
+        "brand": "Daiwa",
+        "model": "Spincaster",
+        "type": "spinners",
+        "image": "img/lure/spincaster.jpg",
+        "price": "10.52"
+    },
+    {
+        "stock_type": "lure",
+        "brand": "Daiwa",
+        "model": "Silver creek",
+        "type": "spoons",
+        "image": "img/lure/silver_creek.jpg",
+        "price": "5.62"
+    },
+    {
+        "stock_type": "lure",
+        "brand": "Daiwa",
+        "model": "Prorex diving",
+        "type": "wobblers",
+        "image": "img/lure/prorex.jpg",
+        "price": "12.62"
+    },
+    {
+        "stock_type": "lure",
+        "brand": "Shimano",
+        "model": "Real Jiggy",
+        "type": "pirks",
+        "image": "img/lure/real_jiggy.jpg",
+        "price": "14.32"
+    },
+    {
+        "stock_type": "lines",
+        "brand": "Daiwa",
+        "model": "Sealine",
+        "type": "monofilament",
+        "image": "img/lines/sealine.jpg",
+        "length": "300",
+        "price": "24.57"
+    },
+    {
+        "stock_type": "lines",
+        "brand": "Daiwa",
+        "model": "J-Braid",
+        "type": "braided",
+        "image": "img/lines/j-braid.jpg",
+        "length": "150",
+        "price": "15.43"
+    },
+    {
+        "stock_type": "lines",
+        "brand": "Daiwa",
+        "model": "Samurai",
+        "type": "braided",
+        "image": "img/lines/samurai.jpg",
+        "length": "140",
+        "price": "16.22"
+    },
+    {
+        "stock_type": "lines",
+        "brand": "Daiwa",
+        "model": "Saltiga",
+        "type": "braided",
+        "image": "img/lines/saltiga.jpg",
+        "length": "300",
+        "price": "32.64"
+    },
+    {
+        "stock_type": "lines",
+        "brand": "Shimano",
+        "model": "Aero",
+        "type": "fluorocarbon",
+        "image": "img/lines/aero.png",
+        "length": "350",
+        "price": "29.89"
+    },
+    {
+        "stock_type": "lines",
+        "brand": "Shimano",
+        "model": "Speedcast",
+        "type": "monofilament",
+        "image": "img/lines/speedcast.png",
+        "length": "225",
+        "price": "28.26"
+    },
+    {
+        "stock_type": "lines",
+        "brand": "Shimano",
+        "model": "Kairiki",
+        "type": "braided",
+        "image": "img/lines/kairiki.jpg",
+        "length": "2700",
+        "price": "87.99"
+    },
+    {
+        "stock_type": "lines",
+        "brand": "Berkley",
+        "model": "Trilene",
+        "type": "end of line",
+        "image": "img/lines/trilene.jpg",
+        "length": "100",
+        "price": "12.55"
+    },
+    {
+        "stock_type": "lines",
+        "brand": "Berkley",
+        "model": "Gorilla",
+        "type": "braided",
+        "image": "img/lines/gorilla.png",
+        "length": "275",
+        "price": "38.59"
+    },
+    {
+        "stock_type": "hooks",
+        "brand": "Daiwa",
+        "model": "Gamakatsu",
+        "type": "single",
+        "image": "img/hooks/gamakatsu.jpg",
+        "price": "1.25"
+    },
+    {
+        "stock_type": "hooks",
+        "brand": "Daiwa",
+        "model": "Jig Head",
+        "type": "packs",
+        "image": "img/hooks/jig_head.jpg",
+        "price": "4.56"
+    },
+    {
+        "stock_type": "hooks",
+        "brand": "Daiwa",
+        "model": "Trebble 4601",
+        "type": "treble",
+        "image": "img/hooks/treble.jpg",
+        "price": "1.89"
+    },
+    {
+        "stock_type": "hooks",
+        "brand": "Berkley",
+        "model": "Fusion19",
+        "type": "single",
+        "image": "img/hooks/fusion19.png",
+        "price": "1.42"
+    },
+    {
+        "stock_type": "hooks",
+        "brand": "Daiwa",
+        "model": "Fusion19 Treble",
+        "type": "treble",
+        "image": "img/hooks/fusion_treble.jpg",
+        "price": "1.79"
+    },
+    {
+        "stock_type": "floats",
+        "brand": "Maver",
+        "model": "Ten",
+        "type": "fixed",
+        "image": "img/floats/ten.jpg",
+        "weight": "1.2",
+        "price": "2.99"
+    },
+    {
+        "stock_type": "floats",
+        "brand": "Maver",
+        "model": "Agadir",
+        "type": "fixed",
+        "image": "img/floats/agadir.jpg",
+        "weight": "1.8",
+        "price": "5.69"
+    },
+    {
+        "stock_type": "floats",
+        "brand": "Rizov",
+        "model": "RF116",
+        "type": "fixed",
+        "image": "img/floats/rf116.jpg",
+        "weight": "1",
+        "price": "2.59"
+    },
+    {
+        "stock_type": "floats",
+        "brand": "Bobi Fisher",
+        "model": "BF701",
+        "type": "moving",
+        "image": "img/floats/bf701.jpg",
+        "weight": "5.5",
+        "price": "3.46"
+    },
+    {
+        "stock_type": "floats",
+        "brand": "Maver",
+        "model": "Numana",
+        "type": "moving",
+        "image": "img/floats/numana.jpg",
+        "weight": "4.2",
+        "price": "7.29"
+    },
+    {
+        "stock_type": "floats",
+        "brand": "Bobi Fisher",
+        "model": "BF27",
+        "type": "wagglers",
+        "image": "img/floats/bf27.jpg",
+        "weight": "8",
+        "price": "5.56"
+    },
+    {
+        "stock_type": "floats",
+        "brand": "Maver",
+        "model": "Giant",
+        "type": "wagglers",
+        "image": "img/floats/giant.jpg",
+        "weight": "6",
+        "price": "4.99"
+    },
+    {
+        "stock_type": "floats",
+        "brand": "Maver",
+        "model": "Goccia",
+        "type": "bombarda",
+        "image": "img/floats/goccia.jpg",
+        "weight": "25",
+        "price": "8.50"
+    }
+]

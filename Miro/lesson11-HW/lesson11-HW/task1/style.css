@@ -1,0 +1,54 @@
+main, header, footer {
+    padding: 3rem;
+}
+
+header {
+    background: #16a086;
+}
+
+footer {
+    background: #2d3e50;
+    color: #ecf0f1;
+}
+
+body {
+  display: flex;
+    flex-direction: column;
+    font-family: Caviar Dreams;
+}
+
+html, body {
+    height: 100%;
+}
+main {
+    flex-grow: 1;
+    background: #ecf0f1;
+}
+
+.miro {
+    border-radius: 0;
+    padding: 2rem;
+    font-style: italic;
+}
+
+h3 {
+    margin: 0;
+    font-weight:500;
+    text-transform: uppercase;
+}
+
+ul li {
+    margin-top: 2rem;
+}
+
+.content {
+    margin-bottom: 3rem;
+}
+
+.btn-miro {
+    background: #16a086;
+    text-transform: uppercase;
+    border-radius: 0;
+    border: none;
+}
+

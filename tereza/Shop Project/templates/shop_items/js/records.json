@@ -1,0 +1,203 @@
+[
+  {
+    "title": "WAY DOWN IN THE JUNGLE ROOM",
+    "artist": "ELVIS PRESLEY",
+    "image": "../img/record_img/cover_1.jpg",
+    "genre": "POP/ROCK",
+    "year": "1976",
+    "grading": "2CD",
+    "link": "../templates/shop_items/record_1.html",
+    "price": "16.00",
+    "tracklist": "1. Way Down (2:38)<br> 2. She Thinks I Still Care (3:51)<br>3. Bitter They Are, Harder They Fall (3:17) <br>4. Pledging My Love (2:51)<br>5. For The Heart (3:22)<br>6. Love Coming Down (3:07)<br>7. He’ll Have To Go (4:32)<br>8. Blue Eyes Crying In The Rain (3:41)<br>9. Hurt (2:07)<br>10. Never Again (2:51)<br>11. Danny Boy (3:56)<br>12. Solitaire (4:40)<br>13. Moody Blue (2:49)<br>14. It’s Easy For You (3:27)<br>15. I’ll Never Fall In Love Again (3:44) <br>16. The Last Farewell (4:02)"
+  },
+  {
+    "title": "THE CENTENNIAL COLLECTION (RECORD STORE DAY 2017)",
+    "artist": "ROBERT JOHNSON",
+    "image": "../img/record_img/cover_2.jpg",
+    "genre": "BLUES",
+    "year": "2017",
+    "grading": "3LP",
+    "price": "39.00",
+    "tracklist": "1. Way Down (2:38)<br> 2. She Thinks I Still Care (3:51)<br>3. Bitter They Are, Harder They Fall (3:17) <br>4. Pledging My Love (2:51)<br>5. For The Heart (3:22)<br>6. Love Coming Down (3:07)<br>7. He’ll Have To Go (4:32)<br>8. Blue Eyes Crying In The Rain (3:41)<br>9. Hurt (2:07)<br>10. Never Again (2:51)<br>11. Danny Boy (3:56)<br>12. Solitaire (4:40)<br>13. Moody Blue (2:49)<br>14. It’s Easy For You (3:27)<br>15. I’ll Never Fall In Love Again (3:44) <br>16. The Last Farewell (4:02)"
+  },
+  {
+    "title": "I DON'T PREFER NO BLUES",
+    "artist": "LEO BUD WELCH",
+    "image": "../img/record_img/cover_3.jpg",
+    "genre": "BLUES",
+    "year": "2016",
+    "grading": "CD",
+    "price": "15.00",
+    "tracklist": "1. Way Down (2:38)<br> 2. She Thinks I Still Care (3:51)<br>3. Bitter They Are, Harder They Fall (3:17) <br>4. Pledging My Love (2:51)<br>5. For The Heart (3:22)<br>6. Love Coming Down (3:07)<br>7. He’ll Have To Go (4:32)<br>8. Blue Eyes Crying In The Rain (3:41)"
+  },
+  {
+    "title": "THERE IS ONLY ONE ROY ORBISON",
+    "artist": "ROY ORBISON",
+    "image": "../img/record_img/cover_4.jpg",
+    "genre": "ROCK&ROLL",
+    "year": "1965",
+    "grading": "LP",
+    "price": "21.00",
+    "tracklist": "1. Way Down (2:38)<br> 2. She Thinks I Still Care (3:51)<br>3. Bitter They Are, Harder They Fall (3:17) <br>4. Pledging My Love (2:51)<br>5. For The Heart (3:22)<br>6. Love Coming Down (3:07)<br>7. He’ll Have To Go (4:32)<br>8. Blue Eyes Crying In The Rain (3:41)<br>9. Hurt (2:07)<br>10. Never Again (2:51)<br>11. Danny Boy (3:56)<br>12. Solitaire (4:40)"
+  },
+  {
+    "title": "BORN TO WANDER",
+    "artist": "JACK WOOD",
+    "image": "../img/record_img/cover_5.jpg",
+    "genre": "ROCK&ROLL",
+    "year": "1966",
+    "grading": "7'",
+    "price": "9.00",
+    "tracklist": "1. Way Down (2:38)<br> 2. She Thinks I Still Care (3:51)<br>3. Bitter They Are, Harder They Fall (3:17) <br>4. Pledging My Love (2:51)<br>5. For The Heart (3:22)<br>6. Love Coming Down (3:07)<br>7. He’ll Have To Go (4:32)<br>8. Blue Eyes Crying In The Rain (3:41)"
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "image": "",
+    "genre": "",
+    "year": "",
+    "grading": "",
+    "price": "",
+    "tracklist": ""
+  }
+]

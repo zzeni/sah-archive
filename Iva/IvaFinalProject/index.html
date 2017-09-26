@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>My awesome dress shop</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Online Dress Shop</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" id="navbar-2">
+                        <li>
+                            <a href="#">Bascket</a>
+                        </li>
+                        <li class="not-logged-in">
+                            <a href="#login" data-toggle="modal" data-target="#login-modal">Log in</a>
+                        </li>
+                        <li class="logged-in">
+                            <a href="#logout" class="logout-btn">Log out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3">
+                <p class="lead">Awesome dresses</p>
+                <div class="list-group" id="filterCategories">
+                    <a href="" data-category="black" class="list-group-item">Black dress</a>
+                    <a href="" data-category="blue" class="list-group-item">Blue dress</a>
+                    <a href="" data-category="red" class="list-group-item">Red dress</a>
+                    <a href="" data-category="white" class="list-group-item">White dress</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row carousel-holder">
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="img/slider/slide1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="img/slider/slide2.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="img/slider/slide3.jpg" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="dresses-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="login-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <form name="loginForm" class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Log in</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </span>
+                            <input type="text" name="username" class="form-control" placeholder="Username" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-star"></span>
+                            </span>
+                            <input type="password" name="password" class="form-control" placeholder="Password" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-arrow-left"></span>
+                        Close
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-lock"></span>
+                        Login
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <hr>
+        <footer>
+            <p>Copyright &copy; 2017</p>
+            <nav id="social-nav">
+                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
+            </nav>
+        </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

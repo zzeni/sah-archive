@@ -1,0 +1,202 @@
+[
+  {
+    "title": "WAY DOWN IN THE JUNGLE ROOM",
+    "artist": "ELVIS PRESLEY",
+    "image": "./img/record_img/cover_1.jpg",
+    "genre": "POP/ROCK",
+    "year": "1976",
+    "grading": "2CD",
+    "link": "./templates/shop_items/record_1.html",
+    "price": "16.00"
+  },
+  {
+    "title": "THE CENTENNIAL COLLECTION (RECORD STORE DAY 2017)",
+    "artist": "ROBERT JOHNSON",
+    "image": "./img/record_img/cover_2.jpg",
+    "genre": "BLUES",
+    "year": "2017",
+    "grading": "3LP",
+    "price": "39.00",
+    "link": "./templates/shop_items/record_2.html"
+  },
+  {
+    "title": "I DON'T PREFER NO BLUES",
+    "artist": "LEO BUD WELCH",
+    "image": "./img/record_img/cover_3.jpg",
+    "genre": "BLUES",
+    "year": "2016",
+    "grading": "CD",
+    "price": "15.00",
+    "link": "./templates/shop_items/record_3.html"
+  },
+  {
+    "title": "THERE IS ONLY ONE ROY ORBISON",
+    "artist": "ROY ORBISON",
+    "image": "./img/record_img/cover_4.jpg",
+    "genre": "ROCK&ROLL",
+    "year": "1965",
+    "grading": "LP",
+    "price": "21.00",
+    "link": "./templates/shop_items/record_4.html"
+  },
+  {
+    "title": "BORN TO WANDER",
+    "artist": "JACK WOOD",
+    "image": "./img/record_img/cover_5.jpg",
+    "genre": "ROCK&ROLL",
+    "year": "1966",
+    "grading": "7'",
+    "price": "9.00",
+    "link": "./templates/shop_items/record_5.html"
+  },
+  {
+    "title": "THE CLASH",
+    "artist": "THE CLASH",
+    "image": "./img/record_img/cover_6.jpg",
+    "genre": "PUNK/ROCK",
+    "year": "2016",
+    "grading": "LP",
+    "price": "19.00",
+    "link": "./templates/shop_items/record_6.html"
+  },
+  {
+    "title": "BEYOND THE VALLEY OF THE MURDERDOLLS (LIMITED EDITION)",
+    "artist": "MURDERDOLLS",
+    "image": "./img/record_img/cover_7.jpg",
+    "genre": "PUNK/ROCK",
+    "year": "2002",
+    "grading": "LP",
+    "price": "23.00",
+    "link": "./templates/shop_items/record_7.html"
+  },
+  {
+    "title": "LIVE AT CBGB'S 1985",
+    "artist": "THE OFFENDERS",
+    "image": "./img/record_img/cover_8.jpg",
+    "genre": "PUNK/ROCK",
+    "year": "1985",
+    "grading": "LP",
+    "price": "21.00",
+    "link": "./templates/shop_items/record_8.html"
+  },
+  {
+    "title": "BOOTS N°1 :THE OFFICIAL REVIVAL BOOTLEG",
+    "artist": "GILLIAN WELCH",
+    "image": "./img/record_img/cover_9.jpg",
+    "genre": "COUNTRY",
+    "year": "2016",
+    "grading": "2CD",
+    "price": "20.00",
+    "link": "./templates/shop_items/record_9.html"
+  },
+  {
+    "title": "INTRODUCING KARL BLAU",
+    "artist": "KARL BLAU",
+    "image": "./img/record_img/cover_10.jpg",
+    "genre": "COUNTRY",
+    "year": "2016",
+    "grading": "CD",
+    "price": "16.00",
+    "link": "./templates/shop_items/record_10.html"
+  },
+  {
+    "title": "TAKE AS NEEDED FOR PAIN (GOLD COLORED VINYL)",
+    "artist": "HANK WILLIAMS III",
+    "image": "./img/record_img/cover_11.jpg",
+    "genre": "HARD ROCK",
+    "year": "2016",
+    "grading": "LP",
+    "price": "32.00",
+    "link": "./templates/shop_items/record_11.html"
+  },
+  {
+    "title": "GODS OF VIOLENCE (LIMITED EDITION)",
+    "artist": "KREATOR",
+    "image": "./img/record_img/cover_12.jpg",
+    "genre": "TRASH METAL",
+    "year": "2017",
+    "grading": "2LP",
+    "price": "49.00",
+    "link": "./templates/shop_items/record_12.html"
+  },
+  {
+    "title": "TRAIN OF THOUGHT (LIMITED EDITION)",
+    "artist": "DREAM THEATER",
+    "image": "./img/record_img/cover_13.jpg",
+    "genre": "PROGRESSIVE METAL",
+    "year": "2003",
+    "grading": "2LP",
+    "price": "29.00",
+    "link": "./templates/shop_items/record_13.html"
+  },
+  {
+    "title": "GOT YOUR SIX (RECORD STORE DAY 2016)",
+    "artist": "FIVE FINGER DEATH PUNCH",
+    "image": "./img/record_img/cover_14.jpg",
+    "genre": "METAL",
+    "year": "2016",
+    "grading": "2LP Picture Disc",
+    "price": "39.00",
+    "link": "./templates/shop_items/record_14.html"
+  },
+  {
+    "title": "DYSTOPIA",
+    "artist": "MEGADETH",
+    "image": "./img/record_img/cover_15.jpg",
+    "genre": "HEAVY METAL",
+    "year": "2016",
+    "grading": "Picture Disc",
+    "price": "29.00",
+    "link": "./templates/shop_items/record_15.html"
+  },
+  {
+    "title": "FOX ON THE RUN (RECORD STORE DAY 2017)",
+    "artist": "SWEET",
+    "image": "./img/record_img/cover_16.jpg",
+    "genre": "ROCK",
+    "year": "1973",
+    "grading": "12'",
+    "price": "15.00",
+    "link": "./templates/shop_items/record_16.html"
+  },
+  {
+    "title": "HAMMERSMITH ODEON, LONDON '75",
+    "artist": "BRUCE SPRINGSTEEN & THE E STREET BAND",
+  "image": "./img/record_img/cover_17.jpg",
+  "genre": "POP",
+  "year": "1975",
+  "grading": "4LP",
+  "price": "59.00",
+  "link": "./templates/shop_items/record_17.html"
+  },
+  {
+    "title": "THIS OLD DOG (LIMITED EDITION)",
+    "artist": "MAC DEMARCO",
+  "image": "./img/record_img/cover_18.jpg",
+  "genre": "ROCK",
+  "year": "2007",
+  "grading": "LP",
+  "price": "22.00",
+  "link": "./templates/shop_items/record_18.html"
+  },
+  {
+    "title": "LISTEN FOR TONE (RECORD STORE DAY 2017)",
+    "artist": "THE BONNEVILLES",
+  "image": "./img/record_img/cover_19.jpg",
+  "genre": "JAZZ",
+  "year": "1987",
+  "grading": "LP",
+  "price": "29.00",
+  "link": "./templates/shop_items/record_19.html"
+  },
+  {
+    "title": "GOD SAVE SEX PISTOLS (RECORD STORE DAY 2017)",
+    "artist": "SEX PISTOLS ",
+  "image": "./img/record_img/cover_20.jpg",
+  "genre": "PUNK/ROCK",
+  "year": "2012",
+  "grading": "LP",
+  "price": "29.00",
+  "link": "./templates/shop_items/record_20.html"
+  }
+]

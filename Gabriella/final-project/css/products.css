@@ -1,0 +1,13 @@
+#productsLib {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#buy-button {
+    margin-top: 5px;
+    margin-left: 60px;
+}
+
+.productContainer {
+    margin-bottom: 30px;
+}

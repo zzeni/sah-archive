@@ -1,0 +1,28 @@
+body {
+    font-size: 18px;
+    padding: 30px;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: lightblue;
+    color: black;
+}
+
+#collection {
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 1.2em 0;
+    overflow-y: scroll;
+}
+
+#collection img {
+    height: 400px;
+    width: 100%;
+}
+
+form {
+    margin-bottom: 1.2em;
+}

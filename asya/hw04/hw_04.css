@@ -1,0 +1,101 @@
+        * {
+            font-family: Georgia, sans-serif;
+            box-sizing: border-box;
+        }
+        
+        body,
+        html {
+            height: 100%;
+        }
+        
+        .right {
+            flex-grow: 1;
+            background-color: thistle;
+            display: flex;
+            flex-direction: column;
+            padding-left: 60px;
+            padding-right: 40px;
+            overflow: auto;
+        }
+        
+        aside {
+            flex-basis: 300px;
+            float: left;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        #header {
+            text-align: center;
+            margin: 30px;
+            background-color: peachpuff;
+        }
+        
+        .flex_direction {
+            display: flex;
+            align-items: center;
+        }
+        
+        p {
+            width: 650px;
+            text-align: justify;
+        }
+        
+        #profile_image {
+            height: 150px;
+            margin-bottom: 30px;
+        }
+        
+        nav a {
+            padding: 10px 20px;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            height: 50px;
+            width: 180px;
+            display: block;
+            vertical-align: middle;
+            background-color: lightpink;
+            margin-bottom: 30px;
+        }
+        
+        .top-link {
+            text-decoration: none;
+        }
+        
+        #projects img {
+            height: 100px;
+        }
+        
+        table {
+            margin-bottom: 30px;
+        }
+        
+        td,
+        th {
+            padding: 10px;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        
+        th {
+            text-align: right;
+            background-color: #ccc;
+            padding-left: 20px;
+        }
+        
+        td {
+            background-color: #f1f1f1;
+            padding-right: 20px;
+        }
+        
+        #footer {
+            background-color: cyan;
+            flex-basis: 40px;
+            text-align: center;
+            padding: 10px;
+            margin: 30px;
+        }

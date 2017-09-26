@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>web Forms example</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <h1>Web Form
+    </h1>
+    <form method="post" action="#">
+        <div id="flexbox">
+            <fieldset>
+                <legend>User Info</legend>
+                <div>
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name="> </div>
+                <div>
+                    <label for="email">Your email</label>
+                    <input type="email" name="email" required> </div>
+                <div>
+                    <label for="password">Your Password</label>
+                    <input type="password" name="password" id="password" required> </div>
+                <div>
+                    <label for="birthdate">Your Birthdate</label>
+                    <input type="date" name="birthdate" placeholder="dd-mm-yyyy"> </div>
+                <div>
+                    <label for="text">Leave a message</label>
+                    <textarea id="text" name="text" cols="40" rows="6" placeholder="write me a message"></textarea>
+                </div>
+                <div>
+                    <label for="country">Your Country</label>
+                    <select name="country" required>
+                        <optgroup label="Asia">
+                            <option value="tibet">Tibet</option>
+                            <option value="india">India</option>
+                            <option value="china">China</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Spoken Language</legend>
+                <h3>Languages</h3>
+                <div>
+                    <input type="checkbox" name="language" id="english" value="english">
+                    <label for="english">English</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="language" id="hindi" value="hindi">
+                    <label for="hindi">Hindi</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="language" id="chinese" value="chinese">
+                    <label for="chinese">Chinese</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="language" id="pali" value="pali">
+                    <label for="pali">Pali</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Religion</legend>
+                <h3>Faith</h3>
+                <div>
+                    <label for="religion">Choose Religion</label>
+                    <select id="dropdown" name="religion">
+                        <option value="buddhism">Buddhism</option>
+                        <option value="hinduism">Hinduism</option>
+                        <option value="christianity">Christianity</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Education</legend>
+                <h3>Select your educational level</h3>
+                <h5>(select the highest)</h5>
+                <div>
+                    <input type="radio" name="level" id="high-school" value="high-school">
+                    <label for="high-school">High-school</label>
+                </div>
+                <div>
+                    <input type="radio" name="level" value="bachelor">
+                    <label for="bachelor">Bachelor Degree</label>
+                </div>
+                <div>
+                    <input type="radio" name="level" id="graduate" value="graduate">
+                    <label for="graduate">Graduate Degree</label>
+                </div>
+            </fieldset>
+        </div>
+        <div id="submit">
+            <button type="button">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

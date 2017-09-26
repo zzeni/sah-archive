@@ -1,0 +1,160 @@
+                                    * {
+                                        box-sizing: border-box;
+                                    }
+                                    
+                                    body,
+                                    html {
+                                        width: 100%;
+                                        height: 100%;
+                                        margin: 0;
+                                        padding: 0;
+                                        max-width: 100%;
+                                    }
+                                    
+                                    header {
+                                        display: flex;
+                                        max-width: 100%;
+                                    }
+                                    
+                                    #upper {
+                                        text-transform: uppercase;
+                                        font-weight: bold;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        margin-left: 50px;
+                                        margin-right: 50px;
+                                    }
+                                    
+                                    #menu {
+                                        margin-top: 20px;
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                    
+                                    #lower {
+                                        background: url(img/desk.jpg) top center no-repeat;
+                                        background-size: 100% 100%;
+                                        max-width: 100%;
+                                        margin-top: 20px;
+                                        height: 500px;
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                    
+                                    #logo-text {
+                                        background-color: ghostwhite;
+                                        width: 50%;
+                                        padding: 40px;
+                                        border: 5px solid grey;
+                                        position: absolute;
+                                        top: 200px;
+                                        text-align: center;
+                                        text-transform: uppercase;
+                                        letter-spacing: 2px;
+                                    }
+                                    
+                                    #logo-text h1,
+                                    #upper h2 {
+                                        font-weight: bold;
+                                    }
+                                    
+                                    main {
+                                        display: flex;
+                                        flex-direction: column;
+                                        max-width: 100%;
+                                    }
+                                    
+                                    nav {
+                                        margin-top: 50px;
+                                        text-align: center;
+                                    }
+                                    
+                                    ul {
+                                        list-style: none;
+                                        max-width: 100%;
+                                    }
+                                    
+                                    li {
+                                        margin: 30px;
+                                        display: inline-block;
+                                    }
+                                    
+                                    ul li a {
+                                        text-transform: uppercase;
+                                        color: black;
+                                        letter-spacing: 1.5px;
+                                    }
+                                    
+                                    .images-gallery {
+                                        display: flex;
+                                        width: 100%;
+                                        max-width: 100%;
+                                        justify-content: center;
+                                    }
+                                    
+                                    #image-gallery-2 {
+                                        margin-bottom: 100px;
+                                    }
+                                    
+                                    .images-gallery img {
+                                        width: 300px;
+                                        max-width: 100%;
+                                        height: 300px;
+                                        border: 15px solid white;
+                                    }
+                                    
+                                    footer {
+                                        background-color: #141414;
+                                        color: #948F8C;
+                                        text-align: center;
+                                        padding: 60px;
+                                        letter-spacing: 1.5px;
+                                    }
+                                    
+                                    i {
+                                        display: inline-block;
+                                        color: #899297;
+                                        margin: 25px;
+                                    }
+                                    
+                                    @media (max-width:499px) {
+                                        #logo-text {
+                                            width: 100%;
+                                        }
+                                    }
+                                    
+                                    @media (max-width:800px) {
+                                        ul {
+                                            display: flex;
+                                            flex-direction: column;
+                                            width: 100%;
+                                            padding: 0;
+                                        }
+                                        ul li {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                            height: 50px;
+                                            background-color: #141414;
+                                            margin: 2px;
+                                            padding: 20px;
+                                        }
+                                        ul li a {
+                                            color: #948F8C;
+                                        }
+                                    }
+                                    
+                                    @media (max-width:950px) {
+                                        .images-gallery img {
+                                            width: 100%;
+                                            border: 0;
+                                            margin-bottom: 20px;
+                                        }
+                                        #image-gallery-2 {
+                                            margin-bottom: 0px;
+                                        }
+                                        #images-gallery-1 {
+                                            margin-top: 20px;
+                                        }
+                                    }

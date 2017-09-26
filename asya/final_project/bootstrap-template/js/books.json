@@ -1,0 +1,178 @@
+[
+    {
+      "book_img": "https://cdn.waterstones.com/bookjackets/large/9780/2419/9780241968031.jpg",
+      "overview": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
+      "release_date": "2017-06-01",
+      "author": "Deborah Levy",
+      "price": "$6.99",
+      "id": 9780241968031,
+      "title": "Hot Milk",
+      "vote_average": 4.5,
+      "genres": "Fiction"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/override/v1/large/9781/7848/9781784873189.jpg",
+      "overview": "A chair, a table, a lamp. Above, on the  white ceiling, a relief ornament in the shape of a wreath, and in the centre of it a blank space, plastered over, like the place in a face where the eye has been taken out. There must have been a chandelier, once. They’ve removed anything you could tie a rope to.",
+      "release_date": "2017-03-08",
+      "author": "Margaret Atwood",
+      "price": "$7.49",
+      "id": 321612,
+      "title": "The Handmaid's Tale",
+      "vote_average": 4.5,
+      "genres": "Fiction"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/bookjackets/large/9780/3491/9780349142111.jpg",
+      "overview": "It wasn’t as though the farm hadn’t seen death before, and the blowflies didn’t discriminate. To them there was little difference between a carcass and a corpse. Who really killed the Hadler family?",
+      "release_date": "2017-06-01",
+      "author": "Jane Harper",
+      "price": "$5.99",
+      "id": 337339,
+      "title": "The Dry",
+      "vote_average": 4.5,
+      "genres": "Fiction, Crime, Thrillers, Mystery"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/bookjackets/large/9781/7847/9781784706173.jpg",
+      "overview": "Before motherhood, before marriage, Bridget, with biological clock ticking very, very loudly, finds herself unexpectedly pregnant at the eleventh hour: a joyful pregnancy which is dominated, however, by a crucial but terribly awkward question – who is the father? Mark Darcy: honourable, decent, notable human rights lawyer? Or Daniel Cleaver: charming, witty, notable f***wit?",
+      "release_date": "2017-05-10",
+      "author": "Helen Fielding",
+      "price": "$3.99",
+      "id": 126889,
+      "title": "Bridget Jones's Baby: The Diaries - Bridget Jones's Diary",
+      "vote_average": 5.0,
+      "genres": "Fiction, Romance, Humour"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/bookjackets/large/9781/4736/9781473663725.jpg",
+      "overview": "All trails became dead-ends. Tips that had at first seemed urgent now faded away. The waiting game began. Whoever had the manuscripts would want money, and a lot of it. They would surface eventually, but where and when, and how much would they want?",
+      "release_date": "2017-06-06",
+      "author": "John Grisham",
+      "price": "$13.99",
+      "id": 118340,
+      "title": "Camino Island",
+      "vote_average": 4.9,
+      "genres": "Crime, Thrillers, Mystery, Fiction"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/bookjackets/large/9780/0075/9780007535842.jpg",
+      "overview": "The Worldwide Number One Bestseller Wilbur Smith returns to Ancient Egypt in a captivating new novel that will transport you to extraordinary times. EGYPT IS UNDER ATTACK. The old Pharaoh Tamose lies mortally wounded. The ancient city of Luxor is surrounded. All seems lost. Taita, ex-slave and general of Tamose's armies, leads his men to victory against Egypt's enemies. But upon his victorious return to Luxor, he is seized as a traitor. Tamose is dead and a new Pharaoh has risen. ",
+      "release_date": "2017-05-18",
+      "author": "Wilbur Smith",
+      "price": "$5.99",
+      "id": 419430,
+      "title": "Pharaoh",
+      "vote_average": 4.1,
+      "genres": "Fiction, Adventure"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/bookjackets/large/9780/0074/9780007486229.jpg",
+      "overview": "THE HUNT IS ON When a sniper leaves Ben Hope's friend fighting for his life, the former SAS major declares war on the men responsible. But what begins as a straightforward revenge mission gets complicated when a mysterious letter reveals Ben to be the real target. And his isn't the only name on a crazed killer's list. Professor Anna Manzini has no idea she's in grave danger from a man she'd thought dead. She's on the cusp of a major discovery: the location of the lost Babylon idol, a golden statue of immeasurable value.",
+      "release_date": "2017-04-05",
+      "author": "Scott Mariani",
+      "price": "$7.99",
+      "id": 295693,
+      "title": "The Babylon Idol",
+      "vote_average": 4.3,
+      "genres": "Fiction, Adventure"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/override/v1/large/9780/0082/9780008220563.jpg",
+      "overview": "I didn’t write this book because I’ve achieved something extraordinary. I wrote this book because I’ve achieved something quite ordinary, which doesn’t happen to most kids who grow up like me. You see, I grew up poor, in the Rust Belt, in an Ohio steel town that has been haemorrhaging jobs and hope for as long as I can remember.",
+      "release_date": "2016-01-06",
+      "author": "J. D. Vance",
+      "price": "$7.49",
+      "id": 381288,
+      "title": "Hillbilly Elegy: A Memoir of a Family and Culture in Crisis",
+      "vote_average": 4.2,
+      "genres": "Biography, True Stories, Non-Fiction"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/bookjackets/large/9781/4736/9781473653504.jpg",
+      "overview": "I was in New York City fighting for my chess life against just one machine, a  $10 million IBM computer nicknamed “Deep Blue”. This battle, actually a rematch, became the most famous human-machine competition in history.",
+      "release_date": "2016-01-06",
+      "author": "Garry Kasparov",
+      "price": "$16.99",
+      "id": 335797,
+      "title": "Deep Thinking",
+      "vote_average": 4.4,
+      "genres": "Popular Science, Non-Fiction"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/override/v1/large/9780/5713/9780571340200.jpg",
+      "overview": "Crunch, crunch. Crunch, crunch. The sound of heavy footsteps, trudging through knee-deep snow, echoes through the night’s silence. A thick white blanket covers the wide slopes of the band of hills known as the Razorback Downs. Moonlight dances over it, glinting here and there in drifts of sparkles, as if someone has sprinkled the whole scene with diamond dust.",
+      "release_date": "2017-03-08",
+      "author": "Kieran Larwood",
+      "price": "$5.49",
+      "id": 263115,
+      "title": "The Five Realms: The Legend of Podkin One-Ear",
+      "vote_average": 4.5,
+      "genres": "Children's, Teenage, Fantasy"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/bookjackets/large/9781/4063/9781406358070.jpg",
+      "overview": "A warm and witty tale from a master storyteller, author of Carnegie Medal-winning Skellig and internationally bestseller The Boy Who Swam with Piranhas Bert and Betty Brown have got themselves a little angel. Bert found him in his top pocket when he was driving his bus.",
+      "release_date": "2017-04-05",
+      "author": "David Almond",
+      "price": "$10.99",
+      "id": 315837,
+      "title": "The Tale of Angelino Brown",
+      "vote_average": 4.6,
+      "genres": "Children's, Teenage, Fantasy"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/bookjackets/large/9781/9092/9781909278103.jpg",
+      "overview": "1940: London is about to be ravaged by the Blitz. For Lydia the last beating is the final straw. She has to escape from her husband, and when a gas explosion rips their house apart she flees, taking baby Grace with her. Rejected by her father, and not knowing where to go next, she joins a crowd of evacuee children at the railway station, and her destiny is changed forever as they find themselves in rural Wales. ",
+      "release_date": "2013-01-10",
+      "author": "Julie McGowan",
+      "price": "$9.99",
+      "id": 315837,
+      "title": "Don't Pass Me by",
+      "vote_average": 5.0,
+      "genres": "Fiction, Historical Fiction"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/bookjackets/large/9780/8631/9780863158728.jpg",
+      "overview": "Jessie is learning to be polite. When she says 'thank you' it sounds a bit like 'DA HOO'. When she says 'please' it sounds exactly like 'PEAS'. One tea-time, Jessie and her older brother Ben are left with a new babysitter.",
+      "release_date": "2012-04-19",
+      "author": "Julie McGowan",
+      "price": "$5.99",
+      "id": 315837,
+      "title": "Orange Juice Peas - Picture Kelpies",
+      "vote_average": 4.0,
+      "genres": "Children's, Picture books, Storybooks"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/bookjackets/large/9781/5970/9781597072892.jpg",
+      "overview": "Four Smurftastic stories all featuring the arch-enemy of the Smurfs, Gargamel!",
+      "release_date": "2011-11-23",
+      "author": "Yvan Delporte",
+      "price": "$5.50",
+      "id": 315837,
+      "title": "The Smurfs: Gargamel and the Smurfs No. 9",
+      "vote_average": 3.8,
+      "genres": "Children's, Comics & graphic novels"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/bookjackets/large/9781/4062/9781406274059.jpg",
+      "overview": "What makes Dilma Rousseff extraordinary? Read this book to find out. We explore her early years, including her developing interest in events and problems in her country. We look at the road to her significant political accomplishments, peaking with her role as the first female president of Brazil.",
+      "release_date": "2015-01-29",
+      "author": "Catherine Chambers",
+      "price": "$8.99",
+      "id": 315837,
+      "title": "Dilma Rousseff - Ignite: Extraordinary Women",
+      "vote_average": 3.9,
+      "genres": "Non-Fiction, Interests, People & places"
+    }, 
+    {
+      "book_img": "https://cdn.waterstones.com/override/v1/large/9780/8575/9780857535153.jpg",
+      "overview": "September, 1939. As the Second World War begins, ten-year-old Shirley is sent away on a train with her schoolmates. She doesn't know where she's going, or what's going to happen to her when she gets there. All she has been told is that she's going on 'a little holiday'.",
+      "release_date": "2014-05-18",
+      "author": "Jacqueline Wilson",
+      "price": "$9.99",
+      "id": 157336,
+      "title": "Wave Me Goodbye",
+      "vote_average": 4.3,
+      "genres": "Children's, Teenage, Historical"
+    }
+]

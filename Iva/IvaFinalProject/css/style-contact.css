@@ -1,0 +1,49 @@
+footer {
+  background-color: #2D3E50;
+  color: #ECF0F1;
+  padding: 20px;
+}
+
+main {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #ECF0F1;
+  display: flex;
+  flex-direction: column;
+}
+
+#contacts ul {
+  margin-top: 1em;
+}
+
+#contacts ul li {
+  margin: 1em 0;
+  display: flex;
+}
+
+#contacts ul li > :first-child {
+  padding-top: 2px;
+  margin-right: 0.5em;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 30px 0;
+    background-color: #303030;
+    color: #ccc;
+    text-align: center;
+    text-transform: none;
+    font-size: 20px;
+}
+
+footer a {
+    margin: 20px;
+    color: gray;
+}

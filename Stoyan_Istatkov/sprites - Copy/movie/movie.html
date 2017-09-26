@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Урок 19 - колекция филми</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-size: 18px;
+            padding: 30px;
+            background-color: rgba(0, 78, 209, 0.09);
+        }
+        h1 {
+            font-size: 2.5em;
+            font-family: "Lato Heavy" , sans-serif;
+            color: rgb(232, 190, 29);
+            text-shadow: 2px 1px 6px #444444;
+        }
+        .well {
+            background-color: #d1a91d;
+            padding: 10px;
+            margin-bottom: 40px;
+        }
+        .thumbnail {
+            background-color: rgba(209, 169, 29, 0.44);
+            border: 2px solid #d1a91d ;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="well">
+    <div class="page-header">
+        <h1 class="text-center">MY MOVIE COLLECTION</h1>
+    </div>
+     <form class="text-center" name="filmGenerator">
+         <input type="text" name="title" placeholder="Film Title" required>
+         <input type="number" name="year" min="1900" max="2016" placeholder="year" required>
+         <input type="url" name="url" placeholder="url" required>
+         <input type="text" name="imgUrl" placeholder="link to image" required>
+         <input type="submit" value=" Add! ">
+     </form>
+</div>
+
+<ul id="collection"></ul>
+
+<script src="movie.js" type="application/javascript"></script>
+</body>
+
+</html>

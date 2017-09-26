@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "type" : "snowboard",
+    "brand" : "BURTTON",
+    "price" : 129.00,
+    "color" : "white",
+    "img" : "./images/products/outlet/outlet1.jpg",
+    "inStock": true,
+    "size" : ["S", "M"]
+  }
+  {
+    "id": 2,
+    "type" : "snowboard",
+    "brand" : "BURTTON",
+    "price" : 129.00,
+    "color" : "white",
+    "img" : "./images/products/outlet/outlet1.jpg",
+    "inStock": true,
+    "size" : ["S", "M"]
+  }
+]

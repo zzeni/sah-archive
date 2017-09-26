@@ -1,0 +1,81 @@
+
+main, aside {
+    float: left;
+}
+main {
+    width: 75%;
+}
+aside {
+    width: 25%;
+    height: 100%;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li {
+    padding: 25px;
+}
+
+main {
+    background-color: aquamarine;
+}
+
+aside {
+    background-color:aqua;
+}
+
+p {
+    font-family: Verdana;
+    font-size: 15pt;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: justify;
+}
+
+ul li a {
+    padding: 25px;
+}
+
+ul li:hover {
+    background-color: blue;
+}
+
+
+ul li a:hover {
+    color: white;
+    margin: 0px;
+}
+
+footer {
+    text-align: center;
+    background-color: darkgoldenrod;
+}
+
+header.main {
+    background-color: chartreuse;
+}
+
+footer.main {
+    text-align: center;
+    margin-top: 50px;
+    clear: left;
+    background-color: darkgreen;
+}
+
+

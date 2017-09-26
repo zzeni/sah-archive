@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+div {
+    display: block;
+    margin: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 160px;
+}

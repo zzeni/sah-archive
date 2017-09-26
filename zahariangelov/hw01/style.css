@@ -1,0 +1,49 @@
+﻿body {
+    background-color: aqua;
+    font-family: Verdana;
+    font-size: 16pt;
+}
+
+a {
+    font-weight: bold;
+}
+
+ul {
+    list-style-image: url(download.png);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto auto;
+}
+
+p {
+    text-align: justify;
+}
+
+blockquote {
+    text-align: justify;
+}
+
+hr {
+    display: block;
+    border-style: dashed;
+}
+
+q {
+    quotes: "„" "“";
+}
+
+q:before {
+    content: open-quote;
+    font-family: sans-serif;
+}
+
+q:after {
+    content: close-quote;
+    font-family: sans-serif;
+}

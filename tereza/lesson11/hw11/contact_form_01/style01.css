@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  height: 100%;
+}
+
+header {
+  height: 50px;
+  background-color: darksalmon;
+}
+
+#heading {
+  text-align: center;
+  padding: 20px;
+}
+
+.btn {
+  width: 120px;
+  text-transform: uppercase;
+  color: white;
+  background-color: darksalmon;
+}
+
+.info {
+  margin: 20px;
+  text-align: left;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+#input,
+#contact-details {
+  margin-bottom: 60px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 20px;
+  background-color: dimgray;
+  color: white;
+}
+
+.arrow {
+  color: darksalmon;
+}

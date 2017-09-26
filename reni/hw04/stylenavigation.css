@@ -1,0 +1,54 @@
+body {
+    background-color: beige;
+}
+a, section, main, h2, p {
+    padding: 10px;
+}
+#container {
+    display: flex;
+}
+main {
+    flex-grow: 1;
+}
+section {
+    background-color: burlywood;
+}
+h2{
+    background-color: aquamarine;
+    border: 10px double;
+    align-content: center;
+}
+td, th {
+    padding: 10px;
+}
+th {
+    text-align: center;
+    background-color: lightpink;
+    padding-left: 20 px;
+}
+td{
+    background-color: yellow;
+}
+nav a {
+    float: left
+        padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    display: flex;
+    margin: 10px;
+    border-style: double;
+}
+.pink{
+    background-color: pink;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}

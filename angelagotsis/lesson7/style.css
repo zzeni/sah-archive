@@ -1,0 +1,76 @@
+main {
+    background-color: antiquewhite;
+    display: flex;
+    min-height: 400px;
+    border:10px dashed brown;
+}
+
+
+}
+
+section {
+    background-color: lightyellow;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-basis: 20%;
+}
+
+header {
+    background-color: cadetblue;
+    display: flex;
+}
+
+.green {
+    background-color: green;
+    border-style: dashed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 120%;
+    flex-basis: 20%;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: crimson;
+}
+
+.blue {
+    background-color: aquamarine;
+}
+nav a{
+    width:120px;
+    height:120px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 100%;
+    border:10 px dashed black;
+}
+nav{
+    display:flex;
+    }
+@media (max-width:479){
+    nav{
+        flex-direction: column;
+        
+    }
+    nav a{
+        width:100%;
+        border-radius:o;
+        height:80px;
+        margin:10px 0;
+    }
+}

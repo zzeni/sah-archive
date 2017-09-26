@@ -1,0 +1,124 @@
+* {
+		box-sizing: border-box;
+		padding: 0px;
+		margin: 0px;
+}
+
+#left {
+		flex-basis: 25%;
+		max-width: 400px;
+		background-color: crimson;
+}
+
+#left, #left a {
+		color: white;
+}
+
+#right {
+		flex-grow: 1;
+		background-color: burlywood;
+		display: flex;
+		flex-direction: column;
+}
+
+html,
+body {
+		height: 100%;
+}
+
+body {
+		padding: 0;
+		margin: 0;
+		display: flex;
+}
+
+header {
+		background-color:bisque;
+		flex-basis: 20%;
+}
+
+main {
+		background-color: white;
+		flex-grow: 1;
+		overflow: scroll;
+   	margin: 25px;
+		background-color: brown;
+}
+
+footer {
+		background-color: green;
+		flex-basis: 10%;
+		text-align: center;
+		border-top: 2px solid black;
+		border-top-style: dashed;
+		padding: 10px;
+}
+
+a.navigation {
+	display: block;
+	text-decoration: none;
+	background-color: blue;
+	color: white;
+	padding: 25px;
+	margin: 10px;
+	text-align: center;
+}
+
+div#left a:hover {
+	background-color: white;
+	color: black;
+	font-weight: bolder;
+}
+
+.img-left {
+	float: left;
+}
+
+.img-right {
+	float: right;
+}
+
+h1 {
+	box-sizing: content-box;
+	display: inline-block;
+	clear: both;
+	text-align: center;
+	width: 500px;
+	margin-left: 50px;
+}
+
+section {
+	margin: 15px;
+}
+
+p {
+	font-family: Verdana;
+	font-size: 16pt;
+	text-align: justify;
+}
+
+section {
+	clear: left;
+	margin: 50px;
+}
+
+ul li {
+	padding: 15px;
+	font-family: Verdana;
+	font-size: 16pt;
+}
+
+table, tr, th, td {
+	margin: auto auto;
+	border: 1px solid;
+	border-collapse: collapse;
+}
+
+thead tr td {
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: auto auto;
+}

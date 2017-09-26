@@ -1,0 +1,57 @@
+#my-photo {
+    width: 200px;
+    height: 150px;
+}
+
+#quoteText {
+    color: red;
+}
+
+#left {
+  flex-basis: 200px;
+  background-color: darkblue;
+}
+
+#right {
+  flex-grow: 1;
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+header {
+  background-color: firebrick;
+}
+
+main {
+  background-color: azure;
+  flex-grow: 1;
+}
+
+footer {
+  background-color: firebrick;
+  flex-basis: 40px;
+}
+
+.menuLink {
+    color: azure;
+}
+
+.projectListItem {
+    margin-left: 30px;
+}
+
+ul {
+  list-style-type: none;
+}

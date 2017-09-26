@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6em;
+}
+
+.subtask {
+  margin: 20px 0;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+ul > li {
+  list-style-type: none;
+  padding: 20px;
+  float: left;
+  background-color: lightpink;
+  width: calc(100%/6);
+}
+
+ul > li img {
+  margin: 0 auto;
+  display: block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* Вашият CSS от тук надолу */
+li img {
+    width: 100%
+}
+@media screen and (min-width:600px) and (max-width:999px) {
+    ul li {
+        width: calc(100%/3);
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:599px) {
+    ul li {
+        width: calc(100%/2);
+    }
+}
+
+@media screen and (max-width:399px) {
+    ul li {
+        width: 100%;
+    }
+}
+ul li:nth-child(2n) {
+    background-color: lightblue;
+}
+
+ul li {
+    transition: all 1s ease-in-out;
+}
+
+ul li:hover {
+    transform: rotateX(180deg);
+    background-color: lightblue;
+}
+
+
+

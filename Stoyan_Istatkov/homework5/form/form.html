@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+  <body>
+
+<form method="post" action="#">
+    <h1>Свържете се с нас!</h1>
+
+    <div>
+            <label for="name">Вашите имена</label>
+            <input type="text" name="text" value="" id="name" placeholder="Име Фамилия">
+    </div>
+
+    <div>
+            <label for="email">Вашият имейл</label>
+            <input type="email" name="text" value="" id="email" placeholder="email@example.com">
+    </div>
+
+    <div>
+        <label for="lang">Избор на език</label>
+            <select name="lang" id="lang">
+                <option value="lang">Български</option>
+                <option value="lang">Английски</option>
+                <option value="lang">Немски</option>
+            </select>
+    </div>
+
+        <div>
+                <label for="phone">Телефон</label>
+                <input type="tel" name="phone" value="" id="phone" placeholder="+359xxxxxxxxx">
+        </div>
+
+       <div>
+                <label for="textarea">Съобщение</label>
+                <textarea id="textarea" rows="5" cols="30" placeholder="Опишете Вашите запитвания тук."></textarea>
+       </div>
+
+          <div id="buttons">
+              <button type="reset">Изтрий</button>
+              <button type="submit">Изпрати</button>
+          </div>
+
+</form>
+
+</body>
+</html>

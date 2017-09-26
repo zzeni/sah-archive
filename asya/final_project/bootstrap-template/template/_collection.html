@@ -1,0 +1,56 @@
+<!-- Page Header -->
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">Our Collection of Books</h1>
+  </div>
+</div>
+<!-- /.row -->
+
+<!-- Filters row -->
+<div class="row">
+  <div class="col-lg-12">
+    <form id="filters" name="filtersForm" class="form-inline">
+        <div class="form-group">
+            <label for="sort-genres">Category</label>
+            <select id="sort-genres" name="sortGenres" class="form-control">
+                <option value="">None</option>
+                <option value="bestsellers">Bestsellers</option>
+                <option value="childrens">Children's</option>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+            </select>
+        </div>
+      <div class="form-group">
+        <label for="year">Year</label>
+        <select id="year" name="year" class="form-control">
+          <option value="">None</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="sort-by">Sort by</label>
+        <select id="sort-by" name="sortBy" class="form-control">
+          <option value="title-asc">Title ascending</option>
+          <option value="title-desc">Title descending</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+          <label for="keywords">Search By Author</label>
+        <input type="text" id="keywords" name="keywords" class="form-control">
+      </div>
+    </form>
+  </div>
+</div>
+<!-- /.row -->
+
+<!-- Collection Row -->
+<section id="collection" class="row"></section>
+<!-- /.row -->

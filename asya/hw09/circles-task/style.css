@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Courier New', fantasy;
+}
+
+div::before,
+div::after {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+div:before {
+    text-transform: uppercase;
+    font-size: 1.6em;
+    align-items: flex-end;
+}
+
+div::after {
+    font-size: 1em;
+    align-items: flex-start;
+}
+
+@media (max-width: 459px) {
+    body {
+        background-color: #F8F0E7;
+    }
+    
+    div {
+        background-color: #827C14;
+    }
+    
+    div:hover {
+        background-color: #BEC1F5;
+    }
+    
+    div:first-child:before {
+        content: "Small";
+    }
+    
+    div::after {
+        content: "<460px";
+    }
+}
+
+@media (min-width: 460px) and (max-width: 679px) {
+    body {
+        background-color: #EF875E;
+    }
+    
+    div {
+        background-color: #699BEA;
+    }
+    
+    div:hover {
+        background-color: #9F5A3E;
+    }
+    
+    div:first-child:before {
+        content: "Medium";
+    }
+
+    div::after {
+        content: "460px + 679px";
+    }
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+    body {
+        background-color: #FFF7DD;
+    }
+    
+    div {
+        background-color: #4A8422;
+    }
+    
+    div:hover {
+        background-color: #B57BDD;
+    }
+    
+    div:first-child:before {
+        content: "Large";
+    }
+
+    div::after {
+        content: "680px + 999px";
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: #F3FEFE;
+    }
+    
+    div {
+        background-color: #E84D98;
+        padding: 30px;
+    }
+    
+    div:hover {
+        background-color: #17B267;
+    }
+    
+    div:first-child:before {
+        content: "Extra-Large";
+        line-height: 1;
+        padding: 10px;
+    }
+
+    div::after {
+        content: ">1000px";
+    }
+}

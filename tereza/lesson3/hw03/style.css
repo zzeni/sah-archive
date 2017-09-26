@@ -1,0 +1,33 @@
+body {
+  background-color: beige
+}
+h1 {
+  text-align: center;
+}
+main, aside {
+  float: left;
+}
+main {
+  width: 75%;
+}
+aside {
+  width: 25%;
+}
+article {
+  display: block;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  margin-right: 150px;
+  padding: 20px;
+}
+img {
+  width: 300px;
+}
+#img-2 {
+  float:left;
+  margin:10px;
+}
+footer {
+  text-align: center;
+}

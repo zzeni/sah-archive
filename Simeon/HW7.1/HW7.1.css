@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: azure;
+}
+#container1 {
+	width: 800px;
+	height: 500px;
+	max-width: 100%;
+	background-image: url(https://i.ytimg.com/vi/Y2qfjX6Gdl4/maxresdefault.jpg);
+	background-size: cover;
+	position: relative;
+	left: 250px;
+	margin: 50px;
+}
+#container2 {
+	width: 800px;
+	height: 500px;
+	max-width: 100%;
+	position: relative;
+	left: 250px;
+	margin: 50px;
+	
+}
+img {
+	width: 350px;
+	height: 200px;
+	float: left;
+	margin: 20px;
+	
+}
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50px;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+.fa-instagram {
+	background: #125688;
+	color: white;
+}
+
+.fa-pinterest {
+	background: #cb2027;
+	color: white;
+}
+footer {
+	text-align: center;
+}

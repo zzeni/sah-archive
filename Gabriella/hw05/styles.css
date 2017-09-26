@@ -1,0 +1,47 @@
+ body {
+     height: 1000px;
+ }
+ 
+ #fixed-container {
+     width: 100%;
+     height: 300px;
+     background-color: blue;
+     position: fixed;
+     font-size: 25px;
+ }
+ 
+ #absolute-container {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     z-index: -1;
+     font-size: 25px;
+ }
+ 
+ #abs-image {
+     width: 100%;
+     height: 100%;
+ }
+ 
+ #static-container {
+     position: static;
+     padding-top: 310px;
+     width: 50%;
+     font-size: 25px;
+ }
+ 
+ #relative-container {
+     position: relative;
+     width: 50%;
+     text-align: right;
+     float: right;
+     font-size: 25px;
+ }
+ 
+ #message {
+     text-align: center;
+ }
+ 
+ p {
+     font-size: 40px;
+ }

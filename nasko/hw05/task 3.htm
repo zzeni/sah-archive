@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Task 3</title>
+        
+        <!--CSS-->
+        <style>
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            h1{
+                background-color:#C4A808 
+            }
+            div.static {
+                position: static;
+                padding: 20px;
+                width: 200px;
+                height: 100px;
+                background-color: #744E96;
+                text-align: center;
+            }
+
+            #container { 
+                position: relative;
+                /*padding: 20px;*/
+                left: 100px;
+                top:50px;
+                margin-bottom:100px;
+                width: 200px;
+                height: 100px;
+                background-color: #73AD21;
+                text-align: center;
+            }
+            
+            .clear {
+                clear:both
+            }
+            
+            div.fixed {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 100px;
+                height: 100px;
+                background-color: #D6A00B;
+            }
+            
+            div.relative {
+                position: relative;
+                width: 200px;
+                height: 100px;
+                background-color: #F3FA34;
+            } 
+
+            div.absolute {
+                position: absolute;
+                top: 40px;
+                right: 0;
+                width: 100px;
+                height: 50px;
+                background-color: #D60B48;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <!--HTML-->
+        <h1>CSS Positions explained</h1>
+        <h2>position: static;</h2>
+
+        <p>An element with position: static; is not positioned in any special way; it is 
+            always positioned according to the normal flow of the page. You cannot use the following css properties: top, right, bottom, and left</p>
+
+        <div class="static">
+            <h4> CSS element with static position </h4>
+        </div>
+
+        <h2>position: relative;</h2>
+
+        <p>An element with position: relative; is positioned relative to its normal position. This means that you can use the top, right, bottom, and left css properties</p>
+
+        <div id="container">
+            <h4>CSS element with relative position</h4>
+        </div>
+
+        <h2>position: fixed;</h2>
+
+        <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+
+        <div class="fixed">
+            <h4>CSS element with fixed position;</h4>
+        </div>
+        
+        <h2>position: absolute;</h2>
+
+        <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+        <div class="relative"><h4>CSS element with relative position</h4>
+            <div class="absolute">CSS element with absolute position;</div>
+        </div>
+
+        
+        
+    </body>
+</html>

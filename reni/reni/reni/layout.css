@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Indie Flower', cursive;
+  background-color: blanchedalmond;
+}
+
+#container1 {
+  width: 800px;
+  max-width: 100%;
+  margin: 50px auto;
+  
+}
+
+header {
+  height: 300px;
+  background-image: url(https://4.bp.blogspot.com/-4GUG7fiHXo0/WH3FRmPoHLI/AAAAAAAACzg/L_CcDhA3MEsOyrIJwfPA7F3r8ikHMMxfACLcB/s1600/dusty-pink-3.png);
+}
+
+h1 {
+  color: darkslategrey;
+  font-family: cursive;
+  background-color: rgba(255, 228, 196, 0.3);
+  padding: 20px;
+  text-shadow: 1px 1px 10px bisque;
+  font-size: 3em;
+}
+
+main {
+  height: 500px;
+  margin-top: 70px;
+}
+
+img {
+  width: 350px;
+  height: 200px;
+  float: left;
+  margin: 20px;
+}
+
+footer {
+  background-color: darkgrey;
+  margin-top: 20px;
+  border: 2px solid darkgrey;
+  padding: 20px;
+  text-align: center;
+}
+
+.fa {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}

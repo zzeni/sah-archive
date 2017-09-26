@@ -1,0 +1,12 @@
+*{ box-sizing: border-box; margin: 0;}
+body, html { height: 100%; }
+header { background: lightblue; padding: 1rem; text-align: center; }
+a { text-align: center; text-decoration: none; font-family: Impact; font-size: 1rem; color: #333;}
+aside { background: #ccc; float: left; width: 20%; padding: 2rem;min-height: 500px; font-size: 1.2rem;}
+main { float: left; width: 60%; padding: 2rem; min-height: 500px; font-size: 1.5rem;}
+footer { background: #000; color: #fff; clear: both; text-align:  center; padding: 1rem; }
+li { list-style: none; padding: .8rem; border-bottom: 1px solid }
+li:last-child { border: none; }
+h1 { font-size: 2.5rem; text-align: center;}
+h2{ font-size: 2rem; }
+ul { margin: 1.5rem 0; text-align: center;}

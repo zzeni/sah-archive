@@ -1,0 +1,43 @@
+.square{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    cursor: pointer;
+    transition: all 2s;  
+}
+body:hover .square{
+    transform: scale(2);
+    opacity: 0.25;
+    border-radius: 100%;   
+}
+.blue{
+     background-color: blue;
+    top: 10%;
+    left: 3%;
+}
+.red{
+    background-color: red;
+    top: 8%;
+    right: 15px;
+    
+}
+.green{
+    background-color: green;
+    bottom: 11%;
+    left: 14;
+}
+.yellow{
+    background-color: yellow;
+    right: 10%;
+    bottom: 15%;
+}
+h1{
+    height: 3em;
+    line-height: 3em;
+    font-size: 2em;
+    position: fixed;
+    top: calc(50% - 1.5em);
+    left: 0;
+    width: 100%;
+    text-align: center;
+}

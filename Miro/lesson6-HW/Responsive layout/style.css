@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+    font-family: Caviar Dreams;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.arrow i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #333;
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    background: lightgreen;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    display: flex;
+    background: #333;
+    position: sticky;
+    top: 0px;
+
+}
+
+nav {
+    display: flex;
+
+}
+
+ul {
+    padding: 0;
+    display: flex;
+}
+
+li a {
+    color: #ccc;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    margin: 2rem 0;
+    text-align: justify;
+}
+
+article a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: lightgreen;
+    color: #333;
+    margin-top: .5rem;
+}
+
+main,
+aside {
+    padding: 1.5rem;
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 1.5rem;
+    color: #ccc;
+}
+
+@media screen and (max-width:800px) and (min-width:600px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    aside {
+        flex-basis: 30%;
+        flex-direction: column;
+        max-width: 300px;
+        padding: 0;
+    }
+    nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: sticky;
+        top: 50px;
+        margin-top: 50px;
+    }
+    ul {
+        flex-direction: column;
+    }
+    ul li {
+        padding: 1rem;
+    }
+    main {
+        flex-basis: 70%;
+    }
+    .arrow i {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:599px) {
+
+
+    .row {
+        flex-direction: column;
+    }
+
+    aside, main {
+       display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        position: static;
+
+    }
+
+    .arrow i {
+        width: 40px;
+        height: 40px;
+    }
+
+
+}

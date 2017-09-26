@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+.social {
+    margin-left: 412px;
+    margin-top: 50px;
+}
+
+.social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social ul li {
+    height: 100px;
+    width: 100px;
+    background-image: url(images/social.jpg);
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 10px;
+    box-shadow: 0 2px 2px #cccccc;
+}
+
+.social ul li a {
+    height: 100px;
+    width: 100px;
+    display: block;
+}
+
+.social ul li.facebook {
+    background-repeat: no-repeat;
+    background-position: -17px -10px;
+    border-radius: 50%;
+}
+
+.social ul li.google-plus {
+    background-position: -142px -10px;
+    border-radius: 50%;
+}
+
+.social ul li.instagram {
+    background-position: -266px -10px;
+    border-radius: 50%;
+}
+
+.social ul li.pinterest {
+    background-position: -390px -10px;
+    border-radius: 50%;
+}
+
+.social ul li.twitter {
+    background-position: -516px -10px;
+    border-radius: 50%;
+}

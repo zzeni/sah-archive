@@ -1,0 +1,20 @@
+body {
+  background-color: lightblue;
+}
+
+div {
+  box-sizing: border-box;
+  background-color: burlywood;
+  width: 600px;
+  margin: 50px auto;
+  padding: 30px 50px;
+  text-align: center;
+}
+
+h1 {
+  background-color: yellow;
+  margin:50px;
+  border: 8px solid black;
+  border-style: dashed;
+  padding: 60px 80px;
+}

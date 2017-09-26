@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header> </header>
+
+    <nav class="navbar nav-custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Swift Academy </a> </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">About</a></li>
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sony<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"> Smartphones</a></li>
+                            <li><a href="#">Tablets</a></li>
+                            <li><a href="#">Computers</a></li>
+                        </ul>
+                        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Apple<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"> Iphones </a></li>
+                                <li><a href="#">Tablets</a></li>
+                                <li><a href="#">Computers</a></li>
+                                <li><a href="#">Ipads</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contacts</a></li>
+
+
+
+                        <ul class="nav navbar-nav navbar-right">
+
+                            
+                            <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Sign Up</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!--FORM-->
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <div class="col-sm-12">
+                                                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                            <input type="text" class="form-control" placeholder="Име"> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-12">
+                                                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                            <input type="text" class="form-control" placeholder="Фамилия"> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-12">
+                                                        <div class="input-group"> <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                                            <input type="email" class="form-control" placeholder="E-mail"> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-12">
+                                                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                                                            <input type="tel" class="form-control" placeholder="Телефон #"> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-12">
+                                                        <div class="input-group"> <span class="input-group-addon"><i class="fa fa-commenting-o" aria-hidden="true"></i></span>
+                                                            <textarea type="text" class="form-control" placeholder="Съобщение"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary">Изпрати <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                                            </form>
+                                            
+                                           
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                        <div>
+                        </div>
+
+                      
+                        <main>
+                            <div class="row text-center content">
+                                <h1>Contact us</h1>
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control miro" id="username" placeholder="Username"> </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control-reni" id="email" placeholder="Your name"> </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <textarea class="form-control-reni" rows="5" id="comment" placeholder="Your message"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 text-right">
+                                                <button class="btn btn-success btn-lg btn-reni">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Information</h3>
+                                    <ul class="list-unstyled list-custom">
+                                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Sofia 1000, bul. Cherni Vrah 43 </li>
+                                        <li><i class="fa fa-fax" aria-hidden="true"></i> +123(FAX)</li>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i> +359 88 355 2997</li>
+                                        <li><i class="fa fa-envelope" aria-hidden="true"></i> yourmail@mail.com</li>
+                                    </ul>
+                                </div>
+                        
+                        </main>
+                        <footer class="text-center"> Copyright SwiftAcademy 2017 &copy; </footer>
+                        

@@ -1,0 +1,13 @@
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.input-container {
+    margin-bottom: 5px;
+}
+
+.error {
+    color: red;
+}

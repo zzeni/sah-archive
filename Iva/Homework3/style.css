@@ -1,0 +1,47 @@
+<style>
+#logo {
+    width: 100px;
+    border: 1px solid;
+    padding: 4px;
+}
+
+body {
+    background-color: lightyellow;
+}
+
+header {
+    background-color: antiquewhite;
+}
+
+aside {
+float:right;
+}
+main {
+    width: 75%;
+}
+aside {
+    width: 15%;
+}
+
+main{
+    background-color: hotpink;
+}
+article{
+    background-color: pink;
+}
+footer {
+    background-color: lightblue;
+    text-align: center;
+}
+header,
+footer,
+main,
+article,
+figure,
+body {
+    padding: 25px;
+    margin: 20px;
+}
+
+
+</style>

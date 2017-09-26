@@ -1,0 +1,363 @@
+[
+  {
+    "id": 1,
+    "type" : "jacket",
+    "brand" : "MAMMUT",
+    "price" : 225.40,
+    "color" : "blue",
+    "img" : "./images/products/female/female4.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 2,
+    "type" : "jacket",
+    "brand" : "BURTON",
+    "price" : 125.49,
+    "color" : "orange",
+    "img" : "./images/products/female/female2.jpg",
+    "inStock": true,
+    "size" : ["L", "XL", "XXL"]
+  },
+  {
+    "id": 3,
+    "type" : "jacket",
+    "brand" : "ORTOVOX",
+    "price" : 295.10,
+    "color" : "white",
+    "img" : "./images/products/female/female1.jpg",
+    "inStock": true,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 4,
+    "type" : "jacket",
+    "brand" : "MAMMUT",
+    "price" : 165.90,
+    "color" : "red",
+    "img" : "./images/products/female/female3.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 5,
+    "type" : "jacket",
+    "brand" : "BURTON",
+    "price" : 325.40,
+    "color" : "blue",
+    "img" : "./images/products/female/female5.jpg",
+    "inStock": false,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 6,
+    "type" : "jacket",
+    "brand" : "MAMMUT",
+    "price" : 425.49,
+    "color" : "orange",
+    "img" : "./images/products/female/female6.jpg",
+    "inStock": true,
+    "size" : ["S", "L", "XL", "XXL"]
+  },
+  {
+    "id": 7,
+    "type" : "jacket",
+    "brand" : "ORTOVOX",
+    "price" : 339.99,
+    "color" : "orange",
+    "img" : "./images/products/female/female7.jpg",
+    "inStock": true,
+    "size" : ["XXL"]
+  },
+  {
+    "id": 8,
+    "type" : "jacket",
+    "brand" : "ORTOVOX",
+    "price" : 525.49,
+    "color" : "white",
+    "img" : "./images/products/female/female8.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 9,
+    "type" : "jacket",
+    "brand" : "BURTON",
+    "price" : 525.49,
+    "color" : "white",
+    "img" : "./images/products/female/female9.jpg",
+    "inStock": false,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 10,
+    "type" : "jacket",
+    "brand" : "MAMMUT",
+    "price" : 376.90,
+    "color" : "red",
+    "img" : "./images/products/female/female10.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 11,
+    "type" : "pants",
+    "brand" : "BURTON",
+    "price" : 99.90,
+    "color" : "blue",
+    "img" : "./images/products/female/female11.jpg",
+    "inStock": true,
+    "size" : ["L", "XL", "XXL"]
+  },
+  {
+    "id": 12,
+    "type" : "pants",
+    "brand" : "MAMMUT",
+    "price" : 123.90,
+    "color" : "orange",
+    "img" : "./images/products/female/female12.jpg",
+    "inStock": true,
+    "size" : ["XXL"]
+  },
+  {
+    "id": 13,
+    "type" : "pants",
+    "brand" : "MAMMUT",
+    "price" : 276.00,
+    "color" : "red",
+    "img" : "./images/products/female/female13.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 14,
+    "type" : "pants",
+    "brand" : "ORTOVOX",
+    "price" : 79.99,
+    "color" : "white",
+    "img" : "./images/products/female/female14.jpg",
+    "inStock": false,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 15,
+    "type" : "pants",
+    "brand" : "BURTON",
+    "price" : 179.99,
+    "color" : "blue",
+    "img" : "./images/products/female/female15.jpg",
+    "inStock": false,
+    "size" : ["S", "M", "L"]
+  },
+  {
+    "id": 16,
+    "type" : "pants",
+    "brand" : "ORTOVOX",
+    "price" : 299.80,
+    "color" : "red",
+    "img" : "./images/products/female/female16.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L"]
+  },
+  {
+    "id": 17,
+    "type" : "pants",
+    "brand" : "MAMMUT",
+    "price" : 99.99,
+    "color" : "red",
+    "img" : "./images/products/female/female17.jpg",
+    "inStock": true,
+    "size" : ["S", "M"]
+  },
+  {
+    "id": 18,
+    "type" : "pants",
+    "brand" : "ORTOVOX",
+    "price" : 54.67,
+    "color" : "orange",
+    "img" : "./images/products/female/female18.jpg",
+    "inStock": true,
+    "size" : ["L"]
+  },
+  {
+    "id": 19,
+    "type" : "pants",
+    "brand" : "BURTON",
+    "price" : 154.00,
+    "color" : "blue",
+    "img" : "./images/products/female/female19.jpg",
+    "inStock": true,
+    "size" : ["S","XXL"]
+  },
+  {
+    "id": 20,
+    "type" : "pants",
+    "brand" : "BURTON",
+    "price" : 300.98,
+    "color" : "red",
+    "img" : "./images/products/female/female20.jpg",
+    "inStock": true,
+    "size" : ["XXL"]
+  },
+  {
+    "id": 21,
+    "type" : "pants",
+    "brand" : "ORTOVOX",
+    "price" : 421.99,
+    "color" : "white",
+    "img" : "./images/products/female/female21.jpg",
+    "inStock": false,
+    "size" : ["XL"]
+  },
+  {
+    "id": 22,
+    "type" : "pants",
+    "brand" : "ORTOVOX",
+    "price" : 121.00,
+    "color" : "orange",
+    "img" : "./images/products/female/female22.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 23,
+    "type" : "googles",
+    "brand" : "BURTON",
+    "price" : 231.00,
+    "color" : "orange",
+    "img" : "./images/products/female/female23.jpg",
+    "inStock": true,
+    "size" : ["S", "M", "L", "XL", "XXL"]
+  },
+  {
+    "id": 24,
+    "type" : "googles",
+    "brand" : "BURTON",
+    "price" : 165.00,
+    "color" : "orange",
+    "img" : "./images/products/female/female24.jpg",
+    "inStock": false,
+    "size" : ["S","L", "XL", "XXL"]
+  },
+  {
+    "id": 25,
+    "type" : "googles",
+    "brand" : "ORTOVOX",
+    "price" : 55.78,
+    "color" : "red",
+    "img" : "./images/products/female/female25.jpg",
+    "inStock": false,
+    "size" : ["S","L", "XL", "XXL"]
+  },
+  {
+    "id": 26,
+    "type" : "googles",
+    "brand" : "ORTOVOX",
+    "price" : 78.99,
+    "color" : "white",
+    "img" : "./images/products/female/female26.jpg",
+    "inStock": true,
+    "size" : ["S","L", "XL", "XXL"]
+  },
+  {
+    "id": 27,
+    "type" : "googles",
+    "brand" : "MAMMUT",
+    "price" : 55.00,
+    "color" : "white",
+    "img" : "./images/products/female/female27.jpg",
+    "inStock": true,
+    "size" : ["S","L", "XL", "XXL"]
+  },
+  {
+    "id": 28,
+    "type" : "googles",
+    "brand" : "BURTON",
+    "price" : 432.00,
+    "color" : "blue",
+    "img" : "./images/products/female/female28.jpg",
+    "inStock": true,
+    "size" : ["S","L", "XL", "XXL"]
+  },
+  {
+    "id": 29,
+    "type" : "googles",
+    "brand" : "ORTOVEX",
+    "price" : 10.99,
+    "color" : "red",
+    "img" : "./images/products/female/female29.jpg",
+    "inStock": false,
+    "size" : ["S","L", "XL", "XXL"]
+  },
+  {
+    "id": 30,
+    "type" : "googles",
+    "brand" : "ORTOVEX",
+    "price" : 34.98,
+    "color" : "blue",
+    "img" : "./images/products/female/female30.jpg",
+    "inStock": false,
+    "size" : ["S","L", "XL", "XXL"]
+  },
+  {
+    "id": 31,
+    "type" : "googles",
+    "brand" : "MAMMUT",
+    "price" : 31.00,
+    "color" : "white",
+    "img" : "./images/products/female/female31.jpg",
+    "inStock": true,
+    "size" : ["S","L", "XL", "XXL"]
+  },
+  {
+    "id": 32,
+    "type" : "gloves",
+    "brand" : "MAMMUT",
+    "price" : 101.00,
+    "color" : "red",
+    "img" : "./images/products/female/female32.jpg",
+    "inStock": true,
+    "size" : ["S","L", "XL", "XXL"]
+  },
+  {
+    "id": 33,
+    "type" : "gloves",
+    "brand" : "BURTON",
+    "price" : 21.00,
+    "color" : "white",
+    "img" : "./images/products/female/female33.jpg",
+    "inStock": true,
+    "size" : ["S","L", "XL", "XXL"]
+  },
+  {
+    "id": 34,
+    "type" : "gloves",
+    "brand" : "ORTOVEX",
+    "price" : 200.00,
+    "color" : "blue",
+    "img" : "./images/products/female/female34.jpg",
+    "inStock": true,
+    "size" : ["S","L", "XL", "XXL"]
+  },
+  {
+    "id": 35,
+    "type" : "gloves",
+    "brand" : "ORTOVEX",
+    "price" : 284.99,
+    "color" : "white",
+    "img" : "./images/products/female/female35.jpg",
+    "inStock": true,
+    "size" : ["S","L", "XL", "XXL"]
+  },
+  {
+    "id": 36,
+    "type" : "gloves",
+    "brand" : "MAMMUT",
+    "price" : 84.89,
+    "color" : "blue",
+    "img" : "./images/products/female/female36.jpg",
+    "inStock": false,
+    "size" : ["S","L", "XL", "XXL"]
+  }
+]
+

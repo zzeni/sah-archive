@@ -1,0 +1,23 @@
+body {
+    width: 100%;
+}
+
+div {
+    width: 30%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+h3 {
+    width: 60%;
+    float: left;
+}
+
+p {
+    width: 30%;
+    float: right;
+}
+
+img {
+    width: 100%;
+}

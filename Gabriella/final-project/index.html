@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anut</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="contacts,form,name,e-mail,phone,message">
+    <meta name="keywords" content="contacts,form,name,e-mail,,phone,message">
+
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+
+    <!-- Include styles -->
+    <link rel="stylesheet" href="css/third-party/bootstrap.min.css">
+    <link rel="stylesheet" href="css/third-party/pnotify.custom.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Include js scripts -->
+    <script src="js/third-party/jquery-2.2.2.min.js"></script>
+    <script src="js/third-party/jquery.validate.min.js"></script>
+    <script src="js/third-party/bootstrap.min.js"></script>
+    <script src="js/third-party/pnotify.custom.min.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+<header>
+    <div class="logo-container">
+        <img id="logo" src="images/logo.png">
+    </div>
+    <div class="container">
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a class="header-link active" href="#home" id="home-link">Home</a></li>
+                <li><a class="header-link" href="#about" id="about-link">About</a></li>
+                <li><a class="header-link" href="#" id="contacts-link">Contact</a></li>
+                <li class="dropdown">
+                    <a class="header-link" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Products
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" id="male-products-link">Male</a></li>
+                        <li><a href="#" id="female-products-link">Female</a></li>
+                        <li><a href="#" id="outlet-link">Outlet</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">More</li>
+                        <li><a href="#" id="show-all-link">Show all</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="logged-nav-right" class="nav navbar-nav navbar-right" style="display:none;">
+                <li>
+                    <div id="greeting">
+                        <span id="greeting-text"></span>
+                    </div>
+                </li>
+                <li>
+                    <div id="cart-container">
+                        <div id="cart">
+                            <i id="shopping-card-icon" aria-hidden="true"></i>
+                        </div>
+                        <span id="itemCount"></span>
+                    </div>
+                </li>
+                <li>
+                    <div id="logout-button"><i id="logout-icon" aria-hidden="true"></i></div>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" id="non-logged-nav-right">
+                <button id="login" class="btn btn-primary pull-right header-button" data-toggle="modal" data-target="#login-modal">Login</button>
+                <button id="register" class="btn btn-success pull-right header-button" data-toggle="modal" data-target="#register-modal">
+                    Register
+                </button>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- Here all different pages will be loaded since we want to keep header and footer static -->
+<main id="main-content">
+
+</main>
+
+<!-- Modals content -->
+
+<!-- Login modal -->
+<div id="login-modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Login</h4>
+            </div>
+            <div class="modal-body">
+                <form id="login-form">
+                    <input class="form-control" id="username" name="username" placeholder="username">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="password">
+                </form>
+                <div id="bad-credentials-error" class="error" style="display:none;">
+                    <span>Bad credentials</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success center-block" id="login-button">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- register modal -->
+<div id="register-modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Create your registration</h4>
+            </div>
+            <div class="modal-body">
+                <form id="register-form">
+                    <div class="form-field-group">
+                        <input class="form-control" id="reg-username" name="reg_username" placeholder="username">
+                    </div>
+                    <div class="form-field-group">
+                        <input class="form-control" id="reg-email" name="reg_email" placeholder="email">
+                    </div>
+                    <div class="form-field-group">
+                        <input class="form-control" id="reg-password" name="reg_password" placeholder="password">
+                    </div>
+                    <div class="form-field-group">
+                        <input class="form-control" id="passwordRepeat" name="passwordRepeat" placeholder=" Repeat password">
+                    </div>
+                    <div class="form-field-group">
+                        <label class="radio-inline"><input type="radio" name="gender" value="MALE">Male</label>
+                        <label class="radio-inline"><input type="radio" name="gender" value="FEMALE">Female</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success center-block" id="register-button">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

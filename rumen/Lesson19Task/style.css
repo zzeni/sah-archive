@@ -1,0 +1,11 @@
+ul {
+    display: flex;
+    flex-flow: wrap;
+    margin: 10px;
+    background-color: lightgray;
+}
+
+ul li {
+    margin: 10px;
+    padding: 10px;
+}

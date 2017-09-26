@@ -1,0 +1,74 @@
+body {
+  font-size: 2.6em;
+}
+
+#heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 700px;
+}
+
+h1:hover {
+  color: pink;
+  transition: 0.5s ease-in-out;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+@keyframes example {
+  50% {
+    transform: scale(1);
+    border-radius: 0px;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    border-radius: 50px;
+    opacity: 0.25;
+  }
+}
+
+#heading:hover .square {
+  cursor: pointer;
+  transform: scale(2);
+  transition: 0.5s ease-in-out;
+  opacity: 0.25;
+  border-radius: 50px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#blue {
+  background-color: blue;
+  top: 10%;
+  left: 3%;
+  animation-delay: 2s;
+}
+
+#red {
+  background-color: red;
+  top: 8%;
+  right: 13%;
+  animation-delay: 1s;
+}
+
+#yellow {
+  background-color: yellow;
+  bottom: 15%;
+  right: 18%;
+  animation-delay: 2.5s;
+}
+
+#green {
+  background-color: green;
+  bottom: 11%;
+  left: 14%;
+  animation-delay: 3s;
+}

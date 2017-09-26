@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+    background-color: snow;
+}
+
+body {
+    display: block;
+    margin: 10px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+#flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    display: block;
+    min-width: inherit;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: darkseagreen;
+    margin: 10px;
+}
+
+fieldset>div {
+    margin: 10px;
+}
+
+div {
+    display: block;
+}
+
+#text {
+    text-align: center;
+}
+
+button {
+    background-color: darkgray;
+    width: 100%;
+    border: solid antiquewhite;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: cadetblue;
+    color: white;
+}

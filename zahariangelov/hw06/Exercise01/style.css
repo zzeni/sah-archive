@@ -1,0 +1,23 @@
+        label {
+            display: inline-block;
+            width: 140px;
+            text-align: left;
+            padding: 5px;
+        }
+
+    div {
+        margin: 10px;
+        font-family: Verdana;
+    }
+
+    #box * {
+        vertical-align: text-top;
+    }
+
+    input, select, textarea {
+        border: 2px solid;
+    }
+
+    input {
+        height: 20px;
+    }

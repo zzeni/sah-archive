@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 30px auto;
+    padding: 0;
+    background-color: #FFE6EA;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #AA999C;
+}
+
+#conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    background-image: url(social-media.png);
+    background-repeat: no-repeat;
+    height: 120px;
+    display: inline-block;
+}
+
+nav div:not(:first-child) {
+    width: 110px;
+}
+
+#first {
+    width: 130px;
+}
+
+#second {
+    background-position: -138px;
+}
+
+#third {
+    background-position: -262px;
+}
+
+#fourth {
+    background-position: -386px;
+}
+
+#fifth {
+    background-position: -512px;
+}

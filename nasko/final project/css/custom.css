@@ -1,0 +1,79 @@
+    p   {
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    img {
+        border: 0;
+        border-radius: 50%;
+        height:200px;
+        width:200px;
+        margin-top:40px;
+    }
+
+    .post-preview>a>.post-title {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #filters label {
+    font-weight: lighter;
+    display: block;
+    margin:10px;
+    }
+
+
+    .form-group{
+        /*background-color: lightblue;*/
+        /*margin: 5px 0 0;*/
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        padding: 15px 25px;
+        border-radius: 0;
+    }
+
+    .form-group:nth-child(1) {
+        position:relative;
+    }
+    .form-group:nth-child(2) {
+        position:relative;
+        margin-top: 10px;
+    }
+
+    .form-inline {
+        padding:20px;
+        margin: 30px;
+        width: 100%
+    }
+
+    .ratings {
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 17px;
+    }
+
+    .rating-stars {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-image: url("../img/rating-stars.png");
+        background-size: 90px auto;
+        background-position: 0 0;
+    }
+    .rating-background {
+        height: 22px;
+        width: 90px;
+        background-image: url("../img/rating-stars.png");
+        background-size: 90px auto;
+        background-position: 0 24px;
+    }
+
+    #collection {
+        margin:10px;
+    }
+

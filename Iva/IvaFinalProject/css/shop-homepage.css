@@ -1,0 +1,88 @@
+body {
+    background-color: aliceblue;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 100px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+.rating-background {
+    height: 22px;
+    width: 90px;
+    background-image: url("../img/rating-stars.png");
+    background-size: 90px auto;
+    background-position: 0 24px;
+}
+
+.rating-stars {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../img/rating-stars.png");
+    background-size: 90px auto;
+    background-position: 0 0;
+}
+
+.thumbnail {
+    padding: 40px;
+}
+
+.thumbnail:hover {
+    content: "";
+    background-color: lightgrey;
+  }
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+#filterCategories a {
+    margin: 10px 0;
+
+}
+footer {
+    margin-top: 40px;
+    padding: 30px 0;
+    background-color: #303030;
+    color: #ccc;
+    text-align: center;
+    text-transform: none;
+    font-size: 20px;
+}
+
+footer a {
+    margin: 20px;
+    color: gray;
+}
+
+

@@ -1,0 +1,58 @@
+html {
+    background-color: azure
+}
+body{
+    background-color: lightblue;
+    margin: 30px;
+    padding: 20px;
+}
+header{
+    background-color:azure;
+    text-align: center;
+    width: 100%;
+}
+
+.blue{
+background-color: dodgerblue;
+}
+.violet {
+    background-color: blueviolet;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: orange;
+}
+nav a {
+    font-family:  sans-serif;
+    padding: 10px 30px;
+    color: black;
+    text-decoration:none;
+    text-align: center;
+    width: 200px;
+    display:inline-flex;
+}
+td, th {
+    padding: 10px;
+}
+th {
+    text-align: right;
+    background-color: inherit;
+    padding-left: 20px;
+}
+td {
+    background-color: inherit;
+    padding-right: 20px;
+}
+.pic {
+    width: 70px;
+    height: 70px;
+}
+footer{
+    text-align: center;
+
+}
+p{
+    text-align: justify;
+}

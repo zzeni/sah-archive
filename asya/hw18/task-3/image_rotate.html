@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image rotate</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            padding: 40px;
+        }
+        img {
+            width: 250px;
+            max-width: 100%;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div id="params">
+<!--            <img src="dog.jpg" alt="dog.jpg" title="Dog">-->
+        </div>
+        
+<!--        <script src="script.js" type="application/javascript"></script>-->
+    <script>
+//        var theImage = document.querySelector("params"); 
+//        theImage function() {
+//            document.querySelector("img").classList.toggle("rotated");
+//        }
+//        
+//        var theImage = window.setInterval(function () {
+//            var newElement = document.createElement("div");
+//            newEl.textContent = "Hi!";
+//            document.body.appendChild(newElement);
+//        }, 2000);
+//        
+//        var theImage = window.setInterval(function () {
+//            var newElement = document.createElement("div");
+//            newElement.textContent = "img src=dog.jpg";
+//            newElement.style.transform = "rotate(90deg)";
+//            document.body.appendChild(newElement);
+//        }, 2000);
+//        
+//        window.setTimeout(function () {
+//            window.clearInterval(theImage);
+//        }, 10000);
+         
+            var img = document.createElement("img");
+            img.src = "dog.jpg";
+
+            var src = document.getElementById("params");
+            src.appendChild(img);
+
+            var start = window.setInterval(function () {
+                img.style.transform = "rotate(90deg)";
+                document.body.appendChild(img);
+            }, 2000);
+            
+            window.setTimeout(function () { 
+                window.clearInterval(start);
+            }, 10000);
+        
+//        var start = window.setInterval(function () {
+//            var newEl = document.getElementById("first");
+//            newEl.style.transform = "rotate(90deg)";
+//            document.body.appendChild(newEl);
+//        }, 2000);
+//
+//        window.setTimeout(function () {
+//            window.clearInterval(start);
+//        }, 10000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+  background-color:beige;
+  color:cadetblue;
+}
+h1 {
+  color:cadetblue;
+  text-align:center;
+}
+figure {
+  position: relative;
+  text-align: center;
+}
+.fig1 {
+}
+figcaption {
+  text-align: center;
+  font-size: 30px;
+}
+#new1, #new2 {
+  width: 400px;
+}
+img {
+  width: 1000px;
+}
+p {
+  width: inherit;
+}

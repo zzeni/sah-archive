@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#left {
+    flex-basis: 25%;
+    max-width: 400px;
+    background-image: url(images/left-background.jpg);
+    height: 100%;
+}
+
+#left a,
+q,
+footer p {
+    font-family: 'Shadows Into Light' cursive;
+    color: lightgray;
+    display: block;
+    background-color: black;
+    opacity: 0.7;
+    margin: 10px;
+    text-align: center;
+}
+
+#left a:hover {
+    color: whitesmoke;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+#my-photo {
+    border: 10px black solid;
+    margin: 30px
+}
+
+#right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+#right a {
+    color: black;
+    text-align: center;
+}
+
+#right a:hover {
+    color: darkgray;
+}
+
+header {
+    background-image: url(images/left-background.jpg);
+    color: lightgray;
+    text-align: center;
+}
+
+section {
+    border: 10px black solid;
+    padding: 10px;
+    text-align: center;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+footer {
+    background-color: black;
+    color: lightgray;
+    text-align: center;
+    border-top: 2px solid black;
+    padding: 10px;
+    flex-basis: 10%;
+}
+
+main {
+    background-color: lightgrey;
+    flex-grow: 1;
+    height: 100%;
+    overflow: scroll;
+}

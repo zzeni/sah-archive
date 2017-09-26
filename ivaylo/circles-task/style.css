@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+    
+}
+
+#circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 0;
+    font-family: fantasy;
+}
+
+#circle::before {
+    content: "";
+    height: 200px;
+    
+    margin: -10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+    font-weight: 200;
+}
+
+#circle::after {
+    font-family: fantasy;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:459px) {
+    body {
+        background-color: #F9F0E7;
+        min-width: 100%;
+    }
+    #circle {
+        background-color: #827C14;
+    }
+    #circle::before {
+        content: "SMALL";
+        width: 120px;
+    }
+    #circle::after {
+        content: "< 460px";
+        width: 140px;
+        margin: -70px auto;
+    }
+}
+
+@media (min-width:460px) and (max-width:679px) {
+    body {
+        background-color: #EF875E;
+        min-width: 100%;
+    }
+    #circle {
+        background-color: #699BEA;
+    }
+    #circle::before {
+        content: "MEDIUM";
+        width: 180px;
+        line-height: 50px;
+    }
+    #circle::after {
+        content: "460px-679px";
+        width: 140px;
+        margin: -70px auto;
+    }
+}
+
+@media (min-width:680px) and (max-width:999px) {
+    body {
+        background-color: #FFF7DD;
+        min-width: 100%;
+    }
+    #circle {
+        background-color: #4A8422;
+    }
+    #circle::before {
+        content: "LARGE";
+        width: 120px;
+        height: 170px;
+        margin: 0 auto;
+    }
+    #circle::after {
+        content: "680px - 999px";
+        width: 140px;
+        margin: -60px auto;
+    }
+}
+
+@media (min-width:1000px) {
+    body {
+        background-color: #F3FFFF;
+        min-width: 100%;
+    }
+    #circle {
+        background-color: #E84E98;
+    }
+    #circle::before {
+        content: "EXTRA-LARGE";
+        width: 140px;
+       
+        line-height: 25px;
+    }
+    #circle::after {
+        content: "> 1000px";
+        width: 140px;
+        margin: -50px auto;
+    }
+}

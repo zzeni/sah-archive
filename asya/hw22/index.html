@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Movies' collection</title>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="custom.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <form name="filmGenerator">
+      <input type="text" name="title" placeholder="Film Title" required>
+      <input type="number" name="year" min="1900" max="2016" placeholder="year" required>
+      <input type="url" name="url" placeholder="url" required>
+      <input type="url" name="imageUrl" placeholder="image url" required>
+      <input type="submit" value="Add!">
+    </form>
+
+    <button id="fetch-well" class="btn btn-primary btn-lg">Offers</button>
+    <button id="fetch-services" class="btn btn-success btn-lg">Services</button>
+    <button id="fetch-about" class="btn btn-danger btn-lg">About</button>
+    
+    <div id="dynamic-part"></div>
+      
+    <div id="collection" class="row"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="script.js" type="application/javascript"></script>
+  </body>
+
+</html>

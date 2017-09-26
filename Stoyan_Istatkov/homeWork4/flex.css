@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-size: 16px;
+    font-family: "Lato Medium" , sans-serif;
+    color: #618178;
+    margin:0;
+    padding:0;
+}
+#left, #right {
+    margin: 0;
+    padding: 0;
+}
+#main {
+    display:flex;
+}
+#left {
+    display:flex;
+    flex-direction: column;
+    background-color:#618178;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+#right {
+    display:flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+aside {
+    /*position: fixed;*/
+    /* breake the flow*/
+}
+ aside img {
+    width: 200px;
+    margin-bottom: 20px;
+     border: 10px solid transparent;
+
+}
+ aside ul {
+
+    text-align: center;
+    text-transform: uppercase;
+}
+ aside ul li {
+    list-style-type: none;
+
+}
+aside ul a {
+    color: #686868;
+    background-color: #e9e9d2;
+    display: block;
+    margin: 10px;
+    padding: 10px 5px;
+    text-decoration: none;
+}
+aside ul a:hover {
+     color: rgb(159, 13, 59);
+     box-shadow: 0 0 25px rgba(217, 217, 192, 0.8);
+ }
+header  {
+    color: cornsilk;
+    background-color: rgba(190, 27, 77, 0.9);
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+ h1 {
+     font-family: "Lato Heavy" , sans-serif;
+     font-size: 40px;
+     letter-spacing: 4px;
+ }
+ h2  {
+     color: #686868;
+     border-bottom: 3px double rgba(190, 27, 77, 0.9);
+     padding-bottom: 5px;
+ }
+
+ article {
+     padding: 30px;
+ }
+ article p {
+     margin-top: 15px;
+     padding: 10px;
+     background-color: rgba(217, 217, 192, 0.2);
+     border-radius: 2px;
+ }
+ article a {
+     color: rgba(190, 27, 77, 0.6);
+     text-decoration: none;
+ }
+.top-link  {
+    text-align: right;
+}
+ .gallery  {
+     margin-top: 20px;
+     margin-left: 20px;
+ }
+.gallery li {
+    display: inline-block;
+}
+.gallery img {
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(190, 27, 77, 0.6);
+}
+.contacts  {
+    background-color: rgba(217, 217, 192, 0.2);
+    margin-top:  15px;
+}
+.contacts  li {
+    padding: 10px 0 10px 20px;
+    display: inline-block;
+    list-style-type: none;
+}
+.contacts ul a {
+    color: rgba(190, 27, 77, 0.6);
+    text-decoration: none;
+}
+footer {
+    flex-basis: 40px;
+    background-color: #d2d2bc;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}

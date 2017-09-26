@@ -1,0 +1,16 @@
+body {
+  background-color:dimgray;
+  color: burlywood;
+}
+h1, h2, h3 {
+  color: antiquewhite;
+}
+h2 {
+  text-decoration:underline;
+}
+a {
+  color: chartreuse
+}
+#random {
+  background-color: blue; 
+}

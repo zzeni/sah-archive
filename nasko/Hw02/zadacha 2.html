@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Основния html</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <style>
+    #logo {
+      width: 40px;
+      border: 1px solid;
+      padding: 4px;
+    }
+
+    body {
+      background-color: whitesmoke;
+    }
+
+    header {
+      background-color: lightgreen;
+    }
+
+    main {
+      background-color: burlywood;
+    }
+
+    article {
+      background-color: lightyellow;
+    }
+
+    footer {
+      background-color: lightblue;
+      text-align: center;
+    }
+
+    figure {
+      background-color: antiquewhite;
+      margin: 0;
+    }
+
+    span {
+/*      color: red;*/
+    }
+
+    header,
+    footer,
+    main,
+    article,
+    figure,
+    body {
+      padding: 25px;
+      margin: 20px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>
+    <img id="logo" src="Halva.jpg" alt="" title="this is the title">
+      My favourite Turkish sweets
+    </h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#article1">Article 1</a></li>
+      <li><a href="#article2">Article 2</a></li>
+    </ul>
+
+  </nav>
+
+
+  <main>
+
+    <figure>
+      <img src="Halva.jpg" alt="my image">
+      <figcaption>My image</figcaption>
+    </figure>
+
+    <article id="article1">
+      <h2>Halva</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales non ligula a iaculis. In scelerisque mollis nibh. Etiam ac tellus a tortor ultrices placerat. <a href="other/other.html">Click here</a>.
+        <br> Maecenas vitae rhoncus orci, vel venenatis dolor. Sed eu orci fermentum, malesuada diam vel, faucibus lectus. Pellentesque fringilla neque a dolor laoreet malesuada. <span>Aliquam erat volutpat.</span> Duis et mi porta, auctor ex id, condimentum sem. Mauris diam ante, suscipit quis mauris eu, accumsan ultricies nisl.
+      </p>
+      <p>
+        The inline elements are: <a href="">links</a>, <strong>strong</strong>, <em>emphasize</em>,
+        <mark>mark</mark>,  <span>span</span>, <input> and <button>Click me</button>
+      </p>
+      <p>
+        Morbi massa arcu, elementum vehicula maximus et, facilisis nec est. Duis ultricies dignissim convallis. Maecenas vel laoreet leo.
+      </p>
+    </article>
+
+
+    <article id="article2">
+      <h2>Turkish delight</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales non ligula a iaculis. In scelerisque mollis nibh. Etiam ac tellus a tortor ultrices placerat. <a href="other/other.html">Link</a>.
+        <br> Maecenas vitae rhoncus orci, vel venenatis dolor. Sed eu orci fermentum, malesuada diam vel, faucibus lectus. Pellentesque fringilla neque a dolor laoreet malesuada. <span>Aliquam erat volutpat.</span> Duis et mi porta, auctor ex id, condimentum sem. Mauris diam ante, suscipit quis mauris eu, accumsan ultricies nisl.
+      </p>
+    </article>
+
+  </main>
+
+  <footer>
+    Copyright &copy; 2017
+  </footer>
+</body>
+
+</html>

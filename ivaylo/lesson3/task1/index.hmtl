@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>eMAG store</title>
+    <meta charset="utf-8">
+
+    <style>
+        body {
+            background-color: azure;
+            color: black;
+        }
+
+        #main {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="main">
+            PC COMPONENTS STORE</h1>
+
+    </header>
+    <h2><em><strong>Discounts of the day</strong></em></h2>
+    <br>
+
+    <p1><strong>CPUs</strong></p1>
+
+    <ul>
+        <li>Intel - <em>240$</em>
+            <a href="#intel">
+                <img src="img/intel.jpg" title="intel_cpu" alt="hdd image" width="50">
+            </a>
+        </li>
+
+        <li>AMD - <em>160$</em>
+            <a href="#amd">
+                <img src="img/amd.jpeg" title="amd_cpu" alt="external hdd" width="50">
+            </a>
+        </li>
+    </ul>
+
+    <p>
+        <strong>..interested in the new AMD "Ryzen"?</strong>
+        <a href="http://www.emag.ro/search/ryzen" target="_blank">
+            <img src="img/ryzen.jpg" title="ryzen cpu" alt="ryzen cpu" width="40px">
+        </a>
+    </p>
+    <hr>
+
+    <p1><strong>HDDs</strong></p1>
+
+    <ul>
+        <li>SATA - <em>40$</em></li>
+        <li>SSD - <em>60$</em></li>
+        <li>external hard drive - <em>85$</em></li>
+
+    </ul>
+    <img src="img/seagate_laptop_sshd.jpg" title="sata hdd" alt="hdd image" width="50">
+    <img src="img/EXT.jpg" title="external hdd" alt="external hdd" width="50">
+    <img src="img/ssd.jpg" title="ssd" alt="ssd hard drive" width="60">
+
+    <p><strong>..and many more here</strong> <a href="http://www.emag.ro/hard_disk-uri/c">to web store</a></p>
+
+
+    <hr>
+    <article>
+        <h1 id="intel">Intel CPU</h1>
+
+        <p>
+            Enjoy truly amazing performance at an affordable price with Intel Core i5 Laptops.Unleash the multimedia multitasker within you, with an Intel Core i5 Laptop. These laptops come packed with new performance features to improve your computing experience and make your digital life easier, faster and more exciting.Intel Hyper-Threading Technology means that Intel Core i5 Laptops are perfect for running all your key applications at the same time. Want to download music while you're watching a HD movie? Go for it; an Intel Core i5 Laptop will handle anything you can throw at it.
+        </p>
+    </article>
+    <br>
+    <hr>
+    <p1><strong>Video cards</strong></p1>
+
+    <ul>
+        <li>Nvidia - <em>120$</em></li>
+        <li>AMD - <em>90$</em></li>
+    </ul>
+    <hr>
+    <p1><strong>Motherboards</strong></p1>
+    <ul>
+        <li>Intel - <em>110%</em></li>
+        <li>AMD - <em>89$</em></li>
+    </ul>
+    <br>
+    <hr>
+    <article>
+        <h1 id="amd">AMD CPU</h1>
+
+        <p>
+            The Ryzen 7 family is AMD’s high-end CPU line, all equipped with eight-cores and 16 threads. We’re specifically reviewing the highest-end 1800X model here. It runs at a base clock speed of 3.6 GHz and a boost clock of 4.0 GHz. At $499 USD, the Ryzen 7 1800X is aimed at those who are in the market for a CPU that’s competent for gaming, but built to handle multi-core tasks like video production and streaming. It aims to represent a blend of professional use-case scenarios with relative consumer affordability.
+        </p>
+    </article>
+    <br>
+    <hr>
+    <footer>
+        <blockquote cite="https://http://www.emag.ro/info/30-de-zile-drept-de-retur"><em>At eMAG, just as you bought simply return it simple, hassle free. If for any reason you are not 100% satisfied with a product you bought, you can return it within 30 days from the time you were delivered by courier. Products can be returned using the form back or showrooms eMAG.</em></blockquote>
+    </footer>
+
+</body>
+
+</html>

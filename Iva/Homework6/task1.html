@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lesson6</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <header></header>
+    <h1>Свържете се с нас</h1>
+    <form method="post" action="#">
+        <fieldset>
+            <div>
+                <label for="name">Вашите имена</label>
+                <input type="text" name="name" value="" id="name" required>
+            </div>
+            <div>
+                <label for="email">Вашият email</label>
+                <input type="email" name="email" value="" id="email" required>
+            </div>
+            <div>
+                <label for="lang"> Избор на език </label>
+                <select name="lang" required>
+                    <option value="bg">Български</option>
+                    <option value="eng">Английски</option>
+                    <option value="ger">Немски</option>
+                </select>
+            </div>
+            <div>
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" value="" id="tel" placeholder="+359xxxxxxxxx" required>
+            </div>
+            <div>
+                <label for="message">Съобщение</label>
+                <textarea cols="30" rows="5" name="message" placeholder="Опишете вашето запитване тук" required></textarea>
+            </div>
+            <div>
+                <label for="message"></label>
+                <button type="reset" name="button">Изтрий</button>
+                <button type="submit" name="button">Израти</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

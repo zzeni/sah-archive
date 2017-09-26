@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Contact form </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Radosveta Stoykova">
+    <link rel="stylesheet" href="contactform.css">
+</head>
+
+<body>
+    <h1>Свържете се с нас!</h1>
+    <form method="post">
+        <div class="row">
+            <label for="message"> Вашите имена</label>
+            <input type="text " name="names " id="names " placeholder="Име Фамилия "></div>
+
+        <div class="row ">
+            <label for="email ">Вашият имейл</label>
+            <input type="email " name="email " id="email " placeholder="email@example.com "></div>
+
+        <div class="row ">
+            <label for="language ">Избор на език</label>
+            <select name="language " id="language ">
+            <option value="BG ">Български</option> 
+             <option value="EN ">Английски</option>
+            <option value="RU ">Руски</option> 
+                                </select>
+            <div class="row">
+                <label for="number">Телефон</label>
+                <input type="tel" name="number" id="number" placeholder="+359********">
+            </div>
+            <div class="row" id="flex">
+                <label for="message"> Съобщение</label>
+                <textarea id="message" name="message" placeholder="Вашето запитване тук"></textarea>
+
+
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>

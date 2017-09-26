@@ -1,0 +1,50 @@
+body {
+    padding: 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.rightImage {
+    float: right;    
+}
+
+.leftImage {
+    float: left;    
+}
+
+section {
+    margin: 0 auto;
+}
+
+@media (max-width: 799px) {
+    section {
+        width: 100%;
+    }
+    img {
+    float: none;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 800px) {
+    section {
+        width: 800px;
+    }
+    img {
+    width: 220px;
+        height: 220px;
+  }
+}
+
+@media (min-width: 1400px) {
+     section {
+        width: 1000px;
+    }
+    img {
+    width: 280px;
+        height: 280px;
+  }
+}

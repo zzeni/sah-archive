@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #EDF0F1;
+}
+
+header {
+    height: 50px;
+    background-color: #322E38;
+}
+
+#heading {
+    text-align: center;
+    margin: 30px;
+}
+
+.btn {
+    width: 140px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #322E38;
+}
+
+#info {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#contacts li {
+    margin-top: 10px;
+}

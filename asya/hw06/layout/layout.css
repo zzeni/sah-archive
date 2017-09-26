@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: lightblue;
+    margin: 10px;
+}
+
+#container {
+    width: 100%;
+}
+
+h1 {
+    border: 3px solid pink;
+    color: white;
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+aside,
+main {
+    padding: 10px;
+    overflow: auto;
+    height: 600px;
+}
+
+aside {
+    background-color: lightcoral;
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+#top {
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: pink;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+a:hover {
+    background-color: white;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+nav h2 {
+    text-align: center;
+}
+
+footer {
+    clear: left;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 599px) {
+    header,
+    aside,
+    main {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    li a {
+        float: left;
+        color: black;
+        font-size: 16px;
+        width: 80px;
+    }
+    
+    aside {
+        flex-grow: 1;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    aside h2 {
+        margin-top: 0px;
+        font-size: 18px;
+    }
+    
+    #right {
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+    h1 {
+        background-color: palevioletred;
+    }
+    
+    aside {
+        background-color: lightblue;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        background-color: white;
+    }
+}

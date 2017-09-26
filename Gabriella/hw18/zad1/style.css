@@ -1,0 +1,13 @@
+img {
+  width: 100%;
+}
+
+div {
+  width: 150px;
+  margin: 20px;
+  float: left;
+}
+
+.hidden {
+  display: none;
+}

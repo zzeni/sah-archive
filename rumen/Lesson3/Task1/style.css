@@ -1,0 +1,60 @@
+body {
+    background-color: darkmagenta;
+}
+
+main,
+aside {
+    float: left;
+    background-color: black;
+}
+
+aside,
+li a {
+    color: white;
+    background-color: brown;
+}
+
+main {
+    width: 75%;
+}
+
+aside {
+    width: 25%;
+}
+
+header {
+    background: blue;
+    background: linear-gradient(white, blue);
+    text-align: center;
+}
+
+img {
+    width: 20%;
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+blockquote {
+    margin: 0;
+}
+
+h2 {
+    text-align: center
+}
+
+article:first-child {
+    background: white;
+    background: linear-gradient(white, red);
+}
+
+article:last-child {
+    background: white;
+    background: linear-gradient(white, green, red);
+}
+
+footer {
+    width: 100%;
+    float: right;
+    text-align: center;
+    background: red;
+}

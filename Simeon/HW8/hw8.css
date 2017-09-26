@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+
+#main-container {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.container {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	border-radius: 100%;
+
+}
+
+@media screen and (max-width: 459px) {
+	.container {
+		background-color: yellowgreen;
+	}
+	.container::after {
+		content: "small <460px";
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 70px;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: fantasy;
+		font-size: 1.7em;
+	}
+	.container:hover {
+		background-color: lightpink;
+	}
+	#main-container {
+		background-color: antiquewhite;
+		width: 360px;
+		height: 600px;
+	}
+}
+
+@media screen and (min-width: 460px) and (max-width: 679px) {
+	.container {
+		background-color: skyblue;
+	}
+	.container::after {
+		content: "medium 460px+679px";
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 50px;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: fantasy;
+		font-size: 2em;
+	}
+	.container:hover {
+		background-color: lightpink;
+	}
+	#main-container {
+		background-color: coral;
+		width: 600px;
+		height: 360px;
+	}
+}
+
+@media screen and (min-width: 680px) and (max-width: 999px) {
+	.container {
+		background-color: forestgreen;
+	}
+	.container::after {
+		content: "large 680px+999px";
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 55px;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: fantasy;
+		font-size: 1.6em;
+	}
+	.container:hover {
+		background-color: lightpink;
+	}
+	#main-container {
+		background-color: beige;
+		width: 800px;
+		height: 600px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.container {
+		width: 130px;
+		height: 130px;
+		background-color: hotpink;
+	}
+	.container::after {
+		content: "extra-large >1000px";
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 30px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: fantasy;
+		font-size: 1.3em;
+	}
+	.container:hover {
+		background-color: lightpink;
+	}
+	#main-container {
+		width: 1200px;
+		height: 800px;
+	}
+}

@@ -1,0 +1,263 @@
+        /*!
+* Start Bootstrap - Shop Homepage (http://startbootstrap.com/)
+* Copyright 2013-2016 Start Bootstrap
+* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+*/
+
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+
+    .slide-image {
+        width: 100%;
+    }
+
+    .carousel-holder {
+        margin-bottom: 30px;
+    }
+
+    .carousel-control,
+    .item {
+        border-radius: 4px;
+    }
+
+    .caption {
+        height: 130px;
+        overflow: hidden;
+    }
+
+    .caption h4 {
+        white-space: nowrap;
+    }
+
+    .thumbnail img {
+        width: 70%;
+    }
+
+    .ratings {
+        padding-right: 10px;
+        padding-left: 10px;
+        color: #d17581;
+    }
+
+    .thumbnail {
+        padding: 0;
+    }
+
+    .thumbnail .caption-full {
+        padding: 9px;
+        color: #333;
+    }
+
+    footer {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    #footer-container {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+    }
+
+    #copyright {
+        font-size: 1.2em;
+    }
+
+    .createdBy {
+        font-style: italic;
+    }
+
+    i {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: #0066FF;
+    }
+
+    footer a:hover {
+        color: #D4D4D4;
+    }
+
+    #logo {
+        position: relative;
+        top: -9px;
+        width: 50px;
+        height: 38px;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+
+    #brand-name {
+        color: #9d9d9d;
+        font-size: 1.3em;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    #brand-name:hover {
+        color: #D4D4D4;
+    }
+
+    #logoContainer {
+        display: flex;
+        text-decoration: none;
+    }
+
+    #large-logo-img {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 500px;
+    }
+
+    #interior {
+        margin-top: 20px;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    #aboutUsHeading {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #aboutContent {
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+
+    .rating-background {
+        height: 22px;
+        width: 90px;
+        background-image: url("../img/rating-stars.png");
+        background-size: 90px auto;
+        background-position: 0 24px;
+    }
+
+    .rating-stars {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-image: url("../img/rating-stars.png");
+        background-size: 90px auto;
+        background-position: 0 0;
+    }
+
+    #filters {
+        margin-bottom: 20px;
+    }
+
+    #menu-up {
+        z-index: 9999;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        font-size: 2em;
+        background-color: black;
+        color: #0066FF;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        float: right;
+    }
+
+    #menu-up:hover {
+        color: #D4D4D4;
+    }
+
+    #contact-heading {
+        margin-bottom: 20px;
+    }
+
+    section#contact .form-group {
+        margin-bottom: 25px;
+    }
+
+    section#contact .form-group input,
+    section#contact .form-group textarea {
+        padding: 20px;
+    }
+
+    section#contact .form-group input.form-control {
+        height: auto;
+    }
+
+    section#contact .form-group textarea.form-control {
+        height: 236px;
+    }
+
+    section#contact .form-control:focus {
+        border-color: #0066FF;
+        box-shadow: none;
+    }
+
+    section#contact ::-webkit-input-placeholder {
+        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #0066FF;
+    }
+
+    section#contact :-moz-placeholder {
+        /* Firefox 18- */
+        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #eeeeee;
+    }
+
+    section#contact ::-moz-placeholder {
+        /* Firefox 19+ */
+        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #eeeeee;
+    }
+
+    section#contact :-ms-input-placeholder {
+        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #eeeeee;
+    }
+
+    section#contact .text-danger {
+        color: #e74c3c;
+    }
+
+    #form-submit {
+        font-weight: bold;
+        background-color: #0066FF;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    #form-submit:hover {
+        color: #D4D4D4;
+    }
+
+    @media (max-width:500px) {
+        #brand-name {
+            display: none;
+        }
+    }
+
+    @media (max-width:425px) {
+        .thumbnail img {
+            width: 60%;
+        }
+        .carousel-holder {
+            display: none;
+        }

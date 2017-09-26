@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 10px auto;
+    max-width: 100%;
+    overflow: auto;
+}
+
+#header {
+    background-image: url('images/desk1.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2 { 
+    position: absolute;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 5px 10px black;
+}
+
+h1 {
+    top: 90px;
+    font-size: 5em;
+}
+
+h2 {
+    top: 190px;
+    font-size: 3em;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+}
+
+h3 {
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#top img {
+    position: relative;
+    right: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+main {
+    margin-left: 80px;
+}
+
+#line-1, #line-2 {
+    flex-grow: 1;
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#line-1 img {
+    height: 260px;
+    margin: 20px;
+}
+
+#line-2 img {
+    height: 240px;
+    margin: 20px;
+}
+
+footer {
+    background-color: black;
+    color: lightgrey;
+    padding: 80px;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#footer a {
+    text-decoration: none;
+    color: lightgrey;
+    font-weight: bold;
+    margin: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: beige;
+    }
+    #header {
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}

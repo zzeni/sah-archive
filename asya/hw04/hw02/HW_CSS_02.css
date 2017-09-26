@@ -1,0 +1,78 @@
+body,
+footer,
+article {
+    padding: 25px;
+    margin: 20px;
+}
+
+body {
+    background-color: beige;
+}
+
+#cheesecake {
+    background-color: lightpink;
+}
+
+#pancakes {
+    background-color: lightcoral;
+}
+
+#balls {
+    background-color: burlywood;
+}
+
+#brulee {
+    background-color: lightgrey;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#footer {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.underline {
+    text-decoration: underline;
+    padding-bottom: 15px;
+}
+
+.image_links {
+    height: 80px;
+    margin: 10px;
+    border: 2px solid;
+    border-color: burlywood;
+}
+
+#image_cheesecake,
+#image_pancakes,
+#image_balls,
+#image_brulee {
+    width: 300px;
+    margin-left: 20px;
+}
+
+header img {
+    height: 80px;
+}
+
+#image {
+    margin-right: 20px;
+}
+
+#image_facebook {
+    height: 20px;
+}
+
+#heading {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+}

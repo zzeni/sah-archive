@@ -1,0 +1,16 @@
+form {
+    width: 49%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: inline-block;
+}
+
+.input-container {
+    margin-bottom: 5px;
+}
+
+.error {
+    color: red;
+}

@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    max-width: 100%;
+}
+
+main {
+    background-color: black;
+    display: flex;
+    width: 600px;
+    height: 500px;
+    margin: 40px auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#first {
+    background-color: black;
+    width: 600px;
+    height: 140px;
+    display: flex;
+}
+
+#one {
+    background-color: yellow;
+    width: 290px;
+    margin: 10px 0px 0px 10px;
+}
+
+#two {
+    background-color: green;
+    width: 290px;
+    margin: 10px 10px 0px 10px;
+}
+
+#second {
+    background-color: black;
+    width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-around;
+}
+
+#three {
+    display: flex;
+    background-color: red;
+    width: 390px;
+    height: 340px;
+    order: 1;
+    margin: 5px 0px 5px 10px;
+    ;
+}
+
+#four {
+    background-color: blue;
+    width: 180px;
+    height: 165px;
+    order: 2;
+    margin: 5px;
+}
+
+#five {
+    background-color: blue;
+    width: 180px;
+    height: 165px;
+    order: 3;
+    margin: 5px;
+}
+
+#inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paragr {
+    text-align: center;
+    font-size: 5em;
+    color: white;
+}
+
+@media (max-width: 599px) {
+    * {
+        box-sizing: border-box;
+    }
+    body,
+    html {
+        min-width: 100%;
+    }
+    main {
+        background-color: black;
+        display: flex;
+        height: 500px;
+        margin: 0px auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 100%;
+    }
+    #first {
+        background-color: black;
+        height: 140px;
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 100%;
+    }
+    #one {
+        background-color: yellow;
+        height: 60px;
+        margin: 10px 0px 0px 10px;
+        min-width: 100%;
+    }
+    #two {
+        background-color: green;
+        height: 60px;
+        margin: 10px 10px 0px 10px;
+        min-width: 100%;
+    }
+    #second {
+        background-color: black;
+        height: 350px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: space-around;
+        min-width: 100%;
+    }
+    #three {
+        display: flex;
+        background-color: red;
+        height: 175px;
+        order: 1;
+        margin: 5px 0px 5px 10px;
+        min-width: 100%;
+    }
+    #four {
+        background-color: blue;
+        height: 70px;
+        order: 2;
+        margin: 5px 0px 5px 10px;
+        min-width: 100%;
+    }
+    #five {
+        background-color: blue;
+        height: 70px;
+        order: 3;
+        margin: 5px 0px 5px 10px;
+        min-width: 100%;
+    }
+    #inside {
+        display: flex;
+        flex-direction: row;
+    }
+    .paragr {
+        text-align: center;
+        font-size: 4.5em;
+        color: white;
+    }
+}

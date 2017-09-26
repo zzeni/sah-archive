@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <style>
+        #btn {
+            margin-top:20px;
+        }
+        
+        
+        #success {
+            color: green;
+        }
+
+        #error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <input id="username" type="text" placeholder="username">
+    <input id="password" type="password" placeholder="Your password">
+    <input id="passwordConf" type="password" placeholder="Password confirmation">
+    
+        <div id="success" class="help-text" hidden>Password is correct</div>
+        <div id="error" class="help-text" hidden>Password must be at least three letters and can only contain letters, numbers or lower dashes</div>
+    <div id="btn">
+    <button type="submit">Sign up</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</body>
+
+<script>
+    
+    (function () {
+        $("#password").keyup(function() {
+            var password = $(this).val();
+
+            if (password.match(/^[0-9a-zA-Z_]{3,}$/)){
+                $("#success").show();
+                $("#error").hide();
+            }
+            else {
+                $("#success").hide();
+                $("#error").show();
+            }
+            
+        });
+    })();
+        
+    // /^[a-zA-Z]{3,}$/    
+</script>
+</html>

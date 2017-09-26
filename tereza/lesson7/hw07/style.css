@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333333;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: dimgray;
+}
+
+header,
+main {
+  background-color: ghostwhite;
+  margin: 0 40px;
+}
+header {
+  background-image: url(img/header.jpg);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1#logo {
+  background-color: ghostwhite;
+  padding: 20px;
+}
+#menu {
+  top: 40px;
+  right: 70px;
+  width: 40px;
+  position: absolute;
+}
+
+#title {
+  background-color: ghostwhite;
+  position: absolute;
+  width: 400px;
+  top: 120px;
+  left: 600px;
+  text-align: center;
+  border: 3px;
+  border-color: dimgray;
+  border-style: dashed;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+}
+ul {
+  list-style-type: none;
+  margin: 10px;
+}
+
+li {
+  display: inline;
+  text-align: center;
+  margin-right: 30px;
+}
+li:hover {
+  background-color: #333333;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: dimgray;
+}
+a:hover {
+  color:white;
+}
+section {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery {
+  display: inline-block;
+  float: left;
+  margin: 10px;
+}
+
+.img-gallery {
+  width: 300px;
+}
+
+.description {
+  text-transform: none;
+  text-align: center;
+  padding: 10px;
+}
+
+.gallery:hover {
+  box-shadow: 0px 2px 10px 2px dimgray;
+}
+footer {
+  height: 200px;
+  color: ghostwhite;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.social {
+  width: 40px;
+}
+
+@media (max-width: 299px) {
+  header, main {
+    width: 100%;
+    margin: 0px;
+  }
+  li {
+    display:block;
+    width: 100%;
+margin-right: 30px;
+  }
+  .img-gallery {
+    width: 200px;
+  }
+  #menu {
+    right: 20px;
+  }
+  #title {
+    width: 100%;
+    position:static;
+    text-align: center;
+  }
+}
+@media (max-width: 399px) and (min-width: 300px){
+  header, main {
+    width: 100%;
+    margin: 0px;
+  }
+  li {
+    display:block;
+    width: 100%;
+  }
+  .img-gallery {
+    width: 250px;
+  }
+  #menu {
+    right: 30px;
+  }
+  #title {
+    width: 100%;
+    position:static;
+    text-align: center;
+  }
+}
+@media (max-width: 499px) and (min-width: 400px){
+  li {
+    display:block;
+    width: 100%;
+    margin-right: 30px;
+  }
+  .img-gallery {
+    width: 250px;
+  }
+  #title {
+    width: 100%;
+    position:static;
+    text-align: center;
+  }
+}
+@media (max-width: 599px) and (min-width: 500px){
+  .img-gallery {
+    width: 250px;
+  }
+  #title {
+    width: 100%;
+    position:static;
+    text-align: center;
+  }
+}
+@media (max-width: 1099px) and (min-width: 600px){
+  #title {
+    width: 100%;
+    position:static;
+    text-align: center;
+  }
+}
+

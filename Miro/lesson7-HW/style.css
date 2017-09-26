@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Caviar Dreams;
+    color: #333;
+}
+
+.wrapper {
+    width: 980px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+i {
+    margin-right: 10px;
+}
+
+i.fa, header a {
+    color: #333;
+    font-size: 2rem;
+}
+header {
+    padding: 2rem;
+}
+
+header button {
+    float: right;
+    background: none;
+    border: none;
+   font-size: 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #29ABE2;
+}
+
+section#mainImg {
+    background-image: url('img/travel-world-memories-.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 4rem 4rem 8rem 4rem;
+}
+
+.lipsum {
+    width: 60%;
+    background: rgba(51, 51, 51, 0.6);
+    margin: 3rem auto 5rem auto;
+    border: 8px double #fff;
+    padding: 2rem 6rem;
+    text-align: center;
+}
+
+.lipsum h2, .lipsum p {
+    color: #fff;
+    text-shadow: 2px 2px 5px #333;
+
+}
+
+.lipsum h2 {
+    font-size: 3rem;
+}
+
+.lipsum p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+nav {
+    padding: 2rem;
+}
+
+ul li {
+    display: inline;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
+}
+
+li a {
+    padding: 2rem;
+}
+
+ul.navigation a {
+    color: #333;
+}
+
+ul.navigation a:hover {
+    color: #29ABE2
+}
+
+main section {
+    width: 810px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+#gallery a {
+    float: left;
+    margin: 10px;
+
+}
+
+#gallery a:hover {
+    opacity: .6;
+}
+.image {
+    width: 250px;
+    height:  250px;
+}
+
+.pic1 {
+    background: url("img/bora-bora.jpg");
+    background-size: cover;
+}
+
+.pic2 {
+    background: url("img/Asia.jpg");
+    background-size: cover;
+}
+
+.pic3 {
+    background: url("img/london.jpg");
+    background-size: cover;
+}
+
+.pic4 {
+    background: url("img/ocean.jpg");
+    background-size: cover;
+}
+
+.pic5 {
+    background: url("img/ocean2.jpg");
+    background-size: cover;
+}
+
+.pic6 {
+    background: url("img/paris.jpg");
+    background-size: cover;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+ul.social i{
+    color: #29ABE2;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+footer {
+    clear: left;
+    background: #333;
+    color: #c2c2c2;
+    padding: 4rem;
+    text-align: center;
+    margin-top: 6%;
+}
+
+@media screen and (max-width:768px) {
+    .lipsum {
+        width: 100%;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    section#mainImg {
+        background-image: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #gallery a {
+        width: 100%;
+        padding: .5rem 1rem;
+        margin: 0;
+    }
+
+
+    nav {
+        padding: 0;
+        background: #333;
+    }
+
+
+    ul.navigation li {
+       display: block;
+        padding: .5rem 0;
+        border-bottom: 1px solid #777;
+    }
+
+    ul.navigation a {
+        color: #fff;
+        padding: 1rem ;
+
+    }
+
+    footer {
+        padding: 2rem;
+        margin-top: .5rem;
+    }
+
+}

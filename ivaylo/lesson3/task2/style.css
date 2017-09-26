@@ -1,0 +1,55 @@
+body {
+    background-color: burlywood
+}
+
+header {
+    background-image: url(img/title_im.jpeg);
+    color: darkgoldenrod;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 10px;
+    text-shadow: 6px 3px black;
+    font-size: 250%;
+    border: 5px solid black;
+}
+
+nav {
+    background-image: url(img/more_books.jpg);
+    padding: 1px;
+    margin: 10px;
+    border: 5px solid black;
+}
+
+ol {
+    font-size: 50%;
+}
+
+li {
+    font-size: 150%;
+    padding: 10px;
+}
+
+main {
+    background-color: lightcoral;
+    background-image: url(img/center.jpg);
+    padding: 50px;
+    margin: 10px;
+    border: 5px solid black;
+}
+
+div {
+    text-align: right;
+    margin: -5px;
+    font-size: 150%;
+    padding: auto;
+}
+
+footer {
+    border: 5px solid black;
+    padding: 5px 10px 10px 10px;
+    background-image: url(img/footer.jpg);
+    text-align: center;
+    margin: 10px;
+}
